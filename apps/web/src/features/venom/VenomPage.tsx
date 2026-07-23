@@ -1,17 +1,53 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import type { VenomDetail } from '../../services/contracts';
 import { atlasApi } from '../../services/apiClient';
 import { EvidenceBadge } from '../../components/EvidenceBadge';
+import { RouteEntityNotFound } from '../../components/RouteEntityNotFound';
 import { VegaChart } from '../../visualizations/vega/VegaChart';
 import { buildVenomCompositionSpec } from '../../visualizations/vega/venomCompositionSpec';
+import {
+  defaultOrganismSlug,
+  isKnownOrganismSlug,
+  organismIdFromSlug,
+  toxinSlugFromId,
+} from '../../services/atlasRouting';
 
 export const VenomPage = () => {
   const [data, setData] = useState<VenomDetail | null>(null);
+  const { organismSlug } = useParams();
+  const unknownSlug = organismSlug ? !isKnownOrganismSlug(organismSlug) : false;
 
   useEffect(() => {
-    atlasApi.getVenom('ven-fire-ant-primary').then(setData).catch(console.error);
-  }, []);
+    if (unknownSlug) {
+      setData(null);
+      return;
+    }
+    const load = async (): Promise<void> => {
+      const organismId = organismIdFromSlug(organismSlug);
+      const venoms = await atlasApi.getOrganismVenoms(organismId);
+      const featuredVenom = venoms[0];
+      if (!featuredVenom) {
+        setData(null);
+        return;
+      }
+      const venomDetail = await atlasApi.getVenom(featuredVenom.id);
+      setData(venomDetail);
+    };
+
+    void load().catch(console.error);
+  }, [organismSlug, unknownSlug]);
+
+  if (unknownSlug) {
+    return (
+      <RouteEntityNotFound
+        title="Venom page unavailable"
+        message={`No organism is mapped to slug "${organismSlug}".`}
+        fallbackHref={`/organisms/${defaultOrganismSlug}/venom`}
+        fallbackLabel="Open Solenopsis invicta venom"
+      />
+    );
+  }
 
   if (!data) {
     return <section className="panel">Loading venom profile...</section>;
@@ -50,7 +86,7 @@ export const VenomPage = () => {
             </li>
           ))}
         </ul>
-        <Link to="/toxins/solenopsin-a">Open Solenopsin A page</Link>
+        <Link to={`/toxins/${toxinSlugFromId('tox-solenopsin-a')}`}>Open Solenopsin A page</Link>
       </section>
     </section>
   );

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Organism } from '@venom-atlas/domain';
 import { atlasApi } from '../../services/apiClient';
+import { organismSlugFromId } from '../../services/atlasRouting';
 
 export const OrganismsPage = () => {
   const [organisms, setOrganisms] = useState<Organism[]>([]);
@@ -16,7 +17,8 @@ export const OrganismsPage = () => {
       <ul>
         {organisms.map((organism) => (
           <li key={organism.id}>
-            <Link to="/organisms/solenopsis-invicta">{organism.scientificName}</Link> -{' '}
+            <Link to={`/organisms/${organismSlugFromId(organism.id)}`}>{organism.scientificName}</Link>{' '}
+            -{' '}
             {organism.commonName}
           </li>
         ))}

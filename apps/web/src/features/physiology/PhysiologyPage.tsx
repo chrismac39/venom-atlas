@@ -1,10 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import type { AnatomyHighlight } from '@venom-atlas/visualization-contracts';
 import type { ToxinMechanismDetail, ToxinPhysiologyDetail } from '../../services/contracts';
 import { atlasApi } from '../../services/apiClient';
+import { RouteEntityNotFound } from '../../components/RouteEntityNotFound';
 import { AnatomySvg } from '../../visualizations/svg/AnatomySvg';
 import { VegaChart } from '../../visualizations/vega/VegaChart';
 import { buildPhysiologyTimelineSpec } from '../../visualizations/vega/physiologyTimelineSpec';
+import { defaultToxinSlug, isKnownToxinSlug, toxinIdFromSlug } from '../../services/atlasRouting';
 
 const localHighlights: AnatomyHighlight[] = [
   {
@@ -36,11 +39,30 @@ const localHighlights: AnatomyHighlight[] = [
 export const PhysiologyPage = () => {
   const [physiology, setPhysiology] = useState<ToxinPhysiologyDetail | null>(null);
   const [mechanism, setMechanism] = useState<ToxinMechanismDetail | null>(null);
+  const { toxinSlug } = useParams();
+  const unknownSlug = toxinSlug ? !isKnownToxinSlug(toxinSlug) : false;
 
   useEffect(() => {
-    atlasApi.getToxinPhysiology('tox-solenopsin-a').then(setPhysiology).catch(console.error);
-    atlasApi.getToxinMechanism('tox-solenopsin-a').then(setMechanism).catch(console.error);
-  }, []);
+    if (unknownSlug) {
+      setPhysiology(null);
+      setMechanism(null);
+      return;
+    }
+    const toxinId = toxinIdFromSlug(toxinSlug);
+    atlasApi.getToxinPhysiology(toxinId).then(setPhysiology).catch(console.error);
+    atlasApi.getToxinMechanism(toxinId).then(setMechanism).catch(console.error);
+  }, [toxinSlug, unknownSlug]);
+
+  if (unknownSlug) {
+    return (
+      <RouteEntityNotFound
+        title="Physiology page unavailable"
+        message={`No toxin is mapped to slug "${toxinSlug}".`}
+        fallbackHref={`/toxins/${defaultToxinSlug}/physiology`}
+        fallbackLabel="Open Solenopsin A physiology"
+      />
+    );
+  }
 
   const directEffects = useMemo(
     () =>

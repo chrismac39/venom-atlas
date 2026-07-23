@@ -1,5 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useAtlasRouteSync } from '../hooks/useAtlasRouteSync';
+import { defaultOrganismSlug, defaultToxinSlug } from '../services/atlasRouting';
 
 const crumbText = (pathname: string): string[] => {
   const sequence: string[] = [];
@@ -34,9 +35,9 @@ export const Layout = () => {
       <nav className="primary" aria-label="Main navigation">
         <Link to="/">Venom Atlas</Link>
         <Link to="/organisms">Organisms</Link>
-        <Link to="/toxins/solenopsin-a">Molecules</Link>
-        <Link to="/toxins/solenopsin-a/physiology">Physiology</Link>
-        <Link to="/organisms/solenopsis-invicta/geography">Geography</Link>
+        <Link to={`/toxins/${defaultToxinSlug}`}>Molecules</Link>
+        <Link to={`/toxins/${defaultToxinSlug}/physiology`}>Physiology</Link>
+        <Link to={`/organisms/${defaultOrganismSlug}/geography`}>Geography</Link>
       </nav>
       <main>
         {crumbs.length > 0 ? <div className="breadcrumb">{crumbs.join(' -> ')}</div> : null}

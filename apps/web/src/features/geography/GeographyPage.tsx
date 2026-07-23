@@ -1,14 +1,38 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import type { GeographicRange } from '@venom-atlas/domain';
 import { atlasApi } from '../../services/apiClient';
+import { RouteEntityNotFound } from '../../components/RouteEntityNotFound';
 import { RangeMapPanel } from '../../visualizations/maps/RangeMapPanel';
+import {
+  defaultOrganismSlug,
+  isKnownOrganismSlug,
+  organismIdFromSlug,
+} from '../../services/atlasRouting';
 
 export const GeographyPage = () => {
   const [ranges, setRanges] = useState<GeographicRange[]>([]);
+  const { organismSlug } = useParams();
+  const unknownSlug = organismSlug ? !isKnownOrganismSlug(organismSlug) : false;
 
   useEffect(() => {
-    atlasApi.getOrganismRange('org-solenopsis-invicta').then(setRanges).catch(console.error);
-  }, []);
+    if (unknownSlug) {
+      setRanges([]);
+      return;
+    }
+    atlasApi.getOrganismRange(organismIdFromSlug(organismSlug)).then(setRanges).catch(console.error);
+  }, [organismSlug, unknownSlug]);
+
+  if (unknownSlug) {
+    return (
+      <RouteEntityNotFound
+        title="Geography page unavailable"
+        message={`No organism is mapped to slug "${organismSlug}".`}
+        fallbackHref={`/organisms/${defaultOrganismSlug}/geography`}
+        fallbackLabel="Open Solenopsis invicta geography"
+      />
+    );
+  }
 
   return (
     <section className="grid">

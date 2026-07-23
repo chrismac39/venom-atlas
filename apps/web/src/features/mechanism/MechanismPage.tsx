@@ -1,21 +1,45 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import type { MechanismStep } from '@venom-atlas/domain';
 import type { ToxinMechanismDetail } from '../../services/contracts';
 import { atlasApi } from '../../services/apiClient';
 import { EvidenceBadge } from '../../components/EvidenceBadge';
 import { CitationList } from '../../components/CitationList';
+import { RouteEntityNotFound } from '../../components/RouteEntityNotFound';
+import {
+  defaultToxinSlug,
+  isKnownToxinSlug,
+  toxinIdFromSlug,
+  toxinSlugFromId,
+} from '../../services/atlasRouting';
 
 export const MechanismPage = () => {
   const [data, setData] = useState<ToxinMechanismDetail | null>(null);
   const [selectedStepId, setSelectedStepId] = useState<string | null>(null);
+  const { toxinSlug } = useParams();
+  const unknownSlug = toxinSlug ? !isKnownToxinSlug(toxinSlug) : false;
 
   useEffect(() => {
-    atlasApi.getToxinMechanism('tox-solenopsin-a').then((payload) => {
+    if (unknownSlug) {
+      setData(null);
+      return;
+    }
+    atlasApi.getToxinMechanism(toxinIdFromSlug(toxinSlug)).then((payload) => {
       setData(payload);
       setSelectedStepId(payload.mechanismSteps[0]?.id ?? null);
     });
-  }, []);
+  }, [toxinSlug, unknownSlug]);
+
+  if (unknownSlug) {
+    return (
+      <RouteEntityNotFound
+        title="Mechanism page unavailable"
+        message={`No toxin is mapped to slug "${toxinSlug}".`}
+        fallbackHref={`/toxins/${defaultToxinSlug}/mechanism`}
+        fallbackLabel="Open Solenopsin A mechanism"
+      />
+    );
+  }
 
   const sortedSteps = useMemo(
     () => (data ? [...data.mechanismSteps].sort((a, b) => a.order - b.order) : []),
@@ -60,7 +84,9 @@ export const MechanismPage = () => {
           Competing interpretations and unresolved target specificity remain possible in this
           sample.
         </p>
-        <Link to="/toxins/solenopsin-a/physiology">Continue to physiology page</Link>
+        <Link to={`/toxins/${toxinSlugFromId(data.toxin.id)}/physiology`}>
+          Continue to physiology page
+        </Link>
       </section>
     </section>
   );

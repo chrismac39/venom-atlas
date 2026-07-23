@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@clickhouse/client": "^1.12.1",
+    "@fastify/cors": "^11.3.0",
     "@venom-atlas/domain": "workspace:*",
     "@venom-atlas/schemas": "workspace:*",
     "dotenv": "^17.2.1",

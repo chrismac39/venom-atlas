@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Layout } from './Layout';
 import { LandingPage } from '../features/atlas/LandingPage';
+import { NotFoundPage } from '../features/atlas/NotFoundPage';
 import { OrganismsPage } from '../features/organism/OrganismsPage';
 import { OrganismDetailPage } from '../features/organism/OrganismDetailPage';
 import { VenomPage } from '../features/venom/VenomPage';
@@ -16,12 +17,13 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <LandingPage /> },
       { path: 'organisms', element: <OrganismsPage /> },
-      { path: 'organisms/solenopsis-invicta', element: <OrganismDetailPage /> },
-      { path: 'organisms/solenopsis-invicta/venom', element: <VenomPage /> },
-      { path: 'toxins/solenopsin-a', element: <MoleculePage /> },
-      { path: 'toxins/solenopsin-a/mechanism', element: <MechanismPage /> },
-      { path: 'toxins/solenopsin-a/physiology', element: <PhysiologyPage /> },
-      { path: 'organisms/solenopsis-invicta/geography', element: <GeographyPage /> },
+      { path: 'organisms/:organismSlug', element: <OrganismDetailPage /> },
+      { path: 'organisms/:organismSlug/venom', element: <VenomPage /> },
+      { path: 'toxins/:toxinSlug', element: <MoleculePage /> },
+      { path: 'toxins/:toxinSlug/mechanism', element: <MechanismPage /> },
+      { path: 'toxins/:toxinSlug/physiology', element: <PhysiologyPage /> },
+      { path: 'organisms/:organismSlug/geography', element: <GeographyPage /> },
+      { path: '*', element: <NotFoundPage /> },
     ],
   },
 ]);

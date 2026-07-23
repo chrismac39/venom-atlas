@@ -7,6 +7,7 @@ import {
   type Dispatch,
   type ReactNode,
 } from 'react';
+import { defaultOrganismId } from '../services/atlasRouting';
 
 type AtlasAction =
   { type: 'set'; payload: Partial<AtlasSelection> } | { type: 'reset'; organismId: string };
@@ -28,7 +29,7 @@ const AtlasSelectionContext = createContext<{
 } | null>(null);
 
 export const AtlasSelectionProvider = ({ children }: { children: ReactNode }) => {
-  const [state, dispatch] = useReducer(reducer, { organismId: 'org-solenopsis-invicta' });
+  const [state, dispatch] = useReducer(reducer, { organismId: defaultOrganismId });
   const value = useMemo(() => ({ state, dispatch }), [state]);
 
   return <AtlasSelectionContext.Provider value={value}>{children}</AtlasSelectionContext.Provider>;

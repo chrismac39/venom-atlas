@@ -1,11 +1,18 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import type { MolecularRepresentation } from '@venom-atlas/visualization-contracts';
 import type { ToxinDetail } from '../../services/contracts';
 import { atlasApi } from '../../services/apiClient';
 import { EvidenceBadge } from '../../components/EvidenceBadge';
 import { CitationList } from '../../components/CitationList';
+import { RouteEntityNotFound } from '../../components/RouteEntityNotFound';
 import { MoleculeViewer } from '../../molecular/components/MoleculeViewer';
+import {
+  defaultToxinSlug,
+  isKnownToxinSlug,
+  toxinIdFromSlug,
+  toxinSlugFromId,
+} from '../../services/atlasRouting';
 
 const isStructureFormat = (value: string): value is 'sdf' | 'mol' | 'mol2' | 'pdb' | 'mmcif' =>
   ['sdf', 'mol', 'mol2', 'pdb', 'mmcif'].includes(value);
@@ -19,10 +26,27 @@ const supportedRepresentations: MolecularRepresentation[] = [
 
 export const MoleculePage = () => {
   const [data, setData] = useState<ToxinDetail | null>(null);
+  const { toxinSlug } = useParams();
+  const unknownSlug = toxinSlug ? !isKnownToxinSlug(toxinSlug) : false;
 
   useEffect(() => {
-    atlasApi.getToxin('tox-solenopsin-a').then(setData).catch(console.error);
-  }, []);
+    if (unknownSlug) {
+      setData(null);
+      return;
+    }
+    atlasApi.getToxin(toxinIdFromSlug(toxinSlug)).then(setData).catch(console.error);
+  }, [toxinSlug, unknownSlug]);
+
+  if (unknownSlug) {
+    return (
+      <RouteEntityNotFound
+        title="Molecule not found"
+        message={`No toxin is mapped to slug "${toxinSlug}".`}
+        fallbackHref={`/toxins/${defaultToxinSlug}`}
+        fallbackLabel="Open Solenopsin A"
+      />
+    );
+  }
 
   const renderModel = useMemo(() => {
     if (!data?.molecularEntity) {
@@ -95,7 +119,9 @@ export const MoleculePage = () => {
       </section>
 
       <section className="panel">
-        <Link to="/toxins/solenopsin-a/mechanism">Continue to mechanism page</Link>
+        <Link to={`/toxins/${toxinSlugFromId(data.toxin.id)}/mechanism`}>
+          Continue to mechanism page
+        </Link>
       </section>
     </section>
   );
