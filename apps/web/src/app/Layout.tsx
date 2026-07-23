@@ -29,6 +29,7 @@ export const Layout = () => {
   const location = useLocation();
   useAtlasRouteSync();
   const crumbs = crumbText(location.pathname);
+  const isOrganismRoute = location.pathname.startsWith('/organisms');
 
   return (
     <>
@@ -39,7 +40,7 @@ export const Layout = () => {
         <Link to={`/toxins/${defaultToxinSlug}/physiology`}>Physiology</Link>
         <Link to={`/organisms/${defaultOrganismSlug}/geography`}>Geography</Link>
       </nav>
-      <main>
+      <main className={isOrganismRoute ? 'main-organism-route' : undefined}>
         {crumbs.length > 0 ? <div className="breadcrumb">{crumbs.join(' -> ')}</div> : null}
         <Outlet />
       </main>

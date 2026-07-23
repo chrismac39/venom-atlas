@@ -108,7 +108,7 @@ export const atlasSeedData: AtlasSeedData = {
       scientificName: 'Solenopsis invicta',
       commonName: 'Red imported fire ant',
       overview:
-        'Solenopsis invicta is an invasive ant species in many regions, known for painful stings delivered after mandible-assisted anchoring.',
+        'Solenopsis invicta is an ant species widely studied for defensive sting behavior, rapid colony recruitment, and ecological impact where established.',
       naturalHistory: [
         'Workers can rapidly recruit nestmates when disturbed.',
         'Colonies occupy disturbed soils, lawns, fields, and urban interfaces.',

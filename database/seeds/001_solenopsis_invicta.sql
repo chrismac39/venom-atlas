@@ -48,7 +48,7 @@ VALUES
 
 INSERT INTO venom_atlas.organisms (id, scientific_name, common_name, overview, natural_history, taxonomy_id, delivery_mechanism_id, evidence_assessment_id)
 VALUES
-('org-solenopsis-invicta', 'Solenopsis invicta', 'Red imported fire ant', 'Solenopsis invicta is an invasive ant species in many regions, known for painful stings delivered after mandible-assisted anchoring.', ['Workers can rapidly recruit nestmates when disturbed.', 'Colonies occupy disturbed soils, lawns, fields, and urban interfaces.', 'Defensive behavior commonly involves grip-and-sting sequences.'], 'tax-sinvicta', 'deliv-fire-ant-sting', 'ev-taxonomy');
+('org-solenopsis-invicta', 'Solenopsis invicta', 'Red imported fire ant', 'Solenopsis invicta is an ant species widely studied for defensive sting behavior, rapid colony recruitment, and ecological impact where established.', ['Workers can rapidly recruit nestmates when disturbed.', 'Colonies occupy disturbed soils, lawns, fields, and urban interfaces.', 'Defensive behavior commonly involves grip-and-sting sequences.'], 'tax-sinvicta', 'deliv-fire-ant-sting', 'ev-taxonomy');
 
 INSERT INTO venom_atlas.biological_materials (id, organism_id, kind, name, description, evidence_assessment_id)
 VALUES
