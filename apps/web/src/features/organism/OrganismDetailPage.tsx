@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import type { GeographicRange, Venom } from '@venom-atlas/domain';
+import type { ExposureRoute, GeographicRange, Venom } from '@venom-atlas/domain';
 import type { OrganismDetail, VenomDetail } from '../../services/contracts';
 import { atlasApi } from '../../services/apiClient';
 import { DeliveryMechanismDiagram } from '../../visualizations/svg/DeliveryMechanismDiagram';
@@ -83,6 +83,31 @@ const geographyFolderLabel = (organismId: string, layerType: string): string => 
   return `${baseLabel}: ${formatCountryList(hintedCountries)}`;
 };
 
+const summarizeToxinCategory = (venoms: Venom[]): string => {
+  if (venoms.length > 0) {
+    return 'Venom. Current records indicate a sting-delivered venom profile.';
+  }
+
+  return 'Not yet classified. No verified venom, poison, or secretion profile is currently linked.';
+};
+
+const summarizeHumanExposure = (route: ExposureRoute | undefined): string => {
+  if (route === 'sting') {
+    return 'Typical human contact occurs during accidental nest disturbance, outdoor activity, or direct contact with workers, with exposure primarily through stings.';
+  }
+  if (route === 'contact') {
+    return 'Typical human exposure occurs through skin contact with the organism or its secretions.';
+  }
+  if (route === 'ingestion') {
+    return 'Typical human exposure occurs through accidental or intentional ingestion.';
+  }
+  if (route === 'inhalation') {
+    return 'Typical human exposure occurs through inhalation of airborne particles or aerosols.';
+  }
+
+  return 'Typical human exposure scenarios are not yet well defined in current source records.';
+};
+
 export const OrganismDetailPage = () => {
   const [data, setData] = useState<OrganismProfileData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -155,16 +180,27 @@ export const OrganismDetailPage = () => {
     evidence: range.evidence,
   }));
   const externalProfile = externalProfileByOrganismId[organism.id];
+  const toxinCategorySummary = summarizeToxinCategory(data.venoms);
+  const humanExposureSummary = summarizeHumanExposure(deliveryMechanism?.route);
 
   return (
     <section className="panel organism-story-shell">
       <section className="grid organism-story">
-        <article className="organism-story-section">
+        <article className="organism-story-section organism-overview-sticky">
           <h1>
             {organism.scientificName} ({organism.commonName})
           </h1>
-          <EvidenceBadge evidence={organism.evidence} />
           <p>{organism.overview}</p>
+          <div className="organism-summary-details">
+            <section className="organism-summary-pill">
+              <h3>Toxin category</h3>
+              <p>{toxinCategorySummary}</p>
+            </section>
+            <section className="organism-summary-pill">
+              <h3>Exposure to humans</h3>
+              <p>{humanExposureSummary}</p>
+            </section>
+          </div>
         </article>
 
         <section className="organism-story-section">
