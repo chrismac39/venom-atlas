@@ -210,11 +210,11 @@ export const OrganismDetailPage = () => {
           </h1>
           <p>{organism.overview}</p>
           <div className="organism-summary-details">
-            <section className="organism-summary-pill">
+            <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
               <h3>Toxin category</h3>
               <p>{toxinCategorySummary}</p>
             </section>
-            <section className="organism-summary-pill">
+            <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
               <h3>Exposure to humans</h3>
               <p>{humanExposureSummary}</p>
             </section>

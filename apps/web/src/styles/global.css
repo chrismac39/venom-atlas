@@ -2,6 +2,8 @@
 
 :root {
   --top-ribbon-height: 4rem;
+  --motion-lift-curve: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-lift-duration: 200ms;
 }
 
 * {
@@ -119,6 +121,37 @@ select {
   color: var(--text);
   border-radius: 6px;
   padding: 0.45rem 0.6rem;
+}
+
+.ui-surface-glass {
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 74%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, white, transparent 89%),
+    color-mix(in srgb, var(--accent-science), transparent 93%) 45%,
+    color-mix(in srgb, var(--panel-soft), transparent 6%)
+  );
+  box-shadow:
+    0 1px 0 color-mix(in srgb, white, transparent 82%) inset,
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 93%) inset,
+    0 3px 10px color-mix(in srgb, black, transparent 91%),
+    0 10px 22px color-mix(in srgb, black, transparent 95%);
+}
+
+.ui-hover-lift {
+  transition: transform var(--motion-lift-duration) var(--motion-lift-curve),
+    box-shadow var(--motion-lift-duration) var(--motion-lift-curve),
+    border-color var(--motion-lift-duration) var(--motion-lift-curve);
+}
+
+.ui-hover-lift:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent-science), var(--rule) 62%);
+  box-shadow:
+    0 1px 0 color-mix(in srgb, white, transparent 78%) inset,
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 90%) inset,
+    0 6px 14px color-mix(in srgb, black, transparent 90%),
+    0 14px 28px color-mix(in srgb, black, transparent 94%);
 }
 
 .organism-group-slicer {
@@ -300,30 +333,24 @@ select {
 }
 
 .organism-summary-pill {
-  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 72%);
-  border-radius: 12px;
-  padding: 0.72rem 0.98rem;
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--accent-science), transparent 92%),
-    color-mix(in srgb, var(--panel-soft), transparent 8%)
-  );
-  box-shadow:
-    0 1px 0 color-mix(in srgb, white, transparent 84%) inset,
-    0 4px 14px color-mix(in srgb, black, transparent 90%);
+  position: relative;
+  border-radius: 13px;
+  padding: 0.76rem 1rem;
 }
 
 .organism-summary-details h3 {
   margin: 0 0 0.35rem;
-  font-size: 0.75rem;
+  font-size: 0.74rem;
+  font-weight: 620;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
   color: var(--muted);
 }
 
 .organism-summary-details p {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 0.93rem;
+  font-weight: 500;
   line-height: 1.4;
 }
 
