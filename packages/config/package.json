@@ -1,0 +1,12 @@
+{
+  "name": "@venom-atlas/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo config package",
+    "typecheck": "echo config package",
+    "lint": "echo config package",
+    "test": "echo config package"
+  }
+}

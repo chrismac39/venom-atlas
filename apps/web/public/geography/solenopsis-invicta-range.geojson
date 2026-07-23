@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "features": [],
+  "metadata": {
+    "status": "pending_validated_geometry",
+    "note": "No source-backed geometry bundled in scaffold."
+  }
+}

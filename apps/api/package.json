@@ -1,0 +1,28 @@
+{
+  "name": "@venom-atlas/api",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "lint": "eslint src tests --ext .ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:seed": "tsx src/db/seed.ts"
+  },
+  "dependencies": {
+    "@clickhouse/client": "^1.12.1",
+    "@venom-atlas/domain": "workspace:*",
+    "@venom-atlas/schemas": "workspace:*",
+    "dotenv": "^17.2.1",
+    "fastify": "^5.3.3",
+    "zod": "^4.0.15"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3"
+  }
+}

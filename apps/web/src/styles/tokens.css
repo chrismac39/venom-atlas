@@ -1,0 +1,25 @@
+:root {
+  --bg: #171818;
+  --panel: #222423;
+  --panel-soft: #262a29;
+  --text: #f2eee6;
+  --muted: #b8b2a6;
+  --rule: #3b3f3d;
+  --accent-science: #c58f3a;
+  --warning: #b86842;
+  --uncertainty: #7c7f8d;
+  --evidence-high: #5f8b6f;
+  --evidence-moderate: #988d56;
+  --evidence-low: #9b614a;
+  --evidence-unknown: #6b6f7a;
+  --atom-cpk-carbon: #808080;
+  --atom-cpk-oxygen: #d94d4d;
+  --atom-cpk-nitrogen: #4f7dcc;
+  --atom-cpk-sulfur: #c8b14a;
+  --space-1: 0.4rem;
+  --space-2: 0.8rem;
+  --space-3: 1.2rem;
+  --space-4: 1.8rem;
+  --space-5: 2.4rem;
+  --radius: 8px;
+}

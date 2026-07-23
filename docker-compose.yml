@@ -1,0 +1,17 @@
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.12
+    container_name: venom-atlas-clickhouse
+    ports:
+      - '38123:8123'
+      - '39000:9000'
+    environment:
+      CLICKHOUSE_DB: venom_atlas
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: ''
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+
+volumes:
+  clickhouse_data:
