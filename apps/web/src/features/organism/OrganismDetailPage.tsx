@@ -51,9 +51,10 @@ const externalProfileByOrganismId: Record<string, ExternalSpeciesProfile> = {
     sourceUrl: 'https://www.antwiki.org/wiki/Solenopsis_invicta',
     antMapsEmbedUrl: 'https://antmaps.org/?mode=species&species=Solenopsis.invicta',
     summaryPoints: [
-      'Worker ants often recruit nestmates quickly after disturbance, shaping local defense behavior.',
-      'Colonies are frequently associated with disturbed and human-managed habitats.',
-      'Sting behavior is represented as a grip-and-sting sequence linked to venom delivery.',
+      'Solenopsis invicta is a social, colony-forming ant known for fast collective responses when nest structure is disturbed. Workers recruit nestmates quickly through pheromone signaling, then switch from exploration to defense in coordinated waves. In practice, small initial contact events can escalate quickly where colony density is high or disturbance is repeated over short intervals.',
+      'Colony organization contributes to this rapid shift in behavior. Workers are polymorphic, and size-based task flexibility supports foraging, brood care, mound maintenance, and defense within the same colony network. This functional structure helps explain why activity around food resources, nest entrances, and disturbed soil can transition from low-intensity movement to concentrated defensive pressure in a short time window.',
+      'The species is commonly associated with open, sun-exposed, and human-managed environments such as pasture margins, roadsides, turf, and agricultural edges. Colonies often build conspicuous earthen mounds and may occur at high local density, increasing encounter frequency for people who walk, work, or perform ground-level maintenance in these habitats. In introduced ranges, these same traits are linked with ecological pressure on native ant assemblages and shifts in local invertebrate community structure.',
+      'Behavior relevant to venom delivery is typically described as a grip-and-sting sequence: workers anchor with the mandibles and pivot to deliver repeated stings. This repeated stinging behavior is one reason encounters can produce multiple localized lesions in a short period, especially when workers recruit rapidly from nearby nest zones. For people and animals entering active foraging or defensive areas, exposure risk is shaped by colony density, disturbance intensity, and time spent in infested habitat.',
     ],
     imageUrls: [
       '/images/organisms/solenopsis-invicta/solenopsis-invicta-head-casent0104523.png',
@@ -83,9 +84,26 @@ const geographyFolderLabel = (organismId: string, layerType: string): string => 
   return `${baseLabel}: ${formatCountryList(hintedCountries)}`;
 };
 
-const summarizeToxinCategory = (venoms: Venom[]): string => {
+const summarizeToxinCategory = (venoms: Venom[], venomDetails: VenomDetail[]): string => {
   if (venoms.length > 0) {
-    return 'Venom. Current records indicate a sting-delivered venom profile.';
+    const toxinNames = Array.from(
+      new Set(venomDetails.flatMap((detail) => detail.toxins.map((toxin) => toxin.displayName))),
+    );
+    const componentCategories = Array.from(
+      new Set(
+        venomDetails
+          .flatMap((detail) => detail.components.map((component) => component.componentCategory))
+          .filter((category) => category.trim().length > 0),
+      ),
+    );
+
+    const leadCompound = toxinNames[0] ?? 'mixed compounds';
+    if (componentCategories.length > 0) {
+      const componentSummary = componentCategories.slice(0, 2).join(' and ');
+      return `Venom - ${leadCompound}, which includes ${componentSummary}.`;
+    }
+
+    return `Venom - ${leadCompound}.`;
   }
 
   return 'Not yet classified. No verified venom, poison, or secretion profile is currently linked.';
@@ -93,19 +111,19 @@ const summarizeToxinCategory = (venoms: Venom[]): string => {
 
 const summarizeHumanExposure = (route: ExposureRoute | undefined): string => {
   if (route === 'sting') {
-    return 'Typical human contact occurs during accidental nest disturbance, outdoor activity, or direct contact with workers, with exposure primarily through stings.';
+    return 'Usually through stings during nest disturbance or outdoor contact with workers.';
   }
   if (route === 'contact') {
-    return 'Typical human exposure occurs through skin contact with the organism or its secretions.';
+    return 'Usually through skin contact with the organism or its secretions.';
   }
   if (route === 'ingestion') {
-    return 'Typical human exposure occurs through accidental or intentional ingestion.';
+    return 'Usually through accidental or intentional ingestion.';
   }
   if (route === 'inhalation') {
-    return 'Typical human exposure occurs through inhalation of airborne particles or aerosols.';
+    return 'Usually through inhalation of airborne particles or aerosols.';
   }
 
-  return 'Typical human exposure scenarios are not yet well defined in current source records.';
+  return 'Human exposure route is not yet clearly defined.';
 };
 
 export const OrganismDetailPage = () => {
@@ -180,7 +198,7 @@ export const OrganismDetailPage = () => {
     evidence: range.evidence,
   }));
   const externalProfile = externalProfileByOrganismId[organism.id];
-  const toxinCategorySummary = summarizeToxinCategory(data.venoms);
+  const toxinCategorySummary = summarizeToxinCategory(data.venoms, venomDetails);
   const humanExposureSummary = summarizeHumanExposure(deliveryMechanism?.route);
 
   return (
@@ -216,11 +234,9 @@ export const OrganismDetailPage = () => {
               <h3>Reference summary</h3>
               {externalProfile ? (
                 <>
-                  <ul>
-                    {externalProfile.summaryPoints.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
+                  {externalProfile.summaryPoints.map((point) => (
+                    <p key={point}>{point}</p>
+                  ))}
                   <p className="muted">Summarized from an external species reference page.</p>
                   <a href={externalProfile.sourceUrl} target="_blank" rel="noreferrer">
                     Open {externalProfile.sourceLabel}
