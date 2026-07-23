@@ -126,10 +126,21 @@ const summarizeHumanExposure = (route: ExposureRoute | undefined): string => {
   return 'Human exposure route is not yet clearly defined.';
 };
 
-export const OrganismDetailPage = () => {
+interface OrganismDetailPageProps {
+  organismSlugOverride?: string;
+  showInlineSummary?: boolean;
+  showOverviewLine?: boolean;
+}
+
+export const OrganismDetailPage = ({
+  organismSlugOverride,
+  showInlineSummary = true,
+  showOverviewLine = true,
+}: OrganismDetailPageProps = {}) => {
   const [data, setData] = useState<OrganismProfileData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const { organismSlug } = useParams();
+  const { organismSlug: routeOrganismSlug } = useParams();
+  const organismSlug = organismSlugOverride ?? routeOrganismSlug;
   const unknownSlug = organismSlug ? !isKnownOrganismSlug(organismSlug) : false;
 
   useEffect(() => {
@@ -208,17 +219,19 @@ export const OrganismDetailPage = () => {
           <h1>
             {organism.scientificName} ({organism.commonName})
           </h1>
-          <p>{organism.overview}</p>
-          <div className="organism-summary-details">
-            <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
-              <h3>Toxin category</h3>
-              <p>{toxinCategorySummary}</p>
-            </section>
-            <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
-              <h3>Exposure to humans</h3>
-              <p>{humanExposureSummary}</p>
-            </section>
-          </div>
+          {showOverviewLine ? <p>{organism.overview}</p> : null}
+          {showInlineSummary ? (
+            <div className="organism-summary-details">
+              <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
+                <h3>Toxin category</h3>
+                <p>{toxinCategorySummary}</p>
+              </section>
+              <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
+                <h3>Exposure to humans</h3>
+                <p>{humanExposureSummary}</p>
+              </section>
+            </div>
+          ) : null}
         </article>
 
         <section className="organism-story-section">

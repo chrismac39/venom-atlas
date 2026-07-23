@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useAtlasRouteSync } from '../hooks/useAtlasRouteSync';
-import { defaultOrganismSlug, defaultToxinSlug } from '../services/atlasRouting';
 
 type AtlasTheme = 'light' | 'dark' | 'neon-dark';
 
@@ -75,14 +74,45 @@ export const Layout = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (location.pathname !== '/' || !location.hash) {
+      return;
+    }
+
+    const targetId = decodeURIComponent(location.hash.replace('#', '').trim());
+    if (!targetId) {
+      return;
+    }
+
+    const runScroll = () => {
+      const targetElement = document.getElementById(targetId);
+      if (!targetElement) {
+        return;
+      }
+
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      if (targetElement instanceof HTMLElement) {
+        targetElement.focus({ preventScroll: true });
+      }
+    };
+
+    window.requestAnimationFrame(runScroll);
+  }, [location.hash, location.pathname]);
+
   return (
     <>
       <nav ref={navRef} className="primary" aria-label="Main navigation">
         <Link to="/">Venom Atlas</Link>
-        <Link to="/organisms">Organisms</Link>
-        <Link to={`/toxins/${defaultToxinSlug}`}>Molecules</Link>
-        <Link to={`/toxins/${defaultToxinSlug}/physiology`}>Physiology</Link>
-        <Link to={`/organisms/${defaultOrganismSlug}/geography`}>Geography</Link>
+        <Link to="/#section-organisms">Organisms</Link>
+        <Link to="/#section-organism-profile">Profile</Link>
+        <Link to="/#section-geography">Geography</Link>
+        <Link to="/#section-mechanisms">Mechanisms</Link>
+        <Link to="/#section-toxin-categorization">Categorization</Link>
+        <Link to="/#section-toxin-charts">Charts</Link>
+        <Link to="/#section-chemistry">Chemistry</Link>
+        <Link to="/#section-human-physiology">Human Physiology</Link>
+
         <label className="theme-switcher" htmlFor="theme-select">
           Theme
           <select

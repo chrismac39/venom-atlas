@@ -10,9 +10,14 @@ import {
   organismIdFromSlug,
 } from '../../services/atlasRouting';
 
-export const GeographyPage = () => {
+interface GeographyPageProps {
+  organismSlugOverride?: string;
+}
+
+export const GeographyPage = ({ organismSlugOverride }: GeographyPageProps = {}) => {
   const [ranges, setRanges] = useState<GeographicRange[]>([]);
-  const { organismSlug } = useParams();
+  const { organismSlug: routeOrganismSlug } = useParams();
+  const organismSlug = organismSlugOverride ?? routeOrganismSlug;
   const unknownSlug = organismSlug ? !isKnownOrganismSlug(organismSlug) : false;
 
   useEffect(() => {

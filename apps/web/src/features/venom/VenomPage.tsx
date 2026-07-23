@@ -13,9 +13,15 @@ import {
   toxinSlugFromId,
 } from '../../services/atlasRouting';
 
-export const VenomPage = () => {
+interface VenomPageProps {
+  organismSlugOverride?: string;
+  mode?: 'full' | 'categorization' | 'charts';
+}
+
+export const VenomPage = ({ organismSlugOverride, mode = 'full' }: VenomPageProps = {}) => {
   const [data, setData] = useState<VenomDetail | null>(null);
-  const { organismSlug } = useParams();
+  const { organismSlug: routeOrganismSlug } = useParams();
+  const organismSlug = organismSlugOverride ?? routeOrganismSlug;
   const unknownSlug = organismSlug ? !isKnownOrganismSlug(organismSlug) : false;
 
   useEffect(() => {
@@ -51,6 +57,75 @@ export const VenomPage = () => {
 
   if (!data) {
     return <section className="panel">Loading venom profile...</section>;
+  }
+
+  const toxinFamilies = Array.from(
+    new Set(data.toxins.map((toxin) => toxin.family).filter((family): family is string => Boolean(family))),
+  );
+
+  if (mode === 'categorization') {
+    return (
+      <section className="grid">
+        <article className="panel">
+          <h1>Toxin categorization</h1>
+          <p>{data.venom.description}</p>
+          <p>
+            <strong>Venom profile:</strong> {data.venom.name}
+          </p>
+          <p>
+            <strong>Biological role:</strong> {data.venom.ecologicalRoleSummary}
+          </p>
+          <EvidenceBadge evidence={data.venom.evidence} />
+        </article>
+
+        <section className="panel">
+          <h3>Category coverage</h3>
+          <p>
+            <strong>Toxin entities:</strong> {data.toxins.length}
+          </p>
+          <p>
+            <strong>Toxin families:</strong>{' '}
+            {toxinFamilies.length > 0 ? toxinFamilies.join(', ') : 'Unclassified'}
+          </p>
+          <p>
+            <strong>Component categories:</strong>{' '}
+            {Array.from(new Set(data.components.map((component) => component.componentCategory))).join(
+              ', ',
+            ) || 'Not yet sourced'}
+          </p>
+        </section>
+      </section>
+    );
+  }
+
+  if (mode === 'charts') {
+    return (
+      <section className="grid">
+        <VegaChart
+          title="Toxin composition overview"
+          summary="Evidence-aware BI charting. Unsourced values are intentionally left unquantified."
+          spec={buildVenomCompositionSpec(data.components)}
+        />
+
+        <section className="panel">
+          <h3>BI summary signals</h3>
+          <p>
+            <strong>Quantified toxin % breakdown:</strong> Not yet sourced with sufficient confidence.
+          </p>
+          <p>
+            <strong>Fatal dose estimates:</strong> Not yet sourced for this atlas sample.
+          </p>
+          <p>
+            <strong>Chemical category breakdown:</strong> {data.components.length} categorized component
+            {data.components.length === 1 ? '' : 's'} tracked.
+          </p>
+          <p className="muted">
+            Chart blocks are structured for classic BI-style expansion as additional quantitative
+            evidence is added.
+          </p>
+        </section>
+      </section>
+    );
   }
 
   return (

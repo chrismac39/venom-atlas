@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Layout } from './Layout';
-import { LandingPage } from '../features/atlas/LandingPage';
+import { AtlasMonopage } from '../features/atlas/AtlasMonopage';
 import { NotFoundPage } from '../features/atlas/NotFoundPage';
 import { OrganismsPage } from '../features/organism/OrganismsPage';
 import { OrganismDetailPage } from '../features/organism/OrganismDetailPage';
@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, element: <LandingPage /> },
+      { index: true, element: <AtlasMonopage /> },
       { path: 'organisms', element: <OrganismsPage /> },
       { path: 'organisms/:organismSlug', element: <OrganismDetailPage /> },
       { path: 'organisms/:organismSlug/venom', element: <VenomPage /> },

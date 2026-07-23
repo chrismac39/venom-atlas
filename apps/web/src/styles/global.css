@@ -6,6 +6,10 @@
   --motion-lift-duration: 200ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,13 +28,13 @@ a {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: var(--space-4);
+  padding: calc(var(--top-ribbon-height) + var(--space-4)) var(--space-4) var(--space-4);
 }
 
 main.main-organism-route {
   max-width: none;
   width: 100%;
-  padding: var(--space-3) var(--space-4);
+  padding: calc(var(--top-ribbon-height) + var(--space-3)) var(--space-4) var(--space-3);
 }
 
 .panel {
@@ -74,8 +78,10 @@ h3 {
 }
 
 nav.primary {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
   border-bottom: 1px solid var(--rule);
   padding: var(--space-2) var(--space-4);
@@ -169,17 +175,6 @@ select {
     0 14px 28px color-mix(in srgb, black, transparent 94%);
 }
 
-.organism-group-slicer {
-  display: inline-grid;
-  gap: 0.35rem;
-  margin-top: var(--space-2);
-}
-
-.organism-group-slicer select {
-  min-width: 18rem;
-  border-color: var(--accent-science);
-}
-
 .organisms-page {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -187,6 +182,226 @@ select {
   min-height: 24rem;
   overflow: hidden;
   width: 100%;
+}
+
+.organisms-page.organisms-page-embedded {
+  grid-template-rows: auto;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+}
+
+.organisms-page.organisms-page-embedded .organism-page-scroll-region {
+  min-height: 0;
+  overflow-y: visible;
+}
+
+.atlas-monopage {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.atlas-monopage-shell {
+  position: relative;
+}
+
+.atlas-monopage-shell.has-global-summary .atlas-monopage {
+  padding-top: calc(var(--global-summary-height, 0px) + var(--space-2));
+}
+
+.atlas-global-summary-pills {
+  position: fixed;
+  top: calc(var(--top-ribbon-height) + 0.85rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(860px, calc(100vw - 2.2rem));
+  z-index: 19;
+}
+
+.atlas-global-summary-strip {
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 58%);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--panel), black 14%);
+  box-shadow:
+    0 10px 26px color-mix(in srgb, black, transparent 82%),
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 92%) inset;
+  padding: 0.58rem 0.82rem;
+  display: grid;
+  gap: 0.2rem;
+  pointer-events: none;
+}
+
+.atlas-global-summary-line {
+  margin: 0;
+  line-height: 1.25;
+  font-size: 0.84rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.atlas-global-summary-species {
+  font-family: 'Literata', 'Times New Roman', serif;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.atlas-monopage-locked {
+  filter: saturate(0.62) contrast(0.94) blur(0.8px);
+  opacity: 0.34;
+  pointer-events: none;
+  user-select: none;
+}
+
+.atlas-organism-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: clamp(1rem, 2.2vw, 2rem);
+  background:
+    radial-gradient(circle at 18% 18%, color-mix(in srgb, var(--accent-science), transparent 80%), transparent 35%),
+    radial-gradient(circle at 82% 82%, color-mix(in srgb, var(--warning), transparent 86%), transparent 42%),
+    color-mix(in srgb, var(--bg), transparent 24%);
+  backdrop-filter: blur(4px);
+}
+
+.atlas-organism-gate-card {
+  width: min(900px, 100%);
+  padding: clamp(1rem, 2vw, 1.8rem);
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 56%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent-science), transparent 91%),
+    color-mix(in srgb, var(--panel), black 8%)
+  );
+  box-shadow:
+    0 22px 48px color-mix(in srgb, black, transparent 70%),
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 90%) inset;
+}
+
+.atlas-organism-gate-card h1 {
+  margin: 0.15rem 0;
+  line-height: 1.2;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+}
+
+.atlas-organism-gate-card > p {
+  margin: 0;
+}
+
+.atlas-organism-gate-card h2 {
+  margin: var(--space-2) 0 0;
+}
+
+.atlas-organism-gate-toolbar {
+  margin-top: var(--space-2);
+  display: grid;
+  gap: var(--space-2);
+  grid-template-columns: minmax(0, 1.8fr) minmax(170px, 1fr);
+}
+
+.atlas-organism-gate-search,
+.atlas-organism-gate-sort {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.atlas-organism-gate-search input,
+.atlas-organism-gate-sort select {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 64%);
+  background: color-mix(in srgb, var(--panel-soft), black 4%);
+}
+
+.atlas-organism-gate-options {
+  margin-top: var(--space-3);
+  display: grid;
+  gap: var(--space-2);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.atlas-organism-option {
+  display: grid;
+  gap: 0.2rem;
+  text-align: left;
+  min-height: 5.4rem;
+  border-radius: 10px;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--rule), white 9%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--panel-soft), black 2%),
+    color-mix(in srgb, var(--panel), black 8%)
+  );
+  cursor: pointer;
+}
+
+.atlas-organism-option:hover {
+  border-color: color-mix(in srgb, var(--accent-science), var(--rule) 42%);
+  transform: translateY(-1px);
+}
+
+.atlas-organism-option.atlas-organism-option-selected {
+  border-color: color-mix(in srgb, var(--accent-science), white 20%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 88%) inset;
+}
+
+.atlas-scroll-section {
+  scroll-margin-top: calc(var(--top-ribbon-height) + var(--space-2));
+  border: 1px solid color-mix(in srgb, var(--rule), transparent 18%);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--panel), black 4%),
+    color-mix(in srgb, var(--panel-soft), black 2%)
+  );
+  transition: opacity 220ms var(--motion-lift-curve), transform 220ms var(--motion-lift-curve),
+    border-color 220ms var(--motion-lift-curve), box-shadow 220ms var(--motion-lift-curve);
+  opacity: 0.85;
+  transform: translateY(0.45rem);
+}
+
+.atlas-scroll-section[data-in-focus='true'] {
+  opacity: 1;
+  transform: translateY(0);
+  border-color: color-mix(in srgb, var(--accent-science), var(--rule) 58%);
+  box-shadow:
+    0 6px 16px color-mix(in srgb, black, transparent 90%),
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 90%) inset;
+}
+
+.atlas-scroll-section:focus {
+  outline: 2px solid color-mix(in srgb, var(--accent-science), white 18%);
+  outline-offset: 3px;
+}
+
+.atlas-scroll-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid color-mix(in srgb, var(--rule), transparent 34%);
+}
+
+.atlas-scroll-section-header h2 {
+  margin: 0;
+}
+
+.atlas-scroll-section-content {
+  margin-top: var(--space-3);
+}
+
+.atlas-scroll-section-hero {
+  opacity: 1;
+  transform: none;
 }
 
 .organisms-page > header {
@@ -224,17 +439,13 @@ select {
 }
 
 .organism-overview-sticky {
-  position: sticky;
-  top: var(--top-ribbon-height);
-  z-index: 3;
+  position: static;
+  top: auto;
+  z-index: auto;
   padding: var(--space-2) 0 var(--space-2);
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--panel), black 8%),
-    color-mix(in srgb, var(--panel-soft), black 4%)
-  );
-  border-bottom: 1px solid var(--rule);
-  box-shadow: 0 8px 24px color-mix(in srgb, black, transparent 82%);
+  background: transparent;
+  border-bottom: 1px solid color-mix(in srgb, var(--rule), transparent 35%);
+  box-shadow: none;
 }
 
 .organism-story-section-large {
@@ -253,6 +464,37 @@ select {
 }
 
 @media (max-width: 900px) {
+  .atlas-organism-gate {
+    align-content: end;
+  }
+
+  .atlas-organism-gate-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .atlas-monopage-shell.has-global-summary .atlas-monopage {
+    padding-top: var(--space-2);
+  }
+
+  .atlas-global-summary-pills {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    z-index: auto;
+    margin-bottom: var(--space-2);
+  }
+
+  .atlas-global-summary-strip {
+    pointer-events: auto;
+  }
+
+  .atlas-scroll-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .organism-story {
     height: auto;
     min-height: 0;
@@ -285,6 +527,19 @@ select {
   .organism-summary-details {
     grid-template-columns: 1fr;
   }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .atlas-scroll-section {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .organism-folder {
@@ -292,40 +547,27 @@ select {
   gap: var(--space-1);
 }
 
-.organism-folder-listing {
-  display: grid;
-  gap: var(--space-2);
+.organism-directory-list {
   width: 100%;
 }
 
-.organism-folder-section {
-  padding-bottom: var(--space-2);
-  border-bottom: 1px solid var(--rule);
-}
-
-.organism-folder-section:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.organism-folder-section h2 {
+.organism-plain-list {
   margin: 0;
-}
-
-.organism-folder-list {
-  margin: 0.45rem 0 0;
   padding-left: 0;
   list-style: none;
   display: grid;
-  gap: 0.35rem;
+  gap: 0.45rem;
 }
 
-.organism-entry-line {
-  padding-left: 1rem;
-}
-
-.organism-folder-empty {
-  padding-left: 0;
+.organism-plain-item {
+  border: 1px solid color-mix(in srgb, var(--rule), transparent 22%);
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--panel-soft), black 1%),
+    color-mix(in srgb, var(--panel), black 6%)
+  );
 }
 
 .organism-taxonomy-path {
