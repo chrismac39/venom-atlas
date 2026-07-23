@@ -13,7 +13,7 @@
 body {
   margin: 0;
   font-family: 'IBM Plex Serif', Georgia, serif;
-  background: radial-gradient(circle at 20% 10%, #222222, var(--bg) 55%);
+  background: radial-gradient(circle at 20% 10%, var(--bg-ambient), var(--bg) 55%);
   color: var(--text);
 }
 
@@ -90,6 +90,21 @@ nav.primary {
     color-mix(in srgb, var(--panel-soft), black 2%)
   );
   box-shadow: 0 6px 16px color-mix(in srgb, black, transparent 88%);
+}
+
+.theme-switcher {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+  letter-spacing: 0.03em;
+}
+
+.theme-switcher select {
+  min-width: 10.6rem;
+  border-color: color-mix(in srgb, var(--accent-science), var(--rule) 68%);
 }
 
 .badge {

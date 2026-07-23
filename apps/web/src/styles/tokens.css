@@ -1,17 +1,18 @@
 :root {
-  --bg: #171818;
-  --panel: #222423;
-  --panel-soft: #262a29;
-  --text: #f2eee6;
-  --muted: #b8b2a6;
-  --rule: #3b3f3d;
-  --accent-science: #c58f3a;
-  --warning: #b86842;
-  --uncertainty: #7c7f8d;
-  --evidence-high: #5f8b6f;
-  --evidence-moderate: #988d56;
-  --evidence-low: #9b614a;
-  --evidence-unknown: #6b6f7a;
+  --bg: #11161d;
+  --panel: #1a232f;
+  --panel-soft: #202d3d;
+  --text: #edf3fb;
+  --muted: #9fb1c5;
+  --rule: #334455;
+  --accent-science: #63b7e8;
+  --warning: #da8a58;
+  --uncertainty: #72839a;
+  --evidence-high: #63a381;
+  --evidence-moderate: #b8a85b;
+  --evidence-low: #c06f56;
+  --evidence-unknown: #7d8896;
+  --bg-ambient: #1f2b3d;
   --atom-cpk-carbon: #808080;
   --atom-cpk-oxygen: #d94d4d;
   --atom-cpk-nitrogen: #4f7dcc;
@@ -22,4 +23,55 @@
   --space-4: 1.8rem;
   --space-5: 2.4rem;
   --radius: 8px;
+}
+
+:root[data-theme='light'] {
+  --bg: #f3f7fb;
+  --panel: #ffffff;
+  --panel-soft: #eef3f9;
+  --text: #162030;
+  --muted: #5b6d85;
+  --rule: #cad6e6;
+  --accent-science: #0f74c9;
+  --warning: #cb6b3f;
+  --uncertainty: #7b8ca3;
+  --evidence-high: #2f8b62;
+  --evidence-moderate: #a68b2a;
+  --evidence-low: #b45743;
+  --evidence-unknown: #6f7e94;
+  --bg-ambient: #dde8f6;
+}
+
+:root[data-theme='dark'] {
+  --bg: #11161d;
+  --panel: #1a232f;
+  --panel-soft: #202d3d;
+  --text: #edf3fb;
+  --muted: #9fb1c5;
+  --rule: #334455;
+  --accent-science: #63b7e8;
+  --warning: #da8a58;
+  --uncertainty: #72839a;
+  --evidence-high: #63a381;
+  --evidence-moderate: #b8a85b;
+  --evidence-low: #c06f56;
+  --evidence-unknown: #7d8896;
+  --bg-ambient: #1f2b3d;
+}
+
+:root[data-theme='neon-dark'] {
+  --bg: #090b14;
+  --panel: #11162a;
+  --panel-soft: #171e36;
+  --text: #e8f7ff;
+  --muted: #9ab0c8;
+  --rule: #2c375f;
+  --accent-science: #1ee7c7;
+  --warning: #ff7d66;
+  --uncertainty: #7d88ad;
+  --evidence-high: #00d38f;
+  --evidence-moderate: #d8be4d;
+  --evidence-low: #ff6d83;
+  --evidence-unknown: #7280a2;
+  --bg-ambient: #1a1152;
 }
