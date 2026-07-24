@@ -19,6 +19,7 @@ if (!organism || !geography) {
 }
 
 const antMapsEmbedUrl = organism.externalProfile?.antMapsEmbedUrl;
+const atlasBaseHref = `/?organism=${organism.organism.slug}`;
 ---
 
 <PageLayout title={`${organism.organism.scientificName} geography | Venom Atlas`} description="Ecology and range data.">
@@ -29,6 +30,11 @@ const antMapsEmbedUrl = organism.externalProfile?.antMapsEmbedUrl;
   </section>
 
   <RangeMapPanel ranges={geography.ranges} />
+
+  <section class="panel">
+    <h2>Return to atlas</h2>
+    <a href={`${atlasBaseHref}#section-geography`}>Resume monopage at geography</a>
+  </section>
 
   <section class="panel">
     <h2>Interactive species range map</h2>

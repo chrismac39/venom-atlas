@@ -4,7 +4,7 @@ import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { VegaChart } from '../../../visualizations/vega/VegaChart';
 import { buildVenomCompositionSpec } from '../../../visualizations/vega/venomCompositionSpec';
-import { getAllOrganisms, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
+import { getAllOrganisms, getAllToxins, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
 
 export const getStaticPaths = async () => {
   return getAllOrganisms().map((entry) => ({
@@ -15,6 +15,10 @@ export const getStaticPaths = async () => {
 const { slug } = Astro.params;
 const organism = slug ? getOrganismBySlug(slug) : undefined;
 const venom = slug ? getVenomByOrganismSlug(slug) : undefined;
+const featuredToxinSlug = venom
+  ? getAllToxins().find((entry) => entry.toxin.venomId === `ven-${venom.venom.slug}`)?.toxin.slug
+  : undefined;
+const atlasBaseHref = organism ? `/?organism=${organism.organism.slug}` : '/';
 
 if (!organism || !venom) {
   throw new Error(`Missing organism/venom for slug: ${slug}`);
@@ -38,6 +42,11 @@ if (!organism || !venom) {
   />
 
   <section class="panel">
+    <h2>Return to atlas</h2>
+    <a href={`${atlasBaseHref}#section-toxin-categorization`}>Resume monopage at toxin categorization</a>
+  </section>
+
+  <section class="panel">
     <h2>Component categories</h2>
     <ul>
       {venom.components.map((component) => (
@@ -46,6 +55,6 @@ if (!organism || !venom) {
         </li>
       ))}
     </ul>
-    <a href="/toxins/solenopsin-a">Open Solenopsin A molecule page</a>
+    {featuredToxinSlug ? <a href={`/toxins/${featuredToxinSlug}`}>Open featured toxin molecule page</a> : null}
   </section>
 </PageLayout>

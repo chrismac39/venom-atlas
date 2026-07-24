@@ -7,6 +7,17 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+const normalizedPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const isAtlasRoute = normalizedPath === '/' || normalizedPath === '/atlas';
+const atlasSectionLinks = [
+  { href: '/#section-organism-profile', label: 'Profile' },
+  { href: '/#section-geography', label: 'Geography' },
+  { href: '/#section-mechanisms', label: 'Mechanisms' },
+  { href: '/#section-toxin-categorization', label: 'Categorization' },
+  { href: '/#section-toxin-charts', label: 'Charts' },
+  { href: '/#section-chemistry', label: 'Chemistry' },
+  { href: '/#section-human-physiology', label: 'Human Physiology' },
+];
 ---
 
 <!doctype html>
@@ -22,7 +33,9 @@ const { title, description } = Astro.props;
   <body>
     <nav class="primary" aria-label="Main navigation">
       <a href="/">Venom Atlas</a>
-      <a href="/atlas">Atlas</a>
+      {isAtlasRoute
+        ? atlasSectionLinks.map((link) => <a href={link.href}>{link.label}</a>)
+        : null}
       <a href="/organisms">Organisms</a>
       <a href="/toxins">Toxins</a>
       <a href="/effects">Effects</a>
@@ -33,5 +46,28 @@ const { title, description } = Astro.props;
     <main>
       <slot />
     </main>
+    <script is:inline>
+      (() => {
+        const nav = document.querySelector('nav.primary');
+        if (!nav) {
+          return;
+        }
+
+        const syncTopRibbonHeight = () => {
+          const navHeight = Math.ceil(nav.getBoundingClientRect().height);
+          if (navHeight > 0) {
+            document.documentElement.style.setProperty('--top-ribbon-height', `${navHeight}px`);
+          }
+        };
+
+        syncTopRibbonHeight();
+        window.addEventListener('resize', syncTopRibbonHeight);
+
+        if ('ResizeObserver' in window) {
+          const resizeObserver = new ResizeObserver(syncTopRibbonHeight);
+          resizeObserver.observe(nav);
+        }
+      })();
+    </script>
   </body>
 </html>

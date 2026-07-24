@@ -1,0 +1,85 @@
+{
+  "id": "iv-solenopsin-a-nav",
+  "label": "Sodium-channel interaction context",
+  "target": {
+    "name": "Voltage-gated sodium channel (illustrative scaffold)",
+    "structureId": "NAV-ILLUSTRATIVE",
+    "chains": ["A"]
+  },
+  "venomComponent": {
+    "name": "Solenopsin A (illustrative placement)",
+    "chains": ["T"]
+  },
+  "evidence": {
+    "level": "illustrative",
+    "source": "Static curation for visualization workflow",
+    "notes": "This sample demonstrates UI and annotation plumbing only. It must not be interpreted as experimentally validated binding geometry."
+  },
+  "ions": [
+    {
+      "element": "NA",
+      "chain": "I",
+      "residueNumber": 1,
+      "label": "Sodium ion"
+    }
+  ],
+  "interactions": [
+    {
+      "id": "int-arg12-glu818",
+      "type": "ionic",
+      "toxinResidue": {
+        "chain": "T",
+        "residueName": "ARG",
+        "residueNumber": 12
+      },
+      "targetResidue": {
+        "chain": "A",
+        "residueName": "GLU",
+        "residueNumber": 818
+      },
+      "distanceAngstroms": 3.2,
+      "evidenceNote": "Illustrative contact annotation"
+    },
+    {
+      "id": "int-lys13-asp821",
+      "type": "hydrogen_bond",
+      "toxinResidue": {
+        "chain": "T",
+        "residueName": "LYS",
+        "residueNumber": 13
+      },
+      "targetResidue": {
+        "chain": "A",
+        "residueName": "ASP",
+        "residueNumber": 821
+      },
+      "distanceAngstroms": 2.9,
+      "evidenceNote": "Illustrative contact annotation"
+    }
+  ],
+  "cameraPresets": [
+    {
+      "id": "full-complex",
+      "label": "Full complex",
+      "description": "Whole channel-toxin context",
+      "selection": {}
+    },
+    {
+      "id": "binding-site",
+      "label": "Binding site",
+      "description": "Focus on annotated contact residues",
+      "selection": {
+        "chain": ["A", "T"],
+        "resi": [818, 821, 12, 13]
+      }
+    },
+    {
+      "id": "pore-view",
+      "label": "Pore and ions",
+      "description": "Focus on pore-side sodium ion region",
+      "selection": {
+        "chain": ["A", "I"]
+      }
+    }
+  ]
+}

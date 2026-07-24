@@ -5,12 +5,15 @@ import CitationList from '../../../components/astro/CitationList.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { MoleculeViewer } from '../../../molecular/components/MoleculeViewer';
 import type { MolecularRepresentation } from '@venom-atlas/visualization-contracts';
-import { getAllToxins, getCitationsByIds, getToxinBySlug } from '../../../lib/content';
+import { getAllToxins, getCitationsByIds, getOrganismSlugByToxinSlug, getToxinBySlug } from '../../../lib/content';
+import { pickPreferred3dAsset } from '../../../lib/structure-assets';
 
 const supportedRepresentations: MolecularRepresentation[] = [
   'ball_and_stick',
   'stick',
   'space_filling',
+  'molecular_surface',
+  'electrostatic_surface',
   'two_dimensional_skeletal',
 ];
 
@@ -22,12 +25,14 @@ export const getStaticPaths = async () => {
 
 const { slug } = Astro.params;
 const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
+const organismSlug = slug ? getOrganismSlugByToxinSlug(slug) : undefined;
+const atlasBaseHref = organismSlug ? `/?organism=${organismSlug}` : '/';
 
 if (!toxinBundle) {
   throw new Error(`Missing toxin bundle for slug: ${slug}`);
 }
 
-const structureAsset = toxinBundle.structureAssets.find((asset) => asset.verified);
+const structureAsset = pickPreferred3dAsset(toxinBundle.structureAssets);
 const structureFormat =
   structureAsset && structureAsset.format !== 'svg' ? structureAsset.format : undefined;
 const model = {
@@ -77,6 +82,11 @@ const citations = getCitationsByIds(toxinBundle.molecularEntity.evidence.citatio
   <section class="panel">
     <h2>Evidence and sources</h2>
     <CitationList citations={citations} />
+  </section>
+
+  <section class="panel">
+    <h2>Return to atlas</h2>
+    <a href={`${atlasBaseHref}#section-chemistry`}>Resume monopage at chemistry</a>
   </section>
 
   <section class="panel">

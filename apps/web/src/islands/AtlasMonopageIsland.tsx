@@ -6,6 +6,7 @@ import type { MoleculeRenderModel } from '../molecular/types';
 import { CitationList } from '../components/CitationList';
 import { EvidenceBadge } from '../components/EvidenceBadge';
 import { MoleculeViewer } from '../molecular/components/MoleculeViewer';
+import { StructureComplexViewer } from '../molecular/components/StructureComplexViewer';
 import { AnatomySvg } from '../visualizations/svg/AnatomySvg';
 import { DeliveryMechanismDiagram } from '../visualizations/svg/DeliveryMechanismDiagram';
 import { VegaChart } from '../visualizations/vega/VegaChart';
@@ -75,6 +76,25 @@ export interface AtlasOrganismData {
     slug: string;
     displayName: string;
     family?: string;
+    molecularClass: MoleculeRenderModel['molecularClass'];
+    formula: string | null;
+    molecularWeight: number | null;
+    structureDataSource: string | null;
+    structure3dUrl?: string;
+    structure3dFormat?: 'sdf' | 'mol' | 'mol2' | 'pdb' | 'mmcif';
+    structure2dUrl?: string;
+    interactionVisualization?: {
+      id: string;
+      label: string;
+      annotationPath: string;
+      structureAssetPath: string;
+      structureFormat: 'pdb' | 'mmcif';
+      evidence: {
+        level: 'experimental' | 'computed' | 'illustrative';
+        source: string;
+        notes?: string;
+      };
+    };
     evidence: {
       confidence: EvidenceAssessment['confidence'];
       evidenceType: EvidenceAssessment['evidenceType'];
@@ -82,6 +102,7 @@ export interface AtlasOrganismData {
       citationIds: string[];
       notes?: string;
     };
+    citations: Citation[];
   }>;
   primaryToxin: {
     slug: string;
@@ -266,14 +287,60 @@ const summarizeToxinCategory = (selected: AtlasOrganismData): string => {
   return `Venom - ${leadCompound}.`;
 };
 
+const firstSentence = (text: string): string => {
+  const normalized = text.replace(/\s+/g, ' ').trim();
+  if (!normalized) {
+    return 'Overview not yet sourced.';
+  }
+
+  const match = normalized.match(/^.+?[.!?](?:\s|$)/);
+  return (match ? match[0] : normalized).trim();
+};
+
+const renderChemicalFormula = (formula: string | null): ReactNode => {
+  if (!formula) {
+    return 'Data not yet sourced.';
+  }
+
+  const parts = formula.match(/[A-Z][a-z]?|\d+|[^A-Za-z\d]+/g);
+  if (!parts) {
+    return formula;
+  }
+
+  return (
+    <span className="chem-formula" aria-label={`Chemical formula ${formula}`}>
+      {parts.map((part, index) =>
+        /^\d+$/.test(part) ? <sub key={`${part}-${index}`}>{part}</sub> : <span key={`${part}-${index}`}>{part}</span>,
+      )}
+    </span>
+  );
+};
+
 const supportedRepresentations: MolecularRepresentation[] = [
   'ball_and_stick',
   'stick',
   'space_filling',
+  'molecular_surface',
+  'electrostatic_surface',
   'two_dimensional_skeletal',
 ];
 
-const sectionHref = (sectionKind: AtlasSectionKind, selected: AtlasOrganismData): string => {
+const supportedComplexRepresentations: MolecularRepresentation[] = [
+  'target_complex',
+  'cartoon',
+  'stick',
+  'space_filling',
+  'molecular_surface',
+  'electrostatic_surface',
+];
+
+const sectionHref = (
+  sectionKind: AtlasSectionKind,
+  selected: AtlasOrganismData,
+  selectedToxinSlug?: string,
+): string => {
+  const toxinSlug = selectedToxinSlug ?? selected.primaryToxin?.slug;
+
   if (sectionKind === 'organism-profile') {
     return `/organisms/${selected.slug}`;
   }
@@ -284,12 +351,12 @@ const sectionHref = (sectionKind: AtlasSectionKind, selected: AtlasOrganismData)
     return `/organisms/${selected.slug}/venom`;
   }
   if (sectionKind === 'mechanisms') {
-    return selected.primaryToxin ? `/toxins/${selected.primaryToxin.slug}/mechanism` : '/toxins';
+    return toxinSlug ? `/toxins/${toxinSlug}/mechanism` : '/toxins';
   }
   if (sectionKind === 'chemistry') {
-    return selected.primaryToxin ? `/toxins/${selected.primaryToxin.slug}` : '/toxins';
+    return toxinSlug ? `/toxins/${toxinSlug}` : '/toxins';
   }
-  return selected.primaryToxin ? `/toxins/${selected.primaryToxin.slug}/physiology` : '/effects';
+  return toxinSlug ? `/toxins/${toxinSlug}/physiology` : '/effects';
 };
 
 interface ScrollSectionProps {
@@ -315,11 +382,84 @@ const ScrollSection = ({ id, title, dedicatedHref, dedicatedLabel, children }: S
 export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismData[] }) => {
   const rootRef = useRef<HTMLElement | null>(null);
   const globalSummaryRef = useRef<HTMLDivElement | null>(null);
+  const hasAppliedInitialRouteRef = useRef(false);
   const [selectedOrganismSlug, setSelectedOrganismSlug] = useState(organisms[0]?.slug ?? '');
+  const [selectedChemistryToxinSlug, setSelectedChemistryToxinSlug] = useState('');
   const [selectionLocked, setSelectionLocked] = useState(true);
   const [searchValue, setSearchValue] = useState('');
   const [sortMode, setSortMode] = useState<OrganismSortMode>('scientific_asc');
   const [isMapInteractive, setIsMapInteractive] = useState(false);
+
+  useEffect(() => {
+    if (hasAppliedInitialRouteRef.current || organisms.length === 0) {
+      return;
+    }
+
+    hasAppliedInitialRouteRef.current = true;
+
+    const knownSlugs = new Set(organisms.map((organism) => organism.slug));
+    const { searchParams, hash } = new URL(window.location.href);
+    const selectedFromUrl = searchParams.get('organism');
+    const toxinFromUrl = searchParams.get('toxin');
+    const hashSectionId = decodeURIComponent(hash.replace('#', '').trim());
+    const hasValidSectionHash = sections.some((section) => section.id === hashSectionId);
+
+    if (selectedFromUrl && knownSlugs.has(selectedFromUrl)) {
+      setSelectedOrganismSlug(selectedFromUrl);
+    }
+
+    if (toxinFromUrl) {
+      setSelectedChemistryToxinSlug(toxinFromUrl);
+    }
+
+    if (selectedFromUrl || hasValidSectionHash || searchParams.get('unlock') === '1') {
+      setSelectionLocked(false);
+    }
+  }, [organisms]);
+
+  useEffect(() => {
+    if (organisms.length === 0) {
+      return;
+    }
+
+    const knownSlugs = new Set(organisms.map((organism) => organism.slug));
+
+    const applyStateFromUrl = () => {
+      const { searchParams, hash } = new URL(window.location.href);
+      const selectedFromUrl = searchParams.get('organism');
+      const toxinFromUrl = searchParams.get('toxin');
+      const hashSectionId = decodeURIComponent(hash.replace('#', '').trim());
+      const hasValidSectionHash = sections.some((section) => section.id === hashSectionId);
+
+      if (selectedFromUrl && knownSlugs.has(selectedFromUrl)) {
+        setSelectedOrganismSlug(selectedFromUrl);
+      }
+
+      if (toxinFromUrl) {
+        setSelectedChemistryToxinSlug(toxinFromUrl);
+      }
+
+      if (selectedFromUrl || hasValidSectionHash || searchParams.get('unlock') === '1') {
+        setSelectionLocked(false);
+      }
+    };
+
+    const handleHashChange = () => {
+      applyStateFromUrl();
+    };
+
+    const handlePopState = () => {
+      applyStateFromUrl();
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [organisms]);
 
   useEffect(() => {
     if (!selectionLocked) {
@@ -362,6 +502,18 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
     () => organisms.find((entry) => entry.slug === selectedOrganismSlug) ?? organisms[0] ?? null,
     [organisms, selectedOrganismSlug],
   );
+
+  const selectedChemistryToxin = useMemo(() => {
+    if (!selected) {
+      return null;
+    }
+
+    if (selected.toxins.length === 0) {
+      return null;
+    }
+
+    return selected.toxins.find((toxin) => toxin.slug === selectedChemistryToxinSlug) ?? selected.toxins[0];
+  }, [selected, selectedChemistryToxinSlug]);
 
   const taxonomyRanks = useMemo(
     () => [
@@ -416,24 +568,66 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
     [selected],
   );
 
-  const summarySpeciesLabel = `${selected.scientificName} (${selected.commonName})`;
-  const summaryToxinCategory = summarizeToxinCategory(selected);
+  const summarySpeciesLabel = `Organism: ${selected.scientificName} (${selected.commonName})`;
+  const summaryOrganismOverview = firstSentence(selected.overview);
+  const summaryToxinOverview = selectedChemistryToxin
+    ? firstSentence(
+        `${selectedChemistryToxin.displayName}${selectedChemistryToxin.family ? ` (${selectedChemistryToxin.family})` : ''}. ${summarizeToxinCategory(selected)}`,
+      )
+    : summarizeToxinCategory(selected);
+
+  useEffect(() => {
+    if (!selected || selected.toxins.length === 0) {
+      setSelectedChemistryToxinSlug('');
+      return;
+    }
+
+    if (!selected.toxins.some((toxin) => toxin.slug === selectedChemistryToxinSlug)) {
+      setSelectedChemistryToxinSlug(selected.toxins[0].slug);
+    }
+  }, [selected, selectedChemistryToxinSlug]);
 
   useEffect(() => {
     setIsMapInteractive(false);
   }, [selectedOrganismSlug]);
 
+  useEffect(() => {
+    if (selectionLocked || !selectedOrganismSlug) {
+      return;
+    }
+
+    const currentUrl = new URL(window.location.href);
+    if (
+      currentUrl.searchParams.get('organism') === selectedOrganismSlug &&
+      currentUrl.searchParams.get('toxin') === (selectedChemistryToxin?.slug ?? null) &&
+      !currentUrl.searchParams.has('unlock')
+    ) {
+      return;
+    }
+
+    currentUrl.searchParams.set('organism', selectedOrganismSlug);
+    if (selectedChemistryToxin?.slug) {
+      currentUrl.searchParams.set('toxin', selectedChemistryToxin.slug);
+    } else {
+      currentUrl.searchParams.delete('toxin');
+    }
+    currentUrl.searchParams.delete('unlock');
+    const query = currentUrl.searchParams.toString();
+    const href = `${currentUrl.pathname}${query.length > 0 ? `?${query}` : ''}${currentUrl.hash}`;
+    window.history.replaceState(null, '', href);
+  }, [selectedChemistryToxin?.slug, selectedOrganismSlug, selectionLocked]);
+
   const moleculeModel = useMemo(() => {
-    if (!selected?.primaryToxin?.structureUrl || !selected.primaryToxin.structureFormat) {
+    if (!selected || !selectedChemistryToxin?.structure3dUrl || !selectedChemistryToxin.structure3dFormat) {
       return null;
     }
 
     return {
-      entityId: `${selected.slug}-${selected.primaryToxin.slug}`,
-      displayName: selected.primaryToxin.displayName,
-      molecularClass: selected.primaryToxin.molecularClass,
-      structureFormat: selected.primaryToxin.structureFormat,
-      structureUrl: selected.primaryToxin.structureUrl,
+      entityId: `${selected.slug}-${selectedChemistryToxin.slug}`,
+      displayName: selectedChemistryToxin.displayName,
+      molecularClass: selectedChemistryToxin.molecularClass,
+      structureFormat: selectedChemistryToxin.structure3dFormat,
+      structureUrl: selectedChemistryToxin.structure3dUrl,
       defaultRepresentation: 'ball_and_stick' as MolecularRepresentation,
       supportedRepresentations,
       annotations: [
@@ -444,7 +638,31 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
         },
       ],
     };
-  }, [selected]);
+  }, [selected, selectedChemistryToxin]);
+
+  const complexModel = useMemo(() => {
+    if (!selected || !selectedChemistryToxin?.interactionVisualization) {
+      return null;
+    }
+
+    return {
+      entityId: `${selected.slug}-${selectedChemistryToxin.slug}-complex`,
+      displayName: `${selectedChemistryToxin.displayName} target complex`,
+      molecularClass: 'complex' as const,
+      structureFormat: selectedChemistryToxin.interactionVisualization.structureFormat,
+      structureUrl: selectedChemistryToxin.interactionVisualization.structureAssetPath,
+      defaultRepresentation: 'target_complex' as MolecularRepresentation,
+      supportedRepresentations: supportedComplexRepresentations,
+      annotations: [
+        {
+          id: 'ann-complex-evidence',
+          label: 'Interaction context',
+          description:
+            'Rendered from static annotation and structure assets. Biological interactions are not inferred at runtime.',
+        },
+      ],
+    };
+  }, [selected, selectedChemistryToxin]);
 
   useEffect(() => {
     if (selectionLocked) {
@@ -502,6 +720,16 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
 
         if (mostVisible.target instanceof HTMLElement) {
           mostVisible.target.setAttribute('data-in-focus', 'true');
+
+          if (!selectionLocked && mostVisible.target.id) {
+            const url = new URL(window.location.href);
+            if (url.hash !== `#${mostVisible.target.id}`) {
+              url.hash = mostVisible.target.id;
+              const query = url.searchParams.toString();
+              const href = `${url.pathname}${query.length > 0 ? `?${query}` : ''}${url.hash}`;
+              window.history.replaceState(null, '', href);
+            }
+          }
         }
       },
       {
@@ -517,6 +745,29 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
     return () => observer.disconnect();
   }, [selectedOrganismSlug, selectionLocked]);
 
+  useEffect(() => {
+    if (selectionLocked) {
+      return;
+    }
+
+    const targetId = decodeURIComponent(window.location.hash.replace('#', '').trim());
+    if (!targetId) {
+      return;
+    }
+
+    const targetElement = document.getElementById(targetId);
+    if (!targetElement) {
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (targetElement instanceof HTMLElement) {
+        targetElement.focus({ preventScroll: true });
+      }
+    });
+  }, [selectedOrganismSlug, selectionLocked]);
+
   if (!selected) {
     return <p className="panel">No organisms available for monopage rendering.</p>;
   }
@@ -526,13 +777,11 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
       {!selectionLocked ? (
         <aside ref={globalSummaryRef} className="atlas-global-summary-pills" aria-label="Pinned organism summary">
           <section className="atlas-global-summary-strip" role="status" aria-live="polite">
-            <p className="atlas-global-summary-line atlas-global-summary-species">
+            <p className="atlas-global-summary-line">
               {summarySpeciesLabel}
             </p>
-            <p className="atlas-global-summary-line">{selected.overview}</p>
-            <p className="atlas-global-summary-line">
-              <strong>Toxin category:</strong> {summaryToxinCategory}
-            </p>
+            <p className="atlas-global-summary-line">Overview: {summaryOrganismOverview}</p>
+            <p className="atlas-global-summary-line">Toxicology: {summaryToxinOverview}</p>
           </section>
         </aside>
       ) : null}
@@ -547,7 +796,7 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
             key={section.id}
             id={section.id}
             title={section.title}
-            dedicatedHref={sectionHref(section.kind, selected)}
+            dedicatedHref={sectionHref(section.kind, selected, selectedChemistryToxin?.slug)}
             dedicatedLabel={section.dedicatedLabel}
           >
             {section.kind === 'organism-profile' ? (
@@ -763,45 +1012,86 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
 
             {section.kind === 'chemistry' ? (
               <>
-                {selected.primaryToxin ? (
+                {selectedChemistryToxin ? (
                   <div className="panel">
-                    <h1>{selected.primaryToxin.displayName}</h1>
-                    <EvidenceBadge evidence={selected.primaryToxin.evidence} />
-                    <p>
-                      <strong>Molecular class:</strong> {selected.primaryToxin.molecularClass}
-                    </p>
-                    <p>
-                      <strong>Formula:</strong> {selected.primaryToxin.formula ?? 'Data not yet sourced.'}
-                    </p>
-                    <p>
-                      <strong>Molecular weight:</strong>{' '}
-                      {selected.primaryToxin.molecularWeight ?? 'Data not yet sourced.'}
-                    </p>
-                    <p>
-                      <strong>Structure source:</strong>{' '}
-                      {selected.primaryToxin.structureDataSource ?? 'Data not yet sourced.'}
-                    </p>
-                    <p className="muted">
-                      Distinction: molecular identity (entity), molecular geometry (structure file), visual
-                      representation (rendering mode), and biological effect (separate mechanism pages).
-                    </p>
+                    <h1>{selectedChemistryToxin.displayName}</h1>
+                    <section className="chemistry-summary-layout">
+                      <div className="chemistry-summary-copy">
+                        <label htmlFor="chemistry-toxin-select">Chemical component selector</label>
+                        <select
+                          id="chemistry-toxin-select"
+                          value={selectedChemistryToxin.slug}
+                          onChange={(event) => setSelectedChemistryToxinSlug(event.target.value)}
+                          disabled={selected.toxins.length === 1}
+                        >
+                          {selected.toxins.map((toxin) => (
+                            <option key={toxin.slug} value={toxin.slug}>
+                              {toxin.displayName}
+                            </option>
+                          ))}
+                        </select>
+                        <p className="muted">Available toxins in this organism profile: {selected.toxins.length}</p>
+                        <EvidenceBadge evidence={selectedChemistryToxin.evidence} />
+                        <p>
+                          <strong>Molecular class:</strong> {selectedChemistryToxin.molecularClass}
+                        </p>
+                        <p>
+                          <strong>Formula:</strong>{' '}
+                          {selectedChemistryToxin.formula
+                            ? renderChemicalFormula(selectedChemistryToxin.formula)
+                            : 'Data not yet sourced.'}
+                        </p>
+                        <p>
+                          <strong>Molecular weight:</strong>{' '}
+                          {selectedChemistryToxin.molecularWeight ?? 'Data not yet sourced.'}
+                        </p>
+                        <p>
+                          <strong>Structure source:</strong>{' '}
+                          {selectedChemistryToxin.structureDataSource ?? 'Data not yet sourced.'}
+                        </p>
+                        <p className="muted">
+                          Distinction: molecular identity (entity), molecular geometry (structure file), visual
+                          representation (rendering mode), and biological effect (separate mechanism pages).
+                        </p>
+                      </div>
+                      <section className="chemistry-summary-2d" aria-label="2D structure panel">
+                        <h3>2D structure panel</h3>
+                        {selectedChemistryToxin.structure2dUrl ? (
+                          <div className="chemistry-2d-viewport">
+                            <img
+                              className="chemistry-2d-asset"
+                              src={selectedChemistryToxin.structure2dUrl}
+                              alt={`2D skeletal structure for ${selectedChemistryToxin.displayName}`}
+                            />
+                          </div>
+                        ) : (
+                          <p>2D structure asset is not available for this toxin.</p>
+                        )}
+                      </section>
+                    </section>
                   </div>
                 ) : (
-                  <p className="panel">No primary toxin is linked for chemistry preview.</p>
+                  <p className="panel">No toxin is linked for chemistry preview.</p>
                 )}
-                {moleculeModel ? (
-                  <MoleculeViewer model={moleculeModel} />
-                ) : (
-                  <p className="panel">No verified molecular structure asset is available for 3D rendering.</p>
-                )}
-                <section className="panel">
-                  <h3>2D structure panel</h3>
-                  <p>Asset not yet sourced from a verified structure source.</p>
-                </section>
+                <div className="chemistry-render-grid">
+                  {moleculeModel ? (
+                    <MoleculeViewer model={moleculeModel} />
+                  ) : (
+                    <p className="panel">No 3D molecular structure asset is available for this toxin.</p>
+                  )}
+                </div>
                 <section className="panel">
                   <h3>Evidence and sources</h3>
-                  <CitationList citations={selected.citations} />
+                  <CitationList citations={selectedChemistryToxin?.citations ?? []} />
                 </section>
+                {complexModel && selectedChemistryToxin ? (
+                  <StructureComplexViewer
+                    model={complexModel}
+                    annotationPath={selectedChemistryToxin.interactionVisualization?.annotationPath}
+                    fallbackEvidence={selectedChemistryToxin.evidence}
+                    citations={selectedChemistryToxin.citations}
+                  />
+                ) : null}
               </>
             ) : null}
 
@@ -883,13 +1173,14 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
             {sortedOrganisms.length > 0 ? (
               <div className="atlas-organism-gate-options">
                 {sortedOrganisms.map((organism) => (
-                  <button
+                  <a
                     key={organism.slug}
-                    type="button"
                     className={`atlas-organism-option${
                       organism.slug === selectedOrganismSlug ? ' atlas-organism-option-selected' : ''
                     }`}
-                    onClick={() => {
+                    href={`/?organism=${encodeURIComponent(organism.slug)}&unlock=1#section-organism-profile`}
+                    onClick={(event) => {
+                      event.preventDefault();
                       setSelectedOrganismSlug(organism.slug);
                       setSelectionLocked(false);
                       window.requestAnimationFrame(() => {
@@ -899,7 +1190,7 @@ export const AtlasMonopageIsland = ({ organisms }: { organisms: AtlasOrganismDat
                   >
                     <strong>{organism.scientificName}</strong>
                     <span className="muted">{organism.commonName}</span>
-                  </button>
+                  </a>
                 ))}
               </div>
             ) : null}

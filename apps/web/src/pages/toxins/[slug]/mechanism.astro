@@ -2,7 +2,7 @@
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { DeliveryMechanismDiagram } from '../../../visualizations/svg/DeliveryMechanismDiagram';
-import { getAllToxins, getMechanismByToxinSlug, getToxinBySlug } from '../../../lib/content';
+import { getAllToxins, getMechanismByToxinSlug, getOrganismSlugByToxinSlug, getToxinBySlug } from '../../../lib/content';
 
 export const getStaticPaths = async () => {
   return getAllToxins().map((entry) => ({
@@ -13,6 +13,8 @@ export const getStaticPaths = async () => {
 const { slug } = Astro.params;
 const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
 const mechanism = slug ? getMechanismByToxinSlug(slug) : undefined;
+const organismSlug = slug ? getOrganismSlugByToxinSlug(slug) : undefined;
+const atlasBaseHref = organismSlug ? `/?organism=${organismSlug}` : '/';
 
 if (!toxinBundle || !mechanism) {
   throw new Error(`Missing toxin mechanism for slug: ${slug}`);
@@ -51,4 +53,9 @@ const humanSteps = [
     ariaLabel={`Schematic of ${toxinBundle.toxin.displayName} human interaction`}
     steps={humanSteps}
   />
+
+  <section class="panel">
+    <h2>Return to atlas</h2>
+    <a href={`${atlasBaseHref}#section-mechanisms`}>Resume monopage at mechanisms</a>
+  </section>
 </PageLayout>

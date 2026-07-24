@@ -21,7 +21,7 @@ describe('molecular renderer selection', () => {
     expect(renderer?.rendererId).toBe('3dmol');
   });
 
-  it('selects Mol* boundary for protein and complex classes', () => {
+  it('selects Mol* boundary for protein class', () => {
     const renderer = pickMolecularRenderer({
       ...baseModel,
       molecularClass: 'protein',
@@ -29,6 +29,18 @@ describe('molecular renderer selection', () => {
       structureUrl: '/structures/protein.pdb',
     });
     expect(renderer?.rendererId).toBe('molstar-boundary');
+  });
+
+  it('selects 3Dmol for complex class with static pdb asset', () => {
+    const renderer = pickMolecularRenderer({
+      ...baseModel,
+      molecularClass: 'complex',
+      structureFormat: 'pdb',
+      structureUrl: '/structures/complex.pdb',
+      defaultRepresentation: 'target_complex',
+      supportedRepresentations: ['target_complex'],
+    });
+    expect(renderer?.rendererId).toBe('3dmol');
   });
 
   it('returns 2D fallback adapter for unsupported 3D model', () => {

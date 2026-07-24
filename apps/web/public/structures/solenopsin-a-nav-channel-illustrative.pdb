@@ -1,0 +1,43 @@
+HEADER    ILLUSTRATIVE SODIUM CHANNEL TOXIN CONTEXT
+TITLE     SOLENOPSIN A INTERACTION SCAFFOLD (ILLUSTRATIVE)
+REMARK    NOT AN EXPERIMENTAL COMPLEX. FOR UI DEMONSTRATION ONLY.
+ATOM      1  N   GLU A 818      12.100  10.200   8.400  1.00 20.00           N
+ATOM      2  CA  GLU A 818      13.210  10.950   9.020  1.00 20.00           C
+ATOM      3  C   GLU A 818      14.430  10.040   9.240  1.00 20.00           C
+ATOM      4  O   GLU A 818      15.430  10.510   9.810  1.00 20.00           O
+ATOM      5  CB  GLU A 818      12.820  11.520  10.380  1.00 20.00           C
+ATOM      6  CG  GLU A 818      13.870  12.350  11.130  1.00 20.00           C
+ATOM      7  CD  GLU A 818      13.470  12.740  12.540  1.00 20.00           C
+ATOM      8  OE1 GLU A 818      12.280  12.530  12.930  1.00 20.00           O
+ATOM      9  OE2 GLU A 818      14.360  13.260  13.250  1.00 20.00           O
+ATOM     10  N   ASP A 821      16.020   9.730   8.860  1.00 20.00           N
+ATOM     11  CA  ASP A 821      17.190   8.910   9.120  1.00 20.00           C
+ATOM     12  C   ASP A 821      18.270   9.490   8.210  1.00 20.00           C
+ATOM     13  O   ASP A 821      19.430   9.100   8.360  1.00 20.00           O
+ATOM     14  CB  ASP A 821      16.930   7.420   8.900  1.00 20.00           C
+ATOM     15  CG  ASP A 821      17.950   6.500   9.560  1.00 20.00           C
+ATOM     16  OD1 ASP A 821      18.520   6.860  10.620  1.00 20.00           O
+ATOM     17  OD2 ASP A 821      18.100   5.360   9.060  1.00 20.00           O
+ATOM     18  N   ARG T  12      13.640  13.960  12.080  1.00 20.00           N
+ATOM     19  CA  ARG T  12      14.600  14.740  12.830  1.00 20.00           C
+ATOM     20  C   ARG T  12      15.980  14.070  12.850  1.00 20.00           C
+ATOM     21  O   ARG T  12      16.910  14.680  13.390  1.00 20.00           O
+ATOM     22  CB  ARG T  12      14.660  16.170  12.260  1.00 20.00           C
+ATOM     23  CG  ARG T  12      13.320  16.830  11.970  1.00 20.00           C
+ATOM     24  CD  ARG T  12      13.420  18.290  11.460  1.00 20.00           C
+ATOM     25  NE  ARG T  12      12.190  18.920  10.990  1.00 20.00           N
+ATOM     26  CZ  ARG T  12      12.080  20.200  10.680  1.00 20.00           C
+ATOM     27  NH1 ARG T  12      13.110  21.020  10.780  1.00 20.00           N
+ATOM     28  NH2 ARG T  12      10.910  20.660  10.260  1.00 20.00           N
+ATOM     29  N   LYS T  13      15.940  12.820  12.260  1.00 20.00           N
+ATOM     30  CA  LYS T  13      17.180  12.060  12.140  1.00 20.00           C
+ATOM     31  C   LYS T  13      17.640  11.550  13.500  1.00 20.00           C
+ATOM     32  O   LYS T  13      18.850  11.430  13.720  1.00 20.00           O
+ATOM     33  CB  LYS T  13      17.020  10.910  11.150  1.00 20.00           C
+ATOM     34  CG  LYS T  13      18.240  10.090  10.790  1.00 20.00           C
+ATOM     35  CD  LYS T  13      18.070   8.970   9.760  1.00 20.00           C
+ATOM     36  CE  LYS T  13      19.300   8.180   9.390  1.00 20.00           C
+ATOM     37  NZ  LYS T  13      19.170   6.810   8.850  1.00 20.00           N
+HETATM   38 NA   NA  I   1      16.000  10.000   7.400  1.00 15.00          NA
+TER
+END

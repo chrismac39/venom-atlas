@@ -163,6 +163,20 @@ const toxinRecordSchema = z.object({
       evidence: evidenceSchema,
     }),
   ),
+  interactionVisualization: z
+    .object({
+      id: z.string(),
+      label: z.string(),
+      annotationPath: z.string(),
+      structureAssetPath: z.string(),
+      structureFormat: z.enum(['pdb', 'mmcif']),
+      evidence: z.object({
+        level: z.enum(['experimental', 'computed', 'illustrative']),
+        source: z.string(),
+        notes: z.string().optional(),
+      }),
+    })
+    .optional(),
   evidence: evidenceSchema,
 });
 
@@ -350,6 +364,18 @@ export interface ToxinBundle {
   molecularEntity: MolecularEntity;
   structureAssets: MolecularStructureAsset[];
   targets: MolecularTarget[];
+  interactionVisualization?: {
+    id: string;
+    label: string;
+    annotationPath: string;
+    structureAssetPath: string;
+    structureFormat: 'pdb' | 'mmcif';
+    evidence: {
+      level: 'experimental' | 'computed' | 'illustrative';
+      source: string;
+      notes?: string;
+    };
+  };
 }
 
 export interface MechanismBundle {
@@ -499,6 +525,24 @@ const loadToxinBundles = (): ToxinBundle[] => {
         summary: entry.summary,
         evidence: mapEvidence(entry.evidence),
       })),
+      ...(record.interactionVisualization
+        ? {
+            interactionVisualization: {
+              id: record.interactionVisualization.id,
+              label: record.interactionVisualization.label,
+              annotationPath: record.interactionVisualization.annotationPath,
+              structureAssetPath: record.interactionVisualization.structureAssetPath,
+              structureFormat: record.interactionVisualization.structureFormat,
+              evidence: {
+                level: record.interactionVisualization.evidence.level,
+                source: record.interactionVisualization.evidence.source,
+                ...(record.interactionVisualization.evidence.notes
+                  ? { notes: record.interactionVisualization.evidence.notes }
+                  : {}),
+              },
+            },
+          }
+        : {}),
     };
   });
 };
@@ -633,6 +677,22 @@ export const getAllToxins = (): ToxinBundle[] => cached.toxins;
 
 export const getToxinBySlug = (slug: string): ToxinBundle | undefined =>
   cached.toxins.find((entry) => entry.toxin.slug === slug);
+
+export const getOrganismSlugByToxinSlug = (slug: string): string | undefined => {
+  const toxin = getToxinBySlug(slug);
+  if (!toxin) {
+    return undefined;
+  }
+
+  const venom = cached.venoms.find(
+    (entry) => entry.venom.id === toxin.toxin.venomId || `ven-${entry.venom.slug}` === toxin.toxin.venomId,
+  );
+  if (!venom) {
+    return undefined;
+  }
+
+  return cached.organisms.find((entry) => entry.organism.id === venom.venom.organismId)?.organism.slug;
+};
 
 export const getMechanismByToxinSlug = (slug: string): MechanismBundle | undefined =>
   cached.mechanisms.find((entry) => entry.toxinSlug === slug);

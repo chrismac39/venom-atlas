@@ -330,6 +330,7 @@ select {
   box-shadow: var(--pill-shadow);
   padding: 0.62rem 1.05rem;
   display: grid;
+  grid-template-rows: repeat(3, minmax(0, auto));
   gap: 0.16rem;
   pointer-events: none;
 }
@@ -343,6 +344,7 @@ select {
 }
 
 .atlas-global-summary-line {
+  display: block;
   margin: 0;
   line-height: 1.23;
   font-size: var(--summary-strip-font-size);
@@ -574,6 +576,186 @@ select {
   border: 0;
   border-radius: 0;
   padding: 0;
+}
+
+.molecule-viewer-canvas-host {
+  position: relative;
+  min-height: 380px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid color-mix(in srgb, var(--rule), transparent 28%);
+  background: color-mix(in srgb, var(--panel-soft), black 5%);
+  pointer-events: none;
+}
+
+.molecule-viewer-canvas-host.molecule-viewer-canvas-host-interactive {
+  pointer-events: auto;
+}
+
+.molecule-viewer-canvas-host canvas,
+.molecule-viewer-canvas-host > div,
+.molecule-viewer-canvas-host > div > canvas {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.molecule-viewer-interaction-layer {
+  position: relative;
+}
+
+.molecule-viewer-overlay {
+  position: absolute;
+  inset: 0;
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 58%);
+  border-radius: 6px;
+  background: var(--scrim-bg);
+  color: var(--text);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  backdrop-filter: var(--scrim-backdrop-filter);
+  -webkit-backdrop-filter: var(--scrim-backdrop-filter);
+  box-shadow: var(--scrim-shadow);
+  transition: border-color 160ms var(--motion-lift-curve);
+}
+
+.molecule-viewer-overlay-pill {
+  display: grid;
+  gap: 0.25rem;
+  width: min(92%, 44rem);
+  background: var(--pill-bg);
+  border: none;
+  border-radius: var(--pill-radius);
+  padding: 0.62rem 1rem;
+  box-shadow: var(--pill-shadow);
+  transition: var(--pill-transition);
+}
+
+.molecule-viewer-overlay-title {
+  display: block;
+  color: var(--text);
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.molecule-viewer-overlay-subtitle {
+  display: block;
+  color: var(--muted);
+  line-height: 1.28;
+  font-size: 0.92rem;
+}
+
+.molecule-viewer-overlay-pill:hover {
+  background: var(--pill-bg-hover);
+  box-shadow: var(--pill-shadow-hover);
+  transform: var(--pill-hover-transform);
+}
+
+.molecule-viewer-lock-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 58%);
+  background: color-mix(in srgb, var(--panel), black 10%);
+}
+
+.chemistry-render-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.chemistry-summary-layout {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.chemistry-summary-copy {
+  min-width: 0;
+}
+
+.chemistry-summary-2d {
+  margin: 0;
+  min-width: 0;
+}
+
+.chemistry-summary-2d h3 {
+  margin-top: 0;
+}
+
+.chemistry-summary-2d .chemistry-2d-viewport {
+  min-height: 240px;
+}
+
+.chemistry-render-grid > .panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.chemistry-2d-viewport {
+  min-height: 380px;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 0.35rem;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid color-mix(in srgb, var(--rule), transparent 28%);
+  background: color-mix(in srgb, var(--panel-soft), black 5%);
+}
+
+.chemistry-2d-asset {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .chemistry-render-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chemistry-summary-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .molecule-viewer-canvas-host,
+  .chemistry-2d-viewport {
+    min-height: 320px;
+  }
+
+  .chemistry-2d-asset {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.chem-formula {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.01em;
+}
+
+.chem-formula sub {
+  font-size: 0.62em;
+  line-height: 1;
+  position: relative;
+  top: 0.28em;
 }
 
 @media (min-aspect-ratio: 21/9) {

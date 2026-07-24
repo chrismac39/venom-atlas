@@ -10,6 +10,75 @@ export type MolecularRepresentation =
   | 'amino_acid_sequence'
   | 'target_complex';
 
+export type MolecularSurfaceKind = 'ses' | 'sas' | 'vdw' | 'gaussian';
+
+export type MolecularSurfaceColorMode =
+  | 'element'
+  | 'uniform'
+  | 'hydrophobicity'
+  | 'electrostatic';
+
+export type StructureEvidenceLevel = 'experimental' | 'computed' | 'illustrative';
+
+export type InteractionContactType =
+  | 'hydrogen_bond'
+  | 'ionic'
+  | 'hydrophobic'
+  | 'contact'
+  | 'other';
+
+export interface InteractionResidueRef {
+  chain: string;
+  residueName: string;
+  residueNumber: number;
+}
+
+export interface InteractionCameraPreset {
+  id: string;
+  label: string;
+  description?: string | undefined;
+  selection?: Record<string, unknown> | undefined;
+}
+
+export interface StructureInteractionAnnotation {
+  id: string;
+  label: string;
+  target: {
+    name: string;
+    structureId: string;
+    chains: string[];
+  };
+  venomComponent: {
+    name: string;
+    chains: string[];
+  };
+  evidence: {
+    level: StructureEvidenceLevel;
+    source: string;
+    notes?: string | undefined;
+  };
+  ions?: Array<{
+    element: string;
+    chain?: string | undefined;
+    residueNumber?: number | undefined;
+    label?: string | undefined;
+  }>;
+  interactions: Array<{
+    id: string;
+    type: InteractionContactType;
+    toxinResidue: InteractionResidueRef;
+    targetResidue: InteractionResidueRef;
+    distanceAngstroms?: number | undefined;
+    evidenceNote?: string | undefined;
+  }>;
+  cameraPresets: InteractionCameraPreset[];
+  electrostaticPotential?: {
+    localPath: string;
+    format: 'dx' | 'cube';
+    notes?: string | undefined;
+  } | undefined;
+}
+
 export type MolecularClass = 'small_molecule' | 'peptide' | 'protein' | 'complex';
 
 export type GeographicLayerType =
@@ -50,6 +119,19 @@ export interface MoleculeRenderModel {
 export interface MolecularRenderOptions {
   representation?: MolecularRepresentation;
   backgroundColor?: string;
+  surface?: {
+    enabled: boolean;
+    kind: MolecularSurfaceKind;
+    opacity: number;
+    colorMode: MolecularSurfaceColorMode;
+    uniformColor?: string | undefined;
+  };
+  interactionView?: {
+    annotation?: StructureInteractionAnnotation | undefined;
+    selectedPresetId?: string | undefined;
+    showResidueLabels?: boolean | undefined;
+    showContactHighlights?: boolean | undefined;
+  };
 }
 
 export interface MolecularRendererHandle {

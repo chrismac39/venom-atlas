@@ -2,7 +2,7 @@
 import PageLayout from '../../../layouts/PageLayout.astro';
 import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
-import { getAllOrganisms, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
+import { getAllOrganisms, getAllToxins, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
 
 export const getStaticPaths = async () => {
   return getAllOrganisms().map((entry) => ({
@@ -18,6 +18,10 @@ if (!bundle) {
 }
 
 const venom = getVenomByOrganismSlug(slug as string);
+const featuredToxinSlug = venom
+  ? getAllToxins().find((entry) => entry.toxin.venomId === `ven-${venom.venom.slug}`)?.toxin.slug
+  : undefined;
+const atlasBaseHref = `/?organism=${bundle.organism.slug}`;
 const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath) =>
   imagePath.includes('placeholder'),
 );
@@ -73,13 +77,18 @@ const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath
   </section>
 
   <section class="panel">
+    <h2>Return to atlas</h2>
+    <a href={`${atlasBaseHref}#section-organism-profile`}>Resume monopage at organism profile</a>
+  </section>
+
+  <section class="panel">
     <a href={`/organisms/${bundle.organism.slug}/venom`}>Open venom profile</a>
     <br />
     <a href={`/organisms/${bundle.organism.slug}/geography`}>Open geography profile</a>
-    {venom ? (
+    {featuredToxinSlug ? (
       <>
         <br />
-        <a href={`/toxins/solenopsin-a`}>Open featured toxin page</a>
+        <a href={`/toxins/${featuredToxinSlug}`}>Open featured toxin page</a>
       </>
     ) : null}
   </section>

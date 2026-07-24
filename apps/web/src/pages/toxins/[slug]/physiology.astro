@@ -5,7 +5,13 @@ import { AnatomySvg } from '../../../visualizations/svg/AnatomySvg';
 import { VegaChart } from '../../../visualizations/vega/VegaChart';
 import { buildPhysiologyTimelineSpec } from '../../../visualizations/vega/physiologyTimelineSpec';
 import type { AnatomyHighlight } from '@venom-atlas/visualization-contracts';
-import { getAllToxins, getMechanismByToxinSlug, getPhysiologyByToxinSlug, getToxinBySlug } from '../../../lib/content';
+import {
+  getAllToxins,
+  getMechanismByToxinSlug,
+  getOrganismSlugByToxinSlug,
+  getPhysiologyByToxinSlug,
+  getToxinBySlug,
+} from '../../../lib/content';
 
 const localHighlights: AnatomyHighlight[] = [
   {
@@ -44,6 +50,8 @@ const { slug } = Astro.params;
 const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
 const physiology = slug ? getPhysiologyByToxinSlug(slug) : undefined;
 const mechanism = slug ? getMechanismByToxinSlug(slug) : undefined;
+const organismSlug = slug ? getOrganismSlugByToxinSlug(slug) : undefined;
+const atlasBaseHref = organismSlug ? `/?organism=${organismSlug}` : '/';
 
 if (!toxinBundle || !physiology) {
   throw new Error(`Missing toxin physiology for slug: ${slug}`);
@@ -80,4 +88,9 @@ const immuneEffects = physiology.effects
     spec={buildPhysiologyTimelineSpec(mechanism?.steps ?? [])}
     empty={!mechanism || mechanism.steps.length === 0}
   />
+
+  <section class="panel">
+    <h2>Return to atlas</h2>
+    <a href={`${atlasBaseHref}#section-human-physiology`}>Resume monopage at human physiology</a>
+  </section>
 </PageLayout>
