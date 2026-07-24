@@ -1,0 +1,54 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { DeliveryMechanismDiagram } from '../../../visualizations/svg/DeliveryMechanismDiagram';
+import { getAllToxins, getMechanismByToxinSlug, getToxinBySlug } from '../../../lib/content';
+
+export const getStaticPaths = async () => {
+  return getAllToxins().map((entry) => ({
+    params: { slug: entry.toxin.slug },
+  }));
+};
+
+const { slug } = Astro.params;
+const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
+const mechanism = slug ? getMechanismByToxinSlug(slug) : undefined;
+
+if (!toxinBundle || !mechanism) {
+  throw new Error(`Missing toxin mechanism for slug: ${slug}`);
+}
+
+const naturalSteps = mechanism.steps.slice(0, 4).map((entry) => entry.title);
+while (naturalSteps.length < 4) {
+  naturalSteps.push('Pending sourced mechanism step');
+}
+
+const humanSteps = [
+  'Human encounter triggers defense',
+  'Organism anchors to skin',
+  'Stinger penetrates skin',
+  'Venom is delivered to tissue',
+] as [string, string, string, string];
+---
+
+<PageLayout title={`${toxinBundle.toxin.displayName} mechanism | Venom Atlas`} description="Mechanism sequence schematics.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>Delivery mechanism schematics</h1>
+    <p class="muted">
+      Two reusable views: ecological interaction flow and human interaction flow.
+    </p>
+  </section>
+
+  <DeliveryMechanismDiagram
+    title="Natural mechanism"
+    ariaLabel={`Schematic of ${toxinBundle.toxin.displayName} ecological mechanism`}
+    steps={naturalSteps as [string, string, string, string]}
+  />
+
+  <DeliveryMechanismDiagram
+    title="Human interaction mechanism"
+    ariaLabel={`Schematic of ${toxinBundle.toxin.displayName} human interaction`}
+    steps={humanSteps}
+  />
+</PageLayout>

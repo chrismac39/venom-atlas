@@ -1,0 +1,13 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../islands/ThemeSwitcher';
+---
+
+<PageLayout title="Not found | Venom Atlas" description="Page not found.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>Atlas page not found</h1>
+    <p>No route matches this URL.</p>
+    <a href="/">Return to atlas home</a>
+  </section>
+</PageLayout>

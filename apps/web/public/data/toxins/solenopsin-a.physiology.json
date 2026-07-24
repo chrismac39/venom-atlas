@@ -1,0 +1,152 @@
+{
+  "toxinSlug": "solenopsin-a",
+  "anatomicalSystems": [
+    {
+      "id": "anat-skin",
+      "name": "Skin",
+      "description": "Primary local site of venom deposition and lesion development."
+    },
+    {
+      "id": "anat-peripheral-nerves",
+      "name": "Peripheral sensory nerves",
+      "description": "Supports local pain and burning perception."
+    },
+    {
+      "id": "anat-circulatory",
+      "name": "Circulatory system",
+      "description": "Potential systemic involvement context."
+    },
+    {
+      "id": "anat-respiratory",
+      "name": "Respiratory system",
+      "description": "Relevant in severe allergic responses."
+    },
+    {
+      "id": "anat-immune",
+      "name": "Immune/inflammatory response",
+      "description": "Mediator of local and allergic reaction pathways."
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "sym-pain",
+      "name": "Pain/Burning",
+      "description": "Rapid local pain sensation after sting.",
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "sym-local-lesion",
+      "name": "Local wheal/pustule or lesion",
+      "description": "Localized lesion response that may evolve after sting.",
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "sym-systemic-allergy",
+      "name": "Systemic allergic reaction (possible pathway)",
+      "description": "Potential severe allergic response in sensitized individuals.",
+      "evidence": {
+        "id": "ev-systemic-allergy",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "phys-local-skin",
+      "toxinId": "tox-solenopsin-a",
+      "anatomicalSystemId": "anat-skin",
+      "symptomId": "sym-local-lesion",
+      "pathwayType": "direct_venom",
+      "title": "Local skin tissue impact",
+      "description": "Direct local tissue effects at sting site.",
+      "order": 1,
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "phys-local-nerves",
+      "toxinId": "tox-solenopsin-a",
+      "anatomicalSystemId": "anat-peripheral-nerves",
+      "symptomId": "sym-pain",
+      "pathwayType": "direct_venom",
+      "title": "Sensory nerve-associated pain",
+      "description": "Local pain and burning sensations are commonly reported.",
+      "order": 2,
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "phys-inflammatory",
+      "toxinId": "tox-solenopsin-a",
+      "anatomicalSystemId": "anat-immune",
+      "symptomId": "sym-local-lesion",
+      "pathwayType": "inflammatory_immune",
+      "title": "Local inflammatory response",
+      "description": "Inflammatory response contributes to evolving lesion patterns.",
+      "order": 3,
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "phys-systemic-allergy",
+      "toxinId": "tox-solenopsin-a",
+      "anatomicalSystemId": "anat-respiratory",
+      "symptomId": "sym-systemic-allergy",
+      "pathwayType": "systemic_allergic",
+      "title": "Systemic allergic pathway (non-default)",
+      "description": "A separate pathway representing possible allergic systemic reactions.",
+      "order": 4,
+      "evidence": {
+        "id": "ev-systemic-allergy",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    }
+  ]
+}

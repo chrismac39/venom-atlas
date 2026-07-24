@@ -1,0 +1,83 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { AnatomySvg } from '../../../visualizations/svg/AnatomySvg';
+import { VegaChart } from '../../../visualizations/vega/VegaChart';
+import { buildPhysiologyTimelineSpec } from '../../../visualizations/vega/physiologyTimelineSpec';
+import type { AnatomyHighlight } from '@venom-atlas/visualization-contracts';
+import { getAllToxins, getMechanismByToxinSlug, getPhysiologyByToxinSlug, getToxinBySlug } from '../../../lib/content';
+
+const localHighlights: AnatomyHighlight[] = [
+  {
+    systemId: 'anat-skin',
+    intensity: 'primary',
+    label: 'Skin',
+    explanation: 'Primary tissue site of sting and lesion progression.',
+  },
+  {
+    systemId: 'anat-peripheral-nerves',
+    intensity: 'primary',
+    label: 'Peripheral sensory nerves',
+    explanation: 'Associated with immediate pain and burning sensations.',
+  },
+  {
+    systemId: 'anat-immune',
+    intensity: 'secondary',
+    label: 'Inflammatory/immune response',
+    explanation: 'Shapes lesion and inflammatory manifestations.',
+  },
+  {
+    systemId: 'anat-respiratory',
+    intensity: 'context',
+    label: 'Respiratory system',
+    explanation: 'Systemic allergic pathway is possible but not default.',
+  },
+];
+
+export const getStaticPaths = async () => {
+  return getAllToxins().map((entry) => ({
+    params: { slug: entry.toxin.slug },
+  }));
+};
+
+const { slug } = Astro.params;
+const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
+const physiology = slug ? getPhysiologyByToxinSlug(slug) : undefined;
+const mechanism = slug ? getMechanismByToxinSlug(slug) : undefined;
+
+if (!toxinBundle || !physiology) {
+  throw new Error(`Missing toxin physiology for slug: ${slug}`);
+}
+
+const directEffects = physiology.effects
+  .filter((entry) => entry.pathwayType === 'direct_venom')
+  .map((entry) => entry.title);
+
+const immuneEffects = physiology.effects
+  .filter((entry) => entry.pathwayType !== 'direct_venom')
+  .map((entry) => entry.title);
+---
+
+<PageLayout title={`${toxinBundle.toxin.displayName} physiology | Venom Atlas`} description="Physiology effects and pathways.">
+  <ThemeSwitcher slot="theme" client:idle />
+
+  <section class="panel">
+    <h1>Human physiology effects</h1>
+  </section>
+
+  <AnatomySvg highlights={localHighlights} />
+
+  <section class="panel">
+    <h2>Direct versus immune-mediated pathways</h2>
+    <p><strong>Direct local venom effect:</strong> {directEffects.join(', ')}</p>
+    <p><strong>Inflammatory or immune-mediated:</strong> {immuneEffects.join(', ')}</p>
+  </section>
+
+  <VegaChart
+    client:visible
+    title="Sting progression timeline"
+    summary="Distinguishes direct local effects from inflammatory and separate systemic allergic pathways."
+    spec={buildPhysiologyTimelineSpec(mechanism?.steps ?? [])}
+    empty={!mechanism || mechanism.steps.length === 0}
+  />
+</PageLayout>

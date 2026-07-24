@@ -1,0 +1,39 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
+import { getAllCitations, getCitationBySlug } from '../../lib/content';
+
+export const getStaticPaths = async () => {
+  return getAllCitations().map((citation) => ({
+    params: { slug: citation.slug },
+  }));
+};
+
+const { slug } = Astro.params;
+const citation = slug ? getCitationBySlug(slug) : undefined;
+
+if (!citation) {
+  throw new Error(`Unknown citation slug: ${slug}`);
+}
+---
+
+<PageLayout title={`${citation.title} | Sources | Venom Atlas`} description="Citation detail page.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>{citation.title}</h1>
+    <p><strong>Source type:</strong> {citation.sourceType}</p>
+    <p><strong>Publisher:</strong> {citation.publisher ?? 'Unspecified'}</p>
+    <p><strong>Authors:</strong> {citation.authors?.join(', ') || 'Unspecified'}</p>
+    <p><strong>Publication year:</strong> {citation.publicationYear ?? 'Unspecified'}</p>
+    <p><strong>DOI:</strong> {citation.doi ?? 'Unspecified'}</p>
+    <p><strong>Accessed:</strong> {citation.accessedAt ?? 'Unspecified'}</p>
+    {citation.url ? (
+      <p>
+        <a href={citation.url} target="_blank" rel="noreferrer">Open source</a>
+      </p>
+    ) : (
+      <p class="muted">Source URL unavailable.</p>
+    )}
+    <p><a href="/sources">Back to all sources</a></p>
+  </section>
+</PageLayout>

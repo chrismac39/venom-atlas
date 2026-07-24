@@ -1,0 +1,49 @@
+﻿citations:
+  - id: cit-fire-ant-review-2007
+    slug: fire-ants-in-perspective
+    title: The Fire Ants (Solenopsis) in Perspective
+    authors:
+      - W. R. Tschinkel
+    publisher: Harvard University Press
+    publicationYear: 2006
+    sourceType: book
+  - id: cit-cdc-fire-ant-stings
+    slug: cdc-imported-fire-ants
+    title: Imported Fire Ants
+    authors: []
+    publisher: CDC
+    publicationYear: null
+    url: https://www.cdc.gov/niosh/topics/fireants/default.html
+    doi: null
+    accessedAt: '2026-07-23'
+    sourceType: government
+  - id: cit-poison-control-fire-ant
+    slug: poison-control-fire-ant-stings
+    title: Fire Ant Stings
+    authors: []
+    publisher: Poison Control
+    publicationYear: null
+    url: https://www.poison.org/articles/fire-ant-stings-201
+    doi: null
+    accessedAt: '2026-07-23'
+    sourceType: other
+  - id: cit-antwiki-sinvicta
+    slug: antwiki-solenopsis-invicta
+    title: Solenopsis invicta
+    authors: []
+    publisher: AntWiki
+    publicationYear: null
+    url: https://www.antwiki.org/wiki/Solenopsis_invicta
+    doi: null
+    accessedAt: '2026-07-23'
+    sourceType: database
+  - id: cit-editorial-placeholder
+    slug: editorial-placeholder
+    title: Editorial normalization for scaffold continuity
+    authors: []
+    publisher: null
+    publicationYear: null
+    url: null
+    doi: null
+    accessedAt: null
+    sourceType: other

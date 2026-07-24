@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 export const citationSchema = z.object({
   id: z.string(),
+  slug: z.string().optional(),
   title: z.string(),
   authors: z.array(z.string()).optional(),
   publisher: z.string().optional(),
@@ -49,6 +50,7 @@ export const taxonomySchema = z.object({
 
 export const organismSchema = z.object({
   id: z.string(),
+  slug: z.string().optional(),
   scientificName: z.string(),
   commonName: z.string(),
   overview: z.string(),
@@ -78,6 +80,7 @@ export const biologicalMaterialSchema = z.object({
 
 export const venomSchema = z.object({
   id: z.string(),
+  slug: z.string().optional(),
   organismId: z.string(),
   biologicalMaterialId: z.string(),
   name: z.string(),
@@ -88,6 +91,7 @@ export const venomSchema = z.object({
 
 export const toxinSchema = z.object({
   id: z.string(),
+  slug: z.string().optional(),
   venomId: z.string(),
   displayName: z.string(),
   family: z.string().optional(),
@@ -122,10 +126,17 @@ export const molecularStructureAssetSchema = z.object({
   id: z.string(),
   molecularEntityId: z.string(),
   format: z.enum(['sdf', 'mol', 'mol2', 'pdb', 'mmcif', 'svg']),
-  localPath: z.string().optional(),
+  localPath: z.string(),
   sourceUrl: z.string().url().optional(),
+  sourceDatabase: z.string().optional(),
+  sourceIdentifier: z.string().optional(),
   citationId: z.string().optional(),
+  structureStatus: z
+    .enum(['experimental', 'computed', 'illustrative', 'placeholder'])
+    .optional(),
   verified: z.boolean(),
+  license: z.string().optional(),
+  notes: z.string().optional(),
 });
 
 export const molecularTargetSchema = z.object({
@@ -214,6 +225,7 @@ export const ecologicalRoleSchema = z.object({
 
 export const mediaAssetSchema = z.object({
   id: z.string(),
+  slug: z.string().optional(),
   kind: z.enum([
     'organism_photo',
     'anatomical_photo',
@@ -222,13 +234,16 @@ export const mediaAssetSchema = z.object({
     'molecular_3d',
     'range_geometry',
   ]),
-  localPath: z.string().optional(),
+  localPath: z.string(),
   sourceUrl: z.string().url().optional(),
   creator: z.string().optional(),
   license: z.string().optional(),
   attributionText: z.string().optional(),
   citationId: z.string().optional(),
-  verified: z.boolean(),
+  redistributionVerified: z.boolean(),
+  modificationAllowed: z.boolean().optional(),
+  accessedAt: z.string().optional(),
+  notes: z.string().optional(),
 });
 
 export const atlasSeedSchema = z.object({

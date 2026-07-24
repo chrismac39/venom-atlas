@@ -1,0 +1,26 @@
+﻿id: geo-solenopsis-invicta
+slug: solenopsis-invicta
+organismSlug: solenopsis-invicta
+ranges:
+  - id: geo-native-range
+    layerType: native_range
+    geometryAssetPath: /geography/solenopsis-invicta-range.geojson
+    summary: Native range geometry not yet bundled, source-backed geometry pending.
+    evidence:
+      id: ev-geography-pending
+      confidence: unknown
+      evidenceType: editorial_normalization
+      notes: Validated range geometry files are pending curation.
+      citationIds:
+        - cit-editorial-placeholder
+  - id: geo-introduced-range
+    layerType: introduced_range
+    geometryAssetPath: /geography/solenopsis-invicta-range.geojson
+    summary: Introduced range geometry not yet bundled, source-backed geometry pending.
+    evidence:
+      id: ev-geography-pending
+      confidence: unknown
+      evidenceType: editorial_normalization
+      notes: Validated range geometry files are pending curation.
+      citationIds:
+        - cit-editorial-placeholder

@@ -1,66 +1,89 @@
 # Venom Atlas
 
-Venom Atlas is an interactive scientific atlas for venomous and poisonous organisms, linking organism biology to venom composition, molecular views, mechanisms, physiology, and geography.
+Venom Atlas is a static-first scientific atlas for venom biology, toxin pathways, molecular representations, and evidence provenance.
 
-## Project purpose
+## Public-site architecture
 
-This repository scaffolds a TypeScript-first, evidence-aware visualization architecture where scientific claims are provenance-linked and uncertainty is explicit.
+The production site is generated as static HTML with Astro and deployed to static hosting.
 
-## Screenshots
+Flow:
 
-Screenshot placeholders will be added after UI stabilization.
+Authored scientific content
+-> build-time validation
+-> static Astro pages
+-> page JSON artifacts
+-> optional browser SQLite explorer data
 
-## Current sample case
+No production backend server, production database, or Docker runtime is required.
 
-- Scientific name: _Solenopsis invicta_
-- Common name: Red imported fire ant
-- Featured compound: Solenopsin A
-
-## Architecture summary
+## Technology stack
 
 - Monorepo: pnpm workspaces
-- Web: React + Vite + React Router + Vega/Vega-Lite + 3Dmol.js adapter boundary
-- API: Fastify + Zod + repository layer
-- DB: ClickHouse via `@clickhouse/client`
-- Shared contracts: domain, schemas, visualization-contracts packages
+- Static site: Astro
+- Interactive islands: React
+- Visualizations: Vega, Vega-Lite, 3Dmol.js adapter boundary, scaffolded Mol* adapter
+- Shared contracts: `packages/domain`, `packages/schemas`, `packages/visualization-contracts`
+- Testing: Vitest + Playwright
 
-## Prerequisites
+## Repository structure
 
-- Node.js 20+
-- pnpm (via Corepack)
-- Docker Desktop
+- `apps/web`: Astro site and React islands
+- `content-source`: canonical authored scientific content (YAML)
+- `scripts`: validation and artifact generation
+- `legacy`: archived API/ClickHouse/local-dev infrastructure
+- `docs`: architecture, ADRs, sourcing, migration, deployment
 
-## Installation
+## Local development
 
 ```bash
 pnpm install
-```
-
-## Docker startup
-
-```bash
-pnpm db:up
-```
-
-## Migrate and seed
-
-```bash
-pnpm db:migrate
-pnpm db:seed
-```
-
-## Run web and API
-
-```bash
 pnpm dev
 ```
 
-Or separately:
+Dev URL:
+
+- http://localhost:5173
+
+## Content authoring
+
+Canonical records live in:
+
+- `content-source/organisms`
+- `content-source/venoms`
+- `content-source/toxins`
+- `content-source/mechanisms`
+- `content-source/physiology`
+- `content-source/geography`
+- `content-source/citations`
+- `content-source/media`
+
+## Validation requirements
+
+Run:
 
 ```bash
-pnpm dev:api
-pnpm dev:web
+pnpm validate
 ```
+
+Validation checks include:
+
+- missing citations
+- missing related entities
+- route collisions
+- missing referenced files
+- image attribution coverage
+- structure and geometry publishability rules
+
+## Build and preview
+
+```bash
+pnpm build
+pnpm preview
+```
+
+Output directory:
+
+- `apps/web/dist`
 
 ## Tests
 
@@ -69,35 +92,47 @@ pnpm test
 pnpm test:e2e
 ```
 
-## Lint, typecheck, build
+## Citation and evidence policy
 
-```bash
-pnpm lint
-pnpm typecheck
-pnpm build
-```
+- Evidence confidence is preserved and rendered explicitly.
+- Provisional and placeholder claims stay labeled as provisional.
+- No fabricated citation, molecular structure, or geography data is introduced.
 
-## Molecular renderer explanation
+## Media licensing policy
 
-- 3Dmol.js is implemented for small-molecule rendering where verified structure files exist.
-- Mol* is currently scaffolded as an adapter boundary for future peptide/protein/complex support.
-- Renderers are display engines, not sources of scientific truth.
+- Public image redistribution must be verified before publication use.
+- Unverified media remains blocked or shown through explicit placeholder states.
+- Audit file: `docs/sources/media-license-audit.md`
 
-## Scientific source policy
+## Molecular provenance policy
 
-- Claims are linked to citation/evidence records where possible.
-- Uncertain values are `null` and rendered as "Data not yet sourced."
-- No fabricated percentages, molecular coordinates, maps, or medical incidence values.
+- Molecular renderers are display layers, not evidence.
+- Structure provenance and verification metadata are required for publishable structures.
+- Placeholder structures remain explicitly marked as placeholder.
+
+## Deployment
+
+Primary target: Cloudflare Pages static hosting.
+
+See:
+
+- `docs/deployment/cloudflare-pages.md`
+
+GitHub Pages portability is supported via base-path configuration.
+
+## Legacy infrastructure
+
+Historical Fastify/ClickHouse/Docker code is archived under `legacy/`.
+It is not part of the active production path.
 
 ## Current limitations
 
-- Solenopsin A formula, molecular weight, and verified structure assets are not yet sourced.
-- Geographic range geometry files are intentionally pending.
-- Placeholder media assets are unverified and non-production.
+- Solenopsin A structure records remain placeholder-level.
+- Geographic range geometry remains placeholder-level.
+- Several media assets still require verified redistribution licensing metadata.
 
-## Next vertical slices
+## Roadmap
 
-- Tetrodotoxin and blue-ringed octopus
-- Cone snail peptide toxin
-- Snake peptide/protein toxin
-- Spider toxin with well-characterized ion-channel target
+- Additional organisms and toxins
+- Improved source audits
+- Optional browser-side exploration features built on generated static artifacts

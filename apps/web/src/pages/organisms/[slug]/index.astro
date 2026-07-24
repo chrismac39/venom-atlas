@@ -1,0 +1,86 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
+import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { getAllOrganisms, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
+
+export const getStaticPaths = async () => {
+  return getAllOrganisms().map((entry) => ({
+    params: { slug: entry.organism.slug },
+  }));
+};
+
+const { slug } = Astro.params;
+const bundle = slug ? getOrganismBySlug(slug) : undefined;
+
+if (!bundle) {
+  throw new Error(`Unknown organism slug: ${slug}`);
+}
+
+const venom = getVenomByOrganismSlug(slug as string);
+const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath) =>
+  imagePath.includes('placeholder'),
+);
+---
+
+<PageLayout title={`${bundle.organism.scientificName} | Venom Atlas`} description={bundle.organism.overview}>
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>{bundle.organism.scientificName} ({bundle.organism.commonName})</h1>
+    <EvidenceBadge evidence={bundle.organism.evidence} />
+    <p>{bundle.organism.overview}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Taxonomy</h2>
+    <ul>
+      <li><strong>Kingdom:</strong> {bundle.taxonomy.kingdom ?? 'Unknown'}</li>
+      <li><strong>Phylum:</strong> {bundle.taxonomy.phylum ?? 'Unknown'}</li>
+      <li><strong>Class:</strong> {bundle.taxonomy.className ?? 'Unknown'}</li>
+      <li><strong>Order:</strong> {bundle.taxonomy.order ?? 'Unknown'}</li>
+      <li><strong>Family:</strong> {bundle.taxonomy.family ?? 'Unknown'}</li>
+      <li><strong>Genus:</strong> {bundle.taxonomy.genus ?? 'Unknown'}</li>
+      <li><strong>Species:</strong> {bundle.taxonomy.species ?? 'Unknown'}</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Delivery mechanism</h2>
+    <p>{bundle.deliveryMechanism.summary}</p>
+    <ol>
+      {bundle.deliveryMechanism.sequence.map((step) => <li>{step}</li>)}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Habitats</h2>
+    <ul>
+      {bundle.habitats.map((habitat) => (
+        <li><strong>{habitat.name}:</strong> {habitat.summary}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Reference images</h2>
+    {shownImages.length > 0 ? (
+      shownImages.map((imagePath) => <img src={imagePath} alt={`${bundle.organism.scientificName} reference`} />)
+    ) : (
+      <p class="muted">
+        Image redistribution licensing is not yet verified for production publication.
+      </p>
+    )}
+  </section>
+
+  <section class="panel">
+    <a href={`/organisms/${bundle.organism.slug}/venom`}>Open venom profile</a>
+    <br />
+    <a href={`/organisms/${bundle.organism.slug}/geography`}>Open geography profile</a>
+    {venom ? (
+      <>
+        <br />
+        <a href={`/toxins/solenopsin-a`}>Open featured toxin page</a>
+      </>
+    ) : null}
+  </section>
+</PageLayout>

@@ -1,0 +1,61 @@
+﻿id: tox-solenopsin-a
+slug: solenopsin-a
+venomSlug: solenopsis-invicta-venom
+displayName: Solenopsin A
+family: Piperidine alkaloids (solenopsins)
+notes: Featured representative compound. Not claimed as sole mediator of all clinical effects.
+molecularEntity:
+  id: mol-solenopsin-a
+  displayName: Solenopsin A
+  molecularClass: small_molecule
+  formula: null
+  molecularWeight: null
+  structureDataSource: null
+  evidence:
+    id: ev-solenopsin-feature
+    confidence: low
+    evidenceType: editorial_normalization
+    notes: Featured representative compound. Quantitation and exact composition pending.
+    citationIds:
+      - cit-editorial-placeholder
+structureAssets:
+  - id: asset-mol3d-solenopsin-a
+    localPath: /structures/solenopsin-a.sdf
+    format: sdf
+    sourceDatabase: null
+    sourceIdentifier: null
+    sourceUrl: null
+    citationId: null
+    structureStatus: placeholder
+    verified: false
+    license: null
+    notes: Placeholder marker. Verified 3D structure file pending.
+  - id: asset-mol2d-solenopsin-a
+    localPath: /images/solenopsin-a-2d.svg
+    format: svg
+    sourceDatabase: null
+    sourceIdentifier: null
+    sourceUrl: null
+    citationId: null
+    structureStatus: placeholder
+    verified: false
+    license: null
+    notes: Placeholder marker. Scientifically sourced 2D structure pending.
+targets:
+  - id: target-local-cell-membrane-process
+    targetName: Local tissue and cell-response processes
+    targetType: unknown
+    summary: Specific primary molecular targets are represented conservatively as unresolved.
+    evidence:
+      id: ev-solenopsin-feature
+      confidence: low
+      evidenceType: editorial_normalization
+      citationIds:
+        - cit-editorial-placeholder
+evidence:
+  id: ev-solenopsin-feature
+  confidence: low
+  evidenceType: editorial_normalization
+  notes: Featured representative compound. Quantitation and exact composition pending.
+  citationIds:
+    - cit-editorial-placeholder

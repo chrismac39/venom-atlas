@@ -1,0 +1,18 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../islands/ThemeSwitcher';
+---
+
+<PageLayout title="Explore | Venom Atlas" description="Optional browser-side SQLite explorer scaffold.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>Explore (optional)</h1>
+    <p>
+      This route is reserved for an optional browser-side SQLite explorer that loads
+      <strong> /data/venom-atlas.sqlite </strong> lazily.
+    </p>
+    <p class="muted">
+      Canonical organism, venom, toxin, mechanism, physiology, and source pages do not depend on SQLite.
+    </p>
+  </section>
+</PageLayout>

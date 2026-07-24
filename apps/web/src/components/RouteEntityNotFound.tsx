@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 interface RouteEntityNotFoundProps {
   title: string;
   message: string;
@@ -17,7 +15,7 @@ export const RouteEntityNotFound = ({
     <section className="panel">
       <h1>{title}</h1>
       <p>{message}</p>
-      <Link to={fallbackHref}>{fallbackLabel}</Link>
+      <a href={fallbackHref}>{fallbackLabel}</a>
     </section>
   );
 };

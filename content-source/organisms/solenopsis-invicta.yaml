@@ -1,0 +1,58 @@
+﻿id: org-solenopsis-invicta
+slug: solenopsis-invicta
+scientificName: Solenopsis invicta
+commonName: Red imported fire ant
+overview: >-
+  Solenopsis invicta is an ant species widely studied for defensive sting behavior,
+  rapid colony recruitment, and ecological impact where established.
+naturalHistory:
+  - Workers can rapidly recruit nestmates when disturbed.
+  - Colonies occupy disturbed soils, lawns, fields, and urban interfaces.
+  - Defensive behavior commonly involves grip-and-sting sequences.
+taxonomy:
+  kingdom: Animalia
+  phylum: Arthropoda
+  className: Insecta
+  order: Hymenoptera
+  family: Formicidae
+  genus: Solenopsis
+  species: Solenopsis invicta
+deliveryMechanism:
+  route: sting
+  summary: Mandibles anchor while the abdomen rotates to place the stinger and inject venom.
+  sequence:
+    - Mandibles grip skin or substrate.
+    - Abdomen rotates under the body axis.
+    - Stinger penetrates tissue.
+    - Venom is injected into local tissue.
+habitats:
+  - id: hab-disturbed-soils
+    name: Disturbed soils and anthropogenic landscapes
+    summary: Often established in open disturbed habitats, lawns, and managed landscapes.
+ecologicalRoles:
+  - id: eco-defense
+    role: Defense and competitive interactions
+    summary: Venom-associated sting behavior is relevant to defense and interference competition.
+externalProfile:
+  sourceLabel: AntWiki
+  sourceUrl: https://www.antwiki.org/wiki/Solenopsis_invicta
+  antMapsEmbedUrl: https://antmaps.org/?mode=species&species=Solenopsis.invicta
+  summaryPoints:
+    - >-
+      Solenopsis invicta is a social, colony-forming ant known for fast collective responses when
+      nest structure is disturbed.
+    - >-
+      Colony organization contributes to rapid shifts from foraging to coordinated defense.
+    - >-
+      The species is commonly associated with open, sun-exposed, and human-managed environments.
+    - >-
+      Defensive behavior is often described as a grip-and-sting sequence.
+  imagePaths:
+    - /images/organisms/solenopsis-invicta/solenopsis-invicta-head-casent0104523.png
+    - /images/organisms/solenopsis-invicta/solenopsis-invicta-profile-casent0104523.png
+evidence:
+  id: ev-taxonomy
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-antwiki-sinvicta

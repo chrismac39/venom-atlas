@@ -1,0 +1,41 @@
+﻿id: ven-fire-ant-primary
+slug: solenopsis-invicta-venom
+organismSlug: solenopsis-invicta
+biologicalMaterial:
+  id: bio-fire-ant-venom
+  kind: venom
+  name: Fire-ant venom
+  description: A venomous secretion associated with sting delivery.
+name: Solenopsis invicta venom
+description: >-
+  A biologically active mixture with alkaloid-rich components and protein fractions relevant to
+  allergic responses.
+ecologicalRoleSummary: Likely supports defense, prey subduing, and competitive ecological interactions.
+components:
+  - id: comp-alkaloids
+    componentCategory: Piperidine alkaloids
+    abundanceQualifier: not_quantified
+    summary: Qualitatively prominent class in many fire-ant venom descriptions.
+    evidence:
+      id: ev-venom-mixture
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-fire-ant-review-2007
+  - id: comp-proteins
+    componentCategory: Protein fractions/allergens
+    abundanceQualifier: not_quantified
+    summary: Associated with immune-mediated responses in sensitized individuals.
+    evidence:
+      id: ev-systemic-allergy
+      confidence: moderate
+      evidenceType: clinical
+      citationIds:
+        - cit-poison-control-fire-ant
+        - cit-cdc-fire-ant-stings
+evidence:
+  id: ev-venom-mixture
+  confidence: moderate
+  evidenceType: review
+  citationIds:
+    - cit-fire-ant-review-2007

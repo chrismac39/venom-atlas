@@ -1,10 +1,14 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["vite/client", "vitest/globals"],
-    "rootDir": "../..",
-    "outDir": "dist"
+    "types": ["astro/client", "vitest/globals", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@venom-atlas/domain": ["../../packages/domain/src/index.ts"],
+      "@venom-atlas/schemas": ["../../packages/schemas/src/index.ts"],
+      "@venom-atlas/visualization-contracts": ["../../packages/visualization-contracts/src/index.ts"]
+    }
   },
-  "include": ["src", "tests", "playwright.config.ts", "vite.config.ts"]
+  "include": ["src", "tests", "playwright.config.ts", "vitest.config.ts", "astro.config.mjs"]
 }

@@ -5,6 +5,7 @@ export type EvidenceType =
 
 export interface Citation {
   id: string;
+  slug?: string | undefined;
   title: string;
   authors?: string[] | undefined;
   publisher?: string | undefined;
@@ -49,6 +50,7 @@ export interface DeliveryMechanism {
 
 export interface Organism {
   id: string;
+  slug?: string | undefined;
   scientificName: string;
   commonName: string;
   overview: string;
@@ -71,6 +73,7 @@ export interface BiologicalMaterial {
 
 export interface Venom {
   id: string;
+  slug?: string | undefined;
   organismId: string;
   biologicalMaterialId: string;
   name: string;
@@ -81,6 +84,7 @@ export interface Venom {
 
 export interface Toxin {
   id: string;
+  slug?: string | undefined;
   venomId: string;
   displayName: string;
   family?: string | undefined;
@@ -114,11 +118,16 @@ export interface MolecularEntity {
 export interface MolecularStructureAsset {
   id: string;
   molecularEntityId: string;
+  localPath: string;
   format: 'sdf' | 'mol' | 'mol2' | 'pdb' | 'mmcif' | 'svg';
-  localPath?: string | undefined;
   sourceUrl?: string | undefined;
+  sourceDatabase?: string | undefined;
+  sourceIdentifier?: string | undefined;
   citationId?: string | undefined;
+  structureStatus?: 'experimental' | 'computed' | 'illustrative' | 'placeholder' | undefined;
   verified: boolean;
+  license?: string | undefined;
+  notes?: string | undefined;
 }
 
 export interface MolecularTarget {
@@ -201,6 +210,7 @@ export interface EcologicalRole {
 
 export interface MediaAsset {
   id: string;
+  slug?: string | undefined;
   kind:
     | 'organism_photo'
     | 'anatomical_photo'
@@ -208,13 +218,16 @@ export interface MediaAsset {
     | 'molecular_2d'
     | 'molecular_3d'
     | 'range_geometry';
-  localPath?: string | undefined;
+  localPath: string;
   sourceUrl?: string | undefined;
   creator?: string | undefined;
   license?: string | undefined;
   attributionText?: string | undefined;
   citationId?: string | undefined;
-  verified: boolean;
+  redistributionVerified: boolean;
+  modificationAllowed?: boolean | undefined;
+  accessedAt?: string | undefined;
+  notes?: string | undefined;
 }
 
 export interface AtlasSeedData {

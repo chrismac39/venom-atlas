@@ -1,0 +1,30 @@
+---
+import type { Citation } from '@venom-atlas/domain';
+
+interface Props {
+  citations: Citation[];
+}
+
+const { citations } = Astro.props;
+---
+
+{citations.length === 0 ? (
+  <p class="muted">No source citations linked.</p>
+) : (
+  <ul>
+    {citations.map((citation) => (
+      <li>
+        <strong>{citation.title}</strong>
+        {citation.publicationYear ? ` (${citation.publicationYear})` : ''}
+        {citation.url ? (
+          <>
+            {' '}
+            <a href={citation.url} target="_blank" rel="noreferrer">Source</a>
+          </>
+        ) : (
+          <span class="muted"> Source URL unavailable</span>
+        )}
+      </li>
+    ))}
+  </ul>
+)}

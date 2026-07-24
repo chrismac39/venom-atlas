@@ -1,0 +1,52 @@
+{
+  "venom": {
+    "id": "ven-fire-ant-primary",
+    "slug": "solenopsis-invicta-venom",
+    "organismId": "org-solenopsis-invicta",
+    "biologicalMaterialId": "bio-fire-ant-venom",
+    "name": "Solenopsis invicta venom",
+    "description": "A biologically active mixture with alkaloid-rich components and protein fractions relevant to allergic responses.",
+    "ecologicalRoleSummary": "Likely supports defense, prey subduing, and competitive ecological interactions.",
+    "evidence": {
+      "id": "ev-venom-mixture",
+      "confidence": "moderate",
+      "evidenceType": "review",
+      "citationIds": [
+        "cit-fire-ant-review-2007"
+      ]
+    }
+  },
+  "components": [
+    {
+      "id": "comp-alkaloids",
+      "venomId": "ven-fire-ant-primary",
+      "componentCategory": "Piperidine alkaloids",
+      "abundanceQualifier": "not_quantified",
+      "summary": "Qualitatively prominent class in many fire-ant venom descriptions.",
+      "evidence": {
+        "id": "ev-venom-mixture",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-fire-ant-review-2007"
+        ]
+      }
+    },
+    {
+      "id": "comp-proteins",
+      "venomId": "ven-fire-ant-primary",
+      "componentCategory": "Protein fractions/allergens",
+      "abundanceQualifier": "not_quantified",
+      "summary": "Associated with immune-mediated responses in sensitized individuals.",
+      "evidence": {
+        "id": "ev-systemic-allergy",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    }
+  ]
+}

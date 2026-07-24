@@ -1,0 +1,54 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import EvidenceBadge from '../components/astro/EvidenceBadge.astro';
+import { ThemeSwitcher } from '../islands/ThemeSwitcher';
+import { VegaChart } from '../visualizations/vega/VegaChart';
+import { buildVenomCompositionSpec } from '../visualizations/vega/venomCompositionSpec';
+import {
+  getAllOrganisms,
+  getVenomByOrganismSlug,
+} from '../lib/content';
+
+const featured = getAllOrganisms()[0];
+const featuredSlug = featured?.organism.slug ?? 'solenopsis-invicta';
+const featuredVenom = getVenomByOrganismSlug(featuredSlug);
+---
+
+<PageLayout title="Venom Atlas" description="Static-first scientific atlas for venom and toxin evidence.">
+  <ThemeSwitcher slot="theme" client:idle />
+
+  <section class="panel grid">
+    <h1>Venom Atlas</h1>
+    <p>
+      A static-first scientific atlas that connects organism biology, venom composition, molecular
+      representation, mechanism pathways, physiology, and geography.
+    </p>
+    {featured ? (
+      <>
+        <p>
+          <strong>Featured organism:</strong> {featured.organism.scientificName} ({featured.organism.commonName})
+        </p>
+        <EvidenceBadge evidence={featured.organism.evidence} />
+        <p>{featured.organism.overview}</p>
+      </>
+    ) : (
+      <p>Featured organism unavailable.</p>
+    )}
+  </section>
+
+  <section class="grid grid-2">
+    <a class="panel" href="/organisms">Browse organisms</a>
+    <a class="panel" href="/toxins">Browse toxins</a>
+    <a class="panel" href="/effects">Explore physiology and mechanism effects</a>
+    <a class="panel" href="/sources">View citations and provenance</a>
+  </section>
+
+  {featuredVenom ? (
+    <VegaChart
+      client:visible
+      title="Evidence-aware venom component view"
+      summary="Qualitative categories are shown without fabricated percentages."
+      spec={buildVenomCompositionSpec(featuredVenom.components)}
+    />
+  ) : null}
+</PageLayout>

@@ -1,0 +1,118 @@
+﻿media:
+  - id: media-organism-photo-placeholder
+    slug: organism-photo-placeholder
+    kind: organism_photo
+    localPath: /images/organism-photo-placeholder.txt
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Placeholder only. Production image pending license verification.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Placeholder marker.
+  - id: media-mandibles-placeholder
+    slug: mandibles-placeholder
+    kind: anatomical_photo
+    localPath: /images/mandibles-placeholder.txt
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Placeholder only. Close-up source pending.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Placeholder marker.
+  - id: media-stinger-placeholder
+    slug: stinger-placeholder
+    kind: anatomical_photo
+    localPath: /images/stinger-placeholder.txt
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Placeholder only. Close-up source pending.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Placeholder marker.
+  - id: media-habitat-placeholder
+    slug: habitat-placeholder
+    kind: organism_photo
+    localPath: /images/habitat-placeholder.txt
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Placeholder only. Habitat image pending source verification.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Placeholder marker.
+  - id: media-2d-solenopsin-placeholder
+    slug: solenopsin-a-2d
+    kind: molecular_2d
+    localPath: /images/solenopsin-a-2d.svg
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Placeholder marker. Scientifically sourced 2D structure pending.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Placeholder marker.
+  - id: media-3d-solenopsin-placeholder
+    slug: solenopsin-a-3d
+    kind: molecular_3d
+    localPath: /structures/solenopsin-a.sdf
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Placeholder marker. Verified 3D structure file pending.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Placeholder marker.
+  - id: media-range-geometry-placeholder
+    slug: solenopsis-range-geometry
+    kind: range_geometry
+    localPath: /geography/solenopsis-invicta-range.geojson
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Placeholder marker. Source-backed geometry pending.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Placeholder marker.
+  - id: media-solenopsis-head-photo
+    slug: solenopsis-invicta-head-casent0104523
+    kind: organism_photo
+    localPath: /images/organisms/solenopsis-invicta/solenopsis-invicta-head-casent0104523.png
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Pending provenance verification.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Excluded from publication until licensing is verified.
+  - id: media-solenopsis-profile-photo
+    slug: solenopsis-invicta-profile-casent0104523
+    kind: organism_photo
+    localPath: /images/organisms/solenopsis-invicta/solenopsis-invicta-profile-casent0104523.png
+    sourceUrl: null
+    creator: null
+    license: null
+    attributionText: Pending provenance verification.
+    citationId: null
+    redistributionVerified: false
+    modificationAllowed: null
+    accessedAt: null
+    notes: Excluded from publication until licensing is verified.

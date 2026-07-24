@@ -31,13 +31,13 @@ describe('molecular renderer selection', () => {
     expect(renderer?.rendererId).toBe('molstar-boundary');
   });
 
-  it('returns fallback null for unsupported model', () => {
+  it('returns 2D fallback adapter for unsupported 3D model', () => {
     const renderer = pickMolecularRenderer({
       ...baseModel,
       molecularClass: 'small_molecule',
       structureFormat: 'sdf',
       structureUrl: undefined,
     });
-    expect(renderer).toBeNull();
+    expect(renderer?.rendererId).toBe('2d-asset');
   });
 });

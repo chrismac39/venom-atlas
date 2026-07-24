@@ -1,30 +1,7 @@
-import { useEffect, useState } from 'react';
 import type { Citation } from '@venom-atlas/domain';
-import { atlasApi } from '../services/apiClient';
 
-export const CitationList = ({ citationIds }: { citationIds: string[] }) => {
-  const [citations, setCitations] = useState<Citation[]>([]);
-
-  useEffect(() => {
-    let mounted = true;
-    Promise.all(citationIds.map((id) => atlasApi.getCitation(id)))
-      .then((rows) => {
-        if (mounted) {
-          setCitations(rows);
-        }
-      })
-      .catch(() => {
-        if (mounted) {
-          setCitations([]);
-        }
-      });
-
-    return () => {
-      mounted = false;
-    };
-  }, [citationIds]);
-
-  if (citationIds.length === 0) {
+export const CitationList = ({ citations }: { citations: Citation[] }) => {
+  if (citations.length === 0) {
     return <p className="muted">No source citations linked.</p>;
   }
 

@@ -1,0 +1,47 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { RangeMapPanel } from '../../../visualizations/maps/RangeMapPanel';
+import { getAllOrganisms, getOrganismBySlug, getGeographyByOrganismSlug } from '../../../lib/content';
+
+export const getStaticPaths = async () => {
+  return getAllOrganisms().map((entry) => ({
+    params: { slug: entry.organism.slug },
+  }));
+};
+
+const { slug } = Astro.params;
+const organism = slug ? getOrganismBySlug(slug) : undefined;
+const geography = slug ? getGeographyByOrganismSlug(slug) : undefined;
+
+if (!organism || !geography) {
+  throw new Error(`Missing organism/geography for slug: ${slug}`);
+}
+
+const antMapsEmbedUrl = organism.externalProfile?.antMapsEmbedUrl;
+---
+
+<PageLayout title={`${organism.organism.scientificName} geography | Venom Atlas`} description="Ecology and range data.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>Ecology and geography</h1>
+    <p>Range layers are shown with explicit placeholder states for missing source-backed geometry.</p>
+  </section>
+
+  <RangeMapPanel ranges={geography.ranges} />
+
+  <section class="panel">
+    <h2>Interactive species range map</h2>
+    {antMapsEmbedUrl ? (
+      <iframe
+        class="organism-antmaps-embed organism-antmaps-embed-interactive"
+        src={antMapsEmbedUrl}
+        title="AntMaps species distribution explorer"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      />
+    ) : (
+      <p class="muted">External range map URL is not configured for this organism.</p>
+    )}
+  </section>
+</PageLayout>

@@ -1,0 +1,51 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
+import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { VegaChart } from '../../../visualizations/vega/VegaChart';
+import { buildVenomCompositionSpec } from '../../../visualizations/vega/venomCompositionSpec';
+import { getAllOrganisms, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
+
+export const getStaticPaths = async () => {
+  return getAllOrganisms().map((entry) => ({
+    params: { slug: entry.organism.slug },
+  }));
+};
+
+const { slug } = Astro.params;
+const organism = slug ? getOrganismBySlug(slug) : undefined;
+const venom = slug ? getVenomByOrganismSlug(slug) : undefined;
+
+if (!organism || !venom) {
+  throw new Error(`Missing organism/venom for slug: ${slug}`);
+}
+---
+
+<PageLayout title={`${organism.organism.scientificName} venom | Venom Atlas`} description={venom.venom.description}>
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>{venom.venom.name}</h1>
+    <EvidenceBadge evidence={venom.venom.evidence} />
+    <p>{venom.venom.description}</p>
+    <p><strong>Biological role:</strong> {venom.venom.ecologicalRoleSummary}</p>
+  </section>
+
+  <VegaChart
+    client:visible
+    title="Toxin composition overview"
+    summary="Evidence-aware BI charting. Unsourced values are intentionally left unquantified."
+    spec={buildVenomCompositionSpec(venom.components)}
+  />
+
+  <section class="panel">
+    <h2>Component categories</h2>
+    <ul>
+      {venom.components.map((component) => (
+        <li>
+          <strong>{component.componentCategory}</strong> - {component.summary ?? 'No summary'}
+        </li>
+      ))}
+    </ul>
+    <a href="/toxins/solenopsin-a">Open Solenopsin A molecule page</a>
+  </section>
+</PageLayout>

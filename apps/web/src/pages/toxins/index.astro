@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
+import { getAllToxins } from '../../lib/content';
+
+const toxins = getAllToxins().sort((a, b) => a.toxin.displayName.localeCompare(b.toxin.displayName));
+---
+
+<PageLayout title="Toxins | Venom Atlas" description="Browse toxins in Venom Atlas.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>Toxins</h1>
+    <ul>
+      {toxins.map((entry) => (
+        <li>
+          <a href={`/toxins/${entry.toxin.slug}`}>{entry.toxin.displayName}</a>
+          {entry.toxin.family ? ` - ${entry.toxin.family}` : ''}
+        </li>
+      ))}
+    </ul>
+  </section>
+</PageLayout>

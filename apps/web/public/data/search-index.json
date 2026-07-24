@@ -1,0 +1,81 @@
+[
+  {
+    "id": "org-solenopsis-invicta",
+    "entityType": "organism",
+    "title": "Red imported fire ant",
+    "scientificName": "Solenopsis invicta",
+    "aliases": [
+      "Solenopsis invicta",
+      "Red imported fire ant"
+    ],
+    "summary": "Solenopsis invicta is an ant species widely studied for defensive sting behavior, rapid colony recruitment, and ecological impact where established.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/solenopsis-invicta"
+  },
+  {
+    "id": "ven-fire-ant-primary",
+    "entityType": "venom",
+    "title": "Solenopsis invicta venom",
+    "aliases": [
+      "Solenopsis invicta venom"
+    ],
+    "summary": "A biologically active mixture with alkaloid-rich components and protein fractions relevant to allergic responses.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/solenopsis-invicta/venom"
+  },
+  {
+    "id": "tox-solenopsin-a",
+    "entityType": "toxin",
+    "title": "Solenopsin A",
+    "aliases": [
+      "Piperidine alkaloids (solenopsins)"
+    ],
+    "summary": "Featured representative compound. Not claimed as sole mediator of all clinical effects.",
+    "tags": [
+      "toxin",
+      "Piperidine alkaloids (solenopsins)"
+    ],
+    "route": "/toxins/solenopsin-a"
+  },
+  {
+    "id": "mechanism-solenopsin-a",
+    "entityType": "mechanism",
+    "title": "Solenopsin A mechanism",
+    "aliases": [
+      "Sting exposure",
+      "Local venom deposition",
+      "Immediate pain and burning sensation",
+      "Local inflammatory response",
+      "Wheal/pustule development where applicable",
+      "Persistent local discomfort in some cases"
+    ],
+    "summary": "Ant anchors with mandibles and delivers venom through the stinger.",
+    "tags": [
+      "mechanism"
+    ],
+    "route": "/toxins/solenopsin-a/mechanism"
+  },
+  {
+    "id": "effect-solenopsin-a",
+    "entityType": "effect",
+    "title": "Solenopsin A effects",
+    "aliases": [
+      "Local skin tissue impact",
+      "Sensory nerve-associated pain",
+      "Local inflammatory response",
+      "Systemic allergic pathway (non-default)"
+    ],
+    "summary": "Direct local tissue effects at sting site.",
+    "tags": [
+      "effect",
+      "physiology"
+    ],
+    "route": "/toxins/solenopsin-a/physiology"
+  }
+]

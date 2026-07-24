@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
+import { getAllCitations } from '../../lib/content';
+
+const citations = getAllCitations().sort((a, b) => a.title.localeCompare(b.title));
+---
+
+<PageLayout title="Sources | Venom Atlas" description="Citation and evidence source index.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>Sources</h1>
+    <ul>
+      {citations.map((citation) => (
+        <li>
+          <a href={`/sources/${citation.slug}`}>{citation.title}</a>
+          {citation.publicationYear ? ` (${citation.publicationYear})` : ''}
+        </li>
+      ))}
+    </ul>
+  </section>
+</PageLayout>

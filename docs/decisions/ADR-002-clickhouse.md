@@ -1,5 +1,8 @@
 # ADR-002: ClickHouse for curated scientific atlas data
 
+> Superseded by ADR-005 (static-first Astro) for production architecture.
+> Kept for historical context.
+
 ## Status
 
 Accepted

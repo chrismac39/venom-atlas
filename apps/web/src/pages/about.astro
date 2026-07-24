@@ -1,0 +1,19 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../islands/ThemeSwitcher';
+---
+
+<PageLayout title="About | Venom Atlas" description="About the static-first Venom Atlas project.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel grid">
+    <h1>About Venom Atlas</h1>
+    <p>
+      Venom Atlas is an evidence-aware educational atlas. The public site is generated as static HTML
+      and selectively hydrates only interactive visualizations.
+    </p>
+    <p>
+      Missing and provisional scientific fields are intentionally shown as unsourced states instead of
+      fabricated values.
+    </p>
+  </section>
+</PageLayout>

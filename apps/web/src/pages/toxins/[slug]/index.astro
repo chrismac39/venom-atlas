@@ -1,0 +1,87 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
+import CitationList from '../../../components/astro/CitationList.astro';
+import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { MoleculeViewer } from '../../../molecular/components/MoleculeViewer';
+import type { MolecularRepresentation } from '@venom-atlas/visualization-contracts';
+import { getAllToxins, getCitationsByIds, getToxinBySlug } from '../../../lib/content';
+
+const supportedRepresentations: MolecularRepresentation[] = [
+  'ball_and_stick',
+  'stick',
+  'space_filling',
+  'two_dimensional_skeletal',
+];
+
+export const getStaticPaths = async () => {
+  return getAllToxins().map((entry) => ({
+    params: { slug: entry.toxin.slug },
+  }));
+};
+
+const { slug } = Astro.params;
+const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
+
+if (!toxinBundle) {
+  throw new Error(`Missing toxin bundle for slug: ${slug}`);
+}
+
+const structureAsset = toxinBundle.structureAssets.find((asset) => asset.verified);
+const structureFormat =
+  structureAsset && structureAsset.format !== 'svg' ? structureAsset.format : undefined;
+const model = {
+  entityId: toxinBundle.molecularEntity.id,
+  displayName: toxinBundle.molecularEntity.displayName,
+  molecularClass: toxinBundle.molecularEntity.molecularClass,
+  structureFormat,
+  structureUrl: structureAsset?.localPath,
+  defaultRepresentation: 'ball_and_stick' as MolecularRepresentation,
+  supportedRepresentations,
+  annotations: [
+    {
+      id: 'ann-scaffold-warning',
+      label: 'Scaffold caution',
+      description: 'Representation is educational; unresolved fields remain unsourced.',
+    },
+  ],
+};
+
+const citations = getCitationsByIds(toxinBundle.molecularEntity.evidence.citationIds);
+---
+
+<PageLayout title={`${toxinBundle.toxin.displayName} | Venom Atlas`} description="Molecular identity and structure evidence.">
+  <ThemeSwitcher slot="theme" client:idle />
+
+  <section class="panel">
+    <h1>{toxinBundle.toxin.displayName}</h1>
+    <EvidenceBadge evidence={toxinBundle.molecularEntity.evidence} />
+    <p><strong>Molecular class:</strong> {toxinBundle.molecularEntity.molecularClass}</p>
+    <p><strong>Formula:</strong> {toxinBundle.molecularEntity.formula ?? 'Data not yet sourced.'}</p>
+    <p>
+      <strong>Molecular weight:</strong> {toxinBundle.molecularEntity.molecularWeight ?? 'Data not yet sourced.'}
+    </p>
+    <p>
+      <strong>Structure-data source:</strong>{' '}
+      {toxinBundle.molecularEntity.structureDataSource ?? 'Data not yet sourced.'}
+    </p>
+  </section>
+
+  <MoleculeViewer client:visible model={model} />
+
+  <section class="panel">
+    <h2>2D structure panel</h2>
+    <p>Asset is currently placeholder-only and not sourced as a verified molecular reference.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Evidence and sources</h2>
+    <CitationList citations={citations} />
+  </section>
+
+  <section class="panel">
+    <a href={`/toxins/${toxinBundle.toxin.slug}/mechanism`}>Continue to mechanism page</a>
+    <br />
+    <a href={`/toxins/${toxinBundle.toxin.slug}/physiology`}>Continue to physiology page</a>
+  </section>
+</PageLayout>
