@@ -46,11 +46,11 @@ const OrganismDetailPageHost = ({ orchestration }: OrganismDetailPageHostProps) 
           {showOverviewLine ? <p>{viewModel.organismOverview}</p> : null}
           {showInlineSummary ? (
             <div className="organism-summary-details">
-              <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
+              <section className="organism-summary-pill">
                 <h3>Toxin category</h3>
                 <p>{viewModel.toxinCategorySummary}</p>
               </section>
-              <section className="organism-summary-pill ui-surface-glass ui-hover-lift">
+              <section className="organism-summary-pill">
                 <h3>Exposure to humans</h3>
                 <p>{viewModel.humanExposureSummary}</p>
               </section>

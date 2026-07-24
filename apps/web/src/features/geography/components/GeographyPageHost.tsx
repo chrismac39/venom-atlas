@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { RouteEntityNotFound } from '../../../components/RouteEntityNotFound';
 import { RangeMapPanel } from '../../../visualizations/maps/RangeMapPanel';
 import { defaultOrganismSlug } from '../../../services/atlasRouting';
@@ -8,6 +9,7 @@ type GeographyPageHostProps = {
 };
 
 const GeographyPageHost = ({ orchestration }: GeographyPageHostProps) => {
+  const [isMapInteractive, setIsMapInteractive] = useState(false);
   const {
     organismSlug,
     unknownSlug,
@@ -37,13 +39,45 @@ const GeographyPageHost = ({ orchestration }: GeographyPageHostProps) => {
       {antMapsEmbedUrl ? (
         <section className="panel organism-antmaps-wrap">
           <h3>{antMapsTitleOverride ?? 'Interactive species range map'}</h3>
-          <iframe
-            className="organism-antmaps-embed"
-            src={antMapsEmbedUrl}
-            title="AntMaps species distribution explorer"
-            loading="lazy"
-            referrerPolicy="strict-origin-when-cross-origin"
-          />
+          <p className="muted organism-antmaps-hint">
+            Click the map to interact. Move your cursor out of the map to resume normal page scroll.
+          </p>
+          <div
+            className="organism-antmaps-interaction-layer"
+            onMouseLeave={() => setIsMapInteractive(false)}
+          >
+            <iframe
+              className={`organism-antmaps-embed${isMapInteractive ? ' organism-antmaps-embed-interactive' : ''}`}
+              src={antMapsEmbedUrl}
+              title="AntMaps species distribution explorer"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+
+            {!isMapInteractive ? (
+              <button
+                type="button"
+                className="organism-antmaps-overlay"
+                onClick={() => setIsMapInteractive(true)}
+                aria-label="Enable AntMaps interaction"
+              >
+                <span className="organism-antmaps-overlay-pill">
+                  <span className="organism-antmaps-overlay-title">Click to interact with map</span>
+                  <span className="organism-antmaps-overlay-subtitle">
+                    Scroll is locked to page until you activate map controls.
+                  </span>
+                </span>
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="organism-antmaps-lock-button"
+                onClick={() => setIsMapInteractive(false)}
+              >
+                Lock map
+              </button>
+            )}
+          </div>
         </section>
       ) : null}
       <section className="panel">

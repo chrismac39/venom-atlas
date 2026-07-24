@@ -15,6 +15,75 @@
   --summary-strip-font-size: 0.84rem;
   --summary-strip-species-font-size: 0.96rem;
   --map-min-height: clamp(420px, 60vh, 760px);
+  --pill-radius: 8px;
+  --pill-border-color: transparent;
+  --pill-border-color-hover: transparent;
+  --pill-bg:
+    radial-gradient(
+      circle at 16% 22%,
+      color-mix(in srgb, var(--accent-science), transparent 95%),
+      transparent 56%
+    ),
+    radial-gradient(
+      circle at 88% 82%,
+      color-mix(in srgb, var(--warning), transparent 97%),
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--panel-soft), white 2%),
+      color-mix(in srgb, var(--panel), black 4%) 62%,
+      color-mix(in srgb, var(--panel-soft), black 2%)
+    );
+  --pill-bg-hover:
+    radial-gradient(
+      circle at 20% 20%,
+      color-mix(in srgb, var(--accent-science), transparent 92%),
+      transparent 54%
+    ),
+    radial-gradient(
+      circle at 86% 78%,
+      color-mix(in srgb, var(--warning), transparent 95%),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--panel-soft), white 3%),
+      color-mix(in srgb, var(--panel), black 3%) 60%,
+      color-mix(in srgb, var(--panel-soft), black 1%)
+    );
+  --pill-shadow:
+    inset 0 1px 0 color-mix(in srgb, white, transparent 90%),
+    0 1px 8px color-mix(in srgb, black, transparent 92%);
+  --pill-shadow-hover:
+    inset 0 1px 0 color-mix(in srgb, white, transparent 82%),
+    0 6px 16px color-mix(in srgb, black, transparent 86%);
+  --pill-hover-transform: translateY(-1px);
+  --pill-transition:
+    transform 180ms var(--motion-lift-curve),
+    box-shadow 180ms var(--motion-lift-curve),
+    border-color 180ms var(--motion-lift-curve),
+    background 180ms var(--motion-lift-curve);
+  --scrim-bg:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--bg), transparent 28%),
+      color-mix(in srgb, var(--panel), transparent 20%)
+    ),
+    radial-gradient(
+      circle at 18% 18%,
+      color-mix(in srgb, var(--accent-science), transparent 82%),
+      transparent 48%
+    ),
+    radial-gradient(
+      circle at 84% 78%,
+      color-mix(in srgb, var(--warning), transparent 90%),
+      transparent 62%
+    );
+  --scrim-backdrop-filter: blur(5px) saturate(118%);
+  --scrim-shadow:
+    0 12px 22px color-mix(in srgb, black, transparent 84%),
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 88%) inset;
 }
 
 html {
@@ -240,26 +309,10 @@ select {
   left: 0;
   right: 0;
   height: calc(var(--summary-strip-top-gap) + var(--global-summary-height, 0px) + 0.45rem);
-  background:
-    radial-gradient(
-      circle at 18% 12%,
-      color-mix(in srgb, var(--accent-science), transparent 90%),
-      transparent 58%
-    ),
-    radial-gradient(
-      circle at 82% 14%,
-      color-mix(in srgb, var(--warning), transparent 94%),
-      transparent 62%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--panel), black 8%),
-      color-mix(in srgb, var(--panel-soft), black 4%) 72%,
-      color-mix(in srgb, var(--panel-soft), transparent 18%)
-    );
-  backdrop-filter: blur(8px) saturate(112%);
-  -webkit-backdrop-filter: blur(8px) saturate(112%);
-  box-shadow: 0 8px 18px color-mix(in srgb, black, transparent 88%);
+  background: var(--scrim-bg);
+  backdrop-filter: var(--scrim-backdrop-filter);
+  -webkit-backdrop-filter: var(--scrim-backdrop-filter);
+  box-shadow: var(--scrim-shadow);
   z-index: 0;
   pointer-events: none;
 }
@@ -268,26 +321,13 @@ select {
   width: min(100%, calc(var(--layout-max-width) - (2 * var(--layout-pad-x))));
   margin-top: var(--summary-strip-top-gap);
   position: relative;
-  isolation: isolate;
-  overflow: hidden;
+  isolation: auto;
+  overflow: visible;
   z-index: 1;
-  border: 1px solid color-mix(in srgb, var(--accent-science), transparent 90%);
-  border-radius: 14px;
-  background:
-    radial-gradient(circle at 10% 28%, color-mix(in srgb, var(--accent-science), transparent 90%), transparent 46%),
-    radial-gradient(circle at 92% 72%, color-mix(in srgb, var(--warning), transparent 95%), transparent 54%),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--panel-soft), black 7%),
-      color-mix(in srgb, var(--panel), black 16%)
-    );
-  backdrop-filter: blur(6px) saturate(116%);
-  -webkit-backdrop-filter: blur(6px) saturate(116%);
-  box-shadow:
-    0 16px 28px color-mix(in srgb, black, transparent 84%),
-    0 6px 12px color-mix(in srgb, black, transparent 91%),
-    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 95%) inset,
-    0 1px 0 color-mix(in srgb, white, transparent 86%) inset;
+  border: none;
+  border-radius: var(--pill-radius);
+  background: var(--pill-bg);
+  box-shadow: var(--pill-shadow);
   padding: 0.62rem 1.05rem;
   display: grid;
   gap: 0.16rem;
@@ -295,36 +335,11 @@ select {
 }
 
 .atlas-global-summary-strip::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background:
-    radial-gradient(
-      120% 70% at 50% -8%,
-      color-mix(in srgb, white, transparent 86%),
-      color-mix(in srgb, white, transparent 98%) 52%,
-      transparent 76%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, white, transparent 96%),
-      transparent 38%
-    );
-  z-index: -1;
-  pointer-events: none;
+  display: none;
 }
 
 .atlas-global-summary-strip::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  box-shadow:
-    0 0 0 1px color-mix(in srgb, white, transparent 90%) inset,
-    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 93%),
-    0 0 24px color-mix(in srgb, var(--accent-science), transparent 96%);
-  pointer-events: none;
+  display: none;
 }
 
 .atlas-global-summary-line {
@@ -776,32 +791,11 @@ select {
   display: grid;
   align-content: start;
   gap: 0.14rem;
-  border-radius: 8px;
-  background:
-    radial-gradient(
-      circle at 16% 22%,
-      color-mix(in srgb, var(--accent-science), transparent 95%),
-      transparent 56%
-    ),
-    radial-gradient(
-      circle at 88% 82%,
-      color-mix(in srgb, var(--warning), transparent 97%),
-      transparent 62%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--panel-soft), white 2%),
-      color-mix(in srgb, var(--panel), black 4%) 62%,
-      color-mix(in srgb, var(--panel-soft), black 2%)
-    );
-  box-shadow:
-    inset 0 1px 0 color-mix(in srgb, white, transparent 90%),
-    0 1px 8px color-mix(in srgb, black, transparent 92%);
-  transition:
-    background 160ms ease,
-    color 160ms ease,
-    box-shadow 160ms ease,
-    transform 160ms ease;
+  border: none;
+  border-radius: var(--pill-radius);
+  background: var(--pill-bg);
+  box-shadow: var(--pill-shadow);
+  transition: var(--pill-transition), color 160ms ease;
 }
 
 .organism-taxonomy-rank::after {
@@ -813,27 +807,9 @@ select {
 }
 
 .organism-taxonomy-rank:hover {
-  background:
-    radial-gradient(
-      circle at 20% 20%,
-      color-mix(in srgb, var(--accent-science), transparent 92%),
-      transparent 54%
-    ),
-    radial-gradient(
-      circle at 86% 78%,
-      color-mix(in srgb, var(--warning), transparent 95%),
-      transparent 60%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--panel-soft), white 3%),
-      color-mix(in srgb, var(--panel), black 3%) 60%,
-      color-mix(in srgb, var(--panel-soft), black 1%)
-    );
-  box-shadow:
-    inset 0 1px 0 color-mix(in srgb, white, transparent 82%),
-    0 6px 16px color-mix(in srgb, black, transparent 86%);
-  transform: translateY(-1px);
+  background: var(--pill-bg-hover);
+  box-shadow: var(--pill-shadow-hover);
+  transform: var(--pill-hover-transform);
 }
 
 .organism-taxonomy-rank:hover .organism-taxonomy-rank-label {
@@ -881,8 +857,18 @@ select {
 
 .organism-summary-pill {
   position: relative;
-  border-radius: 13px;
+  border: none;
+  border-radius: var(--pill-radius);
+  background: var(--pill-bg);
+  box-shadow: var(--pill-shadow);
   padding: 0.76rem 1rem;
+  transition: var(--pill-transition);
+}
+
+.organism-summary-pill:hover {
+  background: var(--pill-bg-hover);
+  box-shadow: var(--pill-shadow-hover);
+  transform: var(--pill-hover-transform);
 }
 
 .organism-summary-details h3 {
@@ -989,6 +975,14 @@ select {
   margin-top: var(--space-2);
 }
 
+.organism-antmaps-hint {
+  margin: 0.25rem 0 0.75rem;
+}
+
+.organism-antmaps-interaction-layer {
+  position: relative;
+}
+
 .organism-antmaps-wrap h4 {
   margin: 0 0 0.5rem;
 }
@@ -999,6 +993,72 @@ select {
   border: 1px solid var(--rule);
   border-radius: 6px;
   background: #111;
+  pointer-events: none;
+}
+
+.organism-antmaps-embed.organism-antmaps-embed-interactive {
+  pointer-events: auto;
+}
+
+.organism-antmaps-overlay {
+  position: absolute;
+  inset: 0;
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 58%);
+  border-radius: 6px;
+  background: var(--scrim-bg);
+  color: var(--text);
+  display: grid;
+  gap: 0.4rem;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  backdrop-filter: var(--scrim-backdrop-filter);
+  -webkit-backdrop-filter: var(--scrim-backdrop-filter);
+  box-shadow: var(--scrim-shadow);
+  transition: border-color 160ms var(--motion-lift-curve);
+}
+
+.organism-antmaps-overlay-pill {
+  display: grid;
+  gap: 0.25rem;
+  width: min(92%, 44rem);
+  background: var(--pill-bg);
+  border: none;
+  border-radius: var(--pill-radius);
+  padding: 0.62rem 1rem;
+  box-shadow: var(--pill-shadow);
+  transition: var(--pill-transition);
+}
+
+.organism-antmaps-overlay-title {
+  display: block;
+  color: var(--text);
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.organism-antmaps-overlay-subtitle {
+  display: block;
+  color: var(--muted);
+  line-height: 1.28;
+  font-size: 0.92rem;
+}
+
+.organism-antmaps-overlay-pill:hover {
+  background: var(--pill-bg-hover);
+  box-shadow: var(--pill-shadow-hover);
+  transform: var(--pill-hover-transform);
+}
+
+.organism-antmaps-lock-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 58%);
+  background: color-mix(in srgb, var(--panel), black 10%);
 }
 
 svg {
