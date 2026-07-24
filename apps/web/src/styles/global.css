@@ -4,6 +4,15 @@
   --top-ribbon-height: 4rem;
   --motion-lift-curve: cubic-bezier(0.22, 1, 0.36, 1);
   --motion-lift-duration: 200ms;
+  --layout-max-width: 1360px;
+  --layout-pad-x: var(--space-3);
+  --layout-pad-y: var(--space-3);
+  --layout-section-pad: 1rem;
+  --nav-pad-x: var(--space-4);
+  --summary-strip-top-gap: 0.85rem;
+  --summary-strip-font-size: 0.84rem;
+  --summary-strip-species-font-size: 0.96rem;
+  --map-min-height: clamp(420px, 60vh, 760px);
 }
 
 html {
@@ -26,15 +35,15 @@ a {
 }
 
 main {
-  max-width: 1100px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
-  padding: calc(var(--top-ribbon-height) + var(--space-4)) var(--space-4) var(--space-4);
+  padding: calc(var(--top-ribbon-height) + var(--layout-pad-y)) var(--layout-pad-x) var(--layout-pad-y);
 }
 
 main.main-organism-route {
   max-width: none;
   width: 100%;
-  padding: calc(var(--top-ribbon-height) + var(--space-3)) var(--space-4) var(--space-3);
+  padding: calc(var(--top-ribbon-height) + var(--space-2)) var(--layout-pad-x) var(--space-2);
 }
 
 .panel {
@@ -84,7 +93,7 @@ nav.primary {
   right: 0;
   z-index: 20;
   border-bottom: 1px solid var(--rule);
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-2) var(--nav-pad-x);
   min-height: var(--top-ribbon-height);
   align-items: center;
   display: flex;
@@ -211,30 +220,38 @@ select {
 
 .atlas-global-summary-pills {
   position: fixed;
-  top: calc(var(--top-ribbon-height) + 0.85rem);
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(860px, calc(100vw - 2.2rem));
+  top: calc(var(--top-ribbon-height) + var(--summary-strip-top-gap));
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 var(--layout-pad-x);
   z-index: 19;
 }
 
 .atlas-global-summary-strip {
-  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 58%);
-  border-radius: 10px;
-  background: color-mix(in srgb, var(--panel), black 14%);
+  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 52%);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 8% 50%, color-mix(in srgb, var(--accent-science), transparent 88%), transparent 34%),
+    radial-gradient(circle at 92% 50%, color-mix(in srgb, var(--warning), transparent 92%), transparent 40%),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--panel-soft), black 16%),
+      color-mix(in srgb, var(--panel), black 22%)
+    );
   box-shadow:
-    0 10px 26px color-mix(in srgb, black, transparent 82%),
-    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 92%) inset;
-  padding: 0.58rem 0.82rem;
+    0 14px 28px color-mix(in srgb, black, transparent 80%),
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 90%) inset;
+  padding: 0.56rem 1rem;
   display: grid;
-  gap: 0.2rem;
+  gap: 0.18rem;
   pointer-events: none;
 }
 
 .atlas-global-summary-line {
   margin: 0;
   line-height: 1.25;
-  font-size: 0.84rem;
+  font-size: var(--summary-strip-font-size);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -242,7 +259,7 @@ select {
 
 .atlas-global-summary-species {
   font-family: 'Literata', 'Times New Roman', serif;
-  font-size: 0.94rem;
+  font-size: var(--summary-strip-species-font-size);
   font-weight: 600;
 }
 
@@ -356,7 +373,7 @@ select {
   scroll-margin-top: calc(var(--top-ribbon-height) + var(--space-2));
   border: 1px solid color-mix(in srgb, var(--rule), transparent 18%);
   border-radius: var(--radius);
-  padding: var(--space-3);
+  padding: var(--layout-section-pad);
   background: linear-gradient(
     180deg,
     color-mix(in srgb, var(--panel), black 4%),
@@ -463,7 +480,81 @@ select {
   padding: 0;
 }
 
+@media (min-aspect-ratio: 21/9) {
+  :root {
+    --layout-max-width: 1720px;
+    --layout-pad-x: 2.2rem;
+    --layout-section-pad: 1.05rem;
+    --summary-strip-font-size: 0.86rem;
+    --summary-strip-species-font-size: 1rem;
+    --map-min-height: clamp(420px, 52vh, 680px);
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  :root {
+    --layout-max-width: 1240px;
+    --layout-pad-x: 0.95rem;
+    --layout-section-pad: 0.9rem;
+    --nav-pad-x: 0.95rem;
+    --summary-strip-top-gap: 0.65rem;
+    --summary-strip-font-size: 0.81rem;
+    --summary-strip-species-font-size: 0.91rem;
+    --map-min-height: clamp(360px, 54vh, 620px);
+  }
+
+  .atlas-global-summary-strip {
+    gap: 0.14rem;
+    padding: 0.5rem 0.72rem;
+  }
+}
+
+@media (max-aspect-ratio: 3/4) {
+  :root {
+    --layout-pad-x: 0.75rem;
+    --layout-pad-y: 0.75rem;
+    --layout-section-pad: 0.78rem;
+    --summary-strip-top-gap: 0.5rem;
+    --summary-strip-font-size: 0.78rem;
+    --summary-strip-species-font-size: 0.88rem;
+    --map-min-height: clamp(320px, 48vh, 520px);
+  }
+
+  nav.primary {
+    gap: var(--space-2);
+  }
+
+  .theme-switcher {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-height: 760px) and (orientation: landscape) {
+  :root {
+    --top-ribbon-height: 3.5rem;
+    --layout-pad-y: 0.7rem;
+    --summary-strip-top-gap: 0.45rem;
+    --map-min-height: clamp(280px, 46vh, 420px);
+  }
+
+  .atlas-global-summary-strip {
+    padding: 0.42rem 0.68rem;
+    gap: 0.1rem;
+  }
+
+  .atlas-global-summary-line {
+    font-size: 0.77rem;
+  }
+}
+
 @media (max-width: 900px) {
+  main,
+  main.main-organism-route {
+    padding: calc(var(--top-ribbon-height) + var(--space-2)) var(--space-2) var(--space-2);
+  }
+
   .atlas-organism-gate {
     align-content: end;
   }
@@ -480,8 +571,9 @@ select {
     position: static;
     top: auto;
     left: auto;
-    transform: none;
+    right: auto;
     width: 100%;
+    padding: 0;
     z-index: auto;
     margin-bottom: var(--space-2);
   }
@@ -704,7 +796,7 @@ select {
 
 .organism-antmaps-embed {
   width: 100%;
-  min-height: 672px;
+  min-height: var(--map-min-height);
   border: 1px solid var(--rule);
   border-radius: 6px;
   background: #111;

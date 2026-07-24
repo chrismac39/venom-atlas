@@ -104,7 +104,6 @@ export const Layout = () => {
     <>
       <nav ref={navRef} className="primary" aria-label="Main navigation">
         <Link to="/">Venom Atlas</Link>
-        <Link to="/#section-organisms">Organisms</Link>
         <Link to="/#section-organism-profile">Profile</Link>
         <Link to="/#section-geography">Geography</Link>
         <Link to="/#section-mechanisms">Mechanisms</Link>

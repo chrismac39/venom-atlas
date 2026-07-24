@@ -16,9 +16,18 @@ import {
 interface VenomPageProps {
   organismSlugOverride?: string;
   mode?: 'full' | 'categorization' | 'charts';
+  categorizationTitleOverride?: string;
+  chartsTitleOverride?: string;
+  chartsSummaryOverride?: string;
 }
 
-export const VenomPage = ({ organismSlugOverride, mode = 'full' }: VenomPageProps = {}) => {
+export const VenomPage = ({
+  organismSlugOverride,
+  mode = 'full',
+  categorizationTitleOverride,
+  chartsTitleOverride,
+  chartsSummaryOverride,
+}: VenomPageProps = {}) => {
   const [data, setData] = useState<VenomDetail | null>(null);
   const { organismSlug: routeOrganismSlug } = useParams();
   const organismSlug = organismSlugOverride ?? routeOrganismSlug;
@@ -67,7 +76,7 @@ export const VenomPage = ({ organismSlugOverride, mode = 'full' }: VenomPageProp
     return (
       <section className="grid">
         <article className="panel">
-          <h1>Toxin categorization</h1>
+          <h1>{categorizationTitleOverride ?? 'Toxin categorization'}</h1>
           <p>{data.venom.description}</p>
           <p>
             <strong>Venom profile:</strong> {data.venom.name}
@@ -102,8 +111,11 @@ export const VenomPage = ({ organismSlugOverride, mode = 'full' }: VenomPageProp
     return (
       <section className="grid">
         <VegaChart
-          title="Toxin composition overview"
-          summary="Evidence-aware BI charting. Unsourced values are intentionally left unquantified."
+          title={chartsTitleOverride ?? 'Toxin composition overview'}
+          summary={
+            chartsSummaryOverride ??
+            'Evidence-aware BI charting. Unsourced values are intentionally left unquantified.'
+          }
           spec={buildVenomCompositionSpec(data.components)}
         />
 

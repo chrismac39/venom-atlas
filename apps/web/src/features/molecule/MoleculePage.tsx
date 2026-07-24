@@ -24,7 +24,15 @@ const supportedRepresentations: MolecularRepresentation[] = [
   'two_dimensional_skeletal',
 ];
 
-export const MoleculePage = () => {
+interface MoleculePageProps {
+  identityNoteOverride?: string;
+  structurePanelTitleOverride?: string;
+}
+
+export const MoleculePage = ({
+  identityNoteOverride,
+  structurePanelTitleOverride,
+}: MoleculePageProps = {}) => {
   const [data, setData] = useState<ToxinDetail | null>(null);
   const { toxinSlug } = useParams();
   const unknownSlug = toxinSlug ? !isKnownToxinSlug(toxinSlug) : false;
@@ -101,15 +109,15 @@ export const MoleculePage = () => {
           {data.molecularEntity.structureDataSource ?? 'Data not yet sourced.'}
         </p>
         <p className="muted">
-          Distinction: molecular identity (entity), molecular geometry (structure file), visual
-          representation (rendering mode), and biological effect (separate mechanism pages).
+          {identityNoteOverride ??
+            'Distinction: molecular identity (entity), molecular geometry (structure file), visual representation (rendering mode), and biological effect (separate mechanism pages).'}
         </p>
       </article>
 
       {renderModel ? <MoleculeViewer model={renderModel} /> : null}
 
       <section className="panel">
-        <h3>2D structure panel</h3>
+        <h3>{structurePanelTitleOverride ?? '2D structure panel'}</h3>
         <p>Asset not yet sourced from a verified structure source.</p>
       </section>
 

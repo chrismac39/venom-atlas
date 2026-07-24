@@ -5,8 +5,6 @@ import { defaultOrganismSlug, defaultToxinSlug } from '../../services/atlasRouti
 import { atlasApi } from '../../services/apiClient';
 import { useAtlasSelection } from '../../state/atlasSelection';
 import { organismSlugFromId } from '../../services/atlasRouting';
-import { LandingPage } from './LandingPage';
-import { OrganismsPage } from '../organism/OrganismsPage';
 import { OrganismDetailPage } from '../organism/OrganismDetailPage';
 import { GeographyPage } from '../geography/GeographyPage';
 import { MechanismPage } from '../mechanism/MechanismPage';
@@ -14,6 +12,12 @@ import { VenomPage } from '../venom/VenomPage';
 import { MoleculePage } from '../molecule/MoleculePage';
 import { PhysiologyPage } from '../physiology/PhysiologyPage';
 import type { VenomDetail } from '../../services/contracts';
+import {
+  classifyOrganismClass,
+  getMonopageFrameworkVariant,
+  type MonopageSectionKind,
+  type OrganismClassKey,
+} from './organismMonopageFramework';
 
 type OrganismSortMode = 'scientific_asc' | 'scientific_desc' | 'common_asc' | 'common_desc';
 
@@ -79,6 +83,100 @@ export const AtlasMonopage = () => {
   const [searchValue, setSearchValue] = useState('');
   const [sortMode, setSortMode] = useState<OrganismSortMode>('scientific_asc');
   const [summary, setSummary] = useState<MonopageSummary | null>(null);
+  const [selectedOrganismClassKey, setSelectedOrganismClassKey] =
+    useState<OrganismClassKey>('unknown');
+
+  const frameworkVariant = useMemo(
+    () => getMonopageFrameworkVariant(selectedOrganismClassKey, selectedOrganismSlug),
+    [selectedOrganismClassKey, selectedOrganismSlug],
+  );
+
+  const sectionHref = (sectionKind: MonopageSectionKind): string => {
+    if (sectionKind === 'organism-profile') {
+      return `/organisms/${selectedOrganismSlug}`;
+    }
+    if (sectionKind === 'geography') {
+      return `/organisms/${selectedOrganismSlug}/geography`;
+    }
+    if (sectionKind === 'mechanisms') {
+      return `/toxins/${defaultToxinSlug}/mechanism`;
+    }
+    if (sectionKind === 'toxin-categorization' || sectionKind === 'toxin-charts') {
+      return `/organisms/${selectedOrganismSlug}/venom`;
+    }
+    if (sectionKind === 'chemistry') {
+      return `/toxins/${defaultToxinSlug}`;
+    }
+
+    return `/toxins/${defaultToxinSlug}/physiology`;
+  };
+
+  const sectionBody = (sectionKind: MonopageSectionKind): ReactNode => {
+    if (sectionKind === 'organism-profile') {
+      return (
+        <OrganismDetailPage
+          organismSlugOverride={selectedOrganismSlug}
+          showInlineSummary={false}
+          showOverviewLine={false}
+        />
+      );
+    }
+    if (sectionKind === 'geography') {
+      return (
+        <GeographyPage
+          organismSlugOverride={selectedOrganismSlug}
+          headingOverride={frameworkVariant.content.geography.heading}
+          layerModelTitleOverride={frameworkVariant.content.geography.layerModelTitle}
+          layerModelSummaryOverride={frameworkVariant.content.geography.layerModelSummary}
+        />
+      );
+    }
+    if (sectionKind === 'mechanisms') {
+      return (
+        <MechanismPage
+          organismSlugOverride={selectedOrganismSlug}
+          naturalTitleOverride={frameworkVariant.mechanisms.naturalTitle}
+          humanTitleOverride={frameworkVariant.mechanisms.humanTitle}
+        />
+      );
+    }
+    if (sectionKind === 'toxin-categorization') {
+      return (
+        <VenomPage
+          organismSlugOverride={selectedOrganismSlug}
+          mode="categorization"
+          categorizationTitleOverride={frameworkVariant.content.venom.categorizationTitle}
+        />
+      );
+    }
+    if (sectionKind === 'toxin-charts') {
+      return (
+        <VenomPage
+          organismSlugOverride={selectedOrganismSlug}
+          mode="charts"
+          chartsTitleOverride={frameworkVariant.content.venom.chartsTitle}
+          chartsSummaryOverride={frameworkVariant.content.venom.chartsSummary}
+        />
+      );
+    }
+    if (sectionKind === 'chemistry') {
+      return (
+        <MoleculePage
+          identityNoteOverride={frameworkVariant.content.chemistry.identityNote}
+          structurePanelTitleOverride={frameworkVariant.content.chemistry.structurePanelTitle}
+        />
+      );
+    }
+
+    return (
+      <PhysiologyPage
+        headingOverride={frameworkVariant.content.physiology.heading}
+        pathwaysTitleOverride={frameworkVariant.content.physiology.pathwaysTitle}
+        timelineTitleOverride={frameworkVariant.content.physiology.timelineTitle}
+        timelineSummaryOverride={frameworkVariant.content.physiology.timelineSummary}
+      />
+    );
+  };
 
   useEffect(() => {
     const loadOrganisms = async () => {
@@ -139,8 +237,7 @@ export const AtlasMonopage = () => {
     dispatch({ type: 'reset', organismId: organism.id });
     setSelectionLocked(false);
     window.requestAnimationFrame(() => {
-      const target = document.getElementById('section-organism-profile');
-      target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
     });
   };
 
@@ -163,6 +260,7 @@ export const AtlasMonopage = () => {
         overview: organismDetail.organism.overview,
         toxinCategory: summarizeToxinCategory(venoms, venomDetails),
       });
+      setSelectedOrganismClassKey(classifyOrganismClass(organismDetail.taxonomy?.className));
     };
 
     void loadSummary().catch((error: unknown) => {
@@ -264,90 +362,17 @@ export const AtlasMonopage = () => {
         className={`atlas-monopage${selectionLocked ? ' atlas-monopage-locked' : ''}`}
         aria-hidden={selectionLocked}
       >
-        <section
-          id="section-intro"
-          className="atlas-scroll-section atlas-scroll-section-hero"
-          data-scroll-section
-          tabIndex={-1}
-        >
-          <LandingPage />
-        </section>
-
-        <ScrollSection
-          id="section-organisms"
-          title="Organism Directory"
-          dedicatedHref="/organisms"
-          dedicatedLabel="Open dedicated directory"
-        >
-          <OrganismsPage embedded />
-        </ScrollSection>
-
-        <ScrollSection
-          id="section-organism-profile"
-          title="Organism Profile"
-          dedicatedHref={`/organisms/${selectedOrganismSlug}`}
-          dedicatedLabel="Open dedicated organism page"
-        >
-          <OrganismDetailPage
-            organismSlugOverride={selectedOrganismSlug}
-            showInlineSummary={false}
-            showOverviewLine={false}
-          />
-        </ScrollSection>
-
-        <ScrollSection
-          id="section-geography"
-          title="Geography"
-          dedicatedHref={`/organisms/${selectedOrganismSlug}/geography`}
-          dedicatedLabel="Open dedicated geography page"
-        >
-          <GeographyPage organismSlugOverride={selectedOrganismSlug} />
-        </ScrollSection>
-
-        <ScrollSection
-          id="section-mechanisms"
-          title="Mechanisms"
-          dedicatedHref={`/toxins/${defaultToxinSlug}/mechanism`}
-          dedicatedLabel="Open dedicated mechanism page"
-        >
-          <MechanismPage />
-        </ScrollSection>
-
-        <ScrollSection
-          id="section-toxin-categorization"
-          title="Toxin Categorization"
-          dedicatedHref={`/organisms/${selectedOrganismSlug}/venom`}
-          dedicatedLabel="Open dedicated categorization page"
-        >
-          <VenomPage organismSlugOverride={selectedOrganismSlug} mode="categorization" />
-        </ScrollSection>
-
-        <ScrollSection
-          id="section-toxin-charts"
-          title="Toxin Charts"
-          dedicatedHref={`/organisms/${selectedOrganismSlug}/venom`}
-          dedicatedLabel="Open dedicated chart page"
-        >
-          <VenomPage organismSlugOverride={selectedOrganismSlug} mode="charts" />
-        </ScrollSection>
-
-        <ScrollSection
-          id="section-chemistry"
-          title="Chemistry"
-          dedicatedHref={`/toxins/${defaultToxinSlug}`}
-          dedicatedLabel="Open dedicated chemistry page"
-        >
-          <MoleculePage />
-        </ScrollSection>
-
-        <ScrollSection
-          id="section-human-physiology"
-          title="Human Physiology"
-          dedicatedHref={`/toxins/${defaultToxinSlug}/physiology`}
-          dedicatedLabel="Open dedicated physiology page"
-        >
-          <PhysiologyPage />
-        </ScrollSection>
+        {frameworkVariant.sections.map((section) => (
+          <ScrollSection
+            key={section.id}
+            id={section.id}
+            title={section.title}
+            dedicatedHref={sectionHref(section.kind)}
+            dedicatedLabel={section.dedicatedLabel}
+          >
+            {sectionBody(section.kind)}
+          </ScrollSection>
+        ))}
       </section>
 
       {selectionLocked ? (
@@ -358,6 +383,9 @@ export const AtlasMonopage = () => {
               Start by choosing an organism. The atlas stays in preview mode until selection, then
               unlocks a continuous scroll through organism profile, geography, mechanisms, toxin
               categorization, BI charts, chemistry, and human physiology.
+            </p>
+            <p className="muted">
+              Framework mode: {frameworkVariant.classLabel}. {frameworkVariant.selectionSubtitle}
             </p>
             <h2>Choose an organism to begin</h2>
             <div className="atlas-organism-gate-toolbar">

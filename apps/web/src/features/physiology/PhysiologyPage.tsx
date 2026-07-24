@@ -36,7 +36,19 @@ const localHighlights: AnatomyHighlight[] = [
   },
 ];
 
-export const PhysiologyPage = () => {
+interface PhysiologyPageProps {
+  headingOverride?: string;
+  pathwaysTitleOverride?: string;
+  timelineTitleOverride?: string;
+  timelineSummaryOverride?: string;
+}
+
+export const PhysiologyPage = ({
+  headingOverride,
+  pathwaysTitleOverride,
+  timelineTitleOverride,
+  timelineSummaryOverride,
+}: PhysiologyPageProps = {}) => {
   const [physiology, setPhysiology] = useState<ToxinPhysiologyDetail | null>(null);
   const [mechanism, setMechanism] = useState<ToxinMechanismDetail | null>(null);
   const { toxinSlug } = useParams();
@@ -79,11 +91,11 @@ export const PhysiologyPage = () => {
 
   return (
     <section className="grid">
-      <h1>Human physiology effects</h1>
+      <h1>{headingOverride ?? 'Human physiology effects'}</h1>
       <AnatomySvg highlights={localHighlights} />
 
       <section className="panel">
-        <h3>Direct versus immune-mediated pathways</h3>
+        <h3>{pathwaysTitleOverride ?? 'Direct versus immune-mediated pathways'}</h3>
         <p>
           <strong>Direct local venom effect:</strong>{' '}
           {directEffects.map((entry) => entry.title).join(', ')}
@@ -95,8 +107,11 @@ export const PhysiologyPage = () => {
       </section>
 
       <VegaChart
-        title="Sting progression timeline"
-        summary="Distinguishes direct local effects from inflammatory and separate systemic allergic pathways."
+        title={timelineTitleOverride ?? 'Sting progression timeline'}
+        summary={
+          timelineSummaryOverride ??
+          'Distinguishes direct local effects from inflammatory and separate systemic allergic pathways.'
+        }
         spec={buildPhysiologyTimelineSpec(mechanism?.mechanismSteps ?? [])}
         empty={!mechanism || mechanism.mechanismSteps.length === 0}
       />

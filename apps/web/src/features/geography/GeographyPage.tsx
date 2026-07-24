@@ -12,9 +12,17 @@ import {
 
 interface GeographyPageProps {
   organismSlugOverride?: string;
+  headingOverride?: string;
+  layerModelTitleOverride?: string;
+  layerModelSummaryOverride?: string;
 }
 
-export const GeographyPage = ({ organismSlugOverride }: GeographyPageProps = {}) => {
+export const GeographyPage = ({
+  organismSlugOverride,
+  headingOverride,
+  layerModelTitleOverride,
+  layerModelSummaryOverride,
+}: GeographyPageProps = {}) => {
   const [ranges, setRanges] = useState<GeographicRange[]>([]);
   const { organismSlug: routeOrganismSlug } = useParams();
   const organismSlug = organismSlugOverride ?? routeOrganismSlug;
@@ -41,13 +49,13 @@ export const GeographyPage = ({ organismSlugOverride }: GeographyPageProps = {})
 
   return (
     <section className="grid">
-      <h1>Ecology and geography</h1>
+      <h1>{headingOverride ?? 'Ecology and geography'}</h1>
       <RangeMapPanel ranges={ranges} />
       <section className="panel">
-        <h3>Layer model</h3>
+        <h3>{layerModelTitleOverride ?? 'Layer model'}</h3>
         <p className="muted">
-          Native range, introduced range, confirmed occurrence, habitat context, and uncertain range
-          are distinct layer types.
+          {layerModelSummaryOverride ??
+            'Native range, introduced range, confirmed occurrence, habitat context, and uncertain range are distinct layer types.'}
         </p>
       </section>
     </section>
