@@ -5,6 +5,8 @@
   "description": "Interactive scientific atlas for venomous and poisonous organisms.",
   "packageManager": "pnpm@11.16.0",
   "scripts": {
+    "start": "node scripts/dev-start.cjs",
+    "stop": "node scripts/dev-stop.cjs",
     "dev": "pnpm --filter @venom-atlas/web dev",
     "preview": "pnpm --filter @venom-atlas/web preview",
     "validate": "tsx scripts/validate-content.ts && tsx scripts/validate-citations.ts && tsx scripts/validate-media.ts && tsx scripts/validate-structures.ts",
