@@ -1,6 +1,8 @@
 @import './tokens.css';
 
 :root {
+  --font-body: 'Atkinson Hyperlegible Next', 'Segoe UI', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
   --top-ribbon-height: 4rem;
   --motion-lift-curve: cubic-bezier(0.22, 1, 0.36, 1);
   --motion-lift-duration: 200ms;
@@ -25,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-family: var(--font-body);
   background: radial-gradient(circle at 20% 10%, var(--bg-ambient), var(--bg) 55%);
   color: var(--text);
 }
@@ -65,7 +67,7 @@ main.main-organism-route {
 h1,
 h2,
 h3 {
-  font-family: 'Literata', 'Times New Roman', serif;
+  font-family: var(--font-heading);
   letter-spacing: 0.01em;
 }
 
