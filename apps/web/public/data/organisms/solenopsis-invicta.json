@@ -75,10 +75,10 @@
     "sourceUrl": "https://www.antwiki.org/wiki/Solenopsis_invicta",
     "antMapsEmbedUrl": "https://antmaps.org/?mode=species&species=Solenopsis.invicta",
     "summaryPoints": [
-      "Solenopsis invicta is a social, colony-forming ant known for fast collective responses when nest structure is disturbed.",
-      "Colony organization contributes to rapid shifts from foraging to coordinated defense.",
-      "The species is commonly associated with open, sun-exposed, and human-managed environments.",
-      "Defensive behavior is often described as a grip-and-sting sequence."
+      "Solenopsis invicta is a social, colony-forming ant known for fast collective responses when nest structure is disturbed. Workers recruit nestmates quickly through pheromone signaling, then switch from exploration to defense in coordinated waves. In practice, small initial contact events can escalate quickly where colony density is high or disturbance is repeated over short intervals.",
+      "Colony organization contributes to this rapid shift in behavior. Workers are polymorphic, and size-based task flexibility supports foraging, brood care, mound maintenance, and defense within the same colony network. This functional structure helps explain why activity around food resources, nest entrances, and disturbed soil can transition from low-intensity movement to concentrated defensive pressure in a short time window.",
+      "The species is commonly associated with open, sun-exposed, and human-managed environments such as pasture margins, roadsides, turf, and agricultural edges. Colonies often build conspicuous earthen mounds and may occur at high local density, increasing encounter frequency for people who walk, work, or perform ground-level maintenance in these habitats. In introduced ranges, these same traits are linked with ecological pressure on native ant assemblages and shifts in local invertebrate community structure.",
+      "Behavior relevant to venom delivery is typically described as a grip-and-sting sequence: workers anchor with the mandibles and pivot to deliver repeated stings. This repeated stinging behavior is one reason encounters can produce multiple localized lesions in a short period, especially when workers recruit rapidly from nearby nest zones. For people and animals entering active foraging or defensive areas, exposure risk is shaped by colony density, disturbance intensity, and time spent in infested habitat."
     ],
     "imagePaths": [
       "/images/organisms/solenopsis-invicta/solenopsis-invicta-head-casent0104523.png",

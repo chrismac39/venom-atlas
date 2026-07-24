@@ -1,0 +1,131 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../islands/ThemeSwitcher';
+import { AtlasMonopageIsland } from '../islands/AtlasMonopageIsland';
+import type { AtlasOrganismData } from '../islands/AtlasMonopageIsland';
+import {
+  getAllOrganisms,
+  getAllToxins,
+  getCitationsByIds,
+  getGeographyByOrganismSlug,
+  getMechanismByToxinSlug,
+  getPhysiologyByToxinSlug,
+  getVenomByOrganismSlug,
+} from '../lib/content';
+
+const toxins = getAllToxins();
+
+const organisms: AtlasOrganismData[] = getAllOrganisms().flatMap((entry) => {
+  const organismSlug = entry.organism.slug ?? entry.organism.id.replace(/^org-/, '');
+  if (!organismSlug) {
+    return [];
+  }
+
+  const venomBundle = getVenomByOrganismSlug(organismSlug);
+  const venomSlug = venomBundle?.venom.slug ?? venomBundle?.venom.id.replace(/^ven-/, '');
+  const relatedToxins = venomBundle
+    ? toxins.filter((toxinEntry) => toxinEntry.toxin.venomId === venomBundle.venom.id)
+    : [];
+  const mappedToxins = relatedToxins.flatMap((toxinEntry) => {
+    const toxinSlug = toxinEntry.toxin.slug ?? toxinEntry.toxin.id.replace(/^tox-/, '');
+    if (!toxinSlug) {
+      return [];
+    }
+
+    return [
+      {
+        id: toxinEntry.toxin.id,
+        slug: toxinSlug,
+        displayName: toxinEntry.toxin.displayName,
+        family: toxinEntry.toxin.family,
+        evidence: toxinEntry.toxin.evidence,
+      },
+    ];
+  });
+  const primaryToxinBundle = relatedToxins[0];
+  const primaryToxinSlug = primaryToxinBundle?.toxin.slug;
+  const mechanism = primaryToxinSlug ? getMechanismByToxinSlug(primaryToxinSlug) : undefined;
+  const physiology = primaryToxinSlug ? getPhysiologyByToxinSlug(primaryToxinSlug) : undefined;
+  const geography = getGeographyByOrganismSlug(organismSlug);
+  const verifiedStructure = primaryToxinBundle?.structureAssets.find(
+    (structureAsset) => structureAsset.verified && structureAsset.format !== 'svg',
+  );
+  const structureFormat =
+    verifiedStructure && verifiedStructure.format !== 'svg' ? verifiedStructure.format : undefined;
+
+  if (primaryToxinBundle && !primaryToxinSlug) {
+    return [];
+  }
+
+  if (venomBundle && !venomSlug) {
+    return [];
+  }
+
+  return [{
+    slug: organismSlug,
+    scientificName: entry.organism.scientificName,
+    commonName: entry.organism.commonName,
+    overview: entry.organism.overview,
+    taxonomy: entry.taxonomy,
+    naturalHistory: entry.organism.naturalHistory,
+    externalProfile: entry.externalProfile,
+    deliveryMechanism: entry.deliveryMechanism,
+    habitats: entry.habitats,
+    ecologicalRoles: entry.ecologicalRoles,
+    geographyRanges: geography?.ranges.map((range) => ({
+      id: range.id,
+      layerType: range.layerType,
+      summary: range.summary,
+    })) ?? [],
+    venom: venomBundle
+      ? {
+          slug: venomSlug as string,
+          name: venomBundle.venom.name,
+          description: venomBundle.venom.description,
+          ecologicalRoleSummary: venomBundle.venom.ecologicalRoleSummary,
+          evidence: venomBundle.venom.evidence,
+          components: venomBundle.components,
+        }
+      : null,
+    toxins: mappedToxins,
+    primaryToxin: primaryToxinBundle
+      ? {
+          slug: primaryToxinSlug as string,
+          displayName: primaryToxinBundle.toxin.displayName,
+          molecularClass: primaryToxinBundle.molecularEntity.molecularClass,
+          formula: primaryToxinBundle.molecularEntity.formula,
+          molecularWeight: primaryToxinBundle.molecularEntity.molecularWeight,
+          structureDataSource: primaryToxinBundle.molecularEntity.structureDataSource,
+          evidence: primaryToxinBundle.molecularEntity.evidence,
+          ...(verifiedStructure?.localPath ? { structureUrl: verifiedStructure.localPath } : {}),
+          ...(structureFormat ? { structureFormat } : {}),
+        }
+      : null,
+    mechanismSteps: mechanism?.steps ?? [],
+    physiology: physiology
+      ? {
+          symptoms: physiology.symptoms.map((symptom) => ({
+            id: symptom.id,
+            name: symptom.name,
+            description: symptom.description,
+          })),
+          effects: physiology.effects.map((effect) => ({
+            id: effect.id,
+            order: effect.order,
+            title: effect.title,
+            description: effect.description,
+            pathwayType: effect.pathwayType,
+          })),
+        }
+      : null,
+    citations: primaryToxinBundle
+      ? getCitationsByIds(primaryToxinBundle.molecularEntity.evidence.citationIds)
+      : [],
+  }];
+});
+---
+
+<PageLayout title="Atlas Monopage | Venom Atlas" description="Continuous static-first monopage experience for organism-to-toxin exploration.">
+  <ThemeSwitcher slot="theme" client:idle />
+  <AtlasMonopageIsland client:load organisms={organisms} />
+</PageLayout>
