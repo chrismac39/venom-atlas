@@ -20,3 +20,8 @@ organism -> venom mixture -> featured molecule -> mechanism -> physiology -> geo
 - API route params and key responses are validated.
 - DB rows are adapted into domain objects before UI consumption.
 - Visualization libraries consume renderer contracts, not DB rows.
+
+## UI Route Architecture
+
+- Web route pages follow a thin-page pattern documented in `docs/architecture/ui-thin-pages.md`.
+- Route files bind orchestration hooks to host components rather than owning complex view logic.
