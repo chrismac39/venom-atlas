@@ -220,47 +220,126 @@ select {
 
 .atlas-global-summary-pills {
   position: fixed;
-  top: calc(var(--top-ribbon-height) + var(--summary-strip-top-gap));
+  top: var(--top-ribbon-height);
   left: 0;
   right: 0;
   width: 100%;
   padding: 0 var(--layout-pad-x);
   z-index: 19;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.atlas-global-summary-pills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(var(--summary-strip-top-gap) + var(--global-summary-height, 0px) + 0.45rem);
+  background:
+    radial-gradient(
+      circle at 18% 12%,
+      color-mix(in srgb, var(--accent-science), transparent 90%),
+      transparent 58%
+    ),
+    radial-gradient(
+      circle at 82% 14%,
+      color-mix(in srgb, var(--warning), transparent 94%),
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--panel), black 8%),
+      color-mix(in srgb, var(--panel-soft), black 4%) 72%,
+      color-mix(in srgb, var(--panel-soft), transparent 18%)
+    );
+  backdrop-filter: blur(8px) saturate(112%);
+  -webkit-backdrop-filter: blur(8px) saturate(112%);
+  box-shadow: 0 8px 18px color-mix(in srgb, black, transparent 88%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .atlas-global-summary-strip {
-  border: 1px solid color-mix(in srgb, var(--accent-science), var(--rule) 52%);
-  border-radius: 12px;
+  width: min(100%, calc(var(--layout-max-width) - (2 * var(--layout-pad-x))));
+  margin-top: var(--summary-strip-top-gap);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid color-mix(in srgb, var(--accent-science), transparent 90%);
+  border-radius: 14px;
   background:
-    radial-gradient(circle at 8% 50%, color-mix(in srgb, var(--accent-science), transparent 88%), transparent 34%),
-    radial-gradient(circle at 92% 50%, color-mix(in srgb, var(--warning), transparent 92%), transparent 40%),
+    radial-gradient(circle at 10% 28%, color-mix(in srgb, var(--accent-science), transparent 90%), transparent 46%),
+    radial-gradient(circle at 92% 72%, color-mix(in srgb, var(--warning), transparent 95%), transparent 54%),
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--panel-soft), black 16%),
-      color-mix(in srgb, var(--panel), black 22%)
+      color-mix(in srgb, var(--panel-soft), black 7%),
+      color-mix(in srgb, var(--panel), black 16%)
     );
+  backdrop-filter: blur(6px) saturate(116%);
+  -webkit-backdrop-filter: blur(6px) saturate(116%);
   box-shadow:
-    0 14px 28px color-mix(in srgb, black, transparent 80%),
-    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 90%) inset;
-  padding: 0.56rem 1rem;
+    0 16px 28px color-mix(in srgb, black, transparent 84%),
+    0 6px 12px color-mix(in srgb, black, transparent 91%),
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 95%) inset,
+    0 1px 0 color-mix(in srgb, white, transparent 86%) inset;
+  padding: 0.62rem 1.05rem;
   display: grid;
-  gap: 0.18rem;
+  gap: 0.16rem;
+  pointer-events: none;
+}
+
+.atlas-global-summary-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(
+      120% 70% at 50% -8%,
+      color-mix(in srgb, white, transparent 86%),
+      color-mix(in srgb, white, transparent 98%) 52%,
+      transparent 76%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, white, transparent 96%),
+      transparent 38%
+    );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.atlas-global-summary-strip::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, white, transparent 90%) inset,
+    0 0 0 1px color-mix(in srgb, var(--accent-science), transparent 93%),
+    0 0 24px color-mix(in srgb, var(--accent-science), transparent 96%);
   pointer-events: none;
 }
 
 .atlas-global-summary-line {
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.23;
   font-size: var(--summary-strip-font-size);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: color-mix(in srgb, var(--text), white 3%);
 }
 
 .atlas-global-summary-species {
   font-family: 'Literata', 'Times New Roman', serif;
   font-size: var(--summary-strip-species-font-size);
-  font-weight: 600;
+  font-weight: 640;
+  letter-spacing: 0.01em;
 }
 
 .atlas-monopage-locked {
@@ -572,13 +651,21 @@ select {
     top: auto;
     left: auto;
     right: auto;
+    display: block;
     width: 100%;
     padding: 0;
+    pointer-events: auto;
     z-index: auto;
     margin-bottom: var(--space-2);
   }
 
+  .atlas-global-summary-pills::before {
+    display: none;
+  }
+
   .atlas-global-summary-strip {
+    width: 100%;
+    margin-top: 0;
     pointer-events: auto;
   }
 
@@ -667,16 +754,10 @@ select {
   font-family: inherit;
   font-size: 0.84rem;
   line-height: 1.35;
-  background: linear-gradient(
-    150deg,
-    color-mix(in srgb, var(--panel-soft), white 3%),
-    color-mix(in srgb, var(--panel), black 7%)
-  );
-  border-radius: 10px;
-  padding: 0.4rem 0.5rem;
-  box-shadow:
-    inset 0 1px 0 color-mix(in srgb, white, transparent 86%),
-    0 10px 22px color-mix(in srgb, black, transparent 84%);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
 .organism-taxonomy-matrix {
@@ -693,20 +774,36 @@ select {
   display: grid;
   align-content: start;
   gap: 0.14rem;
+  border-radius: 8px;
+  background:
+    radial-gradient(
+      circle at 16% 22%,
+      color-mix(in srgb, var(--accent-science), transparent 95%),
+      transparent 56%
+    ),
+    radial-gradient(
+      circle at 88% 82%,
+      color-mix(in srgb, var(--warning), transparent 97%),
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--panel-soft), white 2%),
+      color-mix(in srgb, var(--panel), black 4%) 62%,
+      color-mix(in srgb, var(--panel-soft), black 2%)
+    );
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white, transparent 90%),
+    0 1px 8px color-mix(in srgb, black, transparent 92%);
   transition:
     background 160ms ease,
     color 160ms ease,
+    box-shadow 160ms ease,
     transform 160ms ease;
 }
 
 .organism-taxonomy-rank::after {
-  content: '';
-  position: absolute;
-  top: 0.32rem;
-  right: -0.12rem;
-  width: 1px;
-  height: calc(100% - 0.64rem);
-  background: color-mix(in srgb, var(--rule), transparent 40%);
+  display: none;
 }
 
 .organism-taxonomy-rank:last-child::after {
@@ -714,7 +811,26 @@ select {
 }
 
 .organism-taxonomy-rank:hover {
-  background: color-mix(in srgb, var(--accent), transparent 92%);
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      color-mix(in srgb, var(--accent-science), transparent 92%),
+      transparent 54%
+    ),
+    radial-gradient(
+      circle at 86% 78%,
+      color-mix(in srgb, var(--warning), transparent 95%),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--panel-soft), white 3%),
+      color-mix(in srgb, var(--panel), black 3%) 60%,
+      color-mix(in srgb, var(--panel-soft), black 1%)
+    );
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white, transparent 82%),
+    0 6px 16px color-mix(in srgb, black, transparent 86%);
   transform: translateY(-1px);
 }
 
