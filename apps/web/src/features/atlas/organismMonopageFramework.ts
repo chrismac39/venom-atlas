@@ -1,5 +1,14 @@
 export type OrganismClassKey = 'insect' | 'fish' | 'unknown';
 
+export type TaxonomyRankKey =
+  | 'kingdom'
+  | 'phylum'
+  | 'class'
+  | 'order'
+  | 'family'
+  | 'genus'
+  | 'species';
+
 export type MonopageSectionKind =
   | 'organism-profile'
   | 'geography'
@@ -25,6 +34,8 @@ export interface GeographySectionVariant {
   heading: string;
   layerModelTitle: string;
   layerModelSummary: string;
+  antMapsTitle: string;
+  antMapsEmbedUrl?: string;
 }
 
 export interface VenomSectionVariant {
@@ -135,6 +146,7 @@ const baseVariant: MonopageFrameworkVariant = {
       layerModelTitle: 'Layer model',
       layerModelSummary:
         'Native range, introduced range, confirmed occurrence, habitat context, and uncertain range are distinct layer types.',
+      antMapsTitle: 'Interactive species range map',
     },
     venom: {
       categorizationTitle: 'Toxin categorization',
@@ -210,6 +222,9 @@ const organismOverrides: Record<string, OrganismFrameworkOverride> = {
       humanTitle: 'Human interaction mechanism: defensive stinging event',
     },
     content: {
+      geography: {
+        antMapsEmbedUrl: 'https://antmaps.org/?mode=species&species=Solenopsis.invicta',
+      },
       venom: {
         categorizationTitle: 'Venom and toxin categorization',
       },
@@ -297,4 +312,24 @@ export const getMonopageFrameworkVariant = (
     },
     sections: applySectionTitleOverride(classVariant.sections, organismOverride.sectionTitleByKind),
   };
+};
+
+export const formatTaxonomyValueForFramework = (
+  rank: TaxonomyRankKey,
+  rawValue: string | null | undefined,
+): string => {
+  const normalized = rawValue?.trim();
+  if (!normalized) {
+    return 'Unknown';
+  }
+
+  if (rank === 'species') {
+    return normalized
+      .split(/\s+/)
+      .filter((part) => part.length > 0)
+      .map((part) => `${part.charAt(0).toUpperCase()}${part.slice(1).toLowerCase()}`)
+      .join(' ');
+  }
+
+  return normalized;
 };

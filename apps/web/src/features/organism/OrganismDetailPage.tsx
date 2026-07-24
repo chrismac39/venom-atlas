@@ -4,6 +4,7 @@ import type { ExposureRoute, Venom } from '@venom-atlas/domain';
 import type { OrganismDetail, VenomDetail } from '../../services/contracts';
 import { atlasApi } from '../../services/apiClient';
 import { RouteEntityNotFound } from '../../components/RouteEntityNotFound';
+import { formatTaxonomyValueForFramework } from '../atlas/organismMonopageFramework';
 import {
   defaultOrganismSlug,
   isKnownOrganismSlug,
@@ -42,6 +43,13 @@ const externalProfileByOrganismId: Record<string, ExternalSpeciesProfile> = {
     ],
   },
 };
+
+interface TaxonomyRankEntry {
+  key: string;
+  englishLabel: string;
+  latinLabel: string;
+  value: string;
+}
 
 const summarizeToxinCategory = (venoms: Venom[], venomDetails: VenomDetail[]): string => {
   if (venoms.length > 0) {
@@ -157,6 +165,70 @@ export const OrganismDetailPage = ({
   const externalProfile = externalProfileByOrganismId[organism.id];
   const toxinCategorySummary = summarizeToxinCategory(data.venoms, venomDetails);
   const humanExposureSummary = summarizeHumanExposure(organismDetail.deliveryMechanism?.route);
+  const speciesWithGenus = (() => {
+    const species = taxonomy?.species?.trim();
+    const genus = taxonomy?.genus?.trim();
+
+    if (!species) {
+      return undefined;
+    }
+
+    if (!genus) {
+      return species;
+    }
+
+    const speciesLower = species.toLowerCase();
+    const genusLower = genus.toLowerCase();
+    if (speciesLower === genusLower || speciesLower.startsWith(`${genusLower} `)) {
+      return species;
+    }
+
+    return `${genus} ${species}`;
+  })();
+  const taxonomyRanks: TaxonomyRankEntry[] = [
+    {
+      key: 'kingdom',
+      englishLabel: 'Kingdom',
+      latinLabel: 'Regnum',
+      value: taxonomy?.kingdom ?? 'Unknown kingdom',
+    },
+    {
+      key: 'phylum',
+      englishLabel: 'Phylum',
+      latinLabel: 'Phylum',
+      value: taxonomy?.phylum ?? 'Unknown phylum',
+    },
+    {
+      key: 'class',
+      englishLabel: 'Class',
+      latinLabel: 'Classis',
+      value: taxonomy?.className ?? 'Unknown class',
+    },
+    {
+      key: 'order',
+      englishLabel: 'Order',
+      latinLabel: 'Ordo',
+      value: taxonomy?.order ?? 'Unknown order',
+    },
+    {
+      key: 'family',
+      englishLabel: 'Family',
+      latinLabel: 'Familia',
+      value: taxonomy?.family ?? 'Unknown family',
+    },
+    {
+      key: 'genus',
+      englishLabel: 'Genus',
+      latinLabel: 'Genus',
+      value: taxonomy?.genus ?? 'Unknown genus',
+    },
+    {
+      key: 'species',
+      englishLabel: 'Species',
+      latinLabel: 'Species',
+      value: formatTaxonomyValueForFramework('species', speciesWithGenus),
+    },
+  ];
 
   return (
     <section className="panel organism-story-shell">
@@ -182,14 +254,25 @@ export const OrganismDetailPage = ({
 
         <section className="organism-story-section">
           <h2>Species snapshot</h2>
+          <section className="organism-taxonomy-path" aria-label="Taxonomic hierarchy">
+            <div className="organism-taxonomy-matrix" aria-hidden="true">
+              {taxonomyRanks.map((rank) => (
+                <div className={`organism-taxonomy-rank organism-taxonomy-rank-${rank.key}`} key={rank.key}>
+                  <span className="organism-taxonomy-rank-label">{rank.latinLabel}</span>
+                  <span className="organism-taxonomy-rank-value">{rank.value}</span>
+                </div>
+              ))}
+            </div>
+            <ul className="organism-taxonomy-grid-sr-only">
+              {taxonomyRanks.map((rank) => (
+                <li key={rank.key}>
+                  <strong>{rank.englishLabel}</strong> ({rank.latinLabel}): {rank.value}
+                </li>
+              ))}
+            </ul>
+          </section>
           <div className="organism-snapshot-layout">
             <div className="organism-snapshot-text">
-              <p className="organism-taxonomy-path" aria-label="Taxonomic path">
-                {taxonomy?.kingdom ?? 'Unknown kingdom'} / {taxonomy?.phylum ?? 'Unknown phylum'} /{' '}
-                {taxonomy?.className ?? 'Unknown class'} / {taxonomy?.order ?? 'Unknown order'} /{' '}
-                {taxonomy?.family ?? 'Unknown family'} / {taxonomy?.genus ?? 'Unknown genus'} /{' '}
-                {taxonomy?.species ?? 'Unknown species'}
-              </p>
               <h3>Reference summary</h3>
               {externalProfile ? (
                 <>

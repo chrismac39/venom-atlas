@@ -7,6 +7,78 @@ interface DeliveryMechanismDiagramProps {
   note?: string;
 }
 
+interface StepLabelProps {
+  x: number;
+  y: number;
+  label: string;
+  maxCharsPerLine: number;
+  maxLines?: number;
+}
+
+const wrapStepLabel = (label: string, maxCharsPerLine: number, maxLines: number): string[] => {
+  const words = label
+    .trim()
+    .split(/\s+/)
+    .filter((word) => word.length > 0);
+
+  if (words.length === 0) {
+    return [''];
+  }
+
+  const lines: string[] = [];
+  let current = '';
+
+  for (const word of words) {
+    const candidate = current ? `${current} ${word}` : word;
+    if (candidate.length <= maxCharsPerLine) {
+      current = candidate;
+      continue;
+    }
+
+    if (current) {
+      lines.push(current);
+      if (lines.length === maxLines - 1) {
+        const truncatedWord = word.length > maxCharsPerLine ? `${word.slice(0, maxCharsPerLine - 1)}...` : word;
+        lines.push(truncatedWord);
+        return lines;
+      }
+      current = word;
+      continue;
+    }
+
+    lines.push(`${word.slice(0, Math.max(maxCharsPerLine - 1, 1))}...`);
+    return lines;
+  }
+
+  if (current) {
+    lines.push(current);
+  }
+
+  if (lines.length > maxLines) {
+    const visible = lines.slice(0, maxLines - 1);
+    const tail = lines[maxLines - 1] ?? '';
+    return visible.concat(`${tail.slice(0, maxCharsPerLine - 1)}...`);
+  }
+
+  return lines;
+};
+
+const StepLabel = ({ x, y, label, maxCharsPerLine, maxLines = 3 }: StepLabelProps) => {
+  const lines = wrapStepLabel(label, maxCharsPerLine, maxLines);
+  const lineHeight = 13;
+  const startOffset = -((lines.length - 1) * lineHeight) / 2;
+
+  return (
+    <text x={x} y={y} fill="#f2eee6" textAnchor="middle" fontSize="11.5" dominantBaseline="middle">
+      {lines.map((line, index) => (
+        <tspan key={`${line}-${index}`} x={x} dy={index === 0 ? startOffset : lineHeight}>
+          {line}
+        </tspan>
+      ))}
+    </text>
+  );
+};
+
 export const DeliveryMechanismDiagram = ({
   title,
   ariaLabel,
@@ -28,18 +100,10 @@ export const DeliveryMechanismDiagram = ({
         <rect x="200" y="30" width="150" height="80" fill="#262a29" stroke="#3b3f3d" />
         <rect x="380" y="30" width="150" height="80" fill="#262a29" stroke="#3b3f3d" />
         <rect x="560" y="30" width="120" height="80" fill="#262a29" stroke="#3b3f3d" />
-        <text x="95" y="70" fill="#f2eee6" textAnchor="middle">
-          {steps[0]}
-        </text>
-        <text x="275" y="70" fill="#f2eee6" textAnchor="middle">
-          {steps[1]}
-        </text>
-        <text x="455" y="70" fill="#f2eee6" textAnchor="middle">
-          {steps[2]}
-        </text>
-        <text x="620" y="70" fill="#f2eee6" textAnchor="middle">
-          {steps[3]}
-        </text>
+        <StepLabel x={95} y={70} label={steps[0]} maxCharsPerLine={18} />
+        <StepLabel x={275} y={70} label={steps[1]} maxCharsPerLine={18} />
+        <StepLabel x={455} y={70} label={steps[2]} maxCharsPerLine={18} />
+        <StepLabel x={620} y={70} label={steps[3]} maxCharsPerLine={14} />
         <line
           x1="170"
           y1="70"

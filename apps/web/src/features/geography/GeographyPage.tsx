@@ -15,6 +15,8 @@ interface GeographyPageProps {
   headingOverride?: string;
   layerModelTitleOverride?: string;
   layerModelSummaryOverride?: string;
+  antMapsTitleOverride?: string;
+  antMapsEmbedUrlOverride?: string;
 }
 
 export const GeographyPage = ({
@@ -22,11 +24,14 @@ export const GeographyPage = ({
   headingOverride,
   layerModelTitleOverride,
   layerModelSummaryOverride,
+  antMapsTitleOverride,
+  antMapsEmbedUrlOverride,
 }: GeographyPageProps = {}) => {
   const [ranges, setRanges] = useState<GeographicRange[]>([]);
   const { organismSlug: routeOrganismSlug } = useParams();
   const organismSlug = organismSlugOverride ?? routeOrganismSlug;
   const unknownSlug = organismSlug ? !isKnownOrganismSlug(organismSlug) : false;
+  const antMapsEmbedUrl = antMapsEmbedUrlOverride;
 
   useEffect(() => {
     if (unknownSlug) {
@@ -51,6 +56,18 @@ export const GeographyPage = ({
     <section className="grid">
       <h1>{headingOverride ?? 'Ecology and geography'}</h1>
       <RangeMapPanel ranges={ranges} />
+      {antMapsEmbedUrl ? (
+        <section className="panel organism-antmaps-wrap">
+          <h3>{antMapsTitleOverride ?? 'Interactive species range map'}</h3>
+          <iframe
+            className="organism-antmaps-embed"
+            src={antMapsEmbedUrl}
+            title="AntMaps species distribution explorer"
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        </section>
+      ) : null}
       <section className="panel">
         <h3>{layerModelTitleOverride ?? 'Layer model'}</h3>
         <p className="muted">

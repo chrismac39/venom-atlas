@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import type { ExposureRoute } from '@venom-atlas/domain';
-import type { ToxinMechanismDetail } from '../../services/contracts';
 import { atlasApi } from '../../services/apiClient';
 import { RouteEntityNotFound } from '../../components/RouteEntityNotFound';
 import { DeliveryMechanismDiagram } from '../../visualizations/svg/DeliveryMechanismDiagram';
@@ -11,7 +10,6 @@ import {
   isKnownOrganismSlug,
   organismIdFromSlug,
   isKnownToxinSlug,
-  toxinIdFromSlug,
 } from '../../services/atlasRouting';
 
 interface MechanismPageProps {
@@ -59,9 +57,9 @@ export const MechanismPage = ({
   naturalTitleOverride,
   humanTitleOverride,
 }: MechanismPageProps = {}) => {
-  const [data, setData] = useState<ToxinMechanismDetail | null>(null);
   const [organismRoute, setOrganismRoute] = useState<ExposureRoute>('unknown');
   const [organismName, setOrganismName] = useState<string>('this organism');
+  const [naturalSequence, setNaturalSequence] = useState<string[]>([]);
   const { toxinSlug, organismSlug: routeOrganismSlug } = useParams();
   const mechanismOrganismSlug = organismSlugOverride ?? routeOrganismSlug ?? defaultOrganismSlug;
   const unknownSlug = toxinSlug ? !isKnownToxinSlug(toxinSlug) : false;
@@ -70,19 +68,10 @@ export const MechanismPage = ({
     : false;
 
   useEffect(() => {
-    if (unknownSlug) {
-      setData(null);
-      return;
-    }
-    atlasApi.getToxinMechanism(toxinIdFromSlug(toxinSlug)).then((payload) => {
-      setData(payload);
-    });
-  }, [toxinSlug, unknownSlug]);
-
-  useEffect(() => {
     if (unknownOrganismSlug) {
       setOrganismRoute('unknown');
       setOrganismName('this organism');
+      setNaturalSequence([]);
       return;
     }
 
@@ -91,11 +80,13 @@ export const MechanismPage = ({
       .then((payload) => {
         setOrganismRoute(payload.deliveryMechanism?.route ?? 'unknown');
         setOrganismName(payload.organism.commonName.toLowerCase());
+        setNaturalSequence(payload.deliveryMechanism?.sequence ?? []);
       })
       .catch((error: unknown) => {
         console.error(error);
         setOrganismRoute('unknown');
         setOrganismName('this organism');
+        setNaturalSequence([]);
       });
   }, [mechanismOrganismSlug, unknownOrganismSlug]);
 
@@ -121,11 +112,7 @@ export const MechanismPage = ({
     );
   }
 
-  if (!data) {
-    return <section className="panel">Loading mechanism...</section>;
-  }
-
-  const naturalSteps = getNaturalSteps(organismRoute, data.mechanismSteps.map((step) => step.title));
+  const naturalSteps = getNaturalSteps(organismRoute, naturalSequence);
   const humanSteps = getHumanSteps(organismRoute);
 
   return (

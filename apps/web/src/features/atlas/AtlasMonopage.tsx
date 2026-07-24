@@ -122,12 +122,20 @@ export const AtlasMonopage = () => {
       );
     }
     if (sectionKind === 'geography') {
+      const geographyAntMapsProps = frameworkVariant.content.geography.antMapsEmbedUrl
+        ? {
+            antMapsTitleOverride: frameworkVariant.content.geography.antMapsTitle,
+            antMapsEmbedUrlOverride: frameworkVariant.content.geography.antMapsEmbedUrl,
+          }
+        : {};
+
       return (
         <GeographyPage
           organismSlugOverride={selectedOrganismSlug}
           headingOverride={frameworkVariant.content.geography.heading}
           layerModelTitleOverride={frameworkVariant.content.geography.layerModelTitle}
           layerModelSummaryOverride={frameworkVariant.content.geography.layerModelSummary}
+          {...geographyAntMapsProps}
         />
       );
     }
