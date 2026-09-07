@@ -18,7 +18,7 @@ interface GbifResponse {
 }
 
 const taxa = [
-  { slug: 'solenopsis-invicta', key: 5035230 },
+  { slug: 'solenopsis-invicta', key: 5035230, countries: ['AR', 'BO', 'BR', 'PY', 'UY'] },
   { slug: 'phyllobates-terribilis', key: 5218020 },
   { slug: 'oxyuranus-microlepidotus', key: 2449963 },
   { slug: 'synanceia-verrucosa', key: 5201174 },
@@ -35,21 +35,27 @@ mkdirSync(geographyRoot, { recursive: true });
 
 const main = async (): Promise<void> => {
   for (const taxon of taxa) {
-    const query = new URLSearchParams({
-    taxon_key: String(taxon.key),
-    has_coordinate: 'true',
-    has_geospatial_issue: 'false',
-    occurrence_status: 'present',
-    limit: '300',
-  });
-    const response = await fetch(`https://api.gbif.org/v1/occurrence/search?${query}`);
-    if (!response.ok) {
-      throw new Error(`GBIF request failed for ${taxon.slug}: ${response.status}`);
+    const countries = 'countries' in taxon ? taxon.countries : [];
+    const queries = [undefined, ...countries];
+    const payloads: GbifResponse[] = [];
+    for (const country of queries) {
+      const query = new URLSearchParams({
+        taxon_key: String(taxon.key),
+        has_coordinate: 'true',
+        has_geospatial_issue: 'false',
+        occurrence_status: 'present',
+        limit: '300',
+        ...(country ? { country } : {}),
+      });
+      const response = await fetch(`https://api.gbif.org/v1/occurrence/search?${query}`);
+      if (!response.ok) {
+        throw new Error(`GBIF request failed for ${taxon.slug}${country ? ` in ${country}` : ''}: ${response.status}`);
+      }
+      payloads.push((await response.json()) as GbifResponse);
     }
 
-    const payload = (await response.json()) as GbifResponse;
     const occupiedCells = new Set<string>();
-    const features = payload.results.flatMap((record) => {
+    const features = payloads.flatMap((payload) => payload.results).flatMap((record) => {
     if (
       record.decimalLatitude === undefined ||
       record.decimalLongitude === undefined ||

@@ -88,6 +88,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
           layerType: range.layerType,
           summary: range.summary,
           ...(range.geometryAssetId ? { geometryAssetId: range.geometryAssetId } : {}),
+          ...(range.sourceGeometryAssetId ? { sourceGeometryAssetId: range.sourceGeometryAssetId } : {}),
           ...(range.geometryFeatureCount !== undefined
             ? { geometryFeatureCount: range.geometryFeatureCount }
             : {}),

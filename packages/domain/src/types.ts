@@ -3,6 +3,10 @@ export type ConfidenceLevel = 'high' | 'moderate' | 'low' | 'unknown';
 export type EvidenceType =
   'experimental' | 'observational' | 'clinical' | 'review' | 'database' | 'editorial_normalization';
 
+export type EvidenceReviewStatus = 'unreviewed' | 'reviewed' | 'needs_review';
+
+export type EvidenceCausalScope = 'organism_exposure' | 'whole_material' | 'isolated_compound';
+
 export interface Citation {
   id: string;
   slug?: string | undefined;
@@ -24,6 +28,9 @@ export interface EvidenceAssessment {
   evidenceType: EvidenceType;
   notes?: string | undefined;
   citationIds: string[];
+  reviewedAt?: string | undefined;
+  reviewStatus?: EvidenceReviewStatus | undefined;
+  causalScope?: EvidenceCausalScope | undefined;
 }
 
 export interface Taxonomy {
@@ -197,11 +204,44 @@ export type GeographicLayerType =
   | 'habitat_context'
   | 'uncertain_range';
 
+export type DistributionStatus =
+  | 'native'
+  | 'introduced'
+  | 'uncertain'
+  | 'recorded_presence';
+
+export interface AdministrativeRegion {
+  regionId: string;
+  countryCode: string;
+  regionCode?: string | undefined;
+  regionName: string;
+  adminLevel: 1;
+  geometryAssetId: string;
+  geometryDataset: 'geoBoundaries';
+  geometryDatasetVersion: string;
+}
+
+export interface DistributionRecord {
+  speciesId: string;
+  regionId: string;
+  distributionStatus: DistributionStatus;
+  evidenceIds: string[];
+  derivation:
+    | 'curated_source'
+    | 'occurrence_point_aggregation'
+    | 'source_range_to_admin1_extrapolation'
+    | 'expert_review';
+  confidence: 'high' | 'moderate' | 'low';
+  sourceRecordCount?: number | undefined;
+  note?: string | undefined;
+}
+
 export interface GeographicRange {
   id: string;
   organismId: string;
   layerType: GeographicLayerType;
   geometryAssetId?: string | undefined;
+  sourceGeometryAssetId?: string | undefined;
   geometryFeatureCount?: number | undefined;
   summary: string;
   evidence: EvidenceAssessment;

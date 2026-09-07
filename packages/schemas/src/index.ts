@@ -34,6 +34,9 @@ export const evidenceAssessmentSchema = z.object({
   ]),
   notes: z.string().optional(),
   citationIds: z.array(z.string()),
+  reviewedAt: z.string().optional(),
+  reviewStatus: z.enum(['unreviewed', 'reviewed', 'needs_review']).optional(),
+  causalScope: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']).optional(),
 });
 
 export const taxonomySchema = z.object({

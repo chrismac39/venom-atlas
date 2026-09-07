@@ -12,38 +12,40 @@ Venom Atlas should deliver "one organism, the complete venom story" at progressi
 
 ## Current Status
 
+Status legend: `- [x]` addressed and verified; `- [ ]` still open or not yet verified.
+
 Completed in the first remediation tranche:
 
-- Mechanism and physiology records use explicit `organism_exposure`, `whole_material`, or `isolated_compound` subjects.
-- Fire Ant sting progression and clinical effects are organism-exposure claims, not Solenopsin A claims.
-- Unsupported compound mechanism and physiology routes are not generated and are covered by browser tests.
-- Featured compounds are explicitly curated on venom records and validated against venom membership.
-- Unquantified composition uses an evidence list instead of a quantitative-looking chart.
-- Physiology uses structured pathway types; generated fallback sequences and prose classification are removed.
-- Internal editorial citations are retained for validation but excluded from public lists and routes.
-- Five starter profiles now cover insects, amphibians, reptiles, fishes, and mammals across sting, contact, bite, spine, and spur exposure.
-- Sparse dossiers are valid: missing capabilities are shown in a coverage matrix and do not generate placeholder routes.
-- Placeholder Fire Ant geography and the broken AntMaps embed are suppressed until sourced first-party geography is available.
-- Static first-party occurrence maps now use reusable-license GBIF records over a Natural Earth basemap for all five starter profiles.
-- Shared domain, schema, source, search, and generated JSON contracts use neutral `ToxicMaterial`, `toxicMaterialId`, and `whole_material` terminology.
-- `/organisms/<slug>/toxic-material` is canonical; `/venom` is generated only as a redirect for actual venom materials.
+- [x] Mechanism and physiology records use explicit `organism_exposure`, `whole_material`, or `isolated_compound` subjects.
+- [x] Fire Ant sting progression and clinical effects are organism-exposure claims, not Solenopsin A claims.
+- [x] Unsupported compound mechanism and physiology routes are not generated and are covered by browser tests.
+- [x] Featured compounds are explicitly curated on toxic-material records and validated against material membership.
+- [x] Unquantified composition uses an evidence list instead of a quantitative-looking chart.
+- [x] Physiology uses structured pathway types; generated fallback sequences and prose classification are removed.
+- [x] Internal editorial citations are retained for validation but excluded from public lists and routes.
+- [x] Five starter profiles cover insects, amphibians, reptiles, fishes, and mammals across sting, contact, bite, spine, and spur exposure.
+- [x] Sparse dossiers are valid: missing capabilities are shown in a coverage matrix and do not generate placeholder routes.
+- [x] Placeholder Fire Ant geography and the broken AntMaps embed are suppressed.
+- [x] Static first-party occurrence maps use reusable-license GBIF records over a Natural Earth basemap for all five starter profiles.
+- [x] Shared domain, schema, source, search, and generated JSON contracts use neutral `ToxicMaterial`, `toxicMaterialId`, and `whole_material` terminology.
+- [x] `/organisms/<slug>/toxic-material` is canonical; `/venom` is generated only as a redirect for actual venom materials.
 
 Still blocking the reference-slice definition of done:
 
-- Modeled native and introduced range boundaries are not yet curated; occurrence maps must not be interpreted as complete ranges.
-- Claim-level reviewed dates and clinical review metadata are not modeled.
-- Base-path-safe URL generation and project-path CI coverage are not implemented.
-- The chemistry development-load failure and interaction behavior need dedicated browser coverage.
-- Package TypeScript configs still inherit deprecated `baseUrl` behavior and need a TypeScript 7 migration.
+- [ ] Curate modeled native and introduced range boundaries; occurrence maps must not be interpreted as complete ranges.
+- [ ] Model claim-level reviewed dates and clinical review metadata.
+- [ ] Implement base-path-safe URL generation and project-path CI coverage.
+- [ ] Add dedicated browser coverage for chemistry development loading and interaction behavior.
+- [ ] Remove deprecated `baseUrl` inheritance and complete the TypeScript 7 migration.
 
 Neutral material contract acceptance criteria (complete):
 
-- Active shared and application types use `ToxicMaterial`; generic materials are not typed as `Venom`.
-- Compound and component ownership uses an explicit `toxicMaterialId` relationship.
-- Whole-mixture scientific subjects use `whole_material`.
-- Canonical source and generated JSON directories are named `toxic-materials`.
-- Search records use `toxic_material` and link to the canonical toxic-material route.
-- A `/venom` route is emitted only as a compatibility redirect for a material whose kind is `venom`.
+- [x] Active shared and application types use `ToxicMaterial`; generic materials are not typed as `Venom`.
+- [x] Compound and component ownership uses an explicit `toxicMaterialId` relationship.
+- [x] Whole-mixture scientific subjects use `whole_material`.
+- [x] Canonical source and generated JSON directories are named `toxic-materials`.
+- [x] Search records use `toxic_material` and link to the canonical toxic-material route.
+- [x] A `/venom` route is emitted only as a compatibility redirect for a material whose kind is `venom`.
 
 ## Release Principles
 
@@ -69,10 +71,10 @@ Required model:
 
 Acceptance criteria:
 
-- Every mechanism and physiology record declares its subject kind and subject ID.
-- Whole-material allergic effects are not presented as Solenopsin A effects.
-- A featured compound is explicitly curated, never inferred from array order.
-- Build validation rejects subject/reference mismatches.
+- [x] Every mechanism and physiology record declares its subject kind and subject ID.
+- [x] Whole-material allergic effects are not presented as Solenopsin A effects.
+- [x] A featured compound is explicitly curated, never inferred from array order.
+- [x] Build validation rejects subject/reference mismatches.
 
 ### Stop presenting placeholders as coverage
 
@@ -80,10 +82,10 @@ Problem: placeholder geography, illustrative complexes, and editorial-normalizat
 
 Acceptance criteria:
 
-- Placeholder records do not activate public sections.
-- Illustrative structures carry an always-visible label before interaction.
-- Editorial-only claims cannot appear in the pinned toxicology summary.
-- Each dossier displays a coverage summary for identity, geography, toxic material, chemistry, physiology, and media.
+- [x] Placeholder records do not activate public sections.
+- [x] Illustrative structures carry an always-visible label before interaction.
+- [x] Editorial-only claims cannot appear in the pinned toxicology summary.
+- [x] Each dossier displays a coverage summary for identity, geography, toxic material, chemistry, physiology, and media.
 
 ### Claim-level evidence
 
@@ -91,9 +93,9 @@ Problem: evidence is attached mainly to entities or panels, while individual cla
 
 Acceptance criteria:
 
-- User-facing claims can expose citation IDs, evidence type, confidence, reviewed date, and causal scope.
-- Every clinical safety statement has a non-editorial source.
-- Placeholder citations are excluded from public evidence lists.
+- [ ] User-facing claims can expose citation IDs, evidence type, confidence, reviewed date, and causal scope.
+- [x] Every published clinical safety statement has a non-editorial source.
+- [x] Placeholder citations are excluded from public evidence lists.
 
 ## Severity 1: Broken Or Misleading Experiences
 
@@ -103,10 +105,10 @@ Problem: the AntMaps iframe currently throws a provider-side runtime error and c
 
 Target:
 
-- Render sourced local GeoJSON/TopoJSON as the default static map.
-- Enhance with pan, zoom, and layer controls only on request.
-- Keep provider links as secondary "Explore source" actions.
-- Test visible map pixels/features, not only iframe existence.
+- [x] Render sourced local GeoJSON/TopoJSON as the default static map.
+- [ ] Enhance with pan, zoom, and layer controls only on request.
+- [x] Keep provider links as secondary "Explore source" actions.
+- [x] Test visible map features, not only iframe existence.
 
 ### Chemistry reliability
 
@@ -114,10 +116,10 @@ Problem: production 3D rendering works, but development dependency invalidation 
 
 Target:
 
-- Show the molecule immediately.
-- Enable pointer rotation immediately; gate wheel capture on focus.
-- Put specialist controls under an advanced disclosure.
-- Test cold development load, production load, nonblank canvas pixels, and structure fetch failures.
+- [x] Show the molecule immediately beneath a non-blocking loading state.
+- [x] Enable pointer rotation immediately; gate wheel capture on viewer focus.
+- [x] Put specialist controls under an advanced disclosure.
+- [ ] Test cold development load, production load, nonblank canvas pixels, and structure fetch failures.
 
 ### Honest visualizations
 
@@ -125,10 +127,10 @@ Problem: qualitative categories are presented as composition charts, and pathway
 
 Acceptance criteria:
 
-- Composition charts require sourced quantitative or ordinal abundance data.
-- Qualitative composition uses an evidence table or list.
-- Physiology pathways come from structured fields, never string matching.
-- Vega and Vega-Lite runtime/spec versions match without console warnings.
+- [x] Composition charts require sourced quantitative or ordinal abundance data.
+- [x] Qualitative composition uses an evidence table or list.
+- [x] Physiology pathways come from structured fields, never string matching.
+- [ ] Verify Vega and Vega-Lite runtime/spec versions match without console warnings in browser coverage.
 
 ## Severity 2: Information Architecture
 
@@ -142,69 +144,69 @@ Target layers:
 
 Acceptance criteria:
 
-- A general reader can understand the organism without passing renderer controls.
-- Deep sections remain directly linkable.
-- The page does not repeat the same organism summary in multiple sticky surfaces.
+- [x] A general reader can understand the organism without passing renderer controls.
+- [x] Deep sections remain directly linkable.
+- [ ] Verify the page does not repeat the same organism summary in multiple sticky surfaces.
 
 ### Clinical communication
 
 Acceptance criteria:
 
-- Distinguish common local effects, delayed local effects, and uncommon systemic emergencies.
-- Include sourced onset/duration ranges where available.
-- Present emergency warning signs without diagnosis or personalized treatment advice.
-- Show medical review status and review date.
+- [ ] Distinguish common local effects, delayed local effects, and uncommon systemic emergencies.
+- [ ] Include sourced onset/duration ranges where available.
+- [x] Present emergency warning signs without diagnosis or personalized treatment advice.
+- [ ] Show medical review status and review date.
 
 ### Licensed visual identity
 
 Acceptance criteria:
 
-- Hero, organism, habitat, and anatomy media have verified redistribution rights and attribution.
-- Unverified files are pruned and never referenced by generated pages.
-- Temporary visual treatments are clearly internal design devices, not scientific diagrams.
+- [ ] Hero, organism, habitat, and anatomy media have verified redistribution rights and attribution.
+- [x] Unverified files are pruned and never referenced by generated pages.
+- [ ] Verify temporary visual treatments are clearly identified as design devices rather than scientific diagrams.
 
 ## Severity 3: Platform Quality
 
 ### Static-host portability
 
-- Centralize internal URL and asset-path generation.
-- Apply Astro's base path to navigation, images, structures, annotations, and generated links.
-- Build and crawl with `PUBLIC_BASE_PATH=/venom-atlas/` in CI.
+- [x] Centralize internal URL and asset-path generation for active internal links.
+- [x] Apply Astro's base path to active navigation and page links; project-path build verified with `PUBLIC_BASE_PATH=/venom-atlas/`.
+- [ ] Build and crawl with `PUBLIC_BASE_PATH=/venom-atlas/` in CI.
 
 ### Accessibility and resilience
 
-- Keyboard operation for maps, structures, disclosures, and section navigation.
-- Reduced-motion behavior for scrolling and visual transitions.
-- Text/table equivalents for every visualization.
-- Local error boundaries with actionable fallback links.
+- [ ] Verify keyboard operation for maps, structures, disclosures, and section navigation.
+- [ ] Add and verify reduced-motion behavior for scrolling and visual transitions.
+- [x] Provide text/table equivalents for published scientific visualizations.
+- [ ] Add local error boundaries with actionable fallback links.
 
 ### Performance budgets
 
-- Chooser: no visualization runtimes or third-party requests.
-- Dossier initial route: less than 75 KB gzip of route-specific JavaScript.
-- Vega, 3Dmol, and map engines load only on intent/proximity.
-- Track bundle sizes and browser request budgets in CI.
+- [x] Chooser makes no visualization-runtime or third-party requests.
+- [x] Dossier initial route remains below 75 KB gzip of route-specific JavaScript.
+- [ ] Ensure Vega, 3Dmol, and map engines load only on intent or proximity.
+- [ ] Track bundle sizes and browser request budgets in CI.
 
 ## Delivery Order
 
-1. Completed: introduce causal-scope contracts and migrate Fire Ant clinical data to exposure/venom scope.
-2. Completed: remove placeholder-driven sections and add dossier coverage reporting.
-3. Completed: replace the broken map embed with first-party, source-backed geography.
-4. Completed: introduce a neutral toxic-material route and relationship contract, then publish the first poison material and isolated compound dossier.
-5. Make the chemistry viewer visibly interactive and development-stable.
-6. Replace heuristic/meaningless charts with structured representations.
-7. Recompose the page into summary, detail, and expert layers.
-8. Add claim-level citations and clinical editorial metadata.
-9. Add licensed organism/anatomy media.
-10. Make every URL base-path aware and add GitHub Pages CI coverage.
-11. Promote starter organism profiles through the publication levels in `docs/scientific-model/organism-dossier-authoring.md`.
+- [x] Introduce causal-scope contracts and migrate Fire Ant clinical data to exposure/material scope.
+- [x] Remove placeholder-driven sections and add dossier coverage reporting.
+- [x] Replace the broken map embed with first-party, source-backed geography.
+- [x] Introduce a neutral toxic-material route and relationship contract, then publish the first poison material and isolated compound dossier.
+- [ ] Complete cold-development, canvas-pixel, and structure-failure coverage for the chemistry viewer.
+- [x] Replace heuristic or meaningless charts with structured representations.
+- [ ] Recompose the page into summary, detail, and expert layers.
+- [ ] Add claim-level citations and clinical editorial metadata.
+- [ ] Add licensed organism and anatomy media.
+- [ ] Make every URL base-path aware and add GitHub Pages CI coverage.
+- [ ] Promote starter organism profiles through the publication levels in `docs/scientific-model/organism-dossier-authoring.md`.
 
 ## Definition Of Done For The Fire Ant Reference Slice
 
-- No public placeholder claims or blank primary visualizations.
-- No console errors or warnings during the canonical reading path.
-- Correct separation of sting effects, whole-venom effects, and compound-specific mechanisms.
-- Sourced geography remains useful if external providers are unavailable.
-- 2D and 3D chemistry renderers work in development and production.
-- Summary, intermediate, and expert reading depths are obvious and linkable.
-- All content validation, type checking, unit tests, production build, and Playwright tests pass.
+- [x] No public placeholder claims or blank primary visualizations.
+- [ ] No console errors or warnings during the canonical reading path.
+- [x] Correct separation of sting effects, whole-material effects, and compound-specific mechanisms.
+- [x] Sourced geography remains useful if external providers are unavailable.
+- [ ] 2D and 3D chemistry renderers have verified cold-development, production, and failure-path coverage.
+- [ ] Summary, intermediate, and expert reading depths are obvious and linkable.
+- [x] All content validation, type checking, unit tests, production build, and Playwright tests pass.

@@ -141,6 +141,42 @@ test('first-party geography renders occurrence records without external requests
   expect(externalRequests).toEqual([]);
 });
 
+test('geography map exposes local layers and focus-gated wheel zoom', async ({ page }) => {
+  await page.goto('/organisms/solenopsis-invicta/geography');
+
+  const map = page.locator('.openlayers-geography-map');
+  await expect(map).toBeVisible();
+  await expect(page.getByRole('checkbox', { name: 'all administrative regions' })).toBeChecked();
+  await expect(page.getByRole('checkbox', { name: 'national borders' })).toBeChecked();
+  await expect(page.getByRole('checkbox', { name: 'native regions' })).toBeChecked();
+  await expect(page.getByText('Click the map to enable scroll zoom.')).toBeVisible();
+
+  await map.locator('.openlayers-geography-map-canvas').click({ position: { x: 240, y: 140 } });
+  await expect(page.getByText('Click the map to enable scroll zoom.')).toHaveCount(0);
+
+  await page.getByRole('heading', { name: 'Ecology and geography' }).click();
+  await expect(page.getByText('Click the map to enable scroll zoom.')).toBeVisible();
+});
+
+test('geography map explains when only neutral boundaries are available', async ({ page }) => {
+  await page.route('**/data/geography/distribution-registry.json', async (route) => {
+    await route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({ dataset: 'geoBoundaries', release: 'test', records: [] }),
+    });
+  });
+  await page.route('**/geography/solenopsis-invicta-occurrences.geojson', async (route) => {
+    await route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({ type: 'FeatureCollection', features: [] }),
+    });
+  });
+
+  await page.goto('/organisms/solenopsis-invicta/geography');
+  await expect(page.getByText(/No species-specific geography evidence is available/)).toBeVisible();
+  await expect(page.getByRole('checkbox', { name: 'all administrative regions' })).toBeVisible();
+});
+
 test('organism monopage does not overflow a mobile viewport', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/atlas/solenopsis-invicta');

@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/5035230",
     "taxonKey": 5035230,
-    "generatedAt": "2026-09-07T03:12:49.521Z",
+    "generatedAt": "2026-09-07T15:41:56.617Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -671,6 +671,2210 @@
         "basisOfRecord": "HUMAN_OBSERVATION",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159594554"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4116589368,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.724194,
+          -31.609345
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/161962054",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4116589368"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4904160366,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.157852,
+          -31.629346
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/224252109",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4904160366"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4904164436,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.916287,
+          -34.412999
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/80359304",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4904164436"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2573864540,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.48256,
+          -34.59486
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/38859555",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2573864540"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4918926685,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.69453,
+          -33.44297
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:AAF4715",
+        "datasetTitle": null,
+        "occurrenceID": "ANTI924-19",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4918926685"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068247,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.6297,
+          -26.6609
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0003p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068247"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068249,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.2561,
+          -25.6733
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0061p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068249"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068250,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.7054,
+          -25.2875
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0135p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068250"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068273,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.6303,
+          -26.2391
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0066p4",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068273"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068275,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.0708,
+          -26.205
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0077p4",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068275"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068279,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.1021,
+          -25.7411
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0088p4",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068279"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068283,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.2144,
+          -26.1975
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0111p3",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068283"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910069664,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.9907,
+          -25.2508
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0171p2",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910069664"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910071032,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.2314,
+          -25.1432
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0166p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910071032"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1415008010,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.815,
+          -26.3028
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:AAG5042",
+        "datasetTitle": null,
+        "occurrenceID": "GMAFP088-15",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1415008010"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067554,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.19739,
+          -31.60144
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv036",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067554"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067555,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.87719,
+          -32.02703
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv047",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067555"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067556,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.55689,
+          -28.91283
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv050",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067556"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067557,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.52992,
+          -30.00186
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv058",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067557"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067559,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.66667,
+          -27.55283
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv069",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067559"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067561,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.00892,
+          -28.91503
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv083",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067561"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067562,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.0172,
+          -30.51863
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv094",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067562"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068952,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.29511,
+          -32.48397
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv051",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068952"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068955,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.43139,
+          -32.27592
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv073",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068955"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910073105,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.80219,
+          -28.32589
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv106",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910073105"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910077253,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.22508,
+          -28.02747
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv057",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910077253"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067578,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.27797,
+          -32.37975
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv234",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067578"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067567,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.95652,
+          -28.2669
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv146",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067567"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067570,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.85575,
+          -32.8111
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv168",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067570"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067577,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.63333,
+          -26.46667
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv223",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067577"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068971,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.57,
+          -25.6
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv224",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068971"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067487,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.58,
+          -27.34
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lc327",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067487"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068884,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.1,
+          -31.37
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lc320",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068884"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068960,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6,
+          -30.78
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv125",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068960"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910071732,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.29,
+          -29.89
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv130",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910071732"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910073028,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.09,
+          -33.35
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lc323",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910073028"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910074487,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.84,
+          -29.28
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv132",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910074487"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510095761,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.225,
+          -23.271944
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281629",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510095761"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510764512,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.828333,
+          -24.475833
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281719",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510764512"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6511053688,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.5325,
+          -23.401111
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281670",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6511053688"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6511074967,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.486111,
+          -19.222222
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281723",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6511074967"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510208378,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.63,
+          -23.028333
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281722",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510208378"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510759907,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.561111,
+          -23.241944
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281718",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510759907"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510806748,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.001667,
+          -22.018056
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281632",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510806748"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510912313,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.583056,
+          -20.783056
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "2281655",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510912313"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510521226,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.622778,
+          -20.462778
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1650408",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510521226"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6511332138,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.050278,
+          -19.8725
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1650371",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6511332138"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510755959,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.111111,
+          -22.822222
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1330798",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510755959"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510793042,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.841143,
+          -27.149429
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1548566",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510793042"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510512590,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.666944,
+          -22.749722
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1528736",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510512590"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510699948,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.673967,
+          -22.754533
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1263553",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510699948"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510646043,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.546683,
+          -22.394047
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1176437",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510646043"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6511102803,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.4,
+          -23.233333
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1357834",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6511102803"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510884932,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.714722,
+          -21.933333
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1474565",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510884932"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510759015,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.6007484,
+          -0.8866501
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "636809",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510759015"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428160,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.447,
+          -11.438
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05082",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428160"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428136,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1314,
+          -22.3325
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05066",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428136"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6511287225,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.533333,
+          -16.3
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1184498",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6511287225"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510321279,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.1627336,
+          -22.4130177
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "316567",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510321279"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428093,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.0788,
+          -26.3941
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05069",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428093"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428099,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.3108,
+          -27.1491
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05076",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428099"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428113,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.0205,
+          -27.2255
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05071",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428113"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428117,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.3277,
+          -26.5661
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05068",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428117"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428132,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.694,
+          -21.187
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05080",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428132"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428145,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.4966,
+          -27.1669
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05072",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428145"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428182,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.5163,
+          -26.7255
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05075",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428182"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6511259435,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.6675,
+          -18.486111
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "743907",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6511259435"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510568918,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.396944,
+          -18.132778
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "743814",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510568918"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6511242137,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.8475,
+          -18.452222
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "743777",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6511242137"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6510616096,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.909506,
+          -18.135356
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "1040324",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6510616096"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2005428162,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.622,
+          -10.069
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:awlit-ba05081",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2005428162"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068997,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.03,
+          -20.38
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-jpp056",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068997"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910074311,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.8,
+          -22.2
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-jb556",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910074311"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067394,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50.8,
+          -20.1
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-jb559",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067394"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068793,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.2,
+          -24.1
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-jb552",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068793"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067442,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.1,
+          -13.3
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-kr055",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067442"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067444,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.7,
+          -25.6
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-kr077",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067444"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068839,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.78,
+          -16.26
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-kr056",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068839"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068841,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.256,
+          -24.083
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-kr070",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068841"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910071610,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50.4,
+          -27.1
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-kr047",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910071610"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910071613,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.63,
+          -16.23
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-kr061",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910071613"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910074362,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.4,
+          -30.3
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-kr052",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910074362"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067650,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.8536,
+          -15.8464
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0306",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067650"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910067651,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.61,
+          -20.53
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0317",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910067651"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068213,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.3372,
+          -15.675
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0316p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068213"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910069047,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.2435,
+          -15.5753
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0307",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910069047"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910069607,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.3898,
+          -22.0729
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0326p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910069607"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910070047,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.65,
+          -16.13
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0306.1p2",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910070047"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739302,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.5,
+          -21.04
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-205",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739302"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739303,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.37,
+          -22.43
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-216",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739303"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739304,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.8,
+          -17.74
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-227",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739304"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739307,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.34,
+          -22.84
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-241",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739307"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739308,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.88,
+          -20.5
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-249",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739308"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739311,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.38,
+          -21.42
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-206p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739311"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739313,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.52,
+          -20.06
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-220p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739313"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739314,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.96,
+          -18.04
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-228p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739314"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739327,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.75,
+          -18.56
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-225.2p2",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739327"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739338,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.12,
+          -21.56
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-207b",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739338"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739361,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.51,
+          -21.76
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-229",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739361"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739368,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.43,
+          -19.45
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-262p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739368"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739386,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.36,
+          -19.64
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-222",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739386"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739391,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.25,
+          -20.5
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-203p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739391"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739394,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.8,
+          -18.86
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-225p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739394"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739396,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.56,
+          -18.1
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-269p",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739396"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739405,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.16,
+          -19.74
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-266.1v",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739405"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739412,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.04,
+          -22.5
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-212",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739412"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739415,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.43,
+          -22.49
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-245",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739415"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739416,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.47,
+          -20.26
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-256",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739416"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4907739418,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.7,
+          -19.1
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:bfl-sp-270",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4907739418"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910073118,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.39077,
+          -23.41747
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv230",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910073118"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910074498,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.49583,
+          -25.23615
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:fuedei-lv231",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910074498"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068263,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.02,
+          -27.22
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0500p2",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068263"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068265,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.25,
+          -25.78
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0519p2",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068265"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910068266,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.06,
+          -25.39
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0533p2",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910068266"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910071845,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.928,
+          -27.292
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0499",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910071845"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4910071848,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.089,
+          -26.459
+        ]
+      },
+      "properties": {
+        "scientificName": "Solenopsis invicta Buren, 1972",
+        "datasetTitle": null,
+        "occurrenceID": "CAS:ANTWEB:ifahi-sp-0518",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4910071848"
       }
     }
   ]

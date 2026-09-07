@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
+import { appPath } from '../../lib/paths';
 import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
 import { getPublicCitations } from '../../lib/content';
 
@@ -13,7 +14,7 @@ const citations = getPublicCitations().sort((a, b) => a.title.localeCompare(b.ti
     <ul>
       {citations.map((citation) => (
         <li>
-          <a href={`/sources/${citation.slug}`}>{citation.title}</a>
+          <a href={appPath(`/sources/${citation.slug}`)}>{citation.title}</a>
           {citation.publicationYear ? ` (${citation.publicationYear})` : ''}
         </li>
       ))}

@@ -28,7 +28,7 @@ const atlasHref = `/atlas/${organism.organism.slug}#section-geography`;
     <p>Source-backed occurrence records are shown separately from modeled range boundaries.</p>
   </section>
 
-  <RangeMapPanel ranges={geography.ranges} />
+  <RangeMapPanel ranges={geography.ranges} speciesId={organism.organism.slug} client:visible />
 
   <section class="panel">
     <h2>Return to atlas</h2>

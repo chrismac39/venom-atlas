@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../../layouts/PageLayout.astro';
+import { appPath } from '../../../lib/paths';
 import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import {
@@ -95,14 +96,14 @@ const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath
 
   <section class="panel">
     {toxicMaterial ? (
-      <a href={`/organisms/${bundle.organism.slug}/toxic-material`}>Open toxic material profile</a>
+      <a href={appPath(`/organisms/${bundle.organism.slug}/toxic-material`)}>Open toxic material profile</a>
     ) : null}
     {toxicMaterial && geography ? <br /> : null}
-    {geography ? <a href={`/organisms/${bundle.organism.slug}/geography`}>Open geography profile</a> : null}
+    {geography ? <a href={appPath(`/organisms/${bundle.organism.slug}/geography`)}>Open geography profile</a> : null}
     {featuredToxinSlug ? (
       <>
         <br />
-        <a href={`/toxins/${featuredToxinSlug}`}>Open featured toxin page</a>
+        <a href={appPath(`/toxins/${featuredToxinSlug}`)}>Open featured toxin page</a>
       </>
     ) : null}
   </section>

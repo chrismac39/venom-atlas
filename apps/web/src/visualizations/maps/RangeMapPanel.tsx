@@ -2,34 +2,29 @@ interface RangeLayer {
   id: string;
   layerType: string;
   geometryAssetId?: string;
+  sourceGeometryAssetId?: string;
   geometryFeatureCount?: number;
   summary: string;
 }
 
-const mapAssetPath = (geometryAssetId: string): string =>
-  geometryAssetId.replace(/\.geojson$/i, '.svg');
+import { OpenLayersGeographyMap } from './OpenLayersGeographyMap';
 
-export const RangeMapPanel = ({ ranges }: { ranges: RangeLayer[] }) => {
+export const RangeMapPanel = ({ ranges, speciesId }: { ranges: RangeLayer[]; speciesId?: string }) => {
   const mappedRanges = ranges.filter((range) => range.geometryAssetId);
 
   return (
     <section className="panel" aria-label="Geographic range panel">
       <h3>Documented geography</h3>
-      {mappedRanges.length > 0 ? (
+      {mappedRanges.length > 0 || speciesId ? (
         <div className="range-map-stack">
-          {mappedRanges.map((range) => (
-            <figure className="range-map-figure" key={range.id}>
-              <img
-                src={mapAssetPath(range.geometryAssetId as string)}
-                alt={`World map showing ${range.geometryFeatureCount ?? 'documented'} occurrence records`}
-                loading="lazy"
-              />
+          <figure className="range-map-figure">
+              <OpenLayersGeographyMap ranges={mappedRanges} speciesId={speciesId} />
               <figcaption>
-                <strong>{range.geometryFeatureCount ?? 'Documented'} occurrence records.</strong>{' '}
-                Observations indicate recorded presence, not a complete range boundary or current occupancy.
+                <strong>Interactive documented geography.</strong>{' '}
+                Toggle native, introduced, uncertain, and confirmed occurrence layers. Observations indicate
+                recorded presence, not a complete range boundary or current occupancy.
               </figcaption>
-            </figure>
-          ))}
+          </figure>
         </div>
       ) : (
         <div>

@@ -1,0 +1,737 @@
+{
+  "dataset": "geoBoundaries",
+  "release": "9469f09",
+  "records": [
+    {
+      "speciesId": "ornithorhynchus-anatinus",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "New South Wales",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ornithorhynchus-anatinus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 22,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B21656044714531; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ornithorhynchus-anatinus",
+      "regionId": "AUS-AU-TAS",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Tasmania",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ornithorhynchus-anatinus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 9,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B70793016411369; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ornithorhynchus-anatinus",
+      "regionId": "AUS-AU-VIC",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Victoria",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ornithorhynchus-anatinus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 15,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B60194602145168; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ornithorhynchus-anatinus",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Queensland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ornithorhynchus-anatinus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 6,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B13995298844162; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ornithorhynchus-anatinus",
+      "regionId": "AUS-AU-ACT",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Australian Capital Territory",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ornithorhynchus-anatinus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B40257551482390; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "oxyuranus-microlepidotus",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Queensland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-oxyuranus-microlepidotus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 20,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B13995298844162; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "oxyuranus-microlepidotus",
+      "regionId": "AUS-AU-SA",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "South Australia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-oxyuranus-microlepidotus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 11,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B14973555098025; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "oxyuranus-microlepidotus",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "New South Wales",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-oxyuranus-microlepidotus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B21656044714531; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "phyllobates-terribilis",
+      "regionId": "COL-CO-CAU",
+      "countryCode": "COL",
+      "adminLevel": 1,
+      "regionName": "Cauca",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-phyllobates-terribilis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13589884B79790550435280; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "phyllobates-terribilis",
+      "regionId": "COL-CO-VAC",
+      "countryCode": "COL",
+      "adminLevel": 1,
+      "regionName": "Valle del Cauca",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-phyllobates-terribilis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13589884B83777567082486; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "USA-US-NC",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "North Carolina",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B6801956407400; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "USA-US-LA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Louisiana",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B41335105066757; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "USA-US-TX",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Texas",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 12,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B29106115751815; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "USA-US-FL",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Florida",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 10,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B65591139260314; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "USA-US-MS",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Mississippi",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B69138566591314; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "USA-US-SC",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "South Carolina",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B79689460185872; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "USA-US-CA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "California",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B43071933723331; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "TWN-TW-NWT",
+      "countryCode": "TWN",
+      "adminLevel": 1,
+      "regionName": "New Taipei",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 90331920B2879670148147; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Queensland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B13995298844162; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-S",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Santa Fe",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 10,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B6836410786482. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-X",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "CÃ³rdoba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B39000171219781. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-B",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Buenos Aires",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 7,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B97722443848736. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-P",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Formosa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 10,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B45303095947895. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-W",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Corrientes",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B61983540054875. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-G",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Santiago del Estero",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B61792957744675. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-N",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Misiones",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B16625472822217. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-PR",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Parana",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 5,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B30315977547221. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-T",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "TucumÃ¡n",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B70412318542153. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-SP",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Sao Paulo",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 11,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B46470234103867. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-MG",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Minas Gerais",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 5,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B44044837234259. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-MS",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Mato Grosso do Sul",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 28,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B40722526455680. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-SC",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Santa Catarina",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 7,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B90188072957077. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RJ",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rio de Jeneiro",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B85657526756793. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-PA",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Para",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B48776179681147. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RO",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rondonia",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B1613159902410. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-MT",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Mato Grosso",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 8,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B2082355341666. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-GO",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Goias",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B6484683145874. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-AC",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Acre",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B96632893955983. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RS",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rio Grande do Sul",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B68448774564157. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-1",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CONCEPCION",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B27882980507950. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-11",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CENTRAL",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B88193761383216. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-7",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "ITAPUA",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B60028824512427. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-9",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "PARAGUARI",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B9584917578086. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-3",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CORDILLERA",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B75072183549736. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-8",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "MISIONES",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B67002830619694. The country-level native range source is not expanded to unobserved ADM1 units."
+    },
+    {
+      "speciesId": "synanceia-verrucosa",
+      "regionId": "EGY-EG-BA",
+      "countryCode": "EGY",
+      "adminLevel": 1,
+      "regionName": "Red Sea Governorate",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-synanceia-verrucosa-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 46179711B94144647788557; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "synanceia-verrucosa",
+      "regionId": "JPN-JP-47",
+      "countryCode": "JPN",
+      "adminLevel": 1,
+      "regionName": "Okinawa Prefecture",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-synanceia-verrucosa-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 47310658B31569081891025; this is recorded presence, not a native or introduced range claim."
+    }
+  ]
+}

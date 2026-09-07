@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../../layouts/PageLayout.astro';
+import { appPath } from '../../../lib/paths';
 import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { VegaChart } from '../../../visualizations/vega/VegaChart';
@@ -71,6 +72,6 @@ if (!organism || !material) {
         </li>
       ))}
     </ul>
-    {featuredToxinSlug ? <a href={`/toxins/${featuredToxinSlug}`}>Open featured toxin molecule page</a> : null}
+    {featuredToxinSlug ? <a href={appPath(`/toxins/${featuredToxinSlug}`)}>Open featured toxin molecule page</a> : null}
   </section>
 </PageLayout>

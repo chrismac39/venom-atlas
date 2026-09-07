@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { atlasSeedData } from '../../domain/src/seedData';
-import { atlasSeedSchema } from '../src';
+import { atlasSeedSchema, evidenceAssessmentSchema } from '../src';
 
 describe('atlas seed schema', () => {
   it('validates seeded organism and molecule data', () => {
@@ -16,5 +16,21 @@ describe('atlas seed schema', () => {
     expect(toxicMaterial?.materialKind).toBe('venom');
     expect(toxin?.toxicMaterialId).toBe(toxicMaterial?.id);
     expect(parsed).not.toHaveProperty('venoms');
+  });
+
+  it('preserves claim review metadata and causal scope', () => {
+    const evidence = evidenceAssessmentSchema.parse({
+      id: 'ev-reviewed-claim',
+      confidence: 'high',
+      evidenceType: 'clinical',
+      citationIds: ['cit-clinical-example'],
+      reviewedAt: '2026-09-07',
+      reviewStatus: 'reviewed',
+      causalScope: 'organism_exposure',
+    });
+
+    expect(evidence.reviewedAt).toBe('2026-09-07');
+    expect(evidence.reviewStatus).toBe('reviewed');
+    expect(evidence.causalScope).toBe('organism_exposure');
   });
 });

@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
+import { appPath } from '../../lib/paths';
 import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
 import { getAllToxins } from '../../lib/content';
 
@@ -13,7 +14,7 @@ const toxins = getAllToxins().sort((a, b) => a.toxin.displayName.localeCompare(b
     <ul>
       {toxins.map((entry) => (
         <li>
-          <a href={`/toxins/${entry.toxin.slug}`}>{entry.toxin.displayName}</a>
+          <a href={appPath(`/toxins/${entry.toxin.slug}`)}>{entry.toxin.displayName}</a>
           {entry.toxin.family ? ` - ${entry.toxin.family}` : ''}
         </li>
       ))}

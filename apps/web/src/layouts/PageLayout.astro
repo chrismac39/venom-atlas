@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { appPath } from '../lib/paths';
 
 interface Props {
   title: string;
@@ -24,12 +25,12 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <nav class="primary" aria-label="Main navigation">
-      <a href="/">Venom Atlas</a>
-      <a href="/organisms">Organisms</a>
-      <a href="/toxins">Toxins</a>
-      <a href="/effects">Effects</a>
-      <a href="/sources">Sources</a>
-      <a href="/about">About</a>
+      <a href={appPath('/')}>Venom Atlas</a>
+      <a href={appPath('/organisms')}>Organisms</a>
+      <a href={appPath('/toxins')}>Toxins</a>
+      <a href={appPath('/effects')}>Effects</a>
+      <a href={appPath('/sources')}>Sources</a>
+      <a href={appPath('/about')}>About</a>
       <slot name="theme" />
     </nav>
     <main id="main-content">

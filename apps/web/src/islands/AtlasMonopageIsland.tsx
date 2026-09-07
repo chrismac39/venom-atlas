@@ -2,6 +2,7 @@ import { lazy, Suspense, type ReactNode } from 'react';
 import type { AnatomyHighlight } from '@venom-atlas/visualization-contracts';
 import { CitationList } from '../components/CitationList';
 import { EvidenceBadge } from '../components/EvidenceBadge';
+import { appPath } from '../lib/paths';
 import type { AtlasOrganismData } from '../features/atlas/atlas-types';
 import { DeferredContent } from '../features/atlas/components/DeferredContent';
 import { ExternalMapEmbed } from '../features/atlas/components/ExternalMapEmbed';
@@ -218,7 +219,7 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
             <p className="atlas-global-summary-line atlas-global-summary-overview">Overview: {summaryOrganismOverview}</p>
             <p className="atlas-global-summary-line atlas-global-summary-toxicology">Toxicology: {summaryToxinOverview}</p>
             </div>
-            <a className="atlas-change-organism" href="/">Change organism</a>
+            <a className="atlas-change-organism" href={appPath('/')}>Change organism</a>
           </section>
       </aside>
 
@@ -325,7 +326,7 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
 
             {section.kind === 'geography' ? (
               <>
-                <RangeMapPanel ranges={selected.geographyRanges} />
+                <RangeMapPanel ranges={selected.geographyRanges} speciesId={selected.slug} />
                 {selected.geographyVisualizations.map((visualization) => (
                   <ExternalMapEmbed key={visualization.id} visualization={visualization} />
                 ))}

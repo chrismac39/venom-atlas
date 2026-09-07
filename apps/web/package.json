@@ -13,12 +13,13 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "3dmol": "^2.5.2",
+    "@astrojs/react": "^4.4.0",
     "@venom-atlas/domain": "workspace:*",
     "@venom-atlas/schemas": "workspace:*",
     "@venom-atlas/visualization-contracts": "workspace:*",
-    "3dmol": "^2.5.2",
-    "@astrojs/react": "^4.4.0",
     "astro": "^5.12.0",
+    "ol": "^10.10.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "vega": "^5.33.0",

@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
+import { appPath } from '../../lib/paths';
 import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
 import { getAllOrganisms } from '../../lib/content';
 
@@ -15,7 +16,7 @@ const organisms = getAllOrganisms().sort((a, b) =>
     <ul>
       {organisms.map((entry) => (
         <li>
-          <a href={`/organisms/${entry.organism.slug}`}>{entry.organism.scientificName}</a> ({entry.organism.commonName})
+          <a href={appPath(`/organisms/${entry.organism.slug}`)}>{entry.organism.scientificName}</a> ({entry.organism.commonName})
         </li>
       ))}
     </ul>

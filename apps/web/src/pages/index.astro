@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { appPath } from '../lib/paths';
 import { ThemeSwitcher } from '../islands/ThemeSwitcher';
 import { buildAtlasMonopageOrganisms } from '../lib/atlas-monopage-data';
 
@@ -22,7 +23,7 @@ const organisms = buildAtlasMonopageOrganisms();
       {organisms.map((organism) => {
         return (
           <li>
-            <a class="atlas-chooser-option" href={`/atlas/${organism.slug}`}>
+            <a class="atlas-chooser-option" href={appPath(`/atlas/${organism.slug}`)}>
               <span class="atlas-specimen-mark" aria-hidden="true">
                 <span>{organism.taxonomy.genus?.slice(0, 1)}</span>
                 <span>{organism.taxonomy.species?.split(' ')[1]?.slice(0, 1)}</span>

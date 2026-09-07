@@ -1,7 +1,26 @@
 ﻿id: geo-solenopsis-invicta
 slug: solenopsis-invicta
 organismSlug: solenopsis-invicta
+distribution:
+  tier: occurrence_intersection
+  nativeCountryCodes:
+    - ARG
+    - BOL
+    - BRA
+    - PRY
+    - URY
+  sourceRanges: []
 ranges:
+  - id: geo-solenopsis-native-range
+    layerType: native_range
+    summary: Source-described native distribution spans Argentina, Bolivia, Brazil, Paraguay, and Uruguay. The map highlights only native-country ADM1 units with reusable-license GBIF point evidence; unobserved ADM1 units are intentionally not filled as if they were confirmed range.
+    evidence:
+      id: ev-solenopsis-invicta-native-range
+      confidence: high
+      evidenceType: review
+      notes: The cited source establishes the country-level native context. The registry narrows that context to ADM1 units with reusable-license GBIF point evidence; GBIF points remain visible as a separate observational layer.
+      citationIds:
+        - cit-fire-ant-review-2007
   - id: geo-solenopsis-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/solenopsis-invicta-occurrences.geojson

@@ -39,6 +39,9 @@ const evidenceSchema = z.object({
   ]),
   notes: z.string().optional(),
   citationIds: z.array(z.string()),
+  reviewedAt: z.string().optional(),
+  reviewStatus: z.enum(['unreviewed', 'reviewed', 'needs_review']).optional(),
+  causalScope: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']).optional(),
 });
 
 const organismRecordSchema = z.object({
@@ -251,6 +254,22 @@ const geographyRecordSchema = z.object({
   id: z.string(),
   slug: z.string(),
   organismSlug: z.string(),
+  distribution: z
+    .object({
+      tier: z.enum(['occurrence_intersection', 'curated_source']).optional(),
+      nativeCountryCodes: z.array(z.string()).optional(),
+      sourceRanges: z
+        .array(
+          z.object({
+            layerType: z.enum(['native', 'introduced', 'uncertain']),
+            geometryAssetPath: z.string(),
+            evidenceIds: z.array(z.string()),
+            confidence: z.enum(['high', 'moderate', 'low']),
+          }),
+        )
+        .optional(),
+    })
+    .optional(),
   ranges: z.array(
     z.object({
       id: z.string(),
@@ -262,6 +281,7 @@ const geographyRecordSchema = z.object({
         'uncertain_range',
       ]),
       geometryAssetPath: z.string().optional(),
+      sourceGeometryAssetPath: z.string().optional(),
       summary: z.string(),
       evidence: evidenceSchema,
     }),
@@ -651,6 +671,7 @@ const loadGeographyBundles = (): GeographyBundle[] => {
           organismId: `org-${record.organismSlug}`,
           layerType: entry.layerType,
           geometryAssetId: entry.geometryAssetPath,
+          ...(entry.sourceGeometryAssetPath ? { sourceGeometryAssetId: entry.sourceGeometryAssetPath } : {}),
           geometryFeatureCount,
           summary: entry.summary,
           evidence: mapEvidence(entry.evidence),

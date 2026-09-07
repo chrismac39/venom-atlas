@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { appPath } from '../lib/paths';
 import EvidenceBadge from '../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../islands/ThemeSwitcher';
 import {
@@ -50,7 +51,7 @@ const exposureEffects = getAllOrganisms().flatMap((entry) => {
           </li>
         ))}
       </ul>
-      <a href={`/atlas/${entry.organism.slug}#section-human-physiology`}>Open the complete exposure dossier</a>
+      <a href={appPath(`/atlas/${entry.organism.slug}#section-human-physiology`)}>Open the complete exposure dossier</a>
     </section>
   ))}
 </PageLayout>

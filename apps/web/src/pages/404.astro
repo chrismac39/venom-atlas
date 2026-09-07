@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { appPath } from '../lib/paths';
 import { ThemeSwitcher } from '../islands/ThemeSwitcher';
 ---
 
@@ -8,6 +9,6 @@ import { ThemeSwitcher } from '../islands/ThemeSwitcher';
   <section class="panel">
     <h1>Atlas page not found</h1>
     <p>No route matches this URL.</p>
-    <a href="/">Return to atlas home</a>
+    <a href={appPath('/')}>Return to atlas home</a>
   </section>
 </PageLayout>

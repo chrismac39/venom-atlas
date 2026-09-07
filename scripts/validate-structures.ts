@@ -6,6 +6,7 @@ import {
   getPublicAssetAbsolutePath,
   isFileEmpty,
 } from '../apps/web/src/lib/content';
+import { validateFeatureCollection } from './geography-asset-validation';
 
 const fail = (message: string): never => {
   throw new Error(message);
@@ -37,21 +38,30 @@ for (const organismBundle of getAllOrganisms()) {
     }
 
     const filePath = getPublicAssetAbsolutePath(range.geometryAssetId);
-    const parsed = JSON.parse(readFileSync(filePath, 'utf8')) as {
+    const parsed = JSON.parse(readFileSync(filePath, 'utf8')) as unknown;
+    validateFeatureCollection({
+      assetPath: range.geometryAssetId,
+      data: parsed,
+      allowedGeometryTypes: range.layerType === 'confirmed_occurrence'
+        ? ['Point']
+        : ['Polygon', 'MultiPolygon', 'Point'],
+      requireSourceMetadata: range.layerType !== 'confirmed_occurrence',
+    });
+    const collection = parsed as {
       features?: Array<{
         geometry?: { type?: string; coordinates?: unknown[] };
         properties?: { license?: string; sourceUrl?: string };
       }>;
     };
-    const hasFeatures = Array.isArray(parsed.features) && parsed.features.length > 0;
+    const hasFeatures = Array.isArray(collection.features) && collection.features.length > 0;
 
     const publishableRange = range.evidence.confidence !== 'unknown';
     if (publishableRange && !hasFeatures) {
       fail(`Publishable range geometry has no features: ${range.geometryAssetId}`);
     }
 
-    if (range.layerType === 'confirmed_occurrence' && parsed.features) {
-      for (const occurrence of parsed.features) {
+    if (range.layerType === 'confirmed_occurrence' && collection.features) {
+      for (const occurrence of collection.features) {
         const coordinates = occurrence.geometry?.coordinates;
         const [longitude, latitude] = Array.isArray(coordinates) ? coordinates : [];
         if (
@@ -70,10 +80,6 @@ for (const organismBundle of getAllOrganisms()) {
         }
       }
 
-      const mapPath = filePath.replace(/\.geojson$/i, '.svg');
-      if (!existsSync(mapPath) || isFileEmpty(mapPath)) {
-        fail(`Occurrence layer missing generated static map: ${mapPath}`);
-      }
     }
   }
 }

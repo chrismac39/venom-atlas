@@ -34,6 +34,7 @@ export const MoleculeViewer = ({
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [representation, setRepresentation] = useState<MolecularRepresentation>(
     model.defaultRepresentation,
   );
@@ -44,7 +45,7 @@ export const MoleculeViewer = ({
   const [selectedPresetId, setSelectedPresetId] = useState<string | undefined>(undefined);
   const [showResidueLabels, setShowResidueLabels] = useState<boolean>(true);
   const [showContactHighlights, setShowContactHighlights] = useState<boolean>(true);
-  const [isViewerInteractive, setIsViewerInteractive] = useState<boolean>(false);
+  const [isViewerFocused, setIsViewerFocused] = useState(false);
   const handleRef = useRef<MolecularRendererHandle | null>(null);
 
   useEffect(() => {
@@ -57,7 +58,8 @@ export const MoleculeViewer = ({
   }, [interactionAnnotation]);
 
   useEffect(() => {
-    setIsViewerInteractive(false);
+    setIsViewerFocused(false);
+    setIsLoading(true);
   }, [model.entityId]);
 
   const surfaceEnabled =
@@ -77,6 +79,7 @@ export const MoleculeViewer = ({
         return;
       }
       try {
+        setIsLoading(true);
         setError(null);
         handleRef.current?.dispose();
         handleRef.current = await adapter.mount(containerRef.current, model, {
@@ -104,8 +107,10 @@ export const MoleculeViewer = ({
               }
             : {}),
         });
+        setIsLoading(false);
       } catch (mountError) {
         setError((mountError as Error).message);
+        setIsLoading(false);
       }
     };
 
@@ -162,8 +167,10 @@ export const MoleculeViewer = ({
       </select>
       <p className="muted">{description}</p>
 
-      {surfaceEnabled ? (
-        <section className="panel">
+      <details>
+        <summary>Advanced display controls</summary>
+        {surfaceEnabled ? (
+          <section className="panel">
           <h4>Surface controls</h4>
           <label htmlFor="surface-kind">Surface type</label>
           <select
@@ -224,11 +231,11 @@ export const MoleculeViewer = ({
               PDB2PQR/APBS). Runtime computation is intentionally out of scope.
             </p>
           ) : null}
-        </section>
-      ) : null}
+          </section>
+        ) : null}
 
-      {interactionAnnotation ? (
-        <section className="panel">
+        {interactionAnnotation ? (
+          <section className="panel">
           <h4>Complex view controls</h4>
           <label htmlFor="camera-preset">Camera preset</label>
           <select
@@ -260,44 +267,31 @@ export const MoleculeViewer = ({
             />
             Highlight annotated contacts
           </label>
-        </section>
-      ) : null}
+          </section>
+        ) : null}
+      </details>
 
       {error ? (
-        <p>{error}</p>
+        <p role="alert">Unable to render this structure: {error}</p>
       ) : (
         <div
           className="molecule-viewer-interaction-layer"
-          onMouseLeave={() => setIsViewerInteractive(false)}
+          onWheel={(event) => {
+            if (!isViewerFocused) {
+              event.preventDefault();
+            }
+          }}
         >
           <div
             ref={containerRef}
-            className={`molecule-viewer-canvas-host${isViewerInteractive ? ' molecule-viewer-canvas-host-interactive' : ''}`}
+            className="molecule-viewer-canvas-host"
+            tabIndex={0}
+            role="img"
+            aria-label={`${title ?? '3D'} molecular structure; focus to enable zooming`}
+            onFocus={() => setIsViewerFocused(true)}
+            onBlur={() => setIsViewerFocused(false)}
           />
-
-          {!isViewerInteractive ? (
-            <button
-              type="button"
-              className="molecule-viewer-overlay"
-              onClick={() => setIsViewerInteractive(true)}
-              aria-label="Enable 3D viewer interaction"
-            >
-              <span className="molecule-viewer-overlay-pill">
-                <span className="molecule-viewer-overlay-title">Click to interact with 3D render</span>
-                <span className="molecule-viewer-overlay-subtitle">
-                  Page scroll stays locked until you activate viewer controls.
-                </span>
-              </span>
-            </button>
-          ) : (
-            <button
-              type="button"
-              className="molecule-viewer-lock-button"
-              onClick={() => setIsViewerInteractive(false)}
-            >
-              Lock 3D view
-            </button>
-          )}
+          {isLoading ? <p className="molecule-viewer-status">Loading molecular structure...</p> : null}
         </div>
       )}
     </section>
