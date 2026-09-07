@@ -1,0 +1,734 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/5201174",
+    "taxonKey": 5201174,
+    "generatedAt": "2026-09-07T03:12:53.462Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 6274114486,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.26655,
+          9.081056
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/346068047",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6274114486"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6469591050,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.691543,
+          24.366434
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/383552208",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6469591050"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5231657802,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          178.106426,
+          -18.321504
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/298983747",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5231657802"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5108564357,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.043057,
+          -8.344869
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/268030953",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5108564357"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5230003739,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.893717,
+          13.682153
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/287517988",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5230003739"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5231219789,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.854789,
+          27.408882
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/299143666",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5231219789"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4863814513,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.907321,
+          26.997916
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/205098816",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4863814513"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5037079297,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.551752,
+          -4.704394
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/257065377",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5037079297"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5231372269,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.258763,
+          -9.581314
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/296753292",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5231372269"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5291929436,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.726975,
+          -16.541688
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/222359001",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5291929436"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5036691141,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.667756,
+          -4.954099
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/248464894",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5036691141"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4039348516,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.214977,
+          -17.167721
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/147090833",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4039348516"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6196878378,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.163056,
+          24.831111
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "bba32d2b-67a8-4fbd-8be0-512e3eb815f6",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6196878378"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542608462,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28111,
+          -21.20611
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "eacaac1c-4fbb-4df0-9c09-217d698ba78f",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542608462"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5865367079,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.450737,
+          -9.369519
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "asv.196_EE0487_12s_teleo",
+        "basisOfRecord": "MACHINE_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5865367079"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5867331930,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          164.72079,
+          -20.40503
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "asv.791_EE0271_12s_teleo",
+        "basisOfRecord": "MACHINE_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5867331930"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542589984,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.32591,
+          26.02441
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "1890531b-b469-4c2b-8043-25d073c4cdd3",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542589984"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542609867,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.67929,
+          25.46869
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "83222e32-1727-4345-bf81-63b6b08f1a7d",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542609867"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542669238,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.62655,
+          -14.96867
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "3b58bfef-0e91-4701-95fc-996b31d6852b",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542669238"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4121016991,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.152341,
+          1.741172
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/163259297",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4121016991"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542557027,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -148.27889,
+          -15.00889
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "d914bcff-f93e-4e51-8917-2221d9f6030d",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542557027"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542638497,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.23816,
+          -21.01832
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "8e6921c9-9cd6-4234-9d9f-dedac0d43e8f",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542638497"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542743209,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.18167,
+          24.78444
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "fa91ded0-bd2e-49a7-be05-f513aca019c9",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542743209"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5018472560,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.031197,
+          26.572784
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": null,
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5018472560"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542619745,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.92074,
+          27.81366
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "23bf32eb-253c-4e87-ac52-b1877c7c6184",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542619745"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542620050,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.11903,
+          -13.32121
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "25b69c6e-c0ef-4bf4-a039-c20e1b6ccc8e",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542620050"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542727365,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.77364,
+          43.4064
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "4fbfcae1-0649-4b9e-a841-c2564d012691",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542727365"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6196879172,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.719167,
+          28.467222
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "c8e0ff9f-2617-4391-8dd8-30684083d0da",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6196879172"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542666675,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.61859,
+          -17.63211
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "d0436596-458b-413d-9478-15e9e12d97c7",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542666675"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542559116,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.86094,
+          4.19901
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "d8dfee0c-482f-436c-be58-268916cb1d3c",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542559116"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542586471,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.27725,
+          -0.40358
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "14bc7335-b29f-4eae-839a-a8602764b1a4",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542586471"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542755752,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.41714,
+          -4.61065
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "c4b24c55-1ab8-4130-8c4b-016f2db5c661",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542755752"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4014864646,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.875858,
+          26.511758
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/132813499",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4014864646"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6147564486,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.4,
+          -14.58
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/144726680",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6147564486"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3903416185,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.514927,
+          -16.569306
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/134539535",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3903416185"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542554491,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6778,
+          1.01191
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "6f1edd58-9dfd-451f-8c24-4fc56dea57d5",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542554491"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542719179,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.62298,
+          2.25163
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "86e88b1c-c7a3-45f3-8d30-ef5fb56918e4",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542719179"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4542741084,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.74963,
+          1.61789
+        ]
+      },
+      "properties": {
+        "scientificName": "Synanceia verrucosa Bloch & Schneider, 1801",
+        "datasetTitle": null,
+        "occurrenceID": "c93db786-330b-4af1-b2a9-5aac10e552fd",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4542741084"
+      }
+    }
+  ]
+}

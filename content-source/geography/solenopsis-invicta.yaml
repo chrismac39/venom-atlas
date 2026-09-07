@@ -2,25 +2,13 @@
 slug: solenopsis-invicta
 organismSlug: solenopsis-invicta
 ranges:
-  - id: geo-native-range
-    layerType: native_range
-    geometryAssetPath: /geography/solenopsis-invicta-range.geojson
-    summary: Native range geometry not yet bundled, source-backed geometry pending.
+  - id: geo-solenopsis-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/solenopsis-invicta-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, grid-deduplicated for display. These points do not define the complete native or introduced range.
     evidence:
-      id: ev-geography-pending
-      confidence: unknown
-      evidenceType: editorial_normalization
-      notes: Validated range geometry files are pending curation.
+      id: ev-solenopsis-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
       citationIds:
-        - cit-editorial-placeholder
-  - id: geo-introduced-range
-    layerType: introduced_range
-    geometryAssetPath: /geography/solenopsis-invicta-range.geojson
-    summary: Introduced range geometry not yet bundled, source-backed geometry pending.
-    evidence:
-      id: ev-geography-pending
-      confidence: unknown
-      evidenceType: editorial_normalization
-      notes: Validated range geometry files are pending curation.
-      citationIds:
-        - cit-editorial-placeholder
+        - cit-gbif-solenopsis-invicta

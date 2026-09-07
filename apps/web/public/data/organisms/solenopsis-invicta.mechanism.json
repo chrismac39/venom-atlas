@@ -1,9 +1,15 @@
 {
-  "toxinSlug": "solenopsin-a",
+  "subject": {
+    "kind": "organism_exposure",
+    "slug": "solenopsis-invicta"
+  },
   "steps": [
     {
       "id": "mech-1-exposure",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "order": 1,
       "level": "exposure",
       "title": "Sting exposure",
@@ -20,7 +26,10 @@
     },
     {
       "id": "mech-2-tissue-deposition",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "order": 2,
       "level": "tissue",
       "title": "Local venom deposition",
@@ -37,7 +46,10 @@
     },
     {
       "id": "mech-3-immediate-pain",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "order": 3,
       "level": "clinical",
       "title": "Immediate pain and burning sensation",
@@ -54,7 +66,10 @@
     },
     {
       "id": "mech-4-inflammatory-local",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "order": 4,
       "level": "tissue",
       "title": "Local inflammatory response",
@@ -71,7 +86,10 @@
     },
     {
       "id": "mech-5-lesion-outcome",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "order": 5,
       "level": "clinical",
       "title": "Wheal/pustule development where applicable",
@@ -88,7 +106,10 @@
     },
     {
       "id": "mech-6-persistent-discomfort",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "order": 6,
       "level": "clinical",
       "title": "Persistent local discomfort in some cases",

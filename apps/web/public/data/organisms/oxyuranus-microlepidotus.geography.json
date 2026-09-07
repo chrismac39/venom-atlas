@@ -1,0 +1,21 @@
+{
+  "organismSlug": "oxyuranus-microlepidotus",
+  "ranges": [
+    {
+      "id": "geo-oxyuranus-confirmed-occurrences",
+      "organismId": "org-oxyuranus-microlepidotus",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/oxyuranus-microlepidotus-occurrences.geojson",
+      "geometryFeatureCount": 35,
+      "summary": "Reusable-license GBIF occurrence records, grid-deduplicated for display. These observations are not a modeled range boundary.",
+      "evidence": {
+        "id": "ev-oxyuranus-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-oxyuranus-microlepidotus"
+        ]
+      }
+    }
+  ]
+}

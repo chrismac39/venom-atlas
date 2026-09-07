@@ -11,6 +11,7 @@ description: >-
   A biologically active mixture with alkaloid-rich components and protein fractions relevant to
   allergic responses.
 ecologicalRoleSummary: Likely supports defense, prey subduing, and competitive ecological interactions.
+featuredToxinSlug: solenopsin-a
 components:
   - id: comp-alkaloids
     componentCategory: Piperidine alkaloids

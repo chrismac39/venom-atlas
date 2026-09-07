@@ -1,0 +1,14 @@
+﻿id: geo-oxyuranus-microlepidotus
+slug: oxyuranus-microlepidotus
+organismSlug: oxyuranus-microlepidotus
+ranges:
+  - id: geo-oxyuranus-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/oxyuranus-microlepidotus-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, grid-deduplicated for display. These observations are not a modeled range boundary.
+    evidence:
+      id: ev-oxyuranus-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-oxyuranus-microlepidotus

@@ -5,9 +5,9 @@ import { RangeMapPanel } from '../../../visualizations/maps/RangeMapPanel';
 import { getAllOrganisms, getOrganismBySlug, getGeographyByOrganismSlug } from '../../../lib/content';
 
 export const getStaticPaths = async () => {
-  return getAllOrganisms().map((entry) => ({
-    params: { slug: entry.organism.slug },
-  }));
+  return getAllOrganisms()
+    .filter((entry) => getGeographyByOrganismSlug(entry.organism.slug ?? '') !== undefined)
+    .map((entry) => ({ params: { slug: entry.organism.slug } }));
 };
 
 const { slug } = Astro.params;
@@ -18,36 +18,21 @@ if (!organism || !geography) {
   throw new Error(`Missing organism/geography for slug: ${slug}`);
 }
 
-const antMapsEmbedUrl = organism.externalProfile?.antMapsEmbedUrl;
-const atlasBaseHref = `/?organism=${organism.organism.slug}`;
+const atlasHref = `/atlas/${organism.organism.slug}#section-geography`;
 ---
 
 <PageLayout title={`${organism.organism.scientificName} geography | Venom Atlas`} description="Ecology and range data.">
   <ThemeSwitcher slot="theme" client:idle />
   <section class="panel">
     <h1>Ecology and geography</h1>
-    <p>Range layers are shown with explicit placeholder states for missing source-backed geometry.</p>
+    <p>Source-backed occurrence records are shown separately from modeled range boundaries.</p>
   </section>
 
   <RangeMapPanel ranges={geography.ranges} />
 
   <section class="panel">
     <h2>Return to atlas</h2>
-    <a href={`${atlasBaseHref}#section-geography`}>Resume monopage at geography</a>
+    <a href={atlasHref}>Resume monopage at geography</a>
   </section>
 
-  <section class="panel">
-    <h2>Interactive species range map</h2>
-    {antMapsEmbedUrl ? (
-      <iframe
-        class="organism-antmaps-embed organism-antmaps-embed-interactive"
-        src={antMapsEmbedUrl}
-        title="AntMaps species distribution explorer"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-      />
-    ) : (
-      <p class="muted">External range map URL is not configured for this organism.</p>
-    )}
-  </section>
 </PageLayout>

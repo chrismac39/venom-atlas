@@ -1,0 +1,14 @@
+﻿id: geo-ornithorhynchus-anatinus
+slug: ornithorhynchus-anatinus
+organismSlug: ornithorhynchus-anatinus
+ranges:
+  - id: geo-ornithorhynchus-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/ornithorhynchus-anatinus-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, grid-deduplicated for display. Records show documented observations rather than habitat continuity.
+    evidence:
+      id: ev-ornithorhynchus-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-ornithorhynchus-anatinus

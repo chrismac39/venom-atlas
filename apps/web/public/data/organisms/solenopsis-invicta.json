@@ -4,6 +4,7 @@
     "slug": "solenopsis-invicta",
     "scientificName": "Solenopsis invicta",
     "commonName": "Red imported fire ant",
+    "toxicStrategy": "venomous",
     "overview": "Solenopsis invicta is an ant species widely studied for defensive sting behavior, rapid colony recruitment, and ecological impact where established.",
     "naturalHistory": [
       "Workers can rapidly recruit nestmates when disturbed.",
@@ -70,10 +71,10 @@
       }
     }
   ],
+  "geographyVisualizations": [],
   "externalProfile": {
     "sourceLabel": "AntWiki",
     "sourceUrl": "https://www.antwiki.org/wiki/Solenopsis_invicta",
-    "antMapsEmbedUrl": "https://antmaps.org/?mode=species&species=Solenopsis.invicta",
     "summaryPoints": [
       "Solenopsis invicta is a social, colony-forming ant known for fast collective responses when nest structure is disturbed. Workers recruit nestmates quickly through pheromone signaling, then switch from exploration to defense in coordinated waves. In practice, small initial contact events can escalate quickly where colony density is high or disturbance is repeated over short intervals.",
       "Colony organization contributes to this rapid shift in behavior. Workers are polymorphic, and size-based task flexibility supports foraging, brood care, mound maintenance, and defense within the same colony network. This functional structure helps explain why activity around food resources, nest entrances, and disturbed soil can transition from low-intensity movement to concentrated defensive pressure in a short time window.",

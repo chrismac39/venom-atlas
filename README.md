@@ -49,7 +49,7 @@ Dev URL:
 Canonical records live in:
 
 - `content-source/organisms`
-- `content-source/venoms`
+- `content-source/toxic-materials`
 - `content-source/toxins`
 - `content-source/mechanisms`
 - `content-source/physiology`

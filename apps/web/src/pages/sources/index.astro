@@ -1,9 +1,9 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
-import { getAllCitations } from '../../lib/content';
+import { getPublicCitations } from '../../lib/content';
 
-const citations = getAllCitations().sort((a, b) => a.title.localeCompare(b.title));
+const citations = getPublicCitations().sort((a, b) => a.title.localeCompare(b.title));
 ---
 
 <PageLayout title="Sources | Venom Atlas" description="Citation and evidence source index.">

@@ -1,17 +1,19 @@
-import type { AtlasOrganismData } from '../islands/AtlasMonopageIsland';
+import type { AtlasOrganismData } from '../features/atlas/atlas-types';
 import {
   getAllOrganisms,
   getAllToxins,
   getCitationsByIds,
   getGeographyByOrganismSlug,
-  getMechanismByToxinSlug,
-  getPhysiologyByToxinSlug,
-  getVenomByOrganismSlug,
+  getMechanismByOrganismExposureSlug,
+  getPhysiologyByOrganismExposureSlug,
+  getPublishedMediaAssets,
+  getToxicMaterialByOrganismSlug,
 } from './content';
 import { pickPreferred2dAsset, pickPreferred3dAsset } from './structure-assets';
 
 export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
   const toxins = getAllToxins();
+  const publishedMediaPaths = new Set(getPublishedMediaAssets().map((asset) => asset.localPath));
 
   return getAllOrganisms().flatMap((entry) => {
     const organismSlug = entry.organism.slug ?? entry.organism.id.replace(/^org-/, '');
@@ -19,10 +21,13 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
       return [];
     }
 
-    const venomBundle = getVenomByOrganismSlug(organismSlug);
-    const venomSlug = venomBundle?.venom.slug ?? venomBundle?.venom.id.replace(/^ven-/, '');
-    const relatedToxins = venomBundle
-      ? toxins.filter((toxinEntry) => toxinEntry.toxin.venomId === `ven-${venomBundle.venom.slug}`)
+    const toxicMaterialBundle = getToxicMaterialByOrganismSlug(organismSlug);
+    const toxicMaterialSlug =
+      toxicMaterialBundle?.toxicMaterial.slug ?? toxicMaterialBundle?.toxicMaterial.id.replace(/^ven-/, '');
+    const relatedToxins = toxicMaterialBundle
+      ? toxins.filter(
+          (toxinEntry) => toxinEntry.toxin.toxicMaterialId === toxicMaterialBundle.toxicMaterial.id,
+        )
       : [];
 
     const mappedToxins = relatedToxins.flatMap((toxinEntry) => {
@@ -69,17 +74,32 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
       ];
     });
 
-    const primaryToxin = mappedToxins[0];
-    const primaryToxinSlug = primaryToxin?.slug;
-    const mechanism = primaryToxinSlug ? getMechanismByToxinSlug(primaryToxinSlug) : undefined;
-    const physiology = primaryToxinSlug ? getPhysiologyByToxinSlug(primaryToxinSlug) : undefined;
+    const featuredToxin = toxicMaterialBundle?.toxicMaterial.featuredToxinSlug
+      ? mappedToxins.find((toxin) => toxin.slug === toxicMaterialBundle.toxicMaterial.featuredToxinSlug)
+      : undefined;
+    const mechanism = getMechanismByOrganismExposureSlug(organismSlug);
+    const physiology = getPhysiologyByOrganismExposureSlug(organismSlug);
     const geography = getGeographyByOrganismSlug(organismSlug);
+    const geographyRanges =
+      geography?.ranges
+        .filter((range) => range.evidence.evidenceType !== 'editorial_normalization')
+        .map((range) => ({
+          id: range.id,
+          layerType: range.layerType,
+          summary: range.summary,
+          ...(range.geometryAssetId ? { geometryAssetId: range.geometryAssetId } : {}),
+          ...(range.geometryFeatureCount !== undefined
+            ? { geometryFeatureCount: range.geometryFeatureCount }
+            : {}),
+        })) ?? [];
+    const hasPublishedMedia =
+      entry.externalProfile?.imagePaths.some((imagePath) => publishedMediaPaths.has(imagePath)) ?? false;
 
-    if (venomBundle && !venomSlug) {
+    if (toxicMaterialBundle && !toxicMaterialSlug) {
       return [];
     }
 
-    if (relatedToxins[0] && !primaryToxinSlug) {
+    if (toxicMaterialBundle?.toxicMaterial.featuredToxinSlug && !featuredToxin) {
       return [];
     }
 
@@ -88,50 +108,70 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
         slug: organismSlug,
         scientificName: entry.organism.scientificName,
         commonName: entry.organism.commonName,
+        toxicStrategy: entry.organism.toxicStrategy,
         overview: entry.organism.overview,
         taxonomy: entry.taxonomy,
         naturalHistory: entry.organism.naturalHistory,
-        externalProfile: entry.externalProfile,
+        externalProfile: entry.externalProfile
+          ? {
+              sourceLabel: entry.externalProfile.sourceLabel,
+              sourceUrl: entry.externalProfile.sourceUrl,
+              summaryPoints: entry.externalProfile.summaryPoints,
+            }
+          : undefined,
+        geographyVisualizations: entry.geographyVisualizations,
         deliveryMechanism: entry.deliveryMechanism,
         habitats: entry.habitats,
         ecologicalRoles: entry.ecologicalRoles,
-        geographyRanges:
-          geography?.ranges.map((range) => ({
-            id: range.id,
-            layerType: range.layerType,
-            summary: range.summary,
-          })) ?? [],
-        venom: venomBundle
+        geographyRanges,
+        toxicMaterial: toxicMaterialBundle
           ? {
-              slug: venomSlug as string,
-              name: venomBundle.venom.name,
-              description: venomBundle.venom.description,
-              ecologicalRoleSummary: venomBundle.venom.ecologicalRoleSummary,
-              evidence: venomBundle.venom.evidence,
-              components: venomBundle.components,
+              slug: toxicMaterialSlug as string,
+              name: toxicMaterialBundle.toxicMaterial.name,
+              description: toxicMaterialBundle.toxicMaterial.description,
+              ecologicalRoleSummary: toxicMaterialBundle.toxicMaterial.ecologicalRoleSummary,
+              materialKind: toxicMaterialBundle.toxicMaterial.materialKind,
+              evidence: toxicMaterialBundle.toxicMaterial.evidence,
+              components: toxicMaterialBundle.components,
             }
           : null,
+        coverage: {
+          identity: 'available',
+          geography:
+            geographyRanges.length > 0 || entry.geographyVisualizations.length > 0 ? 'available' : 'missing',
+          toxicMaterial: toxicMaterialBundle ? 'available' : 'missing',
+          chemistry: mappedToxins.length > 0 ? 'available' : 'missing',
+          physiology: physiology ? 'available' : 'missing',
+          media: hasPublishedMedia ? 'available' : 'missing',
+        },
         toxins: mappedToxins,
-        primaryToxin: primaryToxin
+        featuredToxin: featuredToxin
           ? {
-              slug: primaryToxin.slug,
-              displayName: primaryToxin.displayName,
-              molecularClass: primaryToxin.molecularClass,
-              formula: primaryToxin.formula,
-              molecularWeight: primaryToxin.molecularWeight,
-              structureDataSource: primaryToxin.structureDataSource,
-              evidence: primaryToxin.evidence,
-              ...(primaryToxin.structure3dUrl ? { structureUrl: primaryToxin.structure3dUrl } : {}),
-              ...(primaryToxin.structure3dFormat ? { structureFormat: primaryToxin.structure3dFormat } : {}),
+              slug: featuredToxin.slug,
+              displayName: featuredToxin.displayName,
+              molecularClass: featuredToxin.molecularClass,
+              formula: featuredToxin.formula,
+              molecularWeight: featuredToxin.molecularWeight,
+              structureDataSource: featuredToxin.structureDataSource,
+              evidence: featuredToxin.evidence,
+              ...(featuredToxin.structure3dUrl ? { structureUrl: featuredToxin.structure3dUrl } : {}),
+              ...(featuredToxin.structure3dFormat ? { structureFormat: featuredToxin.structure3dFormat } : {}),
             }
           : null,
         mechanismSteps: mechanism?.steps ?? [],
         physiology: physiology
           ? {
+              anatomicalSystems: physiology.anatomicalSystems.map((system) => ({
+                id: system.id,
+                name: system.name,
+                description: system.description,
+              })),
               symptoms: physiology.symptoms.map((symptom) => ({
                 id: symptom.id,
                 name: symptom.name,
                 description: symptom.description,
+                evidence: symptom.evidence,
+                citations: getCitationsByIds(symptom.evidence.citationIds),
               })),
               effects: physiology.effects.map((effect) => ({
                 id: effect.id,
@@ -139,10 +179,13 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
                 title: effect.title,
                 description: effect.description,
                 pathwayType: effect.pathwayType,
+                anatomicalSystemId: effect.anatomicalSystemId,
+                evidence: effect.evidence,
+                citations: getCitationsByIds(effect.evidence.citationIds),
               })),
             }
           : null,
-        citations: primaryToxin?.citations ?? [],
+        citations: featuredToxin?.citations ?? [],
       },
     ];
   });

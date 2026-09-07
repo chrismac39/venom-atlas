@@ -1,13 +1,46 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import { ThemeSwitcher } from '../islands/ThemeSwitcher';
-import { AtlasMonopageIsland } from '../islands/AtlasMonopageIsland';
 import { buildAtlasMonopageOrganisms } from '../lib/atlas-monopage-data';
 
 const organisms = buildAtlasMonopageOrganisms();
 ---
 
-<PageLayout title="Venom Atlas" description="Continuous static-first monopage experience for organism-to-toxin exploration.">
+<PageLayout title="Venom Atlas" description="Choose an organism and explore its venom, chemistry, geography, and physiological effects.">
   <ThemeSwitcher slot="theme" client:idle />
-  <AtlasMonopageIsland client:load organisms={organisms} />
+  <section class="atlas-chooser" aria-labelledby="atlas-chooser-title">
+    <header class="atlas-chooser-intro">
+      <p class="atlas-chooser-kicker">One organism. The complete venom story.</p>
+      <h1 id="atlas-chooser-title">Choose an organism to explore</h1>
+      <p>
+        Follow the evidence from natural history and geographic range through venom chemistry,
+        delivery mechanisms, and effects on the human body.
+      </p>
+    </header>
+
+    <ul class="atlas-chooser-grid" aria-label="Available organisms">
+      {organisms.map((organism) => {
+        return (
+          <li>
+            <a class="atlas-chooser-option" href={`/atlas/${organism.slug}`}>
+              <span class="atlas-specimen-mark" aria-hidden="true">
+                <span>{organism.taxonomy.genus?.slice(0, 1)}</span>
+                <span>{organism.taxonomy.species?.split(' ')[1]?.slice(0, 1)}</span>
+                <small>{organism.taxonomy.family}</small>
+              </span>
+              <span class="atlas-chooser-option-copy">
+                <span class="atlas-chooser-common-name">{organism.commonName}</span>
+                <span class="atlas-chooser-scientific-name"><i>{organism.scientificName}</i></span>
+                <span class="atlas-chooser-type">
+                  {organism.taxonomy.className ?? 'Unclassified'} · {organism.toxicStrategy}
+                </span>
+                <span class="atlas-chooser-summary">{organism.overview}</span>
+                <span class="atlas-chooser-action">Explore organism <span aria-hidden="true">→</span></span>
+              </span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
 </PageLayout>

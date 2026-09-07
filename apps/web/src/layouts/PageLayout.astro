@@ -7,17 +7,7 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const normalizedPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
-const isAtlasRoute = normalizedPath === '/' || normalizedPath === '/atlas';
-const atlasSectionLinks = [
-  { href: '/#section-organism-profile', label: 'Profile' },
-  { href: '/#section-geography', label: 'Geography' },
-  { href: '/#section-mechanisms', label: 'Mechanisms' },
-  { href: '/#section-toxin-categorization', label: 'Categorization' },
-  { href: '/#section-toxin-charts', label: 'Charts' },
-  { href: '/#section-chemistry', label: 'Chemistry' },
-  { href: '/#section-human-physiology', label: 'Human Physiology' },
-];
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
 ---
 
 <!doctype html>
@@ -29,13 +19,12 @@ const atlasSectionLinks = [
     {description ? <meta name="description" content={description} /> : null}
     <meta property="og:title" content={title} />
     {description ? <meta property="og:description" content={description} /> : null}
+    <link rel="canonical" href={canonicalUrl} />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <nav class="primary" aria-label="Main navigation">
       <a href="/">Venom Atlas</a>
-      {isAtlasRoute
-        ? atlasSectionLinks.map((link) => <a href={link.href}>{link.label}</a>)
-        : null}
       <a href="/organisms">Organisms</a>
       <a href="/toxins">Toxins</a>
       <a href="/effects">Effects</a>
@@ -43,7 +32,7 @@ const atlasSectionLinks = [
       <a href="/about">About</a>
       <slot name="theme" />
     </nav>
-    <main>
+    <main id="main-content">
       <slot />
     </main>
     <script is:inline>

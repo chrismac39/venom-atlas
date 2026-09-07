@@ -1,0 +1,28 @@
+﻿id: mech-batrachotoxin
+slug: batrachotoxin
+subject:
+  kind: isolated_compound
+  slug: batrachotoxin
+steps:
+  - id: mech-btx-channel-binding
+    order: 1
+    level: molecular
+    title: Sodium-channel inner-cavity binding
+    description: Batrachotoxin binds within the inner cavity of a voltage-gated sodium channel.
+    evidence:
+      id: ev-batrachotoxin-sodium-channel
+      confidence: high
+      evidenceType: experimental
+      citationIds:
+        - cit-wang-batrachotoxin-channel-2006
+  - id: mech-btx-permeation-change
+    order: 2
+    level: molecular
+    title: Altered selectivity and conductance
+    description: Direct interaction with the channel pore alters sodium-channel selectivity and conductance.
+    evidence:
+      id: ev-batrachotoxin-sodium-channel
+      confidence: high
+      evidenceType: experimental
+      citationIds:
+        - cit-wang-batrachotoxin-channel-2006

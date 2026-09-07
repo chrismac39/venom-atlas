@@ -1,10 +1,10 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
-import { getAllCitations, getCitationBySlug } from '../../lib/content';
+import { getCitationBySlug, getPublicCitations } from '../../lib/content';
 
 export const getStaticPaths = async () => {
-  return getAllCitations().map((citation) => ({
+  return getPublicCitations().map((citation) => ({
     params: { slug: citation.slug },
   }));
 };

@@ -1,0 +1,21 @@
+{
+  "organismSlug": "ornithorhynchus-anatinus",
+  "ranges": [
+    {
+      "id": "geo-ornithorhynchus-confirmed-occurrences",
+      "organismId": "org-ornithorhynchus-anatinus",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/ornithorhynchus-anatinus-occurrences.geojson",
+      "geometryFeatureCount": 53,
+      "summary": "Reusable-license GBIF occurrence records, grid-deduplicated for display. Records show documented observations rather than habitat continuity.",
+      "evidence": {
+        "id": "ev-ornithorhynchus-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-ornithorhynchus-anatinus"
+        ]
+      }
+    }
+  ]
+}

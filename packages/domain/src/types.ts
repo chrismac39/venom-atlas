@@ -13,6 +13,7 @@ export interface Citation {
   url?: string | undefined;
   doi?: string | undefined;
   accessedAt?: string | undefined;
+  visibility?: 'public' | 'internal' | undefined;
   sourceType:
     'journal_article' | 'database' | 'government' | 'museum' | 'university' | 'book' | 'other';
 }
@@ -37,7 +38,10 @@ export interface Taxonomy {
   species?: string | undefined;
 }
 
-export type ExposureRoute = 'sting' | 'ingestion' | 'contact' | 'inhalation' | 'unknown';
+export type ExposureRoute =
+  'sting' | 'bite' | 'spine' | 'spur' | 'ingestion' | 'contact' | 'inhalation' | 'unknown';
+
+export type ToxicStrategy = 'venomous' | 'poisonous' | 'both';
 
 export interface DeliveryMechanism {
   id: string;
@@ -55,6 +59,7 @@ export interface Organism {
   commonName: string;
   overview: string;
   naturalHistory: string[];
+  toxicStrategy: ToxicStrategy;
   taxonomyId?: string | undefined;
   deliveryMechanismId?: string | undefined;
   evidence: EvidenceAssessment;
@@ -71,7 +76,7 @@ export interface BiologicalMaterial {
   evidence: EvidenceAssessment;
 }
 
-export interface Venom {
+export interface ToxicMaterial {
   id: string;
   slug?: string | undefined;
   organismId: string;
@@ -79,13 +84,15 @@ export interface Venom {
   name: string;
   description: string;
   ecologicalRoleSummary: string;
+  materialKind: BiologicalMaterialKind;
+  featuredToxinSlug?: string | undefined;
   evidence: EvidenceAssessment;
 }
 
 export interface Toxin {
   id: string;
   slug?: string | undefined;
-  venomId: string;
+  toxicMaterialId: string;
   displayName: string;
   family?: string | undefined;
   notes?: string | undefined;
@@ -94,7 +101,7 @@ export interface Toxin {
 
 export interface ToxinComponent {
   id: string;
-  venomId: string;
+  toxicMaterialId: string;
   toxinId?: string | undefined;
   componentCategory: string;
   abundanceQualifier?: 'major' | 'moderate' | 'minor' | 'present' | 'not_quantified' | undefined;
@@ -140,9 +147,16 @@ export interface MolecularTarget {
   evidence: EvidenceAssessment;
 }
 
+export type ScientificSubjectKind = 'organism_exposure' | 'whole_material' | 'isolated_compound';
+
+export interface ScientificSubjectReference {
+  kind: ScientificSubjectKind;
+  slug: string;
+}
+
 export interface MechanismStep {
   id: string;
-  toxinId: string;
+  subject: ScientificSubjectReference;
   order: number;
   level: 'exposure' | 'molecular' | 'cellular' | 'tissue' | 'organ_system' | 'clinical';
   title: string;
@@ -166,7 +180,7 @@ export interface Symptom {
 
 export interface PhysiologicalEffect {
   id: string;
-  toxinId: string;
+  subject: ScientificSubjectReference;
   anatomicalSystemId: string;
   symptomId?: string | undefined;
   pathwayType: 'direct_venom' | 'inflammatory_immune' | 'systemic_allergic';
@@ -188,6 +202,7 @@ export interface GeographicRange {
   organismId: string;
   layerType: GeographicLayerType;
   geometryAssetId?: string | undefined;
+  geometryFeatureCount?: number | undefined;
   summary: string;
   evidence: EvidenceAssessment;
 }
@@ -237,7 +252,7 @@ export interface AtlasSeedData {
   organisms: Organism[];
   deliveryMechanisms: DeliveryMechanism[];
   biologicalMaterials: BiologicalMaterial[];
-  venoms: Venom[];
+  toxicMaterials: ToxicMaterial[];
   toxins: Toxin[];
   toxinComponents: ToxinComponent[];
   molecularEntities: MolecularEntity[];

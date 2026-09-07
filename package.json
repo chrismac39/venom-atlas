@@ -10,7 +10,8 @@
     "dev": "pnpm --filter @venom-atlas/web dev",
     "preview": "pnpm --filter @venom-atlas/web preview",
     "validate": "tsx scripts/validate-content.ts && tsx scripts/validate-citations.ts && tsx scripts/validate-media.ts && tsx scripts/validate-structures.ts",
-    "build:data": "tsx scripts/generate-structure-svgs.ts && tsx scripts/build-static-json.ts && tsx scripts/build-search-index.ts && tsx scripts/build-sqlite.ts",
+    "data:geography": "tsx scripts/fetch-gbif-occurrences.ts && tsx scripts/generate-occurrence-maps.ts",
+    "build:data": "tsx scripts/generate-structure-svgs.ts && tsx scripts/generate-occurrence-maps.ts && tsx scripts/build-static-json.ts && tsx scripts/build-search-index.ts && tsx scripts/build-sqlite.ts",
     "build": "pnpm validate && pnpm build:data && pnpm --filter @venom-atlas/web build && tsx scripts/prune-unverified-media.ts",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
@@ -21,6 +22,7 @@
     "@eslint/js": "^9.31.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^24.1.0",
+    "@types/topojson-client": "^3.1.5",
     "eslint": "^9.31.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
@@ -29,9 +31,11 @@
     "openchemlib": "^9.24.0",
     "prettier": "^3.6.2",
     "sql.js": "^1.13.0",
+    "topojson-client": "^3.1.0",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.37.0",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "world-atlas": "^2.0.2"
   }
 }

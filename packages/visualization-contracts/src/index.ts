@@ -90,7 +90,7 @@ export type GeographicLayerType =
 
 export interface AtlasSelection {
   organismId: string;
-  venomId?: string | undefined;
+  toxicMaterialId?: string | undefined;
   toxinId?: string | undefined;
   molecularRepresentation?: MolecularRepresentation | undefined;
   mechanismStepId?: string | undefined;

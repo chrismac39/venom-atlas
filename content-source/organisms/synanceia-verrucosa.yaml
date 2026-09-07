@@ -1,0 +1,50 @@
+﻿id: org-synanceia-verrucosa
+slug: synanceia-verrucosa
+scientificName: Synanceia verrucosa
+commonName: Reef stonefish
+toxicStrategy: venomous
+overview: >-
+  Synanceia verrucosa is a cryptic reef-associated fish that delivers venom through dorsal
+  spines, providing a reference profile for mechanically triggered fish envenomation.
+naturalHistory:
+  - Its body form and coloration provide camouflage against reef and rubble substrates.
+  - It is an ambush predator of fishes and crustaceans.
+  - Human exposure generally follows accidental pressure on the dorsal spines.
+taxonomy:
+  kingdom: Animalia
+  phylum: Chordata
+  className: Actinopterygii
+  order: Scorpaeniformes
+  family: Synanceiidae
+  genus: Synanceia
+  species: Synanceia verrucosa
+deliveryMechanism:
+  route: spine
+  summary: Pressure on an erect dorsal spine can puncture tissue and drive venom from associated glands into the wound.
+  sequence:
+    - External pressure is applied to a dorsal spine.
+    - The spine penetrates tissue.
+    - Pressure compresses venom-associated tissue around the spine.
+    - Venom enters the puncture wound.
+habitats:
+  - id: hab-stonefish-reef
+    name: Tropical reef and rubble habitat
+    summary: Shallow marine habitats where camouflage makes the resting fish difficult to distinguish from substrate.
+ecologicalRoles:
+  - id: eco-stonefish-defense
+    role: Defensive deterrence
+    summary: Dorsal spines provide passive defense when the fish is pressed or grasped.
+geographyVisualizations: []
+externalProfile:
+  sourceLabel: Australian Museum
+  sourceUrl: https://australian.museum/learn/animals/fishes/reef-stonefish-synanceia-verrucosa/
+  summaryPoints:
+    - Stonefish venom delivery differs from a bite or sting because external pressure on a spine initiates puncture and venom transfer.
+    - Camouflage and shallow-water habitat make accidental contact central to the human exposure pathway.
+  imagePaths: []
+evidence:
+  id: ev-reef-stonefish-profile
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-australian-museum-reef-stonefish

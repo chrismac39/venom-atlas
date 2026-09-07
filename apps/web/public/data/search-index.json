@@ -1,5 +1,67 @@
 [
   {
+    "id": "org-ornithorhynchus-anatinus",
+    "entityType": "organism",
+    "title": "Platypus",
+    "scientificName": "Ornithorhynchus anatinus",
+    "aliases": [
+      "Ornithorhynchus anatinus",
+      "Platypus"
+    ],
+    "summary": "Ornithorhynchus anatinus is a semi-aquatic monotreme; adult males deliver venom with a hind-ankle spur, making it a distinctive reference organism for venomous mammals.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/ornithorhynchus-anatinus"
+  },
+  {
+    "id": "org-oxyuranus-microlepidotus",
+    "entityType": "organism",
+    "title": "Inland taipan",
+    "scientificName": "Oxyuranus microlepidotus",
+    "aliases": [
+      "Oxyuranus microlepidotus",
+      "Inland taipan"
+    ],
+    "summary": "Oxyuranus microlepidotus is a large Australian elapid whose bite-delivered venom and remote semi-arid ecology provide a reference profile for venomous reptiles.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/oxyuranus-microlepidotus"
+  },
+  {
+    "id": "org-phyllobates-terribilis",
+    "entityType": "organism",
+    "title": "Golden poison frog",
+    "scientificName": "Phyllobates terribilis",
+    "aliases": [
+      "Phyllobates terribilis",
+      "Golden poison frog"
+    ],
+    "summary": "Phyllobates terribilis is a poison frog from Colombia whose skin alkaloids make it a useful reference organism for separating passive poison exposure from active venom injection.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/phyllobates-terribilis"
+  },
+  {
+    "id": "ven-phyllobates-terribilis-poison",
+    "entityType": "toxic_material",
+    "title": "Phyllobates terribilis skin poison",
+    "aliases": [
+      "Phyllobates terribilis skin poison"
+    ],
+    "summary": "A skin-associated mixture of defensive alkaloids. Batrachotoxin is a documented component, but evidence about the isolated compound must not be generalized to the complete skin material.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/phyllobates-terribilis/toxic-material"
+  },
+  {
     "id": "org-solenopsis-invicta",
     "entityType": "organism",
     "title": "Red imported fire ant",
@@ -17,7 +79,7 @@
   },
   {
     "id": "ven-fire-ant-primary",
-    "entityType": "venom",
+    "entityType": "toxic_material",
     "title": "Solenopsis invicta venom",
     "aliases": [
       "Solenopsis invicta venom"
@@ -27,7 +89,74 @@
       "venom",
       "composition"
     ],
-    "route": "/organisms/solenopsis-invicta/venom"
+    "route": "/organisms/solenopsis-invicta/toxic-material"
+  },
+  {
+    "id": "mechanism-solenopsis-invicta",
+    "entityType": "mechanism",
+    "title": "Red imported fire ant exposure mechanism",
+    "aliases": [
+      "Sting exposure",
+      "Local venom deposition",
+      "Immediate pain and burning sensation",
+      "Local inflammatory response",
+      "Wheal/pustule development where applicable",
+      "Persistent local discomfort in some cases"
+    ],
+    "summary": "Ant anchors with mandibles and delivers venom through the stinger.",
+    "tags": [
+      "mechanism",
+      "exposure"
+    ],
+    "route": "/atlas/solenopsis-invicta#section-mechanisms"
+  },
+  {
+    "id": "effect-solenopsis-invicta",
+    "entityType": "effect",
+    "title": "Red imported fire ant sting effects",
+    "aliases": [
+      "Local skin tissue impact",
+      "Sensory nerve-associated pain",
+      "Local inflammatory response",
+      "Systemic allergic pathway (non-default)"
+    ],
+    "summary": "Direct local tissue effects at sting site.",
+    "tags": [
+      "effect",
+      "physiology",
+      "exposure"
+    ],
+    "route": "/atlas/solenopsis-invicta#section-human-physiology"
+  },
+  {
+    "id": "org-synanceia-verrucosa",
+    "entityType": "organism",
+    "title": "Reef stonefish",
+    "scientificName": "Synanceia verrucosa",
+    "aliases": [
+      "Synanceia verrucosa",
+      "Reef stonefish"
+    ],
+    "summary": "Synanceia verrucosa is a cryptic reef-associated fish that delivers venom through dorsal spines, providing a reference profile for mechanically triggered fish envenomation.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/synanceia-verrucosa"
+  },
+  {
+    "id": "tox-batrachotoxin",
+    "entityType": "toxin",
+    "title": "Batrachotoxin",
+    "aliases": [
+      "Batrachotoxins"
+    ],
+    "summary": "Isolated alkaloid documented in Phyllobates terribilis skin. It is not a synonym for the organism's complete skin poison mixture.",
+    "tags": [
+      "toxin",
+      "Batrachotoxins"
+    ],
+    "route": "/toxins/batrachotoxin"
   },
   {
     "id": "tox-solenopsin-a",
@@ -42,40 +171,5 @@
       "Piperidine alkaloids (solenopsins)"
     ],
     "route": "/toxins/solenopsin-a"
-  },
-  {
-    "id": "mechanism-solenopsin-a",
-    "entityType": "mechanism",
-    "title": "Solenopsin A mechanism",
-    "aliases": [
-      "Sting exposure",
-      "Local venom deposition",
-      "Immediate pain and burning sensation",
-      "Local inflammatory response",
-      "Wheal/pustule development where applicable",
-      "Persistent local discomfort in some cases"
-    ],
-    "summary": "Ant anchors with mandibles and delivers venom through the stinger.",
-    "tags": [
-      "mechanism"
-    ],
-    "route": "/toxins/solenopsin-a/mechanism"
-  },
-  {
-    "id": "effect-solenopsin-a",
-    "entityType": "effect",
-    "title": "Solenopsin A effects",
-    "aliases": [
-      "Local skin tissue impact",
-      "Sensory nerve-associated pain",
-      "Local inflammatory response",
-      "Systemic allergic pathway (non-default)"
-    ],
-    "summary": "Direct local tissue effects at sting site.",
-    "tags": [
-      "effect",
-      "physiology"
-    ],
-    "route": "/toxins/solenopsin-a/physiology"
   }
 ]

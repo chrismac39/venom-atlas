@@ -1,0 +1,52 @@
+﻿id: org-phyllobates-terribilis
+slug: phyllobates-terribilis
+scientificName: Phyllobates terribilis
+commonName: Golden poison frog
+toxicStrategy: poisonous
+overview: >-
+  Phyllobates terribilis is a poison frog from Colombia whose skin alkaloids make it a
+  useful reference organism for separating passive poison exposure from active venom injection.
+naturalHistory:
+  - It is a terrestrial frog associated with humid tropical forest.
+  - Wild individuals obtain defensive alkaloids through diet rather than producing venom in an injection gland.
+  - Bright coloration functions as a warning signal to potential predators.
+taxonomy:
+  kingdom: Animalia
+  phylum: Chordata
+  className: Amphibia
+  order: Anura
+  family: Dendrobatidae
+  genus: Phyllobates
+  species: Phyllobates terribilis
+deliveryMechanism:
+  route: contact
+  summary: Skin secretions expose a contacting organism to defensive alkaloid toxins without an injection apparatus.
+  sequence:
+    - Defensive alkaloids are present in skin secretions.
+    - A predator or handler contacts the skin secretion.
+    - Toxin reaches susceptible tissue through contact or ingestion.
+    - Exposure effects depend on route and dose.
+habitats:
+  - id: hab-phyllobates-humid-forest
+    name: Humid tropical forest
+    summary: Terrestrial microhabitats in wet lowland forest in western Colombia.
+ecologicalRoles:
+  - id: eco-phyllobates-chemical-defense
+    role: Predator deterrence
+    summary: Skin alkaloids and warning coloration form a passive chemical defense system.
+geographyVisualizations: []
+externalProfile:
+  sourceLabel: Animal Diversity Web
+  sourceUrl: https://animaldiversity.org/accounts/Phyllobates_terribilis/
+  summaryPoints:
+    - >-
+      Golden poison frogs demonstrate the defining distinction between poison and venom:
+      toxin exposure occurs passively rather than through a bite, sting, spine, or spur.
+    - Diet contributes to the alkaloid profile found in wild poison frogs, so captive and wild toxicity should not be treated as equivalent without evidence.
+  imagePaths: []
+evidence:
+  id: ev-phyllobates-profile
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-adw-golden-poison-frog

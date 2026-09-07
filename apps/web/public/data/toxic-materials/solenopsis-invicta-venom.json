@@ -1,5 +1,5 @@
 {
-  "venom": {
+  "toxicMaterial": {
     "id": "ven-fire-ant-primary",
     "slug": "solenopsis-invicta-venom",
     "organismId": "org-solenopsis-invicta",
@@ -7,6 +7,8 @@
     "name": "Solenopsis invicta venom",
     "description": "A biologically active mixture with alkaloid-rich components and protein fractions relevant to allergic responses.",
     "ecologicalRoleSummary": "Likely supports defense, prey subduing, and competitive ecological interactions.",
+    "materialKind": "venom",
+    "featuredToxinSlug": "solenopsin-a",
     "evidence": {
       "id": "ev-venom-mixture",
       "confidence": "moderate",
@@ -19,7 +21,7 @@
   "components": [
     {
       "id": "comp-alkaloids",
-      "venomId": "ven-fire-ant-primary",
+      "toxicMaterialId": "ven-fire-ant-primary",
       "componentCategory": "Piperidine alkaloids",
       "abundanceQualifier": "not_quantified",
       "summary": "Qualitatively prominent class in many fire-ant venom descriptions.",
@@ -34,7 +36,7 @@
     },
     {
       "id": "comp-proteins",
-      "venomId": "ven-fire-ant-primary",
+      "toxicMaterialId": "ven-fire-ant-primary",
       "componentCategory": "Protein fractions/allergens",
       "abundanceQualifier": "not_quantified",
       "summary": "Associated with immune-mediated responses in sensitized individuals.",

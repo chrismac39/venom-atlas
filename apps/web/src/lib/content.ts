@@ -16,7 +16,7 @@ import type {
   Symptom,
   Toxin,
   ToxinComponent,
-  Venom,
+  ToxicMaterial,
   AnatomicalSystem,
   Habitat,
   EcologicalRole,
@@ -46,6 +46,7 @@ const organismRecordSchema = z.object({
   slug: z.string(),
   scientificName: z.string(),
   commonName: z.string(),
+  toxicStrategy: z.enum(['venomous', 'poisonous', 'both']),
   overview: z.string(),
   naturalHistory: z.array(z.string()),
   taxonomy: z.object({
@@ -58,7 +59,7 @@ const organismRecordSchema = z.object({
     species: z.string().nullable().optional(),
   }),
   deliveryMechanism: z.object({
-    route: z.enum(['sting', 'ingestion', 'contact', 'inhalation', 'unknown']),
+    route: z.enum(['sting', 'bite', 'spine', 'spur', 'ingestion', 'contact', 'inhalation', 'unknown']),
     summary: z.string(),
     sequence: z.array(z.string()),
   }),
@@ -76,11 +77,21 @@ const organismRecordSchema = z.object({
       summary: z.string(),
     }),
   ),
+  geographyVisualizations: z
+    .array(
+      z.object({
+        id: z.string(),
+        kind: z.literal('external_embed'),
+        provider: z.string(),
+        label: z.string(),
+        url: z.url(),
+      }),
+    )
+    .default([]),
   externalProfile: z
     .object({
       sourceLabel: z.string(),
-      sourceUrl: z.string().url(),
-      antMapsEmbedUrl: z.string().url().optional(),
+      sourceUrl: z.url(),
       summaryPoints: z.array(z.string()),
       imagePaths: z.array(z.string()),
     })
@@ -88,7 +99,7 @@ const organismRecordSchema = z.object({
   evidence: evidenceSchema,
 });
 
-const venomRecordSchema = z.object({
+const toxicMaterialRecordSchema = z.object({
   id: z.string(),
   slug: z.string(),
   organismSlug: z.string(),
@@ -101,6 +112,7 @@ const venomRecordSchema = z.object({
   name: z.string(),
   description: z.string(),
   ecologicalRoleSummary: z.string(),
+  featuredToxinSlug: z.string().optional(),
   components: z.array(
     z.object({
       id: z.string(),
@@ -118,7 +130,7 @@ const venomRecordSchema = z.object({
 const toxinRecordSchema = z.object({
   id: z.string(),
   slug: z.string(),
-  venomSlug: z.string(),
+  toxicMaterialId: z.string(),
   displayName: z.string(),
   family: z.string().optional(),
   notes: z.string().optional(),
@@ -183,7 +195,10 @@ const toxinRecordSchema = z.object({
 const mechanismRecordSchema = z.object({
   id: z.string(),
   slug: z.string(),
-  toxinSlug: z.string(),
+  subject: z.object({
+    kind: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']),
+    slug: z.string(),
+  }),
   steps: z.array(
     z.object({
       id: z.string(),
@@ -199,7 +214,10 @@ const mechanismRecordSchema = z.object({
 const physiologyRecordSchema = z.object({
   id: z.string(),
   slug: z.string(),
-  toxinSlug: z.string(),
+  subject: z.object({
+    kind: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']),
+    slug: z.string(),
+  }),
   anatomicalSystems: z.array(
     z.object({
       id: z.string(),
@@ -262,6 +280,7 @@ const citationFileSchema = z.object({
       url: z.string().nullable().optional(),
       doi: z.string().nullable().optional(),
       accessedAt: z.string().nullable().optional(),
+      visibility: z.enum(['public', 'internal']).optional(),
       sourceType: z.enum([
         'journal_article',
         'database',
@@ -303,7 +322,7 @@ const mediaFileSchema = z.object({
 });
 
 type OrganismRecord = z.infer<typeof organismRecordSchema>;
-type VenomRecord = z.infer<typeof venomRecordSchema>;
+type ToxicMaterialRecord = z.infer<typeof toxicMaterialRecordSchema>;
 type ToxinRecord = z.infer<typeof toxinRecordSchema>;
 type MechanismRecord = z.infer<typeof mechanismRecordSchema>;
 type PhysiologyRecord = z.infer<typeof physiologyRecordSchema>;
@@ -339,23 +358,29 @@ export interface OrganismBundle {
     species?: string;
   };
   deliveryMechanism: {
-    route: 'sting' | 'ingestion' | 'contact' | 'inhalation' | 'unknown';
+    route: 'sting' | 'bite' | 'spine' | 'spur' | 'ingestion' | 'contact' | 'inhalation' | 'unknown';
     summary: string;
     sequence: string[];
   };
   habitats: Habitat[];
   ecologicalRoles: EcologicalRole[];
+  geographyVisualizations: Array<{
+    id: string;
+    kind: 'external_embed';
+    provider: string;
+    label: string;
+    url: string;
+  }>;
   externalProfile?: {
     sourceLabel: string;
     sourceUrl: string;
-    antMapsEmbedUrl?: string;
     summaryPoints: string[];
     imagePaths: string[];
   };
 }
 
-export interface VenomBundle {
-  venom: Venom;
+export interface ToxicMaterialBundle {
+  toxicMaterial: ToxicMaterial;
   components: ToxinComponent[];
 }
 
@@ -379,12 +404,18 @@ export interface ToxinBundle {
 }
 
 export interface MechanismBundle {
-  toxinSlug: string;
+  subject: {
+    kind: 'organism_exposure' | 'whole_material' | 'isolated_compound';
+    slug: string;
+  };
   steps: MechanismStep[];
 }
 
 export interface PhysiologyBundle {
-  toxinSlug: string;
+  subject: {
+    kind: 'organism_exposure' | 'whole_material' | 'isolated_compound';
+    slug: string;
+  };
   anatomicalSystems: AnatomicalSystem[];
   symptoms: Symptom[];
   effects: PhysiologicalEffect[];
@@ -407,6 +438,7 @@ const loadOrganismBundles = (): OrganismBundle[] => {
         slug: record.slug,
         scientificName: record.scientificName,
         commonName: record.commonName,
+        toxicStrategy: record.toxicStrategy,
         overview: record.overview,
         naturalHistory: record.naturalHistory,
         evidence: mapEvidence(record.evidence),
@@ -439,11 +471,11 @@ const loadOrganismBundles = (): OrganismBundle[] => {
         summary: entry.summary,
         evidence: mapEvidence(record.evidence),
       })),
+      geographyVisualizations: record.geographyVisualizations,
       externalProfile: record.externalProfile
         ? {
             sourceLabel: record.externalProfile.sourceLabel,
             sourceUrl: record.externalProfile.sourceUrl,
-            antMapsEmbedUrl: record.externalProfile.antMapsEmbedUrl,
             summaryPoints: record.externalProfile.summaryPoints,
             imagePaths: record.externalProfile.imagePaths,
           }
@@ -452,12 +484,12 @@ const loadOrganismBundles = (): OrganismBundle[] => {
   });
 };
 
-const loadVenomBundles = (): VenomBundle[] => {
-  return readDirectory('venoms').map((filePath) => {
-    const record: VenomRecord = readYamlFile(filePath, venomRecordSchema);
+const loadToxicMaterialBundles = (): ToxicMaterialBundle[] => {
+  return readDirectory('toxic-materials').map((filePath) => {
+    const record: ToxicMaterialRecord = readYamlFile(filePath, toxicMaterialRecordSchema);
 
     return {
-      venom: {
+      toxicMaterial: {
         id: record.id,
         slug: record.slug,
         organismId: `org-${record.organismSlug}`,
@@ -465,11 +497,13 @@ const loadVenomBundles = (): VenomBundle[] => {
         name: record.name,
         description: record.description,
         ecologicalRoleSummary: record.ecologicalRoleSummary,
+        materialKind: record.biologicalMaterial.kind,
+        featuredToxinSlug: record.featuredToxinSlug,
         evidence: mapEvidence(record.evidence),
       },
       components: record.components.map((entry) => ({
         id: entry.id,
-        venomId: record.id,
+        toxicMaterialId: record.id,
         componentCategory: entry.componentCategory,
         abundanceQualifier: entry.abundanceQualifier,
         summary: entry.summary,
@@ -487,7 +521,7 @@ const loadToxinBundles = (): ToxinBundle[] => {
       toxin: {
         id: record.id,
         slug: record.slug,
-        venomId: `ven-${record.venomSlug}`,
+        toxicMaterialId: record.toxicMaterialId,
         displayName: record.displayName,
         family: record.family,
         notes: record.notes,
@@ -551,11 +585,11 @@ const loadMechanismBundles = (): MechanismBundle[] => {
   return readDirectory('mechanisms').map((filePath) => {
     const record: MechanismRecord = readYamlFile(filePath, mechanismRecordSchema);
     return {
-      toxinSlug: record.toxinSlug,
+      subject: record.subject,
       steps: record.steps
         .map((step) => ({
           id: step.id,
-          toxinId: `tox-${record.toxinSlug}`,
+          subject: record.subject,
           order: step.order,
           level: step.level,
           title: step.title,
@@ -572,7 +606,7 @@ const loadPhysiologyBundles = (): PhysiologyBundle[] => {
     const record: PhysiologyRecord = readYamlFile(filePath, physiologyRecordSchema);
 
     return {
-      toxinSlug: record.toxinSlug,
+      subject: record.subject,
       anatomicalSystems: record.anatomicalSystems,
       symptoms: record.symptoms.map((entry) => ({
         id: entry.id,
@@ -583,7 +617,7 @@ const loadPhysiologyBundles = (): PhysiologyBundle[] => {
       effects: record.effects
         .map((entry) => ({
           id: entry.id,
-          toxinId: `tox-${record.toxinSlug}`,
+          subject: record.subject,
           anatomicalSystemId: entry.anatomicalSystemId,
           symptomId: entry.symptomId,
           pathwayType: entry.pathwayType,
@@ -603,14 +637,25 @@ const loadGeographyBundles = (): GeographyBundle[] => {
 
     return {
       organismSlug: record.organismSlug,
-      ranges: record.ranges.map((entry) => ({
-        id: entry.id,
-        organismId: `org-${record.organismSlug}`,
-        layerType: entry.layerType,
-        geometryAssetId: entry.geometryAssetPath,
-        summary: entry.summary,
-        evidence: mapEvidence(entry.evidence),
-      })),
+      ranges: record.ranges.map((entry) => {
+        const geometryFeatureCount = entry.geometryAssetPath
+          ? (() => {
+              const assetPath = path.join(repoRoot, 'apps', 'web', 'public', entry.geometryAssetPath.replace(/^\//, ''));
+              const asset = JSON.parse(readFileSync(assetPath, 'utf8')) as { features?: unknown[] };
+              return Array.isArray(asset.features) ? asset.features.length : 0;
+            })()
+          : undefined;
+
+        return {
+          id: entry.id,
+          organismId: `org-${record.organismSlug}`,
+          layerType: entry.layerType,
+          geometryAssetId: entry.geometryAssetPath,
+          geometryFeatureCount,
+          summary: entry.summary,
+          evidence: mapEvidence(entry.evidence),
+        };
+      }),
     };
   });
 };
@@ -628,6 +673,7 @@ const loadCitations = (): Citation[] => {
       url: entry.url ?? undefined,
       doi: entry.doi ?? undefined,
       accessedAt: entry.accessedAt ?? undefined,
+      visibility: entry.visibility ?? 'public',
       sourceType: entry.sourceType,
     }));
   });
@@ -656,7 +702,7 @@ const loadMediaAssets = (): MediaAsset[] => {
 
 const cached = {
   organisms: loadOrganismBundles(),
-  venoms: loadVenomBundles(),
+  toxicMaterials: loadToxicMaterialBundles(),
   toxins: loadToxinBundles(),
   mechanisms: loadMechanismBundles(),
   physiology: loadPhysiologyBundles(),
@@ -670,8 +716,18 @@ export const getAllOrganisms = (): OrganismBundle[] => cached.organisms;
 export const getOrganismBySlug = (slug: string): OrganismBundle | undefined =>
   cached.organisms.find((entry) => entry.organism.slug === slug);
 
-export const getVenomByOrganismSlug = (organismSlug: string): VenomBundle | undefined =>
-  cached.venoms.find((entry) => entry.venom.slug === `${organismSlug}-venom`);
+export const getToxicMaterialByOrganismSlug = (
+  organismSlug: string,
+): ToxicMaterialBundle | undefined => {
+  const organism = getOrganismBySlug(organismSlug);
+  if (!organism) {
+    return undefined;
+  }
+
+  return cached.toxicMaterials.find(
+    (entry) => entry.toxicMaterial.organismId === organism.organism.id,
+  );
+};
 
 export const getAllToxins = (): ToxinBundle[] => cached.toxins;
 
@@ -684,21 +740,41 @@ export const getOrganismSlugByToxinSlug = (slug: string): string | undefined => 
     return undefined;
   }
 
-  const venom = cached.venoms.find(
-    (entry) => entry.venom.id === toxin.toxin.venomId || `ven-${entry.venom.slug}` === toxin.toxin.venomId,
+  const toxicMaterial = cached.toxicMaterials.find(
+    (entry) => entry.toxicMaterial.id === toxin.toxin.toxicMaterialId,
   );
-  if (!venom) {
+  if (!toxicMaterial) {
     return undefined;
   }
 
-  return cached.organisms.find((entry) => entry.organism.id === venom.venom.organismId)?.organism.slug;
+  return cached.organisms.find(
+    (entry) => entry.organism.id === toxicMaterial.toxicMaterial.organismId,
+  )?.organism.slug;
 };
 
 export const getMechanismByToxinSlug = (slug: string): MechanismBundle | undefined =>
-  cached.mechanisms.find((entry) => entry.toxinSlug === slug);
+  cached.mechanisms.find(
+    (entry) => entry.subject.kind === 'isolated_compound' && entry.subject.slug === slug,
+  );
 
 export const getPhysiologyByToxinSlug = (slug: string): PhysiologyBundle | undefined =>
-  cached.physiology.find((entry) => entry.toxinSlug === slug);
+  cached.physiology.find(
+    (entry) => entry.subject.kind === 'isolated_compound' && entry.subject.slug === slug,
+  );
+
+export const getMechanismByOrganismExposureSlug = (slug: string): MechanismBundle | undefined =>
+  cached.mechanisms.find(
+    (entry) => entry.subject.kind === 'organism_exposure' && entry.subject.slug === slug,
+  );
+
+export const getPhysiologyByOrganismExposureSlug = (slug: string): PhysiologyBundle | undefined =>
+  cached.physiology.find(
+    (entry) => entry.subject.kind === 'organism_exposure' && entry.subject.slug === slug,
+  );
+
+export const getAllMechanisms = (): MechanismBundle[] => cached.mechanisms;
+
+export const getAllPhysiology = (): PhysiologyBundle[] => cached.physiology;
 
 export const getGeographyByOrganismSlug = (slug: string): GeographyBundle | undefined =>
   cached.geography.find((entry) => entry.organismSlug === slug);
@@ -716,23 +792,35 @@ export const getCitationsByIds = (citationIds: string[]): Citation[] =>
 
 export const getAllCitations = (): Citation[] => cached.citations;
 
+export const getPublicCitations = (): Citation[] =>
+  cached.citations.filter((entry) => entry.visibility !== 'internal');
+
 export const getAllMediaAssets = (): MediaAsset[] => cached.mediaAssets;
 
 export const getPublishedMediaAssets = (): MediaAsset[] =>
   cached.mediaAssets.filter((entry) => entry.redistributionVerified);
 
 export const getAllRoutes = (): string[] => {
-  const organismRoutes = cached.organisms.flatMap((entry) => [
-    `/organisms/${entry.organism.slug}`,
-    `/organisms/${entry.organism.slug}/venom`,
-    `/organisms/${entry.organism.slug}/geography`,
-  ]);
+  const organismRoutes = cached.organisms.flatMap((entry) => {
+    const slug = entry.organism.slug ?? '';
+    return [
+      `/organisms/${slug}`,
+      ...(getToxicMaterialByOrganismSlug(slug) ? [`/organisms/${slug}/toxic-material`] : []),
+      ...(getToxicMaterialByOrganismSlug(slug)?.toxicMaterial.materialKind === 'venom'
+        ? [`/organisms/${slug}/venom`]
+        : []),
+      ...(getGeographyByOrganismSlug(slug) ? [`/organisms/${slug}/geography`] : []),
+    ];
+  });
 
-  const toxinRoutes = cached.toxins.flatMap((entry) => [
-    `/toxins/${entry.toxin.slug}`,
-    `/toxins/${entry.toxin.slug}/mechanism`,
-    `/toxins/${entry.toxin.slug}/physiology`,
-  ]);
+  const toxinRoutes = cached.toxins.flatMap((entry) => {
+    const slug = entry.toxin.slug ?? '';
+    return [
+      `/toxins/${slug}`,
+      ...(getMechanismByToxinSlug(slug) ? [`/toxins/${slug}/mechanism`] : []),
+      ...(getPhysiologyByToxinSlug(slug) ? [`/toxins/${slug}/physiology`] : []),
+    ];
+  });
 
   return [
     '/',

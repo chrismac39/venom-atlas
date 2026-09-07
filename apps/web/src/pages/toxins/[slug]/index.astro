@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 const { slug } = Astro.params;
 const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
 const organismSlug = slug ? getOrganismSlugByToxinSlug(slug) : undefined;
-const atlasBaseHref = organismSlug ? `/?organism=${organismSlug}` : '/';
+const atlasBaseHref = organismSlug ? `/atlas/${organismSlug}` : '/';
 
 if (!toxinBundle) {
   throw new Error(`Missing toxin bundle for slug: ${slug}`);
@@ -89,9 +89,4 @@ const citations = getCitationsByIds(toxinBundle.molecularEntity.evidence.citatio
     <a href={`${atlasBaseHref}#section-chemistry`}>Resume monopage at chemistry</a>
   </section>
 
-  <section class="panel">
-    <a href={`/toxins/${toxinBundle.toxin.slug}/mechanism`}>Continue to mechanism page</a>
-    <br />
-    <a href={`/toxins/${toxinBundle.toxin.slug}/physiology`}>Continue to physiology page</a>
-  </section>
 </PageLayout>

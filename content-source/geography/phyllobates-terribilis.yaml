@@ -1,0 +1,14 @@
+﻿id: geo-phyllobates-terribilis
+slug: phyllobates-terribilis
+organismSlug: phyllobates-terribilis
+ranges:
+  - id: geo-phyllobates-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/phyllobates-terribilis-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, grid-deduplicated for display. Sparse points do not define the complete species range.
+    evidence:
+      id: ev-phyllobates-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-phyllobates-terribilis

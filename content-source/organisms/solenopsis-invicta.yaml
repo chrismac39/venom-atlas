@@ -2,6 +2,7 @@
 slug: solenopsis-invicta
 scientificName: Solenopsis invicta
 commonName: Red imported fire ant
+toxicStrategy: venomous
 overview: >-
   Solenopsis invicta is an ant species widely studied for defensive sting behavior,
   rapid colony recruitment, and ecological impact where established.
@@ -33,10 +34,10 @@ ecologicalRoles:
   - id: eco-defense
     role: Defense and competitive interactions
     summary: Venom-associated sting behavior is relevant to defense and interference competition.
+geographyVisualizations: []
 externalProfile:
   sourceLabel: AntWiki
   sourceUrl: https://www.antwiki.org/wiki/Solenopsis_invicta
-  antMapsEmbedUrl: https://antmaps.org/?mode=species&species=Solenopsis.invicta
   summaryPoints:
     - >-
       Solenopsis invicta is a social, colony-forming ant known for fast collective responses when

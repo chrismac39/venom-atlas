@@ -1,0 +1,76 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
+import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { VegaChart } from '../../../visualizations/vega/VegaChart';
+import { buildVenomCompositionSpec } from '../../../visualizations/vega/venomCompositionSpec';
+import {
+  getAllOrganisms,
+  getOrganismBySlug,
+  getToxicMaterialByOrganismSlug,
+} from '../../../lib/content';
+
+export const getStaticPaths = async () => {
+  return getAllOrganisms()
+    .filter((entry) => getToxicMaterialByOrganismSlug(entry.organism.slug ?? '') !== undefined)
+    .map((entry) => ({ params: { slug: entry.organism.slug } }));
+};
+
+const { slug } = Astro.params;
+const organism = slug ? getOrganismBySlug(slug) : undefined;
+const material = slug ? getToxicMaterialByOrganismSlug(slug) : undefined;
+const featuredToxinSlug = material?.toxicMaterial.featuredToxinSlug;
+const hasQuantifiedComposition = material?.components.some(
+  (component) => component.abundanceQualifier !== 'not_quantified',
+);
+const atlasBaseHref = organism ? `/atlas/${organism.organism.slug}` : '/';
+
+if (!organism || !material) {
+  throw new Error(`Missing organism/toxic material for slug: ${slug}`);
+}
+---
+
+<PageLayout
+  title={`${organism.organism.scientificName} toxic material | Venom Atlas`}
+  description={material.toxicMaterial.description}
+>
+  <ThemeSwitcher slot="theme" client:idle />
+  <section class="panel">
+    <h1>{material.toxicMaterial.name}</h1>
+    <EvidenceBadge evidence={material.toxicMaterial.evidence} />
+    <p><strong>Material kind:</strong> {material.toxicMaterial.materialKind}</p>
+    <p>{material.toxicMaterial.description}</p>
+    <p><strong>Biological role:</strong> {material.toxicMaterial.ecologicalRoleSummary}</p>
+  </section>
+
+  {hasQuantifiedComposition ? (
+    <VegaChart
+      client:visible
+      title="Toxic material composition overview"
+      summary="Evidence-aware composition overview."
+      spec={buildVenomCompositionSpec(material.components)}
+    />
+  ) : (
+    <section class="panel">
+      <h2>Composition status</h2>
+      <p>Available sources identify component classes but do not provide comparable abundance values.</p>
+    </section>
+  )}
+
+  <section class="panel">
+    <h2>Return to atlas</h2>
+    <a href={`${atlasBaseHref}#section-toxin-categorization`}>Resume monopage at toxin categorization</a>
+  </section>
+
+  <section class="panel">
+    <h2>Component categories</h2>
+    <ul>
+      {material.components.map((component) => (
+        <li>
+          <strong>{component.componentCategory}</strong> - {component.summary ?? 'No summary'}
+        </li>
+      ))}
+    </ul>
+    {featuredToxinSlug ? <a href={`/toxins/${featuredToxinSlug}`}>Open featured toxin molecule page</a> : null}
+  </section>
+</PageLayout>

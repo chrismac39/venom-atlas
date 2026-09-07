@@ -1,7 +1,6 @@
 # UI Thin-Page Architecture
 
-This project adopts the same route architecture principle used in taxisbi-mvp:
-keep route pages thin, move orchestration into hooks, and render through reusable host/components.
+Route entry points stay thin, interactive orchestration lives in feature hooks, and rendering is split into reusable components or focused islands.
 
 ## Objective
 
@@ -10,9 +9,9 @@ which orchestration hook and host component does this route bind together?
 
 ## Composition Pattern
 
-For each route-level page:
+For interactive React entry points:
 
-1. Thin page route file
+1. Thin page or island entry
 - Owns no heavy business logic.
 - Calls one orchestration hook.
 - Renders one host component.
@@ -34,31 +33,21 @@ For each route-level page:
 - UI sections become reusable across monopage and dedicated routes.
 - Future refactors affect hooks/components without route churn.
 
-## Current Example In This Repo
+## Current Atlas Example
 
-- `apps/web/src/features/atlas/AtlasMonopage.tsx` is now a thin page.
-- `apps/web/src/features/atlas/hooks/useAtlasMonopageOrchestration.ts` owns state, effects, and derived data.
-- `apps/web/src/features/atlas/components/AtlasMonopageHost.tsx` owns route UI composition.
-
-## Current Coverage
-
-The pattern is applied to every current route page under `apps/web/src/features`:
-
-- `apps/web/src/features/atlas/AtlasMonopage.tsx`
-- `apps/web/src/features/atlas/LandingPage.tsx`
-- `apps/web/src/features/atlas/NotFoundPage.tsx`
-- `apps/web/src/features/organism/OrganismsPage.tsx`
-- `apps/web/src/features/organism/OrganismDetailPage.tsx`
-- `apps/web/src/features/venom/VenomPage.tsx`
-- `apps/web/src/features/molecule/MoleculePage.tsx`
-- `apps/web/src/features/mechanism/MechanismPage.tsx`
-- `apps/web/src/features/physiology/PhysiologyPage.tsx`
-- `apps/web/src/features/geography/GeographyPage.tsx`
+- `apps/web/src/pages/index.astro` renders the static organism chooser.
+- `apps/web/src/pages/atlas/[slug].astro` generates one canonical monopage per organism.
+- `apps/web/src/islands/AtlasMonopageIsland.tsx` composes the interactive organism view.
+- `apps/web/src/features/atlas/hooks/useAtlasMonopageOrchestration.ts` owns URL state, observers, and derived view models.
+- `apps/web/src/features/atlas/components/*` owns deferred and provider-specific interactive surfaces.
+- `apps/web/src/features/atlas/atlas-types.ts` defines the view-model boundary shared by loading and rendering.
 
 ## Adoption Rules For New Pages
 
 - Keep route files short and orchestration-free.
-- Put `useEffect`-heavy logic in hooks under the same feature.
+- Put state, effects, and route synchronization in hooks under the same feature.
 - Keep host components focused on composition, not data APIs.
 - Extract repeated visual structures into feature components before adding route logic.
 - Prefer explicit prop contracts over implicit global coupling.
+- Do not make the whole route interactive when an Astro-rendered section or smaller island is sufficient.
+- Use `client:visible` or an equivalent visibility boundary for expensive visualization runtimes.

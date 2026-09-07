@@ -4,14 +4,14 @@ import { fileURLToPath } from 'node:url';
 import {
   getAllOrganisms,
   getAllToxins,
-  getMechanismByToxinSlug,
-  getPhysiologyByToxinSlug,
-  getVenomByOrganismSlug,
+  getMechanismByOrganismExposureSlug,
+  getPhysiologyByOrganismExposureSlug,
+  getToxicMaterialByOrganismSlug,
 } from '../apps/web/src/lib/content';
 
 interface SearchIndexRecord {
   id: string;
-  entityType: 'organism' | 'venom' | 'toxin' | 'mechanism' | 'effect';
+  entityType: 'organism' | 'toxic_material' | 'toxin' | 'mechanism' | 'effect';
   title: string;
   scientificName?: string;
   aliases: string[];
@@ -35,16 +35,42 @@ for (const organismBundle of getAllOrganisms()) {
     route: `/organisms/${slug}`,
   });
 
-  const venom = getVenomByOrganismSlug(slug);
-  if (venom) {
+  const toxicMaterial = getToxicMaterialByOrganismSlug(slug);
+  if (toxicMaterial) {
     records.push({
-      id: venom.venom.id,
-      entityType: 'venom',
-      title: venom.venom.name,
-      aliases: [venom.venom.name],
-      summary: venom.venom.description,
-      tags: ['venom', 'composition'],
-      route: `/organisms/${slug}/venom`,
+      id: toxicMaterial.toxicMaterial.id,
+      entityType: 'toxic_material',
+      title: toxicMaterial.toxicMaterial.name,
+      aliases: [toxicMaterial.toxicMaterial.name],
+      summary: toxicMaterial.toxicMaterial.description,
+      tags: [toxicMaterial.toxicMaterial.materialKind, 'composition'],
+      route: `/organisms/${slug}/toxic-material`,
+    });
+  }
+
+  const mechanism = getMechanismByOrganismExposureSlug(slug);
+  if (mechanism) {
+    records.push({
+      id: `mechanism-${slug}`,
+      entityType: 'mechanism',
+      title: `${organismBundle.organism.commonName} exposure mechanism`,
+      aliases: mechanism.steps.map((step) => step.title),
+      summary: mechanism.steps[0]?.description ?? 'Exposure mechanism summary unavailable.',
+      tags: ['mechanism', 'exposure'],
+      route: `/atlas/${slug}#section-mechanisms`,
+    });
+  }
+
+  const physiology = getPhysiologyByOrganismExposureSlug(slug);
+  if (physiology) {
+    records.push({
+      id: `effect-${slug}`,
+      entityType: 'effect',
+      title: `${organismBundle.organism.commonName} sting effects`,
+      aliases: physiology.effects.map((effect) => effect.title),
+      summary: physiology.effects[0]?.description ?? 'Exposure effects summary unavailable.',
+      tags: ['effect', 'physiology', 'exposure'],
+      route: `/atlas/${slug}#section-human-physiology`,
     });
   }
 }
@@ -61,31 +87,6 @@ for (const toxinBundle of getAllToxins()) {
     route: `/toxins/${slug}`,
   });
 
-  const mechanism = getMechanismByToxinSlug(slug);
-  if (mechanism) {
-    records.push({
-      id: `mechanism-${slug}`,
-      entityType: 'mechanism',
-      title: `${toxinBundle.toxin.displayName} mechanism`,
-      aliases: mechanism.steps.map((step) => step.title),
-      summary: mechanism.steps[0]?.description ?? 'Mechanism summary unavailable.',
-      tags: ['mechanism'],
-      route: `/toxins/${slug}/mechanism`,
-    });
-  }
-
-  const physiology = getPhysiologyByToxinSlug(slug);
-  if (physiology) {
-    records.push({
-      id: `effect-${slug}`,
-      entityType: 'effect',
-      title: `${toxinBundle.toxin.displayName} effects`,
-      aliases: physiology.effects.map((effect) => effect.title),
-      summary: physiology.effects[0]?.description ?? 'Physiology summary unavailable.',
-      tags: ['effect', 'physiology'],
-      route: `/toxins/${slug}/physiology`,
-    });
-  }
 }
 
 const repoRoot = path.resolve(fileURLToPath(new URL('..', import.meta.url)));

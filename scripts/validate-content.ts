@@ -1,11 +1,13 @@
 import {
   getAllOrganisms,
+  getAllMechanisms,
+  getAllPhysiology,
   getAllRoutes,
   getAllToxins,
   getGeographyByOrganismSlug,
-  getMechanismByToxinSlug,
-  getPhysiologyByToxinSlug,
-  getVenomByOrganismSlug,
+  getMechanismByOrganismExposureSlug,
+  getPhysiologyByOrganismExposureSlug,
+  getToxicMaterialByOrganismSlug,
 } from '../apps/web/src/lib/content';
 
 const fail = (message: string): never => {
@@ -13,6 +15,7 @@ const fail = (message: string): never => {
 };
 
 const organismSlugs = new Set<string>();
+const toxicMaterialSlugs = new Set<string>();
 for (const organismBundle of getAllOrganisms()) {
   const slug = organismBundle.organism.slug;
   if (!slug) {
@@ -23,13 +26,19 @@ for (const organismBundle of getAllOrganisms()) {
   }
   organismSlugs.add(slug);
 
-  if (!getVenomByOrganismSlug(slug)) {
-    fail(`Missing venom for organism slug: ${slug}`);
+  const toxicMaterial = getToxicMaterialByOrganismSlug(slug);
+  if (toxicMaterial?.toxicMaterial.slug) {
+    toxicMaterialSlugs.add(toxicMaterial.toxicMaterial.slug);
+  }
+  if (toxicMaterial?.toxicMaterial.featuredToxinSlug && !getAllToxins().some((toxin) => {
+    return toxin.toxin.slug === toxicMaterial.toxicMaterial.featuredToxinSlug
+      && toxin.toxin.toxicMaterialId === toxicMaterial.toxicMaterial.id;
+  })) {
+    fail(
+      `Featured toxin is not linked to toxic material ${toxicMaterial.toxicMaterial.slug}: ${toxicMaterial.toxicMaterial.featuredToxinSlug}`,
+    );
   }
 
-  if (!getGeographyByOrganismSlug(slug)) {
-    fail(`Missing geography for organism slug: ${slug}`);
-  }
 }
 
 const toxinSlugs = new Set<string>();
@@ -44,12 +53,17 @@ for (const toxinBundle of getAllToxins()) {
   }
   toxinSlugs.add(slug);
 
-  if (!getMechanismByToxinSlug(slug)) {
-    fail(`Missing mechanism record for toxin slug: ${slug}`);
-  }
+}
 
-  if (!getPhysiologyByToxinSlug(slug)) {
-    fail(`Missing physiology record for toxin slug: ${slug}`);
+for (const record of [...getAllMechanisms(), ...getAllPhysiology()]) {
+  if (record.subject.kind === 'organism_exposure' && !organismSlugs.has(record.subject.slug)) {
+    fail(`Unknown organism exposure subject: ${record.subject.slug}`);
+  }
+  if (record.subject.kind === 'isolated_compound' && !toxinSlugs.has(record.subject.slug)) {
+    fail(`Unknown isolated compound subject: ${record.subject.slug}`);
+  }
+  if (record.subject.kind === 'whole_material' && !toxicMaterialSlugs.has(record.subject.slug)) {
+    fail(`Unknown whole material subject: ${record.subject.slug}`);
   }
 }
 

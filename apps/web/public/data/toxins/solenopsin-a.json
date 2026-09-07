@@ -2,7 +2,7 @@
   "toxin": {
     "id": "tox-solenopsin-a",
     "slug": "solenopsin-a",
-    "venomId": "ven-solenopsis-invicta-venom",
+    "toxicMaterialId": "ven-fire-ant-primary",
     "displayName": "Solenopsin A",
     "family": "Piperidine alkaloids (solenopsins)",
     "notes": "Featured representative compound. Not claimed as sole mediator of all clinical effects.",

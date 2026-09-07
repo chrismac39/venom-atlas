@@ -55,41 +55,28 @@
     slug: solenopsin-a-2d
     kind: molecular_2d
     localPath: /images/solenopsin-a-2d.svg
-    sourceUrl: null
-    creator: null
-    license: null
-    attributionText: Placeholder marker. Scientifically sourced 2D structure pending.
+    sourceUrl: https://pubchem.ncbi.nlm.nih.gov/compound/107941
+    creator: National Center for Biotechnology Information
+    license: Public domain (U.S. government work)
+    attributionText: Generated from the PubChem Solenopsin A structure record, CID 107941.
     citationId: null
-    redistributionVerified: false
-    modificationAllowed: null
+    redistributionVerified: true
+    modificationAllowed: true
     accessedAt: null
-    notes: Placeholder marker.
+    notes: Generated locally from the verified PubChem structure record.
   - id: media-3d-solenopsin-placeholder
     slug: solenopsin-a-3d
     kind: molecular_3d
     localPath: /structures/solenopsin-a.sdf
-    sourceUrl: null
-    creator: null
-    license: null
-    attributionText: Placeholder marker. Verified 3D structure file pending.
+    sourceUrl: https://pubchem.ncbi.nlm.nih.gov/compound/107941
+    creator: National Center for Biotechnology Information
+    license: Public domain (U.S. government work)
+    attributionText: PubChem Solenopsin A structure record, CID 107941.
     citationId: null
-    redistributionVerified: false
-    modificationAllowed: null
+    redistributionVerified: true
+    modificationAllowed: true
     accessedAt: null
-    notes: Placeholder marker.
-  - id: media-range-geometry-placeholder
-    slug: solenopsis-range-geometry
-    kind: range_geometry
-    localPath: /geography/solenopsis-invicta-range.geojson
-    sourceUrl: null
-    creator: null
-    license: null
-    attributionText: Placeholder marker. Source-backed geometry pending.
-    citationId: null
-    redistributionVerified: false
-    modificationAllowed: null
-    accessedAt: null
-    notes: Placeholder marker.
+    notes: Retrieved from the PubChem PUG REST SDF endpoint.
   - id: media-solenopsis-head-photo
     slug: solenopsis-invicta-head-casent0104523
     kind: organism_photo

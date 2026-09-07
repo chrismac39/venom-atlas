@@ -2,7 +2,14 @@
 import PageLayout from '../../../layouts/PageLayout.astro';
 import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
-import { getAllOrganisms, getAllToxins, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
+import {
+  getAllOrganisms,
+  getAllToxins,
+  getGeographyByOrganismSlug,
+  getOrganismBySlug,
+  getPublishedMediaAssets,
+  getToxicMaterialByOrganismSlug,
+} from '../../../lib/content';
 
 export const getStaticPaths = async () => {
   return getAllOrganisms().map((entry) => ({
@@ -17,13 +24,17 @@ if (!bundle) {
   throw new Error(`Unknown organism slug: ${slug}`);
 }
 
-const venom = getVenomByOrganismSlug(slug as string);
-const featuredToxinSlug = venom
-  ? getAllToxins().find((entry) => entry.toxin.venomId === `ven-${venom.venom.slug}`)?.toxin.slug
+const toxicMaterial = getToxicMaterialByOrganismSlug(slug as string);
+const geography = getGeographyByOrganismSlug(slug as string);
+const featuredToxinSlug = toxicMaterial
+  ? getAllToxins().find(
+      (entry) => entry.toxin.toxicMaterialId === toxicMaterial.toxicMaterial.id,
+    )?.toxin.slug
   : undefined;
-const atlasBaseHref = `/?organism=${bundle.organism.slug}`;
+const atlasBaseHref = `/atlas/${bundle.organism.slug}`;
+const publishedMediaPaths = new Set(getPublishedMediaAssets().map((asset) => asset.localPath));
 const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath) =>
-  imagePath.includes('placeholder'),
+  publishedMediaPaths.has(imagePath),
 );
 ---
 
@@ -32,6 +43,7 @@ const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath
   <section class="panel">
     <h1>{bundle.organism.scientificName} ({bundle.organism.commonName})</h1>
     <EvidenceBadge evidence={bundle.organism.evidence} />
+    <p><strong>Toxic strategy:</strong> {bundle.organism.toxicStrategy}</p>
     <p>{bundle.organism.overview}</p>
   </section>
 
@@ -82,9 +94,11 @@ const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath
   </section>
 
   <section class="panel">
-    <a href={`/organisms/${bundle.organism.slug}/venom`}>Open venom profile</a>
-    <br />
-    <a href={`/organisms/${bundle.organism.slug}/geography`}>Open geography profile</a>
+    {toxicMaterial ? (
+      <a href={`/organisms/${bundle.organism.slug}/toxic-material`}>Open toxic material profile</a>
+    ) : null}
+    {toxicMaterial && geography ? <br /> : null}
+    {geography ? <a href={`/organisms/${bundle.organism.slug}/geography`}>Open geography profile</a> : null}
     {featuredToxinSlug ? (
       <>
         <br />

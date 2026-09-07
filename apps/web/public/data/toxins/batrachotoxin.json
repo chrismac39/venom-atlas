@@ -1,0 +1,80 @@
+{
+  "toxin": {
+    "id": "tox-batrachotoxin",
+    "slug": "batrachotoxin",
+    "toxicMaterialId": "ven-phyllobates-terribilis-poison",
+    "displayName": "Batrachotoxin",
+    "family": "Batrachotoxins",
+    "notes": "Isolated alkaloid documented in Phyllobates terribilis skin. It is not a synonym for the organism's complete skin poison mixture.",
+    "evidence": {
+      "id": "ev-batrachotoxin-phyllobates",
+      "confidence": "high",
+      "evidenceType": "experimental",
+      "citationIds": [
+        "cit-daly-phyllobates-batrachotoxin-1980"
+      ]
+    }
+  },
+  "molecularEntity": {
+    "id": "mol-batrachotoxin",
+    "toxinId": "tox-batrachotoxin",
+    "displayName": "Batrachotoxin",
+    "molecularClass": "small_molecule",
+    "formula": "C31H42N2O6",
+    "molecularWeight": 538.7,
+    "structureDataSource": "PubChem CID 6324647",
+    "evidence": {
+      "id": "ev-batrachotoxin-identity",
+      "confidence": "high",
+      "evidenceType": "database",
+      "citationIds": [
+        "cit-pubchem-batrachotoxin"
+      ]
+    }
+  },
+  "structureAssets": [
+    {
+      "id": "asset-mol3d-batrachotoxin",
+      "molecularEntityId": "mol-batrachotoxin",
+      "localPath": "/structures/batrachotoxin.sdf",
+      "format": "sdf",
+      "sourceDatabase": "PubChem",
+      "sourceIdentifier": "CID 6324647",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647",
+      "citationId": "cit-pubchem-batrachotoxin",
+      "structureStatus": "computed",
+      "verified": true,
+      "notes": "Retrieved from the PubChem PUG REST 3D SDF endpoint."
+    },
+    {
+      "id": "asset-mol2d-batrachotoxin",
+      "molecularEntityId": "mol-batrachotoxin",
+      "localPath": "/images/batrachotoxin-2d.svg",
+      "format": "svg",
+      "sourceDatabase": "PubChem",
+      "sourceIdentifier": "CID 6324647",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647",
+      "citationId": "cit-pubchem-batrachotoxin",
+      "structureStatus": "computed",
+      "verified": true,
+      "notes": "Deterministically generated from the committed PubChem SDF structure."
+    }
+  ],
+  "targets": [
+    {
+      "id": "target-batrachotoxin-voltage-gated-sodium-channel",
+      "toxinId": "tox-batrachotoxin",
+      "targetName": "Voltage-gated sodium channels",
+      "targetType": "ion_channel",
+      "summary": "Batrachotoxin binds within the sodium-channel inner cavity and alters channel selectivity and conductance.",
+      "evidence": {
+        "id": "ev-batrachotoxin-sodium-channel",
+        "confidence": "high",
+        "evidenceType": "experimental",
+        "citationIds": [
+          "cit-wang-batrachotoxin-channel-2006"
+        ]
+      }
+    }
+  ]
+}

@@ -1,60 +1,14 @@
 ---
-import PageLayout from '../../../layouts/PageLayout.astro';
-import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
-import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
-import { VegaChart } from '../../../visualizations/vega/VegaChart';
-import { buildVenomCompositionSpec } from '../../../visualizations/vega/venomCompositionSpec';
-import { getAllOrganisms, getAllToxins, getOrganismBySlug, getVenomByOrganismSlug } from '../../../lib/content';
+import { getAllOrganisms, getToxicMaterialByOrganismSlug } from '../../../lib/content';
 
 export const getStaticPaths = async () => {
-  return getAllOrganisms().map((entry) => ({
-    params: { slug: entry.organism.slug },
-  }));
+  return getAllOrganisms()
+    .filter((entry) => {
+      const material = getToxicMaterialByOrganismSlug(entry.organism.slug ?? '');
+      return material?.toxicMaterial.materialKind === 'venom';
+    })
+    .map((entry) => ({ params: { slug: entry.organism.slug } }));
 };
 
-const { slug } = Astro.params;
-const organism = slug ? getOrganismBySlug(slug) : undefined;
-const venom = slug ? getVenomByOrganismSlug(slug) : undefined;
-const featuredToxinSlug = venom
-  ? getAllToxins().find((entry) => entry.toxin.venomId === `ven-${venom.venom.slug}`)?.toxin.slug
-  : undefined;
-const atlasBaseHref = organism ? `/?organism=${organism.organism.slug}` : '/';
-
-if (!organism || !venom) {
-  throw new Error(`Missing organism/venom for slug: ${slug}`);
-}
+return Astro.redirect(`/organisms/${Astro.params.slug}/toxic-material`, 301);
 ---
-
-<PageLayout title={`${organism.organism.scientificName} venom | Venom Atlas`} description={venom.venom.description}>
-  <ThemeSwitcher slot="theme" client:idle />
-  <section class="panel">
-    <h1>{venom.venom.name}</h1>
-    <EvidenceBadge evidence={venom.venom.evidence} />
-    <p>{venom.venom.description}</p>
-    <p><strong>Biological role:</strong> {venom.venom.ecologicalRoleSummary}</p>
-  </section>
-
-  <VegaChart
-    client:visible
-    title="Toxin composition overview"
-    summary="Evidence-aware BI charting. Unsourced values are intentionally left unquantified."
-    spec={buildVenomCompositionSpec(venom.components)}
-  />
-
-  <section class="panel">
-    <h2>Return to atlas</h2>
-    <a href={`${atlasBaseHref}#section-toxin-categorization`}>Resume monopage at toxin categorization</a>
-  </section>
-
-  <section class="panel">
-    <h2>Component categories</h2>
-    <ul>
-      {venom.components.map((component) => (
-        <li>
-          <strong>{component.componentCategory}</strong> - {component.summary ?? 'No summary'}
-        </li>
-      ))}
-    </ul>
-    {featuredToxinSlug ? <a href={`/toxins/${featuredToxinSlug}`}>Open featured toxin molecule page</a> : null}
-  </section>
-</PageLayout>

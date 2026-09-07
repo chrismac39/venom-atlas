@@ -1,0 +1,677 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/2449963",
+    "taxonKey": 2449963,
+    "generatedAt": "2026-09-07T03:12:52.466Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 6423031474,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4424,
+          -25.4722
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/374502395",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6423031474"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3747211742,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.867897,
+          -28.863704
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/109029998",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3747211742"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3999627354,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.95271,
+          -28.73266
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "1e8249e7-4381-49d8-905a-9d27ae22cb8f",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3999627354"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1806038278,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.07826,
+          -27.98892
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "66dc24e6-c19d-451f-b46e-1923ce90c875",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1806038278"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1915770148,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.568806,
+          -24.177907
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "ab72d64b-0100-444d-9702-0681779359c4",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1915770148"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1637963425,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.12036,
+          -29.29428
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "2d653c8e-acd2-488b-92bc-369f1ba7473f",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1637963425"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2805969620,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.447076,
+          -30.231762
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "9fd0ce5d-34e7-45e1-98a2-6f8bcdcc1856",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2805969620"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1637948345,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.77091,
+          -27.05766
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "c2f44420-036e-494f-8695-ce86d84442dc",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1637948345"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1272280874,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.18,
+          -26.7
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "2d5c72ba-b138-4538-a728-b857c063f1da",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1272280874"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066589494,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.125149,
+          -24.162565
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "20a90bc3-e2db-41bd-b84c-0474fdff3f21",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066589494"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1632710335,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.5,
+          -25.4667
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "972fa002-094c-4022-a6c2-a9480aead814",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1632710335"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1638318323,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.13623,
+          -26.06153
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "494d9809-561a-4980-a103-59af5bd3c0a3",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1638318323"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3779582676,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63717,
+          -24.35599
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "11bf09cc-8bcf-482d-a9fe-3f6d452c2dbe",
+        "basisOfRecord": "OCCURRENCE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3779582676"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2806512171,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.384843,
+          -29.736351
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "df712f8e-d99d-4501-84ff-bd7518456396",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2806512171"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066546150,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.233333,
+          -25.633333
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "31397e36-99f0-4680-990d-ad8bd3eba644",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066546150"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066542332,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.066667,
+          -24.066667
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "fce5d714-51f4-415e-a175-e4f2445bdb5e",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066542332"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066541290,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.416667,
+          -25.916667
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "396f75b4-9bad-4510-8e2c-0dc7cb8fe5b0",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066541290"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 500727655,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.35,
+          -27.98
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "170e9731-a3f4-494c-b4c9-240670554786",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/500727655"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066537365,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.516667,
+          -25.35
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "77af2d17-28a0-452c-81cd-c23ffbdd3abd",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066537365"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066536913,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.666667,
+          -26.45
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "8130d08a-bacf-46a7-98f0-2e69439eec68",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066536913"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066530048,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.583333,
+          -22.766667
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "7eacf886-c558-45a3-ac21-756ac3e9e9b2",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066530048"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 500719253,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.55,
+          -26.78
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "600b8b70-2560-4680-8636-dbcee109bf01",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/500719253"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066526217,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.933333,
+          -25.35
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "c2cb6f26-f884-487c-a522-9503477be46b",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066526217"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100484014,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.16667,
+          -23.416666
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "ccc4b4c0-734b-46ae-9a48-abcda8536252",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100484014"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 500766293,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.75,
+          -25.68
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "c019082f-ca65-4016-ba06-ff821226a37e",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/500766293"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 500766271,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.12,
+          -25.92
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "a2ef8eb0-b683-4f59-a852-0c4df9fef629",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/500766271"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 500718935,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.73,
+          -27.75
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "a3586fd5-1c9d-4f94-9b61-0e15833501cd",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/500718935"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 500781720,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.68,
+          -28.97
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "ef8453c4-11a4-487d-8dee-3f6f59572f7c",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/500781720"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066522943,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.566667,
+          -23.366667
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "e3cc78eb-b380-4cbb-b330-ac1eff343927",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066522943"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066523888,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7,
+          -23.55
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "504b99b9-faaa-4f36-a354-396efded2769",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066523888"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1066551120,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.416667,
+          -27.65
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "8558c292-2841-4aa4-b9a7-60e50d9eb052",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1066551120"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1071908659,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.828074,
+          -30.130413
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "7581568c-9b2f-4156-a724-114c97662a11",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1071908659"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1272404609,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.92,
+          -34.1
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "ea6a9d1d-4d19-49ad-8d51-a65f7371cb3a",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1272404609"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3778937381,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.23501,
+          -23.70668
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "48284c61-e96e-4066-a219-a68505ad8bdd",
+        "basisOfRecord": "OCCURRENCE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3778937381"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3780164720,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.25124,
+          -25.64848
+        ]
+      },
+      "properties": {
+        "scientificName": "Oxyuranus microlepidotus (Mccoy, 1879)",
+        "datasetTitle": null,
+        "occurrenceID": "e15b4383-6f32-44f8-a8ec-48aa364427ca",
+        "basisOfRecord": "OCCURRENCE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3780164720"
+      }
+    }
+  ]
+}

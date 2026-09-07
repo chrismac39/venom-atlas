@@ -63,7 +63,7 @@ export const organismSchema = z.object({
 export const deliveryMechanismSchema = z.object({
   id: z.string(),
   organismId: z.string(),
-  route: z.enum(['sting', 'ingestion', 'contact', 'inhalation', 'unknown']),
+  route: z.enum(['sting', 'bite', 'spine', 'spur', 'ingestion', 'contact', 'inhalation', 'unknown']),
   summary: z.string(),
   sequence: z.array(z.string()),
   evidence: evidenceAssessmentSchema,
@@ -78,7 +78,7 @@ export const biologicalMaterialSchema = z.object({
   evidence: evidenceAssessmentSchema,
 });
 
-export const venomSchema = z.object({
+export const toxicMaterialSchema = z.object({
   id: z.string(),
   slug: z.string().optional(),
   organismId: z.string(),
@@ -86,13 +86,14 @@ export const venomSchema = z.object({
   name: z.string(),
   description: z.string(),
   ecologicalRoleSummary: z.string(),
+  materialKind: z.enum(['venom', 'poison', 'secretion', 'isolated_toxin']),
   evidence: evidenceAssessmentSchema,
 });
 
 export const toxinSchema = z.object({
   id: z.string(),
   slug: z.string().optional(),
-  venomId: z.string(),
+  toxicMaterialId: z.string(),
   displayName: z.string(),
   family: z.string().optional(),
   notes: z.string().optional(),
@@ -101,7 +102,7 @@ export const toxinSchema = z.object({
 
 export const toxinComponentSchema = z.object({
   id: z.string(),
-  venomId: z.string(),
+  toxicMaterialId: z.string(),
   toxinId: z.string().optional(),
   componentCategory: z.string(),
   abundanceQualifier: z
@@ -158,7 +159,10 @@ export const molecularTargetSchema = z.object({
 
 export const mechanismStepSchema = z.object({
   id: z.string(),
-  toxinId: z.string(),
+  subject: z.object({
+    kind: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']),
+    slug: z.string(),
+  }),
   order: z.number().int(),
   level: z.enum(['exposure', 'molecular', 'cellular', 'tissue', 'organ_system', 'clinical']),
   title: z.string(),
@@ -182,7 +186,10 @@ export const symptomSchema = z.object({
 
 export const physiologicalEffectSchema = z.object({
   id: z.string(),
-  toxinId: z.string(),
+  subject: z.object({
+    kind: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']),
+    slug: z.string(),
+  }),
   anatomicalSystemId: z.string(),
   symptomId: z.string().optional(),
   pathwayType: z.enum(['direct_venom', 'inflammatory_immune', 'systemic_allergic']),
@@ -253,7 +260,7 @@ export const atlasSeedSchema = z.object({
   organisms: z.array(organismSchema),
   deliveryMechanisms: z.array(deliveryMechanismSchema),
   biologicalMaterials: z.array(biologicalMaterialSchema),
-  venoms: z.array(venomSchema),
+  toxicMaterials: z.array(toxicMaterialSchema),
   toxins: z.array(toxinSchema),
   toxinComponents: z.array(toxinComponentSchema),
   molecularEntities: z.array(molecularEntitySchema),

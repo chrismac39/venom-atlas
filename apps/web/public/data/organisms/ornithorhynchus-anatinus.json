@@ -1,0 +1,84 @@
+{
+  "organism": {
+    "id": "org-ornithorhynchus-anatinus",
+    "slug": "ornithorhynchus-anatinus",
+    "scientificName": "Ornithorhynchus anatinus",
+    "commonName": "Platypus",
+    "toxicStrategy": "venomous",
+    "overview": "Ornithorhynchus anatinus is a semi-aquatic monotreme; adult males deliver venom with a hind-ankle spur, making it a distinctive reference organism for venomous mammals.",
+    "naturalHistory": [
+      "It is endemic to eastern Australia and Tasmania and depends on freshwater systems.",
+      "It forages for aquatic invertebrates using pressure-sensitive and electro-sensitive receptors in the bill.",
+      "Functional venom spurs are associated with adult males and become more active around the breeding season."
+    ],
+    "evidence": {
+      "id": "ev-platypus-profile",
+      "confidence": "moderate",
+      "evidenceType": "database",
+      "citationIds": [
+        "cit-australian-museum-platypus"
+      ]
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "className": "Mammalia",
+    "order": "Monotremata",
+    "family": "Ornithorhynchidae",
+    "genus": "Ornithorhynchus",
+    "species": "Ornithorhynchus anatinus"
+  },
+  "deliveryMechanism": {
+    "route": "spur",
+    "summary": "An adult male can drive a hind-ankle spur connected by a duct to a venom gland into tissue.",
+    "sequence": [
+      "The hind limb is positioned against the target.",
+      "The keratinous ankle spur penetrates tissue.",
+      "Venom travels from the crural gland through the connecting duct.",
+      "Venom is delivered into the puncture wound."
+    ]
+  },
+  "habitats": [
+    {
+      "id": "hab-platypus-freshwater",
+      "organismId": "org-ornithorhynchus-anatinus",
+      "name": "Rivers, streams, and freshwater bodies",
+      "summary": "Freshwater systems with suitable banks for burrows and benthic invertebrate prey.",
+      "evidence": {
+        "id": "ev-platypus-profile",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-australian-museum-platypus"
+        ]
+      }
+    }
+  ],
+  "ecologicalRoles": [
+    {
+      "id": "eco-platypus-intraspecific",
+      "organismId": "org-ornithorhynchus-anatinus",
+      "role": "Intraspecific competition and defense",
+      "summary": "Male venom production is seasonal and is associated with competition during the breeding period.",
+      "evidence": {
+        "id": "ev-platypus-profile",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-australian-museum-platypus"
+        ]
+      }
+    }
+  ],
+  "geographyVisualizations": [],
+  "externalProfile": {
+    "sourceLabel": "Australian Museum",
+    "sourceUrl": "https://australian.museum/learn/animals/mammals/platypus/",
+    "summaryPoints": [
+      "Platypus venom is delivered by the hind limb rather than the mouth, distinguishing it from mammalian biting defenses.",
+      "Human envenomation can produce severe and prolonged pain, but this starter profile does not yet publish a full clinical pathway."
+    ],
+    "imagePaths": []
+  }
+}

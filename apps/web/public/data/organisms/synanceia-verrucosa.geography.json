@@ -1,0 +1,21 @@
+{
+  "organismSlug": "synanceia-verrucosa",
+  "ranges": [
+    {
+      "id": "geo-synanceia-confirmed-occurrences",
+      "organismId": "org-synanceia-verrucosa",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/synanceia-verrucosa-occurrences.geojson",
+      "geometryFeatureCount": 38,
+      "summary": "Reusable-license GBIF occurrence records, grid-deduplicated for display. Marine observations do not define the complete distribution.",
+      "evidence": {
+        "id": "ev-synanceia-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-synanceia-verrucosa"
+        ]
+      }
+    }
+  ]
+}

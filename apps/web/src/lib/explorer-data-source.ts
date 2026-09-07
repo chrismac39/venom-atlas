@@ -25,7 +25,7 @@ export interface ToxinSearchResult {
 
 export interface RelatedEntity {
   id: string;
-  entityType: 'organism' | 'venom' | 'toxin' | 'mechanism' | 'effect';
+  entityType: 'organism' | 'toxic_material' | 'toxin' | 'mechanism' | 'effect';
   title: string;
   route: string;
 }

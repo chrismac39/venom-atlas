@@ -1,0 +1,14 @@
+﻿id: geo-synanceia-verrucosa
+slug: synanceia-verrucosa
+organismSlug: synanceia-verrucosa
+ranges:
+  - id: geo-synanceia-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/synanceia-verrucosa-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, grid-deduplicated for display. Marine observations do not define the complete distribution.
+    evidence:
+      id: ev-synanceia-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-synanceia-verrucosa

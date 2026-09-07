@@ -5,16 +5,16 @@ import { DeliveryMechanismDiagram } from '../../../visualizations/svg/DeliveryMe
 import { getAllToxins, getMechanismByToxinSlug, getOrganismSlugByToxinSlug, getToxinBySlug } from '../../../lib/content';
 
 export const getStaticPaths = async () => {
-  return getAllToxins().map((entry) => ({
-    params: { slug: entry.toxin.slug },
-  }));
+  return getAllToxins()
+    .filter((entry) => getMechanismByToxinSlug(entry.toxin.slug ?? '') !== undefined)
+    .map((entry) => ({ params: { slug: entry.toxin.slug } }));
 };
 
 const { slug } = Astro.params;
 const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
 const mechanism = slug ? getMechanismByToxinSlug(slug) : undefined;
 const organismSlug = slug ? getOrganismSlugByToxinSlug(slug) : undefined;
-const atlasBaseHref = organismSlug ? `/?organism=${organismSlug}` : '/';
+const atlasBaseHref = organismSlug ? `/atlas/${organismSlug}` : '/';
 
 if (!toxinBundle || !mechanism) {
   throw new Error(`Missing toxin mechanism for slug: ${slug}`);

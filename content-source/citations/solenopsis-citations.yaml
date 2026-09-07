@@ -46,4 +46,136 @@
     url: null
     doi: null
     accessedAt: null
+    visibility: internal
     sourceType: other
+  - id: cit-adw-golden-poison-frog
+    slug: adw-golden-poison-frog
+    title: Phyllobates terribilis, Golden Poison Frog
+    authors: []
+    publisher: University of Michigan Museum of Zoology, Animal Diversity Web
+    publicationYear: null
+    url: https://animaldiversity.org/accounts/Phyllobates_terribilis/
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: museum
+  - id: cit-daly-phyllobates-batrachotoxin-1980
+    slug: daly-phyllobates-batrachotoxin-1980
+    title: Levels of Batrachotoxin and Lack of Sensitivity to Its Action in Poison-Dart Frogs (Phyllobates)
+    authors:
+      - John W. Daly
+      - Charles W. Myers
+      - Jordan E. Warnick
+      - Edson X. Albuquerque
+    publisher: Science
+    publicationYear: 1980
+    url: https://pubmed.ncbi.nlm.nih.gov/6246586/
+    doi: 10.1126/science.6246586
+    accessedAt: '2026-09-06'
+    sourceType: journal_article
+  - id: cit-wang-batrachotoxin-channel-2006
+    slug: wang-batrachotoxin-channel-2006
+    title: How Batrachotoxin Modifies the Sodium Channel Permeation Pathway
+    authors:
+      - Sho-Ya Wang
+      - Jane Mitchell
+      - Denis B. Tikhonov
+      - Boris S. Zhorov
+      - Ging Kuo Wang
+    publisher: Molecular Pharmacology
+    publicationYear: 2006
+    url: https://pubmed.ncbi.nlm.nih.gov/16354762/
+    doi: 10.1124/mol.105.018200
+    accessedAt: '2026-09-06'
+    sourceType: journal_article
+  - id: cit-pubchem-batrachotoxin
+    slug: pubchem-batrachotoxin
+    title: PubChem Compound Summary for CID 6324647, Batrachotoxin
+    authors: []
+    publisher: National Center for Biotechnology Information
+    publicationYear: null
+    url: https://pubchem.ncbi.nlm.nih.gov/compound/6324647
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: database
+  - id: cit-australian-museum-inland-taipan
+    slug: australian-museum-inland-taipan
+    title: Inland Taipan
+    authors:
+      - Cecilie Beatson
+    publisher: Australian Museum
+    publicationYear: null
+    url: https://australian.museum/learn/animals/reptiles/inland-taipan/
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: museum
+  - id: cit-australian-museum-reef-stonefish
+    slug: australian-museum-reef-stonefish
+    title: Reef Stonefish, Synanceia verrucosa
+    authors: []
+    publisher: Australian Museum
+    publicationYear: null
+    url: https://australian.museum/learn/animals/fishes/reef-stonefish-synanceia-verrucosa/
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: museum
+  - id: cit-australian-museum-platypus
+    slug: australian-museum-platypus
+    title: Platypus
+    authors:
+      - Anja Divljan
+    publisher: Australian Museum
+    publicationYear: null
+    url: https://australian.museum/learn/animals/mammals/platypus/
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: museum
+  - id: cit-gbif-solenopsis-invicta
+    slug: gbif-solenopsis-invicta
+    title: GBIF occurrence records for Solenopsis invicta
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/5035230
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: database
+  - id: cit-gbif-phyllobates-terribilis
+    slug: gbif-phyllobates-terribilis
+    title: GBIF occurrence records for Phyllobates terribilis
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/5218020
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: database
+  - id: cit-gbif-oxyuranus-microlepidotus
+    slug: gbif-oxyuranus-microlepidotus
+    title: GBIF occurrence records for Oxyuranus microlepidotus
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/2449963
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: database
+  - id: cit-gbif-synanceia-verrucosa
+    slug: gbif-synanceia-verrucosa
+    title: GBIF occurrence records for Synanceia verrucosa
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/5201174
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: database
+  - id: cit-gbif-ornithorhynchus-anatinus
+    slug: gbif-ornithorhynchus-anatinus
+    title: GBIF occurrence records for Ornithorhynchus anatinus
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/2433376
+    doi: null
+    accessedAt: '2026-09-06'
+    sourceType: database

@@ -1,0 +1,34 @@
+﻿id: ven-phyllobates-terribilis-poison
+slug: phyllobates-terribilis-poison
+organismSlug: phyllobates-terribilis
+biologicalMaterial:
+  id: bio-phyllobates-skin-poison
+  kind: poison
+  name: Golden poison frog skin poison
+  description: A defensive skin-associated toxic material exposed by contact or ingestion rather than injection.
+name: Phyllobates terribilis skin poison
+description: >-
+  A skin-associated mixture of defensive alkaloids. Batrachotoxin is a documented component,
+  but evidence about the isolated compound must not be generalized to the complete skin material.
+ecologicalRoleSummary: Supports passive chemical defense against predators.
+featuredToxinSlug: batrachotoxin
+components:
+  - id: comp-phyllobates-batrachotoxins
+    componentCategory: Batrachotoxin alkaloids
+    abundanceQualifier: not_quantified
+    summary: >-
+      Batrachotoxin has been detected at high levels in the skin of wild Phyllobates terribilis;
+      this record does not assign a comparable percentage of the complete skin material.
+    evidence:
+      id: ev-phyllobates-batrachotoxin-skin
+      confidence: high
+      evidenceType: experimental
+      citationIds:
+        - cit-daly-phyllobates-batrachotoxin-1980
+evidence:
+  id: ev-phyllobates-skin-poison
+  confidence: high
+  evidenceType: experimental
+  notes: Captive status materially affects toxin presence and must be reported with exposure claims.
+  citationIds:
+    - cit-daly-phyllobates-batrachotoxin-1980

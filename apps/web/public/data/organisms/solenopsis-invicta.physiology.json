@@ -1,5 +1,8 @@
 {
-  "toxinSlug": "solenopsin-a",
+  "subject": {
+    "kind": "organism_exposure",
+    "slug": "solenopsis-invicta"
+  },
   "anatomicalSystems": [
     {
       "id": "anat-skin",
@@ -74,7 +77,10 @@
   "effects": [
     {
       "id": "phys-local-skin",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "anatomicalSystemId": "anat-skin",
       "symptomId": "sym-local-lesion",
       "pathwayType": "direct_venom",
@@ -93,7 +99,10 @@
     },
     {
       "id": "phys-local-nerves",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "anatomicalSystemId": "anat-peripheral-nerves",
       "symptomId": "sym-pain",
       "pathwayType": "direct_venom",
@@ -112,7 +121,10 @@
     },
     {
       "id": "phys-inflammatory",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "anatomicalSystemId": "anat-immune",
       "symptomId": "sym-local-lesion",
       "pathwayType": "inflammatory_immune",
@@ -131,7 +143,10 @@
     },
     {
       "id": "phys-systemic-allergy",
-      "toxinId": "tox-solenopsin-a",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
       "anatomicalSystemId": "anat-respiratory",
       "symptomId": "sym-systemic-allergy",
       "pathwayType": "systemic_allergic",

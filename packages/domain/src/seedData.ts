@@ -107,6 +107,7 @@ export const atlasSeedData: AtlasSeedData = {
       id: 'org-solenopsis-invicta',
       scientificName: 'Solenopsis invicta',
       commonName: 'Red imported fire ant',
+      toxicStrategy: 'venomous',
       overview:
         'Solenopsis invicta is an ant species widely studied for defensive sting behavior, rapid colony recruitment, and ecological impact where established.',
       naturalHistory: [
@@ -159,7 +160,7 @@ export const atlasSeedData: AtlasSeedData = {
       },
     },
   ],
-  venoms: [
+  toxicMaterials: [
     {
       id: 'ven-fire-ant-primary',
       organismId: 'org-solenopsis-invicta',
@@ -169,6 +170,7 @@ export const atlasSeedData: AtlasSeedData = {
         'A biologically active mixture with alkaloid-rich components and protein fractions relevant to allergic responses.',
       ecologicalRoleSummary:
         'Likely supports defense, prey subduing, and competitive ecological interactions.',
+      materialKind: 'venom',
       evidence: {
         id: 'ev-venom-mixture',
         confidence: 'moderate',
@@ -180,7 +182,7 @@ export const atlasSeedData: AtlasSeedData = {
   toxins: [
     {
       id: 'tox-solenopsin-a',
-      venomId: 'ven-fire-ant-primary',
+      toxicMaterialId: 'ven-fire-ant-primary',
       displayName: 'Solenopsin A',
       family: 'Piperidine alkaloids (solenopsins)',
       notes:
@@ -196,7 +198,7 @@ export const atlasSeedData: AtlasSeedData = {
   toxinComponents: [
     {
       id: 'comp-alkaloids',
-      venomId: 'ven-fire-ant-primary',
+      toxicMaterialId: 'ven-fire-ant-primary',
       componentCategory: 'Piperidine alkaloids',
       abundanceQualifier: 'not_quantified',
       summary: 'Qualitatively prominent class in many fire-ant venom descriptions.',
@@ -209,7 +211,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'comp-proteins',
-      venomId: 'ven-fire-ant-primary',
+      toxicMaterialId: 'ven-fire-ant-primary',
       componentCategory: 'Protein fractions/allergens',
       abundanceQualifier: 'not_quantified',
       summary: 'Associated with immune-mediated responses in sensitized individuals.',
@@ -273,7 +275,7 @@ export const atlasSeedData: AtlasSeedData = {
   mechanismSteps: [
     {
       id: 'mech-1-exposure',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       order: 1,
       level: 'exposure',
       title: 'Sting exposure',
@@ -287,7 +289,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'mech-2-tissue-deposition',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       order: 2,
       level: 'tissue',
       title: 'Local venom deposition',
@@ -301,7 +303,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'mech-3-immediate-pain',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       order: 3,
       level: 'clinical',
       title: 'Immediate pain and burning sensation',
@@ -315,7 +317,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'mech-4-inflammatory-local',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       order: 4,
       level: 'tissue',
       title: 'Local inflammatory response',
@@ -329,7 +331,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'mech-5-lesion-outcome',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       order: 5,
       level: 'clinical',
       title: 'Wheal/pustule development where applicable',
@@ -344,7 +346,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'mech-6-persistent-discomfort',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       order: 6,
       level: 'clinical',
       title: 'Persistent local discomfort in some cases',
@@ -423,7 +425,7 @@ export const atlasSeedData: AtlasSeedData = {
   physiologicalEffects: [
     {
       id: 'phys-local-skin',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       anatomicalSystemId: 'anat-skin',
       symptomId: 'sym-local-lesion',
       pathwayType: 'direct_venom',
@@ -439,7 +441,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'phys-local-nerves',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       anatomicalSystemId: 'anat-peripheral-nerves',
       symptomId: 'sym-pain',
       pathwayType: 'direct_venom',
@@ -455,7 +457,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'phys-inflammatory',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       anatomicalSystemId: 'anat-immune',
       symptomId: 'sym-local-lesion',
       pathwayType: 'inflammatory_immune',
@@ -471,7 +473,7 @@ export const atlasSeedData: AtlasSeedData = {
     },
     {
       id: 'phys-systemic-allergy',
-      toxinId: 'tox-solenopsin-a',
+      subject: { kind: 'organism_exposure', slug: 'solenopsis-invicta' },
       anatomicalSystemId: 'anat-respiratory',
       symptomId: 'sym-systemic-allergy',
       pathwayType: 'systemic_allergic',

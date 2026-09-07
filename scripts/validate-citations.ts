@@ -1,11 +1,11 @@
 import {
   getAllOrganisms,
+  getAllMechanisms,
+  getAllPhysiology,
   getAllToxins,
   getCitationById,
   getGeographyByOrganismSlug,
-  getMechanismByToxinSlug,
-  getPhysiologyByToxinSlug,
-  getVenomByOrganismSlug,
+  getToxicMaterialByOrganismSlug,
 } from '../apps/web/src/lib/content';
 
 const fail = (message: string): never => {
@@ -19,9 +19,9 @@ for (const organismBundle of getAllOrganisms()) {
   organismBundle.habitats.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
   organismBundle.ecologicalRoles.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
 
-  const venomBundle = getVenomByOrganismSlug(organismBundle.organism.slug ?? '');
-  venomBundle?.venom.evidence.citationIds.forEach((id) => allCitationIds.add(id));
-  venomBundle?.components.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
+  const toxicMaterialBundle = getToxicMaterialByOrganismSlug(organismBundle.organism.slug ?? '');
+  toxicMaterialBundle?.toxicMaterial.evidence.citationIds.forEach((id) => allCitationIds.add(id));
+  toxicMaterialBundle?.components.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
 
   const geographyBundle = getGeographyByOrganismSlug(organismBundle.organism.slug ?? '');
   geographyBundle?.ranges.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
@@ -32,13 +32,16 @@ for (const toxinBundle of getAllToxins()) {
   toxinBundle.molecularEntity.evidence.citationIds.forEach((id) => allCitationIds.add(id));
   toxinBundle.targets.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
 
-  const mechanism = getMechanismByToxinSlug(toxinBundle.toxin.slug ?? '');
-  mechanism?.steps.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
-
-  const physiology = getPhysiologyByToxinSlug(toxinBundle.toxin.slug ?? '');
-  physiology?.effects.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
-  physiology?.symptoms.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
 }
+
+getAllMechanisms().forEach((mechanism) => {
+  mechanism.steps.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
+});
+
+getAllPhysiology().forEach((physiology) => {
+  physiology.effects.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
+  physiology.symptoms.forEach((entry) => entry.evidence.citationIds.forEach((id) => allCitationIds.add(id)));
+});
 
 const missing: string[] = [];
 for (const citationId of allCitationIds) {

@@ -1,35 +1,56 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import EvidenceBadge from '../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../islands/ThemeSwitcher';
-import { getAllToxins, getMechanismByToxinSlug, getPhysiologyByToxinSlug } from '../lib/content';
+import {
+  getAllOrganisms,
+  getMechanismByOrganismExposureSlug,
+  getPhysiologyByOrganismExposureSlug,
+} from '../lib/content';
 
-const toxinEffects = getAllToxins().map((entry) => {
-  const slug = entry.toxin.slug ?? '';
+const exposureEffects = getAllOrganisms().flatMap((entry) => {
+  const slug = entry.organism.slug;
+  if (!slug) return [];
+
   return {
-    toxin: entry.toxin,
-    mechanism: getMechanismByToxinSlug(slug),
-    physiology: getPhysiologyByToxinSlug(slug),
+    organism: entry.organism,
+    mechanism: getMechanismByOrganismExposureSlug(slug),
+    physiology: getPhysiologyByOrganismExposureSlug(slug),
   };
-});
+}).filter((entry) => entry.mechanism || entry.physiology);
 ---
 
-<PageLayout title="Effects | Venom Atlas" description="Mechanism and physiology overview by toxin.">
+<PageLayout title="Effects | Venom Atlas" description="Observed effects grouped by organism exposure.">
   <ThemeSwitcher slot="theme" client:idle />
   <section class="panel">
     <h1>Effects Overview</h1>
-    <p class="muted">Ordered mechanism and physiology pathways grouped by toxin.</p>
+    <p class="muted">
+      Exposure evidence is grouped by organism. Effects are not attributed to an isolated compound unless the
+      underlying source supports that claim.
+    </p>
   </section>
 
-  {toxinEffects.map((entry) => (
+  {exposureEffects.map((entry) => (
     <section class="panel">
-      <h2>{entry.toxin.displayName}</h2>
-      <p><strong>Family:</strong> {entry.toxin.family ?? 'Not yet sourced'}</p>
-      <p>
-        <a href={`/toxins/${entry.toxin.slug}/mechanism`}>Mechanism page</a> |{' '}
-        <a href={`/toxins/${entry.toxin.slug}/physiology`}>Physiology page</a>
-      </p>
-      <p><strong>Mechanism steps:</strong> {entry.mechanism?.steps.length ?? 0}</p>
-      <p><strong>Physiology effects:</strong> {entry.physiology?.effects.length ?? 0}</p>
+      <h2>{entry.organism.commonName}</h2>
+      <p><em>{entry.organism.scientificName}</em></p>
+      <h3>Exposure progression</h3>
+      <ol>
+        {entry.mechanism?.steps.map((step) => (
+          <li>
+            <strong>{step.title}</strong>: {step.description} <EvidenceBadge evidence={step.evidence} />
+          </li>
+        ))}
+      </ol>
+      <h3>Reported physiological effects</h3>
+      <ul>
+        {entry.physiology?.effects.map((effect) => (
+          <li>
+            <strong>{effect.title}</strong>: {effect.description} <EvidenceBadge evidence={effect.evidence} />
+          </li>
+        ))}
+      </ul>
+      <a href={`/atlas/${entry.organism.slug}#section-human-physiology`}>Open the complete exposure dossier</a>
     </section>
   ))}
 </PageLayout>

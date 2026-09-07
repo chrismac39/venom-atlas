@@ -1,0 +1,23 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
+import { AtlasMonopageIsland } from '../../islands/AtlasMonopageIsland';
+import { buildAtlasMonopageOrganisms } from '../../lib/atlas-monopage-data';
+
+export const getStaticPaths = async () => {
+  return buildAtlasMonopageOrganisms().map((organism) => ({
+    params: { slug: organism.slug },
+    props: { organism },
+  }));
+};
+
+const { organism } = Astro.props;
+---
+
+<PageLayout
+  title={`${organism.scientificName} | Venom Atlas`}
+  description={`Explore ${organism.commonName} geography, venom chemistry, delivery mechanisms, and physiological effects.`}
+>
+  <ThemeSwitcher slot="theme" client:idle />
+  <AtlasMonopageIsland client:load organism={organism} />
+</PageLayout>

@@ -1,0 +1,1019 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/2433376",
+    "taxonKey": 2433376,
+    "generatedAt": "2026-09-07T03:12:54.588Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 6120267524,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.566916,
+          -33.834782
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "9e43300a-40e1-463d-8963-333bcbdaaaba",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6120267524"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131218064,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.925478,
+          -43.167172
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334565524",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131218064"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131622528,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.298889,
+          -42.894456
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335010428",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131622528"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133176563,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.1681,
+          -35.715359
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336917413",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133176563"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133328450,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.18579,
+          -41.43
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336516090",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133328450"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133329784,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.235548,
+          -36.911011
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337071446",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133329784"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264307,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.9632,
+          -36.7269
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "99a59bff-d8a8-46fe-b8b3-aec5b6e3a2be",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264307"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264308,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.8516,
+          -41.4669
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "ee37f8e7-6d52-445a-9829-9ecdbc26448a",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264308"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264316,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.5132,
+          -36.8098
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "df202d6e-3fdd-4240-8d23-30567292abd0",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264316"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264321,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.5781,
+          -17.2685
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "74d707cf-6303-4640-8aef-6a2bc3a53efc",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264321"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264325,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.9658,
+          -36.9796
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "8024a329-a29f-43f6-b4cc-87ad2b99f5bd",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264325"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264331,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.7299,
+          -42.6741
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "547e99fe-7a6b-4c2e-9cf6-648cedb0aa15",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264331"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264333,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.1131,
+          -36.2761
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "084ffe6e-29fb-4a2e-a756-3c791347e7d6",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264333"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264335,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.3203,
+          -41.2783
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "0282073d-d573-4de8-953d-2cf3bc0f735f",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264335"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264341,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9303,
+          -33.6133
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "451ec2aa-a14e-4116-9067-82110c06ef35",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264341"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264343,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.3608,
+          -37.7942
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "704220e3-659c-4842-9190-e042a5fc1eee",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264343"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264346,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.2571,
+          -35.3734
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "492f99d0-41bc-414c-8292-702081151618",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264346"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264350,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.9599,
+          -36.0798
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "1798b90c-dbbb-4f7a-a61c-d02581b53c97",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264350"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264357,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.4519,
+          -33.0832
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "d014efd3-1ea6-49d5-9b55-bba2418e7d17",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264357"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264363,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.6656,
+          -33.3742
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "ac08bb34-1c9c-4dda-b4c8-70c25507bd6a",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264363"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264366,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.8719,
+          -33.0939
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "b81358c2-9603-41d3-adaa-4daad048d77d",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264366"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264367,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0505,
+          -34.0982
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "01d48680-f92a-4d42-9d51-0d372d6523b7",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264367"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264368,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.7475,
+          -27.5654
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "b7ac1cc3-5361-4c39-8622-fa53cd156ab2",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264368"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264383,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.6205,
+          -33.0586
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "62337d6b-782b-4184-96cd-e0d1d7e5deea",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264383"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264385,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.9235,
+          -33.9753
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "7a0b6b8c-57e3-4f1c-81ed-3838b0e2ea08",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264385"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264389,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.9217,
+          -27.6267
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "d73d4289-626e-4a99-952a-549288abb0e5",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264389"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264394,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.4362,
+          -36.9225
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "7ed5ab8d-93f9-4eec-8740-e7acdfde826e",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264394"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264397,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.5043,
+          -17.2382
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "30881691-d2b6-4fe7-8d18-bf6b264c5b59",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264397"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264401,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.2371,
+          -35.3509
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "30c7f8ad-9511-4ccf-952f-ec911007bbda",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264401"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264407,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.2517,
+          -35.5208
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "e819ab08-95ef-4897-9a16-1cc7f2f417bc",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264407"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264409,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.2486,
+          -38.5839
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "aa97d92c-150e-47e1-a4f3-0e5b417ea724",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264409"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6475266567,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.06,
+          -37.3412
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "3b8f1f67-004d-4eab-b833-7ea21d03fb2a",
+        "basisOfRecord": "OCCURRENCE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6475266567"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6475853909,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.4245,
+          -36.7525
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "0bf9f0c9-924e-4bd1-9775-c71d111f386f",
+        "basisOfRecord": "OCCURRENCE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6475853909"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133443572,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.302805,
+          -41.227353
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336921984",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133443572"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264302,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.1433,
+          -37.7188
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "c191a6cf-f00e-4f57-8fef-e45be2261368",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264302"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264323,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.8198,
+          -41.1709
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "48c69f26-3486-4142-b7de-9a204a9b1466",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264323"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264329,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.4055,
+          -36.7924
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "86532aa3-9378-4ea3-8132-82b24ef72d86",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264329"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264352,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.0491,
+          -42.7681
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "28e1a12a-7c59-4b86-bc8e-3d76c54ae0ad",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264352"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264364,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.4869,
+          -33.4621
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "bdaf3777-6ab8-4f7a-9bdc-426231ecea25",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264364"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264375,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.4013,
+          -37.7559
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "d99fdb9d-f203-413b-97b6-42bacc0816c0",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264375"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6177264396,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.2028,
+          -37.8019
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "5fa81862-e19b-4823-bc93-eff9b76064cc",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6177264396"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393461321,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.8694,
+          -17.3427
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "84989bfa-b280-4fc6-a91c-8f7d272a6c67",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393461321"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393462304,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.1338,
+          -37.0307
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "f8276b4a-ef21-4617-988e-eacd0e00021b",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393462304"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393462340,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.3435,
+          -28.8707
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "164065e7-3e4f-47f3-b92a-cc5bffddf610",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393462340"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393463313,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.5807,
+          -38.6684
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "ab11a37c-ec40-4044-b3d2-c4ab8bf0e636",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393463313"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393463331,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.3778,
+          -36.4438
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "937307ec-eb81-4b2c-b491-678e42fe92bb",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393463331"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6185306360,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.4406,
+          -32.0323
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/345064585",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6185306360"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6213639472,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.601923,
+          -31.646448
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "7da0c826-e1ce-41ab-ab17-f2a7e6f93c78",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6213639472"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6317937760,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.230877,
+          -34.645992
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "9829a1bb-de93-4768-83e4-5a15d38af94c",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6317937760"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393461322,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.9095,
+          -33.8272
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "c2d49476-6c0f-4210-b5c4-c04bf7b172aa",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393461322"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393461323,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.1931,
+          -27.9352
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "5926c181-0426-4fa1-9e06-cf0a6c757b5c",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393461323"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393462311,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.3411,
+          -38.1691
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "dde66d4d-832e-4043-af73-70d4a644526c",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393462311"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6393462316,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.9175,
+          -34.5212
+        ]
+      },
+      "properties": {
+        "scientificName": "Ornithorhynchus anatinus (Shaw, 1799)",
+        "datasetTitle": null,
+        "occurrenceID": "c22e6d77-93f5-40de-9b5e-65b5fda79749",
+        "basisOfRecord": "OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6393462316"
+      }
+    }
+  ]
+}

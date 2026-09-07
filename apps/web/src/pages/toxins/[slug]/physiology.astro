@@ -41,9 +41,9 @@ const localHighlights: AnatomyHighlight[] = [
 ];
 
 export const getStaticPaths = async () => {
-  return getAllToxins().map((entry) => ({
-    params: { slug: entry.toxin.slug },
-  }));
+  return getAllToxins()
+    .filter((entry) => getPhysiologyByToxinSlug(entry.toxin.slug ?? '') !== undefined)
+    .map((entry) => ({ params: { slug: entry.toxin.slug } }));
 };
 
 const { slug } = Astro.params;
@@ -51,7 +51,7 @@ const toxinBundle = slug ? getToxinBySlug(slug) : undefined;
 const physiology = slug ? getPhysiologyByToxinSlug(slug) : undefined;
 const mechanism = slug ? getMechanismByToxinSlug(slug) : undefined;
 const organismSlug = slug ? getOrganismSlugByToxinSlug(slug) : undefined;
-const atlasBaseHref = organismSlug ? `/?organism=${organismSlug}` : '/';
+const atlasBaseHref = organismSlug ? `/atlas/${organismSlug}` : '/';
 
 if (!toxinBundle || !physiology) {
   throw new Error(`Missing toxin physiology for slug: ${slug}`);
