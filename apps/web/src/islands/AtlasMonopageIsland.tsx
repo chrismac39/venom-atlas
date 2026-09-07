@@ -326,7 +326,11 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
 
             {section.kind === 'geography' ? (
               <>
-                <RangeMapPanel ranges={selected.geographyRanges} speciesId={selected.slug} />
+                <RangeMapPanel
+                  ranges={selected.geographyRanges}
+                  speciesId={selected.slug}
+                  geographyKind={selected.geographyKind}
+                />
                 {selected.geographyVisualizations.map((visualization) => (
                   <ExternalMapEmbed key={visualization.id} visualization={visualization} />
                 ))}

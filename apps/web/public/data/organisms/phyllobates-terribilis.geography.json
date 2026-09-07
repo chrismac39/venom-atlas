@@ -1,5 +1,6 @@
 {
   "organismSlug": "phyllobates-terribilis",
+  "geographyKind": "terrestrial",
   "ranges": [
     {
       "id": "geo-phyllobates-confirmed-occurrences",

@@ -93,6 +93,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
             ? { geometryFeatureCount: range.geometryFeatureCount }
             : {}),
         })) ?? [];
+      const geographyKind = geography?.geographyKind ?? 'terrestrial';
     const hasPublishedMedia =
       entry.externalProfile?.imagePaths.some((imagePath) => publishedMediaPaths.has(imagePath)) ?? false;
 
@@ -125,6 +126,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
         habitats: entry.habitats,
         ecologicalRoles: entry.ecologicalRoles,
         geographyRanges,
+          geographyKind,
         toxicMaterial: toxicMaterialBundle
           ? {
               slug: toxicMaterialSlug as string,

@@ -34,6 +34,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 const assetPath = (path: string): string => `${baseUrl}${path.startsWith('/') ? path : `/${path}`}`;
 
 const colorForLayer = (layerType: string): string => {
+  if (layerType === 'marine_evidence_cell') {
+    return '#4d9fca';
+  }
   if (layerType === 'native' || layerType === 'native_range') {
     return '#54b783';
   }
@@ -78,12 +81,19 @@ const styleForNationalBorders = new Style({
   stroke: new Stroke({ color: '#d5dfd9cc', width: 1.6 }),
 });
 
+const styleForMarineLandmasses = new Style({
+  fill: new Fill({ color: '#71827d44' }),
+  stroke: new Stroke({ color: '#71827d88', width: 0.7 }),
+});
+
 export const OpenLayersGeographyMap = ({
   ranges,
   speciesId,
+  geographyKind = 'terrestrial',
 }: {
   ranges: RangeLayer[];
   speciesId?: string;
+  geographyKind?: 'terrestrial' | 'marine';
 }) => {
   const mapElementRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<Map | null>(null);
@@ -147,16 +157,29 @@ export const OpenLayersGeographyMap = ({
         const extent: Extent = createEmpty();
         let registryRecordCount = 0;
         let mappedRangeEvidenceCount = 0;
-        if (speciesId) {
-          const [registryResponse, boundaryResponse] = await Promise.all([
-            fetch(assetPath('/data/geography/distribution-registry.json')),
-            fetch(assetPath('/geography/admin1/national-boundaries.geojson')),
-          ]);
+        const boundaryResponse = await fetch(assetPath('/geography/admin1/national-boundaries.geojson'));
+        if (!boundaryResponse.ok) {
+          throw new Error('The local global administrative boundary layer could not be loaded.');
+        }
+        const overviewFeatures = new GeoJSON().readFeatures(await boundaryResponse.json(), {
+          dataProjection: 'EPSG:4326',
+          featureProjection: 'EPSG:3857',
+        }).filter((feature) => feature.get('shapeGroup') !== 'ATA');
+
+        if (geographyKind === 'marine') {
+          const landmassLayer = new VectorLayer({
+            source: new VectorSource({ features: overviewFeatures }),
+            style: styleForMarineLandmasses,
+            properties: { label: 'landmasses' },
+          });
+          landmassLayer.setZIndex(20);
+          map.addLayer(landmassLayer);
+        }
+
+        if (speciesId && geographyKind === 'terrestrial') {
+          const registryResponse = await fetch(assetPath('/data/geography/distribution-registry.json'));
           if (!registryResponse.ok) {
             throw new Error('The local distribution registry could not be loaded.');
-          }
-          if (!boundaryResponse.ok) {
-            throw new Error('The local global administrative boundary layer could not be loaded.');
           }
           
           const registry = (await registryResponse.json()) as { records: DistributionRecord[] };
@@ -166,10 +189,6 @@ export const OpenLayersGeographyMap = ({
           const statusesByRegion = new globalThis.Map<string, DistributionRecord['distributionStatus']>();
           records.forEach((record) => statusesByRegion.set(record.regionId, record.distributionStatus));
           const featuresByStatus = new globalThis.Map<string, Feature[]>();
-          const overviewFeatures = new GeoJSON().readFeatures(await boundaryResponse.json(), {
-            dataProjection: 'EPSG:4326',
-            featureProjection: 'EPSG:3857',
-          }).filter((feature) => feature.get('shapeGroup') !== 'ATA');
           const allRegionsSource = new VectorSource({ features: overviewFeatures });
           const allRegionsLayer = new VectorLayer({
             source: allRegionsSource,
@@ -256,6 +275,7 @@ export const OpenLayersGeographyMap = ({
             style: styleForLayer(range.layerType),
             properties: { label: range.layerType },
           });
+          layer.setZIndex(range.layerType === 'marine_evidence_cell' ? 10 : 30);
           rangeLayersRef.current[range.id] = layer;
           map.addLayer(layer);
           if (source.getFeatures().length > 0) {
@@ -301,7 +321,7 @@ export const OpenLayersGeographyMap = ({
       map.dispose();
       mapRef.current = null;
     };
-  }, [ranges, speciesId]);
+  }, [ranges, speciesId, geographyKind]);
 
   return (
     <div className="openlayers-geography-map" aria-label="Interactive geographic distribution map">
@@ -315,6 +335,7 @@ export const OpenLayersGeographyMap = ({
         <p className="openlayers-geography-map-zoom-hint">Click the map to enable scroll zoom.</p>
       ) : null}
       <div className="openlayers-geography-map-controls" aria-label="Geography layers">
+        {geographyKind === 'terrestrial' && <>
         <label>
           <input
             type="checkbox"
@@ -333,7 +354,8 @@ export const OpenLayersGeographyMap = ({
           <span className="geography-layer-swatch" style={{ backgroundColor: '#d5dfd9' }} />
           national borders
         </label>
-        {adminLayerTypes.map((layerType) => (
+        </>}
+        {geographyKind === 'terrestrial' && adminLayerTypes.map((layerType) => (
           <label key={`admin-${layerType}`}>
             <input
               type="checkbox"

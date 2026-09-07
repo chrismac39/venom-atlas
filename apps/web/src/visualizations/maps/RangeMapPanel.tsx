@@ -8,8 +8,11 @@ interface RangeLayer {
 }
 
 import { OpenLayersGeographyMap } from './OpenLayersGeographyMap';
-
-export const RangeMapPanel = ({ ranges, speciesId }: { ranges: RangeLayer[]; speciesId?: string }) => {
+export const RangeMapPanel = ({
+  ranges,
+  speciesId,
+  geographyKind = 'terrestrial',
+}: { ranges: RangeLayer[]; speciesId?: string; geographyKind?: 'terrestrial' | 'marine' }) => {
   const mappedRanges = ranges.filter((range) => range.geometryAssetId);
 
   return (
@@ -18,11 +21,12 @@ export const RangeMapPanel = ({ ranges, speciesId }: { ranges: RangeLayer[]; spe
       {mappedRanges.length > 0 || speciesId ? (
         <div className="range-map-stack">
           <figure className="range-map-figure">
-              <OpenLayersGeographyMap ranges={mappedRanges} speciesId={speciesId} />
+              <OpenLayersGeographyMap ranges={mappedRanges} speciesId={speciesId} geographyKind={geographyKind} />
               <figcaption>
                 <strong>Interactive documented geography.</strong>{' '}
-                Toggle native, introduced, uncertain, and confirmed occurrence layers. Observations indicate
-                recorded presence, not a complete range boundary or current occupancy.
+                {geographyKind === 'marine'
+                  ? 'GBIF observations are shown as dots; shaded ISEA3H cells represent only cells supported by evidence.'
+                  : 'Toggle native, introduced, uncertain, and confirmed occurrence layers. Observations indicate recorded presence, not a complete range boundary or current occupancy.'}
               </figcaption>
           </figure>
         </div>

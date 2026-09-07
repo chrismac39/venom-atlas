@@ -11,6 +11,7 @@
     "preview": "pnpm --filter @venom-atlas/web preview",
     "validate": "tsx scripts/validate-content.ts && tsx scripts/validate-citations.ts && tsx scripts/validate-media.ts && tsx scripts/validate-structures.ts",
     "data:geography": "tsx scripts/fetch-gbif-occurrences.ts && tsx scripts/generate-occurrence-maps.ts && tsx scripts/build-geography-registry.ts",
+    "data:marine-cells": "tsx scripts/generate-marine-evidence-cells.ts",
     "build:data": "tsx scripts/generate-structure-svgs.ts && tsx scripts/generate-occurrence-maps.ts && tsx scripts/build-geography-registry.ts && tsx scripts/build-national-boundaries.ts && tsx scripts/build-static-json.ts && tsx scripts/build-search-index.ts && tsx scripts/build-sqlite.ts",
     "build": "pnpm validate && pnpm build:data && pnpm --filter @venom-atlas/web build && tsx scripts/prune-unverified-media.ts",
     "lint": "pnpm -r lint",
@@ -36,6 +37,7 @@
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.37.0",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "webdggrid": "1.9.0"
   }
 }

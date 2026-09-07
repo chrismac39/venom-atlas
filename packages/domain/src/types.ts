@@ -201,6 +201,7 @@ export type GeographicLayerType =
   | 'native_range'
   | 'introduced_range'
   | 'confirmed_occurrence'
+  | 'marine_evidence_cell'
   | 'habitat_context'
   | 'uncertain_range';
 

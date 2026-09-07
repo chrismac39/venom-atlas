@@ -1,5 +1,6 @@
 {
   "organismSlug": "oxyuranus-microlepidotus",
+  "geographyKind": "terrestrial",
   "ranges": [
     {
       "id": "geo-oxyuranus-confirmed-occurrences",

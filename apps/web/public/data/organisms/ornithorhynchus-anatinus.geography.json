@@ -1,5 +1,6 @@
 {
   "organismSlug": "ornithorhynchus-anatinus",
+  "geographyKind": "terrestrial",
   "ranges": [
     {
       "id": "geo-ornithorhynchus-confirmed-occurrences",

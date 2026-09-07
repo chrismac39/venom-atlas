@@ -45,6 +45,7 @@ export interface AtlasOrganismData {
     geometryAssetId?: string;
     geometryFeatureCount?: number;
   }>;
+  geographyKind: 'terrestrial' | 'marine';
   toxicMaterial: {
     slug: string;
     name: string;

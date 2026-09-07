@@ -254,6 +254,7 @@ const geographyRecordSchema = z.object({
   id: z.string(),
   slug: z.string(),
   organismSlug: z.string(),
+  geographyKind: z.enum(['terrestrial', 'marine']).default('terrestrial'),
   distribution: z
     .object({
       tier: z.enum(['occurrence_intersection', 'curated_source']).optional(),
@@ -277,6 +278,7 @@ const geographyRecordSchema = z.object({
         'native_range',
         'introduced_range',
         'confirmed_occurrence',
+        'marine_evidence_cell',
         'habitat_context',
         'uncertain_range',
       ]),
@@ -443,6 +445,7 @@ export interface PhysiologyBundle {
 
 export interface GeographyBundle {
   organismSlug: string;
+  geographyKind: 'terrestrial' | 'marine';
   ranges: GeographicRange[];
 }
 
@@ -657,6 +660,7 @@ const loadGeographyBundles = (): GeographyBundle[] => {
 
     return {
       organismSlug: record.organismSlug,
+      geographyKind: record.geographyKind,
       ranges: record.ranges.map((entry) => {
         const geometryFeatureCount = entry.geometryAssetPath
           ? (() => {

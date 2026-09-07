@@ -1,6 +1,7 @@
 ﻿id: geo-synanceia-verrucosa
 slug: synanceia-verrucosa
 organismSlug: synanceia-verrucosa
+geographyKind: marine
 ranges:
   - id: geo-synanceia-confirmed-occurrences
     layerType: confirmed_occurrence
@@ -8,6 +9,16 @@ ranges:
     summary: Reusable-license GBIF occurrence records, grid-deduplicated for display. Marine observations do not define the complete distribution.
     evidence:
       id: ev-synanceia-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-synanceia-verrucosa
+  - id: geo-synanceia-isea3h-evidence
+    layerType: marine_evidence_cell
+    geometryAssetPath: /geography/synanceia-verrucosa-isea3h-evidence.geojson
+    summary: OGC ISEA3H cells containing reusable-license GBIF observations. Cells indicate evidence aggregation, not a complete range boundary.
+    evidence:
+      id: ev-synanceia-isea3h-evidence
       confidence: moderate
       evidenceType: database
       citationIds:

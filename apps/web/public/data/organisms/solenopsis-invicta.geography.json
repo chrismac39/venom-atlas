@@ -1,12 +1,28 @@
 {
   "organismSlug": "solenopsis-invicta",
+  "geographyKind": "terrestrial",
   "ranges": [
+    {
+      "id": "geo-solenopsis-native-range",
+      "organismId": "org-solenopsis-invicta",
+      "layerType": "native_range",
+      "summary": "Source-described native distribution spans Argentina, Bolivia, Brazil, Paraguay, and Uruguay. The map highlights only native-country ADM1 units with reusable-license GBIF point evidence; unobserved ADM1 units are intentionally not filled as if they were confirmed range.",
+      "evidence": {
+        "id": "ev-solenopsis-invicta-native-range",
+        "confidence": "high",
+        "evidenceType": "review",
+        "notes": "The cited source establishes the country-level native context. The registry narrows that context to ADM1 units with reusable-license GBIF point evidence; GBIF points remain visible as a separate observational layer.",
+        "citationIds": [
+          "cit-fire-ant-review-2007"
+        ]
+      }
+    },
     {
       "id": "geo-solenopsis-confirmed-occurrences",
       "organismId": "org-solenopsis-invicta",
       "layerType": "confirmed_occurrence",
       "geometryAssetId": "/geography/solenopsis-invicta-occurrences.geojson",
-      "geometryFeatureCount": 35,
+      "geometryFeatureCount": 151,
       "summary": "Reusable-license GBIF occurrence records, grid-deduplicated for display. These points do not define the complete native or introduced range.",
       "evidence": {
         "id": "ev-solenopsis-gbif-occurrences",
