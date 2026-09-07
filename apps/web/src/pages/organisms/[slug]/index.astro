@@ -3,6 +3,7 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 import { appPath } from '../../../lib/paths';
 import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
+import { toxicStrategyLabel } from '../../../lib/organism-labels';
 import {
   getAllOrganisms,
   getAllToxins,
@@ -44,7 +45,7 @@ const shownImages = (bundle.externalProfile?.imagePaths ?? []).filter((imagePath
   <section class="panel">
     <h1>{bundle.organism.scientificName} ({bundle.organism.commonName})</h1>
     <EvidenceBadge evidence={bundle.organism.evidence} />
-    <p><strong>Toxic strategy:</strong> {bundle.organism.toxicStrategy}</p>
+    <p><strong>Toxic strategy:</strong> {toxicStrategyLabel(bundle.organism.toxicStrategy)}</p>
     <p>{bundle.organism.overview}</p>
   </section>
 

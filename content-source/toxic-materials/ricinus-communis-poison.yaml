@@ -1,0 +1,30 @@
+﻿id: mat-ricinus-communis-poison
+slug: ricinus-communis-poison
+organismSlug: ricinus-communis
+biologicalMaterial:
+  id: bio-ricinus-communis-poison
+  kind: poison
+  name: Castor bean toxic material
+  description: Plant material, especially seeds, that can contain the toxic protein ricin.
+name: Ricinus communis poison
+description: >-
+  A plant-associated toxic material linked to ricin in castor bean seeds. This record avoids claims
+  about dose, lethality, or exposure outcome beyond the cited toxicological context.
+ecologicalRoleSummary: The ecological role of ricin in the plant is not resolved by this dossier.
+components:
+  - id: comp-ricinus-ricin
+    componentCategory: Ribosome-inactivating proteins
+    abundanceQualifier: present
+    summary: Ricin-associated protein toxicity is linked to castor bean seed exposure.
+    evidence:
+      id: ev-ricinus-ricin
+      confidence: moderate
+      evidenceType: clinical
+      citationIds:
+        - cit-cdc-ricin
+evidence:
+  id: ev-ricinus-poison
+  confidence: moderate
+  evidenceType: clinical
+  citationIds:
+    - cit-cdc-ricin

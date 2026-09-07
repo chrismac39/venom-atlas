@@ -1,0 +1,82 @@
+{
+  "organism": {
+    "id": "org-datura-stramonium",
+    "slug": "datura-stramonium",
+    "scientificName": "Datura stramonium",
+    "commonName": "Jimsonweed",
+    "toxicStrategy": "poisonous",
+    "overview": "Datura stramonium is a poisonous plant containing tropane alkaloids that can cause anticholinergic toxicity after ingestion. The plant does not inject venom.",
+    "naturalHistory": [
+      "It is an annual herb found in disturbed soils and agricultural margins.",
+      "Leaves, seeds, and other tissues contain biologically active alkaloids.",
+      "Seed capsules support dispersal into disturbed habitats."
+    ],
+    "evidence": {
+      "id": "ev-datura-profile",
+      "confidence": "moderate",
+      "evidenceType": "database",
+      "citationIds": [
+        "cit-kew-datura-stramonium"
+      ]
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "className": "Magnoliopsida",
+    "order": "Solanales",
+    "family": "Solanaceae",
+    "genus": "Datura",
+    "species": "Datura stramonium"
+  },
+  "deliveryMechanism": {
+    "route": "ingestion",
+    "summary": "Exposure occurs when plant tissue or seeds are ingested.",
+    "sequence": [
+      "Plant tissue or seeds are collected.",
+      "Toxic material is ingested.",
+      "Tropane alkaloids are absorbed and affect muscarinic signaling."
+    ]
+  },
+  "habitats": [
+    {
+      "id": "hab-datura-disturbed-ground",
+      "organismId": "org-datura-stramonium",
+      "name": "Disturbed ground and field margins",
+      "summary": "Often occurs in disturbed soils, waste ground, and agricultural margins.",
+      "evidence": {
+        "id": "ev-datura-profile",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-kew-datura-stramonium"
+        ]
+      }
+    }
+  ],
+  "ecologicalRoles": [
+    {
+      "id": "eco-datura-seed-dispersal",
+      "organismId": "org-datura-stramonium",
+      "role": "Ruderal plant persistence",
+      "summary": "Rapid growth and seed production support persistence in disturbed habitats.",
+      "evidence": {
+        "id": "ev-datura-profile",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-kew-datura-stramonium"
+        ]
+      }
+    }
+  ],
+  "geographyVisualizations": [],
+  "externalProfile": {
+    "sourceLabel": "Royal Botanic Gardens, Kew",
+    "sourceUrl": "https://powo.science.kew.org/",
+    "summaryPoints": [
+      "Datura stramonium is a plant species with a documented botanical and toxicological profile."
+    ],
+    "imagePaths": []
+  }
+}

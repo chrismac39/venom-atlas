@@ -1,0 +1,91 @@
+﻿citations:
+  - id: cit-cdc-amanita-phalloides
+    slug: cdc-amanita-phalloides
+    title: Mushroom Poisoning
+    authors: []
+    publisher: Centers for Disease Control and Prevention
+    publicationYear: null
+    url: https://www.cdc.gov/healthy-water/hazards/mushroom-poisoning/index.html
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: government
+  - id: cit-kew-datura-stramonium
+    slug: kew-datura-stramonium
+    title: Datura stramonium
+    authors: []
+    publisher: Royal Botanic Gardens, Kew
+    publicationYear: null
+    url: https://powo.science.kew.org/
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: database
+  - id: cit-cdc-ricin
+    slug: cdc-ricin
+    title: Ricin
+    authors: []
+    publisher: Centers for Disease Control and Prevention
+    publicationYear: null
+    url: https://emergency.cdc.gov/agent/ricin/facts.asp
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: government
+  - id: cit-australian-museum-redback
+    slug: australian-museum-redback-spider
+    title: Redback Spider
+    authors: []
+    publisher: Australian Museum
+    publicationYear: null
+    url: https://australian.museum/learn/animals/spiders/redback-spider/
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: museum
+  - id: cit-who-scorpionism
+    slug: who-scorpionism
+    title: Scorpion envenoming
+    authors: []
+    publisher: World Health Organization
+    publicationYear: null
+    url: https://www.who.int/news-room/fact-sheets/detail/scorpion-envenoming
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: government
+  - id: cit-australian-museum-cone-snail
+    slug: australian-museum-cone-snails
+    title: Cone Snails
+    authors: []
+    publisher: Australian Museum
+    publicationYear: null
+    url: https://australian.museum/learn/animals/molluscs/cone-shells/
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: museum
+  - id: cit-australian-museum-box-jellyfish
+    slug: australian-museum-box-jellyfish
+    title: Box Jellyfish
+    authors: []
+    publisher: Australian Museum
+    publicationYear: null
+    url: https://australian.museum/learn/animals/cnidarians/box-jellyfish/
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: museum
+  - id: cit-marine-species-polychaete
+    slug: marine-species-polychaete
+    title: Eunice aphroditois
+    authors: []
+    publisher: WoRMS Editorial Board
+    publicationYear: null
+    url: https://www.marinespecies.org/
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: database
+  - id: cit-arizona-sonoran-heloderma
+    slug: arizona-sonoran-desert-museum-gila-monster
+    title: Gila Monster
+    authors: []
+    publisher: Arizona-Sonora Desert Museum
+    publicationYear: null
+    url: https://www.desertmuseum.org/books/nhsd_gila.php
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: museum

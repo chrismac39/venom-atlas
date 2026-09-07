@@ -1,0 +1,30 @@
+﻿id: mat-androctonus-australis-venom
+slug: androctonus-australis-venom
+organismSlug: androctonus-australis
+biologicalMaterial:
+  id: bio-androctonus-australis-venom
+  kind: venom
+  name: North African fat-tailed scorpion venom
+  description: Venom injected through the stinger during a scorpion sting.
+name: Androctonus australis venom
+description: >-
+  A scorpion venom containing neuroactive components. Clinical effects depend on exposure and
+  individual susceptibility; this record does not claim a complete composition.
+ecologicalRoleSummary: Supports prey immobilization and defense.
+components:
+  - id: comp-androctonus-neurotoxins
+    componentCategory: Neurotoxic peptide components
+    abundanceQualifier: present
+    summary: Broad venom component class associated with medically important scorpion envenoming.
+    evidence:
+      id: ev-androctonus-venom
+      confidence: moderate
+      evidenceType: clinical
+      citationIds:
+        - cit-who-scorpionism
+evidence:
+  id: ev-androctonus-venom
+  confidence: moderate
+  evidenceType: clinical
+  citationIds:
+    - cit-who-scorpionism

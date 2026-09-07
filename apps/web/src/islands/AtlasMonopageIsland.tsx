@@ -4,6 +4,7 @@ import { CitationList } from '../components/CitationList';
 import { EvidenceBadge } from '../components/EvidenceBadge';
 import { appPath } from '../lib/paths';
 import type { AtlasOrganismData } from '../features/atlas/atlas-types';
+import { exposureRouteLabel, toxicStrategyLabel } from '../lib/organism-labels';
 import { DeferredContent } from '../features/atlas/components/DeferredContent';
 import { ExternalMapEmbed } from '../features/atlas/components/ExternalMapEmbed';
 import { VisualizationErrorBoundary } from '../features/atlas/components/VisualizationErrorBoundary';
@@ -230,7 +231,7 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
             <h1><i>{selected.scientificName}</i></h1>
             <p className="atlas-organism-common-name">{selected.commonName}</p>
             <p className="atlas-organism-strategy">
-              {selected.taxonomy.className ?? 'Unclassified'} · {selected.toxicStrategy}
+              {selected.taxonomy.className ?? 'Unclassified'} · {toxicStrategyLabel(selected.toxicStrategy)}
             </p>
             <p className="atlas-organism-lede">{selected.overview}</p>
           </div>
@@ -527,7 +528,7 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
             {section.kind === 'physiology' ? (
               <>
                 <section className="panel atlas-clinical-intro">
-                  <p className="atlas-section-eyebrow">Observed {selected.deliveryMechanism.route} exposure</p>
+                  <p className="atlas-section-eyebrow">Observed {exposureRouteLabel(selected.deliveryMechanism.route)} exposure</p>
                   <h3>Effects on the human body</h3>
                   <p>
                     These findings describe the complete organism exposure. They are not attributed to an

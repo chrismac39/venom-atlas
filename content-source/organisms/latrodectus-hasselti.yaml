@@ -1,0 +1,48 @@
+﻿id: org-latrodectus-hasselti
+slug: latrodectus-hasselti
+scientificName: Latrodectus hasselti
+commonName: Redback spider
+toxicStrategy: venomous
+overview: >-
+  Latrodectus hasselti is a venomous spider that uses a web-associated bite to subdue prey and
+  defend itself. Its venom contains neuroactive components associated with latrodectism.
+naturalHistory:
+  - It builds irregular webs in sheltered locations.
+  - The species is associated with human-modified habitats as well as natural environments.
+  - Females are substantially larger than males.
+taxonomy:
+  kingdom: Animalia
+  phylum: Arthropoda
+  className: Arachnida
+  order: Araneae
+  family: Theridiidae
+  genus: Latrodectus
+  species: Latrodectus hasselti
+deliveryMechanism:
+  route: bite
+  summary: Venom is delivered through the spider's fangs during a bite.
+  sequence:
+    - Spider contacts prey or a defensive target.
+    - Fangs penetrate tissue.
+    - Venom is injected into the bite site.
+habitats:
+  - id: hab-redback-sheltered-structures
+    name: Sheltered structures and dry habitat
+    summary: Webs are often built in sheltered spaces, including structures and ground debris.
+ecologicalRoles:
+  - id: eco-redback-predation
+    role: Invertebrate predation
+    summary: Venom supports prey capture and defense.
+geographyVisualizations: []
+externalProfile:
+  sourceLabel: Australian Museum
+  sourceUrl: https://australian.museum/learn/animals/spiders/redback-spider/
+  summaryPoints:
+    - Redback spiders use venomous bites in predation and defense.
+  imagePaths: []
+evidence:
+  id: ev-redback-profile
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-australian-museum-redback

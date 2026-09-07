@@ -13,7 +13,7 @@ export interface AtlasOrganismData {
   slug: string;
   scientificName: string;
   commonName: string;
-  toxicStrategy: 'venomous' | 'poisonous' | 'both';
+  toxicStrategy: 'venomous' | 'poisonous' | 'both' | 'toxin_producing';
   overview: string;
   taxonomy: {
     kingdom?: string;

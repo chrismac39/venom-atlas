@@ -1,0 +1,48 @@
+{
+  "subject": {
+    "kind": "organism_exposure",
+    "slug": "clostridium-botulinum"
+  },
+  "steps": [
+    {
+      "id": "mech-botulinum-production",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "clostridium-botulinum"
+      },
+      "order": 1,
+      "level": "exposure",
+      "title": "Toxin production in a suitable anaerobic context",
+      "description": "Under suitable low-oxygen conditions, some Clostridium botulinum strains can produce botulinum neurotoxin.",
+      "evidence": {
+        "id": "ev-botulinum-production",
+        "confidence": "high",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-cdc-botulism",
+          "cit-ncbi-clostridium-botulinum"
+        ]
+      }
+    },
+    {
+      "id": "mech-botulinum-neurotoxin-exposure",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "clostridium-botulinum"
+      },
+      "order": 2,
+      "level": "clinical",
+      "title": "Neurotoxin exposure",
+      "description": "Foodborne, wound-associated, or intestinal exposure can allow botulinum neurotoxin to affect the nervous system.",
+      "evidence": {
+        "id": "ev-botulinum-exposure",
+        "confidence": "high",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-cdc-botulism",
+          "cit-who-botulism"
+        ]
+      }
+    }
+  ]
+}

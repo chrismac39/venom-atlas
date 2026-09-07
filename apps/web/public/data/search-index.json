@@ -1,5 +1,290 @@
 [
   {
+    "id": "org-amanita-phalloides",
+    "entityType": "organism",
+    "title": "Death cap mushroom",
+    "scientificName": "Amanita phalloides",
+    "aliases": [
+      "Amanita phalloides",
+      "Death cap mushroom"
+    ],
+    "summary": "Amanita phalloides is a poisonous mushroom whose amatoxins can cause severe liver injury after ingestion. Toxicity is associated with consuming the mushroom, not with active venom delivery.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/amanita-phalloides"
+  },
+  {
+    "id": "mat-amanita-phalloides-poison",
+    "entityType": "toxic_material",
+    "title": "Amanita phalloides poison",
+    "aliases": [
+      "Amanita phalloides poison"
+    ],
+    "summary": "A poisonous mushroom material associated with amatoxins and severe organ toxicity after ingestion. This record does not claim that every mushroom tissue sample has identical toxin concentration.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/amanita-phalloides/toxic-material"
+  },
+  {
+    "id": "org-androctonus-australis",
+    "entityType": "organism",
+    "title": "North African fat-tailed scorpion",
+    "scientificName": "Androctonus australis",
+    "aliases": [
+      "Androctonus australis",
+      "North African fat-tailed scorpion"
+    ],
+    "summary": "Androctonus australis is a medically important scorpion that delivers venom through its sting. Human risk varies with species, dose, route, and individual susceptibility.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/androctonus-australis"
+  },
+  {
+    "id": "mat-androctonus-australis-venom",
+    "entityType": "toxic_material",
+    "title": "Androctonus australis venom",
+    "aliases": [
+      "Androctonus australis venom"
+    ],
+    "summary": "A scorpion venom containing neuroactive components. Clinical effects depend on exposure and individual susceptibility; this record does not claim a complete composition.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/androctonus-australis/toxic-material"
+  },
+  {
+    "id": "org-chironex-fleckeri",
+    "entityType": "organism",
+    "title": "Australian box jellyfish",
+    "scientificName": "Chironex fleckeri",
+    "aliases": [
+      "Chironex fleckeri",
+      "Australian box jellyfish"
+    ],
+    "summary": "Chironex fleckeri is a box jellyfish whose tentacles contain nematocysts that discharge venom on contact. It is a cnidarian, not a biting or stinging animal with a centralized stinger.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/chironex-fleckeri"
+  },
+  {
+    "id": "mat-chironex-fleckeri-venom",
+    "entityType": "toxic_material",
+    "title": "Chironex fleckeri venom",
+    "aliases": [
+      "Chironex fleckeri venom"
+    ],
+    "summary": "A cnidarian venom delivered through nematocyst discharge on tentacle contact. This record avoids assigning a single compound as the complete cause of contact effects.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/chironex-fleckeri/toxic-material"
+  },
+  {
+    "id": "org-clostridium-botulinum",
+    "entityType": "organism",
+    "title": "Botulinum neurotoxin-producing bacterium",
+    "scientificName": "Clostridium botulinum",
+    "aliases": [
+      "Clostridium botulinum",
+      "Botulinum neurotoxin-producing bacterium"
+    ],
+    "summary": "Clostridium botulinum is an anaerobic, spore-forming bacterium that can produce botulinum neurotoxins. Botulism is the disease caused by exposure to those toxins; the bacterium is not venomous and does not deliver toxin through a bite or sting.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/clostridium-botulinum"
+  },
+  {
+    "id": "mat-clostridium-botulinum-toxin",
+    "entityType": "toxic_material",
+    "title": "Botulinum neurotoxin",
+    "aliases": [
+      "Botulinum neurotoxin"
+    ],
+    "summary": "Botulinum neurotoxin is the causal toxic material in botulism. This record describes toxin production and exposure without treating the producing bacterium as venomous.",
+    "tags": [
+      "isolated_toxin",
+      "composition"
+    ],
+    "route": "/organisms/clostridium-botulinum/toxic-material"
+  },
+  {
+    "id": "mechanism-clostridium-botulinum",
+    "entityType": "mechanism",
+    "title": "Botulinum neurotoxin-producing bacterium exposure mechanism",
+    "aliases": [
+      "Toxin production in a suitable anaerobic context",
+      "Neurotoxin exposure"
+    ],
+    "summary": "Under suitable low-oxygen conditions, some Clostridium botulinum strains can produce botulinum neurotoxin.",
+    "tags": [
+      "mechanism",
+      "exposure"
+    ],
+    "route": "/atlas/clostridium-botulinum#section-mechanisms"
+  },
+  {
+    "id": "org-conus-geographus",
+    "entityType": "organism",
+    "title": "Geography cone snail",
+    "scientificName": "Conus geographus",
+    "aliases": [
+      "Conus geographus",
+      "Geography cone snail"
+    ],
+    "summary": "Conus geographus is a predatory cone snail that uses a venom apparatus and a harpoon-like radular tooth to deliver a complex venom to prey.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/conus-geographus"
+  },
+  {
+    "id": "mat-conus-geographus-venom",
+    "entityType": "toxic_material",
+    "title": "Conus geographus venom",
+    "aliases": [
+      "Conus geographus venom"
+    ],
+    "summary": "A complex marine venom associated with the cone snail's specialized prey-capture apparatus. The complete mixture and individual toxin contributions are not asserted here.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/conus-geographus/toxic-material"
+  },
+  {
+    "id": "org-datura-stramonium",
+    "entityType": "organism",
+    "title": "Jimsonweed",
+    "scientificName": "Datura stramonium",
+    "aliases": [
+      "Datura stramonium",
+      "Jimsonweed"
+    ],
+    "summary": "Datura stramonium is a poisonous plant containing tropane alkaloids that can cause anticholinergic toxicity after ingestion. The plant does not inject venom.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/datura-stramonium"
+  },
+  {
+    "id": "mat-datura-stramonium-poison",
+    "entityType": "toxic_material",
+    "title": "Datura stramonium poison",
+    "aliases": [
+      "Datura stramonium poison"
+    ],
+    "summary": "A plant-associated toxic material containing tropane alkaloids such as atropine and scopolamine. Concentration varies among tissues and exposure contexts.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/datura-stramonium/toxic-material"
+  },
+  {
+    "id": "org-eunice-aphroditois",
+    "entityType": "organism",
+    "title": "Bobbit worm",
+    "scientificName": "Eunice aphroditois",
+    "aliases": [
+      "Eunice aphroditois",
+      "Bobbit worm"
+    ],
+    "summary": "Eunice aphroditois is a predatory polychaete annelid with large jaws and a documented role in rapid ambush predation. This dossier conservatively represents contact and bite risk without claiming a fully characterized venom composition.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/eunice-aphroditois"
+  },
+  {
+    "id": "mat-eunice-aphroditois-secretion",
+    "entityType": "toxic_material",
+    "title": "Eunice aphroditois oral secretion",
+    "aliases": [
+      "Eunice aphroditois oral secretion"
+    ],
+    "summary": "This record preserves the distinction between a documented predatory jaw strike and a fully characterized venom. No isolated toxin or clinical effect is asserted.",
+    "tags": [
+      "secretion",
+      "composition"
+    ],
+    "route": "/organisms/eunice-aphroditois/toxic-material"
+  },
+  {
+    "id": "org-heloderma-suspectum",
+    "entityType": "organism",
+    "title": "Gila monster",
+    "scientificName": "Heloderma suspectum",
+    "aliases": [
+      "Heloderma suspectum",
+      "Gila monster"
+    ],
+    "summary": "Heloderma suspectum is a venomous lizard that delivers oral gland secretions through grooved teeth during a prolonged bite. It is distinct from snakes and does not inject venom through hollow fangs.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/heloderma-suspectum"
+  },
+  {
+    "id": "mat-heloderma-suspectum-venom",
+    "entityType": "toxic_material",
+    "title": "Heloderma suspectum venom",
+    "aliases": [
+      "Heloderma suspectum venom"
+    ],
+    "summary": "An oral venom secretion associated with lower-jaw glands and grooved teeth. This record does not claim that the lizard uses hollow fangs or that one compound explains all effects.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/heloderma-suspectum/toxic-material"
+  },
+  {
+    "id": "org-latrodectus-hasselti",
+    "entityType": "organism",
+    "title": "Redback spider",
+    "scientificName": "Latrodectus hasselti",
+    "aliases": [
+      "Latrodectus hasselti",
+      "Redback spider"
+    ],
+    "summary": "Latrodectus hasselti is a venomous spider that uses a web-associated bite to subdue prey and defend itself. Its venom contains neuroactive components associated with latrodectism.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/latrodectus-hasselti"
+  },
+  {
+    "id": "mat-latrodectus-hasselti-venom",
+    "entityType": "toxic_material",
+    "title": "Latrodectus hasselti venom",
+    "aliases": [
+      "Latrodectus hasselti venom"
+    ],
+    "summary": "A spider venom containing neuroactive components associated with latrodectism. This record does not assign a complete composition or attribute every clinical outcome to a single compound.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/latrodectus-hasselti/toxic-material"
+  },
+  {
     "id": "org-ornithorhynchus-anatinus",
     "entityType": "organism",
     "title": "Platypus",
@@ -60,6 +345,36 @@
       "composition"
     ],
     "route": "/organisms/phyllobates-terribilis/toxic-material"
+  },
+  {
+    "id": "org-ricinus-communis",
+    "entityType": "organism",
+    "title": "Castor bean plant",
+    "scientificName": "Ricinus communis",
+    "aliases": [
+      "Ricinus communis",
+      "Castor bean plant"
+    ],
+    "summary": "Ricinus communis is a poisonous plant whose seeds can contain ricin. Toxicity is associated with ingestion or other exposure to plant material, not with venom delivery.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/ricinus-communis"
+  },
+  {
+    "id": "mat-ricinus-communis-poison",
+    "entityType": "toxic_material",
+    "title": "Ricinus communis poison",
+    "aliases": [
+      "Ricinus communis poison"
+    ],
+    "summary": "A plant-associated toxic material linked to ricin in castor bean seeds. This record avoids claims about dose, lethality, or exposure outcome beyond the cited toxicological context.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/ricinus-communis/toxic-material"
   },
   {
     "id": "org-solenopsis-invicta",
@@ -157,6 +472,20 @@
       "Batrachotoxins"
     ],
     "route": "/toxins/batrachotoxin"
+  },
+  {
+    "id": "tox-botulinum-neurotoxin",
+    "entityType": "toxin",
+    "title": "Botulinum neurotoxin",
+    "aliases": [
+      "Botulinum neurotoxins"
+    ],
+    "summary": "This isolated-toxin record describes the neurotoxin that causes botulism; it does not reclassify Clostridium botulinum as venomous.",
+    "tags": [
+      "toxin",
+      "Botulinum neurotoxins"
+    ],
+    "route": "/toxins/botulinum-neurotoxin"
   },
   {
     "id": "tox-solenopsin-a",

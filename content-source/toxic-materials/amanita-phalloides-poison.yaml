@@ -1,0 +1,30 @@
+﻿id: mat-amanita-phalloides-poison
+slug: amanita-phalloides-poison
+organismSlug: amanita-phalloides
+biologicalMaterial:
+  id: bio-amanita-phalloides-poison
+  kind: poison
+  name: Death cap mushroom poison
+  description: Mushroom tissue containing amatoxin-associated toxic material that is exposed through ingestion.
+name: Amanita phalloides poison
+description: >-
+  A poisonous mushroom material associated with amatoxins and severe organ toxicity after ingestion.
+  This record does not claim that every mushroom tissue sample has identical toxin concentration.
+ecologicalRoleSummary: The biological role of amatoxins in the mushroom's ecology remains incompletely characterized.
+components:
+  - id: comp-amanita-amatoxins
+    componentCategory: Amatoxin-associated compounds
+    abundanceQualifier: present
+    summary: Toxic compounds associated with severe mushroom poisoning after ingestion.
+    evidence:
+      id: ev-amanita-amatoxins
+      confidence: moderate
+      evidenceType: clinical
+      citationIds:
+        - cit-cdc-amanita-phalloides
+evidence:
+  id: ev-amanita-poison
+  confidence: moderate
+  evidenceType: clinical
+  citationIds:
+    - cit-cdc-amanita-phalloides

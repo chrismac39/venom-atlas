@@ -1,0 +1,30 @@
+﻿id: mat-latrodectus-hasselti-venom
+slug: latrodectus-hasselti-venom
+organismSlug: latrodectus-hasselti
+biologicalMaterial:
+  id: bio-latrodectus-hasselti-venom
+  kind: venom
+  name: Redback spider venom
+  description: Venom injected through the fangs during a bite.
+name: Latrodectus hasselti venom
+description: >-
+  A spider venom containing neuroactive components associated with latrodectism. This record does
+  not assign a complete composition or attribute every clinical outcome to a single compound.
+ecologicalRoleSummary: Supports prey capture and defense.
+components:
+  - id: comp-redback-neuroactive-peptides
+    componentCategory: Neuroactive peptide components
+    abundanceQualifier: present
+    summary: Broad component class associated with widow-spider venom activity.
+    evidence:
+      id: ev-redback-venom
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-australian-museum-redback
+evidence:
+  id: ev-redback-venom
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-australian-museum-redback

@@ -1,0 +1,82 @@
+{
+  "organism": {
+    "id": "org-androctonus-australis",
+    "slug": "androctonus-australis",
+    "scientificName": "Androctonus australis",
+    "commonName": "North African fat-tailed scorpion",
+    "toxicStrategy": "venomous",
+    "overview": "Androctonus australis is a medically important scorpion that delivers venom through its sting. Human risk varies with species, dose, route, and individual susceptibility.",
+    "naturalHistory": [
+      "It is adapted to arid and semi-arid environments.",
+      "Scorpions use pincers and a venomous telson during predation and defense.",
+      "Activity and encounters vary with temperature and habitat conditions."
+    ],
+    "evidence": {
+      "id": "ev-androctonus-profile",
+      "confidence": "moderate",
+      "evidenceType": "clinical",
+      "citationIds": [
+        "cit-who-scorpionism"
+      ]
+    }
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "className": "Arachnida",
+    "order": "Scorpiones",
+    "family": "Buthidae",
+    "genus": "Androctonus",
+    "species": "Androctonus australis"
+  },
+  "deliveryMechanism": {
+    "route": "sting",
+    "summary": "Venom is delivered through the stinger at the end of the tail.",
+    "sequence": [
+      "Scorpion restrains or contacts a target.",
+      "The telson positions the stinger.",
+      "Venom is injected through the sting."
+    ]
+  },
+  "habitats": [
+    {
+      "id": "hab-androctonus-arid",
+      "organismId": "org-androctonus-australis",
+      "name": "Arid and semi-arid landscapes",
+      "summary": "Associated with dry environments in North Africa and adjacent regions.",
+      "evidence": {
+        "id": "ev-androctonus-profile",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-who-scorpionism"
+        ]
+      }
+    }
+  ],
+  "ecologicalRoles": [
+    {
+      "id": "eco-androctonus-predation",
+      "organismId": "org-androctonus-australis",
+      "role": "Arthropod predation",
+      "summary": "Venom contributes to prey immobilization and defense.",
+      "evidence": {
+        "id": "ev-androctonus-profile",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-who-scorpionism"
+        ]
+      }
+    }
+  ],
+  "geographyVisualizations": [],
+  "externalProfile": {
+    "sourceLabel": "World Health Organization",
+    "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/scorpion-envenoming",
+    "summaryPoints": [
+      "Scorpion envenoming is a medically recognized exposure pathway."
+    ],
+    "imagePaths": []
+  }
+}

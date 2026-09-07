@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { MolecularRepresentation } from '@venom-atlas/visualization-contracts';
 import type { AtlasOrganismData } from '../atlas-types';
+import { toxicStrategyLabel } from '../../../lib/organism-labels';
 
 const supportedRepresentations: MolecularRepresentation[] = [
   'ball_and_stick',
@@ -32,7 +33,7 @@ const firstSentence = (text: string): string => {
 
 const summarizeToxinCategory = (organism: AtlasOrganismData): string => {
   if (!organism.toxicMaterial || organism.toxicMaterial.components.length === 0) {
-    return `${organism.toxicStrategy}. Material composition has not yet been curated.`;
+    return `${toxicStrategyLabel(organism.toxicStrategy)}. Material composition has not yet been curated.`;
   }
 
   const leadCompound = organism.featuredToxin?.displayName ?? 'mixed compounds';
@@ -45,8 +46,8 @@ const summarizeToxinCategory = (organism: AtlasOrganismData): string => {
   );
 
   return categories.length > 0
-    ? `${organism.toxicStrategy} - ${leadCompound}, including ${categories.slice(0, 2).join(' and ')}.`
-    : `${organism.toxicStrategy} - ${leadCompound}.`;
+    ? `${toxicStrategyLabel(organism.toxicStrategy)} - ${leadCompound}, including ${categories.slice(0, 2).join(' and ')}.`
+    : `${toxicStrategyLabel(organism.toxicStrategy)} - ${leadCompound}.`;
 };
 
 export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {

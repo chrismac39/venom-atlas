@@ -1,0 +1,37 @@
+{
+  "toxicMaterial": {
+    "id": "mat-amanita-phalloides-poison",
+    "slug": "amanita-phalloides-poison",
+    "organismId": "org-amanita-phalloides",
+    "biologicalMaterialId": "bio-amanita-phalloides-poison",
+    "name": "Amanita phalloides poison",
+    "description": "A poisonous mushroom material associated with amatoxins and severe organ toxicity after ingestion. This record does not claim that every mushroom tissue sample has identical toxin concentration.",
+    "ecologicalRoleSummary": "The biological role of amatoxins in the mushroom's ecology remains incompletely characterized.",
+    "materialKind": "poison",
+    "evidence": {
+      "id": "ev-amanita-poison",
+      "confidence": "moderate",
+      "evidenceType": "clinical",
+      "citationIds": [
+        "cit-cdc-amanita-phalloides"
+      ]
+    }
+  },
+  "components": [
+    {
+      "id": "comp-amanita-amatoxins",
+      "toxicMaterialId": "mat-amanita-phalloides-poison",
+      "componentCategory": "Amatoxin-associated compounds",
+      "abundanceQualifier": "present",
+      "summary": "Toxic compounds associated with severe mushroom poisoning after ingestion.",
+      "evidence": {
+        "id": "ev-amanita-amatoxins",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-cdc-amanita-phalloides"
+        ]
+      }
+    }
+  ]
+}

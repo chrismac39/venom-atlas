@@ -343,7 +343,7 @@ select {
 }
 
 .atlas-chooser-option {
-  min-height: 18rem;
+  aspect-ratio: 1.7 / 1;
   display: grid;
   grid-template-columns: minmax(11rem, 0.8fr) minmax(16rem, 1.2fr);
   overflow: hidden;
@@ -366,10 +366,12 @@ select {
   isolation: isolate;
   width: 100%;
   height: 100%;
-  min-height: 18rem;
+  box-sizing: border-box;
+  min-height: 0;
   display: grid;
   place-content: center;
   grid-template-columns: auto auto;
+  padding: 1.5rem;
   overflow: hidden;
   background:
     repeating-linear-gradient(90deg, transparent 0 3.9rem, color-mix(in srgb, var(--rule), transparent 48%) 4rem),
@@ -377,23 +379,26 @@ select {
     linear-gradient(145deg, color-mix(in srgb, var(--warning), transparent 86%), var(--panel-soft));
   color: color-mix(in srgb, var(--text), transparent 8%);
   font-family: var(--font-heading);
-  font-size: clamp(5rem, 12vw, 10rem);
+  font-size: 5.5rem;
   font-weight: 800;
-  line-height: 0.8;
+  line-height: 0.95;
 }
 
 .atlas-specimen-mark > span:last-of-type {
   color: var(--warning);
-  transform: translateY(0.42em);
+  transform: translateY(0.22em);
 }
 
 .atlas-specimen-mark small {
   position: absolute;
+  top: calc(50% + 2.6rem);
   right: 1rem;
-  bottom: 1rem;
+  left: 1rem;
   font-size: 0.72rem;
+  line-height: 1.15;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  text-align: center;
   color: var(--muted);
 }
 
@@ -428,6 +433,10 @@ select {
   margin-top: 1.2rem;
   color: var(--muted);
   line-height: 1.55;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .atlas-chooser-action {
@@ -1267,8 +1276,10 @@ select {
   }
 
   .atlas-specimen-mark {
-    min-height: 14rem;
-    max-height: 18rem;
+    aspect-ratio: 1.15 / 1;
+    min-height: 0;
+    max-height: none;
+    font-size: 4.5rem;
   }
 
   .atlas-organism-hero {

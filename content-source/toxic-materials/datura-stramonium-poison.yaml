@@ -1,0 +1,30 @@
+﻿id: mat-datura-stramonium-poison
+slug: datura-stramonium-poison
+organismSlug: datura-stramonium
+biologicalMaterial:
+  id: bio-datura-stramonium-poison
+  kind: poison
+  name: Jimsonweed alkaloid poison
+  description: Plant material containing tropane alkaloids that can cause anticholinergic poisoning after ingestion.
+name: Datura stramonium poison
+description: >-
+  A plant-associated toxic material containing tropane alkaloids such as atropine and scopolamine.
+  Concentration varies among tissues and exposure contexts.
+ecologicalRoleSummary: The ecological role of the alkaloids is treated conservatively as unresolved in this dossier.
+components:
+  - id: comp-datura-tropane-alkaloids
+    componentCategory: Tropane alkaloids
+    abundanceQualifier: present
+    summary: Alkaloids associated with anticholinergic toxicity after ingestion.
+    evidence:
+      id: ev-datura-tropane-alkaloids
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-kew-datura-stramonium
+evidence:
+  id: ev-datura-poison
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-kew-datura-stramonium

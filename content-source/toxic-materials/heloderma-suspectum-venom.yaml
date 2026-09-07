@@ -1,0 +1,30 @@
+﻿id: mat-heloderma-suspectum-venom
+slug: heloderma-suspectum-venom
+organismSlug: heloderma-suspectum
+biologicalMaterial:
+  id: bio-heloderma-suspectum-venom
+  kind: venom
+  name: Gila monster oral venom
+  description: Venomous oral gland secretion delivered through grooved teeth during a prolonged bite.
+name: Heloderma suspectum venom
+description: >-
+  An oral venom secretion associated with lower-jaw glands and grooved teeth. This record does not
+  claim that the lizard uses hollow fangs or that one compound explains all effects.
+ecologicalRoleSummary: Supports prey handling and defense.
+components:
+  - id: comp-heloderma-oral-venom
+    componentCategory: Oral venom secretion
+    abundanceQualifier: present
+    summary: Venom enters tissue through grooved teeth during prolonged jaw contact.
+    evidence:
+      id: ev-heloderma-venom
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-arizona-sonoran-heloderma
+evidence:
+  id: ev-heloderma-venom
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-arizona-sonoran-heloderma

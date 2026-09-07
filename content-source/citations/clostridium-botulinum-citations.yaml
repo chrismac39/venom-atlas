@@ -1,0 +1,31 @@
+﻿citations:
+  - id: cit-cdc-botulism
+    slug: cdc-botulism
+    title: Botulism
+    authors: []
+    publisher: Centers for Disease Control and Prevention
+    publicationYear: null
+    url: https://www.cdc.gov/botulism/about/index.html
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: government
+  - id: cit-ncbi-clostridium-botulinum
+    slug: ncbi-clostridium-botulinum
+    title: Clostridium botulinum
+    authors: []
+    publisher: National Center for Biotechnology Information, StatPearls
+    publicationYear: null
+    url: https://www.ncbi.nlm.nih.gov/books/NBK470388/
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: database
+  - id: cit-who-botulism
+    slug: who-botulism
+    title: Botulism
+    authors: []
+    publisher: World Health Organization
+    publicationYear: null
+    url: https://www.who.int/news-room/fact-sheets/detail/botulism
+    doi: null
+    accessedAt: '2026-09-07'
+    sourceType: government

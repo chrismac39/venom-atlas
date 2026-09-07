@@ -1,0 +1,33 @@
+﻿id: mat-clostridium-botulinum-toxin
+slug: clostridium-botulinum-neurotoxin
+organismSlug: clostridium-botulinum
+biologicalMaterial:
+  id: bio-botulinum-neurotoxin
+  kind: isolated_toxin
+  name: Botulinum neurotoxin
+  description: A neurotoxin produced by some Clostridium botulinum strains; it is not a venom delivered by the bacterium.
+name: Botulinum neurotoxin
+description: >-
+  Botulinum neurotoxin is the causal toxic material in botulism. This record describes toxin
+  production and exposure without treating the producing bacterium as venomous.
+ecologicalRoleSummary: Toxin production may contribute to bacterial persistence or competition in suitable anaerobic contexts, but the ecological role is not fully characterized here.
+featuredToxinSlug: botulinum-neurotoxin
+components:
+  - id: comp-botulinum-neurotoxin
+    componentCategory: Neurotoxin
+    abundanceQualifier: present
+    summary: Botulinum neurotoxin is the principal toxic material represented by this dossier.
+    evidence:
+      id: ev-botulinum-neurotoxin
+      confidence: high
+      evidenceType: clinical
+      citationIds:
+        - cit-cdc-botulism
+        - cit-who-botulism
+evidence:
+  id: ev-botulinum-neurotoxin
+  confidence: high
+  evidenceType: clinical
+  citationIds:
+    - cit-cdc-botulism
+    - cit-who-botulism

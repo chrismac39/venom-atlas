@@ -1,0 +1,48 @@
+﻿id: org-ricinus-communis
+slug: ricinus-communis
+scientificName: Ricinus communis
+commonName: Castor bean plant
+toxicStrategy: poisonous
+overview: >-
+  Ricinus communis is a poisonous plant whose seeds can contain ricin. Toxicity is associated with
+  ingestion or other exposure to plant material, not with venom delivery.
+naturalHistory:
+  - It is a fast-growing plant cultivated and naturalized in warm regions.
+  - Seeds are enclosed in distinctive spiny fruits.
+  - Seed toxicity can vary with processing and exposure context.
+taxonomy:
+  kingdom: Plantae
+  phylum: Tracheophyta
+  className: Magnoliopsida
+  order: Malpighiales
+  family: Euphorbiaceae
+  genus: Ricinus
+  species: Ricinus communis
+deliveryMechanism:
+  route: ingestion
+  summary: Exposure can follow ingestion of seeds or other plant material containing toxic proteins.
+  sequence:
+    - Seeds or plant material are handled or consumed.
+    - Toxic material reaches the gastrointestinal tract.
+    - Absorbed toxin can disrupt cellular protein synthesis.
+habitats:
+  - id: hab-ricinus-warm-disturbed
+    name: Warm disturbed habitats and cultivation
+    summary: Grows in warm climates and is cultivated in some regions.
+ecologicalRoles:
+  - id: eco-ricinus-seed-production
+    role: Seed production and dispersal
+    summary: Spiny fruits protect developing seeds and contribute to plant reproduction.
+geographyVisualizations: []
+externalProfile:
+  sourceLabel: Centers for Disease Control and Prevention
+  sourceUrl: https://emergency.cdc.gov/agent/ricin/facts.asp
+  summaryPoints:
+    - Ricin is a toxic protein associated with castor beans and requires exposure-specific evidence.
+  imagePaths: []
+evidence:
+  id: ev-ricinus-profile
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-cdc-ricin

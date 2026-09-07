@@ -46,9 +46,9 @@ export interface Taxonomy {
 }
 
 export type ExposureRoute =
-  'sting' | 'bite' | 'spine' | 'spur' | 'ingestion' | 'contact' | 'inhalation' | 'unknown';
+  'sting' | 'bite' | 'spine' | 'spur' | 'ingestion' | 'contact' | 'inhalation' | 'production' | 'unknown';
 
-export type ToxicStrategy = 'venomous' | 'poisonous' | 'both';
+export type ToxicStrategy = 'venomous' | 'poisonous' | 'both' | 'toxin_producing';
 
 export interface DeliveryMechanism {
   id: string;

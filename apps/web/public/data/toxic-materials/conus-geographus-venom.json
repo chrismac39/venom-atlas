@@ -1,0 +1,37 @@
+{
+  "toxicMaterial": {
+    "id": "mat-conus-geographus-venom",
+    "slug": "conus-geographus-venom",
+    "organismId": "org-conus-geographus",
+    "biologicalMaterialId": "bio-conus-geographus-venom",
+    "name": "Conus geographus venom",
+    "description": "A complex marine venom associated with the cone snail's specialized prey-capture apparatus. The complete mixture and individual toxin contributions are not asserted here.",
+    "ecologicalRoleSummary": "Supports specialized marine predation.",
+    "materialKind": "venom",
+    "evidence": {
+      "id": "ev-conus-venom",
+      "confidence": "moderate",
+      "evidenceType": "database",
+      "citationIds": [
+        "cit-australian-museum-cone-snail"
+      ]
+    }
+  },
+  "components": [
+    {
+      "id": "comp-conus-peptide-mixture",
+      "toxicMaterialId": "mat-conus-geographus-venom",
+      "componentCategory": "Conotoxin-associated peptide mixture",
+      "abundanceQualifier": "present",
+      "summary": "Cone snail venoms are complex peptide mixtures delivered through a specialized tooth.",
+      "evidence": {
+        "id": "ev-conus-venom",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-australian-museum-cone-snail"
+        ]
+      }
+    }
+  ]
+}

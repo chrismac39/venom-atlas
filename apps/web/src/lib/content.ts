@@ -1,6 +1,5 @@
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 import { z } from 'zod';
 import type {
@@ -23,7 +22,9 @@ import type {
   MediaAsset,
 } from '@venom-atlas/domain';
 
-const repoRoot = path.resolve(fileURLToPath(new URL('../../../../', import.meta.url)));
+const repoRoot = existsSync(path.join(process.cwd(), 'content-source'))
+  ? process.cwd()
+  : path.resolve(process.cwd(), '../..');
 const contentRoot = path.join(repoRoot, 'content-source');
 
 const evidenceSchema = z.object({
@@ -49,7 +50,7 @@ const organismRecordSchema = z.object({
   slug: z.string(),
   scientificName: z.string(),
   commonName: z.string(),
-  toxicStrategy: z.enum(['venomous', 'poisonous', 'both']),
+  toxicStrategy: z.enum(['venomous', 'poisonous', 'both', 'toxin_producing']),
   overview: z.string(),
   naturalHistory: z.array(z.string()),
   taxonomy: z.object({
@@ -62,7 +63,17 @@ const organismRecordSchema = z.object({
     species: z.string().nullable().optional(),
   }),
   deliveryMechanism: z.object({
-    route: z.enum(['sting', 'bite', 'spine', 'spur', 'ingestion', 'contact', 'inhalation', 'unknown']),
+    route: z.enum([
+      'sting',
+      'bite',
+      'spine',
+      'spur',
+      'ingestion',
+      'contact',
+      'inhalation',
+      'production',
+      'unknown',
+    ]),
     summary: z.string(),
     sequence: z.array(z.string()),
   }),
@@ -380,7 +391,16 @@ export interface OrganismBundle {
     species?: string;
   };
   deliveryMechanism: {
-    route: 'sting' | 'bite' | 'spine' | 'spur' | 'ingestion' | 'contact' | 'inhalation' | 'unknown';
+    route:
+      | 'sting'
+      | 'bite'
+      | 'spine'
+      | 'spur'
+      | 'ingestion'
+      | 'contact'
+      | 'inhalation'
+      | 'production'
+      | 'unknown';
     summary: string;
     sequence: string[];
   };

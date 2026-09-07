@@ -1,0 +1,37 @@
+{
+  "toxicMaterial": {
+    "id": "mat-ricinus-communis-poison",
+    "slug": "ricinus-communis-poison",
+    "organismId": "org-ricinus-communis",
+    "biologicalMaterialId": "bio-ricinus-communis-poison",
+    "name": "Ricinus communis poison",
+    "description": "A plant-associated toxic material linked to ricin in castor bean seeds. This record avoids claims about dose, lethality, or exposure outcome beyond the cited toxicological context.",
+    "ecologicalRoleSummary": "The ecological role of ricin in the plant is not resolved by this dossier.",
+    "materialKind": "poison",
+    "evidence": {
+      "id": "ev-ricinus-poison",
+      "confidence": "moderate",
+      "evidenceType": "clinical",
+      "citationIds": [
+        "cit-cdc-ricin"
+      ]
+    }
+  },
+  "components": [
+    {
+      "id": "comp-ricinus-ricin",
+      "toxicMaterialId": "mat-ricinus-communis-poison",
+      "componentCategory": "Ribosome-inactivating proteins",
+      "abundanceQualifier": "present",
+      "summary": "Ricin-associated protein toxicity is linked to castor bean seed exposure.",
+      "evidence": {
+        "id": "ev-ricinus-ricin",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-cdc-ricin"
+        ]
+      }
+    }
+  ]
+}

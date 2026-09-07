@@ -3,6 +3,7 @@ import PageLayout from '../layouts/PageLayout.astro';
 import { appPath } from '../lib/paths';
 import { ThemeSwitcher } from '../islands/ThemeSwitcher';
 import { buildAtlasMonopageOrganisms } from '../lib/atlas-monopage-data';
+import { toxicStrategyLabel } from '../lib/organism-labels';
 
 const organisms = buildAtlasMonopageOrganisms();
 ---
@@ -33,7 +34,7 @@ const organisms = buildAtlasMonopageOrganisms();
                 <span class="atlas-chooser-common-name">{organism.commonName}</span>
                 <span class="atlas-chooser-scientific-name"><i>{organism.scientificName}</i></span>
                 <span class="atlas-chooser-type">
-                  {organism.taxonomy.className ?? 'Unclassified'} · {organism.toxicStrategy}
+                  {organism.taxonomy.className ?? 'Unclassified'} · {toxicStrategyLabel(organism.toxicStrategy)}
                 </span>
                 <span class="atlas-chooser-summary">{organism.overview}</span>
                 <span class="atlas-chooser-action">Explore organism <span aria-hidden="true">→</span></span>

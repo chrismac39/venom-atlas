@@ -1,0 +1,48 @@
+﻿id: org-heloderma-suspectum
+slug: heloderma-suspectum
+scientificName: Heloderma suspectum
+commonName: Gila monster
+toxicStrategy: venomous
+overview: >-
+  Heloderma suspectum is a venomous lizard that delivers oral gland secretions through grooved teeth
+  during a prolonged bite. It is distinct from snakes and does not inject venom through hollow fangs.
+naturalHistory:
+  - It is a slow-moving lizard associated with arid and semi-arid habitats.
+  - Venom glands occur in the lower jaw and secretions enter bite wounds through grooved teeth.
+  - Seasonal activity and feeding behavior reflect desert environmental conditions.
+taxonomy:
+  kingdom: Animalia
+  phylum: Chordata
+  className: Reptilia
+  order: Squamata
+  family: Helodermatidae
+  genus: Heloderma
+  species: Heloderma suspectum
+deliveryMechanism:
+  route: bite
+  summary: Venomous oral secretions enter tissue through grooved teeth during a prolonged bite.
+  sequence:
+    - Lizard grips a target with its jaws.
+    - Grooved teeth maintain contact with tissue.
+    - Oral gland secretions enter the bite wound.
+habitats:
+  - id: hab-heloderma-desert
+    name: Sonoran and Mojave desert habitats
+    summary: Associated with arid and semi-arid landscapes of the southwestern United States and northwestern Mexico.
+ecologicalRoles:
+  - id: eco-heloderma-predation
+    role: Vertebrate and invertebrate predation
+    summary: Venomous bite secretions contribute to prey handling and defense.
+geographyVisualizations: []
+externalProfile:
+  sourceLabel: Arizona-Sonora Desert Museum
+  sourceUrl: https://www.desertmuseum.org/books/nhsd_gila.php
+  summaryPoints:
+    - Gila monsters are venomous lizards with grooved teeth and lower-jaw venom glands.
+  imagePaths: []
+evidence:
+  id: ev-heloderma-profile
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-arizona-sonoran-heloderma
