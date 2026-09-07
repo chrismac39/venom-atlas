@@ -106,9 +106,17 @@ Problem: the AntMaps iframe currently throws a provider-side runtime error and c
 Target:
 
 - [x] Render sourced local GeoJSON/TopoJSON as the default static map.
-- [ ] Enhance with pan, zoom, and layer controls only on request.
+- [x] Enhance with pan, zoom, and layer controls only on request.
 - [x] Keep provider links as secondary "Explore source" actions.
 - [x] Test visible map features, not only iframe existence.
+- [x] Support marine geography with independent GBIF observation dots and evidence-only OGC ISEA3H cells.
+- [x] Keep marine evidence cells separate from the neutral landmass layer and omit empty ocean cells.
+- [x] Generate and publish Synanceia ISEA3H cells reproducibly from grid-deduplicated GBIF observations.
+- [ ] Add dedicated browser coverage for marine cell visibility and terrestrial-control suppression.
+
+Marine cells are evidence aggregation, not complete distribution boundaries. Modeled native,
+introduced, or uncertain range boundaries remain a separate curation task and must not be
+inferred from either occurrence dots or ISEA3H evidence cells.
 
 ### Chemistry reliability
 
@@ -192,6 +200,7 @@ Acceptance criteria:
 - [x] Introduce causal-scope contracts and migrate Fire Ant clinical data to exposure/material scope.
 - [x] Remove placeholder-driven sections and add dossier coverage reporting.
 - [x] Replace the broken map embed with first-party, source-backed geography.
+- [x] Add evidence-only marine mapping with reproducible OGC ISEA3H cell generation.
 - [x] Introduce a neutral toxic-material route and relationship contract, then publish the first poison material and isolated compound dossier.
 - [ ] Complete cold-development, canvas-pixel, and structure-failure coverage for the chemistry viewer.
 - [x] Replace heuristic or meaningless charts with structured representations.
