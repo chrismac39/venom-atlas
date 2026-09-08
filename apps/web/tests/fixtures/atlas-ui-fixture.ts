@@ -76,6 +76,7 @@ export const atlasUiFixture = (): AtlasOrganismData => ({
   featuredToxin: null,
   mechanismSteps: [fixtureStep('exposure-step', 'exposure', 1), fixtureStep('molecular-step', 'molecular', 2), fixtureStep('clinical-step', 'clinical', 3)],
   physiology: {
+    applicability: { scope: 'non_human', summary: 'Synthetic non-human evidence only; human medical effects are not established by this fixture.' },
     anatomicalSystems: [{ id: 'system', name: 'Fixture system', description: 'Fixture system description.' }],
     symptoms: [{ id: 'sym-systemic-allergy', name: 'Fixture symptom', description: 'Fixture symptom description.', ...fixtureProvenance('symptom') }],
     effects: [{

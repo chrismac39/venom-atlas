@@ -1,8 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
   getAllCitations,
-  getAllMechanisms,
-  getAllPhysiology,
   getAllRoutes,
   getCitationBySlug,
   getContentRecords,
@@ -54,13 +52,26 @@ describe('authored content graph integrity', () => {
     expect(issues.map((issue) => issue.code)).toEqual(expect.arrayContaining(['invalid_slug', 'invalid_id', 'organism_id_mismatch']));
   });
 
-  it('keeps the two edited generated JSON bundles synchronized without regenerating unrelated assets', async () => {
+  it('keeps legacy draft JSON synchronized with raw records, not publication-gated getters', async () => {
     const { readFileSync } = await import('node:fs');
-    const { getPublicAssetAbsolutePath, getToxinBySlug, getToxicMaterialByOrganismSlug } = await import('../src/lib/content');
+    const { getPublicAssetAbsolutePath } = await import('../src/lib/content');
+    const raw = getContentRecords();
+    const record = raw.toxins.find((entry) => entry.slug === 'solenopsin-a')!;
+    const { molecularEntity, structureAssets, targets, interactionVisualization, ...toxin } = record;
     expect(JSON.parse(readFileSync(getPublicAssetAbsolutePath('/data/toxins/solenopsin-a.json'), 'utf8')))
-      .toEqual(JSON.parse(JSON.stringify(getToxinBySlug('solenopsin-a'))));
+      .toEqual(JSON.parse(JSON.stringify({
+        toxin, molecularEntity: { ...molecularEntity, toxinId: toxin.id },
+        structureAssets: structureAssets.map((asset) => ({
+          ...Object.fromEntries(Object.entries(asset).filter(([, value]) => value != null)),
+          molecularEntityId: molecularEntity.id,
+        })),
+        targets: targets.map((target) => ({ ...target, toxinId: toxin.id })), interactionVisualization,
+      })));
+    const material = raw.toxicMaterials.find((entry) => entry.organismSlug === 'eunice-aphroditois')!;
+    const { biologicalMaterial, organismSlug, components, ...fields } = material;
     expect(JSON.parse(readFileSync(getPublicAssetAbsolutePath('/data/toxic-materials/eunice-aphroditois-secretion.json'), 'utf8')))
-      .toEqual(JSON.parse(JSON.stringify(getToxicMaterialByOrganismSlug('eunice-aphroditois'))));
+      .toEqual({ toxicMaterial: { ...fields, organismId: `org-${organismSlug}`, biologicalMaterialId: biologicalMaterial.id,
+        materialKind: biologicalMaterial.kind }, components: components.map((component) => ({ ...component, toxicMaterialId: material.id })) });
   });
 
   it('canonicalizes Redback while retaining both public source slugs', () => {
@@ -72,8 +83,11 @@ describe('authored content graph integrity', () => {
   });
 
   it('keeps one Fire Ant exposure bundle per kind without relabeling it as compound evidence', () => {
-    expect(getAllMechanisms().filter((entry) => entry.subject.slug === 'solenopsis-invicta')).toHaveLength(1);
-    expect(getAllPhysiology().filter((entry) => entry.subject.slug === 'solenopsis-invicta')).toHaveLength(1);
+    const raw = getContentRecords();
+    expect(raw.mechanisms.filter((entry) => entry.subject.slug === 'solenopsis-invicta')).toHaveLength(1);
+    expect(raw.physiology.filter((entry) => entry.subject.slug === 'solenopsis-invicta')).toHaveLength(1);
+    expect(raw.mechanisms.filter((entry) => entry.subject.kind === 'isolated_compound' && entry.subject.slug === 'solenopsin-a')).toEqual([]);
+    expect(raw.physiology.filter((entry) => entry.subject.kind === 'isolated_compound' && entry.subject.slug === 'solenopsin-a')).toEqual([]);
     expect(getMechanismByToxinSlug('solenopsin-a')).toBeUndefined();
     expect(getPhysiologyByToxinSlug('solenopsin-a')).toBeUndefined();
   });
@@ -232,8 +246,8 @@ describe('authored content graph integrity', () => {
 });
 
 describe('complete static route inventory', () => {
-  it('includes atlas, static pages, canonical sources, and source aliases, but not internal sources', () => {
-    const routes = getAllRoutes();
+  it('plans raw atlas and source routes without asserting draft routes are public', () => {
+    const routes = buildRouteInventory(getContentRecords());
     expect(routes).toEqual(expect.arrayContaining(['/404', '/atlas', '/explore', '/atlas/solenopsis-invicta',
       '/sources/australian-museum-redback', '/sources/australian-museum-redback-spider']));
     for (const source of getAllCitations().filter((entry) => entry.visibility === 'internal')) {

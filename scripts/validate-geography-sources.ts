@@ -2,7 +2,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from 'js-yaml';
-import { getAllOrganisms } from '../apps/web/src/lib/content';
+import { getContentRecords } from '../apps/web/src/lib/content';
 
 type GeographySource = {
   organismSlug?: string;
@@ -20,7 +20,7 @@ type CitationFile = { citations?: Array<{ id?: string }> };
 const repoRoot = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 const geographyRoot = path.join(repoRoot, 'content-source', 'geography');
 const citationRoot = path.join(repoRoot, 'content-source', 'citations');
-const expectedSlugs = new Set(getAllOrganisms().map((entry) => entry.organism.slug));
+const expectedSlugs = new Set(getContentRecords().organisms.map((entry) => entry.slug));
 const sourceSlugs = new Set<string>();
 const citationIds = new Set<string>();
 

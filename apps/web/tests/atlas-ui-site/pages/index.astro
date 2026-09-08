@@ -1,0 +1,18 @@
+---
+import PageLayout from '../../../src/layouts/PageLayout.astro';
+import { ThemeSwitcher } from '../../../src/islands/ThemeSwitcher';
+import { AtlasMonopageIsland } from '../../../src/islands/AtlasMonopageIsland';
+import { atlasUiFixture } from '../../fixtures/atlas-ui-fixture';
+
+const organism = atlasUiFixture();
+organism.toxins.push({
+  ...organism.toxins[0]!, id: 'second-fixture-toxin', slug: 'second-fixture-toxin',
+  displayName: 'Second fixture toxin', notes: 'Second synthetic component description.',
+});
+---
+
+<PageLayout title="Test-only Atlas dossier — synthetic UI fixture">
+  <ThemeSwitcher slot="theme" client:idle />
+  <p role="note">Test-only synthetic UI fixture — not scientific content.</p>
+  <AtlasMonopageIsland client:load organism={organism} />
+</PageLayout>

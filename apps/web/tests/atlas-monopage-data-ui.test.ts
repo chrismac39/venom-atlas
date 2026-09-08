@@ -70,6 +70,7 @@ beforeEach(() => {
   });
   vi.mocked(content.getPhysiologyByOrganismExposureSlug).mockReturnValue({
     subject: { kind: 'organism_exposure', slug: fixture.slug },
+    applicability: fixture.physiology!.applicability!,
     anatomicalSystems: fixture.physiology!.anatomicalSystems,
     symptoms: fixture.physiology!.symptoms,
     effects: fixture.physiology!.effects.map((effect) => ({ ...effect, subject: { kind: 'organism_exposure', slug: fixture.slug } })),
@@ -78,6 +79,16 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllEnvs());
 
 describe('atlas UI view-model boundary', () => {
+  it.each(['human', 'non_human', undefined] as const)('preserves optional physiology applicability: %s', (scope) => {
+    const physiology = vi.mocked(content.getPhysiologyByOrganismExposureSlug).getMockImplementation()!('fixture-organism')!;
+    delete physiology.applicability;
+    if (scope) physiology.applicability = { scope, summary: 'Fixture applicability summary.' };
+    vi.mocked(content.getPhysiologyByOrganismExposureSlug).mockReturnValue(physiology);
+    const mapped = buildAtlasMonopageOrganisms()[0]!.physiology!;
+    expect(mapped.applicability).toEqual(physiology.applicability);
+    expect(Object.hasOwn(mapped, 'applicability')).toBe(Boolean(scope));
+  });
+
   it('preserves claim-local provenance instead of borrowing the featured toxin bibliography', () => {
     const [organism] = buildAtlasMonopageOrganisms();
     expect(organism?.provenance.citations.map((citation) => citation.id)).toEqual(['organism']);

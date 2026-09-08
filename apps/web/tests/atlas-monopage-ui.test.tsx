@@ -19,6 +19,20 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
 describe('four-section atlas dossier', () => {
+  it.each(['human', 'non_human', undefined] as const)('shows applicability only when supplied: %s', (scope) => {
+    const fixture = atlasUiFixture();
+    delete fixture.physiology!.applicability;
+    if (scope) fixture.physiology!.applicability = { scope, summary: 'Fixture applicability summary.' };
+    render(<AtlasMonopageIsland organism={fixture} />);
+    if (scope) {
+      const medical = screen.getByRole('region', { name: 'Medical Effects' });
+      expect(within(medical).getByRole('heading', { name: `Evidence applicability: ${scope === 'human' ? 'Human' : 'Non-human'}` })).toBeTruthy();
+      expect(within(medical).getByText('Fixture applicability summary.')).toBeTruthy();
+    } else {
+      expect(screen.queryByText(/Evidence applicability:/)).toBeNull();
+    }
+  });
+
   it('renders exactly four ordered primary headings and navigation links, including SSR', () => {
     const fixture = atlasUiFixture();
     const { container } = render(<AtlasMonopageIsland organism={fixture} />);

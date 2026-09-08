@@ -12,6 +12,8 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "test:integrity:e2e": "playwright test --config playwright.integrity.config.ts",
+    "test:publication:e2e": "playwright test --config playwright.publication.config.ts",
+    "test:atlas-ui:e2e": "playwright test --config playwright.atlas-ui.config.ts",
     "test:molecular:e2e": "playwright test --config playwright.molecular.config.ts"
   },
   "dependencies": {

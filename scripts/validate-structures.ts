@@ -1,8 +1,6 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import {
-  getAllOrganisms,
-  getAllToxins,
-  getGeographyByOrganismSlug,
+  getContentRecords,
   getPublicAssetAbsolutePath,
   isFileEmpty,
 } from '../apps/web/src/lib/content';
@@ -12,8 +10,10 @@ const fail = (message: string): never => {
   throw new Error(message);
 };
 
-for (const toxinBundle of getAllToxins()) {
-  for (const asset of toxinBundle.structureAssets) {
+// Validate authored drafts too; public getters may legitimately return no records.
+const content = getContentRecords();
+for (const toxin of content.toxins) {
+  for (const asset of toxin.structureAssets) {
     const isPublishable = asset.verified || (asset.structureStatus !== undefined && asset.structureStatus !== 'placeholder');
 
     if (isPublishable && !asset.sourceUrl && !asset.sourceDatabase) {
@@ -26,21 +26,16 @@ for (const toxinBundle of getAllToxins()) {
   }
 }
 
-for (const organismBundle of getAllOrganisms()) {
-  const geography = getGeographyByOrganismSlug(organismBundle.organism.slug ?? '');
-  if (!geography) {
-    continue;
-  }
-
+for (const geography of content.geography) {
   for (const range of geography.ranges) {
-    if (!range.geometryAssetId) {
+    if (!range.geometryAssetPath) {
       continue;
     }
 
-    const filePath = getPublicAssetAbsolutePath(range.geometryAssetId);
+    const filePath = getPublicAssetAbsolutePath(range.geometryAssetPath);
     const parsed = JSON.parse(readFileSync(filePath, 'utf8')) as unknown;
     validateFeatureCollection({
-      assetPath: range.geometryAssetId,
+      assetPath: range.geometryAssetPath,
       data: parsed,
       allowedGeometryTypes: range.layerType === 'confirmed_occurrence'
         ? ['Point']
@@ -58,7 +53,7 @@ for (const organismBundle of getAllOrganisms()) {
 
     const publishableRange = range.evidence.confidence !== 'unknown';
     if (publishableRange && !hasFeatures) {
-      fail(`Publishable range geometry has no features: ${range.geometryAssetId}`);
+      fail(`Publishable range geometry has no features: ${range.geometryAssetPath}`);
     }
 
     if (range.layerType === 'confirmed_occurrence' && collection.features) {
@@ -74,10 +69,10 @@ for (const organismBundle of getAllOrganisms()) {
           latitude < -90 ||
           latitude > 90
         ) {
-          fail(`Invalid occurrence point in ${range.geometryAssetId}`);
+          fail(`Invalid occurrence point in ${range.geometryAssetPath}`);
         }
         if (!occurrence.properties?.license || !occurrence.properties.sourceUrl) {
-          fail(`Occurrence missing license or source URL in ${range.geometryAssetId}`);
+          fail(`Occurrence missing license or source URL in ${range.geometryAssetPath}`);
         }
       }
 

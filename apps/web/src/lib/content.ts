@@ -3,6 +3,7 @@ import path from 'node:path';
 import yaml from 'js-yaml';
 import { z } from 'zod';
 import { buildRouteInventory } from './content-routes';
+import { evaluatePublicationReadiness, selectPublicationContent } from './publication-readiness';
 import type {
   Citation,
   EvidenceAssessment,
@@ -231,6 +232,10 @@ const mechanismRecordSchema = z.object({
 const physiologyRecordSchema = z.object({
   id: z.string(),
   slug: z.string(),
+  applicability: z.object({
+    scope: z.enum(['human', 'non_human']),
+    summary: z.string(),
+  }).optional(),
   subject: z.object({
     kind: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']),
     slug: z.string(),
@@ -413,6 +418,30 @@ const contentRecords = {
 export type ContentRecords = typeof contentRecords;
 export const getContentRecords = (): ContentRecords => contentRecords;
 
+const publicAssetValid = (publicPath: string): boolean => {
+  if (!/^\/(geography|images|structures|data)\//.test(publicPath) || /[\\?#%]/.test(publicPath)
+    || publicPath.split('/').some((part) => part === '.' || part === '..')) return false;
+  try {
+    const absolute = path.join(repoRoot, 'apps/web/public', publicPath.slice(1));
+    if (!statSync(absolute).isFile() || statSync(absolute).size <= 2) return false;
+    const text = readFileSync(absolute, 'utf8');
+    if (/\.(geojson|json)$/.test(publicPath)) {
+      const value = JSON.parse(text) as { type?: string; features?: unknown[] };
+      return !publicPath.endsWith('.geojson') || (value.type === 'FeatureCollection' && Boolean(value.features?.length));
+    }
+    if (publicPath.endsWith('.svg')) return /<svg[\s>]/.test(text) && !/<script[\s>]/i.test(text);
+    if (/\.(sdf|mol)$/.test(publicPath)) return /M  END/.test(text);
+    if (publicPath.endsWith('.pdb')) return /^(ATOM  |HETATM)/m.test(text);
+    if (publicPath.endsWith('.mmcif')) return /_atom_site\./.test(text);
+    return true;
+  } catch { return false; }
+};
+const publicationReadiness = evaluatePublicationReadiness(contentRecords, publicAssetValid);
+const eligibleSlugs = new Set(publicationReadiness.filter((entry) => entry.eligible).map((entry) => entry.slug));
+const publicRecords = selectPublicationContent(contentRecords, eligibleSlugs);
+export const getPublicationReadinessReport = () => publicationReadiness;
+export const getPublicContentRecords = (): ContentRecords => publicRecords;
+
 export interface OrganismBundle {
   organism: Organism;
   taxonomy: {
@@ -488,6 +517,7 @@ export interface MechanismBundle {
 }
 
 export interface PhysiologyBundle {
+  applicability?: { scope: 'human' | 'non_human'; summary: string };
   subject: {
     kind: 'organism_exposure' | 'whole_material' | 'isolated_compound';
     slug: string;
@@ -682,6 +712,7 @@ const loadMechanismBundles = (): MechanismBundle[] => {
 const loadPhysiologyBundles = (): PhysiologyBundle[] => {
   return contentRecords.physiology.map((record: PhysiologyRecord) => {
     return {
+      ...(record.applicability ? { applicability: record.applicability } : {}),
       subject: record.subject,
       anatomicalSystems: record.anatomicalSystems,
       symptoms: record.symptoms.map((entry) => ({
@@ -717,8 +748,10 @@ const loadGeographyBundles = (): GeographyBundle[] => {
         const geometryFeatureCount = entry.geometryAssetPath
           ? (() => {
               const assetPath = path.join(repoRoot, 'apps', 'web', 'public', entry.geometryAssetPath.replace(/^\//, ''));
-              const asset = JSON.parse(readFileSync(assetPath, 'utf8')) as { features?: unknown[] };
-              return Array.isArray(asset.features) ? asset.features.length : 0;
+              try {
+                const asset = JSON.parse(readFileSync(assetPath, 'utf8')) as { features?: unknown[] };
+                return Array.isArray(asset.features) ? asset.features.length : 0;
+              } catch { return 0; } // Failed draft assets must not prevent the eligible roster from building.
             })()
           : undefined;
 
@@ -783,10 +816,11 @@ const cached = {
   mediaAssets: loadMediaAssets(),
 };
 
-export const getAllOrganisms = (): OrganismBundle[] => cached.organisms;
+/** Public consumers always receive the computed eligible roster. Validators use getContentRecords. */
+export const getAllOrganisms = (): OrganismBundle[] => cached.organisms.filter((entry) => eligibleSlugs.has(entry.organism.slug ?? ''));
 
 export const getOrganismBySlug = (slug: string): OrganismBundle | undefined =>
-  cached.organisms.find((entry) => entry.organism.slug === slug);
+  getAllOrganisms().find((entry) => entry.organism.slug === slug);
 
 export const getToxicMaterialByOrganismSlug = (
   organismSlug: string,
@@ -801,10 +835,10 @@ export const getToxicMaterialByOrganismSlug = (
   );
 };
 
-export const getAllToxins = (): ToxinBundle[] => cached.toxins;
+export const getAllToxins = (): ToxinBundle[] => cached.toxins.filter((entry) => publicRecords.toxins.some((record) => record.id === entry.toxin.id));
 
 export const getToxinBySlug = (slug: string): ToxinBundle | undefined =>
-  cached.toxins.find((entry) => entry.toxin.slug === slug);
+  getAllToxins().find((entry) => entry.toxin.slug === slug);
 
 export const getOrganismSlugByToxinSlug = (slug: string): string | undefined => {
   const toxin = getToxinBySlug(slug);
@@ -825,31 +859,31 @@ export const getOrganismSlugByToxinSlug = (slug: string): string | undefined => 
 };
 
 export const getMechanismByToxinSlug = (slug: string): MechanismBundle | undefined =>
-  cached.mechanisms.find(
+  getAllMechanisms().find(
     (entry) => entry.subject.kind === 'isolated_compound' && entry.subject.slug === slug,
   );
 
 export const getPhysiologyByToxinSlug = (slug: string): PhysiologyBundle | undefined =>
-  cached.physiology.find(
+  getAllPhysiology().find(
     (entry) => entry.subject.kind === 'isolated_compound' && entry.subject.slug === slug,
   );
 
 export const getMechanismByOrganismExposureSlug = (slug: string): MechanismBundle | undefined =>
-  cached.mechanisms.find(
+  getAllMechanisms().find(
     (entry) => entry.subject.kind === 'organism_exposure' && entry.subject.slug === slug,
   );
 
 export const getPhysiologyByOrganismExposureSlug = (slug: string): PhysiologyBundle | undefined =>
-  cached.physiology.find(
+  getAllPhysiology().find(
     (entry) => entry.subject.kind === 'organism_exposure' && entry.subject.slug === slug,
   );
 
-export const getAllMechanisms = (): MechanismBundle[] => cached.mechanisms;
+export const getAllMechanisms = (): MechanismBundle[] => cached.mechanisms.filter((entry) => publicRecords.mechanisms.some((record) => record.subject.kind === entry.subject.kind && record.subject.slug === entry.subject.slug));
 
-export const getAllPhysiology = (): PhysiologyBundle[] => cached.physiology;
+export const getAllPhysiology = (): PhysiologyBundle[] => cached.physiology.filter((entry) => publicRecords.physiology.some((record) => record.subject.kind === entry.subject.kind && record.subject.slug === entry.subject.slug));
 
 export const getGeographyByOrganismSlug = (slug: string): GeographyBundle | undefined =>
-  cached.geography.find((entry) => entry.organismSlug === slug);
+  eligibleSlugs.has(slug) ? cached.geography.find((entry) => entry.organismSlug === slug) : undefined;
 
 export const getCitationById = (citationId: string): Citation | undefined =>
   cached.citations.find((entry) => entry.id === citationId);
@@ -865,15 +899,15 @@ export const getCitationsByIds = (citationIds: string[]): Citation[] =>
 export const getAllCitations = (): Citation[] => cached.citations;
 
 export const getPublicCitations = (): Citation[] =>
-  cached.citations.filter((entry) => entry.visibility !== 'internal');
+  cached.citations.filter((entry) => entry.visibility !== 'internal' && publicRecords.citations.some((record) => record.id === entry.id));
 
 export const getAllMediaAssets = (): MediaAsset[] => cached.mediaAssets;
 
 export const getPublishedMediaAssets = (): MediaAsset[] =>
-  cached.mediaAssets.filter((entry) => entry.redistributionVerified);
+  cached.mediaAssets.filter((entry) => entry.redistributionVerified && publicRecords.media.some((record) => record.id === entry.id));
 
 export const getAllRoutes = (): string[] => {
-  return buildRouteInventory(contentRecords);
+  return buildRouteInventory(publicRecords);
 };
 
 export const getPublicAssetAbsolutePath = (publicPath: string): string =>

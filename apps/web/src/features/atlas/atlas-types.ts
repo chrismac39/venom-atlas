@@ -160,6 +160,7 @@ export interface AtlasOrganismData {
   } | null;
   mechanismSteps: AtlasMechanismStep[];
   physiology: {
+    applicability?: { scope: 'human' | 'non_human'; summary: string };
     anatomicalSystems: Array<{ id: string; name: string; description: string }>;
     symptoms: Array<{
       id: string;

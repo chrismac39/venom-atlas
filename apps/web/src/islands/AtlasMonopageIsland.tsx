@@ -277,6 +277,12 @@ const AtlasMonopageHost = ({
           {section.id === 'section-medical-effects' ? (
             <>
               <p className="atlas-section-eyebrow">Organism exposure · {exposureRouteLabel(selected.deliveryMechanism.route)}</p>
+              {selected.physiology?.applicability ? (
+                <div className="atlas-physiology-applicability">
+                  <h3>Evidence applicability: {selected.physiology.applicability.scope === 'non_human' ? 'Non-human' : 'Human'}</h3>
+                  <p>{selected.physiology.applicability.summary}</p>
+                </div>
+              ) : null}
               <MechanismSteps steps={medicalMechanismSteps} />
               <ol className="atlas-evidence-sequence">
                 {medicalEffects.map((effect) => (

@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../../layouts/PageLayout.astro';
+import { appPath } from '../../../lib/paths';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { DeliveryMechanismDiagram } from '../../../visualizations/svg/DeliveryMechanismDiagram';
 import { getAllToxins, getMechanismByToxinSlug, getOrganismSlugByToxinSlug, getToxinBySlug } from '../../../lib/content';
@@ -56,6 +57,6 @@ const humanSteps = [
 
   <section class="panel">
     <h2>Return to atlas</h2>
-    <a href={`${atlasBaseHref}#section-chemistry`}>Resume monopage at chemistry</a>
+    <a href={appPath(`${atlasBaseHref}#section-chemistry`)}>Resume monopage at chemistry</a>
   </section>
 </PageLayout>

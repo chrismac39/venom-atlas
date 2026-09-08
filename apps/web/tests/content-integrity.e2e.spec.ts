@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { getAllRoutes, getPublicCitations } from '../src/lib/content';
+import { getAllRoutes, getContentRecords, getPublicCitations } from '../src/lib/content';
 
 test('every inventoried public page is reachable in production', async ({ request }) => {
   for (const route of getAllRoutes().filter((entry) => entry !== '/404')) {
@@ -10,7 +10,16 @@ test('every inventoried public page is reachable in production', async ({ reques
   }
 });
 
-test('Redback legacy source URL reaches the single canonical citation', async ({ page }) => {
+test('Redback source aliases publish only when relevant to an eligible dossier', async ({ page, request }) => {
+  const rawSources = getContentRecords().citations.filter((entry) => entry.id === 'cit-australian-museum-redback');
+  expect(rawSources).toHaveLength(1);
+  const publicSources = getPublicCitations().filter((entry) => entry.id === rawSources[0]!.id);
+  if (publicSources.length === 0) {
+    for (const slug of [rawSources[0]!.slug, ...rawSources[0]!.aliases]) {
+      expect((await request.get(`/sources/${slug}`)).status()).toBe(404);
+    }
+    return;
+  }
   await page.goto('/sources/australian-museum-redback');
   await expect(page).toHaveURL(/\/sources\/australian-museum-redback-spider\/?$/);
   await expect(page.getByRole('link', { name: 'Open source', exact: true }))
@@ -26,5 +35,6 @@ test('deduplication preserves exposure scope and internal citation privacy', asy
   for (const route of ['/toxins/solenopsin-a/mechanism', '/toxins/solenopsin-a/physiology', '/sources/editorial-placeholder']) {
     expect((await request.get(route)).status(), route).toBe(404);
   }
-  expect((await request.get('/atlas/solenopsis-invicta')).status()).toBe(200);
+  const route = '/atlas/solenopsis-invicta';
+  expect((await request.get(route)).status()).toBe(getAllRoutes().includes(route) ? 200 : 404);
 });

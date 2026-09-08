@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../../layouts/PageLayout.astro';
+import { appPath } from '../../../lib/paths';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { RangeMapPanel } from '../../../visualizations/maps/RangeMapPanel';
 import { getAllOrganisms, getOrganismBySlug, getGeographyByOrganismSlug } from '../../../lib/content';
@@ -32,7 +33,7 @@ const atlasHref = `/atlas/${organism.organism.slug}#section-geography`;
 
   <section class="panel">
     <h2>Return to atlas</h2>
-    <a href={atlasHref}>Resume monopage at geography</a>
+    <a href={appPath(atlasHref)}>Resume monopage at geography</a>
   </section>
 
 </PageLayout>

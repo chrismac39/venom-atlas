@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Synthetic two-carbon structure fixture">
+  <rect width="320" height="180" fill="#fff"/>
+  <path d="M100 80h120" stroke="#172b32" stroke-width="3"/>
+  <g fill="#172b32" font-family="sans-serif" font-size="24"><text x="42" y="88">CH₃</text><text x="226" y="88">CH₃</text></g>
+  <text x="160" y="145" text-anchor="middle" font-family="sans-serif" font-size="15">Synthetic UI fixture</text>
+</svg>

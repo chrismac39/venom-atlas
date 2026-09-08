@@ -14,11 +14,13 @@
     "data:geography": "tsx scripts/fetch-gbif-occurrences.ts && tsx scripts/generate-occurrence-maps.ts && tsx scripts/build-geography-registry.ts",
     "data:marine-cells": "tsx scripts/generate-marine-evidence-cells.ts",
     "build:public-data": "tsx scripts/prepare-publication.ts",
+    "validate:public-data": "tsx scripts/validate-publication-output.ts",
     "build:data": "tsx scripts/generate-structure-svgs.ts && tsx scripts/generate-occurrence-maps.ts && tsx scripts/generate-marine-evidence-cells.ts && pnpm build:public-data",
     "build": "pnpm validate && pnpm build:data && pnpm --filter @venom-atlas/web build && tsx scripts/prune-unverified-media.ts",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test",
+    "test:atlas-ui:e2e": "pnpm --filter @venom-atlas/web test:atlas-ui:e2e",
     "test:e2e": "pnpm --filter @venom-atlas/web test:e2e"
   },
   "devDependencies": {

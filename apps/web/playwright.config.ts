@@ -3,7 +3,7 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   testMatch: ['*.e2e.spec.ts'],
-  testIgnore: ['molecular-rendering.e2e.spec.ts'],
+  testIgnore: ['molecular-rendering.e2e.spec.ts', 'publication-artifacts.e2e.spec.ts', 'atlas-milestone0a.e2e.spec.ts'],
   use: {
     baseURL: 'http://localhost:5199',
     headless: true,

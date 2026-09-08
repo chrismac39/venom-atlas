@@ -67,6 +67,8 @@ test('drag, keyboard rotation, camera reset, resize and supported representation
   await visit(page); await assertMolecule(page);
   await host(page).scrollIntoViewIfNeeded();
   const initial = await canvas(page).screenshot();
+  const initialScroll = await page.evaluate(() => window.scrollY);
+  const initialCamera = await camera(page);
   const bounds = (await canvas(page).boundingBox())!;
   await page.mouse.move(bounds.x + bounds.width / 2, bounds.y + bounds.height / 2);
   await page.mouse.down();
@@ -74,6 +76,10 @@ test('drag, keyboard rotation, camera reset, resize and supported representation
   await page.mouse.up();
   await pixelsChanged(canvas(page), initial);
   await viewer(page).getByRole('button', { name: 'Reset view' }).click();
+  await expect.poll(() => camera(page)).toEqual(initialCamera);
+  // Clicking the reset control may scroll it into view. Compare pixels at the
+  // same viewport position so canvas clipping does not masquerade as rotation.
+  await page.evaluate((scrollY) => window.scrollTo({ top: scrollY, behavior: 'instant' }), initialScroll);
   await expect.poll(async () => (await canvas(page).screenshot()).equals(initial)).toBe(true);
   // Tab into the viewer from the preceding disclosure; the host is keyboard reachable.
   await viewer(page).locator('summary').focus();
@@ -82,6 +88,8 @@ test('drag, keyboard rotation, camera reset, resize and supported representation
   await page.keyboard.press('ArrowRight');
   await pixelsChanged(canvas(page), initial);
   await page.keyboard.press('Home');
+  await expect.poll(() => camera(page)).toEqual(initialCamera);
+  await page.evaluate((scrollY) => window.scrollTo({ top: scrollY, behavior: 'instant' }), initialScroll);
   await expect.poll(async () => (await canvas(page).screenshot()).equals(initial)).toBe(true);
   await page.keyboard.press('+');
   await pixelsChanged(canvas(page), initial);

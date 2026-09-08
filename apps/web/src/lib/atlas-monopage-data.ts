@@ -216,6 +216,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
         mechanismSteps: exposureAndMaterialSteps,
         physiology: physiology
           ? {
+              ...(physiology.applicability ? { applicability: physiology.applicability } : {}),
               anatomicalSystems: physiology.anatomicalSystems.map((system) => ({
                 id: system.id,
                 name: system.name,

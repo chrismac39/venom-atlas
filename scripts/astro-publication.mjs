@@ -8,14 +8,26 @@ const stage = new URL('../apps/web/.publication-public/', import.meta.url);
 const regenerate = () => execFileSync(process.execPath, ['--import', 'tsx', path.join(repoRoot, 'scripts/prepare-publication.ts')], {
   cwd: repoRoot, stdio: 'inherit',
 });
+const validateDist = () => {
+  for (const [script, args] of [['validate-built-routes.ts', []], ['validate-publication-output.ts', ['--dist']]]) {
+    execFileSync(process.execPath, ['--import', 'tsx', path.join(repoRoot, 'scripts', script), ...args], {
+      cwd: repoRoot, stdio: 'inherit',
+    });
+  }
+};
 
 export const publicationIntegration = () => ({
   name: 'publication-artifact-gate',
   hooks: {
-    'astro:config:setup': ({ command, updateConfig }) => {
-      if (command === 'dev' || command === 'build') regenerate();
+    'astro:config:setup': ({ command, config, updateConfig }) => {
+      // Clean even if the subsequent gate fails before Astro begins its build.
+      if (command === 'build') rmSync(config.outDir, { recursive: true, force: true });
+      if (command === 'dev' || command === 'build' || command === 'preview') regenerate();
+      if (command === 'preview') validateDist();
       updateConfig({
-        publicDir: fileURLToPath(stage),
+        // Integration overrides merge into normalized URL config. A Windows
+        // drive-letter string would be parsed as the non-file "c:" URL scheme.
+        publicDir: stage.href,
         vite: {
           server: {
             fs: {
@@ -27,6 +39,7 @@ export const publicationIntegration = () => ({
         },
       });
     },
+    'astro:build:done': () => validateDist(),
     'astro:server:setup': ({ server, logger }) => {
       const contentRoot = path.join(repoRoot, 'content-source');
       const rawPublic = path.join(repoRoot, 'apps/web/public');
