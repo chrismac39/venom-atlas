@@ -9,5 +9,5 @@ Start the local Venom Atlas development server from the workspace root.
 Steps:
 1. Run: pnpm start
 2. Confirm startup reports PID and log file under `.tmp/`.
-3. Report the web URL (normally http://localhost:5173).
+3. Report the web URL: http://localhost:5199.
 4. If startup fails due to ports already in use, run pnpm stop and retry once.

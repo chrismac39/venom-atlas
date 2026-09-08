@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev --port 5173",
+    "dev": "astro dev --port 5199",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --port 5199",
     "lint": "eslint src tests --ext .ts,.tsx",
     "typecheck": "astro check && tsc -p tsconfig.json --noEmit",
     "test": "vitest run",

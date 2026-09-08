@@ -44,7 +44,7 @@ function cleanupPidFile() {
 const existingPid = readExistingPid();
 if (existingPid && isPidRunning(existingPid)) {
   console.log(`[start] Web dev server already running (pid ${existingPid}).`);
-  console.log('[start] Open http://localhost:5173 (or the URL shown in that running terminal).');
+  console.log('[start] Open http://localhost:5199 (or the URL shown in that running terminal).');
   process.exit(0);
 }
 
@@ -69,4 +69,4 @@ child.unref();
 console.log('[start] Started.');
 console.log(`[start] PID file: ${path.relative(process.cwd(), pidFile)}`);
 console.log(`[start] Log file: ${path.relative(process.cwd(), logFile)}`);
-console.log('[start] Open http://localhost:5173 (or the URL shown in the log).');
+console.log('[start] Open http://localhost:5199 (or the URL shown in the log).');

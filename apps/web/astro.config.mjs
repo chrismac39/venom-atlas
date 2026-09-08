@@ -8,4 +8,12 @@ export default defineConfig({
   integrations: [react()],
   base,
   trailingSlash: 'never',
+  server: {
+    host: '127.0.0.1',
+    port: 5199,
+  },
+  preview: {
+    host: '127.0.0.1',
+    port: 5199,
+  },
 });

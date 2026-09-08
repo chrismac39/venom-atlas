@@ -37,7 +37,7 @@ function stopFromPidFile() {
 }
 
 function killByPorts() {
-  const ports = [5173, 5174, 5175, 5176];
+  const ports = [5199, 5173, 5174, 5175, 5176];
 
   if (process.platform === 'win32') {
     const list = ports.join(',');
@@ -84,7 +84,7 @@ try {
 
 try {
   killByPorts();
-  console.log('[stop] Cleared listeners for common Astro dev ports (5173-5176).');
+  console.log('[stop] Cleared listeners for the Venom Atlas port (5199) and fallback Astro ports (5173-5176).');
 } catch (error) {
   console.warn(`[stop] Port cleanup warning: ${error.message}`);
 }
