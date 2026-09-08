@@ -25,7 +25,7 @@
     "molecularWeight": 253.47,
     "structureDataSource": "PubChem CID 107941",
     "evidence": {
-      "id": "ev-solenopsin-feature",
+      "id": "ev-solenopsin-molecular-identity",
       "confidence": "low",
       "evidenceType": "editorial_normalization",
       "notes": "Featured representative compound. Quantitation and exact composition pending.",
@@ -79,12 +79,13 @@
       "targetType": "unknown",
       "summary": "Specific primary molecular targets are represented conservatively as unresolved.",
       "evidence": {
-        "id": "ev-solenopsin-feature",
+        "id": "ev-solenopsin-target-uncertainty",
         "confidence": "low",
         "evidenceType": "editorial_normalization",
         "citationIds": [
           "cit-editorial-placeholder"
-        ]
+        ],
+        "publicUncertaintyStatement": "Specific primary molecular targets are represented conservatively as unresolved."
       }
     }
   ],

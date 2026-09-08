@@ -31,6 +31,8 @@
     sourceType: government
   - id: cit-australian-museum-redback
     slug: australian-museum-redback-spider
+    aliases:
+      - australian-museum-redback
     title: Redback Spider
     authors: []
     publisher: Australian Museum

@@ -2,10 +2,10 @@
 
 **Audit date:** 2026-09-08  
 **Branch examined:** Scaffolding  
-**Status:** Proposed plan for owner review; implementation is not authorized by this document.  
+**Status:** Active product roadmap. Milestone 0 scope decisions approved and recorded on 2026-09-08 at the owner's request; GitHub Pages explicitly selected. Milestone 1A was separately authorized and implemented; its content gate still reports blockers (see 1A validation notes). Remaining milestones are planned, not authorized for implementation by this document.
 **Product principle:** **One organism, the full toxin story.**
 
-Checkbox convention: `[x]` means observed or completed during this audit; `[ ]` means proposed, awaiting a decision, or not yet verified. Estimates are relative effort, not delivery promises. Scientific source review is a separate workload from implementation.
+Checkbox convention: `[x]` means observed, completed, or explicitly approved as identified in the accompanying status notes; `[ ]` means proposed, awaiting a decision, or not yet verified. Scope approval does not certify scientific review or release readiness. Estimates are relative effort, not delivery promises. Scientific source review is a separate workload from implementation.
 
 ## 1. Executive recommendation
 
@@ -274,20 +274,27 @@ Do not automatically stamp inherited evidence as claim-level verification. Do no
 
 Keep external URL checks separate from deterministic builds. Report inaccessible/blocked/paywalled sources for review rather than treating every 403 or timeout as a false citation. Respect licenses, attribution, rate limits, and access restrictions; do not mirror full copyrighted papers.
 
-## 6. Proposed delivery plan
+## 6. Active delivery roadmap
 
 ### Milestone 0 — Agree on scope and freeze expansion
 
-**Priority:** P0. **Effort:** small. **Dependency:** owner review.
+**Priority:** P0. **Effort:** small. **Dependency:** owner review. **Status:** completed 2026-09-08 (scope decisions and documentation only).
 
-- [ ] Approve the four primary sections and “full toxin story” terminology across poisonous, venomous, and toxin-producing organisms.
-- [ ] Choose static host: GitHub Pages or Cloudflare Pages; keep both root-path and project-path correctness requirements.
-- [ ] Approve Fire Ant as integration reference and Batrachotoxin as chemistry reference; protein/clinical reference follows rather than blocking the first slice.
-- [ ] Freeze new-organism additions until these reference slices meet the agreed depth and reliability criteria.
-- [ ] Treat anatomy 3D, global range perfection, SQLite exploration, and broad comparative rankings as deferred work.
-- [ ] Establish one active roadmap; reconcile older checklists after decisions are approved.
+- [x] Approve **Organism, Geography, Chemistry, Effects** as the four primary sections and **“One organism, the full toxin story”** across poisonous, venomous, and toxin-producing organisms. Sources remain accessible throughout and collected at the end; specialist content belongs within these sections.
+- [x] Select **GitHub Pages** as the primary static host, retaining correctness requirements for both `/` and `/venom-atlas/`. Cloudflare Pages is an alternative only. Deployment setup and verification remain Milestone 6 work, not completed hosting claims.
+- [x] Approve **Fire Ant (*Solenopsis invicta*)** as the integration reference and **Golden Poison Frog (*Phyllobates terribilis*) / Batrachotoxin** as the chemistry reference. A specifically identified botulinum toxin subtype/structure and its clinical dossier follow; protein rendering does not block the first slice.
+- [x] Freeze new-organism additions until both reference slices meet the applicable depth and reliability criteria in section 9 and the owner explicitly reopens expansion. Preserve the existing 15-organism catalog; evidence corrections, integrity fixes, and honest gap labeling remain allowed across existing records. Prioritize new dossier depth and assets for the two references rather than adding breadth.
+- [x] Defer **3D anatomy, global range perfection, SQLite exploration, and broad comparative rankings**. Keep the bounded reference-map pass and supported molecular 2D/3D work in scope; neither is a mandate for global biogeography or 3D anatomy. Universal toxicity rankings remain scientifically inappropriate, not a promised stretch feature.
+- [x] Establish **this document as the sole active product roadmap**. The README points here; the earlier reliability roadmap, biological-expansion checklist, and static-site migration plan are historical records, not parallel work queues. Their old checkmarks do not certify current validation or publication readiness.
 
-**Exit:** clear reference organisms, hosting decision, and boundaries on the first release.
+#### First-release boundaries and expansion gate
+
+- Deliver a static-first, four-section reference experience with inspectable sources, explicit uncertainty, supported chemistry, educational effects, bounded geography, licensed media, and root/project-path release checks. Retain Astro/React, OpenLayers, and the molecular-renderer boundary; do not restore a runtime backend.
+- Use section 9 as the shared acceptance checklist, with the chemistry and effects exits in Milestone 3 and geography stop rule in section 7. Fire Ant proves the integrated reading path; Golden Poison Frog/Batrachotoxin proves chemistry depth without attributing whole-exposure effects to an isolated compound. Document genuinely inapplicable criteria rather than inventing content or silently waiving checks.
+- Expansion requires recorded reference-slice acceptance, chemistry/medical review with no blocking issues, passing scientific and technical release gates, and explicit owner approval. Reviewer participation is not yet confirmed. Current Milestone 1A source blockers must be resolved before release; they do not prevent recording Milestone 0's scope decisions.
+- Diagnosis/management content, source-precision policy, reviewer arrangements, license preferences, and other open decisions in section 8 remain pending. Scope approval does not authorize clinical advice, invent reviewer approval, or approve every later implementation task.
+
+**Exit met:** reference organisms, GitHub Pages hosting choice, expansion freeze, deferred work, and first-release acceptance boundaries are recorded. No application behavior, scientific data, hosting settings, or deployment workflows were changed for Milestone 0.
 
 ### Milestone 1 — Trust and chemistry reliability foundation
 
@@ -295,13 +302,15 @@ Keep external URL checks separate from deterministic builds. Report inaccessible
 
 #### 1A. Eliminate integrity ambiguities
 
-- [ ] Canonicalize the duplicate Redback citation, updating references without breaking meaningful public source URLs.
-- [ ] Remove/merge duplicate Fire Ant mechanism and physiology source records; preserve exposure scope.
-- [ ] Add uniqueness tests for citation IDs/slugs, evidence IDs where globally addressed, nested entities, and scientific subject bundles.
-- [ ] Validate anatomy/symptom/target references, geography evidence references, structure citations, and media citations through a consistent graph audit.
-- [ ] Reject unapproved scientific claims supported solely by internal/editorial records, while allowing explicit public statements of uncertainty.
-- [ ] Add a report distinguishing source rows, unique sources, cited sources, unsupported claims, and reviewed claims.
-- [ ] Extend route inventory/collision checking to actual generated atlas and source pages.
+- [x] Canonicalize the duplicate Redback citation, updating references without breaking meaningful public source URLs.
+- [x] Remove/merge duplicate Fire Ant mechanism and physiology source records; preserve exposure scope.
+- [x] Add uniqueness tests for citation IDs/slugs, evidence IDs where globally addressed, nested entities, and scientific subject bundles.
+- [x] Validate anatomy/symptom/target references, geography evidence references, structure citations, and media citations through a consistent graph audit.
+- [x] Reject unapproved scientific claims supported solely by internal/editorial records, while allowing explicit public statements of uncertainty.
+- [x] Add a report distinguishing source rows, unique sources, cited sources, unsupported claims, and reviewed claims.
+- [x] Extend route inventory/collision checking to actual generated atlas and source pages.
+
+**Validation update (2026-09-08):** These checkboxes record implemented and tested safeguards, **not a clean scientific dataset or completion of Milestone 1**. Passed: 77 web unit tests (36 new), 2 schema tests, lint, type checks, 127 built-route comparisons, and 3 isolated production integrity tests. The strict `pnpm validate` gate correctly rejects **2 unsupported Solenopsin A claim records plus 26 dangling references to 14 geography assessments**. No review status or source support was invented to silence those failures. Source curation, chemistry reliability, and all other milestones remain untouched. See [Milestone 1A validation and remaining blockers](milestone-1a-validation.md) for reproducible reporting, evidence identity rules, and validation limits.
 
 #### 1B. Restore dependable molecular rendering
 
@@ -510,12 +519,12 @@ Keep external URL checks separate from deterministic builds. Report inaccessible
 
 **Geography stop rule:** once the reference organism has a clear evidence-backed native/introduced map, honest occurrence sampling, a useful initial view, smaller display assets, and tested interactions, return effort to chemistry/effects. Do not make worldwide completeness a prerequisite for the product.
 
-## 8. Owner decisions for review
+## 8. Owner decision register
 
-No answer was needed before this audit. These choices now affect sequencing and acceptance criteria:
+Milestone 0 decisions below were recorded on 2026-09-08. The remaining choices still require owner review before the affected work proceeds:
 
-- [ ] **Host:** GitHub Pages, or keep Cloudflare Pages? Recommendation: either static host; no VM. Choose based on preferred deployment workflow/custom domain, then verify current service limits.
-- [ ] **Reference organisms:** approve Fire Ant + Golden Poison Frog/Batrachotoxin first, with botulinum protein/clinical depth next, or name preferred replacements.
+- [x] **Host:** GitHub Pages selected explicitly by the owner; no VM or runtime backend. Root and `/venom-atlas/` correctness remain required. Verify service limits and production deployment in Milestone 6; a custom domain is not selected here.
+- [x] **Reference organisms:** Fire Ant integration + Golden Poison Frog/Batrachotoxin chemistry first; specifically identified botulinum protein/clinical depth follows. Four sections, terminology, expansion freeze, deferred work, and roadmap authority are recorded in Milestone 0.
 - [ ] **Map dissatisfaction:** rank inaccurate/unclear ranges, sparse dots, framing, visual styling, control clutter, mobile behavior, or load time. Recommendation: correctness/precision, framing, and payload first.
 - [ ] **Country-to-ADM1 policy:** is visibly labeled coarse native context acceptable where state/province evidence is unavailable? Recommendation: yes, but never styled/labeled as independently proven state-level occupancy.
 - [ ] **Clinical boundary:** mechanism/pathophysiology only, or also guideline-linked diagnosis/management context? Recommendation: deep educational mechanisms first; management only with a sustainable clinical review process.
@@ -562,8 +571,8 @@ Links below point to inspected repository files, not external scientific validat
 - [Citation-reference validator](../../scripts/validate-citations.ts#L1)
 - [Main citation catalog](../../content-source/citations/solenopsis-citations.yaml#L1)
 - [Coverage-expansion citation catalog](../../content-source/citations/biological-coverage-expansion-citations.yaml#L1)
-- [Fire Ant exposure mechanisms](../../content-source/mechanisms/solenopsis-invicta-exposure.yaml#L1) and [duplicate compound-named file](../../content-source/mechanisms/solenopsin-a.yaml#L1)
-- [Fire Ant exposure physiology](../../content-source/physiology/solenopsis-invicta-exposure.yaml#L1) and [duplicate compound-named file](../../content-source/physiology/solenopsin-a.yaml#L1)
+- [Fire Ant exposure mechanisms](../../content-source/mechanisms/solenopsis-invicta-exposure.yaml#L1) — duplicate compound-named file removed in Milestone 1A.
+- [Fire Ant exposure physiology](../../content-source/physiology/solenopsis-invicta-exposure.yaml#L1) — duplicate compound-named file removed in Milestone 1A.
 - [Media catalog and publication flags](../../content-source/media/solenopsis-media.yaml#L1)
 - [Existing dossier-authoring guidance](../scientific-model/organism-dossier-authoring.md#L1)
 
@@ -604,9 +613,9 @@ Links below point to inspected repository files, not external scientific validat
 - [Static JSON generation](../../scripts/build-static-json.ts#L1)
 - [SQLite generation](../../scripts/build-sqlite.ts#L1)
 - [Cloudflare deployment guide](../deployment/cloudflare-pages.md#L1)
-- [Earlier reliability roadmap to reconcile](elite-reliability-roadmap.md#L1)
+- [Historical reliability roadmap (superseded)](elite-reliability-roadmap.md#L1)
 - [README requiring a current-state refresh](../../README.md#L1)
 
 ---
 
-**Review outcome:** leave proposed boxes unchecked until approved and verified. Implementation should proceed in small, reviewable batches; this audit intentionally makes no application or scientific-content changes.
+**Review outcome:** Milestone 0 scope decisions are approved and documented; Milestone 1A safeguards were separately implemented, with source blockers still open. Other proposed boxes remain unchecked until approved and verified. This document is the active roadmap; implementation proceeds only in separately authorized, reviewable batches. Milestone 0 makes no application or scientific-content changes.

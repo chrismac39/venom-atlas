@@ -5,9 +5,9 @@ import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
 import { getCitationBySlug, getPublicCitations } from '../../lib/content';
 
 export const getStaticPaths = async () => {
-  return getPublicCitations().map((citation) => ({
-    params: { slug: citation.slug },
-  }));
+  return getPublicCitations().flatMap((citation) =>
+    [citation.slug, ...(citation.aliases ?? [])].map((slug) => ({ params: { slug } })),
+  );
 };
 
 const { slug } = Astro.params;
@@ -15,6 +15,9 @@ const citation = slug ? getCitationBySlug(slug) : undefined;
 
 if (!citation) {
   throw new Error(`Unknown citation slug: ${slug}`);
+}
+if (slug !== citation.slug) {
+  return Astro.redirect(appPath(`/sources/${citation.slug}`), 301);
 }
 ---
 

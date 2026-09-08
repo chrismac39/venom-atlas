@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
 import { z } from 'zod';
+import { buildRouteInventory } from './content-routes';
 import type {
   Citation,
   EvidenceAssessment,
@@ -43,6 +44,7 @@ const evidenceSchema = z.object({
   reviewedAt: z.string().optional(),
   reviewStatus: z.enum(['unreviewed', 'reviewed', 'needs_review']).optional(),
   causalScope: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']).optional(),
+  publicUncertaintyStatement: z.string().trim().min(1).optional(),
 });
 
 const organismRecordSchema = z.object({
@@ -220,6 +222,7 @@ const mechanismRecordSchema = z.object({
       level: z.enum(['exposure', 'molecular', 'cellular', 'tissue', 'organ_system', 'clinical']),
       title: z.string(),
       description: z.string(),
+      targetId: z.string().optional(),
       evidence: evidenceSchema,
     }),
   ),
@@ -323,6 +326,7 @@ const citationFileSchema = z.object({
     z.object({
       id: z.string(),
       slug: z.string(),
+      aliases: z.array(z.string()).default([]),
       title: z.string(),
       authors: z.array(z.string()).optional(),
       publisher: z.string().nullable().optional(),
@@ -377,8 +381,6 @@ type ToxinRecord = z.infer<typeof toxinRecordSchema>;
 type MechanismRecord = z.infer<typeof mechanismRecordSchema>;
 type PhysiologyRecord = z.infer<typeof physiologyRecordSchema>;
 type GeographyRecord = z.infer<typeof geographyRecordSchema>;
-type CitationFile = z.infer<typeof citationFileSchema>;
-type MediaFile = z.infer<typeof mediaFileSchema>;
 
 const readYamlFile = <T extends z.ZodTypeAny>(filePath: string, schema: T): z.infer<T> => {
   const parsed = yaml.load(readFileSync(filePath, 'utf8'));
@@ -395,6 +397,21 @@ const readDirectory = (dirName: string): string[] => {
     .filter((entry) => entry.endsWith('.yaml') || entry.endsWith('.yml'))
     .map((entry) => path.join(absolute, entry));
 };
+
+// Audit authored records before bundle mapping can drop IDs, provenance, or orphans.
+const contentRecords = {
+  organisms: readDirectory('organisms').map((file) => readYamlFile(file, organismRecordSchema)),
+  toxicMaterials: readDirectory('toxic-materials').map((file) => readYamlFile(file, toxicMaterialRecordSchema)),
+  toxins: readDirectory('toxins').map((file) => readYamlFile(file, toxinRecordSchema)),
+  mechanisms: readDirectory('mechanisms').map((file) => readYamlFile(file, mechanismRecordSchema)),
+  physiology: readDirectory('physiology').map((file) => readYamlFile(file, physiologyRecordSchema)),
+  geography: readDirectory('geography').map((file) => readYamlFile(file, geographyRecordSchema)),
+  citations: readDirectory('citations').flatMap((file) => readYamlFile(file, citationFileSchema).citations),
+  media: readDirectory('media').flatMap((file) => readYamlFile(file, mediaFileSchema).media),
+};
+
+export type ContentRecords = typeof contentRecords;
+export const getContentRecords = (): ContentRecords => contentRecords;
 
 export interface OrganismBundle {
   organism: Organism;
@@ -496,9 +513,7 @@ export interface GeographyBundle {
 const mapEvidence = (value: z.infer<typeof evidenceSchema>): EvidenceAssessment => value;
 
 const loadOrganismBundles = (): OrganismBundle[] => {
-  return readDirectory('organisms').map((filePath) => {
-    const record: OrganismRecord = readYamlFile(filePath, organismRecordSchema);
-
+  return contentRecords.organisms.map((record: OrganismRecord) => {
     return {
       organism: {
         id: record.id,
@@ -552,9 +567,7 @@ const loadOrganismBundles = (): OrganismBundle[] => {
 };
 
 const loadToxicMaterialBundles = (): ToxicMaterialBundle[] => {
-  return readDirectory('toxic-materials').map((filePath) => {
-    const record: ToxicMaterialRecord = readYamlFile(filePath, toxicMaterialRecordSchema);
-
+  return contentRecords.toxicMaterials.map((record: ToxicMaterialRecord) => {
     return {
       toxicMaterial: {
         id: record.id,
@@ -581,9 +594,7 @@ const loadToxicMaterialBundles = (): ToxicMaterialBundle[] => {
 };
 
 const loadToxinBundles = (): ToxinBundle[] => {
-  return readDirectory('toxins').map((filePath) => {
-    const record: ToxinRecord = readYamlFile(filePath, toxinRecordSchema);
-
+  return contentRecords.toxins.map((record: ToxinRecord) => {
     return {
       toxin: {
         id: record.id,
@@ -649,8 +660,7 @@ const loadToxinBundles = (): ToxinBundle[] => {
 };
 
 const loadMechanismBundles = (): MechanismBundle[] => {
-  return readDirectory('mechanisms').map((filePath) => {
-    const record: MechanismRecord = readYamlFile(filePath, mechanismRecordSchema);
+  return contentRecords.mechanisms.map((record: MechanismRecord) => {
     return {
       subject: record.subject,
       steps: record.steps
@@ -661,6 +671,7 @@ const loadMechanismBundles = (): MechanismBundle[] => {
           level: step.level,
           title: step.title,
           description: step.description,
+          targetId: step.targetId,
           evidence: mapEvidence(step.evidence),
         }))
         .sort((a, b) => a.order - b.order),
@@ -669,9 +680,7 @@ const loadMechanismBundles = (): MechanismBundle[] => {
 };
 
 const loadPhysiologyBundles = (): PhysiologyBundle[] => {
-  return readDirectory('physiology').map((filePath) => {
-    const record: PhysiologyRecord = readYamlFile(filePath, physiologyRecordSchema);
-
+  return contentRecords.physiology.map((record: PhysiologyRecord) => {
     return {
       subject: record.subject,
       anatomicalSystems: record.anatomicalSystems,
@@ -699,9 +708,7 @@ const loadPhysiologyBundles = (): PhysiologyBundle[] => {
 };
 
 const loadGeographyBundles = (): GeographyBundle[] => {
-  return readDirectory('geography').map((filePath) => {
-    const record: GeographyRecord = readYamlFile(filePath, geographyRecordSchema);
-
+  return contentRecords.geography.map((record: GeographyRecord) => {
     return {
       organismSlug: record.organismSlug,
       geographyKind: record.geographyKind,
@@ -731,11 +738,10 @@ const loadGeographyBundles = (): GeographyBundle[] => {
 };
 
 const loadCitations = (): Citation[] => {
-  return readDirectory('citations').flatMap((filePath) => {
-    const record: CitationFile = readYamlFile(filePath, citationFileSchema);
-    return record.citations.map((entry) => ({
+  return contentRecords.citations.map((entry) => ({
       id: entry.id,
       slug: entry.slug,
+      aliases: entry.aliases,
       title: entry.title,
       authors: entry.authors,
       publisher: entry.publisher ?? undefined,
@@ -745,14 +751,11 @@ const loadCitations = (): Citation[] => {
       accessedAt: entry.accessedAt ?? undefined,
       visibility: entry.visibility ?? 'public',
       sourceType: entry.sourceType,
-    }));
-  });
+  }));
 };
 
 const loadMediaAssets = (): MediaAsset[] => {
-  return readDirectory('media').flatMap((filePath) => {
-    const record: MediaFile = readYamlFile(filePath, mediaFileSchema);
-    return record.media.map((entry) => ({
+  return contentRecords.media.map((entry) => ({
       id: entry.id,
       slug: entry.slug,
       kind: entry.kind,
@@ -766,8 +769,7 @@ const loadMediaAssets = (): MediaAsset[] => {
       modificationAllowed: entry.modificationAllowed ?? undefined,
       accessedAt: entry.accessedAt ?? undefined,
       notes: entry.notes ?? undefined,
-    }));
-  });
+  }));
 };
 
 const cached = {
@@ -853,7 +855,7 @@ export const getCitationById = (citationId: string): Citation | undefined =>
   cached.citations.find((entry) => entry.id === citationId);
 
 export const getCitationBySlug = (citationSlug: string): Citation | undefined =>
-  cached.citations.find((entry) => entry.slug === citationSlug);
+  cached.citations.find((entry) => entry.slug === citationSlug || entry.aliases?.includes(citationSlug));
 
 export const getCitationsByIds = (citationIds: string[]): Citation[] =>
   citationIds
@@ -871,37 +873,7 @@ export const getPublishedMediaAssets = (): MediaAsset[] =>
   cached.mediaAssets.filter((entry) => entry.redistributionVerified);
 
 export const getAllRoutes = (): string[] => {
-  const organismRoutes = cached.organisms.flatMap((entry) => {
-    const slug = entry.organism.slug ?? '';
-    return [
-      `/organisms/${slug}`,
-      ...(getToxicMaterialByOrganismSlug(slug) ? [`/organisms/${slug}/toxic-material`] : []),
-      ...(getToxicMaterialByOrganismSlug(slug)?.toxicMaterial.materialKind === 'venom'
-        ? [`/organisms/${slug}/venom`]
-        : []),
-      ...(getGeographyByOrganismSlug(slug) ? [`/organisms/${slug}/geography`] : []),
-    ];
-  });
-
-  const toxinRoutes = cached.toxins.flatMap((entry) => {
-    const slug = entry.toxin.slug ?? '';
-    return [
-      `/toxins/${slug}`,
-      ...(getMechanismByToxinSlug(slug) ? [`/toxins/${slug}/mechanism`] : []),
-      ...(getPhysiologyByToxinSlug(slug) ? [`/toxins/${slug}/physiology`] : []),
-    ];
-  });
-
-  return [
-    '/',
-    '/about',
-    '/effects',
-    '/organisms',
-    '/sources',
-    '/toxins',
-    ...organismRoutes,
-    ...toxinRoutes,
-  ];
+  return buildRouteInventory(contentRecords);
 };
 
 export const getPublicAssetAbsolutePath = (publicPath: string): string =>

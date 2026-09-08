@@ -3,6 +3,7 @@ import { z } from 'zod';
 export const citationSchema = z.object({
   id: z.string(),
   slug: z.string().optional(),
+  aliases: z.array(z.string()).optional(),
   title: z.string(),
   authors: z.array(z.string()).optional(),
   publisher: z.string().optional(),
@@ -37,6 +38,7 @@ export const evidenceAssessmentSchema = z.object({
   reviewedAt: z.string().optional(),
   reviewStatus: z.enum(['unreviewed', 'reviewed', 'needs_review']).optional(),
   causalScope: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']).optional(),
+  publicUncertaintyStatement: z.string().trim().min(1).optional(),
 });
 
 export const taxonomySchema = z.object({

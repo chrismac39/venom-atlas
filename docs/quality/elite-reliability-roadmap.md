@@ -1,5 +1,20 @@
 # Venom Atlas Reliability Roadmap
 
+> **Historical roadmap — superseded 2026-09-08.** The [product audit and action plan](venomatlas-product-audit-and-action-plan.md) is the sole active product roadmap. Milestone 0 selects GitHub Pages, four primary sections (Organism, Geography, Chemistry, Effects), and “One organism, the full toxin story” across toxic strategies. New-organism expansion is frozen while Fire Ant and Golden Poison Frog/Batrachotoxin reference slices are completed. The checklists below preserve earlier observations, not current test results, authorization, or release acceptance; the Milestone 1A scientific gate currently has blockers.
+
+## Reconciliation with the active roadmap
+
+| Earlier open work | Current home / disposition |
+| --- | --- |
+| Chemistry cold load and failure coverage | Milestone 1B |
+| Claim citations, reviewed dates, clinical metadata | Milestones 1C, 2, and 3 |
+| Native/introduced range and marine checks | Bounded reference pass in Milestone 4; global range perfection deferred |
+| Progressive disclosure and licensed organism media | Four-section composition in Milestone 5 |
+| URLs, project-path CI, accessibility, performance, tooling maintenance | Milestone 6; earlier portability/performance checkmarks are not proof of current release readiness |
+| Anatomy and broader catalog promotion | Milestone 7; 3D anatomy and new-organism expansion deferred under Milestone 0 |
+
+Do not execute the historical delivery order below as a separate backlog. Scope and reference acceptance come from the active roadmap, including its expansion gate and unresolved owner decisions.
+
 ## North Star
 
 Venom Atlas should deliver "one organism, the complete venom story" at progressive levels of detail:

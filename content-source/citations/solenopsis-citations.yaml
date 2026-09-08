@@ -279,16 +279,6 @@
     doi: null
     accessedAt: '2026-09-08'
     sourceType: database
-  - id: cit-australian-museum-redback
-    slug: australian-museum-redback
-    title: Redback Spider
-    authors: []
-    publisher: Australian Museum
-    publicationYear: null
-    url: https://australian.museum/learn/animals/spiders/redback-spider/
-    doi: null
-    accessedAt: '2026-09-08'
-    sourceType: museum
   - id: cit-wikipedia-amanita-phalloides-distribution
     slug: wikipedia-amanita-phalloides-distribution
     title: Amanita phalloides

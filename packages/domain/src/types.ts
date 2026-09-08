@@ -10,6 +10,7 @@ export type EvidenceCausalScope = 'organism_exposure' | 'whole_material' | 'isol
 export interface Citation {
   id: string;
   slug?: string | undefined;
+  aliases?: string[] | undefined;
   title: string;
   authors?: string[] | undefined;
   publisher?: string | undefined;
@@ -31,6 +32,7 @@ export interface EvidenceAssessment {
   reviewedAt?: string | undefined;
   reviewStatus?: EvidenceReviewStatus | undefined;
   causalScope?: EvidenceCausalScope | undefined;
+  publicUncertaintyStatement?: string | undefined;
 }
 
 export interface Taxonomy {

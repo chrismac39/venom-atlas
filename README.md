@@ -1,6 +1,8 @@
 # Venom Atlas
 
-Venom Atlas is a static-first scientific atlas for venom biology, toxin pathways, molecular representations, and evidence provenance.
+Venom Atlas is a static-first scientific atlas for poisonous, venomous, and toxin-producing organisms, toxin pathways, molecular representations, and evidence provenance.
+
+**One organism, the full toxin story.** The approved product structure is **Organism, Geography, Chemistry, Effects**, with sources available throughout. “Full” includes documented uncertainty and gaps, not implied completeness.
 
 ## Public-site architecture
 
@@ -112,13 +114,13 @@ pnpm test:e2e
 
 ## Deployment
 
-Primary target: Cloudflare Pages static hosting.
+Selected primary target: **GitHub Pages** (Milestone 0, 2026-09-08).
 
-See:
+- Both root deployment (`/`) and project deployment (`/venom-atlas/`) must work.
+- Base-path configuration exists; complete route/asset portability and deployment verification remain release gates, not proven capabilities.
+- GitHub Pages workflow/setup and production verification are planned in [Milestone 6 of the active roadmap](docs/quality/venomatlas-product-audit-and-action-plan.md#milestone-6--static-host-release-gates-and-maintainability).
+- The [Cloudflare Pages deployment guide](docs/deployment/cloudflare-pages.md) is retained as an alternative, not the selected deployment path.
 
-- `docs/deployment/cloudflare-pages.md`
-
-GitHub Pages portability is supported via base-path configuration.
 
 ## Legacy infrastructure
 
@@ -127,12 +129,16 @@ It is not part of the active production path.
 
 ## Current limitations
 
-- Solenopsin A structure records remain placeholder-level.
-- Geographic range geometry remains placeholder-level.
-- Several media assets still require verified redistribution licensing metadata.
+- Milestone 1A's strict scientific gate reports unsupported Solenopsin A claims and dangling geography evidence references; see the [validation report](docs/quality/milestone-1a-validation.md). These remain publication blockers.
+- Production molecular rendering was observed in a spot check; development reliability and unsupported analytical controls still need work.
+- Geography includes sampled observations, terrestrial distribution infrastructure, and marine evidence cells; source precision, introduced-range evidence, and payload size remain gaps. Occurrences are not complete biological ranges.
+- Organism photographs still require verified redistribution licensing before publication.
 
 ## Roadmap
 
-- Additional organisms and toxins
-- Improved source audits
-- Optional browser-side exploration features built on generated static artifacts
+The [product audit and action plan](docs/quality/venomatlas-product-audit-and-action-plan.md) is the **sole active product roadmap**. Milestone 0 is approved; later implementation is authorized separately. Older roadmaps and migration checklists are historical context, not competing work queues.
+
+- **First references:** Fire Ant for integration; Golden Poison Frog/Batrachotoxin for chemistry. A specifically identified botulinum protein/clinical reference follows rather than blocking the first slice.
+- **Expansion freeze:** retain the existing 15 organisms, but add no new organisms until the reference slices meet the roadmap's depth, evidence, reliability, and review criteria and the owner explicitly reopens expansion. Corrections to existing content remain allowed.
+- **First-release focus:** evidence integrity, dependable chemistry, source-linked effects, bounded geography improvements, four-section composition, licensed media, and static-host release gates.
+- **Deferred:** 3D anatomy, global range perfection, SQLite exploration, and broad comparative rankings. The existing optional explorer infrastructure is not a first-release deliverable.

@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev --port 5199",
-    "build": "astro build",
+    "build": "astro build && tsx ../../scripts/validate-built-routes.ts",
     "preview": "astro preview --port 5199",
     "lint": "eslint src tests --ext .ts,.tsx",
     "typecheck": "astro check && tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:integrity:e2e": "playwright test --config playwright.integrity.config.ts"
   },
   "dependencies": {
     "3dmol": "^2.5.2",

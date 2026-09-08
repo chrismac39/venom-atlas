@@ -12,7 +12,7 @@ molecularEntity:
   molecularWeight: 253.47
   structureDataSource: PubChem CID 107941
   evidence:
-    id: ev-solenopsin-feature
+    id: ev-solenopsin-molecular-identity
     confidence: low
     evidenceType: editorial_normalization
     notes: Featured representative compound. Quantitation and exact composition pending.
@@ -68,9 +68,10 @@ targets:
     targetType: unknown
     summary: Specific primary molecular targets are represented conservatively as unresolved.
     evidence:
-      id: ev-solenopsin-feature
+      id: ev-solenopsin-target-uncertainty
       confidence: low
       evidenceType: editorial_normalization
+      publicUncertaintyStatement: Specific primary molecular targets are represented conservatively as unresolved.
       citationIds:
         - cit-editorial-placeholder
 evidence:

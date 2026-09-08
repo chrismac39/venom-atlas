@@ -1,6 +1,8 @@
 # Static-Site Migration Plan
 
-## Current architecture summary
+> **Historical migration plan — not an active roadmap.** The Astro static-first migration is in place; the architecture and deployment choices below describe the earlier migration baseline and target. The [README](../../README.md) describes the active architecture, and the [product audit and action plan](../quality/venomatlas-product-audit-and-action-plan.md) is the sole active roadmap. Milestone 0 (2026-09-08) selects GitHub Pages, superseding this plan's Cloudflare-first recommendation. Do not restore the archived backend or treat historical scientific blockers as a current validation report.
+
+## Pre-migration architecture summary
 - Monorepo with pnpm workspaces (`apps/*`, `packages/*`).
 - `apps/web` is a React SPA (React Router) that consumes runtime API contracts.
 - `apps/api` is a Fastify server with `clickhouse` or `mock` repository modes.

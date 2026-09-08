@@ -1,6 +1,8 @@
 # Biological Coverage Expansion Checklist
 
-Use this checklist to expand the catalog from five organisms to at least fifteen while preserving the static-first data flow.
+> **Historical checklist — superseded for planning on 2026-09-08.** The catalog reached 15 organisms. The [active product roadmap](../quality/venomatlas-product-audit-and-action-plan.md) now freezes new-organism additions until the Fire Ant and Golden Poison Frog/Batrachotoxin reference slices pass acceptance and the owner explicitly reopens expansion. Corrections to existing records remain allowed. Historical checkmarks below are not evidence that today's validation or publication gates pass.
+
+This checklist records the earlier expansion from five organisms to at least fifteen while preserving the static-first data flow. Remaining evidence-scope and provenance requirements continue as authoring constraints; they do not authorize another expansion tranche. Current evidence work belongs to Milestones 1–3 of the active roadmap; future catalog expansion is deferred to Milestone 7.
 
 ## Completion gate
 
