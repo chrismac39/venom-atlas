@@ -1,8 +1,8 @@
 import { expect, test, type Locator, type Page } from '@playwright/test';
 import { PNG } from 'pngjs';
 
-const fireAnt = '/atlas/solenopsis-invicta#section-chemistry';
-const frog = '/atlas/phyllobates-terribilis#section-chemistry';
+const fireAnt = '/renderer/solenopsin-a#section-chemistry';
+const frog = '/renderer/batrachotoxin#section-chemistry';
 const viewer = (page: Page) => page.getByRole('region', { name: 'Molecular viewer', exact: true });
 const canvas = (page: Page) => viewer(page).locator('canvas');
 const host = (page: Page) => viewer(page).getByRole('group', { name: /interactive molecular structure/ });
@@ -177,8 +177,8 @@ test('fictional complex contacts are not part of the normal chemistry narrative'
   expect(demoRequests).toEqual([]);
 });
 
-test('dedicated toxin page also renders and retains its static 2D formula', async ({ page }) => {
-  await page.goto('/toxins/batrachotoxin');
+test('dedicated structure fixture also renders and retains its static 2D formula', async ({ page }) => {
+  await page.goto('/renderer/batrachotoxin');
   await viewer(page).scrollIntoViewIfNeeded();
   await assertMolecule(page);
   const image = page.getByRole('img', { name: '2D skeletal structure for Batrachotoxin' });

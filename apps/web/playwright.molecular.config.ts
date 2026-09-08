@@ -17,7 +17,9 @@ export default defineConfig({
     trace: 'retain-on-failure',
   },
   webServer: {
-    command: `pnpm exec astro ${production ? 'preview' : 'dev'} --host 127.0.0.1 --port ${port}`,
+    command: production
+      ? `pnpm exec astro build --config astro.renderer.config.mjs && pnpm exec astro preview --config astro.renderer.config.mjs --host 127.0.0.1 --port ${port}`
+      : `pnpm exec astro dev --config astro.renderer.config.mjs --host 127.0.0.1 --port ${port}`,
     url: `http://127.0.0.1:${port}`,
     env: { MOLECULAR_TEST_CACHE: `node_modules/.vite-molecular-${process.pid}-${Date.now()}` },
     reuseExistingServer: false,

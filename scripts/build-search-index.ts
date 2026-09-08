@@ -57,7 +57,7 @@ for (const organismBundle of getAllOrganisms()) {
       aliases: mechanism.steps.map((step) => step.title),
       summary: mechanism.steps[0]?.description ?? 'Exposure mechanism summary unavailable.',
       tags: ['mechanism', 'exposure'],
-      route: `/atlas/${slug}#section-mechanisms`,
+      route: `/atlas/${slug}#section-medical-effects`,
     });
   }
 
@@ -70,7 +70,7 @@ for (const organismBundle of getAllOrganisms()) {
       aliases: physiology.effects.map((effect) => effect.title),
       summary: physiology.effects[0]?.description ?? 'Exposure effects summary unavailable.',
       tags: ['effect', 'physiology', 'exposure'],
-      route: `/atlas/${slug}#section-human-physiology`,
+      route: `/atlas/${slug}#section-medical-effects`,
     });
   }
 }

@@ -1,15 +1,34 @@
-import type { AtlasOrganismData } from '../features/atlas/atlas-types';
+import type { EvidenceAssessment } from '@venom-atlas/domain';
+import type { AtlasMechanismStep, AtlasOrganismData, AtlasProvenance } from '../features/atlas/atlas-types';
 import {
+  getAllMechanisms,
   getAllOrganisms,
   getAllToxins,
   getCitationsByIds,
   getGeographyByOrganismSlug,
-  getMechanismByOrganismExposureSlug,
+  getMechanismByToxinSlug,
   getPhysiologyByOrganismExposureSlug,
   getPublishedMediaAssets,
   getToxicMaterialByOrganismSlug,
 } from './content';
+import type { MechanismBundle } from './content';
+import { appPath } from './paths';
 import { pickPreferred2dAsset, pickPreferred3dAsset } from './structure-assets';
+
+const publicCitations = (ids: string[]) =>
+  getCitationsByIds([...new Set(ids)]).filter((citation) => citation.visibility !== 'internal');
+
+const provenance = (evidence: EvidenceAssessment): AtlasProvenance => ({
+  evidence,
+  citations: publicCitations(evidence.citationIds),
+});
+
+const mechanismSteps = (bundle: MechanismBundle | undefined): AtlasMechanismStep[] =>
+  (bundle?.steps ?? []).map((step) => ({
+    ...step,
+    subject: bundle!.subject,
+    provenance: provenance(step.evidence),
+  })).sort((a, b) => a.order - b.order);
 
 export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
   const toxins = getAllToxins();
@@ -49,27 +68,48 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
           slug: toxinSlug,
           displayName: toxinEntry.toxin.displayName,
           family: toxinEntry.toxin.family,
+          notes: toxinEntry.toxin.notes,
+          provenance: provenance(toxinEntry.toxin.evidence),
+          identityProvenance: provenance(toxinEntry.molecularEntity.evidence),
+          targets: toxinEntry.targets.map((target) => ({
+            id: target.id,
+            targetName: target.targetName,
+            summary: target.summary,
+            provenance: provenance(target.evidence),
+          })),
+          mechanismSteps: mechanismSteps(getMechanismByToxinSlug(toxinSlug)),
+          structureSources: [twoDimensionalAsset, threeDimensionalAsset].flatMap((asset) => asset ? [{
+            id: asset.id,
+            format: asset.format,
+            status: asset.structureStatus ?? 'not specified',
+            ...(asset.sourceUrl ? { sourceUrl: asset.sourceUrl } : {}),
+            citations: publicCitations(asset.citationId ? [asset.citationId] : []),
+          }] : []),
           molecularClass: toxinEntry.molecularEntity.molecularClass,
           formula: toxinEntry.molecularEntity.formula,
           molecularWeight: toxinEntry.molecularEntity.molecularWeight,
           structureDataSource: toxinEntry.molecularEntity.structureDataSource,
-          ...(threeDimensionalAsset?.localPath ? { structure3dUrl: threeDimensionalAsset.localPath } : {}),
+          ...(threeDimensionalAsset?.localPath ? { structure3dUrl: appPath(threeDimensionalAsset.localPath) } : {}),
           ...(threeDimensionalFormat ? { structure3dFormat: threeDimensionalFormat } : {}),
-          ...(twoDimensionalAsset?.localPath ? { structure2dUrl: twoDimensionalAsset.localPath } : {}),
+          ...(twoDimensionalAsset?.localPath ? { structure2dUrl: appPath(twoDimensionalAsset.localPath) } : {}),
           ...(toxinEntry.interactionVisualization
             ? {
                 interactionVisualization: {
                   id: toxinEntry.interactionVisualization.id,
                   label: toxinEntry.interactionVisualization.label,
-                  annotationPath: toxinEntry.interactionVisualization.annotationPath,
-                  structureAssetPath: toxinEntry.interactionVisualization.structureAssetPath,
+                  annotationPath: appPath(toxinEntry.interactionVisualization.annotationPath),
+                  structureAssetPath: appPath(toxinEntry.interactionVisualization.structureAssetPath),
                   structureFormat: toxinEntry.interactionVisualization.structureFormat,
                   evidence: toxinEntry.interactionVisualization.evidence,
                 },
               }
             : {}),
           evidence: toxinEntry.molecularEntity.evidence,
-          citations: getCitationsByIds(toxinEntry.molecularEntity.evidence.citationIds),
+          citations: publicCitations([
+            ...toxinEntry.toxin.evidence.citationIds,
+            ...toxinEntry.molecularEntity.evidence.citationIds,
+            ...[twoDimensionalAsset, threeDimensionalAsset].flatMap((asset) => asset?.citationId ? [asset.citationId] : []),
+          ]),
         },
       ];
     });
@@ -77,7 +117,10 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
     const featuredToxin = toxicMaterialBundle?.toxicMaterial.featuredToxinSlug
       ? mappedToxins.find((toxin) => toxin.slug === toxicMaterialBundle.toxicMaterial.featuredToxinSlug)
       : undefined;
-    const mechanism = getMechanismByOrganismExposureSlug(organismSlug);
+    const exposureAndMaterialSteps = getAllMechanisms().filter((bundle) =>
+      (bundle.subject.kind === 'organism_exposure' && bundle.subject.slug === organismSlug) ||
+      (bundle.subject.kind === 'whole_material' && bundle.subject.slug === toxicMaterialSlug),
+    ).flatMap(mechanismSteps);
     const physiology = getPhysiologyByOrganismExposureSlug(organismSlug);
     const geography = getGeographyByOrganismSlug(organismSlug);
     const geographyRanges =
@@ -87,21 +130,18 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
           id: range.id,
           layerType: range.layerType,
           summary: range.summary,
+          provenance: provenance(range.evidence),
           ...(range.geometryAssetId ? { geometryAssetId: range.geometryAssetId } : {}),
           ...(range.sourceGeometryAssetId ? { sourceGeometryAssetId: range.sourceGeometryAssetId } : {}),
           ...(range.geometryFeatureCount !== undefined
             ? { geometryFeatureCount: range.geometryFeatureCount }
             : {}),
         })) ?? [];
-      const geographyKind = geography?.geographyKind ?? 'terrestrial';
+    const geographyKind = geography?.geographyKind ?? 'terrestrial';
     const hasPublishedMedia =
       entry.externalProfile?.imagePaths.some((imagePath) => publishedMediaPaths.has(imagePath)) ?? false;
 
     if (toxicMaterialBundle && !toxicMaterialSlug) {
-      return [];
-    }
-
-    if (toxicMaterialBundle?.toxicMaterial.featuredToxinSlug && !featuredToxin) {
       return [];
     }
 
@@ -112,6 +152,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
         commonName: entry.organism.commonName,
         toxicStrategy: entry.organism.toxicStrategy,
         overview: entry.organism.overview,
+        provenance: provenance(entry.organism.evidence),
         taxonomy: entry.taxonomy,
         naturalHistory: entry.organism.naturalHistory,
         externalProfile: entry.externalProfile
@@ -122,11 +163,15 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
             }
           : undefined,
         geographyVisualizations: entry.geographyVisualizations,
-        deliveryMechanism: entry.deliveryMechanism,
-        habitats: entry.habitats,
-        ecologicalRoles: entry.ecologicalRoles,
+        deliveryMechanism: { ...entry.deliveryMechanism, provenance: provenance(entry.organism.evidence) },
+        habitats: entry.habitats.map((habitat) => ({ ...habitat, provenance: provenance(habitat.evidence) })),
+        ecologicalRoles: entry.ecologicalRoles.map((role) => ({ ...role, provenance: provenance(role.evidence) })),
         geographyRanges,
-          geographyKind,
+        geographyKind,
+        geographySourceAudit: geography ? {
+          ...geography.sourceAudit,
+          citations: publicCitations(geography.sourceAudit.citationIds),
+        } : null,
         toxicMaterial: toxicMaterialBundle
           ? {
               slug: toxicMaterialSlug as string,
@@ -135,7 +180,11 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
               ecologicalRoleSummary: toxicMaterialBundle.toxicMaterial.ecologicalRoleSummary,
               materialKind: toxicMaterialBundle.toxicMaterial.materialKind,
               evidence: toxicMaterialBundle.toxicMaterial.evidence,
-              components: toxicMaterialBundle.components,
+              provenance: provenance(toxicMaterialBundle.toxicMaterial.evidence),
+              components: toxicMaterialBundle.components.map((component) => ({
+                ...component,
+                provenance: provenance(component.evidence),
+              })),
             }
           : null,
         coverage: {
@@ -164,7 +213,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
               ...(featuredToxin.structure3dFormat ? { structureFormat: featuredToxin.structure3dFormat } : {}),
             }
           : null,
-        mechanismSteps: mechanism?.steps ?? [],
+        mechanismSteps: exposureAndMaterialSteps,
         physiology: physiology
           ? {
               anatomicalSystems: physiology.anatomicalSystems.map((system) => ({
@@ -177,7 +226,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
                 name: symptom.name,
                 description: symptom.description,
                 evidence: symptom.evidence,
-                citations: getCitationsByIds(symptom.evidence.citationIds),
+                citations: publicCitations(symptom.evidence.citationIds),
               })),
               effects: physiology.effects.map((effect) => ({
                 id: effect.id,
@@ -187,11 +236,11 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
                 pathwayType: effect.pathwayType,
                 anatomicalSystemId: effect.anatomicalSystemId,
                 evidence: effect.evidence,
-                citations: getCitationsByIds(effect.evidence.citationIds),
+                citations: publicCitations(effect.evidence.citationIds),
               })),
             }
           : null,
-        citations: featuredToxin?.citations ?? [],
+        citations: publicCitations(entry.organism.evidence.citationIds),
       },
     ];
   });

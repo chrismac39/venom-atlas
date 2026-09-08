@@ -1049,6 +1049,144 @@ select {
   margin-top: var(--space-3);
 }
 
+.atlas-dossier-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block: var(--space-3);
+}
+
+.atlas-dossier-identity h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  overflow-wrap: anywhere;
+}
+
+.atlas-dossier .atlas-change-organism {
+  border: 1px solid var(--rule);
+  background: var(--panel-soft);
+}
+
+.atlas-dossier .atlas-section-nav {
+  top: calc(var(--top-ribbon-height) + 0.4rem);
+}
+
+.atlas-dossier .atlas-section-nav a[aria-current='location'] {
+  background: var(--panel-soft);
+  box-shadow: inset 0 -2px var(--accent-science);
+}
+
+.atlas-dossier .atlas-scroll-section {
+  position: relative;
+  scroll-margin-top: calc(var(--top-ribbon-height) + 4.5rem);
+  opacity: 1;
+  transform: none;
+}
+
+.atlas-bookmark-alias {
+  position: absolute;
+  top: 0;
+  scroll-margin-top: calc(var(--top-ribbon-height) + 4.5rem);
+}
+
+.atlas-dossier .atlas-scroll-section-content {
+  display: grid;
+  gap: var(--space-3);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.atlas-dossier .atlas-scroll-section-content > p {
+  margin: 0;
+}
+
+.atlas-disclosure {
+  min-width: 0;
+  padding: var(--space-3);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--panel-soft);
+}
+
+.atlas-disclosure > summary,
+.atlas-local-sources > summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.atlas-disclosure > summary:focus-visible,
+.atlas-local-sources > summary:focus-visible {
+  outline: 2px solid var(--accent-science);
+  outline-offset: 4px;
+}
+
+.atlas-disclosure[open] > summary {
+  margin-bottom: var(--space-3);
+}
+
+.atlas-provenance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem 1rem;
+  margin-block: var(--space-2);
+}
+
+.atlas-local-sources {
+  min-width: 0;
+  font-size: 0.9rem;
+}
+
+.atlas-delivery-sequence {
+  display: grid;
+  gap: 0.75rem;
+  padding-inline-start: 1.5rem;
+}
+
+.atlas-taxonomy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: var(--space-2);
+}
+
+.atlas-taxonomy-list dt {
+  color: var(--muted);
+}
+
+.atlas-taxonomy-list dd {
+  margin: 0.25rem 0 0;
+}
+
+.atlas-dossier .atlas-evidence-sequence > li,
+.atlas-dossier .atlas-component-list > li {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.atlas-chemical-identity > select {
+  display: block;
+  max-width: 100%;
+  margin-block: var(--space-2);
+}
+
+@media (max-width: 600px) {
+  .atlas-dossier .atlas-section-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow-x: visible;
+  }
+
+  .atlas-dossier .atlas-section-nav a {
+    text-align: center;
+  }
+
+  .atlas-dossier .atlas-scroll-section,
+  .atlas-dossier .atlas-bookmark-alias {
+    scroll-margin-top: calc(var(--top-ribbon-height) + 7.5rem);
+  }
+}
+
 .atlas-scroll-section-hero {
   opacity: 1;
   transform: none;

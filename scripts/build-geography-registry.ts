@@ -13,6 +13,7 @@ import {
 } from './geography-registry-logic.js';
 import { validateDistributionRegistry } from './geography-registry-validation.js';
 import { getGeographyScope } from './geography-scope-registry.js';
+import { getAllOrganisms } from '../apps/web/src/lib/content';
 
 type Feature = {
   type: 'Feature';
@@ -47,6 +48,7 @@ const geographySourceRoot = path.join(repoRoot, 'content-source', 'geography');
 const adminRoot = path.join(geographyRoot, 'admin1');
 const outputRoot = path.join(repoRoot, 'apps', 'web', 'public', 'data', 'geography');
 mkdirSync(outputRoot, { recursive: true });
+const eligibleSpecies = new Set(getAllOrganisms().map(({ organism }) => organism.slug ?? organism.id));
 
 const manifest = JSON.parse(readFileSync(path.join(adminRoot, 'manifest.json'), 'utf8')) as {
   release: string;
@@ -87,6 +89,7 @@ type SourceRange = {
 const sourceRangesBySpecies = new Map<string, SourceRange[]>();
 for (const sourceFile of readdirSync(geographySourceRoot).filter((name) => name.endsWith('.yaml'))) {
   const source = load(readFileSync(path.join(geographySourceRoot, sourceFile), 'utf8')) as GeographySource;
+  if (!source.organismSlug || !eligibleSpecies.has(source.organismSlug)) continue;
   if (source.organismSlug && source.distribution?.nativeAdmin1RegionIds) {
     nativeAdmin1RegionIdsBySpecies.set(source.organismSlug, new Set(source.distribution.nativeAdmin1RegionIds));
   }
@@ -184,6 +187,7 @@ for (const [speciesId, sourceRanges] of sourceRangesBySpecies) {
 
 for (const fileName of readdirSync(geographyRoot).filter((name) => name.endsWith('-occurrences.geojson'))) {
   const speciesId = fileName.replace(/-occurrences\.geojson$/, '');
+  if (!eligibleSpecies.has(speciesId)) continue;
   const collection = JSON.parse(readFileSync(path.join(geographyRoot, fileName), 'utf8')) as FeatureCollection;
   for (const occurrence of collection.features) {
     if (occurrence.geometry.type !== 'Point' || !Array.isArray(occurrence.geometry.coordinates)) {

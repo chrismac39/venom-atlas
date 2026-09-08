@@ -20,6 +20,9 @@ const organisms = buildAtlasMonopageOrganisms();
       </p>
     </header>
 
+    {organisms.length === 0 && (
+      <p role="status">No organism dossiers currently meet the publication requirements. The atlas remains available while source material is prepared. <a href={appPath('/about')}>About the atlas</a></p>
+    )}
     <ul class="atlas-chooser-grid" aria-label="Available organisms">
       {organisms.map((organism) => {
         return (

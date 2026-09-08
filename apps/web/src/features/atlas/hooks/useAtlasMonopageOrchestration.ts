@@ -1,7 +1,25 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { MolecularRepresentation } from '@venom-atlas/visualization-contracts';
-import type { AtlasOrganismData } from '../atlas-types';
-import { toxicStrategyLabel } from '../../../lib/organism-labels';
+import { atlasSections, type AtlasOrganismData, type AtlasSectionId } from '../atlas-types';
+
+export const atlasLegacyBookmarks: Record<string, AtlasSectionId> = {
+  'section-organism-profile': 'section-summary',
+  'section-mechanisms': 'section-medical-effects',
+  'section-toxin-categorization': 'section-chemistry',
+  'section-toxin-charts': 'section-chemistry',
+  'section-human-physiology': 'section-medical-effects',
+};
+
+export const canonicalAtlasSectionId = (hash: string): AtlasSectionId | null => {
+  let id: string;
+  try {
+    id = decodeURIComponent(hash.replace(/^#/, ''));
+  } catch {
+    return null;
+  }
+  if (!id.startsWith('section-')) id = `section-${id}`;
+  return atlasSections.find((section) => section.id === id)?.id ?? atlasLegacyBookmarks[id] ?? null;
+};
 
 const supportedRepresentations: MolecularRepresentation[] = [
   'ball_and_stick',
@@ -18,38 +36,9 @@ const supportedComplexRepresentations: MolecularRepresentation[] = [
   'molecular_surface',
 ];
 
-const firstSentence = (text: string): string => {
-  const normalized = text.replace(/\s+/g, ' ').trim();
-  if (!normalized) {
-    return 'Overview not yet sourced.';
-  }
-
-  const match = normalized.match(/^.+?[.!?](?:\s|$)/);
-  return (match ? match[0] : normalized).trim();
-};
-
-const summarizeToxinCategory = (organism: AtlasOrganismData): string => {
-  if (!organism.toxicMaterial || organism.toxicMaterial.components.length === 0) {
-    return `${toxicStrategyLabel(organism.toxicStrategy)}. Material composition has not yet been curated.`;
-  }
-
-  const leadCompound = organism.featuredToxin?.displayName ?? 'mixed compounds';
-  const categories = Array.from(
-    new Set(
-      organism.toxicMaterial.components
-        .map((component) => component.componentCategory)
-        .filter((category) => category.trim().length > 0),
-    ),
-  );
-
-  return categories.length > 0
-    ? `${toxicStrategyLabel(organism.toxicStrategy)} - ${leadCompound}, including ${categories.slice(0, 2).join(' and ')}.`
-    : `${toxicStrategyLabel(organism.toxicStrategy)} - ${leadCompound}.`;
-};
-
 export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
   const rootRef = useRef<HTMLElement | null>(null);
-  const globalSummaryRef = useRef<HTMLDivElement | null>(null);
+  const [activeSectionId, setActiveSectionId] = useState<AtlasSectionId>('section-summary');
   const [selectedChemistryToxinSlug, setSelectedChemistryToxinSlug] = useState('');
 
   useEffect(() => {
@@ -70,24 +59,19 @@ export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
       return null;
     }
 
-    return organism.toxins.find((toxin) => toxin.slug === selectedChemistryToxinSlug) ?? organism.toxins[0];
+    return organism.toxins.find((toxin) => toxin.slug === selectedChemistryToxinSlug)
+      ?? organism.toxins.find((toxin) => toxin.slug === organism.featuredToxin?.slug)
+      ?? organism.toxins[0] ?? null;
   }, [organism, selectedChemistryToxinSlug]);
 
-  const availableSectionKinds = useMemo(() => {
-    const kinds = new Set<string>(['organism-profile']);
-    // Keep a neutral geography surface available even before species-specific evidence is curated.
-    kinds.add('geography');
-    if (organism.deliveryMechanism.sequence.length > 0 || organism.mechanismSteps.length > 0) kinds.add('mechanisms');
-    if (organism.toxicMaterial) {
-      kinds.add('toxin-categorization');
-      if (organism.toxicMaterial.components.some((component) => component.abundanceQualifier !== 'not_quantified')) {
-        kinds.add('toxin-charts');
-      }
-    }
-    if (organism.toxins.length > 0) kinds.add('chemistry');
-    if (organism.physiology || organism.mechanismSteps.length > 0) kinds.add('physiology');
-    return kinds;
-  }, [organism]);
+  const chemistryMechanismSteps = useMemo(() => [
+    ...organism.mechanismSteps.filter((step) => step.level === 'molecular'),
+    ...(selectedChemistryToxin?.mechanismSteps ?? []),
+  ], [organism, selectedChemistryToxin]);
+  const medicalMechanismSteps = useMemo(() =>
+    organism.mechanismSteps.filter((step) => step.level !== 'molecular'), [organism]);
+  const medicalEffects = useMemo(() =>
+    [...(organism.physiology?.effects ?? [])].sort((a, b) => a.order - b.order), [organism]);
 
   const taxonomyRanks = useMemo(
     () => [
@@ -102,35 +86,13 @@ export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
     [organism],
   );
 
-  const summarySpeciesLabel = `Organism: ${organism.scientificName} (${organism.commonName})`;
-  const summaryOrganismOverview = firstSentence(organism.overview);
-  const summaryToxinOverview = selectedChemistryToxin
-    ? firstSentence(
-        `${selectedChemistryToxin.displayName}${selectedChemistryToxin.family ? ` (${selectedChemistryToxin.family})` : ''}. ${summarizeToxinCategory(organism)}`,
-      )
-    : summarizeToxinCategory(organism);
-
-  useEffect(() => {
-    if (
-      selectedChemistryToxinSlug &&
-      !organism.toxins.some((toxin) => toxin.slug === selectedChemistryToxinSlug)
-    ) {
-      setSelectedChemistryToxinSlug('');
-    }
-  }, [organism, selectedChemistryToxinSlug]);
-
-  useEffect(() => {
+  const selectChemistryToxin = (slug: string) => {
+    if (!organism.toxins.some((toxin) => toxin.slug === slug)) return;
+    setSelectedChemistryToxinSlug(slug);
     const currentUrl = new URL(window.location.href);
-    const nextToxinSlug = selectedChemistryToxinSlug || null;
-    if (currentUrl.searchParams.get('toxin') === nextToxinSlug) {
-      return;
-    }
-
-    if (nextToxinSlug) currentUrl.searchParams.set('toxin', nextToxinSlug);
-    else currentUrl.searchParams.delete('toxin');
-    const query = currentUrl.searchParams.toString();
-    window.history.replaceState(null, '', `${currentUrl.pathname}${query ? `?${query}` : ''}${currentUrl.hash}`);
-  }, [selectedChemistryToxinSlug]);
+    currentUrl.searchParams.set('toxin', slug);
+    window.history.replaceState(window.history.state, '', `${currentUrl.pathname}${currentUrl.search}${currentUrl.hash}`);
+  };
 
   const moleculeModel = useMemo(() => {
     if (!selectedChemistryToxin?.structure3dUrl || !selectedChemistryToxin.structure3dFormat) return null;
@@ -169,43 +131,16 @@ export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
   }, [organism.slug, selectedChemistryToxin]);
 
   useEffect(() => {
-    const summaryElement = globalSummaryRef.current;
-    if (!summaryElement) return;
-
-    const setSummaryHeight = () => {
-      document.documentElement.style.setProperty(
-        '--global-summary-height',
-        `${Math.ceil(summaryElement.getBoundingClientRect().height)}px`,
-      );
-    };
-    setSummaryHeight();
-    const observer = new ResizeObserver(setSummaryHeight);
-    observer.observe(summaryElement);
-    window.addEventListener('resize', setSummaryHeight);
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('resize', setSummaryHeight);
-      document.documentElement.style.setProperty('--global-summary-height', '0px');
-    };
-  }, [organism]);
-
-  useEffect(() => {
     const sectionNodes = Array.from(rootRef.current?.querySelectorAll<HTMLElement>('[data-scroll-section]') ?? []);
-    if (sectionNodes.length === 0) return;
+    if (sectionNodes.length === 0 || typeof IntersectionObserver === 'undefined') return;
 
-    sectionNodes[0]?.setAttribute('data-in-focus', 'true');
     const observer = new IntersectionObserver(
       (entries) => {
         const mostVisible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (!(mostVisible?.target instanceof HTMLElement)) return;
 
-        sectionNodes.forEach((sectionNode) => sectionNode.removeAttribute('data-in-focus'));
-        mostVisible.target.setAttribute('data-in-focus', 'true');
-        if (mostVisible.target.id && window.location.hash !== `#${mostVisible.target.id}`) {
-          const url = new URL(window.location.href);
-          url.hash = mostVisible.target.id;
-          window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
-        }
+        const id = canonicalAtlasSectionId(mostVisible.target.id);
+        if (id) setActiveSectionId(id);
       },
       { threshold: [0.2, 0.35, 0.5, 0.65], rootMargin: '-8% 0px -35% 0px' },
     );
@@ -214,27 +149,50 @@ export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
   }, [organism.slug]);
 
   useEffect(() => {
-    const targetId = decodeURIComponent(window.location.hash.replace('#', '').trim());
-    const targetElement = targetId ? document.getElementById(targetId) : null;
-    if (!targetElement) return;
-
-    window.requestAnimationFrame(() => {
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      targetElement.focus({ preventScroll: true });
-    });
+    let frame: number | undefined;
+    const navigateToBookmark = () => {
+      if (frame !== undefined) window.cancelAnimationFrame(frame);
+      const id = canonicalAtlasSectionId(window.location.hash);
+      const target = id ? rootRef.current?.querySelector<HTMLElement>(`#${id}`) : null;
+      if (!id || !target) return;
+      setActiveSectionId(id);
+      // Old composition/chart links land on the sourced material list, not a removed widget.
+      if (/toxin-(categorization|charts)$/.test(window.location.hash)) {
+        const material = target.querySelector<HTMLDetailsElement>('#chemistry-material');
+        if (material) material.open = true;
+      }
+      const url = new URL(window.location.href);
+      url.hash = id;
+      window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}${url.hash}`);
+      frame = window.requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: 'instant', block: 'start' });
+        target.focus({ preventScroll: true });
+      });
+    };
+    navigateToBookmark();
+    window.addEventListener('hashchange', navigateToBookmark);
+    window.addEventListener('popstate', navigateToBookmark);
+    return () => {
+      if (frame !== undefined) window.cancelAnimationFrame(frame);
+      window.removeEventListener('hashchange', navigateToBookmark);
+      window.removeEventListener('popstate', navigateToBookmark);
+    };
   }, [organism.slug]);
 
   return {
-    availableSectionKinds,
+    organism,
+    sections: atlasSections,
+    activeSectionId,
+    chemistryMechanismSteps,
+    medicalMechanismSteps,
+    medicalEffects,
     complexModel,
-    globalSummaryRef,
     moleculeModel,
     rootRef,
     selectedChemistryToxin,
-    setSelectedChemistryToxinSlug,
-    summaryOrganismOverview,
-    summarySpeciesLabel,
-    summaryToxinOverview,
+    selectChemistryToxin,
     taxonomyRanks,
   };
 };
+
+export type AtlasMonopageViewModel = ReturnType<typeof useAtlasMonopageOrchestration>;

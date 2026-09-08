@@ -1,6 +1,25 @@
 import type { Citation, EvidenceAssessment, MechanismStep, ToxinComponent } from '@venom-atlas/domain';
 import type { MoleculeRenderModel } from '../../molecular/types';
 
+export interface AtlasProvenance {
+  evidence: EvidenceAssessment;
+  citations: Citation[];
+}
+
+export type AtlasMechanismStep = MechanismStep & {
+  subject: { kind: 'organism_exposure' | 'whole_material' | 'isolated_compound'; slug: string };
+  provenance: AtlasProvenance;
+};
+
+export const atlasSections = [
+  { id: 'section-summary', title: 'Summary' },
+  { id: 'section-geography', title: 'Geography' },
+  { id: 'section-chemistry', title: 'Chemistry' },
+  { id: 'section-medical-effects', title: 'Medical Effects' },
+] as const;
+
+export type AtlasSectionId = (typeof atlasSections)[number]['id'];
+
 export interface GeographyVisualization {
   id: string;
   kind: 'external_embed';
@@ -15,6 +34,7 @@ export interface AtlasOrganismData {
   commonName: string;
   toxicStrategy: 'venomous' | 'poisonous' | 'both' | 'toxin_producing';
   overview: string;
+  provenance: AtlasProvenance;
   taxonomy: {
     kingdom?: string;
     phylum?: string;
@@ -35,16 +55,27 @@ export interface AtlasOrganismData {
     route: string;
     summary: string;
     sequence: string[];
+    provenance: AtlasProvenance;
   };
-  habitats: Array<{ id: string; name: string; summary: string }>;
-  ecologicalRoles: Array<{ id: string; role: string; summary: string }>;
+  habitats: Array<{ id: string; name: string; summary: string; provenance: AtlasProvenance }>;
+  ecologicalRoles: Array<{ id: string; role: string; summary: string; provenance: AtlasProvenance }>;
   geographyRanges: Array<{
     id: string;
     layerType: string;
     summary: string;
+    provenance: AtlasProvenance;
     geometryAssetId?: string;
+    sourceGeometryAssetId?: string;
     geometryFeatureCount?: number;
   }>;
+  geographySourceAudit: {
+    decision: 'native_range_supported' | 'native_range_not_established' | 'native_range_not_meaningful';
+    precision: 'admin1' | 'country' | 'macroregion' | 'occurrence_only';
+    evidenceIds: string[];
+    citationIds: string[];
+    note: string;
+    citations: Citation[];
+  } | null;
   geographyKind: 'terrestrial' | 'marine';
   toxicMaterial: {
     slug: string;
@@ -53,7 +84,8 @@ export interface AtlasOrganismData {
     ecologicalRoleSummary: string;
     materialKind: 'venom' | 'poison' | 'secretion' | 'isolated_toxin';
     evidence: EvidenceAssessment;
-    components: ToxinComponent[];
+    provenance: AtlasProvenance;
+    components: Array<ToxinComponent & { provenance: AtlasProvenance }>;
   } | null;
   coverage: {
     identity: 'available';
@@ -69,6 +101,18 @@ export interface AtlasOrganismData {
     slug: string;
     displayName: string;
     family?: string;
+    notes?: string;
+    provenance: AtlasProvenance;
+    identityProvenance: AtlasProvenance;
+    targets: Array<{ id: string; targetName: string; summary: string; provenance: AtlasProvenance }>;
+    mechanismSteps: AtlasMechanismStep[];
+    structureSources: Array<{
+      id: string;
+      format: string;
+      status: string;
+      sourceUrl?: string;
+      citations: Citation[];
+    }>;
     molecularClass: MoleculeRenderModel['molecularClass'];
     formula: string | null;
     molecularWeight: number | null;
@@ -114,7 +158,7 @@ export interface AtlasOrganismData {
     structureUrl?: string;
     structureFormat?: 'sdf' | 'mol' | 'mol2' | 'pdb' | 'mmcif';
   } | null;
-  mechanismSteps: MechanismStep[];
+  mechanismSteps: AtlasMechanismStep[];
   physiology: {
     anatomicalSystems: Array<{ id: string; name: string; description: string }>;
     symptoms: Array<{

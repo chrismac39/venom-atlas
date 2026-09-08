@@ -21,6 +21,9 @@ const writeJson = (filePath: string, payload: unknown): void => {
   writeFileSync(filePath, JSON.stringify(payload, null, 2));
 };
 
+// Only generated outputs are disposable. data/interactions contains authored
+// structure annotations referenced by draft YAML and must remain processable.
+// Astro's separate allowlist stage excludes those inputs and any unknown files.
 rmSync(path.join(dataRoot, 'venoms'), { recursive: true, force: true });
 
 for (const directory of ['organisms', 'toxic-materials', 'toxins', 'mechanisms']) {

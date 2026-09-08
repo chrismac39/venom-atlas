@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
+import { publicationIntegration } from '../../scripts/astro-publication.mjs';
 
 const base = process.env.PUBLIC_BASE_PATH ?? '/';
 
 export default defineConfig({
   output: 'static',
-  integrations: [react()],
+  integrations: [publicationIntegration(), react()],
+  ...(process.env.PUBLIC_SITE_URL ? { site: process.env.PUBLIC_SITE_URL } : {}),
   base,
   trailingSlash: 'never',
   vite: {

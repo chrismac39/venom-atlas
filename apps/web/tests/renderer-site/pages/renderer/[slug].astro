@@ -1,0 +1,34 @@
+---
+import PageLayout from '../../../../src/layouts/PageLayout.astro';
+import { MoleculeViewer } from '../../../../src/molecular/components/MoleculeViewer';
+import type { MoleculeRenderModel } from '../../../../src/molecular/types';
+import { getContentRecords } from '../../../../src/lib/content';
+
+export const getStaticPaths = () => ['solenopsin-a', 'batrachotoxin'].map((slug) => ({ params: { slug } }));
+const toxin = getContentRecords().toxins.find((entry) => entry.slug === Astro.params.slug)!;
+const model: MoleculeRenderModel = {
+  entityId: toxin.molecularEntity.id,
+  displayName: toxin.displayName,
+  molecularClass: toxin.molecularEntity.molecularClass,
+  structureFormat: 'sdf',
+  structureUrl: `/structures/${toxin.slug}.sdf`,
+  structure2dUrl: `/images/${toxin.slug}-2d.svg`,
+  defaultRepresentation: 'ball_and_stick',
+  supportedRepresentations: ['ball_and_stick', 'stick', 'space_filling', 'molecular_surface'],
+  annotations: [],
+};
+---
+
+<PageLayout title={`${toxin.displayName} | Renderer fixture`}>
+  <h1>{toxin.displayName} renderer fixture</h1>
+  <p>Test-only offline structure; this is not an eligible published dossier.</p>
+  <div id="section-geography" style="min-height: 100vh">Scroll-away fixture region</div>
+  <section id="section-chemistry">
+    <p><strong>Molecular class:</strong> {toxin.molecularEntity.molecularClass}</p>
+    <div class="chemistry-render-grid">
+      <MoleculeViewer client:visible model={model} />
+      <img class="molecule-viewer-fallback" src={model.structure2dUrl} alt={`2D skeletal structure for ${model.displayName}`} />
+    </div>
+  </section>
+  <div style="min-height: 100vh" aria-hidden="true"></div>
+</PageLayout>
