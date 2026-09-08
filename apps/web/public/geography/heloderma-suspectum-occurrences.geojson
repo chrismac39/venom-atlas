@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/2460817",
     "taxonKey": 2460817,
-    "generatedAt": "2026-09-08T12:20:45.873Z",
+    "generatedAt": "2026-09-08T12:35:55.511Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/343220606",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-24T15:24",
+        "year": 2026,
+        "month": 2,
+        "day": 24,
+        "recordedBy": "Ramsey Sullivan",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6179242471"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/343859349",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-03-19T09:09",
+        "year": 2026,
+        "month": 3,
+        "day": 19,
+        "recordedBy": "Christopher James",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6185018767"
       }
@@ -61,6 +71,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/342631020",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-03-12T10:39:33",
+        "year": 2026,
+        "month": 3,
+        "day": 12,
+        "recordedBy": "Nathan Jacobs",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6400633281"
       }
@@ -80,6 +95,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/347616564",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-04-05T12:00",
+        "year": 2026,
+        "month": 4,
+        "day": 5,
+        "recordedBy": "Alexandre Passos",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6188184280"
       }
@@ -99,6 +119,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/371066648",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-04-28T17:25:58",
+        "year": 2026,
+        "month": 4,
+        "day": 28,
+        "recordedBy": "colorful-corvid",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6400330621"
       }
@@ -118,6 +143,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/359874865",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-05-05T17:26:56",
+        "year": 2026,
+        "month": 5,
+        "day": 5,
+        "recordedBy": "lightbed",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6273725908"
       }
@@ -137,6 +167,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/268005203",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2025-03-29T12:01",
+        "year": 2025,
+        "month": 3,
+        "day": 29,
+        "recordedBy": "Sean Krieg",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5108430251"
       }
@@ -156,6 +191,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/270919186",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2025-04-08T14:39:24",
+        "year": 2025,
+        "month": 4,
+        "day": 8,
+        "recordedBy": "Daniel McNair",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5134100063"
       }

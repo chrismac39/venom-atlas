@@ -17,6 +17,22 @@
           "cit-gbif-chironex-fleckeri"
         ]
       }
+    },
+    {
+      "id": "geo-chironex-fleckeri-isea3h-evidence",
+      "organismId": "org-chironex-fleckeri",
+      "layerType": "marine_evidence_cell",
+      "geometryAssetId": "/geography/chironex-fleckeri-isea3h-evidence.geojson",
+      "geometryFeatureCount": 15,
+      "summary": "ISEA3H cells containing reusable-license GBIF observations; cells show evidence aggregation, not a complete marine range.",
+      "evidence": {
+        "id": "ev-chironex-fleckeri-isea3h-evidence",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-chironex-fleckeri"
+        ]
+      }
     }
   ]
 }

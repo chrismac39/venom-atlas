@@ -84,6 +84,28 @@ for (const sourceFile of readdirSync(geographySourceRoot).filter((name) => name.
 }
 
 const records = new Map<string, DistributionRecord>();
+for (const [speciesId, nativeCountryCodes] of nativeCountryCodesBySpecies) {
+  for (const adminFeature of adminFeatures) {
+    const { shapeGroup, shapeISO, shapeName, shapeID } = adminFeature.properties;
+    if (!nativeCountryCodes.has(shapeGroup)) {
+      continue;
+    }
+    records.set(`${speciesId}:${shapeGroup}-${shapeISO}`, {
+      speciesId,
+      regionId: `${shapeGroup}-${shapeISO}`,
+      countryCode: shapeGroup,
+      adminLevel: 1,
+      regionName: shapeName,
+      distributionStatus: 'native',
+      evidenceIds: [`ev-${speciesId}-native-range`],
+      derivation: 'source_range_to_admin1_extrapolation',
+      confidence: 'high',
+      sourceRecordCount: 0,
+      note: `Source-backed country-level native range expanded to the geoBoundaries ADM1 feature ${shapeID}; no GBIF point is required for this native-range shading record.`,
+    });
+  }
+}
+
 for (const [speciesId, sourceRanges] of sourceRangesBySpecies) {
   for (const sourceRange of sourceRanges) {
     const sourcePath = path.join(repoRoot, 'apps', 'web', 'public', sourceRange.geometryAssetPath.replace(/^\//, ''));
@@ -156,7 +178,7 @@ for (const fileName of readdirSync(geographyRoot).filter((name) => name.endsWith
         existingDerivation: existing?.derivation,
       }),
       evidenceIds: mergeEvidenceIds(
-        ...(isNativeEvidence ? ['ev-solenopsis-invicta-native-range'] : []),
+        ...(isNativeEvidence ? [`ev-${speciesId}-native-range`] : []),
         ...(existing?.evidenceIds ?? []),
         `ev-${speciesId}-gbif-occurrences`,
       ),

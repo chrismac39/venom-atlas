@@ -1,6 +1,10 @@
 ﻿id: geo-phyllobates-terribilis
 slug: phyllobates-terribilis
 organismSlug: phyllobates-terribilis
+distribution:
+  tier: occurrence_intersection
+  nativeCountryCodes:
+    - COL
 ranges:
   - id: geo-phyllobates-confirmed-occurrences
     layerType: confirmed_occurrence

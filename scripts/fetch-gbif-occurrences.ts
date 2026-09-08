@@ -10,6 +10,11 @@ interface GbifOccurrence {
   datasetTitle?: string;
   occurrenceID?: string;
   basisOfRecord?: string;
+  eventDate?: string;
+  year?: number;
+  month?: number;
+  day?: number;
+  recordedBy?: string;
   license?: string;
 }
 
@@ -91,6 +96,11 @@ const main = async (): Promise<void> => {
         datasetTitle: record.datasetTitle ?? null,
         occurrenceID: record.occurrenceID ?? null,
         basisOfRecord: record.basisOfRecord ?? null,
+        eventDate: record.eventDate ?? null,
+        year: record.year ?? null,
+        month: record.month ?? null,
+        day: record.day ?? null,
+        recordedBy: record.recordedBy ?? null,
         license: record.license,
         sourceUrl: `https://www.gbif.org/occurrence/${record.key}`,
       },

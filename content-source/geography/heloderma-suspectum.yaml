@@ -1,6 +1,11 @@
 ﻿id: geo-heloderma-suspectum
 slug: heloderma-suspectum
 organismSlug: heloderma-suspectum
+distribution:
+  tier: occurrence_intersection
+  nativeCountryCodes:
+    - MEX
+    - USA
 ranges:
   - id: geo-heloderma-suspectum-confirmed-occurrences
     layerType: confirmed_occurrence

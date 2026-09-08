@@ -13,3 +13,13 @@ ranges:
       evidenceType: database
       citationIds:
         - cit-gbif-eunice-aphroditois
+  - id: geo-eunice-aphroditois-isea3h-evidence
+    layerType: marine_evidence_cell
+    geometryAssetPath: /geography/eunice-aphroditois-isea3h-evidence.geojson
+    summary: ISEA3H cells containing reusable-license GBIF observations; cells show evidence aggregation, not a complete marine range.
+    evidence:
+      id: ev-eunice-aphroditois-isea3h-evidence
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-eunice-aphroditois

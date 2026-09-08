@@ -133,6 +133,31 @@ describe('biological coverage expansion', () => {
     }
   });
 
+  it('keeps native administrative shading independent from occurrence points', () => {
+    const registry = JSON.parse(
+      readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),
+    ) as { records: Array<{ speciesId: string; derivation: string; sourceRecordCount: number; distributionStatus: string }> };
+    expect(registry.records.some((record) =>
+      record.speciesId === 'solenopsis-invicta' &&
+      record.distributionStatus === 'native' &&
+      record.derivation === 'source_range_to_admin1_extrapolation' &&
+      record.sourceRecordCount === 0,
+    )).toBe(true);
+  });
+
+  it('provides ISEA3H evidence cells for every marine organism', () => {
+    for (const geography of getAllOrganisms()
+      .flatMap((entry) => entry.organism.slug ? [getGeographyByOrganismSlug(entry.organism.slug)] : [])
+      .filter((entry): entry is NonNullable<typeof entry> => entry?.geographyKind === 'marine')) {
+      expect(geography.ranges.some((range) => range.layerType === 'marine_evidence_cell')).toBe(true);
+      expect(existsSync(path.join(
+        repoRoot,
+        'apps/web/public/geography',
+        `${geography.organismSlug}-isea3h-evidence.geojson`,
+      ))).toBe(true);
+    }
+  });
+
   it('searches catalog text and filters by kingdom and toxic strategy', () => {
     const organisms = buildAtlasMonopageOrganisms();
 

@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/3226559",
     "taxonKey": 3226559,
-    "generatedAt": "2026-09-08T12:20:37.326Z",
+    "generatedAt": "2026-09-08T12:35:48.174Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "JBTMVO010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2025-10",
+        "year": 2025,
+        "month": 10,
+        "day": null,
+        "recordedBy": "CDPH MDL",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6191427327"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "JBPODX010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2025",
+        "year": 2025,
+        "month": null,
+        "day": null,
+        "recordedBy": "Xiaorong Yang",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190372030"
       }
@@ -61,6 +71,11 @@
         "datasetTitle": null,
         "occurrenceID": "JBKFVZ010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2024-07-08",
+        "year": 2024,
+        "month": 7,
+        "day": 8,
+        "recordedBy": "Xuefang Xu",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190058218"
       }
@@ -80,6 +95,11 @@
         "datasetTitle": null,
         "occurrenceID": "PV933012",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2024-10",
+        "year": 2024,
+        "month": 10,
+        "day": null,
+        "recordedBy": "Valdezate S",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190555220"
       }
@@ -99,6 +119,11 @@
         "datasetTitle": null,
         "occurrenceID": "V4R16_434",
         "basisOfRecord": "MACHINE_OBSERVATION",
+        "eventDate": "2022-02-08",
+        "year": 2022,
+        "month": 2,
+        "day": 8,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4439318617"
       }
@@ -118,6 +143,11 @@
         "datasetTitle": null,
         "occurrenceID": "V4R03_389",
         "basisOfRecord": "MACHINE_OBSERVATION",
+        "eventDate": "2022-05-18",
+        "year": 2022,
+        "month": 5,
+        "day": 18,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4439306796"
       }
@@ -137,6 +167,11 @@
         "datasetTitle": null,
         "occurrenceID": "V4R27_1006",
         "basisOfRecord": "MACHINE_OBSERVATION",
+        "eventDate": "2022-05-29",
+        "year": 2022,
+        "month": 5,
+        "day": 29,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4439317829"
       }
@@ -156,6 +191,11 @@
         "datasetTitle": null,
         "occurrenceID": "DANHQV010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2020-06-15",
+        "year": 2020,
+        "month": 6,
+        "day": 15,
+        "recordedBy": "Chinese Center for Disease Control and",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6189111775"
       }
@@ -175,6 +215,11 @@
         "datasetTitle": null,
         "occurrenceID": "DAMXXZ010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2020-08-20",
+        "year": 2020,
+        "month": 8,
+        "day": 20,
+        "recordedBy": "Anaerobic laboratory - Department of",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190823409"
       }
@@ -194,6 +239,11 @@
         "datasetTitle": null,
         "occurrenceID": "DAGUHD010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2019",
+        "year": 2019,
+        "month": null,
+        "day": null,
+        "recordedBy": "Maria B. Nowakowska",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190762851"
       }
@@ -213,6 +263,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00572462_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2018-04-23",
+        "year": 2018,
+        "month": 4,
+        "day": 23,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3911304783"
       }
@@ -232,6 +287,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:edna:IN2017_V01_KC06_66-32B4EACE33065C36F97BF640663F0027",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2017-02-11",
+        "year": 2017,
+        "month": 2,
+        "day": 11,
+        "recordedBy": "Armbrecht et al. 2023|Amaranta Focardi",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4174668985"
       }
@@ -251,6 +311,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:edna:IN2017_V01_KC014_210-5A319000D6E821C0A3A2A3750BC17703",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2017-02-25",
+        "year": 2017,
+        "month": 2,
+        "day": 25,
+        "recordedBy": "Armbrecht et al. 2023|Amaranta Focardi",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4174682374"
       }
@@ -270,6 +335,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00583093_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2017-09-10",
+        "year": 2017,
+        "month": 9,
+        "day": 10,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3911442079"
       }
@@ -289,6 +359,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00224503_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2016-06-14",
+        "year": 2016,
+        "month": 6,
+        "day": 14,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3914951571"
       }
@@ -308,6 +383,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00198890_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2016-07-25",
+        "year": 2016,
+        "month": 7,
+        "day": 25,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3916502804"
       }
@@ -327,6 +407,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00361736_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2016-09-01",
+        "year": 2016,
+        "month": 9,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2442331408"
       }
@@ -346,6 +431,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYZ010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2016",
+        "year": 2016,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817590868"
       }
@@ -365,6 +455,11 @@
         "datasetTitle": null,
         "occurrenceID": "JANIBT010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2016",
+        "year": 2016,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190039819"
       }
@@ -384,6 +479,11 @@
         "datasetTitle": null,
         "occurrenceID": "JBPODV010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2016",
+        "year": 2016,
+        "month": null,
+        "day": null,
+        "recordedBy": "Gaopeng Lei",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190672870"
       }
@@ -403,6 +503,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00363155_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015-09-15",
+        "year": 2015,
+        "month": 9,
+        "day": 15,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2441345893"
       }
@@ -422,6 +527,11 @@
         "datasetTitle": null,
         "occurrenceID": "SWRK01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349512202"
       }
@@ -441,6 +551,11 @@
         "datasetTitle": null,
         "occurrenceID": "QVAF01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "LA Department of Public Health",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351911338"
       }
@@ -460,6 +575,11 @@
         "datasetTitle": null,
         "occurrenceID": "PYBM01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Microbiology and Epidemiology",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351918256"
       }
@@ -479,6 +599,11 @@
         "datasetTitle": null,
         "occurrenceID": "SXBT01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351925513"
       }
@@ -498,6 +623,11 @@
         "datasetTitle": null,
         "occurrenceID": "SXBX01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351951541"
       }
@@ -517,6 +647,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZC010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817590869"
       }
@@ -536,6 +671,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYW010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817598890"
       }
@@ -555,6 +695,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZB010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817768787"
       }
@@ -574,6 +719,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYM010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817771800"
       }
@@ -593,6 +743,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAWEOG010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6188917131"
       }
@@ -612,6 +767,11 @@
         "datasetTitle": null,
         "occurrenceID": "JANIBZ010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190249687"
       }
@@ -631,6 +791,11 @@
         "datasetTitle": null,
         "occurrenceID": "JANICI010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015",
+        "year": 2015,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190286107"
       }
@@ -650,6 +815,11 @@
         "datasetTitle": null,
         "occurrenceID": "QVAG01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "CO Department of Public Health",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349430690"
       }
@@ -669,6 +839,11 @@
         "datasetTitle": null,
         "occurrenceID": "QVAH01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "TX Department of Public Health",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349500270"
       }
@@ -688,6 +863,11 @@
         "datasetTitle": null,
         "occurrenceID": "SGKC01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Public Health England collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349519388"
       }
@@ -707,6 +887,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYV010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817590867"
       }
@@ -726,6 +911,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZK010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817590871"
       }
@@ -745,6 +935,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYO010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817596887"
       }
@@ -764,6 +959,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAANAF010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817596890"
       }
@@ -783,6 +983,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZH010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817598891"
       }
@@ -802,6 +1007,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYH010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817602789"
       }
@@ -821,6 +1031,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZZ010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817746855"
       }
@@ -840,6 +1055,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAANAA010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817766887"
       }
@@ -859,6 +1079,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYX010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817772824"
       }
@@ -878,6 +1103,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYL010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2014",
+        "year": 2014,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3818083798"
       }
@@ -897,6 +1127,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00357645_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013-05-10",
+        "year": 2013,
+        "month": 5,
+        "day": 10,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2442241542"
       }
@@ -916,6 +1151,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00359053_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013-07-30",
+        "year": 2013,
+        "month": 7,
+        "day": 30,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2440651900"
       }
@@ -935,6 +1175,11 @@
         "datasetTitle": null,
         "occurrenceID": "DALZXW010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013-07-22",
+        "year": 2013,
+        "month": 7,
+        "day": 22,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6189002107"
       }
@@ -954,6 +1199,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYW01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013",
+        "year": 2013,
+        "month": null,
+        "day": null,
+        "recordedBy": "LNC Davar",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349366917"
       }
@@ -973,6 +1223,11 @@
         "datasetTitle": null,
         "occurrenceID": "SWSA01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013",
+        "year": 2013,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351863886"
       }
@@ -992,6 +1247,11 @@
         "datasetTitle": null,
         "occurrenceID": "SGKF01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013",
+        "year": 2013,
+        "month": null,
+        "day": null,
+        "recordedBy": "Public Health England collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351912507"
       }
@@ -1011,6 +1271,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZO010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013",
+        "year": 2013,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817592816"
       }
@@ -1030,6 +1295,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYS010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013",
+        "year": 2013,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817596888"
       }
@@ -1049,6 +1319,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00364398_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012-10-01",
+        "year": 2012,
+        "month": 10,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2440548950"
       }
@@ -1068,6 +1343,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00360130_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012-10-03",
+        "year": 2012,
+        "month": 10,
+        "day": 3,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2441353945"
       }
@@ -1087,6 +1367,11 @@
         "datasetTitle": null,
         "occurrenceID": "LGVT01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012",
+        "year": 2012,
+        "month": null,
+        "day": null,
+        "recordedBy": "French Avian botulism NRL",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3347320887"
       }
@@ -1106,6 +1391,11 @@
         "datasetTitle": null,
         "occurrenceID": "LGVQ01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012",
+        "year": 2012,
+        "month": null,
+        "day": null,
+        "recordedBy": "French Avian botulism NRL",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3347373839"
       }
@@ -1125,6 +1415,11 @@
         "datasetTitle": null,
         "occurrenceID": "LGVR01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012",
+        "year": 2012,
+        "month": null,
+        "day": null,
+        "recordedBy": "French Avian botulism NRL",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349357799"
       }
@@ -1144,6 +1439,11 @@
         "datasetTitle": null,
         "occurrenceID": "SWRU01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012",
+        "year": 2012,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349422433"
       }
@@ -1163,6 +1463,11 @@
         "datasetTitle": null,
         "occurrenceID": "SWRS01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012",
+        "year": 2012,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349512203"
       }
@@ -1182,6 +1487,11 @@
         "datasetTitle": null,
         "occurrenceID": "SWRZ01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012",
+        "year": 2012,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351862595"
       }
@@ -1201,6 +1511,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYK010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2012",
+        "year": 2012,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817596886"
       }
@@ -1220,6 +1535,11 @@
         "datasetTitle": null,
         "occurrenceID": "MGYA00195056_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011-11-17",
+        "year": 2011,
+        "month": 11,
+        "day": 17,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2024498403"
       }
@@ -1239,6 +1559,11 @@
         "datasetTitle": null,
         "occurrenceID": "SGKU01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011",
+        "year": 2011,
+        "month": null,
+        "day": null,
+        "recordedBy": "Public Health England collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349505240"
       }
@@ -1258,6 +1583,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZP010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011",
+        "year": 2011,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817597716"
       }
@@ -1277,6 +1607,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMYE010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011",
+        "year": 2011,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3817771798"
       }
@@ -1296,6 +1631,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAAMZD010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011",
+        "year": 2011,
+        "month": null,
+        "day": null,
+        "recordedBy": "Dr. Bano Luca, Istituto Zooprofilattico",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3818110403"
       }
@@ -1315,6 +1655,11 @@
         "datasetTitle": null,
         "occurrenceID": "CP063961",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011",
+        "year": 2011,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3985127417"
       }
@@ -1334,6 +1679,11 @@
         "datasetTitle": null,
         "occurrenceID": "JAIQUV010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011",
+        "year": 2011,
+        "month": null,
+        "day": null,
+        "recordedBy": "CTCPA (Centre Technique Agroalimentaire)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190369935"
       }
@@ -1353,6 +1703,11 @@
         "datasetTitle": null,
         "occurrenceID": "LGVU01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2009",
+        "year": 2009,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3347373840"
       }
@@ -1372,6 +1727,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYY01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2009",
+        "year": 2009,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349229202"
       }
@@ -1391,6 +1751,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYX01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2009",
+        "year": 2009,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349277183"
       }
@@ -1410,6 +1775,11 @@
         "datasetTitle": null,
         "occurrenceID": "SGNA01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2009",
+        "year": 2009,
+        "month": null,
+        "day": null,
+        "recordedBy": "Public Health England collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6190719331"
       }
@@ -1429,6 +1799,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYQ01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2008",
+        "year": 2008,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3347332848"
       }
@@ -1448,6 +1823,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYR01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2008",
+        "year": 2008,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3347396907"
       }
@@ -1467,6 +1847,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYV01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2008",
+        "year": 2008,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3347396908"
       }
@@ -1486,6 +1871,11 @@
         "datasetTitle": null,
         "occurrenceID": "LGVS01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2008",
+        "year": 2008,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349269053"
       }
@@ -1505,6 +1895,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYT01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2008",
+        "year": 2008,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349277182"
       }
@@ -1524,6 +1919,11 @@
         "datasetTitle": null,
         "occurrenceID": "LHYS01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2008",
+        "year": 2008,
+        "month": null,
+        "day": null,
+        "recordedBy": "LaboCEA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349366916"
       }
@@ -1543,6 +1943,11 @@
         "datasetTitle": null,
         "occurrenceID": "JBPODU010000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2008",
+        "year": 2008,
+        "month": null,
+        "day": null,
+        "recordedBy": "Xiaorong Yang",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6191425472"
       }
@@ -1562,6 +1967,11 @@
         "datasetTitle": null,
         "occurrenceID": "CP063967",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2007",
+        "year": 2007,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4008205334"
       }
@@ -1581,6 +1991,11 @@
         "datasetTitle": null,
         "occurrenceID": "CP059678",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2006-10-18",
+        "year": 2006,
+        "month": 10,
+        "day": 18,
+        "recordedBy": "Toronto Public Health",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349607280"
       }
@@ -1600,6 +2015,11 @@
         "datasetTitle": null,
         "occurrenceID": "SWSX01000000",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2006",
+        "year": 2006,
+        "month": null,
+        "day": null,
+        "recordedBy": "Institute of Food Research collection",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3351795719"
       }
@@ -1619,6 +2039,11 @@
         "datasetTitle": null,
         "occurrenceID": "CP068960",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2005-02-23",
+        "year": 2005,
+        "month": 2,
+        "day": 23,
+        "recordedBy": "Birgit Schwagerick",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3349690157"
       }

@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/5201174",
     "taxonKey": 5201174,
-    "generatedAt": "2026-09-08T12:20:35.183Z",
+    "generatedAt": "2026-09-08T12:35:46.131Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/346068047",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-03-29T14:20",
+        "year": 2026,
+        "month": 3,
+        "day": 29,
+        "recordedBy": "Chris Spain",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6274114486"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/383552208",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-07-21T11:09:13",
+        "year": 2026,
+        "month": 7,
+        "day": 21,
+        "recordedBy": "imusan",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6469591050"
       }
@@ -61,6 +71,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/298983747",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2025-03-04T15:30",
+        "year": 2025,
+        "month": 3,
+        "day": 4,
+        "recordedBy": "Jay Brasher",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5231657802"
       }
@@ -80,6 +95,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/268030953",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2025-04-01T15:27:21",
+        "year": 2025,
+        "month": 4,
+        "day": 1,
+        "recordedBy": "Olly Morgan",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5108564357"
       }
@@ -99,6 +119,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/287517988",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2025-06-01T10:38",
+        "year": 2025,
+        "month": 6,
+        "day": 1,
+        "recordedBy": "Mark Rosenstein",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5230003739"
       }
@@ -118,6 +143,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/299143666",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2025-07-17T20:14",
+        "year": 2025,
+        "month": 7,
+        "day": 17,
+        "recordedBy": "Selim Türeli",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5231219789"
       }
@@ -137,6 +167,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/205098816",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2024-03-28T14:01",
+        "year": 2024,
+        "month": 3,
+        "day": 28,
+        "recordedBy": "Christian Berg",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4863814513"
       }
@@ -156,6 +191,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/257065377",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2024-03-23T12:38",
+        "year": 2024,
+        "month": 3,
+        "day": 23,
+        "recordedBy": "Micha Baum",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5037079297"
       }
@@ -175,6 +215,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/296753292",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2024-03-29T09:49",
+        "year": 2024,
+        "month": 3,
+        "day": 29,
+        "recordedBy": "Micha Baum",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5231372269"
       }
@@ -194,6 +239,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/222359001",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2024-05-30T10:11",
+        "year": 2024,
+        "month": 5,
+        "day": 30,
+        "recordedBy": "Matt Muir",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5291929436"
       }
@@ -213,6 +263,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/248464894",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2024-09-17T10:59",
+        "year": 2024,
+        "month": 9,
+        "day": 17,
+        "recordedBy": "desertnaturalist",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5036691141"
       }
@@ -232,6 +287,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/147090833",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-01-14T14:20",
+        "year": 2023,
+        "month": 1,
+        "day": 14,
+        "recordedBy": "Debra Baker",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4039348516"
       }
@@ -251,6 +311,11 @@
         "datasetTitle": null,
         "occurrenceID": "bba32d2b-67a8-4fbd-8be0-512e3eb815f6",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2023-02-24",
+        "year": 2023,
+        "month": 2,
+        "day": 24,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6196878378"
       }
@@ -270,6 +335,11 @@
         "datasetTitle": null,
         "occurrenceID": "eacaac1c-4fbb-4df0-9c09-217d698ba78f",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-03-08",
+        "year": 2023,
+        "month": 3,
+        "day": 8,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542608462"
       }
@@ -289,6 +359,11 @@
         "datasetTitle": null,
         "occurrenceID": "asv.196_EE0487_12s_teleo",
         "basisOfRecord": "MACHINE_OBSERVATION",
+        "eventDate": "2023-03-27T04:09:49Z",
+        "year": 2023,
+        "month": 3,
+        "day": 27,
+        "recordedBy": "Hugo Gante",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5865367079"
       }
@@ -308,6 +383,11 @@
         "datasetTitle": null,
         "occurrenceID": "asv.791_EE0271_12s_teleo",
         "basisOfRecord": "MACHINE_OBSERVATION",
+        "eventDate": "2023-03-01",
+        "year": 2023,
+        "month": 3,
+        "day": 1,
+        "recordedBy": "Hugo Gante",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5867331930"
       }
@@ -327,6 +407,11 @@
         "datasetTitle": null,
         "occurrenceID": "1890531b-b469-4c2b-8043-25d073c4cdd3",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-04-20",
+        "year": 2023,
+        "month": 4,
+        "day": 20,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542589984"
       }
@@ -346,6 +431,11 @@
         "datasetTitle": null,
         "occurrenceID": "83222e32-1727-4345-bf81-63b6b08f1a7d",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-04-06",
+        "year": 2023,
+        "month": 4,
+        "day": 6,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542609867"
       }
@@ -365,6 +455,11 @@
         "datasetTitle": null,
         "occurrenceID": "3b58bfef-0e91-4701-95fc-996b31d6852b",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-04-24",
+        "year": 2023,
+        "month": 4,
+        "day": 24,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542669238"
       }
@@ -384,6 +479,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/163259297",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-05-18T14:46",
+        "year": 2023,
+        "month": 5,
+        "day": 18,
+        "recordedBy": "desertnaturalist",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4121016991"
       }
@@ -403,6 +503,11 @@
         "datasetTitle": null,
         "occurrenceID": "d914bcff-f93e-4e51-8917-2221d9f6030d",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-05-11",
+        "year": 2023,
+        "month": 5,
+        "day": 11,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542557027"
       }
@@ -422,6 +527,11 @@
         "datasetTitle": null,
         "occurrenceID": "8e6921c9-9cd6-4234-9d9f-dedac0d43e8f",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-05-18",
+        "year": 2023,
+        "month": 5,
+        "day": 18,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542638497"
       }
@@ -441,6 +551,11 @@
         "datasetTitle": null,
         "occurrenceID": "fa91ded0-bd2e-49a7-be05-f513aca019c9",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-05-18",
+        "year": 2023,
+        "month": 5,
+        "day": 18,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542743209"
       }
@@ -460,6 +575,11 @@
         "datasetTitle": null,
         "occurrenceID": null,
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-05-09T00:00",
+        "year": 2023,
+        "month": 5,
+        "day": 9,
+        "recordedBy": "743281815",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5018472560"
       }
@@ -479,6 +599,11 @@
         "datasetTitle": null,
         "occurrenceID": "23bf32eb-253c-4e87-ac52-b1877c7c6184",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-06-20",
+        "year": 2023,
+        "month": 6,
+        "day": 20,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542619745"
       }
@@ -498,6 +623,11 @@
         "datasetTitle": null,
         "occurrenceID": "25b69c6e-c0ef-4bf4-a039-c20e1b6ccc8e",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-06-15",
+        "year": 2023,
+        "month": 6,
+        "day": 15,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542620050"
       }
@@ -517,6 +647,11 @@
         "datasetTitle": null,
         "occurrenceID": "4fbfcae1-0649-4b9e-a841-c2564d012691",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-07-13",
+        "year": 2023,
+        "month": 7,
+        "day": 13,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542727365"
       }
@@ -536,6 +671,11 @@
         "datasetTitle": null,
         "occurrenceID": "c8e0ff9f-2617-4391-8dd8-30684083d0da",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2023-09-19",
+        "year": 2023,
+        "month": 9,
+        "day": 19,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6196879172"
       }
@@ -555,6 +695,11 @@
         "datasetTitle": null,
         "occurrenceID": "d0436596-458b-413d-9478-15e9e12d97c7",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-12-31",
+        "year": 2023,
+        "month": 12,
+        "day": 31,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542666675"
       }
@@ -574,6 +719,11 @@
         "datasetTitle": null,
         "occurrenceID": "d8dfee0c-482f-436c-be58-268916cb1d3c",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-02-08",
+        "year": 2022,
+        "month": 2,
+        "day": 8,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542559116"
       }
@@ -593,6 +743,11 @@
         "datasetTitle": null,
         "occurrenceID": "14bc7335-b29f-4eae-839a-a8602764b1a4",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-04-12",
+        "year": 2022,
+        "month": 4,
+        "day": 12,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542586471"
       }
@@ -612,6 +767,11 @@
         "datasetTitle": null,
         "occurrenceID": "c4b24c55-1ab8-4130-8c4b-016f2db5c661",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-04-14",
+        "year": 2022,
+        "month": 4,
+        "day": 14,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542755752"
       }
@@ -631,6 +791,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/132813499",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-08-28T21:14",
+        "year": 2022,
+        "month": 8,
+        "day": 28,
+        "recordedBy": "Aleš Buček",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4014864646"
       }
@@ -650,6 +815,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/144726680",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-08-29T07:42",
+        "year": 2022,
+        "month": 8,
+        "day": 29,
+        "recordedBy": "Dr Elodie Camprasse",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6147564486"
       }
@@ -669,6 +839,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/134539535",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-09-11T04:32",
+        "year": 2022,
+        "month": 9,
+        "day": 11,
+        "recordedBy": "Grace",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3903416185"
       }
@@ -688,6 +863,11 @@
         "datasetTitle": null,
         "occurrenceID": "6f1edd58-9dfd-451f-8c24-4fc56dea57d5",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-09-24",
+        "year": 2022,
+        "month": 9,
+        "day": 24,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542554491"
       }
@@ -707,6 +887,11 @@
         "datasetTitle": null,
         "occurrenceID": "86e88b1c-c7a3-45f3-8d30-ef5fb56918e4",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-09-21",
+        "year": 2022,
+        "month": 9,
+        "day": 21,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542719179"
       }
@@ -726,6 +911,11 @@
         "datasetTitle": null,
         "occurrenceID": "c93db786-330b-4af1-b2a9-5aac10e552fd",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2022-09-26",
+        "year": 2022,
+        "month": 9,
+        "day": 26,
+        "recordedBy": "Anonymisé RGPD (FFESSM)",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4542741084"
       }

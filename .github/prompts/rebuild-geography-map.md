@@ -1,4 +1,8 @@
-# Rebuild Geography Map From Scratch
+# Deprecated: Rebuild Geography Map From Scratch
+
+This prompt is superseded by [expand-geography-features.prompt.md](expand-geography-features.prompt.md).
+Keep it only as the historical record of the completed OpenLayers migration; use the replacement
+prompt for current geography work.
 
 ## Progress
 

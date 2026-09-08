@@ -17,6 +17,22 @@
           "cit-gbif-conus-geographus"
         ]
       }
+    },
+    {
+      "id": "geo-conus-geographus-isea3h-evidence",
+      "organismId": "org-conus-geographus",
+      "layerType": "marine_evidence_cell",
+      "geometryAssetId": "/geography/conus-geographus-isea3h-evidence.geojson",
+      "geometryFeatureCount": 75,
+      "summary": "ISEA3H cells containing reusable-license GBIF observations; cells show evidence aggregation, not a complete marine range.",
+      "evidence": {
+        "id": "ev-conus-geographus-isea3h-evidence",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-conus-geographus"
+        ]
+      }
     }
   ]
 }

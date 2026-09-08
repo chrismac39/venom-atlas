@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/2157928",
     "taxonKey": 2157928,
-    "generatedAt": "2026-09-08T12:20:41.895Z",
+    "generatedAt": "2026-09-08T12:35:51.560Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333452475",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-02T20:01",
+        "year": 2026,
+        "month": 1,
+        "day": 2,
+        "recordedBy": "Lawrence Hylton",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938149652"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333035777",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-01T18:30:35",
+        "year": 2026,
+        "month": 1,
+        "day": 1,
+        "recordedBy": "Jonathan Mills-Anderson",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938447467"
       }
@@ -61,6 +71,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/332981127",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-01T16:09:02",
+        "year": 2026,
+        "month": 1,
+        "day": 1,
+        "recordedBy": "Helen loves bees",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938605853"
       }
@@ -80,6 +95,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333822395",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-01T07:55",
+        "year": 2026,
+        "month": 1,
+        "day": 1,
+        "recordedBy": "themaskedlapwing",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6129952739"
       }
@@ -99,6 +119,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336570574",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-29T09:42:11",
+        "year": 2026,
+        "month": 1,
+        "day": 29,
+        "recordedBy": "Matthew Lincoln",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133261935"
       }
@@ -118,6 +143,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336944193",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-01T22:18:07",
+        "year": 2026,
+        "month": 1,
+        "day": 1,
+        "recordedBy": "Elizabeth Newton",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133319089"
       }
@@ -137,6 +167,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336681204",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-30T23:11:40",
+        "year": 2026,
+        "month": 1,
+        "day": 30,
+        "recordedBy": "Aidan Tsoumbakos",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133394523"
       }
@@ -156,6 +191,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/335600268",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-21T15:36:16",
+        "year": 2026,
+        "month": 1,
+        "day": 21,
+        "recordedBy": "Ariane Roberge",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159519724"
       }
@@ -175,6 +215,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/354324624",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-26T18:41:50",
+        "year": 2026,
+        "month": 1,
+        "day": 26,
+        "recordedBy": "Outland Capture",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6234634322"
       }
@@ -194,6 +239,11 @@
         "datasetTitle": null,
         "occurrenceID": "3a3204b7-3d87-4c55-b748-008ac1567bdd",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-22T23:14",
+        "year": 2026,
+        "month": 1,
+        "day": 22,
+        "recordedBy": "AlisonMilton",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6317944917"
       }
@@ -213,6 +263,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/362254793",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-13T15:07",
+        "year": 2026,
+        "month": 1,
+        "day": 13,
+        "recordedBy": "Thomas Jaeger",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6320701880"
       }
@@ -232,6 +287,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336945002",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-01T20:26",
+        "year": 2026,
+        "month": 2,
+        "day": 1,
+        "recordedBy": "Stuart",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133251227"
       }
@@ -251,6 +311,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/337489997",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-06T10:43:36",
+        "year": 2026,
+        "month": 2,
+        "day": 6,
+        "recordedBy": "Gerardo Urbina",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6147475703"
       }
@@ -270,6 +335,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/337467583",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-06T07:33:44",
+        "year": 2026,
+        "month": 2,
+        "day": 6,
+        "recordedBy": "Rosie Steinberg",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159349348"
       }
@@ -289,6 +359,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/338922969",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-16T22:00:40",
+        "year": 2026,
+        "month": 2,
+        "day": 16,
+        "recordedBy": "Martin Hannan-Jones",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159687571"
       }
@@ -308,6 +383,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/338799467",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-16T10:51:59",
+        "year": 2026,
+        "month": 2,
+        "day": 16,
+        "recordedBy": "Jiri Hronik",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159691833"
       }
@@ -327,6 +407,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/339273027",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-19T18:58:46",
+        "year": 2026,
+        "month": 2,
+        "day": 19,
+        "recordedBy": "sielt",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6163098384"
       }
@@ -346,6 +431,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/339883043",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-22T12:28:34",
+        "year": 2026,
+        "month": 2,
+        "day": 22,
+        "recordedBy": "evaladyman",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6163122287"
       }

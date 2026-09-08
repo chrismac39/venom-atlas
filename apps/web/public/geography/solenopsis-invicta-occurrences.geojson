@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/5035230",
     "taxonKey": 5035230,
-    "generatedAt": "2026-09-08T12:20:31.714Z",
+    "generatedAt": "2026-09-08T12:35:42.312Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333532204",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-04T17:02:05",
+        "year": 2026,
+        "month": 1,
+        "day": 4,
+        "recordedBy": "Sarah Abbate",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938150807"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333220794",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-02T14:12",
+        "year": 2026,
+        "month": 1,
+        "day": 2,
+        "recordedBy": "Lauren McLaurin",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938366257"
       }
@@ -61,6 +71,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333056725",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-01T13:13:51",
+        "year": 2026,
+        "month": 1,
+        "day": 1,
+        "recordedBy": "Nathan May",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938456958"
       }
@@ -80,6 +95,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333469166",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-03T17:09:25",
+        "year": 2026,
+        "month": 1,
+        "day": 3,
+        "recordedBy": "Luiz Puodzius",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938478854"
       }
@@ -99,6 +119,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333084786",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-01T12:14",
+        "year": 2026,
+        "month": 1,
+        "day": 1,
+        "recordedBy": "Linda Jo Conn",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938617897"
       }
@@ -118,6 +143,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333510167",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-03T12:03",
+        "year": 2026,
+        "month": 1,
+        "day": 3,
+        "recordedBy": "Vince Hale",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5938691309"
       }
@@ -137,6 +167,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/335443524",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-18T10:56:27",
+        "year": 2026,
+        "month": 1,
+        "day": 18,
+        "recordedBy": "bcur155",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6129812985"
       }
@@ -156,6 +191,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/335944629",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-23T11:04",
+        "year": 2026,
+        "month": 1,
+        "day": 23,
+        "recordedBy": "davidenrique",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6129941458"
       }
@@ -175,6 +215,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334679848",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-13T15:11",
+        "year": 2026,
+        "month": 1,
+        "day": 13,
+        "recordedBy": "Sean Golden",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130096691"
       }
@@ -194,6 +239,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334656987",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-13T15:22:34",
+        "year": 2026,
+        "month": 1,
+        "day": 13,
+        "recordedBy": "Jo Roberts",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130214328"
       }
@@ -213,6 +263,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333959183",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-04T16:00",
+        "year": 2026,
+        "month": 1,
+        "day": 4,
+        "recordedBy": "Jason Leduc",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130263249"
       }
@@ -232,6 +287,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334668576",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-07T15:47:06",
+        "year": 2026,
+        "month": 1,
+        "day": 7,
+        "recordedBy": "plingus22",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130425701"
       }
@@ -251,6 +311,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334003493",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-07T22:46",
+        "year": 2026,
+        "month": 1,
+        "day": 7,
+        "recordedBy": "Stephanie Tran",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130488237"
       }
@@ -270,6 +335,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334792802",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-03T13:52:38",
+        "year": 2026,
+        "month": 1,
+        "day": 3,
+        "recordedBy": "Senna Bryce Robeson",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130682519"
       }
@@ -289,6 +359,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334302907",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-10T17:19",
+        "year": 2026,
+        "month": 1,
+        "day": 10,
+        "recordedBy": "joooom",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130735272"
       }
@@ -308,6 +383,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/335798765",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-21T13:22:18",
+        "year": 2026,
+        "month": 1,
+        "day": 21,
+        "recordedBy": "forbiddenricecakes",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130871621"
       }
@@ -327,6 +407,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/335132688",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-17T16:37:28",
+        "year": 2026,
+        "month": 1,
+        "day": 17,
+        "recordedBy": "Melissa Meadows",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6130914998"
       }
@@ -346,6 +431,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333794257",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-06T09:40:27",
+        "year": 2026,
+        "month": 1,
+        "day": 6,
+        "recordedBy": "Tom Kennedy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6131343311"
       }
@@ -365,6 +455,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334924020",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-05T12:00:17",
+        "year": 2026,
+        "month": 1,
+        "day": 5,
+        "recordedBy": "Senna Bryce Robeson",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6131524111"
       }
@@ -384,6 +479,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/333864843",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-07T08:53:22",
+        "year": 2026,
+        "month": 1,
+        "day": 7,
+        "recordedBy": "langooney",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6131573071"
       }
@@ -403,6 +503,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334130151",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-09T13:59",
+        "year": 2026,
+        "month": 1,
+        "day": 9,
+        "recordedBy": "Sam Kieschnick",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6131582682"
       }
@@ -422,6 +527,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/337096355",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-29T11:00:48",
+        "year": 2026,
+        "month": 1,
+        "day": 29,
+        "recordedBy": "如此甚好",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133125700"
       }
@@ -441,6 +551,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336760873",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-30T15:25",
+        "year": 2026,
+        "month": 1,
+        "day": 30,
+        "recordedBy": "Sam Kieschnick",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133210254"
       }
@@ -460,6 +575,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336544940",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-28T16:44",
+        "year": 2026,
+        "month": 1,
+        "day": 28,
+        "recordedBy": "Michelle W. （鍾偉瑋）",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133298807"
       }
@@ -479,6 +599,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336431375",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-28T12:16:20",
+        "year": 2026,
+        "month": 1,
+        "day": 28,
+        "recordedBy": "Gordon Cocks",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133415030"
       }
@@ -498,6 +623,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/339755671",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-02T11:14",
+        "year": 2026,
+        "month": 1,
+        "day": 2,
+        "recordedBy": "Benjamin Burgunder",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6162964378"
       }
@@ -517,6 +647,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/342458154",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-04T15:07",
+        "year": 2026,
+        "month": 1,
+        "day": 4,
+        "recordedBy": "colincolincol",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6179186545"
       }
@@ -536,6 +671,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336290854",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-26T12:16:20",
+        "year": 2026,
+        "month": 1,
+        "day": 26,
+        "recordedBy": "Mani Kanakagiri",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6185078469"
       }
@@ -555,6 +695,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/337734367",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-07T10:59",
+        "year": 2026,
+        "month": 2,
+        "day": 7,
+        "recordedBy": "John Thomlinson",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6147382296"
       }
@@ -574,6 +719,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/337718690",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-07T15:33:12",
+        "year": 2026,
+        "month": 2,
+        "day": 7,
+        "recordedBy": "Elliot Greiner",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6147385355"
       }
@@ -593,6 +743,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/337489004",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-05T18:02:04",
+        "year": 2026,
+        "month": 2,
+        "day": 5,
+        "recordedBy": "Barbara Kay",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6147613180"
       }
@@ -612,6 +767,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/338168207",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-10T20:40",
+        "year": 2026,
+        "month": 2,
+        "day": 10,
+        "recordedBy": "Michelle W. （鍾偉瑋）",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159269331"
       }
@@ -631,6 +791,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/338916743",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-12T21:29:34",
+        "year": 2026,
+        "month": 2,
+        "day": 12,
+        "recordedBy": "Shannon Stoner",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159273943"
       }
@@ -650,6 +815,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/338894818",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-15T22:01",
+        "year": 2026,
+        "month": 2,
+        "day": 15,
+        "recordedBy": "Kiandre Reynolds",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159328845"
       }
@@ -669,6 +839,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/338135160",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-10T13:39",
+        "year": 2026,
+        "month": 2,
+        "day": 10,
+        "recordedBy": "Linda Jo Conn",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6159594554"
       }
@@ -688,6 +863,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/161962054",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-05-15T08:30",
+        "year": 2023,
+        "month": 5,
+        "day": 15,
+        "recordedBy": "Eduardo Luis Beltrocco",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4116589368"
       }
@@ -707,6 +887,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/224252109",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-07-24T11:15",
+        "year": 2023,
+        "month": 7,
+        "day": 24,
+        "recordedBy": "RAP",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4904160366"
       }
@@ -726,6 +911,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/80359304",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2021-05-15T11:55",
+        "year": 2021,
+        "month": 5,
+        "day": 15,
+        "recordedBy": "RAP",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4904164436"
       }
@@ -745,6 +935,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/38859555",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2019-05-04T11:02",
+        "year": 2019,
+        "month": 5,
+        "day": 4,
+        "recordedBy": "Pablo Bombín",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2573864540"
       }
@@ -764,6 +959,11 @@
         "datasetTitle": null,
         "occurrenceID": "ANTI924-19",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2017-09-05",
+        "year": 2017,
+        "month": 9,
+        "day": 5,
+        "recordedBy": "Priscila E. Hanisch",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4918926685"
       }
@@ -783,6 +983,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0003p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-16",
+        "year": 2014,
+        "month": 9,
+        "day": 16,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068247"
       }
@@ -802,6 +1007,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0061p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-18",
+        "year": 2014,
+        "month": 9,
+        "day": 18,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068249"
       }
@@ -821,6 +1031,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0135p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-23",
+        "year": 2014,
+        "month": 9,
+        "day": 23,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068250"
       }
@@ -840,6 +1055,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0066p4",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-19",
+        "year": 2014,
+        "month": 9,
+        "day": 19,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068273"
       }
@@ -859,6 +1079,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0077p4",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-19",
+        "year": 2014,
+        "month": 9,
+        "day": 19,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068275"
       }
@@ -878,6 +1103,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0088p4",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-19",
+        "year": 2014,
+        "month": 9,
+        "day": 19,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068279"
       }
@@ -897,6 +1127,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0111p3",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-22",
+        "year": 2014,
+        "month": 9,
+        "day": 22,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068283"
       }
@@ -916,6 +1151,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0171p2",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-24",
+        "year": 2014,
+        "month": 9,
+        "day": 24,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910069664"
       }
@@ -935,6 +1175,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sdp-0166p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-09-24",
+        "year": 2014,
+        "month": 9,
+        "day": 24,
+        "recordedBy": "Porter, SD; Calcaterra, LA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910071032"
       }
@@ -954,6 +1199,11 @@
         "datasetTitle": null,
         "occurrenceID": "GMAFP088-15",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2013-11-29",
+        "year": 2013,
+        "month": 11,
+        "day": 29,
+        "recordedBy": "Pablo Tubaro",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1415008010"
       }
@@ -973,6 +1223,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv036",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-15",
+        "year": 2008,
+        "month": 11,
+        "day": 15,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067554"
       }
@@ -992,6 +1247,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv047",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-13",
+        "year": 2008,
+        "month": 11,
+        "day": 13,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067555"
       }
@@ -1011,6 +1271,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv050",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-13",
+        "year": 2008,
+        "month": 11,
+        "day": 13,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067556"
       }
@@ -1030,6 +1295,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv058",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-14",
+        "year": 2008,
+        "month": 11,
+        "day": 14,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067557"
       }
@@ -1049,6 +1319,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv069",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-14",
+        "year": 2008,
+        "month": 11,
+        "day": 14,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067559"
       }
@@ -1068,6 +1343,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv083",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-14",
+        "year": 2008,
+        "month": 11,
+        "day": 14,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067561"
       }
@@ -1087,6 +1367,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv094",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-12",
+        "year": 2008,
+        "month": 11,
+        "day": 12,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067562"
       }
@@ -1106,6 +1391,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv051",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-14",
+        "year": 2008,
+        "month": 11,
+        "day": 14,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068952"
       }
@@ -1125,6 +1415,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv073",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-12",
+        "year": 2008,
+        "month": 11,
+        "day": 12,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068955"
       }
@@ -1144,6 +1439,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv106",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-14",
+        "year": 2008,
+        "month": 11,
+        "day": 14,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910073105"
       }
@@ -1163,6 +1463,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv057",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2008-11-13",
+        "year": 2008,
+        "month": 11,
+        "day": 13,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910077253"
       }
@@ -1182,6 +1487,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv234",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2007-02-25",
+        "year": 2007,
+        "month": 2,
+        "day": 25,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067578"
       }
@@ -1201,6 +1511,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv146",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2006-08-25",
+        "year": 2006,
+        "month": 8,
+        "day": 25,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067567"
       }
@@ -1220,6 +1535,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv168",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2006-08-21",
+        "year": 2006,
+        "month": 8,
+        "day": 21,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067570"
       }
@@ -1239,6 +1559,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv223",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2006-08-07",
+        "year": 2006,
+        "month": 8,
+        "day": 7,
+        "recordedBy": "Varone, L.; Calcaterra, L.A.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067577"
       }
@@ -1258,6 +1583,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv224",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2006-08-07",
+        "year": 2006,
+        "month": 8,
+        "day": 7,
+        "recordedBy": "Varone, L.; Calcaterra, L.A.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068971"
       }
@@ -1277,6 +1607,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lc327",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2005-03-04",
+        "year": 2005,
+        "month": 3,
+        "day": 4,
+        "recordedBy": "Calcaterra, L.A.; Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067487"
       }
@@ -1296,6 +1631,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lc320",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2005-03-29",
+        "year": 2005,
+        "month": 3,
+        "day": 29,
+        "recordedBy": "Calcaterra, L.A.; Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068884"
       }
@@ -1315,6 +1655,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv125",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2005-04-07",
+        "year": 2005,
+        "month": 4,
+        "day": 7,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068960"
       }
@@ -1334,6 +1679,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv130",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2005-04-07",
+        "year": 2005,
+        "month": 4,
+        "day": 7,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910071732"
       }
@@ -1353,6 +1703,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lc323",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2005-04-03",
+        "year": 2005,
+        "month": 4,
+        "day": 3,
+        "recordedBy": "Calcaterra, L.A.; Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910073028"
       }
@@ -1372,6 +1727,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv132",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2005-04-07",
+        "year": 2005,
+        "month": 4,
+        "day": 7,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910074487"
       }
@@ -1391,6 +1751,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281629",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-06-28T00:00",
+        "year": 2023,
+        "month": 6,
+        "day": 28,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510095761"
       }
@@ -1410,6 +1775,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281719",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-07-14T00:00",
+        "year": 2023,
+        "month": 7,
+        "day": 14,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510764512"
       }
@@ -1429,6 +1799,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281670",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-07-16T00:00",
+        "year": 2023,
+        "month": 7,
+        "day": 16,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6511053688"
       }
@@ -1448,6 +1823,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281723",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-07-08T00:00",
+        "year": 2023,
+        "month": 7,
+        "day": 8,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6511074967"
       }
@@ -1467,6 +1847,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281722",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-08-30T00:00",
+        "year": 2023,
+        "month": 8,
+        "day": 30,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510208378"
       }
@@ -1486,6 +1871,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281718",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-08-23T00:00",
+        "year": 2023,
+        "month": 8,
+        "day": 23,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510759907"
       }
@@ -1505,6 +1895,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281632",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-11-01T00:00",
+        "year": 2023,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510806748"
       }
@@ -1524,6 +1919,11 @@
         "datasetTitle": null,
         "occurrenceID": "2281655",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2023-11-02T00:00",
+        "year": 2023,
+        "month": 11,
+        "day": 2,
+        "recordedBy": "VICTOR HIDEKI NAGATANI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510912313"
       }
@@ -1543,6 +1943,11 @@
         "datasetTitle": null,
         "occurrenceID": "1650408",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2020-12-14T00:00",
+        "year": 2020,
+        "month": 12,
+        "day": 14,
+        "recordedBy": "Rodrigo Aranda",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510521226"
       }
@@ -1562,6 +1967,11 @@
         "datasetTitle": null,
         "occurrenceID": "1650371",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2020-12-12T00:00",
+        "year": 2020,
+        "month": 12,
+        "day": 12,
+        "recordedBy": "Rodrigo Aranda",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6511332138"
       }
@@ -1581,6 +1991,11 @@
         "datasetTitle": null,
         "occurrenceID": "1330798",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2019-02-04T00:00",
+        "year": 2019,
+        "month": 2,
+        "day": 4,
+        "recordedBy": "Ricardo de Lima Zollner",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510755959"
       }
@@ -1600,6 +2015,11 @@
         "datasetTitle": null,
         "occurrenceID": "1548566",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2019-10-01T00:00",
+        "year": 2019,
+        "month": 10,
+        "day": 1,
+        "recordedBy": "JUNIR ANTONO LUTINSKI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510793042"
       }
@@ -1619,6 +2039,11 @@
         "datasetTitle": null,
         "occurrenceID": "1528736",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2018-09-03T00:00",
+        "year": 2018,
+        "month": 9,
+        "day": 3,
+        "recordedBy": "FÁBIO SOUTO DE ALMEIDA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510512590"
       }
@@ -1638,6 +2063,11 @@
         "datasetTitle": null,
         "occurrenceID": "1263553",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2017-01-07T00:00",
+        "year": 2017,
+        "month": 1,
+        "day": 7,
+        "recordedBy": "FÁBIO SOUTO DE ALMEIDA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510699948"
       }
@@ -1657,6 +2087,11 @@
         "datasetTitle": null,
         "occurrenceID": "1176437",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2017-03-06T00:00",
+        "year": 2017,
+        "month": 3,
+        "day": 6,
+        "recordedBy": "AMILCAR PEREZ RIVEROL",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510646043"
       }
@@ -1676,6 +2111,11 @@
         "datasetTitle": null,
         "occurrenceID": "1357834",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2016-02-01T00:00",
+        "year": 2016,
+        "month": 2,
+        "day": 1,
+        "recordedBy": "RICARDO TOSHIO FUJIHARA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6511102803"
       }
@@ -1695,6 +2135,11 @@
         "datasetTitle": null,
         "occurrenceID": "1474565",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2016-03-01T00:00",
+        "year": 2016,
+        "month": 3,
+        "day": 1,
+        "recordedBy": "RICARDO TOSHIO FUJIHARA",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510884932"
       }
@@ -1714,6 +2159,11 @@
         "datasetTitle": null,
         "occurrenceID": "636809",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2014-03-15T00:00",
+        "year": 2014,
+        "month": 3,
+        "day": 15,
+        "recordedBy": "Ronald Zanetti Bonetti filho",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510759015"
       }
@@ -1733,6 +2183,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05082",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2013-01-01",
+        "year": 2013,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428160"
       }
@@ -1752,6 +2207,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05066",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2012-01-01",
+        "year": 2012,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428136"
       }
@@ -1771,6 +2231,11 @@
         "datasetTitle": null,
         "occurrenceID": "1184498",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2012-01-08T00:00",
+        "year": 2012,
+        "month": 1,
+        "day": 8,
+        "recordedBy": "MARINÊZ ISAAC MARQUES",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6511287225"
       }
@@ -1790,6 +2255,11 @@
         "datasetTitle": null,
         "occurrenceID": "316567",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2012-10-10T00:00",
+        "year": 2012,
+        "month": 10,
+        "day": 10,
+        "recordedBy": "André Barbosa Vargas",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510321279"
       }
@@ -1809,6 +2279,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05069",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-01-01",
+        "year": 2011,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428093"
       }
@@ -1828,6 +2303,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05076",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-01-01",
+        "year": 2011,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428099"
       }
@@ -1847,6 +2327,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05071",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-01-01",
+        "year": 2011,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428113"
       }
@@ -1866,6 +2351,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05068",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-01-01",
+        "year": 2011,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428117"
       }
@@ -1885,6 +2375,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05080",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-01-01",
+        "year": 2011,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428132"
       }
@@ -1904,6 +2399,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05072",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-01-01",
+        "year": 2011,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428145"
       }
@@ -1923,6 +2423,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05075",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-01-01",
+        "year": 2011,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428182"
       }
@@ -1942,6 +2447,11 @@
         "datasetTitle": null,
         "occurrenceID": "743907",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2011-02-01T00:00",
+        "year": 2011,
+        "month": 2,
+        "day": 1,
+        "recordedBy": "Cinthia Borges da Costa Milanez",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6511259435"
       }
@@ -1961,6 +2471,11 @@
         "datasetTitle": null,
         "occurrenceID": "743814",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2010-05-01T00:00",
+        "year": 2010,
+        "month": 5,
+        "day": 1,
+        "recordedBy": "Cinthia Borges da Costa Milanez",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510568918"
       }
@@ -1980,6 +2495,11 @@
         "datasetTitle": null,
         "occurrenceID": "743777",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2010-05-01T00:00",
+        "year": 2010,
+        "month": 5,
+        "day": 1,
+        "recordedBy": "Cinthia Borges da Costa Milanez",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6511242137"
       }
@@ -1999,6 +2519,11 @@
         "datasetTitle": null,
         "occurrenceID": "1040324",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2009-09-22T00:00",
+        "year": 2009,
+        "month": 9,
+        "day": 22,
+        "recordedBy": "Camila Aoki",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6510616096"
       }
@@ -2018,6 +2543,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:awlit-ba05081",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2005-01-01",
+        "year": 2005,
+        "month": 1,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2005428162"
       }
@@ -2037,6 +2567,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-jpp056",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2000-11-01",
+        "year": 2000,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Pitts, J.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068997"
       }
@@ -2056,6 +2591,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-jb556",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1998-07-31",
+        "year": 1998,
+        "month": 7,
+        "day": 31,
+        "recordedBy": "Briano, J.; Calcaterra, L.A.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910074311"
       }
@@ -2075,6 +2615,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-jb559",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1998-08-03",
+        "year": 1998,
+        "month": 8,
+        "day": 3,
+        "recordedBy": "Briano, J.; Calcaterra, L.A.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067394"
       }
@@ -2094,6 +2639,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-jb552",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1998-08-03",
+        "year": 1998,
+        "month": 8,
+        "day": 3,
+        "recordedBy": "Briano, J.; Calcaterra, L.A.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068793"
       }
@@ -2113,6 +2663,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-kr055",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1997-11-01",
+        "year": 1997,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Ross, K.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067442"
       }
@@ -2132,6 +2687,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-kr077",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1997-11-01",
+        "year": 1997,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Ross, K.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067444"
       }
@@ -2151,6 +2711,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-kr056",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1997-11-01",
+        "year": 1997,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Ross, K.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068839"
       }
@@ -2170,6 +2735,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-kr070",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1997-11-01",
+        "year": 1997,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Ross, K.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068841"
       }
@@ -2189,6 +2759,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-kr047",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1997-11-01",
+        "year": 1997,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Ross, K.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910071610"
       }
@@ -2208,6 +2783,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-kr061",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1997-11-01",
+        "year": 1997,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Ross, K.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910071613"
       }
@@ -2227,6 +2807,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-kr052",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1997-11-01",
+        "year": 1997,
+        "month": 11,
+        "day": 1,
+        "recordedBy": "Ross, K.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910074362"
       }
@@ -2246,6 +2831,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0306",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-10-22",
+        "year": 1991,
+        "month": 10,
+        "day": 22,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067650"
       }
@@ -2265,6 +2855,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0317",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-10-26",
+        "year": 1991,
+        "month": 10,
+        "day": 26,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910067651"
       }
@@ -2284,6 +2879,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0316p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-10-24",
+        "year": 1991,
+        "month": 10,
+        "day": 24,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068213"
       }
@@ -2303,6 +2903,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0307",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-10-24",
+        "year": 1991,
+        "month": 10,
+        "day": 24,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910069047"
       }
@@ -2322,6 +2927,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0326p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-10-29",
+        "year": 1991,
+        "month": 10,
+        "day": 29,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910069607"
       }
@@ -2341,6 +2951,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0306.1p2",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-10-22",
+        "year": 1991,
+        "month": 10,
+        "day": 22,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910070047"
       }
@@ -2360,6 +2975,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-205",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-14",
+        "year": 1989,
+        "month": 10,
+        "day": 14,
+        "recordedBy": "Porter, S.D.; MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739302"
       }
@@ -2379,6 +2999,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-216",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-16",
+        "year": 1989,
+        "month": 10,
+        "day": 16,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739303"
       }
@@ -2398,6 +3023,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-227",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-18",
+        "year": 1989,
+        "month": 10,
+        "day": 18,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739304"
       }
@@ -2417,6 +3047,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-241",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-16",
+        "year": 1989,
+        "month": 10,
+        "day": 16,
+        "recordedBy": "MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739307"
       }
@@ -2436,6 +3071,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-249",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-17",
+        "year": 1989,
+        "month": 10,
+        "day": 17,
+        "recordedBy": "MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739308"
       }
@@ -2455,6 +3095,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-206p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-15",
+        "year": 1989,
+        "month": 10,
+        "day": 15,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739311"
       }
@@ -2474,6 +3119,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-220p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-17",
+        "year": 1989,
+        "month": 10,
+        "day": 17,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739313"
       }
@@ -2493,6 +3143,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-228p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-18",
+        "year": 1989,
+        "month": 10,
+        "day": 18,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739314"
       }
@@ -2512,6 +3167,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-225.2p2",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-18",
+        "year": 1989,
+        "month": 10,
+        "day": 18,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739327"
       }
@@ -2531,6 +3191,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-207b",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-15",
+        "year": 1989,
+        "month": 10,
+        "day": 15,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739338"
       }
@@ -2550,6 +3215,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-229",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-15",
+        "year": 1989,
+        "month": 10,
+        "day": 15,
+        "recordedBy": "Porter, S.D.; MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739361"
       }
@@ -2569,6 +3239,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-262p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-18",
+        "year": 1989,
+        "month": 10,
+        "day": 18,
+        "recordedBy": "MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739368"
       }
@@ -2588,6 +3263,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-222",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-17",
+        "year": 1989,
+        "month": 10,
+        "day": 17,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739386"
       }
@@ -2607,6 +3287,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-203p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-12",
+        "year": 1989,
+        "month": 10,
+        "day": 12,
+        "recordedBy": "Porter, S.D.; MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739391"
       }
@@ -2626,6 +3311,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-225p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-17",
+        "year": 1989,
+        "month": 10,
+        "day": 17,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739394"
       }
@@ -2645,6 +3335,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-269p",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-19",
+        "year": 1989,
+        "month": 10,
+        "day": 19,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739396"
       }
@@ -2664,6 +3359,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-266.1v",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-19",
+        "year": 1989,
+        "month": 10,
+        "day": 19,
+        "recordedBy": "MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739405"
       }
@@ -2683,6 +3383,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-212",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-15",
+        "year": 1989,
+        "month": 10,
+        "day": 15,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739412"
       }
@@ -2702,6 +3407,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-245",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-16",
+        "year": 1989,
+        "month": 10,
+        "day": 16,
+        "recordedBy": "MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739415"
       }
@@ -2721,6 +3431,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-256",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-17",
+        "year": 1989,
+        "month": 10,
+        "day": 17,
+        "recordedBy": "MacKay, W.P.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739416"
       }
@@ -2740,6 +3455,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:bfl-sp-270",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1989-10-17",
+        "year": 1989,
+        "month": 10,
+        "day": 17,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4907739418"
       }
@@ -2759,6 +3479,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv230",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2006-08-27",
+        "year": 2006,
+        "month": 8,
+        "day": 27,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910073118"
       }
@@ -2778,6 +3503,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:fuedei-lv231",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2006-08-02",
+        "year": 2006,
+        "month": 8,
+        "day": 2,
+        "recordedBy": "Varone, L.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910074498"
       }
@@ -2797,6 +3527,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0500p2",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-04-21",
+        "year": 1991,
+        "month": 4,
+        "day": 21,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068263"
       }
@@ -2816,6 +3551,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0519p2",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-04-22",
+        "year": 1991,
+        "month": 4,
+        "day": 22,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068265"
       }
@@ -2835,6 +3575,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0533p2",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-04-23",
+        "year": 1991,
+        "month": 4,
+        "day": 23,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910068266"
       }
@@ -2854,6 +3599,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0499",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-04-21",
+        "year": 1991,
+        "month": 4,
+        "day": 21,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910071845"
       }
@@ -2873,6 +3623,11 @@
         "datasetTitle": null,
         "occurrenceID": "CAS:ANTWEB:ifahi-sp-0518",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1991-04-21",
+        "year": 1991,
+        "month": 4,
+        "day": 21,
+        "recordedBy": "Porter, S.D.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4910071848"
       }

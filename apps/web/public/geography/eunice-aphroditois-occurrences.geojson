@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/5198482",
     "taxonKey": 5198482,
-    "generatedAt": "2026-09-08T12:20:44.883Z",
+    "generatedAt": "2026-09-08T12:35:54.541Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/38135978",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2020-01-10T18:24:20",
+        "year": 2020,
+        "month": 1,
+        "day": 10,
+        "recordedBy": "Dan Schofield",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2563657782"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "ocorrencias_marsw_ed86f49e-8225-458a-8b98-1e25866b54f5.2721",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2019-09-17",
+        "year": 2019,
+        "month": 9,
+        "day": 17,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3470341800"
       }
@@ -61,6 +71,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/38182691",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2015-01-19T06:53",
+        "year": 2015,
+        "month": 1,
+        "day": 19,
+        "recordedBy": "Kai Squires",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2574105758"
       }
@@ -80,6 +95,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://www.inaturalist.org/observations/2074886",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2015-08-30T18:32:33",
+        "year": 2015,
+        "month": 8,
+        "day": 30,
+        "recordedBy": "Mark Rosenstein",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1143562740"
       }
@@ -99,6 +119,11 @@
         "datasetTitle": null,
         "occurrenceID": "SIMP078-19",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2015-09-30",
+        "year": 2015,
+        "month": 9,
+        "day": 30,
+        "recordedBy": "adenip",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2633372613"
       }
@@ -118,6 +143,11 @@
         "datasetTitle": null,
         "occurrenceID": "a1abdbc8-6a35-496b-8216-18a7532bcedc",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2015-12-17",
+        "year": 2015,
+        "month": 12,
+        "day": 17,
+        "recordedBy": "Kenneth M. Halanych",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3342776454"
       }
@@ -137,6 +167,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/41649781",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2014-01-26T22:26",
+        "year": 2014,
+        "month": 1,
+        "day": 26,
+        "recordedBy": "Kai Squires",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2597763787"
       }
@@ -156,6 +191,11 @@
         "datasetTitle": null,
         "occurrenceID": "a893e5021e79e8ac289c6de83f6bbab7",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2014-01-14",
+        "year": 2014,
+        "month": 1,
+        "day": 14,
+        "recordedBy": "Monroy Velazquez, Verónica; Rodríguez Soria, Enrique",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4172660308"
       }
@@ -175,6 +215,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://www.inaturalist.org/observations/649173",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2014-04-26T04:10:50",
+        "year": 2014,
+        "month": 4,
+        "day": 26,
+        "recordedBy": "katiedid",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/910492958"
       }
@@ -194,6 +239,11 @@
         "datasetTitle": null,
         "occurrenceID": "2471e366-2eb7-45f1-9fa1-6dfdcc7c3981",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2013-05-12",
+        "year": 2013,
+        "month": 5,
+        "day": 12,
+        "recordedBy": "S.J. Keable",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100843770"
       }
@@ -213,6 +263,11 @@
         "datasetTitle": null,
         "occurrenceID": "NG:NCB:Akwa Ibom_Atlantic Ocean_Environment:000006",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2012-06",
+        "year": 2012,
+        "month": 6,
+        "day": null,
+        "recordedBy": "Arimoro FO",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4069944312"
       }
@@ -232,6 +287,11 @@
         "datasetTitle": null,
         "occurrenceID": "HZPLY1001-13",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "2011-03-08",
+        "year": 2011,
+        "month": 3,
+        "day": 8,
+        "recordedBy": "Hong Zhou",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1415585436"
       }
@@ -251,6 +311,11 @@
         "datasetTitle": null,
         "occurrenceID": "61074d9e-fa36-11e2-96b3-aa6f927c92a3",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2011-05-17",
+        "year": 2011,
+        "month": 5,
+        "day": 17,
+        "recordedBy": "Oceans Survey 20/20 - Biogenic Habitats",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4081190315"
       }
@@ -270,6 +335,11 @@
         "datasetTitle": null,
         "occurrenceID": "8ca2473819cb2f029a127bd92364e82b",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2010-02-22",
+        "year": 2010,
+        "month": 2,
+        "day": 22,
+        "recordedBy": "María Rebeca Granja Fernández; Sergio David Guendulain García",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1895789952"
       }
@@ -289,6 +359,11 @@
         "datasetTitle": null,
         "occurrenceID": "6053f46a-fa36-11e2-96b3-aa6f927c92a3",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2010-04-19",
+        "year": 2010,
+        "month": 4,
+        "day": 19,
+        "recordedBy": "Vulnerable Deep-Sea Communities Program",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4081090957"
       }
@@ -308,6 +383,11 @@
         "datasetTitle": null,
         "occurrenceID": "6053d296-fa36-11e2-96b3-aa6f927c92a3",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2010-04-28",
+        "year": 2010,
+        "month": 4,
+        "day": 28,
+        "recordedBy": "Vulnerable Deep-Sea Communities Program",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4081121839"
       }
@@ -327,6 +407,11 @@
         "datasetTitle": null,
         "occurrenceID": "OKKJP:rocky_macrobiota:006696",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2010-04-29",
+        "year": 2010,
+        "month": 4,
+        "day": 29,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5105902698"
       }
@@ -346,6 +431,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:BDCJ:MOT-TF:NKTAN0000208",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2008-06-02T12:00/2008-06-02T15:00",
+        "year": 2008,
+        "month": 6,
+        "day": 2,
+        "recordedBy": "Masami HAMAGUCHI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2265767212"
       }
@@ -365,6 +455,11 @@
         "datasetTitle": null,
         "occurrenceID": "2bdef9ec-2a4c-4fee-89d6-e85a8582c18a",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2006-03-10",
+        "year": 2006,
+        "month": 3,
+        "day": 10,
+        "recordedBy": "S.J. Keable",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100835926"
       }
@@ -384,6 +479,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:FBIP:SANBI:iSpot:694771",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2005-05-08",
+        "year": 2005,
+        "month": 5,
+        "day": 8,
+        "recordedBy": "Pbsouthwood",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3311795026"
       }
@@ -403,6 +503,11 @@
         "datasetTitle": null,
         "occurrenceID": "55ebc1e7-3cca-43e5-a36f-a82ecbb29cc9",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2002-02-10",
+        "year": 2002,
+        "month": 2,
+        "day": 10,
+        "recordedBy": "R.T. Johnson",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100830037"
       }
@@ -422,6 +527,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:IZIKO:SAM-A-21510",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "2001-04-27T00:00",
+        "year": 2001,
+        "month": 4,
+        "day": 27,
+        "recordedBy": "Saldanha Bay Introduced Species Port Survey",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1275073398"
       }
@@ -441,6 +551,11 @@
         "datasetTitle": null,
         "occurrenceID": "74e9a346-b9ba-4b20-83f5-706732240e05",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1996-06-20",
+        "year": 1996,
+        "month": 6,
+        "day": 20,
+        "recordedBy": "NSW Environment Protection Authority",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5895277518"
       }
@@ -460,6 +575,11 @@
         "datasetTitle": null,
         "occurrenceID": "d9f47225-b307-496b-aa6d-82db97bfb732",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1992-03-07",
+        "year": 1992,
+        "month": 3,
+        "day": 7,
+        "recordedBy": "P.A. Hutchings & C.L. Rose",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100828459"
       }
@@ -479,6 +599,11 @@
         "datasetTitle": null,
         "occurrenceID": "8C0D3355C015D12733BCFD67FE1499FA.mc.B4CC881EC012D1273292FF03FE239BAA",
         "basisOfRecord": "MATERIAL_CITATION",
+        "eventDate": "1988-07-18",
+        "year": 1988,
+        "month": 7,
+        "day": 18,
+        "recordedBy": "P. Hutchings",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2573655667"
       }
@@ -498,6 +623,11 @@
         "datasetTitle": null,
         "occurrenceID": "823b8a90-3bd4-496f-b1fc-5fac73e11b3c",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1986-01-05",
+        "year": 1986,
+        "month": 1,
+        "day": 5,
+        "recordedBy": "S. Perry",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100827271"
       }
@@ -517,6 +647,11 @@
         "datasetTitle": null,
         "occurrenceID": "be7c50ab-e78e-4671-b714-666bdec265b8",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1984-10-10",
+        "year": 1984,
+        "month": 10,
+        "day": 10,
+        "recordedBy": "J. van der Velde",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100823208"
       }
@@ -536,6 +671,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://n2t.net/ark:/65665/33d5ba7c2-5683-470e-b97a-9cd0af602acd",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1981-06-24",
+        "year": 1981,
+        "month": 6,
+        "day": 24,
+        "recordedBy": "P. Taylor",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1318589757"
       }
@@ -555,6 +695,11 @@
         "datasetTitle": null,
         "occurrenceID": "SeamountsOnline_urn:lsid:marinespecies.org:taxname:130053_29219",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1981",
+        "year": 1981,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/3696574518"
       }
@@ -574,6 +719,11 @@
         "datasetTitle": null,
         "occurrenceID": "INVEMAR:MHNMC:Consec.4920:INVANE374",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1980-01-09",
+        "year": 1980,
+        "month": 1,
+        "day": 9,
+        "recordedBy": "Bernd Werding",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4166205771"
       }
@@ -593,6 +743,11 @@
         "datasetTitle": null,
         "occurrenceID": "8C0D3355C015D12733BCFD67FE1499FA.mc.B4CC881EC015D1203113F82EFE0A9C9E",
         "basisOfRecord": "MATERIAL_CITATION",
+        "eventDate": "1979-03-07",
+        "year": 1979,
+        "month": 3,
+        "day": 7,
+        "recordedBy": "P. Hutchings",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2573655701"
       }
@@ -612,6 +767,11 @@
         "datasetTitle": null,
         "occurrenceID": "099dd42a-2ead-4193-943b-26a26838ec55",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1978-03-21",
+        "year": 1978,
+        "month": 3,
+        "day": 21,
+        "recordedBy": "W. Doyle",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100820684"
       }
@@ -631,6 +791,11 @@
         "datasetTitle": null,
         "occurrenceID": "cb2cd845-febc-4be9-b5e5-6979423c8d5e",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1976-07",
+        "year": 1976,
+        "month": 7,
+        "day": null,
+        "recordedBy": "K. Handley",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100820688"
       }
@@ -650,6 +815,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:TCWC:Marine Invertebrates:1-0571",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1976-08-31",
+        "year": 1976,
+        "month": 8,
+        "day": 31,
+        "recordedBy": "Bright, T.J.",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1234564080"
       }
@@ -669,6 +839,11 @@
         "datasetTitle": null,
         "occurrenceID": "4000907c-e36d-4bcc-9b45-fe1966c372f1",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1974-05-09",
+        "year": 1974,
+        "month": 5,
+        "day": 9,
+        "recordedBy": "D Jepson",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1272547360"
       }
@@ -688,6 +863,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://n2t.net/ark:/65665/39a1c781e-8ada-4087-aa3e-558064119a0e",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1974-06-16",
+        "year": 1974,
+        "month": 6,
+        "day": 16,
+        "recordedBy": "JC",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1456265917"
       }
@@ -707,6 +887,11 @@
         "datasetTitle": null,
         "occurrenceID": "8C0D3355C015D12733BCFD67FE1499FA.mc.B4CC881EC015D1203129F80AFDCD9CA2",
         "basisOfRecord": "MATERIAL_CITATION",
+        "eventDate": "1973-05-12",
+        "year": 1973,
+        "month": 5,
+        "day": 12,
+        "recordedBy": "S. Shepherd",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2573655593"
       }
@@ -726,6 +911,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:TCWC:Marine Invertebrates:1-0379",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1972-01-13",
+        "year": 1972,
+        "month": 1,
+        "day": 13,
+        "recordedBy": "Bright, T.J.",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1234563881"
       }
@@ -745,6 +935,11 @@
         "datasetTitle": null,
         "occurrenceID": "4a9d135e-5825-44ee-9e4e-72c406ac8bad",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1972-05-18",
+        "year": 1972,
+        "month": 5,
+        "day": 18,
+        "recordedBy": "P.A. Hutchings & P.B. Weate",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100846364"
       }
@@ -764,6 +959,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://n2t.net/ark:/65665/3df982792-af32-4340-aa43-d2bd9aa588b6",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1971-02-17",
+        "year": 1971,
+        "month": 2,
+        "day": 17,
+        "recordedBy": "Smithsonian Tropical Research Institute & A. Reimer",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1322256876"
       }
@@ -783,6 +983,11 @@
         "datasetTitle": null,
         "occurrenceID": "6af875ce-0c7f-4efa-9ba7-d176b3afef87",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1971-04-22",
+        "year": 1971,
+        "month": 4,
+        "day": 22,
+        "recordedBy": "Read, Geoffrey, B.",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4081118663"
       }
@@ -802,6 +1007,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:IZIKO:SAM-A-20071",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1968-03-19T00:00",
+        "year": 1968,
+        "month": 3,
+        "day": 19,
+        "recordedBy": "Penriths and Kensley",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1275071931"
       }
@@ -821,6 +1031,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://n2t.net/ark:/65665/39034c9c6-c491-42a4-8084-8702da4f5a7f",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1966-11-19",
+        "year": 1966,
+        "month": 11,
+        "day": 19,
+        "recordedBy": "Smithsonian Oceanographic Sorting Center",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1320462338"
       }
@@ -840,6 +1055,11 @@
         "datasetTitle": null,
         "occurrenceID": "4fdcfc34-e3f3-4a0e-b905-8cdfa1e6d891",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1964-04-03",
+        "year": 1964,
+        "month": 4,
+        "day": 3,
+        "recordedBy": "CSIRO",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100829977"
       }
@@ -859,6 +1079,11 @@
         "datasetTitle": null,
         "occurrenceID": "f47395a5-1d91-4962-b5e0-5a00249e41ca",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1964-05",
+        "year": 1964,
+        "month": 5,
+        "day": null,
+        "recordedBy": "I. Bennett",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253380682"
       }
@@ -878,6 +1103,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:CAS:IZ:6089",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1964-06-30",
+        "year": 1964,
+        "month": 6,
+        "day": 30,
+        "recordedBy": "R. Adcock, B. Marcum",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4415854305"
       }
@@ -897,6 +1127,11 @@
         "datasetTitle": null,
         "occurrenceID": "61359cf8-fa36-11e2-96b3-aa6f927c92a3",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1958-09-30",
+        "year": 1958,
+        "month": 9,
+        "day": 30,
+        "recordedBy": "NZOI",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4081108699"
       }
@@ -916,6 +1151,11 @@
         "datasetTitle": null,
         "occurrenceID": "0C3B5762-E6D0-4929-9FF2-A361384BBBB5",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "1953-07-28T14:50/1953-07-28T15:00",
+        "year": 1953,
+        "month": 7,
+        "day": 28,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5177986704"
       }
@@ -935,6 +1175,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:FBIP:IZIKO:8022",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1952-06-25",
+        "year": 1952,
+        "month": 6,
+        "day": 25,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1836928814"
       }
@@ -954,6 +1199,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://n2t.net/ark:/65665/3660e50eb-4a13-4e89-9b30-b9415165c761",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1951-08-23",
+        "year": 1951,
+        "month": 8,
+        "day": 23,
+        "recordedBy": "P. Cloud",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1319509764"
       }
@@ -973,6 +1223,11 @@
         "datasetTitle": null,
         "occurrenceID": "9916c368-9d63-46c6-ba5e-7dcbbeb00e0a",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1940-11-06",
+        "year": 1940,
+        "month": 11,
+        "day": 6,
+        "recordedBy": "M.W. Leggett",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4902209395"
       }
@@ -992,6 +1247,11 @@
         "datasetTitle": null,
         "occurrenceID": "85321298-47A9-4568-856F-0D17FB0FA996",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "1937-03-30",
+        "year": 1937,
+        "month": 3,
+        "day": 30,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5177933709"
       }
@@ -1011,6 +1271,11 @@
         "datasetTitle": null,
         "occurrenceID": "01E9B4B4-8C02-4503-A5EF-1E5A0403B6FA",
         "basisOfRecord": "MATERIAL_SAMPLE",
+        "eventDate": "1935-01-27",
+        "year": 1935,
+        "month": 1,
+        "day": 27,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/5177975716"
       }
@@ -1030,6 +1295,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:NIWA:TerraNovaExp:3684",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1919",
+        "year": 1919,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2442737689"
       }
@@ -1049,6 +1319,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://id.zmh-coll.de/collection_ZMH/460618/282831/833335",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1914",
+        "year": 1914,
+        "month": null,
+        "day": null,
+        "recordedBy": "Mortensen, Theodor",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4939492621"
       }
@@ -1068,6 +1343,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://id.zmh-coll.de/collection_ZMH/460617/282830/833334",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1914",
+        "year": 1914,
+        "month": null,
+        "day": null,
+        "recordedBy": "Mortensen, Theodor",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4939492786"
       }
@@ -1087,6 +1367,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:IZIKO:SAM-A-19837",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1912-05-23T00:00",
+        "year": 1912,
+        "month": 5,
+        "day": 23,
+        "recordedBy": "Barnard KH",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1275071626"
       }
@@ -1106,6 +1391,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:NIWA:TerraNovaExp:3682",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1911-09-13",
+        "year": 1911,
+        "month": 9,
+        "day": 13,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2442737686"
       }
@@ -1125,6 +1415,11 @@
         "datasetTitle": null,
         "occurrenceID": "http://n2t.net/ark:/65665/3e156bd5a-336a-4207-bf2f-ad42c3d8d636",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1909-06-05",
+        "year": 1909,
+        "month": 6,
+        "day": 5,
+        "recordedBy": "United States Fish Commission",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1322296089"
       }
@@ -1144,6 +1439,11 @@
         "datasetTitle": null,
         "occurrenceID": "325",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1907-07-01",
+        "year": 1907,
+        "month": 7,
+        "day": 1,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1884036936"
       }
@@ -1163,6 +1463,11 @@
         "datasetTitle": null,
         "occurrenceID": "979",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1907-08-19",
+        "year": 1907,
+        "month": 8,
+        "day": 19,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1884037623"
       }
@@ -1182,6 +1487,11 @@
         "datasetTitle": null,
         "occurrenceID": "1148",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1907-08-24",
+        "year": 1907,
+        "month": 8,
+        "day": 24,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1884037783"
       }
@@ -1201,6 +1511,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://id.zmh-coll.de/collection_ZMH/461453/283666/834172",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1905-07",
+        "year": 1905,
+        "month": 7,
+        "day": null,
+        "recordedBy": "Gale",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/4939492630"
       }
@@ -1220,6 +1535,11 @@
         "datasetTitle": null,
         "occurrenceID": "81e3554e-ae19-4286-b5ba-b8626e3e6e67",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1902-03-30",
+        "year": 1902,
+        "month": 3,
+        "day": 30,
+        "recordedBy": "James A. Kershaw",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1272648868"
       }
@@ -1239,6 +1559,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:catalog:IZIKO:SAM-A-19833",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1902-11-26T00:00",
+        "year": 1902,
+        "month": 11,
+        "day": 26,
+        "recordedBy": "Pieter Faure",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1275071618"
       }
@@ -1258,6 +1583,11 @@
         "datasetTitle": null,
         "occurrenceID": "urn:NIWA:TerraNovaExp:3683",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "1900",
+        "year": 1900,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2442737695"
       }
@@ -1277,6 +1607,11 @@
         "datasetTitle": null,
         "occurrenceID": null,
         "basisOfRecord": "OCCURRENCE",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/57022359"
       }
@@ -1296,6 +1631,11 @@
         "datasetTitle": null,
         "occurrenceID": "345a1241-2ad1-11ec-988d-509a4c4a8eab",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": "Estación de Biología Marítima de Santander",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/225912412"
       }
@@ -1315,6 +1655,11 @@
         "datasetTitle": null,
         "occurrenceID": "afb40ee6-ef38-11e6-8f5e-70e2840fc270",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/380194906"
       }
@@ -1334,6 +1679,11 @@
         "datasetTitle": null,
         "occurrenceID": "af789310-5ddd-46c1-9d7b-68caf3110110",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1055755971"
       }
@@ -1353,6 +1703,11 @@
         "datasetTitle": null,
         "occurrenceID": "cf5f136d-0225-4e36-8142-b88cef3e1cb3",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100820686"
       }
@@ -1372,6 +1727,11 @@
         "datasetTitle": null,
         "occurrenceID": "2fd7a069-815e-451e-888c-84968794d58f",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100829244"
       }
@@ -1391,6 +1751,11 @@
         "datasetTitle": null,
         "occurrenceID": "9f0dc5e4-bf3c-4316-8603-88012166d2ec",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": "A.A. Cameron",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1100832725"
       }
@@ -1410,6 +1775,11 @@
         "datasetTitle": null,
         "occurrenceID": "c53bcf96-b4d9-47c3-93aa-0ff4569ff368",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253377927"
       }
@@ -1429,6 +1799,11 @@
         "datasetTitle": null,
         "occurrenceID": "1fee6c5c-c3aa-4e89-9897-f736d109733d",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253378035"
       }
@@ -1448,6 +1823,11 @@
         "datasetTitle": null,
         "occurrenceID": "f0314955-2a47-4a2f-981c-83ee6f0322a3",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253380356"
       }
@@ -1467,6 +1847,11 @@
         "datasetTitle": null,
         "occurrenceID": "94c58bb8-a852-4bcc-aae4-1abb93f3ea53",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253380374"
       }
@@ -1486,6 +1871,11 @@
         "datasetTitle": null,
         "occurrenceID": "ac49a98d-e609-4de0-b77b-5cf59dfa4ce4",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253381863"
       }
@@ -1505,6 +1895,11 @@
         "datasetTitle": null,
         "occurrenceID": "a895182b-c9ee-4631-9cdd-aa58e9ab7e74",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253386002"
       }
@@ -1524,6 +1919,11 @@
         "datasetTitle": null,
         "occurrenceID": "a22510e5-c32b-41f0-bb82-54492bc22b1f",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253393020"
       }
@@ -1543,6 +1943,11 @@
         "datasetTitle": null,
         "occurrenceID": "6aed6dd8-5f30-4bd7-8ab1-fbdb58a4a5ca",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253394008"
       }
@@ -1562,6 +1967,11 @@
         "datasetTitle": null,
         "occurrenceID": "85c94ceb-d137-4da4-9b5f-faa81eb972d0",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253394132"
       }
@@ -1581,6 +1991,11 @@
         "datasetTitle": null,
         "occurrenceID": "c3e58869-a81f-4153-94ff-1677ad40b73a",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1253394461"
       }
@@ -1600,6 +2015,11 @@
         "datasetTitle": null,
         "occurrenceID": "122eb73f-2807-497f-8ecc-91efecaa56b5",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": null,
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1898264927"
       }
@@ -1619,6 +2039,11 @@
         "datasetTitle": null,
         "occurrenceID": "MarBEF/MacroBEN_465804",
         "basisOfRecord": "PRESERVED_SPECIMEN",
+        "eventDate": "1976/1994",
+        "year": null,
+        "month": null,
+        "day": null,
+        "recordedBy": null,
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1948727239"
       }

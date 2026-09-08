@@ -1,6 +1,10 @@
 ﻿id: geo-latrodectus-hasselti
 slug: latrodectus-hasselti
 organismSlug: latrodectus-hasselti
+distribution:
+  tier: occurrence_intersection
+  nativeCountryCodes:
+    - AUS
 ranges:
   - id: geo-latrodectus-hasselti-confirmed-occurrences
     layerType: confirmed_occurrence

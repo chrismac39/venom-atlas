@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/5218020",
     "taxonKey": 5218020,
-    "generatedAt": "2026-09-08T12:20:32.658Z",
+    "generatedAt": "2026-09-08T12:35:43.297Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "Ecohabitats:Eperara_Anfibios:23",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2018-09-07/2018-09-15",
+        "year": 2018,
+        "month": 9,
+        "day": null,
+        "recordedBy": "Gustavo Pisso Florez",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/2978380717"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "UNIVALLE:CONVENIO_091:JOAQUINCITO:0044",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2017-01-24",
+        "year": 2017,
+        "month": 1,
+        "day": 24,
+        "recordedBy": "Mónica Gómez Díaz|Ximena García González|Camilo Linares Vargas|Wilmar Bolívar García",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/1989893629"
       }

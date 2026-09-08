@@ -1192,6 +1192,25 @@ select {
   pointer-events: none;
 }
 
+.openlayers-geography-map-tooltip {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: 0.15rem;
+  max-width: 16rem;
+  padding: 0.5rem 0.65rem;
+  transform: translate(0.65rem, 0.65rem);
+  border: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--panel), black 18%);
+  color: var(--text);
+  font-size: 0.76rem;
+  pointer-events: none;
+}
+
+.openlayers-geography-map-tooltip span {
+  color: var(--muted);
+}
+
 .openlayers-geography-map-zoom-hint {
   position: absolute;
   top: 0.75rem;

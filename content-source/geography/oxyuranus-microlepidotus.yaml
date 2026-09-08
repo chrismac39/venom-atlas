@@ -1,6 +1,10 @@
 ﻿id: geo-oxyuranus-microlepidotus
 slug: oxyuranus-microlepidotus
 organismSlug: oxyuranus-microlepidotus
+distribution:
+  tier: occurrence_intersection
+  nativeCountryCodes:
+    - AUS
 ranges:
   - id: geo-oxyuranus-confirmed-occurrences
     layerType: confirmed_occurrence

@@ -1,6 +1,10 @@
 ﻿id: geo-ornithorhynchus-anatinus
 slug: ornithorhynchus-anatinus
 organismSlug: ornithorhynchus-anatinus
+distribution:
+  tier: occurrence_intersection
+  nativeCountryCodes:
+    - AUS
 ranges:
   - id: geo-ornithorhynchus-confirmed-occurrences
     layerType: confirmed_occurrence

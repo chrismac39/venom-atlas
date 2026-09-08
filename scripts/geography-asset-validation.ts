@@ -19,11 +19,13 @@ export const validateFeatureCollection = ({
   data,
   allowedGeometryTypes,
   requireSourceMetadata = false,
+  allowAntimeridianWrap = false,
 }: {
   assetPath: string;
   data: unknown;
   allowedGeometryTypes: GeoJsonGeometryType[];
   requireSourceMetadata?: boolean;
+  allowAntimeridianWrap?: boolean;
 }): void => {
   const collection = data as GeoJsonFeatureCollection;
   if (collection.type !== 'FeatureCollection' || !Array.isArray(collection.features)) {
@@ -37,7 +39,7 @@ export const validateFeatureCollection = ({
     if (feature.geometry.coordinates === undefined) {
       throw new Error(`Missing geometry coordinates in ${assetPath} feature ${index}`);
     }
-    validateCoordinates(feature.geometry.coordinates, assetPath, index);
+    validateCoordinates(feature.geometry.coordinates, assetPath, index, allowAntimeridianWrap);
     if (requireSourceMetadata) {
       const license = feature.properties?.license;
       const sourceUrl = feature.properties?.sourceUrl;
@@ -55,7 +57,12 @@ export const validateFeatureCollection = ({
   });
 };
 
-const validateCoordinates = (coordinates: unknown, assetPath: string, featureIndex: number): void => {
+const validateCoordinates = (
+  coordinates: unknown,
+  assetPath: string,
+  featureIndex: number,
+  allowAntimeridianWrap: boolean,
+): void => {
   if (!Array.isArray(coordinates) || coordinates.length === 0) {
     throw new Error(`Invalid geometry coordinates in ${assetPath} feature ${featureIndex}`);
   }
@@ -81,9 +88,9 @@ const validateCoordinates = (coordinates: unknown, assetPath: string, featureInd
   for (let index = 1; index < coordinatePairs.length; index += 1) {
     const previousLongitude = coordinatePairs[index - 1][0];
     const longitude = coordinatePairs[index][0];
-    if (typeof previousLongitude === 'number' && typeof longitude === 'number' && Math.abs(longitude - previousLongitude) > 180) {
+    if (!allowAntimeridianWrap && typeof previousLongitude === 'number' && typeof longitude === 'number' && Math.abs(longitude - previousLongitude) > 180) {
       throw new Error(`World-spanning coordinate jump in ${assetPath} feature ${featureIndex}`);
     }
   }
-  coordinates.forEach((childCoordinates) => validateCoordinates(childCoordinates, assetPath, featureIndex));
+  coordinates.forEach((childCoordinates) => validateCoordinates(childCoordinates, assetPath, featureIndex, allowAntimeridianWrap));
 };

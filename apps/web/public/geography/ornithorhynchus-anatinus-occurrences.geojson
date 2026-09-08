@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/2433376",
     "taxonKey": 2433376,
-    "generatedAt": "2026-09-08T12:20:36.319Z",
+    "generatedAt": "2026-09-08T12:35:47.229Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [
@@ -23,6 +23,11 @@
         "datasetTitle": null,
         "occurrenceID": "9e43300a-40e1-463d-8963-333bcbdaaaba",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-24",
+        "year": 2026,
+        "month": 1,
+        "day": 24,
+        "recordedBy": "OKAJ09082800",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6120267524"
       }
@@ -42,6 +47,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/334565524",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-11T20:37:02",
+        "year": 2026,
+        "month": 1,
+        "day": 11,
+        "recordedBy": "Dan Riskin",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6131218064"
       }
@@ -61,6 +71,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/335010428",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-08T18:54:12",
+        "year": 2026,
+        "month": 1,
+        "day": 8,
+        "recordedBy": "cassi saari",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6131622528"
       }
@@ -80,6 +95,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336917413",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-24T17:08:42",
+        "year": 2026,
+        "month": 1,
+        "day": 24,
+        "recordedBy": "Corin",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133176563"
       }
@@ -99,6 +119,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336516090",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-29T08:32:18",
+        "year": 2026,
+        "month": 1,
+        "day": 29,
+        "recordedBy": "jstarspots",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133328450"
       }
@@ -118,6 +143,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/337071446",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-01-29T07:33",
+        "year": 2026,
+        "month": 1,
+        "day": 29,
+        "recordedBy": "Niko Ioannidis",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133329784"
       }
@@ -137,6 +167,11 @@
         "datasetTitle": null,
         "occurrenceID": "99a59bff-d8a8-46fe-b8b3-aec5b6e3a2be",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-31",
+        "year": 2026,
+        "month": 1,
+        "day": 31,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264307"
       }
@@ -156,6 +191,11 @@
         "datasetTitle": null,
         "occurrenceID": "ee37f8e7-6d52-445a-9829-9ecdbc26448a",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-16",
+        "year": 2026,
+        "month": 1,
+        "day": 16,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264308"
       }
@@ -175,6 +215,11 @@
         "datasetTitle": null,
         "occurrenceID": "df202d6e-3fdd-4240-8d23-30567292abd0",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-05",
+        "year": 2026,
+        "month": 1,
+        "day": 5,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264316"
       }
@@ -194,6 +239,11 @@
         "datasetTitle": null,
         "occurrenceID": "74d707cf-6303-4640-8aef-6a2bc3a53efc",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-26",
+        "year": 2026,
+        "month": 1,
+        "day": 26,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264321"
       }
@@ -213,6 +263,11 @@
         "datasetTitle": null,
         "occurrenceID": "8024a329-a29f-43f6-b4cc-87ad2b99f5bd",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-30",
+        "year": 2026,
+        "month": 1,
+        "day": 30,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264325"
       }
@@ -232,6 +287,11 @@
         "datasetTitle": null,
         "occurrenceID": "547e99fe-7a6b-4c2e-9cf6-648cedb0aa15",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-16",
+        "year": 2026,
+        "month": 1,
+        "day": 16,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264331"
       }
@@ -251,6 +311,11 @@
         "datasetTitle": null,
         "occurrenceID": "084ffe6e-29fb-4a2e-a756-3c791347e7d6",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-15",
+        "year": 2026,
+        "month": 1,
+        "day": 15,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264333"
       }
@@ -270,6 +335,11 @@
         "datasetTitle": null,
         "occurrenceID": "0282073d-d573-4de8-953d-2cf3bc0f735f",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-04",
+        "year": 2026,
+        "month": 1,
+        "day": 4,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264335"
       }
@@ -289,6 +359,11 @@
         "datasetTitle": null,
         "occurrenceID": "451ec2aa-a14e-4116-9067-82110c06ef35",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-14",
+        "year": 2026,
+        "month": 1,
+        "day": 14,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264341"
       }
@@ -308,6 +383,11 @@
         "datasetTitle": null,
         "occurrenceID": "704220e3-659c-4842-9190-e042a5fc1eee",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-04",
+        "year": 2026,
+        "month": 1,
+        "day": 4,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264343"
       }
@@ -327,6 +407,11 @@
         "datasetTitle": null,
         "occurrenceID": "492f99d0-41bc-414c-8292-702081151618",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-25",
+        "year": 2026,
+        "month": 1,
+        "day": 25,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264346"
       }
@@ -346,6 +431,11 @@
         "datasetTitle": null,
         "occurrenceID": "1798b90c-dbbb-4f7a-a61c-d02581b53c97",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-15",
+        "year": 2026,
+        "month": 1,
+        "day": 15,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264350"
       }
@@ -365,6 +455,11 @@
         "datasetTitle": null,
         "occurrenceID": "d014efd3-1ea6-49d5-9b55-bba2418e7d17",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-27",
+        "year": 2026,
+        "month": 1,
+        "day": 27,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264357"
       }
@@ -384,6 +479,11 @@
         "datasetTitle": null,
         "occurrenceID": "ac08bb34-1c9c-4dda-b4c8-70c25507bd6a",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-31",
+        "year": 2026,
+        "month": 1,
+        "day": 31,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264363"
       }
@@ -403,6 +503,11 @@
         "datasetTitle": null,
         "occurrenceID": "b81358c2-9603-41d3-adaa-4daad048d77d",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-04",
+        "year": 2026,
+        "month": 1,
+        "day": 4,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264366"
       }
@@ -422,6 +527,11 @@
         "datasetTitle": null,
         "occurrenceID": "01d48680-f92a-4d42-9d51-0d372d6523b7",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-14",
+        "year": 2026,
+        "month": 1,
+        "day": 14,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264367"
       }
@@ -441,6 +551,11 @@
         "datasetTitle": null,
         "occurrenceID": "b7ac1cc3-5361-4c39-8622-fa53cd156ab2",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-14",
+        "year": 2026,
+        "month": 1,
+        "day": 14,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264368"
       }
@@ -460,6 +575,11 @@
         "datasetTitle": null,
         "occurrenceID": "62337d6b-782b-4184-96cd-e0d1d7e5deea",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-23",
+        "year": 2026,
+        "month": 1,
+        "day": 23,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264383"
       }
@@ -479,6 +599,11 @@
         "datasetTitle": null,
         "occurrenceID": "7a0b6b8c-57e3-4f1c-81ed-3838b0e2ea08",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-02",
+        "year": 2026,
+        "month": 1,
+        "day": 2,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264385"
       }
@@ -498,6 +623,11 @@
         "datasetTitle": null,
         "occurrenceID": "d73d4289-626e-4a99-952a-549288abb0e5",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-12",
+        "year": 2026,
+        "month": 1,
+        "day": 12,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264389"
       }
@@ -517,6 +647,11 @@
         "datasetTitle": null,
         "occurrenceID": "7ed5ab8d-93f9-4eec-8740-e7acdfde826e",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-02",
+        "year": 2026,
+        "month": 1,
+        "day": 2,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264394"
       }
@@ -536,6 +671,11 @@
         "datasetTitle": null,
         "occurrenceID": "30881691-d2b6-4fe7-8d18-bf6b264c5b59",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-11",
+        "year": 2026,
+        "month": 1,
+        "day": 11,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264397"
       }
@@ -555,6 +695,11 @@
         "datasetTitle": null,
         "occurrenceID": "30c7f8ad-9511-4ccf-952f-ec911007bbda",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-09",
+        "year": 2026,
+        "month": 1,
+        "day": 9,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264401"
       }
@@ -574,6 +719,11 @@
         "datasetTitle": null,
         "occurrenceID": "e819ab08-95ef-4897-9a16-1cc7f2f417bc",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-18",
+        "year": 2026,
+        "month": 1,
+        "day": 18,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264407"
       }
@@ -593,6 +743,11 @@
         "datasetTitle": null,
         "occurrenceID": "aa97d92c-150e-47e1-a4f3-0e5b417ea724",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-01-27",
+        "year": 2026,
+        "month": 1,
+        "day": 27,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264409"
       }
@@ -612,6 +767,11 @@
         "datasetTitle": null,
         "occurrenceID": "3b8f1f67-004d-4eab-b833-7ea21d03fb2a",
         "basisOfRecord": "OCCURRENCE",
+        "eventDate": "2026-01-24T00:00",
+        "year": 2026,
+        "month": 1,
+        "day": 24,
+        "recordedBy": "Emily Cordy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6475266567"
       }
@@ -631,6 +791,11 @@
         "datasetTitle": null,
         "occurrenceID": "0bf9f0c9-924e-4bd1-9775-c71d111f386f",
         "basisOfRecord": "OCCURRENCE",
+        "eventDate": "2026-01-02T00:00",
+        "year": 2026,
+        "month": 1,
+        "day": 2,
+        "recordedBy": "Bev Yen",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6475853909"
       }
@@ -650,6 +815,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/336921984",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-02-01T14:38:50",
+        "year": 2026,
+        "month": 2,
+        "day": 1,
+        "recordedBy": "Chadley Beranek",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6133443572"
       }
@@ -669,6 +839,11 @@
         "datasetTitle": null,
         "occurrenceID": "c191a6cf-f00e-4f57-8fef-e45be2261368",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-10",
+        "year": 2026,
+        "month": 2,
+        "day": 10,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264302"
       }
@@ -688,6 +863,11 @@
         "datasetTitle": null,
         "occurrenceID": "48c69f26-3486-4142-b7de-9a204a9b1466",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-03",
+        "year": 2026,
+        "month": 2,
+        "day": 3,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264323"
       }
@@ -707,6 +887,11 @@
         "datasetTitle": null,
         "occurrenceID": "86532aa3-9378-4ea3-8132-82b24ef72d86",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-19",
+        "year": 2026,
+        "month": 2,
+        "day": 19,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264329"
       }
@@ -726,6 +911,11 @@
         "datasetTitle": null,
         "occurrenceID": "28e1a12a-7c59-4b86-bc8e-3d76c54ae0ad",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-21",
+        "year": 2026,
+        "month": 2,
+        "day": 21,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264352"
       }
@@ -745,6 +935,11 @@
         "datasetTitle": null,
         "occurrenceID": "bdaf3777-6ab8-4f7a-9bdc-426231ecea25",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-06",
+        "year": 2026,
+        "month": 2,
+        "day": 6,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264364"
       }
@@ -764,6 +959,11 @@
         "datasetTitle": null,
         "occurrenceID": "d99fdb9d-f203-413b-97b6-42bacc0816c0",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-14",
+        "year": 2026,
+        "month": 2,
+        "day": 14,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264375"
       }
@@ -783,6 +983,11 @@
         "datasetTitle": null,
         "occurrenceID": "5fa81862-e19b-4823-bc93-eff9b76064cc",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-12",
+        "year": 2026,
+        "month": 2,
+        "day": 12,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6177264396"
       }
@@ -802,6 +1007,11 @@
         "datasetTitle": null,
         "occurrenceID": "84989bfa-b280-4fc6-a91c-8f7d272a6c67",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-25",
+        "year": 2026,
+        "month": 2,
+        "day": 25,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393461321"
       }
@@ -821,6 +1031,11 @@
         "datasetTitle": null,
         "occurrenceID": "f8276b4a-ef21-4617-988e-eacd0e00021b",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-14",
+        "year": 2026,
+        "month": 2,
+        "day": 14,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393462304"
       }
@@ -840,6 +1055,11 @@
         "datasetTitle": null,
         "occurrenceID": "164065e7-3e4f-47f3-b92a-cc5bffddf610",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-28",
+        "year": 2026,
+        "month": 2,
+        "day": 28,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393462340"
       }
@@ -859,6 +1079,11 @@
         "datasetTitle": null,
         "occurrenceID": "ab11a37c-ec40-4044-b3d2-c4ab8bf0e636",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-28",
+        "year": 2026,
+        "month": 2,
+        "day": 28,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393463313"
       }
@@ -878,6 +1103,11 @@
         "datasetTitle": null,
         "occurrenceID": "937307ec-eb81-4b2c-b491-678e42fe92bb",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-02-27",
+        "year": 2026,
+        "month": 2,
+        "day": 27,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393463331"
       }
@@ -897,6 +1127,11 @@
         "datasetTitle": null,
         "occurrenceID": "https://www.inaturalist.org/observations/345064585",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-03-07T11:32:57",
+        "year": 2026,
+        "month": 3,
+        "day": 7,
+        "recordedBy": "Max Tibby",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6185306360"
       }
@@ -916,6 +1151,11 @@
         "datasetTitle": null,
         "occurrenceID": "7da0c826-e1ce-41ab-ab17-f2a7e6f93c78",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-03-13",
+        "year": 2026,
+        "month": 3,
+        "day": 13,
+        "recordedBy": "OICG23062200",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6213639472"
       }
@@ -935,6 +1175,11 @@
         "datasetTitle": null,
         "occurrenceID": "9829a1bb-de93-4768-83e4-5a15d38af94c",
         "basisOfRecord": "HUMAN_OBSERVATION",
+        "eventDate": "2026-03-29T07:10",
+        "year": 2026,
+        "month": 3,
+        "day": 29,
+        "recordedBy": "Penrosian",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6317937760"
       }
@@ -954,6 +1199,11 @@
         "datasetTitle": null,
         "occurrenceID": "c2d49476-6c0f-4210-b5c4-c04bf7b172aa",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-03-28",
+        "year": 2026,
+        "month": 3,
+        "day": 28,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393461322"
       }
@@ -973,6 +1223,11 @@
         "datasetTitle": null,
         "occurrenceID": "5926c181-0426-4fa1-9e06-cf0a6c757b5c",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-03-01",
+        "year": 2026,
+        "month": 3,
+        "day": 1,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393461323"
       }
@@ -992,6 +1247,11 @@
         "datasetTitle": null,
         "occurrenceID": "dde66d4d-832e-4043-af73-70d4a644526c",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-03-11",
+        "year": 2026,
+        "month": 3,
+        "day": 11,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393462311"
       }
@@ -1011,6 +1271,11 @@
         "datasetTitle": null,
         "occurrenceID": "c22e6d77-93f5-40de-9b5e-65b5fda79749",
         "basisOfRecord": "OBSERVATION",
+        "eventDate": "2026-03-10",
+        "year": 2026,
+        "month": 3,
+        "day": 10,
+        "recordedBy": "Aust Platypus Conservancy",
         "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
         "sourceUrl": "https://www.gbif.org/occurrence/6393462316"
       }

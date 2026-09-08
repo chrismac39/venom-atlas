@@ -46,6 +46,7 @@ for (const organismBundle of getAllOrganisms()) {
         ? ['Point']
         : ['Polygon', 'MultiPolygon', 'Point'],
       requireSourceMetadata: range.layerType !== 'confirmed_occurrence',
+      allowAntimeridianWrap: range.layerType === 'marine_evidence_cell',
     });
     const collection = parsed as {
       features?: Array<{

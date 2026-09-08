@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Map from 'ol/Map.js';
+import { unByKey } from 'ol/Observable.js';
 import View from 'ol/View.js';
 import GeoJSON from 'ol/format/GeoJSON.js';
 import type Feature from 'ol/Feature.js';
@@ -28,6 +29,14 @@ interface DistributionRecord {
   countryCode: string;
   regionName: string;
   distributionStatus: 'native' | 'introduced' | 'uncertain' | 'recorded_presence';
+}
+
+interface OccurrenceHover {
+  x: number;
+  y: number;
+  recordedDate: string;
+  dataset: string;
+  basis: string;
 }
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -86,6 +95,16 @@ const styleForMarineLandmasses = new Style({
   stroke: new Stroke({ color: '#71827d88', width: 0.7 }),
 });
 
+const formatOccurrenceDate = (feature: Feature): string => {
+  const eventDate = feature.get('eventDate');
+  if (typeof eventDate === 'string' && eventDate.length > 0) return eventDate;
+  const year = feature.get('year');
+  const month = feature.get('month');
+  const day = feature.get('day');
+  if (typeof year !== 'number') return 'Date not provided';
+  return [year, month, day].filter((value) => typeof value === 'number').join('-');
+};
+
 export const OpenLayersGeographyMap = ({
   ranges,
   speciesId,
@@ -104,6 +123,7 @@ export const OpenLayersGeographyMap = ({
   const [wheelZoomActive, setWheelZoomActive] = useState(false);
   const [adminLayerTypes, setAdminLayerTypes] = useState<string[]>([]);
   const [hasSpeciesEvidence, setHasSpeciesEvidence] = useState(false);
+  const [hoveredOccurrence, setHoveredOccurrence] = useState<OccurrenceHover | null>(null);
 
   useEffect(() => {
     const mapElement = mapElementRef.current;
@@ -118,6 +138,7 @@ export const OpenLayersGeographyMap = ({
     setError(null);
     setAdminLayerTypes([]);
     setHasSpeciesEvidence(false);
+    setHoveredOccurrence(null);
     const map = new Map({
       target: mapElement,
       interactions: defaultInteractions({ mouseWheelZoom: false }),
@@ -151,6 +172,30 @@ export const OpenLayersGeographyMap = ({
       }
     };
     document.addEventListener('pointerdown', deactivateWheelZoom);
+    const pointerMoveKey = map.on('pointermove', (event) => {
+      let occurrenceFeature: Feature | undefined;
+      map.forEachFeatureAtPixel(event.pixel, (feature) => {
+        const candidate = feature as Feature;
+        if (candidate.get('occurrenceID')) {
+          occurrenceFeature = candidate;
+          return true;
+        }
+        return false;
+      });
+      if (!occurrenceFeature) {
+        setHoveredOccurrence(null);
+        return;
+      }
+      setHoveredOccurrence({
+        x: event.pixel[0],
+        y: event.pixel[1],
+        recordedDate: formatOccurrenceDate(occurrenceFeature),
+        dataset: String(occurrenceFeature.get('datasetTitle') || 'Dataset not provided'),
+        basis: String(occurrenceFeature.get('basisOfRecord') || 'Record basis not provided'),
+      });
+    });
+    const handlePointerLeave = (): void => setHoveredOccurrence(null);
+    mapElement.addEventListener('pointerleave', handlePointerLeave);
 
     const load = async (): Promise<void> => {
       try {
@@ -319,7 +364,9 @@ export const OpenLayersGeographyMap = ({
       rangeLayersRef.current = {};
       wheelZoomActiveRef.current = false;
       mapElement.removeEventListener('click', activateWheelZoom);
+      mapElement.removeEventListener('pointerleave', handlePointerLeave);
       document.removeEventListener('pointerdown', deactivateWheelZoom);
+      unByKey(pointerMoveKey);
       map.setTarget(undefined);
       map.dispose();
       mapRef.current = null;
@@ -329,6 +376,18 @@ export const OpenLayersGeographyMap = ({
   return (
     <div className="openlayers-geography-map" aria-label="Interactive geographic distribution map">
       <div ref={mapElementRef} className="openlayers-geography-map-canvas" />
+      {hoveredOccurrence ? (
+        <div
+          className="openlayers-geography-map-tooltip"
+          role="tooltip"
+          style={{ left: hoveredOccurrence.x, top: hoveredOccurrence.y }}
+        >
+          <strong>Occurrence record</strong>
+          <span>Recorded: {hoveredOccurrence.recordedDate}</span>
+          <span>Dataset: {hoveredOccurrence.dataset}</span>
+          <span>Basis: {hoveredOccurrence.basis}</span>
+        </div>
+      ) : null}
       {loading ? <p className="openlayers-geography-map-status">Loading local geography layers...</p> : null}
       {error ? <p className="openlayers-geography-map-status" role="alert">{error}</p> : null}
       {!loading && !error && !hasSpeciesEvidence ? (
