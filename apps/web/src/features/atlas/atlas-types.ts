@@ -128,7 +128,7 @@ export interface AtlasOrganismData {
       order: number;
       title: string;
       description: string;
-      pathwayType: 'direct_venom' | 'inflammatory_immune' | 'systemic_allergic';
+      pathwayType: 'direct_venom' | 'direct_toxin' | 'inflammatory_immune' | 'systemic_allergic';
       anatomicalSystemId: string;
       evidence: EvidenceAssessment;
       citations: Citation[];

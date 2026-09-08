@@ -190,7 +190,7 @@ export interface PhysiologicalEffect {
   subject: ScientificSubjectReference;
   anatomicalSystemId: string;
   symptomId?: string | undefined;
-  pathwayType: 'direct_venom' | 'inflammatory_immune' | 'systemic_allergic';
+  pathwayType: 'direct_venom' | 'direct_toxin' | 'inflammatory_immune' | 'systemic_allergic';
   title: string;
   description: string;
   order: number;

@@ -253,7 +253,7 @@ const physiologyRecordSchema = z.object({
       order: z.number().int(),
       anatomicalSystemId: z.string(),
       symptomId: z.string().optional(),
-      pathwayType: z.enum(['direct_venom', 'inflammatory_immune', 'systemic_allergic']),
+      pathwayType: z.enum(['direct_venom', 'direct_toxin', 'inflammatory_immune', 'systemic_allergic']),
       title: z.string(),
       description: z.string(),
       evidence: evidenceSchema,

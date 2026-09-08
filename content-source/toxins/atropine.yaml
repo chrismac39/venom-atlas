@@ -1,0 +1,27 @@
+﻿id: tox-atropine
+slug: atropine
+toxicMaterialId: mat-datura-stramonium-poison
+displayName: Atropine
+family: Tropane alkaloids
+notes: This record identifies atropine as a documented tropane alkaloid associated with Datura stramonium material; it does not assert a complete plant composition, dose, structure asset, or clinical outcome model.
+molecularEntity:
+  id: mol-atropine
+  displayName: Atropine
+  molecularClass: small_molecule
+  formula: null
+  molecularWeight: null
+  structureDataSource: null
+  evidence:
+    id: ev-atropine-molecular-entity
+    confidence: moderate
+    evidenceType: database
+    citationIds:
+      - cit-kew-datura-stramonium
+structureAssets: []
+targets: []
+evidence:
+  id: ev-atropine
+  confidence: moderate
+  evidenceType: database
+  citationIds:
+    - cit-kew-datura-stramonium

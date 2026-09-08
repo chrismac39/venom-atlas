@@ -39,6 +39,8 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] Add toxic-material records for the new organisms where scientifically meaningful.
 - [x] Add the evidence-backed ricin toxin record for *Ricinus communis*.
 - [x] Add the evidence-backed amatoxin group record for *Amanita phalloides*.
+- [x] Add the evidence-backed atropine record for *Datura stramonium*.
+- [x] Add a scoped botulism physiology record with a toxin-specific pathway distinct from venom.
 - [ ] Add toxin, mechanism, and physiology records only at evidence-supported causal scope.
 - [ ] Add molecular entities and structures only with valid source metadata and committed assets.
 - [ ] Keep *C. botulinum*, botulinum neurotoxin, and botulism as distinct concepts.
@@ -49,7 +51,7 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] Omit unverified media and structures.
 - [ ] Add geography only as occurrence evidence, not as complete native or introduced range boundaries.
 - [ ] Validate every occurrence coordinate, license, and source URL.
-- [ ] Confirm missing geography remains an honest `coverage.geography: missing` state.
+- [x] Confirm missing geography remains an honest `coverage.geography: missing` state.
 
 ## Static completeness
 
@@ -58,7 +60,7 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] Validate duplicate IDs and slugs.
 - [x] Validate toxic-material and toxin ownership links.
 - [x] Assert static JSON and search output contain every organism.
-- [ ] Confirm non-Animalia taxonomy does not affect inclusion.
+- [x] Confirm non-Animalia taxonomy does not affect inclusion.
 
 ## Catalog and UX
 
@@ -68,7 +70,7 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] Keep interactive catalog state in a hook and host component; keep routes thin.
 - [x] Preserve the lightweight chooser on `/`.
 - [ ] Render honest empty states for missing geography, chemistry, physiology, media, and structures.
-- [ ] Preserve `/venom` only for `materialKind: venom`.
+- [x] Preserve `/venom` only for `materialKind: venom`.
 
 ## Focused tests
 
@@ -78,7 +80,7 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] Test fifteen organisms and multiple kingdoms.
 - [x] Test catalog search and kingdom/strategy filtering.
 - [x] Test *C. botulinum* is not displayed as venomous.
-- [ ] Test botulinum evidence scope.
+- [x] Test botulinum evidence scope.
 - [x] Test all five baseline organisms and routes remain intact.
 - [x] Test atlas, JSON, and search organism sets agree.
 
@@ -88,7 +90,7 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] `pnpm build:data`
 - [x] `pnpm --filter @venom-atlas/web typecheck`
 - [x] `pnpm --filter @venom-atlas/web test`
-- [ ] `pnpm --filter @venom-atlas/web test:e2e`
+- [x] `pnpm --filter @venom-atlas/web test:e2e`
 - [x] `pnpm --filter @venom-atlas/web build`
 - [x] `pnpm lint`
 - [x] `git diff --check`

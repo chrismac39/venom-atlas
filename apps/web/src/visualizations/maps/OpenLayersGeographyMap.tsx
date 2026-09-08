@@ -252,6 +252,9 @@ export const OpenLayersGeographyMap = ({
               });
             }
           });
+          void loadDetailedAdmin().catch((loadError) => {
+            if (!disposed) setError((loadError as Error).message);
+          });
         }
 
         const mappedRanges = ranges.filter((range) => range.geometryAssetId);

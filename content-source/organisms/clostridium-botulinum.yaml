@@ -1,7 +1,7 @@
 ﻿id: org-clostridium-botulinum
 slug: clostridium-botulinum
 scientificName: Clostridium botulinum
-commonName: Botulinum neurotoxin-producing bacterium
+commonName: Botulinum bacterium
 toxicStrategy: toxin_producing
 overview: >-
   Clostridium botulinum is an anaerobic, spore-forming bacterium that can produce botulinum

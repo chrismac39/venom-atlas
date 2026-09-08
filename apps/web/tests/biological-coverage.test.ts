@@ -6,6 +6,7 @@ import {
   getAllRoutes,
   getGeographyByOrganismSlug,
   getMechanismByOrganismExposureSlug,
+  getToxinBySlug,
   getToxicMaterialByOrganismSlug,
 } from '../src/lib/content';
 import { buildAtlasMonopageOrganisms } from '../src/lib/atlas-monopage-data';
@@ -73,7 +74,6 @@ describe('biological coverage expansion', () => {
 
   it('represents new organism materials without inventing chemistry records', () => {
     const newOrganismSlugs = [
-      'datura-stramonium',
       'latrodectus-hasselti',
       'androctonus-australis',
       'conus-geographus',
@@ -88,6 +88,10 @@ describe('biological coverage expansion', () => {
       expect(organism?.coverage.toxicMaterial).toBe('available');
       expect(organism?.coverage.chemistry).toBe('missing');
     }
+
+    const datura = atlasOrganisms.find((organism) => organism.slug === 'datura-stramonium');
+    expect(datura?.coverage.toxicMaterial).toBe('available');
+    expect(datura?.coverage.chemistry).toBe('available');
 
     const amanita = atlasOrganisms.find((organism) => organism.slug === 'amanita-phalloides');
     expect(amanita?.coverage.toxicMaterial).toBe('available');
@@ -147,5 +151,15 @@ describe('biological coverage expansion', () => {
     expect(routes.has('/organisms/solenopsis-invicta/venom')).toBe(true);
     expect(toxicStrategyLabel('toxin_producing')).toBe('toxin-producing');
     expect(exposureRouteLabel('production')).toBe('toxin production');
+  });
+
+  it('keeps botulinum evidence scoped across organism exposure and isolated toxin records', () => {
+    const mechanism = getMechanismByOrganismExposureSlug('clostridium-botulinum');
+    const toxin = getToxinBySlug('botulinum-neurotoxin');
+
+    expect(mechanism?.subject).toEqual({ kind: 'organism_exposure', slug: 'clostridium-botulinum' });
+    expect(mechanism?.steps.map((step) => step.level)).toEqual(['exposure', 'clinical']);
+    expect(toxin?.toxin.toxicMaterialId).toBe('mat-clostridium-botulinum-toxin');
+    expect(toxin?.toxin.id).not.toBe('org-clostridium-botulinum');
   });
 });

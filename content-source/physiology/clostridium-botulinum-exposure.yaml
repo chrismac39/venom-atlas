@@ -1,0 +1,62 @@
+﻿id: phys-clostridium-botulinum
+slug: clostridium-botulinum-exposure
+subject:
+  kind: organism_exposure
+  slug: clostridium-botulinum
+anatomicalSystems:
+  - id: anat-botulinum-neuromuscular
+    name: Neuromuscular system
+    description: Functional system affected by impaired neurotransmitter release in botulism.
+  - id: anat-botulinum-respiratory
+    name: Respiratory system
+    description: Respiratory function can be affected in severe botulism through neuromuscular weakness.
+symptoms:
+  - id: sym-botulinum-flaccid-weakness
+    name: Flaccid weakness
+    description: Botulism can produce descending flaccid weakness after exposure to botulinum neurotoxin.
+    evidence:
+      id: ev-botulinum-physiology
+      confidence: high
+      evidenceType: clinical
+      citationIds:
+        - cit-cdc-botulism
+        - cit-who-botulism
+  - id: sym-botulinum-respiratory
+    name: Respiratory muscle weakness
+    description: Severe botulism can impair breathing through neuromuscular weakness.
+    evidence:
+      id: ev-botulinum-physiology
+      confidence: high
+      evidenceType: clinical
+      citationIds:
+        - cit-cdc-botulism
+        - cit-who-botulism
+effects:
+  - id: phys-botulinum-neuromuscular
+    order: 1
+    anatomicalSystemId: anat-botulinum-neuromuscular
+    symptomId: sym-botulinum-flaccid-weakness
+    pathwayType: direct_toxin
+    title: Neuromuscular transmission impairment
+    description: Botulinum neurotoxin disrupts neurotransmitter release and can produce flaccid weakness.
+    evidence:
+      id: ev-botulinum-physiology
+      confidence: high
+      evidenceType: clinical
+      citationIds:
+        - cit-cdc-botulism
+        - cit-who-botulism
+  - id: phys-botulinum-respiratory
+    order: 2
+    anatomicalSystemId: anat-botulinum-respiratory
+    symptomId: sym-botulinum-respiratory
+    pathwayType: direct_toxin
+    title: Respiratory neuromuscular involvement
+    description: Respiratory muscle weakness is a severe physiological consequence of botulism exposure.
+    evidence:
+      id: ev-botulinum-physiology
+      confidence: high
+      evidenceType: clinical
+      citationIds:
+        - cit-cdc-botulism
+        - cit-who-botulism

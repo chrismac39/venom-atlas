@@ -51,7 +51,7 @@ const buildAnatomyHighlights = (organism: AtlasOrganismData): AnatomyHighlight[]
     if (!system) return [];
 
     const intensity: AnatomyHighlight['intensity'] =
-      effect.pathwayType === 'direct_venom'
+      effect.pathwayType === 'direct_venom' || effect.pathwayType === 'direct_toxin'
         ? 'primary'
         : effect.pathwayType === 'inflammatory_immune'
           ? 'secondary'

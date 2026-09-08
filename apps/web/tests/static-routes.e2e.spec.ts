@@ -130,7 +130,7 @@ test('organism catalog supports search and kingdom/strategy filters', async ({ p
   await page.getByLabel('Kingdom').selectOption('');
   await page.getByLabel('Strategy').selectOption('toxin_producing');
   await expect(page.getByText('1 of 15 organisms')).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Botulinum neurotoxin-producing bacterium' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Botulinum bacterium' })).toBeVisible();
   await expect(page.getByText('toxin-producing', { exact: true })).toBeVisible();
 });
 
@@ -157,10 +157,10 @@ test('first-party geography renders occurrence records without external requests
 
   await page.goto('/atlas/phyllobates-terribilis#section-geography');
   await expect(page.getByRole('link', { name: 'Geography', exact: true })).toBeVisible();
-  const map = page.getByRole('img', { name: /world map showing 2 occurrence records/i });
+  const map = page.locator('.openlayers-geography-map');
   await expect(map).toBeVisible();
+  await expect(page.getByText('Loading local geography layers...')).toHaveCount(0);
   await expect(page.getByText(/observations indicate recorded presence/i)).toBeVisible();
-  expect(await map.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
   expect(externalRequests).toEqual([]);
 });
 

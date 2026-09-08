@@ -92,11 +92,11 @@
   {
     "id": "org-clostridium-botulinum",
     "entityType": "organism",
-    "title": "Botulinum neurotoxin-producing bacterium",
+    "title": "Botulinum bacterium",
     "scientificName": "Clostridium botulinum",
     "aliases": [
       "Clostridium botulinum",
-      "Botulinum neurotoxin-producing bacterium"
+      "Botulinum bacterium"
     ],
     "summary": "Clostridium botulinum is an anaerobic, spore-forming bacterium that can produce botulinum neurotoxins. Botulism is the disease caused by exposure to those toxins; the bacterium is not venomous and does not deliver toxin through a bite or sting.",
     "tags": [
@@ -122,7 +122,7 @@
   {
     "id": "mechanism-clostridium-botulinum",
     "entityType": "mechanism",
-    "title": "Botulinum neurotoxin-producing bacterium exposure mechanism",
+    "title": "Botulinum bacterium exposure mechanism",
     "aliases": [
       "Toxin production in a suitable anaerobic context",
       "Neurotoxin exposure"
@@ -133,6 +133,22 @@
       "exposure"
     ],
     "route": "/atlas/clostridium-botulinum#section-mechanisms"
+  },
+  {
+    "id": "effect-clostridium-botulinum",
+    "entityType": "effect",
+    "title": "Botulinum bacterium sting effects",
+    "aliases": [
+      "Neuromuscular transmission impairment",
+      "Respiratory neuromuscular involvement"
+    ],
+    "summary": "Botulinum neurotoxin disrupts neurotransmitter release and can produce flaccid weakness.",
+    "tags": [
+      "effect",
+      "physiology",
+      "exposure"
+    ],
+    "route": "/atlas/clostridium-botulinum#section-human-physiology"
   },
   {
     "id": "org-conus-geographus",
@@ -472,6 +488,20 @@
       "Amatoxin-associated compounds"
     ],
     "route": "/toxins/amatoxins"
+  },
+  {
+    "id": "tox-atropine",
+    "entityType": "toxin",
+    "title": "Atropine",
+    "aliases": [
+      "Tropane alkaloids"
+    ],
+    "summary": "This record identifies atropine as a documented tropane alkaloid associated with Datura stramonium material; it does not assert a complete plant composition, dose, structure asset, or clinical outcome model.",
+    "tags": [
+      "toxin",
+      "Tropane alkaloids"
+    ],
+    "route": "/toxins/atropine"
   },
   {
     "id": "tox-batrachotoxin",
