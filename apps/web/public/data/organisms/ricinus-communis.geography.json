@@ -1,0 +1,47 @@
+{
+  "organismSlug": "ricinus-communis",
+  "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "admin1",
+    "evidenceIds": [
+      "ev-ricinus-communis-native-range"
+    ],
+    "citationIds": [
+      "cit-wikipedia-ricinus-communis-distribution"
+    ],
+    "note": "India is retained as a conservative native-context representation; globally naturalized records are not classified as native without separate source evidence."
+  },
+  "ranges": [
+    {
+      "id": "geo-ricinus-communis-native-range",
+      "organismId": "org-ricinus-communis",
+      "layerType": "native_range",
+      "summary": "India is retained as a conservative native-context representation; globally naturalized records are not classified as native without separate source evidence.",
+      "evidence": {
+        "id": "ev-ricinus-communis-native-range",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-wikipedia-ricinus-communis-distribution"
+        ]
+      }
+    },
+    {
+      "id": "geo-ricinus-communis-confirmed-occurrences",
+      "organismId": "org-ricinus-communis",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/ricinus-communis-occurrences.geojson",
+      "geometryFeatureCount": 37,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete plant range.",
+      "evidence": {
+        "id": "ev-ricinus-communis-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-ricinus-communis"
+        ]
+      }
+    }
+  ]
+}

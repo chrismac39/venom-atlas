@@ -1,1 +1,562 @@
-[]
+[
+  {
+    "id": "org-amanita-phalloides",
+    "entityType": "organism",
+    "title": "Death cap mushroom",
+    "scientificName": "Amanita phalloides",
+    "aliases": [
+      "Amanita phalloides",
+      "Death cap mushroom"
+    ],
+    "summary": "Amanita phalloides is a poisonous mushroom whose amatoxins can cause severe liver injury after ingestion. Toxicity is associated with consuming the mushroom, not with active venom delivery.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/amanita-phalloides"
+  },
+  {
+    "id": "mat-amanita-phalloides-poison",
+    "entityType": "toxic_material",
+    "title": "Amanita phalloides poison",
+    "aliases": [
+      "Amanita phalloides poison"
+    ],
+    "summary": "A poisonous mushroom material associated with amatoxins and severe organ toxicity after ingestion. This record does not claim that every mushroom tissue sample has identical toxin concentration.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/amanita-phalloides/toxic-material"
+  },
+  {
+    "id": "org-androctonus-australis",
+    "entityType": "organism",
+    "title": "North African fat-tailed scorpion",
+    "scientificName": "Androctonus australis",
+    "aliases": [
+      "Androctonus australis",
+      "North African fat-tailed scorpion"
+    ],
+    "summary": "Androctonus australis is a medically important scorpion that delivers venom through its sting. Human risk varies with species, dose, route, and individual susceptibility.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/androctonus-australis"
+  },
+  {
+    "id": "mat-androctonus-australis-venom",
+    "entityType": "toxic_material",
+    "title": "Androctonus australis venom",
+    "aliases": [
+      "Androctonus australis venom"
+    ],
+    "summary": "A scorpion venom containing neuroactive components. Clinical effects depend on exposure and individual susceptibility; this record does not claim a complete composition.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/androctonus-australis/toxic-material"
+  },
+  {
+    "id": "org-chironex-fleckeri",
+    "entityType": "organism",
+    "title": "Australian box jellyfish",
+    "scientificName": "Chironex fleckeri",
+    "aliases": [
+      "Chironex fleckeri",
+      "Australian box jellyfish"
+    ],
+    "summary": "Chironex fleckeri is a box jellyfish whose tentacles contain nematocysts that discharge venom on contact. It is a cnidarian, not a biting or stinging animal with a centralized stinger.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/chironex-fleckeri"
+  },
+  {
+    "id": "mat-chironex-fleckeri-venom",
+    "entityType": "toxic_material",
+    "title": "Chironex fleckeri venom",
+    "aliases": [
+      "Chironex fleckeri venom"
+    ],
+    "summary": "A cnidarian venom delivered through nematocyst discharge on tentacle contact. This record avoids assigning a single compound as the complete cause of contact effects.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/chironex-fleckeri/toxic-material"
+  },
+  {
+    "id": "org-clostridium-botulinum",
+    "entityType": "organism",
+    "title": "Botulinum bacterium",
+    "scientificName": "Clostridium botulinum",
+    "aliases": [
+      "Clostridium botulinum",
+      "Botulinum bacterium"
+    ],
+    "summary": "Clostridium botulinum is an anaerobic, spore-forming bacterium that can produce botulinum neurotoxins. Botulism is the disease caused by exposure to those toxins; the bacterium is not venomous and does not deliver toxin through a bite or sting.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/clostridium-botulinum"
+  },
+  {
+    "id": "mat-clostridium-botulinum-toxin",
+    "entityType": "toxic_material",
+    "title": "Botulinum neurotoxin",
+    "aliases": [
+      "Botulinum neurotoxin"
+    ],
+    "summary": "Botulinum neurotoxin is the causal toxic material in botulism. This record describes toxin production and exposure without treating the producing bacterium as venomous.",
+    "tags": [
+      "isolated_toxin",
+      "composition"
+    ],
+    "route": "/organisms/clostridium-botulinum/toxic-material"
+  },
+  {
+    "id": "mechanism-clostridium-botulinum",
+    "entityType": "mechanism",
+    "title": "Botulinum bacterium exposure mechanism",
+    "aliases": [
+      "Toxin production in a suitable anaerobic context",
+      "Neurotoxin exposure"
+    ],
+    "summary": "Under suitable low-oxygen conditions, some Clostridium botulinum strains can produce botulinum neurotoxin.",
+    "tags": [
+      "mechanism",
+      "exposure"
+    ],
+    "route": "/atlas/clostridium-botulinum#section-medical-effects"
+  },
+  {
+    "id": "effect-clostridium-botulinum",
+    "entityType": "effect",
+    "title": "Botulinum bacterium sting effects",
+    "aliases": [
+      "Neuromuscular transmission impairment",
+      "Respiratory neuromuscular involvement"
+    ],
+    "summary": "Botulinum neurotoxin disrupts neurotransmitter release and can produce flaccid weakness.",
+    "tags": [
+      "effect",
+      "physiology",
+      "exposure"
+    ],
+    "route": "/atlas/clostridium-botulinum#section-medical-effects"
+  },
+  {
+    "id": "org-conus-geographus",
+    "entityType": "organism",
+    "title": "Geography cone snail",
+    "scientificName": "Conus geographus",
+    "aliases": [
+      "Conus geographus",
+      "Geography cone snail"
+    ],
+    "summary": "Conus geographus is a predatory cone snail that uses a venom apparatus and a harpoon-like radular tooth to deliver a complex venom to prey.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/conus-geographus"
+  },
+  {
+    "id": "mat-conus-geographus-venom",
+    "entityType": "toxic_material",
+    "title": "Conus geographus venom",
+    "aliases": [
+      "Conus geographus venom"
+    ],
+    "summary": "A complex marine venom associated with the cone snail's specialized prey-capture apparatus. The complete mixture and individual toxin contributions are not asserted here.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/conus-geographus/toxic-material"
+  },
+  {
+    "id": "org-datura-stramonium",
+    "entityType": "organism",
+    "title": "Jimsonweed",
+    "scientificName": "Datura stramonium",
+    "aliases": [
+      "Datura stramonium",
+      "Jimsonweed"
+    ],
+    "summary": "Datura stramonium is a poisonous plant containing tropane alkaloids that can cause anticholinergic toxicity after ingestion. The plant does not inject venom.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/datura-stramonium"
+  },
+  {
+    "id": "mat-datura-stramonium-poison",
+    "entityType": "toxic_material",
+    "title": "Datura stramonium poison",
+    "aliases": [
+      "Datura stramonium poison"
+    ],
+    "summary": "A plant-associated toxic material containing tropane alkaloids such as atropine and scopolamine. Concentration varies among tissues and exposure contexts.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/datura-stramonium/toxic-material"
+  },
+  {
+    "id": "org-eunice-aphroditois",
+    "entityType": "organism",
+    "title": "Bobbit worm",
+    "scientificName": "Eunice aphroditois",
+    "aliases": [
+      "Eunice aphroditois",
+      "Bobbit worm"
+    ],
+    "summary": "Eunice aphroditois is a predatory polychaete annelid with large jaws and a documented role in rapid ambush predation. This dossier conservatively represents contact and bite risk without claiming a fully characterized venom composition.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/eunice-aphroditois"
+  },
+  {
+    "id": "mat-eunice-aphroditois-secretion",
+    "entityType": "toxic_material",
+    "title": "Eunice aphroditois oral secretion",
+    "aliases": [
+      "Eunice aphroditois oral secretion"
+    ],
+    "summary": "This record preserves the distinction between a documented predatory jaw strike and a fully characterized venom. No isolated toxin or clinical effect is asserted.",
+    "tags": [
+      "secretion",
+      "composition"
+    ],
+    "route": "/organisms/eunice-aphroditois/toxic-material"
+  },
+  {
+    "id": "org-heloderma-suspectum",
+    "entityType": "organism",
+    "title": "Gila monster",
+    "scientificName": "Heloderma suspectum",
+    "aliases": [
+      "Heloderma suspectum",
+      "Gila monster"
+    ],
+    "summary": "Heloderma suspectum is a venomous lizard that delivers oral gland secretions through grooved teeth during a prolonged bite. It is distinct from snakes and does not inject venom through hollow fangs.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/heloderma-suspectum"
+  },
+  {
+    "id": "mat-heloderma-suspectum-venom",
+    "entityType": "toxic_material",
+    "title": "Heloderma suspectum venom",
+    "aliases": [
+      "Heloderma suspectum venom"
+    ],
+    "summary": "An oral venom secretion associated with lower-jaw glands and grooved teeth. This record does not claim that the lizard uses hollow fangs or that one compound explains all effects.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/heloderma-suspectum/toxic-material"
+  },
+  {
+    "id": "org-latrodectus-hasselti",
+    "entityType": "organism",
+    "title": "Redback spider",
+    "scientificName": "Latrodectus hasselti",
+    "aliases": [
+      "Latrodectus hasselti",
+      "Redback spider"
+    ],
+    "summary": "Latrodectus hasselti is a venomous spider that uses a web-associated bite to subdue prey and defend itself. Its venom contains neuroactive components associated with latrodectism.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/latrodectus-hasselti"
+  },
+  {
+    "id": "mat-latrodectus-hasselti-venom",
+    "entityType": "toxic_material",
+    "title": "Latrodectus hasselti venom",
+    "aliases": [
+      "Latrodectus hasselti venom"
+    ],
+    "summary": "A spider venom containing neuroactive components associated with latrodectism. This record does not assign a complete composition or attribute every clinical outcome to a single compound.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/latrodectus-hasselti/toxic-material"
+  },
+  {
+    "id": "org-ornithorhynchus-anatinus",
+    "entityType": "organism",
+    "title": "Platypus",
+    "scientificName": "Ornithorhynchus anatinus",
+    "aliases": [
+      "Ornithorhynchus anatinus",
+      "Platypus"
+    ],
+    "summary": "Ornithorhynchus anatinus is a semi-aquatic monotreme; adult males deliver venom with a hind-ankle spur, making it a distinctive reference organism for venomous mammals.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/ornithorhynchus-anatinus"
+  },
+  {
+    "id": "org-oxyuranus-microlepidotus",
+    "entityType": "organism",
+    "title": "Inland taipan",
+    "scientificName": "Oxyuranus microlepidotus",
+    "aliases": [
+      "Oxyuranus microlepidotus",
+      "Inland taipan"
+    ],
+    "summary": "Oxyuranus microlepidotus is a large Australian elapid whose bite-delivered venom and remote semi-arid ecology provide a reference profile for venomous reptiles.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/oxyuranus-microlepidotus"
+  },
+  {
+    "id": "org-phyllobates-terribilis",
+    "entityType": "organism",
+    "title": "Golden poison frog",
+    "scientificName": "Phyllobates terribilis",
+    "aliases": [
+      "Phyllobates terribilis",
+      "Golden poison frog"
+    ],
+    "summary": "Phyllobates terribilis is a poison frog from Colombia whose skin alkaloids make it a useful reference organism for separating passive poison exposure from active venom injection.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/phyllobates-terribilis"
+  },
+  {
+    "id": "ven-phyllobates-terribilis-poison",
+    "entityType": "toxic_material",
+    "title": "Phyllobates terribilis skin poison",
+    "aliases": [
+      "Phyllobates terribilis skin poison"
+    ],
+    "summary": "A skin-associated mixture of defensive alkaloids. Batrachotoxin is a documented component, but evidence about the isolated compound must not be generalized to the complete skin material.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/phyllobates-terribilis/toxic-material"
+  },
+  {
+    "id": "org-ricinus-communis",
+    "entityType": "organism",
+    "title": "Castor bean plant",
+    "scientificName": "Ricinus communis",
+    "aliases": [
+      "Ricinus communis",
+      "Castor bean plant"
+    ],
+    "summary": "Ricinus communis is a poisonous plant whose seeds can contain ricin. Toxicity is associated with ingestion or other exposure to plant material, not with venom delivery.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/ricinus-communis"
+  },
+  {
+    "id": "mat-ricinus-communis-poison",
+    "entityType": "toxic_material",
+    "title": "Ricinus communis poison",
+    "aliases": [
+      "Ricinus communis poison"
+    ],
+    "summary": "A plant-associated toxic material linked to ricin in castor bean seeds. This record avoids claims about dose, lethality, or exposure outcome beyond the cited toxicological context.",
+    "tags": [
+      "poison",
+      "composition"
+    ],
+    "route": "/organisms/ricinus-communis/toxic-material"
+  },
+  {
+    "id": "org-solenopsis-invicta",
+    "entityType": "organism",
+    "title": "Red imported fire ant",
+    "scientificName": "Solenopsis invicta",
+    "aliases": [
+      "Solenopsis invicta",
+      "Red imported fire ant"
+    ],
+    "summary": "Solenopsis invicta is an ant species widely studied for defensive sting behavior, rapid colony recruitment, and ecological impact where established.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/solenopsis-invicta"
+  },
+  {
+    "id": "ven-fire-ant-primary",
+    "entityType": "toxic_material",
+    "title": "Solenopsis invicta venom",
+    "aliases": [
+      "Solenopsis invicta venom"
+    ],
+    "summary": "A biologically active mixture with alkaloid-rich components and protein fractions relevant to allergic responses.",
+    "tags": [
+      "venom",
+      "composition"
+    ],
+    "route": "/organisms/solenopsis-invicta/toxic-material"
+  },
+  {
+    "id": "mechanism-solenopsis-invicta",
+    "entityType": "mechanism",
+    "title": "Red imported fire ant exposure mechanism",
+    "aliases": [
+      "Sting exposure",
+      "Local venom deposition",
+      "Immediate pain and burning sensation",
+      "Local inflammatory response",
+      "Wheal/pustule development where applicable",
+      "Persistent local discomfort in some cases"
+    ],
+    "summary": "Ant anchors with mandibles and delivers venom through the stinger.",
+    "tags": [
+      "mechanism",
+      "exposure"
+    ],
+    "route": "/atlas/solenopsis-invicta#section-medical-effects"
+  },
+  {
+    "id": "effect-solenopsis-invicta",
+    "entityType": "effect",
+    "title": "Red imported fire ant sting effects",
+    "aliases": [
+      "Local skin tissue impact",
+      "Sensory nerve-associated pain",
+      "Local inflammatory response",
+      "Systemic allergic pathway (non-default)"
+    ],
+    "summary": "Direct local tissue effects at sting site.",
+    "tags": [
+      "effect",
+      "physiology",
+      "exposure"
+    ],
+    "route": "/atlas/solenopsis-invicta#section-medical-effects"
+  },
+  {
+    "id": "org-synanceia-verrucosa",
+    "entityType": "organism",
+    "title": "Reef stonefish",
+    "scientificName": "Synanceia verrucosa",
+    "aliases": [
+      "Synanceia verrucosa",
+      "Reef stonefish"
+    ],
+    "summary": "Synanceia verrucosa is a cryptic reef-associated fish that delivers venom through dorsal spines, providing a reference profile for mechanically triggered fish envenomation.",
+    "tags": [
+      "organism",
+      "taxonomy"
+    ],
+    "route": "/organisms/synanceia-verrucosa"
+  },
+  {
+    "id": "tox-amatoxins",
+    "entityType": "toxin",
+    "title": "Amatoxins",
+    "aliases": [
+      "Amatoxin-associated compounds"
+    ],
+    "summary": "This record keeps amatoxins at the evidence-supported compound-group level for Amanita phalloides and does not assert a complete composition, structure, dose, or outcome model.",
+    "tags": [
+      "toxin",
+      "Amatoxin-associated compounds"
+    ],
+    "route": "/toxins/amatoxins"
+  },
+  {
+    "id": "tox-atropine",
+    "entityType": "toxin",
+    "title": "Atropine",
+    "aliases": [
+      "Tropane alkaloids"
+    ],
+    "summary": "This record identifies atropine as a documented tropane alkaloid associated with Datura stramonium material; it does not assert a complete plant composition, dose, structure asset, or clinical outcome model.",
+    "tags": [
+      "toxin",
+      "Tropane alkaloids"
+    ],
+    "route": "/toxins/atropine"
+  },
+  {
+    "id": "tox-batrachotoxin",
+    "entityType": "toxin",
+    "title": "Batrachotoxin",
+    "aliases": [
+      "Batrachotoxins"
+    ],
+    "summary": "Isolated alkaloid documented in Phyllobates terribilis skin. It is not a synonym for the organism's complete skin poison mixture.",
+    "tags": [
+      "toxin",
+      "Batrachotoxins"
+    ],
+    "route": "/toxins/batrachotoxin"
+  },
+  {
+    "id": "tox-botulinum-neurotoxin",
+    "entityType": "toxin",
+    "title": "Botulinum neurotoxin",
+    "aliases": [
+      "Botulinum neurotoxins"
+    ],
+    "summary": "This isolated-toxin record describes the neurotoxin that causes botulism; it does not reclassify Clostridium botulinum as venomous.",
+    "tags": [
+      "toxin",
+      "Botulinum neurotoxins"
+    ],
+    "route": "/toxins/botulinum-neurotoxin"
+  },
+  {
+    "id": "tox-ricin",
+    "entityType": "toxin",
+    "title": "Ricin",
+    "aliases": [
+      "Ribosome-inactivating proteins"
+    ],
+    "summary": "This isolated-toxin record describes ricin as a toxic protein associated with castor bean seeds; it does not make dose, lethality, or exposure-route claims beyond the cited source.",
+    "tags": [
+      "toxin",
+      "Ribosome-inactivating proteins"
+    ],
+    "route": "/toxins/ricin"
+  },
+  {
+    "id": "tox-solenopsin-a",
+    "entityType": "toxin",
+    "title": "Solenopsin A",
+    "aliases": [
+      "Piperidine alkaloids (solenopsins)"
+    ],
+    "summary": "Featured representative compound. Not claimed as sole mediator of all clinical effects.",
+    "tags": [
+      "toxin",
+      "Piperidine alkaloids (solenopsins)"
+    ],
+    "route": "/toxins/solenopsin-a"
+  }
+]

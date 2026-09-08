@@ -30,6 +30,10 @@ export interface GeographyVisualization {
 
 export interface AtlasOrganismData {
   slug: string;
+  publication?: {
+    eligible: boolean;
+    incompleteSections: Array<'summary' | 'geography' | 'chemistry' | 'medical-effects'>;
+  };
   scientificName: string;
   commonName: string;
   toxicStrategy: 'venomous' | 'poisonous' | 'both' | 'toxin_producing';

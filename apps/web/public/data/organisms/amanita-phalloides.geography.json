@@ -1,0 +1,47 @@
+{
+  "organismSlug": "amanita-phalloides",
+  "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "admin1",
+    "evidenceIds": [
+      "ev-amanita-phalloides-native-range"
+    ],
+    "citationIds": [
+      "cit-wikipedia-amanita-phalloides-distribution"
+    ],
+    "note": "Europe is treated as the native context; the current ADM1 entries are a conservative source-backed subset, while overseas records remain documented presence unless separately sourced."
+  },
+  "ranges": [
+    {
+      "id": "geo-amanita-phalloides-native-range",
+      "organismId": "org-amanita-phalloides",
+      "layerType": "native_range",
+      "summary": "Europe is treated as the native context; the displayed ADM1 entries are a conservative subset, while overseas records remain documented presence unless separately sourced.",
+      "evidence": {
+        "id": "ev-amanita-phalloides-native-range",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-wikipedia-amanita-phalloides-distribution"
+        ]
+      }
+    },
+    {
+      "id": "geo-amanita-phalloides-confirmed-occurrences",
+      "organismId": "org-amanita-phalloides",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/amanita-phalloides-occurrences.geojson",
+      "geometryFeatureCount": 18,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete fungal range.",
+      "evidence": {
+        "id": "ev-amanita-phalloides-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-amanita-phalloides"
+        ]
+      }
+    }
+  ]
+}

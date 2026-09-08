@@ -1,0 +1,47 @@
+{
+  "organismSlug": "heloderma-suspectum",
+  "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "admin1",
+    "evidenceIds": [
+      "ev-heloderma-suspectum-native-range"
+    ],
+    "citationIds": [
+      "cit-wikipedia-heloderma-suspectum-distribution"
+    ],
+    "note": "The source-supported native context is southern Arizona and Sonora; the existing ADM1 claims remain explicit and independent of occurrence points."
+  },
+  "ranges": [
+    {
+      "id": "geo-heloderma-suspectum-native-range",
+      "organismId": "org-heloderma-suspectum",
+      "layerType": "native_range",
+      "summary": "The source supports a southern Arizona and Sonora native context; these explicit ADM1 claims remain independent of occurrence points.",
+      "evidence": {
+        "id": "ev-heloderma-suspectum-native-range",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-wikipedia-heloderma-suspectum-distribution"
+        ]
+      }
+    },
+    {
+      "id": "geo-heloderma-suspectum-confirmed-occurrences",
+      "organismId": "org-heloderma-suspectum",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/heloderma-suspectum-occurrences.geojson",
+      "geometryFeatureCount": 8,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete lizard range.",
+      "evidence": {
+        "id": "ev-heloderma-suspectum-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-heloderma-suspectum"
+        ]
+      }
+    }
+  ]
+}

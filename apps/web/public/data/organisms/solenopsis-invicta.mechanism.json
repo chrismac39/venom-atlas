@@ -1,0 +1,128 @@
+{
+  "subject": {
+    "kind": "organism_exposure",
+    "slug": "solenopsis-invicta"
+  },
+  "steps": [
+    {
+      "id": "mech-1-exposure",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
+      "order": 1,
+      "level": "exposure",
+      "title": "Sting exposure",
+      "description": "Ant anchors with mandibles and delivers venom through the stinger.",
+      "evidence": {
+        "id": "ev-delivery-sequence",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-fire-ant-review-2007",
+          "cit-antwiki-sinvicta"
+        ]
+      }
+    },
+    {
+      "id": "mech-2-tissue-deposition",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
+      "order": 2,
+      "level": "tissue",
+      "title": "Local venom deposition",
+      "description": "Venom components are deposited in superficial tissue at sting sites.",
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "mech-3-immediate-pain",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
+      "order": 3,
+      "level": "clinical",
+      "title": "Immediate pain and burning sensation",
+      "description": "Many sting events produce rapid local pain or burning sensation.",
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "mech-4-inflammatory-local",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
+      "order": 4,
+      "level": "tissue",
+      "title": "Local inflammatory response",
+      "description": "Inflammatory and immune processes contribute to visible local lesions.",
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "mech-5-lesion-outcome",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
+      "order": 5,
+      "level": "clinical",
+      "title": "Wheal/pustule development where applicable",
+      "description": "A local lesion can develop over time, and presentation varies by individual and exposure.",
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    },
+    {
+      "id": "mech-6-persistent-discomfort",
+      "subject": {
+        "kind": "organism_exposure",
+        "slug": "solenopsis-invicta"
+      },
+      "order": 6,
+      "level": "clinical",
+      "title": "Persistent local discomfort in some cases",
+      "description": "Some individuals report prolonged local discomfort after initial sting effects.",
+      "evidence": {
+        "id": "ev-local-clinical",
+        "confidence": "moderate",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-poison-control-fire-ant",
+          "cit-cdc-fire-ant-stings"
+        ]
+      }
+    }
+  ]
+}

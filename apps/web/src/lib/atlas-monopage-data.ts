@@ -8,6 +8,7 @@ import {
   getGeographyByOrganismSlug,
   getMechanismByToxinSlug,
   getPhysiologyByOrganismExposureSlug,
+  getPublicationReadinessReport,
   getPublishedMediaAssets,
   getToxicMaterialByOrganismSlug,
 } from './content';
@@ -32,6 +33,7 @@ const mechanismSteps = (bundle: MechanismBundle | undefined): AtlasMechanismStep
 
 export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
   const toxins = getAllToxins();
+  const readiness = new Map(getPublicationReadinessReport().map((entry) => [entry.slug, entry]));
   const publishedMediaPaths = new Set(getPublishedMediaAssets().map((asset) => asset.localPath));
 
   return getAllOrganisms().flatMap((entry) => {
@@ -41,6 +43,7 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
     }
 
     const toxicMaterialBundle = getToxicMaterialByOrganismSlug(organismSlug);
+    const publication = readiness.get(organismSlug);
     const toxicMaterialSlug =
       toxicMaterialBundle?.toxicMaterial.slug ?? toxicMaterialBundle?.toxicMaterial.id.replace(/^ven-/, '');
     const relatedToxins = toxicMaterialBundle
@@ -148,6 +151,14 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
     return [
       {
         slug: organismSlug,
+        publication: {
+          eligible: publication?.eligible ?? false,
+          incompleteSections: publication
+            ? (Object.entries(publication.sections)
+                .filter(([, section]) => !section.ready)
+                .map(([section]) => section) as NonNullable<AtlasOrganismData['publication']>['incompleteSections'])
+            : ['summary', 'geography', 'chemistry', 'medical-effects'],
+        },
         scientificName: entry.organism.scientificName,
         commonName: entry.organism.commonName,
         toxicStrategy: entry.organism.toxicStrategy,

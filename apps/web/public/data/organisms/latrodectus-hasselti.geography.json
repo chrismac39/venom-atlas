@@ -1,0 +1,47 @@
+{
+  "organismSlug": "latrodectus-hasselti",
+  "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "country",
+    "evidenceIds": [
+      "ev-latrodectus-hasselti-native-range"
+    ],
+    "citationIds": [
+      "cit-australian-museum-redback"
+    ],
+    "note": "The Australian Museum supports an Australia-wide native context; the country scope is expanded to ADM1 for shading without claiming each ADM1 was individually named."
+  },
+  "ranges": [
+    {
+      "id": "geo-latrodectus-hasselti-native-range",
+      "organismId": "org-latrodectus-hasselti",
+      "layerType": "native_range",
+      "summary": "The Australian Museum supports an Australia-wide native context; the country claim is expanded for ADM1 shading without implying each region was named independently.",
+      "evidence": {
+        "id": "ev-latrodectus-hasselti-native-range",
+        "confidence": "high",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-australian-museum-redback"
+        ]
+      }
+    },
+    {
+      "id": "geo-latrodectus-hasselti-confirmed-occurrences",
+      "organismId": "org-latrodectus-hasselti",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/latrodectus-hasselti-occurrences.geojson",
+      "geometryFeatureCount": 18,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete spider range.",
+      "evidence": {
+        "id": "ev-latrodectus-hasselti-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-latrodectus-hasselti"
+        ]
+      }
+    }
+  ]
+}

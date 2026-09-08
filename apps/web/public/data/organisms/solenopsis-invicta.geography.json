@@ -1,0 +1,48 @@
+{
+  "organismSlug": "solenopsis-invicta",
+  "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "country",
+    "evidenceIds": [
+      "ev-solenopsis-invicta-native-range"
+    ],
+    "citationIds": [
+      "cit-fire-ant-review-2007"
+    ],
+    "note": "The cited review supports the five country-level native claims below; introduced populations remain documented presence unless separately sourced."
+  },
+  "ranges": [
+    {
+      "id": "geo-solenopsis-native-range",
+      "organismId": "org-solenopsis-invicta",
+      "layerType": "native_range",
+      "summary": "Source-described native distribution spans Argentina, Bolivia, Brazil, Paraguay, and Uruguay. Country-level claims are expanded to native ADM1 shading independently of GBIF observations; occurrence points remain a separate documented-presence layer.",
+      "evidence": {
+        "id": "ev-solenopsis-invicta-native-range",
+        "confidence": "high",
+        "evidenceType": "review",
+        "notes": "The cited source establishes the country-level native context. The registry expands those claims to local ADM1 features while retaining the source-to-ADM1 derivation; GBIF points remain visible as a separate observational layer.",
+        "citationIds": [
+          "cit-fire-ant-review-2007"
+        ]
+      }
+    },
+    {
+      "id": "geo-solenopsis-confirmed-occurrences",
+      "organismId": "org-solenopsis-invicta",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/solenopsis-invicta-occurrences.geojson",
+      "geometryFeatureCount": 151,
+      "summary": "Reusable-license GBIF occurrence records, grid-deduplicated for display. These points do not define the complete native or introduced range.",
+      "evidence": {
+        "id": "ev-solenopsis-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-solenopsis-invicta"
+        ]
+      }
+    }
+  ]
+}

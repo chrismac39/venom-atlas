@@ -19,25 +19,11 @@ const validateDist = () => {
 export const publicationIntegration = () => ({
   name: 'publication-artifact-gate',
   hooks: {
-    'astro:config:setup': ({ command, config, updateConfig }) => {
+    'astro:config:setup': ({ command, config }) => {
       // Clean even if the subsequent gate fails before Astro begins its build.
       if (command === 'build') rmSync(config.outDir, { recursive: true, force: true });
       if (command === 'dev' || command === 'build' || command === 'preview') regenerate();
       if (command === 'preview') validateDist();
-      updateConfig({
-        // Integration overrides merge into normalized URL config. A Windows
-        // drive-letter string would be parsed as the non-file "c:" URL scheme.
-        publicDir: stage.href,
-        vite: {
-          server: {
-            fs: {
-              // publicDir alone is insufficient: Vite's /@fs and /public URLs
-              // must not expose the retained offline inputs either.
-              deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**', '**/public/**', '**/content-source/**', '**/dist/**', '**/.tmp/**'],
-            },
-          },
-        },
-      });
     },
     'astro:build:done': () => validateDist(),
     'astro:server:setup': ({ server, logger }) => {

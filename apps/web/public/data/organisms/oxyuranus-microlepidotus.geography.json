@@ -1,0 +1,47 @@
+{
+  "organismSlug": "oxyuranus-microlepidotus",
+  "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "admin1",
+    "evidenceIds": [
+      "ev-oxyuranus-microlepidotus-native-range"
+    ],
+    "citationIds": [
+      "cit-australian-museum-inland-taipan"
+    ],
+    "note": "The Australian Museum supports the inland Australian native context; explicit state claims are retained without treating sparse observations as the range boundary."
+  },
+  "ranges": [
+    {
+      "id": "geo-oxyuranus-microlepidotus-native-range",
+      "organismId": "org-oxyuranus-microlepidotus",
+      "layerType": "native_range",
+      "summary": "The Australian Museum supports an inland Australian native context; explicit state claims do not treat sparse observations as the range boundary.",
+      "evidence": {
+        "id": "ev-oxyuranus-microlepidotus-native-range",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-australian-museum-inland-taipan"
+        ]
+      }
+    },
+    {
+      "id": "geo-oxyuranus-confirmed-occurrences",
+      "organismId": "org-oxyuranus-microlepidotus",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/oxyuranus-microlepidotus-occurrences.geojson",
+      "geometryFeatureCount": 35,
+      "summary": "Reusable-license GBIF occurrence records, grid-deduplicated for display. These observations are not a modeled range boundary.",
+      "evidence": {
+        "id": "ev-oxyuranus-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-oxyuranus-microlepidotus"
+        ]
+      }
+    }
+  ]
+}

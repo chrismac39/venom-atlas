@@ -83,6 +83,15 @@ const AtlasMonopageHost = ({
       <a className="atlas-change-organism" href={appPath('/')}>Change organism</a>
     </header>
 
+    {selected.publication && !selected.publication.eligible ? (
+      <aside className="atlas-dossier-status" aria-label="Dossier publication status" role="status">
+        <strong>Research dossier in progress.</strong>{' '}
+        Sections still below the publication-readiness threshold: {selected.publication.incompleteSections
+          .map((section) => section === 'medical-effects' ? 'Medical Effects' : section[0]!.toUpperCase() + section.slice(1))
+          .join(', ')}. Existing sourced material is shown without implying completeness.
+      </aside>
+    ) : null}
+
     <nav className="atlas-section-nav" aria-label="Organism sections">
       {sections.map((section) => (
         <a key={section.id} href={`#${section.id}`} aria-current={activeSectionId === section.id ? 'location' : undefined}>

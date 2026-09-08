@@ -1,0 +1,56 @@
+{
+  "toxin": {
+    "id": "tox-botulinum-neurotoxin",
+    "slug": "botulinum-neurotoxin",
+    "toxicMaterialId": "mat-clostridium-botulinum-toxin",
+    "displayName": "Botulinum neurotoxin",
+    "family": "Botulinum neurotoxins",
+    "notes": "This isolated-toxin record describes the neurotoxin that causes botulism; it does not reclassify Clostridium botulinum as venomous.",
+    "evidence": {
+      "id": "ev-botulinum-neurotoxin",
+      "confidence": "high",
+      "evidenceType": "clinical",
+      "citationIds": [
+        "cit-cdc-botulism",
+        "cit-who-botulism"
+      ]
+    }
+  },
+  "molecularEntity": {
+    "id": "mol-botulinum-neurotoxin",
+    "toxinId": "tox-botulinum-neurotoxin",
+    "displayName": "Botulinum neurotoxin",
+    "molecularClass": "protein",
+    "formula": null,
+    "molecularWeight": null,
+    "structureDataSource": null,
+    "evidence": {
+      "id": "ev-botulinum-neurotoxin",
+      "confidence": "high",
+      "evidenceType": "clinical",
+      "citationIds": [
+        "cit-cdc-botulism",
+        "cit-who-botulism"
+      ]
+    }
+  },
+  "structureAssets": [],
+  "targets": [
+    {
+      "id": "target-botulinum-neurotoxin-neuromuscular-junction",
+      "toxinId": "tox-botulinum-neurotoxin",
+      "targetName": "Neuromuscular junction signaling",
+      "targetType": "signaling_process",
+      "summary": "Botulinum neurotoxin disrupts neurotransmitter release at neuromuscular junctions, producing the characteristic flaccid paralysis pathway of botulism.",
+      "evidence": {
+        "id": "ev-botulinum-neurotoxin",
+        "confidence": "high",
+        "evidenceType": "clinical",
+        "citationIds": [
+          "cit-cdc-botulism",
+          "cit-who-botulism"
+        ]
+      }
+    }
+  ]
+}

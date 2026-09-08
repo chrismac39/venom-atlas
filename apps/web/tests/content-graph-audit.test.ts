@@ -52,11 +52,11 @@ describe('authored content graph integrity', () => {
     expect(issues.map((issue) => issue.code)).toEqual(expect.arrayContaining(['invalid_slug', 'invalid_id', 'organism_id_mismatch']));
   });
 
-  it('does not emit legacy draft JSON through publication-gated generators', async () => {
+  it('emits visible in-progress dossier JSON through public generators', async () => {
     const { existsSync } = await import('node:fs');
     const { getPublicAssetAbsolutePath } = await import('../src/lib/content');
-    expect(existsSync(getPublicAssetAbsolutePath('/data/toxins/solenopsin-a.json'))).toBe(false);
-    expect(existsSync(getPublicAssetAbsolutePath('/data/toxic-materials/eunice-aphroditois-secretion.json'))).toBe(false);
+    expect(existsSync(getPublicAssetAbsolutePath('/data/toxins/solenopsin-a.json'))).toBe(true);
+    expect(existsSync(getPublicAssetAbsolutePath('/data/toxic-materials/eunice-aphroditois-secretion.json'))).toBe(true);
   });
 
   it('canonicalizes Redback while retaining both public source slugs', () => {

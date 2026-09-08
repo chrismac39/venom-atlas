@@ -22,7 +22,7 @@ Recommended direction:
 5. Time-box the first geography improvement pass around correctness, clear native/introduced distinctions, useful framing, smaller assets, and good interaction—not a complete global biogeography platform.
 6. Prove deployment from both a root URL and a GitHub Pages project path before calling the site portable.
 
-**Owner-approved publication policy, clarified 2026-09-08:** automatically show organisms when the web-source ingestion and AI-summary pipeline populates enough citation-backed content for **all four sections** and passes automated readiness checks. **No human approval, peer review, or medical review is required.** Incomplete or failed records remain unpublished pipeline drafts. Readiness is based on meaningful section content and source traceability, not merely four headings or a bibliography. Automated checks reduce errors but do not certify scientific correctness.
+**Owner-approved visibility policy, clarified 2026-09-08:** show authored organism dossiers even when automated readiness checks identify incomplete sections. Clearly label those dossiers as research in progress, keep unsupported assets and internal citations hidden, and retain readiness as a completeness/traceability report rather than a route-publication gate. **No human approval, peer review, or medical review is required.** Automated checks reduce errors but do not certify scientific correctness.
 
 “Full” should mean **the known story, its supporting evidence, its uncertainty, and its documented gaps**. It should not mean inventing completeness, requiring the same fields for every organism, or padding a bibliography to hit a quota.
 
@@ -250,16 +250,16 @@ README and roadmaps contain outdated ports, five-organism statements, placeholde
 - Show citations beside claims, with compact source disclosures within their parent section. Existing source-detail routes may remain; a bibliography must not become another major scrolling destination.
 - Use optional disclosures for specialist depth. Do not replace seven crowded sections with four equally crowded collections of panels.
 - Keep anatomy rendering and additional analytical widgets deferred; they are not necessary to establish the four-section launch experience.
-- Owner-approved missing-content behavior: an organism missing a publishable Summary, Geography, Chemistry, or Medical Effects section is **not publicly listed or published as a dossier**. Keep incomplete records as internal research drafts; do not use empty headings, “Not yet sourced” panels, or generic filler to satisfy eligibility.
-- Retain organism selection as navigation, not a fifth content section. Preserve pipeline drafts, but apply computed publication eligibility consistently to public selectors, catalogs, routes, search, sitemaps, and downloadable/generated public data. Direct URLs must not bypass the gate. Shared toxin/source records may remain public when they pass their applicable automated checks and are relevant to eligible dossiers.
+- Owner-approved missing-content behavior: authored organisms remain publicly listed and routable when a section is incomplete. Label the dossier as research in progress and name the incomplete sections; do not invent filler or imply readiness.
+- Retain organism selection as navigation, not a fifth content section. Apply the visible authored roster consistently to public selectors, catalogs, routes, search, sitemaps, and downloadable/generated public data. Keep internal citations, unverified media, and unsupported assets out of the public projection.
 
 The deeper research and specialist features below remain a staged roadmap, not a requirement to implement every listed widget before simplifying or previewing the site. Scientific integrity and basic reliability remain release gates.
 
 At every depth: distinguish **not yet ingested**, **not found in retrieved sources**, **not applicable**, **disputed**, and **available**. Current binary coverage labels cannot express these differences.
 
-These distinctions describe individual facts within otherwise substantive sections or internal draft status; they do not waive the four-section publication requirement. Scientifically appropriate limitations are not “bad information”: a marine organism may have a well-supported geography section without terrestrial ADM1 claims, for example. Do not invent missing range, chemistry, or clinical evidence to qualify an organism.
+These distinctions describe individual facts within otherwise substantive sections or in-progress dossier status. Scientifically appropriate limitations are not “bad information”: a marine organism may have a well-supported geography section without terrestrial ADM1 claims, for example. Do not invent missing range, chemistry, or clinical evidence to make a dossier appear complete.
 
-**Publication gate to implement:** derive eligibility automatically from four section-readiness results and pipeline validation, with machine-readable failure reasons. Each section needs meaningful content and resolvable public source support, not just a nonempty array. Define practical required fields and asset checks per section and molecular class; do not require every stretch feature in this roadmap. Medical Effects must identify human relevance or clearly contextualized applicability. A successful pipeline run makes qualifying organisms visible in the next static deployment without a person approving them. This audit does not establish which current dossiers pass those yet-to-be-implemented checks. An empty eligible roster must not be filled with invented content.
+**Readiness contract:** derive completeness automatically from four section-readiness results and pipeline validation, with machine-readable failure reasons. Each ready section needs meaningful content and resolvable public source support, not just a nonempty array. Define practical required fields and asset checks per section and molecular class; do not require every stretch feature in this roadmap. Medical Effects must identify human relevance or clearly contextualized applicability. Readiness controls the in-progress status, not route visibility, and must never be achieved with invented content.
 
 **Transparency:** label the site as AI-summarized from cited web sources, with source links and retrieval/generation dates. Do not label automated output “peer reviewed,” “medically reviewed,” or “expert verified.” A cited paper's own peer-review status is distinct from this site's generated summary. Do not imply that automated citation matching proves a claim true.
 
@@ -324,10 +324,10 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 - [x] Keep source access local to the corresponding claims/sections, not a fifth top-level section.
 - [x] Preserve existing section bookmarks through compatibility anchors where practical, and update generated internal links to the new canonical anchors.
 - [x] Define and implement a shared automated publication-readiness contract with required content/source/asset checks for all four sections, without a human approval field. Do not equate passing checks with scientific accuracy.
-- [x] Evaluate existing organisms with that contract; retain incomplete/failed records as pipeline drafts and report the computed eligible roster without assuming a reference organism is ready.
-- [x] Filter public organism selection/catalogs, dossier and supporting organism routes, search, sitemap, and generated/downloadable public data through the same eligibility gate. Keep source drafts intact and test that direct URLs do not expose them.
+- [x] Evaluate existing organisms with that contract and report the computed ready roster without assuming a reference organism is ready.
+- [x] Publish authored organism selection/catalogs, dossier and supporting organism routes, search, sitemap, and generated/downloadable public data consistently; retain readiness as visible status and keep internal evidence/assets excluded.
 - [x] Test eligible, incomplete, editorial-only, unresolved-citation, and failed-asset fixtures; confirm a qualifying AI-generated dossier publishes without human-review metadata. Include an empty eligible roster.
-- [x] Add browser checks for exactly four substantive headings/navigation entries and their order for every published organism, draft exclusion, and mobile anchor clearance.
+- [x] Add browser checks for exactly four headings/navigation entries and their order for every visible organism, in-progress status, and mobile anchor clearance.
 - [x] Review the simplified desktop/mobile page before adding new specialist widgets.
 
 **Exit:** a visibly simpler four-section monopage with a consistently enforced automated publication gate. Qualifying organisms publish automatically; incomplete/failed drafts remain excluded. Pipeline content enrichment may be necessary before an organism qualifies.
@@ -560,7 +560,7 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 No answer was needed before this audit. These choices now affect sequencing and acceptance criteria:
 
 - [x] **Monopage sections:** exactly **Summary → Geography → Chemistry → Medical Effects**, approved by the owner on 2026-09-08. No additional top-level content sections.
-- [x] **Sparse dossiers:** owner chose automatic visibility only when the pipeline sufficiently populates all four sections from web citations and AI summaries (2026-09-08). Incomplete organisms stay unpublished; no filler and no human sign-off. Milestone 0A implements and verifies the readiness gate.
+- [x] **Sparse dossiers:** owner chose to keep authored dossiers visible with an explicit in-progress status (revised 2026-09-08). Readiness still reports missing section content and sources; no filler and no human sign-off.
 - [x] **Host:** GitHub Pages selected as the primary static host on 2026-09-08. Cloudflare Pages remains documented only as an alternative. Root and project-path deployment verification remains a Milestone 6 release gate.
 - [x] **Reference organisms:** Fire Ant + Golden Poison Frog/Batrachotoxin first, with a specifically identified botulinum protein/clinical reference next.
 - [ ] **Map dissatisfaction:** rank inaccurate/unclear ranges, sparse dots, framing, visual styling, control clutter, mobile behavior, or load time. Recommendation: correctness/precision, framing, and payload first.

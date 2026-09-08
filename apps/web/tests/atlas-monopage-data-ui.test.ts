@@ -8,6 +8,7 @@ vi.mock('../src/lib/content', () => ({
   getAllOrganisms: vi.fn(), getAllToxins: vi.fn(), getAllMechanisms: vi.fn(),
   getCitationsByIds: vi.fn(), getGeographyByOrganismSlug: vi.fn(),
   getMechanismByToxinSlug: vi.fn(), getPhysiologyByOrganismExposureSlug: vi.fn(),
+  getPublicationReadinessReport: vi.fn(),
   getPublishedMediaAssets: vi.fn(), getToxicMaterialByOrganismSlug: vi.fn(),
   getContentRecords: vi.fn(() => { throw new Error('UI must not bypass the public roster'); }),
 }));
@@ -17,6 +18,15 @@ beforeEach(() => {
   vi.stubEnv('BASE_URL', '/project/');
   const fixture = atlasUiFixture();
   const toxin = fixture.toxins[0]!;
+  vi.mocked(content.getPublicationReadinessReport).mockReturnValue([{
+    slug: fixture.slug, eligible: false,
+    sections: {
+      summary: { ready: true, failures: [] }, geography: { ready: true, failures: [] },
+      chemistry: { ready: false, failures: [{ section: 'chemistry', code: 'fixture_gap', path: fixture.slug }] },
+      'medical-effects': { ready: true, failures: [] },
+    },
+    failures: [{ section: 'chemistry', code: 'fixture_gap', path: fixture.slug }],
+  }]);
   vi.mocked(content.getCitationsByIds).mockImplementation((ids) => ids.map((id) => ({
     ...fixtureCitation(id), visibility: id === 'internal' ? 'internal' : 'public',
   })));
@@ -79,6 +89,11 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllEnvs());
 
 describe('atlas UI view-model boundary', () => {
+  it('carries readiness gaps as visible dossier status instead of filtering the organism', () => {
+    const [organism] = buildAtlasMonopageOrganisms();
+    expect(organism?.publication).toEqual({ eligible: false, incompleteSections: ['chemistry'] });
+  });
+
   it.each(['human', 'non_human', undefined] as const)('preserves optional physiology applicability: %s', (scope) => {
     const physiology = vi.mocked(content.getPhysiologyByOrganismExposureSlug).getMockImplementation()!('fixture-organism')!;
     delete physiology.applicability;

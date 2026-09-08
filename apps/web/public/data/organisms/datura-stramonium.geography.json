@@ -1,0 +1,47 @@
+{
+  "organismSlug": "datura-stramonium",
+  "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "admin1",
+    "evidenceIds": [
+      "ev-datura-stramonium-native-range"
+    ],
+    "citationIds": [
+      "cit-wikipedia-datura-stramonium-distribution"
+    ],
+    "note": "Mexican ADM1 records are retained as a conservative native-origin representation; widespread introduced and naturalized populations are not converted to native status."
+  },
+  "ranges": [
+    {
+      "id": "geo-datura-stramonium-native-range",
+      "organismId": "org-datura-stramonium",
+      "layerType": "native_range",
+      "summary": "Mexican ADM1 records represent a conservative native-origin context; widespread introduced and naturalized populations are not treated as native.",
+      "evidence": {
+        "id": "ev-datura-stramonium-native-range",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-wikipedia-datura-stramonium-distribution"
+        ]
+      }
+    },
+    {
+      "id": "geo-datura-stramonium-confirmed-occurrences",
+      "organismId": "org-datura-stramonium",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/datura-stramonium-occurrences.geojson",
+      "geometryFeatureCount": 28,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete plant range.",
+      "evidence": {
+        "id": "ev-datura-stramonium-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-datura-stramonium"
+        ]
+      }
+    }
+  ]
+}

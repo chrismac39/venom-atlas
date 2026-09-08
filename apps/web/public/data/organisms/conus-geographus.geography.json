@@ -1,0 +1,63 @@
+{
+  "organismSlug": "conus-geographus",
+  "geographyKind": "marine",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "occurrence_only",
+    "evidenceIds": [
+      "ev-conus-geographus-native-range"
+    ],
+    "citationIds": [
+      "cit-wikipedia-conus-geographus-distribution"
+    ],
+    "note": "The source supports a tropical Indo-Pacific native context, but its marine extent is too broad for defensible ADM1 expansion; occurrence and ISEA3H evidence remain separate from that qualitative range statement."
+  },
+  "ranges": [
+    {
+      "id": "geo-conus-geographus-native-range",
+      "organismId": "org-conus-geographus",
+      "layerType": "native_range",
+      "summary": "The source supports a tropical Indo-Pacific native context, but does not define a complete marine range boundary suitable for terrestrial ADM1 shading.",
+      "evidence": {
+        "id": "ev-conus-geographus-native-range",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-wikipedia-conus-geographus-distribution"
+        ]
+      }
+    },
+    {
+      "id": "geo-conus-geographus-confirmed-occurrences",
+      "organismId": "org-conus-geographus",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/conus-geographus-occurrences.geojson",
+      "geometryFeatureCount": 109,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented marine presence rather than a complete cone-snail range.",
+      "evidence": {
+        "id": "ev-conus-geographus-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-conus-geographus"
+        ]
+      }
+    },
+    {
+      "id": "geo-conus-geographus-isea3h-evidence",
+      "organismId": "org-conus-geographus",
+      "layerType": "marine_evidence_cell",
+      "geometryAssetId": "/geography/conus-geographus-isea3h-evidence.geojson",
+      "geometryFeatureCount": 75,
+      "summary": "ISEA3H cells containing reusable-license GBIF observations; cells show evidence aggregation, not a complete marine range.",
+      "evidence": {
+        "id": "ev-conus-geographus-isea3h-evidence",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-conus-geographus"
+        ]
+      }
+    }
+  ]
+}

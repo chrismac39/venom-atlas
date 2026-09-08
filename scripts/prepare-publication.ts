@@ -25,7 +25,7 @@ const main = async (): Promise<void> => {
   execFileSync(process.execPath, ['--import', 'tsx', path.join(repoRoot, 'scripts/validate-publication-output.ts')], {
     cwd: repoRoot, stdio: 'inherit',
   });
-  console.log(`[publication] staged ${paths.length} artifacts for ${content.organisms.length} eligible organisms`);
+  console.log(`[publication] staged ${paths.length} artifacts for ${content.organisms.length} visible organisms`);
 };
 
 main().catch((error) => {

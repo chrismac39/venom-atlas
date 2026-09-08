@@ -44,7 +44,11 @@ export const selectPublicationContent = (content: ContentRecords, slugs: Set<str
   ]);
   const media = content.media.filter((entry) => assetPaths.has(entry.localPath) && entry.redistributionVerified);
   const ids = citationIdsIn({ ...records, media });
-  return { ...records, media, citations: content.citations.filter((entry) => ids.has(entry.id)) };
+  return {
+    ...records,
+    media,
+    citations: content.citations.filter((entry) => ids.has(entry.id) && entry.visibility !== 'internal'),
+  };
 };
 
 /** Deterministic minimum completeness/traceability checks, NOT scientific certification.

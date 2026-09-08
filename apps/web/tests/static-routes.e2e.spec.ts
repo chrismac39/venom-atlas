@@ -1,4 +1,11 @@
 import { expect, test } from '@playwright/test';
+import type { Page } from '@playwright/test';
+
+async function waitForIsland(page: Page, componentName: string) {
+  const island = page.locator(`astro-island[component-url*="${componentName}"]`);
+  await island.scrollIntoViewIfNeeded();
+  await expect(island).not.toHaveAttribute('ssr', '');
+}
 
 const canonicalRoutes = [
   '/',
@@ -104,17 +111,20 @@ test('chooser spans five organism classes and poison dossiers preserve material 
 
   await page.getByRole('link', { name: /Golden poison frog/ }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Phyllobates terribilis' })).toBeVisible();
-  await expect(page.getByText('Amphibia · poisonous')).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Chemistry and structure' })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Toxin Categorization' })).toBeVisible();
-  await expect(page.getByText('Batrachotoxin', { exact: true }).first()).toBeVisible();
-  await expect(page.getByText('Unavailable modules are omitted until source-backed records are curated.')).toBeVisible();
+  await expect(page.getByText('poisonous', { exact: true }).first()).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Chemistry', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Medical Effects', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 3, name: 'Batrachotoxin', exact: true })).toBeVisible();
+  await expect(page.getByText(/complete skin poison mixture/)).toBeVisible();
+  await expect(page.getByText('Research dossier in progress.')).toBeVisible();
 
   await page.goto('/atlas/datura-stramonium');
   await expect(page.getByRole('heading', { level: 1, name: 'Datura stramonium' })).toBeVisible();
-  await expect(page.locator('.atlas-coverage li').filter({ hasText: 'Physiology' })).toContainText('Not available');
-  await expect(page.locator('.atlas-coverage li').filter({ hasText: 'Licensed media' })).toContainText('Not available');
-  await expect(page.locator('.atlas-coverage li').filter({ hasText: 'Structures' })).toContainText('Not available');
+  await expect(page.getByText('Research dossier in progress.')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Summary', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Geography', exact: true })).toBeVisible();
+  await waitForIsland(page, 'AtlasMonopageIsland');
+  await page.getByRole('region', { name: 'Geography' }).scrollIntoViewIfNeeded();
   await expect(page.locator('.openlayers-geography-map')).toBeVisible();
 });
 
@@ -123,6 +133,7 @@ test('organism catalog supports search and kingdom/strategy filters', async ({ p
 
   await expect(page.getByRole('heading', { level: 1, name: 'Organisms' })).toBeVisible();
   await expect(page.getByText('15 of 15 organisms')).toBeVisible();
+  await waitForIsland(page, 'OrganismCatalogIsland');
 
   await page.getByRole('searchbox', { name: 'Search' }).fill('ricin');
   await expect(page.getByRole('link', { name: 'Castor bean plant' })).toBeVisible();
@@ -164,6 +175,7 @@ test('first-party geography renders occurrence records without external requests
 
   await page.goto('/atlas/phyllobates-terribilis#section-geography');
   await expect(page.getByRole('link', { name: 'Geography', exact: true })).toBeVisible();
+  await waitForIsland(page, 'AtlasMonopageIsland');
   const map = page.locator('.openlayers-geography-map');
   await expect(map).toBeVisible();
   await expect(page.getByText('Loading local geography layers...')).toHaveCount(0);
@@ -173,6 +185,7 @@ test('first-party geography renders occurrence records without external requests
 
 test('geography map exposes local layers and focus-gated wheel zoom', async ({ page }) => {
   await page.goto('/organisms/solenopsis-invicta/geography');
+  await waitForIsland(page, 'RangeMapPanel');
 
   const map = page.locator('.openlayers-geography-map');
   await expect(map).toBeVisible();
@@ -203,6 +216,7 @@ test('geography map explains when only neutral boundaries are available', async 
   });
 
   await page.goto('/organisms/solenopsis-invicta/geography');
+  await waitForIsland(page, 'RangeMapPanel');
   await expect(page.getByText(/No species-specific geography evidence is available/)).toBeVisible();
   await expect(page.getByRole('checkbox', { name: 'all administrative regions' })).toBeVisible();
 });

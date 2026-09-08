@@ -437,8 +437,8 @@ const publicAssetValid = (publicPath: string): boolean => {
   } catch { return false; }
 };
 const publicationReadiness = evaluatePublicationReadiness(contentRecords, publicAssetValid);
-const eligibleSlugs = new Set(publicationReadiness.filter((entry) => entry.eligible).map((entry) => entry.slug));
-const publicRecords = selectPublicationContent(contentRecords, eligibleSlugs);
+const visibleSlugs = new Set(contentRecords.organisms.map((entry) => entry.slug));
+const publicRecords = selectPublicationContent(contentRecords, visibleSlugs);
 export const getPublicationReadinessReport = () => publicationReadiness;
 export const getPublicContentRecords = (): ContentRecords => publicRecords;
 
@@ -817,7 +817,7 @@ const cached = {
 };
 
 /** Public consumers always receive the computed eligible roster. Validators use getContentRecords. */
-export const getAllOrganisms = (): OrganismBundle[] => cached.organisms.filter((entry) => eligibleSlugs.has(entry.organism.slug ?? ''));
+export const getAllOrganisms = (): OrganismBundle[] => cached.organisms.filter((entry) => visibleSlugs.has(entry.organism.slug ?? ''));
 
 export const getOrganismBySlug = (slug: string): OrganismBundle | undefined =>
   getAllOrganisms().find((entry) => entry.organism.slug === slug);
@@ -883,7 +883,7 @@ export const getAllMechanisms = (): MechanismBundle[] => cached.mechanisms.filte
 export const getAllPhysiology = (): PhysiologyBundle[] => cached.physiology.filter((entry) => publicRecords.physiology.some((record) => record.subject.kind === entry.subject.kind && record.subject.slug === entry.subject.slug));
 
 export const getGeographyByOrganismSlug = (slug: string): GeographyBundle | undefined =>
-  eligibleSlugs.has(slug) ? cached.geography.find((entry) => entry.organismSlug === slug) : undefined;
+  visibleSlugs.has(slug) ? cached.geography.find((entry) => entry.organismSlug === slug) : undefined;
 
 export const getCitationById = (citationId: string): Citation | undefined =>
   cached.citations.find((entry) => entry.id === citationId);

@@ -1064,6 +1064,18 @@ select {
   overflow-wrap: anywhere;
 }
 
+.atlas-dossier-status {
+  margin-bottom: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--accent-warm);
+  background: var(--panel-soft);
+  color: var(--text-muted);
+}
+
+.atlas-dossier-status strong {
+  color: var(--text);
+}
+
 .atlas-dossier .atlas-change-organism {
   border: 1px solid var(--rule);
   background: var(--panel-soft);
