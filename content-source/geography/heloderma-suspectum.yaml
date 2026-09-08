@@ -17,6 +17,15 @@ distribution:
   nativeEvidenceIds:
     - ev-heloderma-suspectum-native-range
 ranges:
+  - id: geo-heloderma-suspectum-native-range
+    layerType: native_range
+    summary: The source supports a southern Arizona and Sonora native context; these explicit ADM1 claims remain independent of occurrence points.
+    evidence:
+      id: ev-heloderma-suspectum-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-wikipedia-heloderma-suspectum-distribution
   - id: geo-heloderma-suspectum-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/heloderma-suspectum-occurrences.geojson

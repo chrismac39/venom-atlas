@@ -17,6 +17,15 @@ distribution:
   nativeEvidenceIds:
     - ev-phyllobates-terribilis-native-range
 ranges:
+  - id: geo-phyllobates-terribilis-native-range
+    layerType: native_range
+    summary: Animal Diversity Web supports the Colombian native context; the Cauca and Valle del Cauca ADM1 claims remain explicit and independent of occurrence points.
+    evidence:
+      id: ev-phyllobates-terribilis-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-adw-golden-poison-frog
   - id: geo-phyllobates-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/phyllobates-terribilis-occurrences.geojson

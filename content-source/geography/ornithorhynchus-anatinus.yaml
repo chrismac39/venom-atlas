@@ -20,6 +20,15 @@ distribution:
   nativeEvidenceIds:
     - ev-ornithorhynchus-anatinus-native-range
 ranges:
+  - id: geo-ornithorhynchus-anatinus-native-range
+    layerType: native_range
+    summary: The Australian Museum supports eastern Australia and Tasmania; the displayed state-level records are a conservative representation of that native range.
+    evidence:
+      id: ev-ornithorhynchus-anatinus-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-australian-museum-platypus
   - id: geo-ornithorhynchus-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/ornithorhynchus-anatinus-occurrences.geojson

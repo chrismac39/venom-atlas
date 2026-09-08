@@ -37,6 +37,16 @@
     doi: null
     accessedAt: '2026-07-23'
     sourceType: database
+  - id: cit-pubchem-solenopsin-a
+    slug: pubchem-solenopsin-a
+    title: PubChem Compound Summary for CID 107941, Solenopsin A
+    authors: []
+    publisher: National Center for Biotechnology Information
+    publicationYear: null
+    url: https://pubchem.ncbi.nlm.nih.gov/compound/107941
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
   - id: cit-editorial-placeholder
     slug: editorial-placeholder
     title: Editorial normalization for scaffold continuity

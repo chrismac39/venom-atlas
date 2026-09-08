@@ -21,6 +21,15 @@ distribution:
   nativeEvidenceIds:
     - ev-amanita-phalloides-native-range
 ranges:
+  - id: geo-amanita-phalloides-native-range
+    layerType: native_range
+    summary: Europe is treated as the native context; the displayed ADM1 entries are a conservative subset, while overseas records remain documented presence unless separately sourced.
+    evidence:
+      id: ev-amanita-phalloides-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-wikipedia-amanita-phalloides-distribution
   - id: geo-amanita-phalloides-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/amanita-phalloides-occurrences.geojson

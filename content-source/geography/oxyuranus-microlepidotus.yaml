@@ -18,6 +18,15 @@ distribution:
   nativeEvidenceIds:
     - ev-oxyuranus-microlepidotus-native-range
 ranges:
+  - id: geo-oxyuranus-microlepidotus-native-range
+    layerType: native_range
+    summary: The Australian Museum supports an inland Australian native context; explicit state claims do not treat sparse observations as the range boundary.
+    evidence:
+      id: ev-oxyuranus-microlepidotus-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-australian-museum-inland-taipan
   - id: geo-oxyuranus-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/oxyuranus-microlepidotus-occurrences.geojson

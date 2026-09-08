@@ -124,7 +124,8 @@ test('unfocused wheel scrolls the page, focused wheel zooms, Escape restores pag
   await page.mouse.wheel(0, 180);
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(before);
   expect(await camera(page)).toEqual(initialCamera);
-  await host(page).focus();
+  await host(page).evaluate((element: HTMLElement) => element.focus({ preventScroll: true }));
+  await expect(host(page)).toBeFocused();
   await host(page).hover();
   const focusedY = await page.evaluate(() => window.scrollY);
   await page.mouse.wheel(0, 180);

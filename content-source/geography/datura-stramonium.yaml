@@ -23,6 +23,15 @@ distribution:
   nativeEvidenceIds:
     - ev-datura-stramonium-native-range
 ranges:
+  - id: geo-datura-stramonium-native-range
+    layerType: native_range
+    summary: Mexican ADM1 records represent a conservative native-origin context; widespread introduced and naturalized populations are not treated as native.
+    evidence:
+      id: ev-datura-stramonium-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-wikipedia-datura-stramonium-distribution
   - id: geo-datura-stramonium-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/datura-stramonium-occurrences.geojson

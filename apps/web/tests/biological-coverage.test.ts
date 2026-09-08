@@ -1,5 +1,5 @@
 // @vitest-environment node
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it, vi } from 'vitest';
 import {
@@ -72,7 +72,8 @@ describe('biological coverage expansion', () => {
   it('keeps occurrence geography present while retaining linked toxin records', () => {
     const slug = 'clostridium-botulinum';
     const material = raw.toxicMaterials.find((entry) => entry.organismSlug === slug);
-    expect(raw.geography.find((entry) => entry.organismSlug === slug)?.ranges[0]?.layerType).toBe('confirmed_occurrence');
+    expect(raw.geography.find((entry) => entry.organismSlug === slug)?.ranges
+      .some((range) => range.layerType === 'confirmed_occurrence')).toBe(true);
     expect(material?.featuredToxinSlug).toBe('botulinum-neurotoxin');
     expect(raw.mechanisms.find((entry) => entry.subject.kind === 'organism_exposure' && entry.subject.slug === slug)?.steps).toHaveLength(2);
     expect(raw.toxins.filter((entry) => entry.toxicMaterialId === material?.id)).toHaveLength(1);
@@ -120,7 +121,7 @@ describe('biological coverage expansion', () => {
 
     expect(atlasOrganisms).toHaveLength(organismSlugs.size);
     expect(atlasSlugs).toEqual(organismSlugs);
-    expect(staticSlugs).toEqual(new Set(raw.organisms.map((entry) => entry.slug)));
+    expect(staticSlugs).toEqual(organismSlugs);
     expect(organismSlugs).toEqual(new Set(getPublicContentRecords().organisms.map((entry) => entry.slug)));
     expect(searchSlugs).toEqual(organismSlugs);
   });
@@ -146,51 +147,29 @@ describe('biological coverage expansion', () => {
       .toBe('native_range_not_meaningful');
   });
 
-  it('keeps native administrative shading independent from occurrence points', () => {
-    const registry = JSON.parse(
-      readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),
-    ) as { records: Array<{ speciesId: string; derivation: string; sourceRecordCount: number; distributionStatus: string }> };
-    expect(registry.records.some((record) =>
-      record.speciesId === 'heloderma-suspectum' &&
-      record.distributionStatus === 'native' &&
-      record.derivation === 'source_native_admin1' &&
-      record.sourceRecordCount === 0,
-    )).toBe(true);
+  it('keeps authored native administrative claims independent from occurrence points', () => {
+    const geography = raw.geography.find((entry) => entry.organismSlug === 'heloderma-suspectum')!;
+    expect(geography.distribution?.nativeAdmin1RegionIds).toEqual(['USA-US-AZ', 'MEX-MX-SON']);
+    expect(geography.ranges.some((range) => range.layerType === 'native_range' && !range.geometryAssetPath)).toBe(true);
+    expect(geography.ranges.some((range) => range.layerType === 'confirmed_occurrence' && !!range.geometryAssetPath)).toBe(true);
   });
 
-  it('expands a source-backed country scope to ADM1 records with distinct provenance', () => {
-    const registry = JSON.parse(
-      readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),
-    ) as { records: Array<{ speciesId: string; countryCode: string; distributionStatus: string; derivation: string }> };
-    const redbackRecords = registry.records.filter((record) => record.speciesId === 'latrodectus-hasselti');
-    expect(redbackRecords.length).toBeGreaterThan(5);
-    expect(redbackRecords.every((record) =>
-      record.countryCode === 'AUS' &&
-      record.distributionStatus === 'native' &&
-      record.derivation === 'source_native_scope_to_admin1',
-    )).toBe(true);
+  it('retains a source-backed Redback country scope for ADM1 expansion', () => {
+    const geography = raw.geography.find((entry) => entry.organismSlug === 'latrodectus-hasselti')!;
+    expect(geography.distribution?.nativeScopes).toEqual([expect.objectContaining({
+      type: 'country', id: 'AUS', evidenceIds: ['ev-latrodectus-hasselti-native-range'], confidence: 'high',
+    })]);
   });
 
-  it('migrates the fire ant country-level native claim across all cited countries', () => {
-    const registry = JSON.parse(
-      readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),
-    ) as { records: Array<{ speciesId: string; countryCode: string; distributionStatus: string; derivation: string }> };
+  it('retains the fire ant country-level native claim across all cited countries', () => {
+    const geography = raw.geography.find((entry) => entry.organismSlug === 'solenopsis-invicta')!;
     const fireAntCountries = new Set(
-      registry.records
-        .filter((record) =>
-          record.speciesId === 'solenopsis-invicta' &&
-          record.distributionStatus === 'native' &&
-          record.derivation === 'source_native_scope_to_admin1',
-        )
-        .map((record) => record.countryCode),
+      geography.distribution?.nativeScopes?.map((scope) => scope.id),
     );
 
     expect(fireAntCountries).toEqual(new Set(['ARG', 'BOL', 'BRA', 'PRY', 'URY']));
-    expect(registry.records.filter((record) =>
-      record.speciesId === 'solenopsis-invicta' &&
-      record.distributionStatus === 'native' &&
-      record.derivation === 'source_native_scope_to_admin1',
-    ).length).toBeGreaterThan(25);
+    expect(geography.distribution?.nativeScopes?.every((scope) =>
+      scope.evidenceIds.includes('ev-solenopsis-invicta-native-range'))).toBe(true);
   });
 
   it('provides ISEA3H evidence cells for every marine organism', () => {

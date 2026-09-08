@@ -9,15 +9,15 @@ molecularEntity:
   displayName: Solenopsin A
   molecularClass: small_molecule
   formula: C17H35N
-  molecularWeight: 253.47
-  structureDataSource: PubChem CID 107941
+  molecularWeight: 253.5
+  structureDataSource: PubChem CID 107941; (2S,6S)-2-methyl-6-undecylpiperidine
   evidence:
     id: ev-solenopsin-molecular-identity
-    confidence: low
-    evidenceType: editorial_normalization
-    notes: Featured representative compound. Quantitation and exact composition pending.
+    confidence: high
+    evidenceType: database
+    notes: PubChem identifies CID 107941 as the (2S,6S) stereoisomer and reports formula C17H35N and computed molecular weight 253.5 g/mol.
     citationIds:
-      - cit-editorial-placeholder
+      - cit-pubchem-solenopsin-a
 structureAssets:
   - id: asset-mol3d-solenopsin-a
     localPath: /structures/solenopsin-a.sdf
@@ -25,7 +25,7 @@ structureAssets:
     sourceDatabase: PubChem
     sourceIdentifier: CID 107941
     sourceUrl: https://pubchem.ncbi.nlm.nih.gov/compound/107941
-    citationId: null
+    citationId: cit-pubchem-solenopsin-a
     structureStatus: computed
     verified: true
     license: null
@@ -36,7 +36,7 @@ structureAssets:
     sourceDatabase: PubChem
     sourceIdentifier: CID 107941
     sourceUrl: https://pubchem.ncbi.nlm.nih.gov/compound/107941
-    citationId: null
+    citationId: cit-pubchem-solenopsin-a
     structureStatus: computed
     verified: true
     license: null
@@ -76,8 +76,8 @@ targets:
         - cit-editorial-placeholder
 evidence:
   id: ev-solenopsin-feature
-  confidence: low
-  evidenceType: editorial_normalization
-  notes: Featured representative compound. Quantitation and exact composition pending.
+  confidence: moderate
+  evidenceType: review
+  notes: Solenopsin A is presented as a representative fire-ant venom alkaloid, not as the sole mediator of venom effects or a quantitative composition claim.
   citationIds:
-    - cit-editorial-placeholder
+    - cit-fire-ant-review-2007

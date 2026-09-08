@@ -11,6 +11,15 @@ sourceAudit:
   note: The source describes northern Australia and nearby Indo-Pacific waters; only country-level terrestrial intersections are shaded, while marine observations remain evidence layers rather than a modeled range boundary.
 geographyKind: marine
 ranges:
+  - id: geo-chironex-fleckeri-native-range
+    layerType: native_range
+    summary: The source describes northern Australia and nearby Indo-Pacific waters without defining a complete marine range boundary.
+    evidence:
+      id: ev-chironex-fleckeri-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-wikipedia-chironex-fleckeri-distribution
   - id: geo-chironex-fleckeri-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/chironex-fleckeri-occurrences.geojson

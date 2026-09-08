@@ -19,6 +19,15 @@ distribution:
       confidence: high
       note: The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source.
 ranges:
+  - id: geo-latrodectus-hasselti-native-range
+    layerType: native_range
+    summary: The Australian Museum supports an Australia-wide native context; the country claim is expanded for ADM1 shading without implying each region was named independently.
+    evidence:
+      id: ev-latrodectus-hasselti-native-range
+      confidence: high
+      evidenceType: review
+      citationIds:
+        - cit-australian-museum-redback
   - id: geo-latrodectus-hasselti-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/latrodectus-hasselti-occurrences.geojson

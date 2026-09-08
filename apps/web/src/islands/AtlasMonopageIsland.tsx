@@ -213,7 +213,7 @@ const AtlasMonopageHost = ({
                     <div className="chemistry-summary-copy">
                       <p><strong>Molecular class:</strong> {toxin.molecularClass.replaceAll('_', ' ')}</p>
                       {toxin.formula ? <p><strong>Formula:</strong> {renderChemicalFormula(toxin.formula)}</p> : null}
-                      {toxin.molecularWeight !== null ? <p><strong>Molecular weight:</strong> {toxin.molecularWeight}</p> : null}
+                      {toxin.molecularWeight !== null ? <p><strong>Molecular weight:</strong> {toxin.molecularWeight} g/mol</p> : null}
                       {toxin.structureDataSource ? <p><strong>Structure source:</strong> {toxin.structureDataSource}</p> : null}
                       <Provenance value={toxin.identityProvenance} label="Molecular identity sources" />
                     </div>

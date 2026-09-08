@@ -52,26 +52,11 @@ describe('authored content graph integrity', () => {
     expect(issues.map((issue) => issue.code)).toEqual(expect.arrayContaining(['invalid_slug', 'invalid_id', 'organism_id_mismatch']));
   });
 
-  it('keeps legacy draft JSON synchronized with raw records, not publication-gated getters', async () => {
-    const { readFileSync } = await import('node:fs');
+  it('does not emit legacy draft JSON through publication-gated generators', async () => {
+    const { existsSync } = await import('node:fs');
     const { getPublicAssetAbsolutePath } = await import('../src/lib/content');
-    const raw = getContentRecords();
-    const record = raw.toxins.find((entry) => entry.slug === 'solenopsin-a')!;
-    const { molecularEntity, structureAssets, targets, interactionVisualization, ...toxin } = record;
-    expect(JSON.parse(readFileSync(getPublicAssetAbsolutePath('/data/toxins/solenopsin-a.json'), 'utf8')))
-      .toEqual(JSON.parse(JSON.stringify({
-        toxin, molecularEntity: { ...molecularEntity, toxinId: toxin.id },
-        structureAssets: structureAssets.map((asset) => ({
-          ...Object.fromEntries(Object.entries(asset).filter(([, value]) => value != null)),
-          molecularEntityId: molecularEntity.id,
-        })),
-        targets: targets.map((target) => ({ ...target, toxinId: toxin.id })), interactionVisualization,
-      })));
-    const material = raw.toxicMaterials.find((entry) => entry.organismSlug === 'eunice-aphroditois')!;
-    const { biologicalMaterial, organismSlug, components, ...fields } = material;
-    expect(JSON.parse(readFileSync(getPublicAssetAbsolutePath('/data/toxic-materials/eunice-aphroditois-secretion.json'), 'utf8')))
-      .toEqual({ toxicMaterial: { ...fields, organismId: `org-${organismSlug}`, biologicalMaterialId: biologicalMaterial.id,
-        materialKind: biologicalMaterial.kind }, components: components.map((component) => ({ ...component, toxicMaterialId: material.id })) });
+    expect(existsSync(getPublicAssetAbsolutePath('/data/toxins/solenopsin-a.json'))).toBe(false);
+    expect(existsSync(getPublicAssetAbsolutePath('/data/toxic-materials/eunice-aphroditois-secretion.json'))).toBe(false);
   });
 
   it('canonicalizes Redback while retaining both public source slugs', () => {
@@ -235,12 +220,11 @@ describe('authored content graph integrity', () => {
     expect(auditContentGraph(content).issues.some((issue) => issue.code === 'invalid_review')).toBe(true);
   });
 
-  it('reports real unresolved content without silently upgrading evidence or suppressing dangling references', () => {
+  it('accepts the complete authored graph without silently upgrading evidence', () => {
     const report = auditContentGraph(getContentRecords());
-    expect(report.issues.filter((issue) => !['unsupported_claim', 'invalid_reference'].includes(issue.code))).toEqual([]);
+    expect(report.issues).toEqual([]);
     expect(report.claims.filter((claim) => claim.support === 'unsupported').map((claim) => claim.evidenceId).sort())
-      .toEqual(['ev-solenopsin-feature', 'ev-solenopsin-molecular-identity']);
-    expect(report.issues.some((issue) => issue.message.includes('ev-amanita-phalloides-native-range'))).toBe(true);
+      .toEqual([]);
     expect(report.summary.reviewedClaims).toBe(0);
   });
 });

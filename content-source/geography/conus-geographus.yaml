@@ -11,6 +11,15 @@ sourceAudit:
   note: The source supports a tropical Indo-Pacific native context, but its marine extent is too broad for defensible ADM1 expansion; occurrence and ISEA3H evidence remain separate from that qualitative range statement.
 geographyKind: marine
 ranges:
+  - id: geo-conus-geographus-native-range
+    layerType: native_range
+    summary: The source supports a tropical Indo-Pacific native context, but does not define a complete marine range boundary suitable for terrestrial ADM1 shading.
+    evidence:
+      id: ev-conus-geographus-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-wikipedia-conus-geographus-distribution
   - id: geo-conus-geographus-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/conus-geographus-occurrences.geojson

@@ -11,6 +11,15 @@ sourceAudit:
   note: The Australian Museum supports a broad Indo-Pacific native context; marine occurrence and ISEA3H layers are retained without inventing a terrestrial or cell-complete range boundary.
 geographyKind: marine
 ranges:
+  - id: geo-synanceia-verrucosa-native-range
+    layerType: native_range
+    summary: The Australian Museum supports a broad Indo-Pacific native context without defining a terrestrial or cell-complete marine range boundary.
+    evidence:
+      id: ev-synanceia-verrucosa-native-range
+      confidence: moderate
+      evidenceType: review
+      citationIds:
+        - cit-australian-museum-reef-stonefish
   - id: geo-synanceia-confirmed-occurrences
     layerType: confirmed_occurrence
     geometryAssetPath: /geography/synanceia-verrucosa-occurrences.geojson

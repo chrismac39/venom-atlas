@@ -338,30 +338,30 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 
 #### 1A. Eliminate integrity ambiguities
 
-- [ ] Canonicalize the duplicate Redback citation, updating references without breaking meaningful public source URLs.
-- [ ] Remove/merge duplicate Fire Ant mechanism and physiology source records; preserve exposure scope.
-- [ ] Add uniqueness tests for citation IDs/slugs, evidence IDs where globally addressed, nested entities, and scientific subject bundles.
-- [ ] Validate anatomy/symptom/target references, geography evidence references, structure citations, and media citations through a consistent graph audit.
-- [ ] Reject scientific claims supported solely by internal/editorial placeholders, while allowing explicit public statements of uncertainty.
-- [ ] Add a report distinguishing source rows, unique sources, cited claims, missing support, and automated check results.
-- [ ] Extend route inventory/collision checking to actual generated atlas and source pages.
+- [x] Canonicalize the duplicate Redback citation, updating references without breaking meaningful public source URLs.
+- [x] Remove/merge duplicate Fire Ant mechanism and physiology source records; preserve exposure scope.
+- [x] Add uniqueness tests for citation IDs/slugs, evidence IDs where globally addressed, nested entities, and scientific subject bundles.
+- [x] Validate anatomy/symptom/target references, geography evidence references, structure citations, and media citations through a consistent graph audit.
+- [x] Reject scientific claims supported solely by internal/editorial placeholders, while allowing explicit public statements of uncertainty.
+- [x] Add a report distinguishing source rows, unique sources, cited claims, missing support, and automated check results.
+- [x] Extend route inventory/collision checking to actual generated atlas and source pages.
 
 #### 1B. Restore dependable molecular rendering
 
-- [ ] Reproduce the development-only 3Dmol import failure on a clean dependency state; inspect optimization/HMR/module interop before changing libraries.
-- [ ] Test development cold load, reload, production load, and returning to Chemistry after navigation.
-- [ ] Verify visible molecule pixels, rotation, reset, resize, keyboard focus, and wheel/page-scroll coexistence.
-- [ ] Test failed dynamic import, failed structure request, malformed structure, and unavailable WebGL with usable text/2D fallbacks.
-- [ ] Disable or accurately label unsupported advanced surface/analysis controls.
-- [ ] Keep illustrative complex demonstrations outside the normal evidence narrative; do not use their fictional contacts as mechanism data.
-- [ ] Preserve 2D stereochemical meaning; review the SVG generator's removal of enantiomer/R/S annotations against source structures.
+- [x] Reproduce the development-only 3Dmol import failure on a clean dependency state; inspect optimization/HMR/module interop before changing libraries.
+- [x] Test development cold load, reload, production load, and returning to Chemistry after navigation.
+- [x] Verify visible molecule pixels, rotation, reset, resize, keyboard focus, and wheel/page-scroll coexistence.
+- [x] Test failed dynamic import, failed structure request, malformed structure, and unavailable WebGL with usable text/2D fallbacks.
+- [x] Disable or accurately label unsupported advanced surface/analysis controls.
+- [x] Keep illustrative complex demonstrations outside the normal evidence narrative; do not use their fictional contacts as mechanism data.
+- [x] Preserve 2D stereochemical meaning; review the SVG generator's removal of enantiomer/R/S annotations against source structures.
 
 #### 1C. Close immediately visible source gaps
 
-- [ ] Verify Solenopsin A's exact chemical identity, source accession, stereochemistry, mass units, and structure provenance; attach real public evidence before replacing its editorial assessment.
-- [ ] Carry relevant structure-asset citations/status through the chemistry view model, not only molecular-entity citations.
-- [ ] Add visible citations to mechanism rows and geography source explanations.
-- [ ] Generate emergency-context prose from appropriate cited source content rather than triggering hardcoded copy from a symptom ID; preserve educational scope and AI-summary disclosure.
+- [x] Verify Solenopsin A's exact chemical identity, source accession, stereochemistry, mass units, and structure provenance; attach real public evidence before replacing its editorial assessment.
+- [x] Carry relevant structure-asset citations/status through the chemistry view model, not only molecular-entity citations.
+- [x] Add visible citations to mechanism rows and geography source explanations.
+- [x] Generate emergency-context prose from appropriate cited source content rather than triggering hardcoded copy from a symptom ID; preserve educational scope and AI-summary disclosure.
 
 **Exit:** duplicates fail validation; Fire Ant chemistry works in clean development and production; published basic chemistry facts have inspectable source support. No broad map redesign is required to finish this milestone.
 
