@@ -3,364 +3,356 @@
   "release": "9469f09",
   "records": [
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-AGU",
-      "countryCode": "MEX",
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
       "adminLevel": 1,
-      "regionName": "Aguascalientes",
+      "regionName": "New South Wales",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-latrodectus-hasselti-native-range",
+        "ev-latrodectus-hasselti-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_scope_to_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B17004778023462; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 4,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-BCN",
-      "countryCode": "MEX",
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-VIC",
+      "countryCode": "AUS",
       "adminLevel": 1,
-      "regionName": "Baja California",
+      "regionName": "Victoria",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-latrodectus-hasselti-native-range",
+        "ev-latrodectus-hasselti-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_scope_to_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B35339934753022; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 5,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-BCS",
-      "countryCode": "MEX",
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
       "adminLevel": 1,
-      "regionName": "Baja California Sur",
+      "regionName": "Queensland",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-latrodectus-hasselti-native-range",
+        "ev-latrodectus-hasselti-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_scope_to_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B33389180120223; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 3,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-CAM",
-      "countryCode": "MEX",
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-SA",
+      "countryCode": "AUS",
       "adminLevel": 1,
-      "regionName": "Campeche",
+      "regionName": "South Australia",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-latrodectus-hasselti-native-range",
+        "ev-latrodectus-hasselti-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_scope_to_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B84428150771724; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 1,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-CHP",
-      "countryCode": "MEX",
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-WA",
+      "countryCode": "AUS",
       "adminLevel": 1,
-      "regionName": "Chiapas",
+      "regionName": "Western Australia",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-latrodectus-hasselti-native-range",
+        "ev-latrodectus-hasselti-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_scope_to_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B65177449444732; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 4,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
     },
     {
-      "speciesId": "heloderma-suspectum",
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-TAS",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Tasmania",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-NT",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Northern Territory",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-ACT",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Australian Capital Territory",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-native-range",
+        "ev-latrodectus-hasselti-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-null",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Other Territories",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "AUT-AT-1",
+      "countryCode": "AUT",
+      "adminLevel": 1,
+      "regionName": "Burgenland",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-amanita-phalloides-native-range"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 97560089B12055607938436; no GBIF point is required for this native-range shading record."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "DEU-DE-NW",
+      "countryCode": "DEU",
+      "adminLevel": 1,
+      "regionName": "Nordrhein-Westfalen",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-amanita-phalloides-native-range"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 10402087B86022102756745; no GBIF point is required for this native-range shading record."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "ESP-ESP",
+      "countryCode": "ESP",
+      "adminLevel": 1,
+      "regionName": "Canarias",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-amanita-phalloides-native-range",
+        "ev-amanita-phalloides-gbif-occurrences"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 25490228B84620027724461. Native classification is limited to explicit ADM1 evidence."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "FRA-FR-CVL",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Centre-Val de Loire",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-amanita-phalloides-native-range"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 19338628B5758982491638; no GBIF point is required for this native-range shading record."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "GBR-GB-ENG",
+      "countryCode": "GBR",
+      "adminLevel": 1,
+      "regionName": "England",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-amanita-phalloides-native-range"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 14339913B95766344400054; no GBIF point is required for this native-range shading record."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "SWE-SE-AB",
+      "countryCode": "SWE",
+      "adminLevel": 1,
+      "regionName": "Stockholms lÃ¤n",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-amanita-phalloides-native-range"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 68755315B30510620730039; no GBIF point is required for this native-range shading record."
+    },
+    {
+      "speciesId": "datura-stramonium",
       "regionId": "MEX-MX-CHH",
       "countryCode": "MEX",
       "adminLevel": 1,
       "regionName": "Chihuahua",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-datura-stramonium-native-range"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B49801195703560; no GBIF point is required for this native-range shading record."
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B49801195703560; no GBIF point is required for this native-range shading record."
     },
     {
-      "speciesId": "heloderma-suspectum",
+      "speciesId": "datura-stramonium",
       "regionId": "MEX-MX-COA",
       "countryCode": "MEX",
       "adminLevel": 1,
       "regionName": "Coahuila de Zaragoza",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-datura-stramonium-native-range"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B32124965101143; no GBIF point is required for this native-range shading record."
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B32124965101143; no GBIF point is required for this native-range shading record."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-COL",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Colima",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B75771156097737; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-MEX",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Mexico",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B41082348713023; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
+      "speciesId": "datura-stramonium",
       "regionId": "MEX-MX-DUR",
       "countryCode": "MEX",
       "adminLevel": 1,
       "regionName": "Durango",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-datura-stramonium-native-range"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B5285092776894; no GBIF point is required for this native-range shading record."
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B5285092776894; no GBIF point is required for this native-range shading record."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-GUA",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Guanajuato",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B33104012885361; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-GRO",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Guerrero",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B20618267715210; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-HID",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Hidalgo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B12556965236767; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-JAL",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Jalisco",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B65869129959700; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-MIC",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Michoacan de Ocampo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B49073316106075; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-MOR",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Morelos",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B72315499763974; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-NAY",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Nayarit",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B15886886594254; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
+      "speciesId": "datura-stramonium",
       "regionId": "MEX-MX-NLE",
       "countryCode": "MEX",
       "adminLevel": 1,
       "regionName": "Nuevo Leon",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-datura-stramonium-native-range"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B30741484985331; no GBIF point is required for this native-range shading record."
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B30741484985331; no GBIF point is required for this native-range shading record."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-OAX",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Oaxaca",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B6525686063804; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-PUE",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Puebla",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B1137737933275; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-QUE",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Queretaro de Arteaga",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B98648037880103; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-ROO",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Quintana Roo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B30293642818187; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
+      "speciesId": "datura-stramonium",
       "regionId": "MEX-MX-SLP",
       "countryCode": "MEX",
       "adminLevel": 1,
       "regionName": "San Luis Potosi",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-datura-stramonium-native-range"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B22618747134228; no GBIF point is required for this native-range shading record."
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B22618747134228; no GBIF point is required for this native-range shading record."
     },
     {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-SIN",
+      "speciesId": "datura-stramonium",
+      "regionId": "MEX-MX-SON",
       "countryCode": "MEX",
       "adminLevel": 1,
-      "regionName": "Sinaloa",
+      "regionName": "Sonora",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
+        "ev-datura-stramonium-native-range"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B30231562725156; no GBIF point is required for this native-range shading record."
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B37261891092938; no GBIF point is required for this native-range shading record."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "MEX-MX-TAM",
+      "countryCode": "MEX",
+      "adminLevel": 1,
+      "regionName": "Tamaulipas",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-datura-stramonium-native-range"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B88239390016047; no GBIF point is required for this native-range shading record."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "MEX-MX-ZAC",
+      "countryCode": "MEX",
+      "adminLevel": 1,
+      "regionName": "Zacatecas",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-datura-stramonium-native-range"
+      ],
+      "derivation": "source_native_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B22408340646138; no GBIF point is required for this native-range shading record."
     },
     {
       "speciesId": "heloderma-suspectum",
@@ -372,627 +364,10 @@
       "evidenceIds": [
         "ev-heloderma-suspectum-native-range"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B37261891092938; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-TAB",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Tabasco",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B81008000569871; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-TAM",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Tamaulipas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B88239390016047; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-TLA",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Tlaxcala",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B22008724034476; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-VER",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Veracruz de Ignacio de la Llave",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B5337219705256; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-YUC",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Yucatan",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B35199150741361; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "MEX-MX-ZAC",
-      "countryCode": "MEX",
-      "adminLevel": 1,
-      "regionName": "Zacatecas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 31927357B22408340646138; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MS",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Mississippi",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B69138566591314; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-NC",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "North Carolina",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B6801956407400; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-OK",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Oklahoma",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B83300161667341; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-VA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Virginia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B53580985925186; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-WV",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "West Virginia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B64762166704956; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-LA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Louisiana",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B41335105066757; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MI",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Michigan",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B37442548568489; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Massachusetts",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B15934532614691; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-ID",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Idaho",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B48953429733047; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-FL",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Florida",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B65591139260314; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-NE",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Nebraska",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B73402293045483; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-WA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Washington",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B98555229882405; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-NM",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "New Mexico",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B2592965416524; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-PR",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Puerto Rico",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B86072070009793; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-SU-SD",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "South Dakota",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B38006515706420; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-TX",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Texas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B29106115751815; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-CA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "California",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B43071933723331; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-AL",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Alabama",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B98021244841737; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-GA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Georgia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B75419826371250; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-PA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Pennsylvania",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B6628180846672; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MO",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Missouri",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B13694661525286; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-CO",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Colorado",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B35012827062242; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-UT",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Utah",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range",
-        "ev-heloderma-suspectum-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 66186276B31593004124297. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-TN",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Tennessee",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B52324970173776; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-WY",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Wyoming",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B10933057601622; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-NY",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "New York",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B43575054209436; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-KS",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Kansas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B64014601259366; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-AK",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Alaska",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B62688952876525; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-NV",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Nevada",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range",
-        "ev-heloderma-suspectum-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 66186276B98615608994420. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-IL",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Illinois",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B11383391196245; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-VT",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Vermont",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B17406925856308; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MT",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Montana",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B80192890672447; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-IA",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Iowa",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B63937528568220; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-SC",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "South Carolina",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B79689460185872; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-NH",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "New Hampshire",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B86627915353587; no GBIF point is required for this native-range shading record."
+      "note": "Source-backed native ADM1 range assigned to the geoBoundaries feature 31927357B37261891092938; no GBIF point is required for this native-range shading record."
     },
     {
       "speciesId": "heloderma-suspectum",
@@ -1005,451 +380,10 @@
         "ev-heloderma-suspectum-native-range",
         "ev-heloderma-suspectum-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 6,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 66186276B89395128410123. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-DC",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "District of Columbia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B94082813086253; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-AS",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "American Samoa",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B68035916752114; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-VI",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "United States Virgin Islands",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B43103824256708; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-NJ",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "New Jersey",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B73434888205604; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MD",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Maryland",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B21291522594454; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-ME",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Maine",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B78821008370123; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-HI",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Hawaii",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B99594608635082; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-DE",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Delaware",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B31549545599635; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-GU",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Guam",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B63361112364184; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MP",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Commonwealth of the Northern Mariana Islands",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B16791499040259; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-RI",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Rhode Island",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B98073251815399; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-KY",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Kentucky",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B22971435435932; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-OH",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Ohio",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B76680759932915; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-WI",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Wisconsin",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B91272823970344; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-OR",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Oregon",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B97229519707655; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-ND",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "North Dakota",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B22881275445497; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-AR",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Arkansas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B86295910312663; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-IN",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Indiana",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B82803899326534; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-MN",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Minnesota",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B10610315112087; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "heloderma-suspectum",
-      "regionId": "USA-US-CT",
-      "countryCode": "USA",
-      "adminLevel": 1,
-      "regionName": "Connecticut",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-heloderma-suspectum-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 66186276B83663796884405; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-NSW",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "New South Wales",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range",
-        "ev-latrodectus-hasselti-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 4,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B21656044714531. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-VIC",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Victoria",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range",
-        "ev-latrodectus-hasselti-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 5,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B60194602145168. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-QLD",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Queensland",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range",
-        "ev-latrodectus-hasselti-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 3,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B13995298844162. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-SA",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "South Australia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range",
-        "ev-latrodectus-hasselti-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B14973555098025. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-WA",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Western Australia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range",
-        "ev-latrodectus-hasselti-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 4,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B93533858076668. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-TAS",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Tasmania",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B70793016411369; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-NT",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Northern Territory",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B70364588595557; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-AU-ACT",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Australian Capital Territory",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range",
-        "ev-latrodectus-hasselti-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B40257551482390. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "latrodectus-hasselti",
-      "regionId": "AUS-null",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Other Territories",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-latrodectus-hasselti-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B12086860067424; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 66186276B89395128410123. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "ornithorhynchus-anatinus",
@@ -1462,10 +396,10 @@
         "ev-ornithorhynchus-anatinus-native-range",
         "ev-ornithorhynchus-anatinus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 22,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B21656044714531. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B21656044714531. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "ornithorhynchus-anatinus",
@@ -1478,10 +412,10 @@
         "ev-ornithorhynchus-anatinus-native-range",
         "ev-ornithorhynchus-anatinus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 15,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B60194602145168. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B60194602145168. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "ornithorhynchus-anatinus",
@@ -1494,40 +428,10 @@
         "ev-ornithorhynchus-anatinus-native-range",
         "ev-ornithorhynchus-anatinus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 6,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B13995298844162. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "ornithorhynchus-anatinus",
-      "regionId": "AUS-AU-SA",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "South Australia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-ornithorhynchus-anatinus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B14973555098025; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "ornithorhynchus-anatinus",
-      "regionId": "AUS-AU-WA",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Western Australia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-ornithorhynchus-anatinus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B93533858076668; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B13995298844162. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "ornithorhynchus-anatinus",
@@ -1540,25 +444,10 @@
         "ev-ornithorhynchus-anatinus-native-range",
         "ev-ornithorhynchus-anatinus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 9,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B70793016411369. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "ornithorhynchus-anatinus",
-      "regionId": "AUS-AU-NT",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Northern Territory",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-ornithorhynchus-anatinus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B70364588595557; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B70793016411369. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "ornithorhynchus-anatinus",
@@ -1571,25 +460,10 @@
         "ev-ornithorhynchus-anatinus-native-range",
         "ev-ornithorhynchus-anatinus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B40257551482390. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "ornithorhynchus-anatinus",
-      "regionId": "AUS-null",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Other Territories",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-ornithorhynchus-anatinus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B12086860067424; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B40257551482390. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "oxyuranus-microlepidotus",
@@ -1602,25 +476,10 @@
         "ev-oxyuranus-microlepidotus-native-range",
         "ev-oxyuranus-microlepidotus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 4,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B21656044714531. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "oxyuranus-microlepidotus",
-      "regionId": "AUS-AU-VIC",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Victoria",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-oxyuranus-microlepidotus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B60194602145168; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B21656044714531. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "oxyuranus-microlepidotus",
@@ -1633,10 +492,10 @@
         "ev-oxyuranus-microlepidotus-native-range",
         "ev-oxyuranus-microlepidotus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 20,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B13995298844162. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B13995298844162. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "oxyuranus-microlepidotus",
@@ -1649,295 +508,10 @@
         "ev-oxyuranus-microlepidotus-native-range",
         "ev-oxyuranus-microlepidotus-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 11,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 82085004B14973555098025. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "oxyuranus-microlepidotus",
-      "regionId": "AUS-AU-WA",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Western Australia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-oxyuranus-microlepidotus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B93533858076668; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "oxyuranus-microlepidotus",
-      "regionId": "AUS-AU-TAS",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Tasmania",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-oxyuranus-microlepidotus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B70793016411369; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "oxyuranus-microlepidotus",
-      "regionId": "AUS-AU-NT",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Northern Territory",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-oxyuranus-microlepidotus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B70364588595557; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "oxyuranus-microlepidotus",
-      "regionId": "AUS-AU-ACT",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Australian Capital Territory",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-oxyuranus-microlepidotus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B40257551482390; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "oxyuranus-microlepidotus",
-      "regionId": "AUS-null",
-      "countryCode": "AUS",
-      "adminLevel": 1,
-      "regionName": "Other Territories",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-oxyuranus-microlepidotus-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 82085004B12086860067424; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-CAL",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Caldas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B36646919284035; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-AMA",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Amazonas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B76063723503478; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-MET",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Meta",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B75246552958907; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-CUN",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Cundinamarca",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B23733272568917; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-TOL",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Tolima",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B56780975975491; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-ANT",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Antioquia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B3780741375954; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-ATL",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "AtlÃ¡ntico",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B77991835419453; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-BOL",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "BolÃ­var",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B96168520946689; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-CES",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Cesar",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B76435085510886; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-MAG",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Magdalena",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B85940101840667; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-SUC",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Sucre",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B67390718500375; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-COR",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "CÃ³rdoba",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B54743798138783; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-LAG",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "La Guajira",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B66570655136682; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-CHO",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "ChocÃ³",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B53668371411224; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 82085004B14973555098025. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "phyllobates-terribilis",
@@ -1950,220 +524,10 @@
         "ev-phyllobates-terribilis-native-range",
         "ev-phyllobates-terribilis-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 13589884B83777567082486. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-NSA",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Norte de Santander",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B27060143959141; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-QUI",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "QuindÃ­o",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B61455559641217; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-VID",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Vichada",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B14692588923622; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-VAU",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "VaupÃ©s",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B22408468869829; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-SAN",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Santander",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B55612798068582; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-RIS",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Risaralda",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B85526028135750; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-PUT",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Putumayo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B42325644495938; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-NAR",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "NariÃ±o",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B81785725414319; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-GUV",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Guaviare",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B51885004571697; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-GUA",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "GuainÃ­a",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B67034552102836; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-DC",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Bogota Capital District",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B40908771570386; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-ARA",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Arauca",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B25788978851461; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-BOY",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "BoyacÃ¡",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B62290921297491; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-CAS",
-      "countryCode": "COL",
-      "adminLevel": 1,
-      "regionName": "Casanare",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B21818736641406; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 13589884B83777567082486. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "phyllobates-terribilis",
@@ -2176,55 +540,58 @@
         "ev-phyllobates-terribilis-native-range",
         "ev-phyllobates-terribilis-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 13589884B79790550435280. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 13589884B79790550435280. Native classification is limited to explicit ADM1 evidence."
     },
     {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-CAQ",
-      "countryCode": "COL",
+      "speciesId": "ricinus-communis",
+      "regionId": "IND-IN-GJ",
+      "countryCode": "IND",
       "adminLevel": 1,
-      "regionName": "CaquetÃ¡",
+      "regionName": "GujarÄt",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
+        "ev-ricinus-communis-native-range",
+        "ev-ricinus-communis-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B16144547040567; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 1811400B80305611676067. Native classification is limited to explicit ADM1 evidence."
     },
     {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-HUI",
-      "countryCode": "COL",
+      "speciesId": "ricinus-communis",
+      "regionId": "IND-IN-TG",
+      "countryCode": "IND",
       "adminLevel": 1,
-      "regionName": "Huila",
+      "regionName": "TelangÄna",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
+        "ev-ricinus-communis-native-range",
+        "ev-ricinus-communis-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B32024052187233; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 1811400B25711494603400. Native classification is limited to explicit ADM1 evidence."
     },
     {
-      "speciesId": "phyllobates-terribilis",
-      "regionId": "COL-CO-SAP",
-      "countryCode": "COL",
+      "speciesId": "ricinus-communis",
+      "regionId": "IND-IN-KL",
+      "countryCode": "IND",
       "adminLevel": 1,
-      "regionName": "ArchipiÃ©lago de San AndrÃ©s, Providencia y Santa Catalina",
+      "regionName": "Kerala",
       "distributionStatus": "native",
       "evidenceIds": [
-        "ev-phyllobates-terribilis-native-range"
+        "ev-ricinus-communis-native-range",
+        "ev-ricinus-communis-gbif-occurrences"
       ],
-      "derivation": "source_range_to_admin1_extrapolation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 13589884B18807997781037; no GBIF point is required for this native-range shading record."
+      "sourceRecordCount": 1,
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 1811400B45534780755480. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2237,70 +604,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 7,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B97722443848736. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-K",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Catamarca",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B98145761763330; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-H",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Chaco",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B38635755405886; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-U",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Chubut",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B69455221212116; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-C",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Ciudad AutÃ³noma de Buenos Aires",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B49506124846693; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B97722443848736. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2313,10 +620,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B39000171219781. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B39000171219781. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2329,10 +636,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 4,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B61983540054875. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B61983540054875. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2345,70 +652,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 10,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B45303095947895. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-Y",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Jujuy",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B3883129267492; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-L",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "La Pampa",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B99972609216724; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-F",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "La Roja",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B72583408220290; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-M",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Mendoza",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B51705615570562; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B45303095947895. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2421,100 +668,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B16625472822217. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-Q",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "NeuquÃ©n",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B94928710157578; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-R",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "RÃ­o Negro",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B64043309462999; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-A",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Salta",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B81563233036116; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-J",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "San Juan",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B47339545206363; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-D",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "San Luis",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B8726453430521; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-Z",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Santa Cruz",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B63276911592202; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B16625472822217. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2527,10 +684,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 10,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B6836410786482. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B6836410786482. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2543,25 +700,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B61792957744675. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-V",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Tierra del Fuego",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 19177384B7010788354129; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B61792957744675. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2574,190 +716,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 19177384B70412318542153. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-B",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "Beni",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B17172096462676; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-H",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "Chuquisaca",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B30905576957948; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-C",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "Cochabamba",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B59884138823050; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-L",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "La Paz",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B78392246351569; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-O",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "Oruro",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B78289653685394; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-N",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "Pando",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B66401228554177; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-P",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "PotosÃ­",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B37550803023778; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-S",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "Santa Cruz",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B26939592883549; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BOL-BO-T",
-      "countryCode": "BOL",
-      "adminLevel": 1,
-      "regionName": "Tarija",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 26024454B43037921046937; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-RR",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Roraima",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B45290909693812; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-AP",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Amapa",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B26412867168762; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-AM",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Amazonas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B46798344041190; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B70412318542153. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2770,115 +732,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B48776179681147. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-MA",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Maranhao",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B41041569544971; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-CE",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Ceara",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B7632012573600; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-RN",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Rio Granda do Norte",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B91095571793858; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-PB",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Paraiba",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B97385369352280; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-PI",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Piaui",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B32365136910534; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-PE",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Pernambuco",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B2612452665424; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-AL",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Alagoas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B9724590061217; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B48776179681147. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2891,10 +748,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B96632893955983. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B96632893955983. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2907,55 +764,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B1613159902410. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-SE",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Sergipe",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B86532577506919; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-TO",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Tocantins",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B72497658138655; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-BA",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Bahia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B19428866735507; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B1613159902410. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2968,10 +780,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 8,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B2082355341666. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B2082355341666. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -2984,25 +796,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B6484683145874. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-DF",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Distrito Federal",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B84195346134564; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B6484683145874. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3015,25 +812,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 5,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B44044837234259. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-ES",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Espirito Santo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 14911670B28216513632935; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B44044837234259. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3046,10 +828,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 28,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B40722526455680. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B40722526455680. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3062,10 +844,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 4,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B85657526756793. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B85657526756793. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3078,10 +860,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 11,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B46470234103867. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B46470234103867. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3094,10 +876,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 5,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B30315977547221. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B30315977547221. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3110,10 +892,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 7,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B90188072957077. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B90188072957077. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3126,25 +908,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 14911670B68448774564157. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-ASU",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "ASUNCION",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B42428386495226; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B68448774564157. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3157,25 +924,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B27882980507950. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-2",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "SAN PEDRO",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B6371140935910; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B27882980507950. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3188,55 +940,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B75072183549736. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-4",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "GUAIRA",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B69896036469417; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-5",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "CAAGUAZU",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B47245134487422; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-6",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "CAAZAPA",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B61362972321879; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B75072183549736. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3249,10 +956,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 2,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B60028824512427. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B60028824512427. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3265,10 +972,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B67002830619694. The country-level native range source is not expanded to unobserved ADM1 units."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B67002830619694. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3281,25 +988,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B9584917578086. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-10",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "ALTO PARANA",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B70318852287741; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B9584917578086. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "solenopsis-invicta",
@@ -3312,385 +1004,10 @@
         "ev-solenopsis-invicta-native-range",
         "ev-solenopsis-invicta-gbif-occurrences"
       ],
-      "derivation": "occurrence_point_aggregation",
+      "derivation": "source_native_admin1",
       "confidence": "high",
       "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature 63826900B88193761383216. The country-level native range source is not expanded to unobserved ADM1 units."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-12",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "ÃEEMBUCU",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B28816426657500; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-13",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "AMAMBAY",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B22649219267943; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-14",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "CANINDEYU",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B71996717464066; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-15",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "PRESIDENTE HAYES",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B99929286362746; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-19",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "BOQUERON",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B91663486125533; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-16",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "ALTO PARAGUAY",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 63826900B74384941565078; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-SA",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Salto",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B51474914010310; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-AR",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Artigas",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B22084813565519; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-CA",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Canelones",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B19329078127106; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-RV",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Rivera",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B52084370772895; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-MO",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Montevideo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B97113143242340; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-MA",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Maldonado",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B438131503863; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-LA",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Lavalleja",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B10223787783888; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-FD",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Florida",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B4606463382645; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-SJ",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "San JosÃ©",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B9919519605551; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-TT",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Treinta y Tres",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B85503990233673; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-FS",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Flores",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B64628270573025; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-DU",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Durazno",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B99783771080652; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-SO",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Soriano",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B69444591785940; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-CO",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Colonia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B79494286721501; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-RO",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Rocha",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B55390925666910; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-CL",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "Cerro Largo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B72518212949854; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-TA",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "TacuarembÃ³",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B78128732832923; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-PA",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "PaysandÃº",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B55907822213987; no GBIF point is required for this native-range shading record."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "URY-UY-RN",
-      "countryCode": "URY",
-      "adminLevel": 1,
-      "regionName": "RÃ­o Negro",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range"
-      ],
-      "derivation": "source_range_to_admin1_extrapolation",
-      "confidence": "high",
-      "sourceRecordCount": 0,
-      "note": "Source-backed country-level native range expanded to the geoBoundaries ADM1 feature 27058087B51576366641273; no GBIF point is required for this native-range shading record."
+      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B88193761383216. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "amanita-phalloides",
@@ -3721,21 +1038,6 @@
       "confidence": "moderate",
       "sourceRecordCount": 12,
       "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B43071933723331; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "amanita-phalloides",
-      "regionId": "ESP-ESP",
-      "countryCode": "ESP",
-      "adminLevel": 1,
-      "regionName": "Canarias",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-amanita-phalloides-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 25490228B84620027724461; this is recorded presence, not a native or introduced range claim."
     },
     {
       "speciesId": "amanita-phalloides",
@@ -5703,6 +3005,36 @@
       "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82249235B24619009834807; this is recorded presence, not a native or introduced range claim."
     },
     {
+      "speciesId": "heloderma-suspectum",
+      "regionId": "USA-US-NV",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Nevada",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-heloderma-suspectum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B98615608994420; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "heloderma-suspectum",
+      "regionId": "USA-US-UT",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Utah",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-heloderma-suspectum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B31593004124297; this is recorded presence, not a native or introduced range claim."
+    },
+    {
       "speciesId": "ricinus-communis",
       "regionId": "ESP-ESP",
       "countryCode": "ESP",
@@ -5809,21 +3141,6 @@
     },
     {
       "speciesId": "ricinus-communis",
-      "regionId": "IND-IN-GJ",
-      "countryCode": "IND",
-      "adminLevel": 1,
-      "regionName": "GujarÄt",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-ricinus-communis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1811400B80305611676067; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "ricinus-communis",
       "regionId": "BRA-BR-RJ",
       "countryCode": "BRA",
       "adminLevel": 1,
@@ -5884,21 +3201,6 @@
     },
     {
       "speciesId": "ricinus-communis",
-      "regionId": "IND-IN-TG",
-      "countryCode": "IND",
-      "adminLevel": 1,
-      "regionName": "TelangÄna",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-ricinus-communis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1811400B25711494603400; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "ricinus-communis",
       "regionId": "NZL-NZ-NTL",
       "countryCode": "NZL",
       "adminLevel": 1,
@@ -5941,21 +3243,6 @@
       "confidence": "moderate",
       "sourceRecordCount": 2,
       "note": "Point evidence assigned to the geoBoundaries ADM1 feature 31927357B30231562725156; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "ricinus-communis",
-      "regionId": "IND-IN-KL",
-      "countryCode": "IND",
-      "adminLevel": 1,
-      "regionName": "Kerala",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-ricinus-communis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1811400B45534780755480; this is recorded presence, not a native or introduced range claim."
     },
     {
       "speciesId": "ricinus-communis",

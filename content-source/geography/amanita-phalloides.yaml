@@ -1,6 +1,17 @@
 ﻿id: geo-amanita-phalloides
 slug: amanita-phalloides
 organismSlug: amanita-phalloides
+distribution:
+  tier: curated_source
+  nativeAdmin1RegionIds:
+    - AUT-AT-1
+    - DEU-DE-NW
+    - ESP-ESP
+    - FRA-FR-CVL
+    - GBR-GB-ENG
+    - SWE-SE-AB
+  nativeEvidenceIds:
+    - ev-amanita-phalloides-native-range
 ranges:
   - id: geo-amanita-phalloides-confirmed-occurrences
     layerType: confirmed_occurrence

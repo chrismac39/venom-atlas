@@ -1,6 +1,19 @@
 ﻿id: geo-datura-stramonium
 slug: datura-stramonium
 organismSlug: datura-stramonium
+distribution:
+  tier: curated_source
+  nativeAdmin1RegionIds:
+    - MEX-MX-CHH
+    - MEX-MX-COA
+    - MEX-MX-DUR
+    - MEX-MX-NLE
+    - MEX-MX-SON
+    - MEX-MX-SLP
+    - MEX-MX-TAM
+    - MEX-MX-ZAC
+  nativeEvidenceIds:
+    - ev-datura-stramonium-native-range
 ranges:
   - id: geo-datura-stramonium-confirmed-occurrences
     layerType: confirmed_occurrence

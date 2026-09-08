@@ -138,10 +138,23 @@ describe('biological coverage expansion', () => {
       readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),
     ) as { records: Array<{ speciesId: string; derivation: string; sourceRecordCount: number; distributionStatus: string }> };
     expect(registry.records.some((record) =>
-      record.speciesId === 'solenopsis-invicta' &&
+      record.speciesId === 'heloderma-suspectum' &&
       record.distributionStatus === 'native' &&
-      record.derivation === 'source_range_to_admin1_extrapolation' &&
+      record.derivation === 'source_native_admin1' &&
       record.sourceRecordCount === 0,
+    )).toBe(true);
+  });
+
+  it('expands a source-backed country scope to ADM1 records with distinct provenance', () => {
+    const registry = JSON.parse(
+      readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),
+    ) as { records: Array<{ speciesId: string; countryCode: string; distributionStatus: string; derivation: string }> };
+    const redbackRecords = registry.records.filter((record) => record.speciesId === 'latrodectus-hasselti');
+    expect(redbackRecords.length).toBeGreaterThan(5);
+    expect(redbackRecords.every((record) =>
+      record.countryCode === 'AUS' &&
+      record.distributionStatus === 'native' &&
+      record.derivation === 'source_native_scope_to_admin1',
     )).toBe(true);
   });
 

@@ -3,8 +3,14 @@ slug: ornithorhynchus-anatinus
 organismSlug: ornithorhynchus-anatinus
 distribution:
   tier: occurrence_intersection
-  nativeCountryCodes:
-    - AUS
+  nativeAdmin1RegionIds:
+    - AUS-AU-ACT
+    - AUS-AU-NSW
+    - AUS-AU-QLD
+    - AUS-AU-TAS
+    - AUS-AU-VIC
+  nativeEvidenceIds:
+    - ev-ornithorhynchus-anatinus-native-range
 ranges:
   - id: geo-ornithorhynchus-confirmed-occurrences
     layerType: confirmed_occurrence

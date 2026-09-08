@@ -12,6 +12,7 @@ import {
   type DistributionStatus,
 } from './geography-registry-logic.js';
 import { validateDistributionRegistry } from './geography-registry-validation.js';
+import { getGeographyScope } from './geography-scope-registry.js';
 
 type Feature = {
   type: 'Feature';
@@ -61,11 +62,22 @@ const adminFeatures = globalAdmin.features.map((feature) => ({ ...feature, sourc
 type GeographySource = {
   organismSlug?: string;
   distribution?: {
-    nativeCountryCodes?: string[];
+    nativeAdmin1RegionIds?: string[];
+    nativeEvidenceIds?: string[];
+    nativeScopes?: NativeScope[];
     sourceRanges?: SourceRange[];
   };
 };
-const nativeCountryCodesBySpecies = new Map<string, Set<string>>();
+type NativeScope = {
+  type: 'country' | 'macroregion';
+  id: string;
+  evidenceIds: string[];
+  confidence: 'moderate' | 'high';
+  note?: string;
+};
+const nativeAdmin1RegionIdsBySpecies = new Map<string, Set<string>>();
+const nativeEvidenceIdsBySpecies = new Map<string, string[]>();
+const nativeScopesBySpecies = new Map<string, NativeScope[]>();
 type SourceRange = {
   layerType: 'native' | 'introduced' | 'uncertain';
   geometryAssetPath: string;
@@ -75,8 +87,14 @@ type SourceRange = {
 const sourceRangesBySpecies = new Map<string, SourceRange[]>();
 for (const sourceFile of readdirSync(geographySourceRoot).filter((name) => name.endsWith('.yaml'))) {
   const source = load(readFileSync(path.join(geographySourceRoot, sourceFile), 'utf8')) as GeographySource;
-  if (source.organismSlug && source.distribution?.nativeCountryCodes) {
-    nativeCountryCodesBySpecies.set(source.organismSlug, new Set(source.distribution.nativeCountryCodes));
+  if (source.organismSlug && source.distribution?.nativeAdmin1RegionIds) {
+    nativeAdmin1RegionIdsBySpecies.set(source.organismSlug, new Set(source.distribution.nativeAdmin1RegionIds));
+  }
+  if (source.organismSlug && source.distribution?.nativeEvidenceIds) {
+    nativeEvidenceIdsBySpecies.set(source.organismSlug, source.distribution.nativeEvidenceIds);
+  }
+  if (source.organismSlug && source.distribution?.nativeScopes) {
+    nativeScopesBySpecies.set(source.organismSlug, source.distribution.nativeScopes);
   }
   if (source.organismSlug && source.distribution?.sourceRanges) {
     sourceRangesBySpecies.set(source.organismSlug, source.distribution.sourceRanges);
@@ -84,24 +102,56 @@ for (const sourceFile of readdirSync(geographySourceRoot).filter((name) => name.
 }
 
 const records = new Map<string, DistributionRecord>();
-for (const [speciesId, nativeCountryCodes] of nativeCountryCodesBySpecies) {
+for (const [speciesId, nativeScopes] of nativeScopesBySpecies) {
+  for (const nativeScope of nativeScopes) {
+    const scope = getGeographyScope(nativeScope.type, nativeScope.id);
+    let matchedAdminFeatureCount = 0;
+    for (const adminFeature of adminFeatures) {
+      const { shapeGroup, shapeISO, shapeName, shapeID } = adminFeature.properties;
+      if (!scope.countryCodes.includes(shapeGroup)) {
+        continue;
+      }
+      matchedAdminFeatureCount += 1;
+      const regionId = `${shapeGroup}-${shapeISO}`;
+      records.set(`${speciesId}:${regionId}`, {
+        speciesId,
+        regionId,
+        countryCode: shapeGroup,
+        adminLevel: 1,
+        regionName: shapeName,
+        distributionStatus: 'native',
+        evidenceIds: nativeScope.evidenceIds,
+        derivation: 'source_native_scope_to_admin1',
+        confidence: nativeScope.confidence,
+        sourceRecordCount: 0,
+        note: nativeScope.note ?? `Source-backed ${scope.label} claim expanded to the geoBoundaries ADM1 feature ${shapeID}; the source did not name this ADM1 individually.`,
+      });
+    }
+    if (matchedAdminFeatureCount === 0) {
+      throw new Error(`Geography scope ${nativeScope.type}:${nativeScope.id} matched no ADM1 features for ${speciesId}.`);
+    }
+  }
+}
+
+for (const [speciesId, nativeAdmin1RegionIds] of nativeAdmin1RegionIdsBySpecies) {
   for (const adminFeature of adminFeatures) {
     const { shapeGroup, shapeISO, shapeName, shapeID } = adminFeature.properties;
-    if (!nativeCountryCodes.has(shapeGroup)) {
+    const regionId = `${shapeGroup}-${shapeISO}`;
+    if (!nativeAdmin1RegionIds.has(regionId)) {
       continue;
     }
-    records.set(`${speciesId}:${shapeGroup}-${shapeISO}`, {
+    records.set(`${speciesId}:${regionId}`, {
       speciesId,
-      regionId: `${shapeGroup}-${shapeISO}`,
+      regionId,
       countryCode: shapeGroup,
       adminLevel: 1,
       regionName: shapeName,
       distributionStatus: 'native',
-      evidenceIds: [`ev-${speciesId}-native-range`],
-      derivation: 'source_range_to_admin1_extrapolation',
+      evidenceIds: nativeEvidenceIdsBySpecies.get(speciesId) ?? [`ev-${speciesId}-native-range`],
+      derivation: 'source_native_admin1',
       confidence: 'high',
       sourceRecordCount: 0,
-      note: `Source-backed country-level native range expanded to the geoBoundaries ADM1 feature ${shapeID}; no GBIF point is required for this native-range shading record.`,
+      note: `Source-backed native ADM1 range assigned to the geoBoundaries feature ${shapeID}; no GBIF point is required for this native-range shading record.`,
     });
   }
 }
@@ -163,9 +213,10 @@ for (const fileName of readdirSync(geographyRoot).filter((name) => name.endsWith
     const regionId = `${shapeGroup}-${shapeISO}`;
     const key = `${speciesId}:${regionId}`;
     const existing = records.get(key);
-    const isNativeEvidence = nativeCountryCodesBySpecies.get(speciesId)?.has(shapeGroup) ?? false;
+    const isNativeEvidence = nativeAdmin1RegionIdsBySpecies.get(speciesId)?.has(regionId) ?? false;
     const existingStatus = existing?.distributionStatus;
     const hasCuratedSource = existing?.derivation === 'curated_source';
+    const hasSourceNativeDerivation = existing?.derivation === 'source_native_admin1' || existing?.derivation === 'source_native_scope_to_admin1';
     records.set(key, {
       speciesId,
       regionId,
@@ -178,15 +229,19 @@ for (const fileName of readdirSync(geographyRoot).filter((name) => name.endsWith
         existingDerivation: existing?.derivation,
       }),
       evidenceIds: mergeEvidenceIds(
-        ...(isNativeEvidence ? [`ev-${speciesId}-native-range`] : []),
+        ...(isNativeEvidence ? (nativeEvidenceIdsBySpecies.get(speciesId) ?? [`ev-${speciesId}-native-range`]) : []),
         ...(existing?.evidenceIds ?? []),
         `ev-${speciesId}-gbif-occurrences`,
       ),
-      derivation: hasCuratedSource ? 'curated_source' : 'occurrence_point_aggregation',
+      derivation: hasCuratedSource
+        ? 'curated_source'
+        : hasSourceNativeDerivation
+          ? existing.derivation
+          : 'occurrence_point_aggregation',
       confidence: existing?.confidence ?? 'moderate',
       sourceRecordCount: (existing?.sourceRecordCount ?? 0) + 1,
       note: isNativeEvidence
-        ? `Reusable-license GBIF point evidence assigned to the native geoBoundaries ADM1 feature ${shapeID}. The country-level native range source is not expanded to unobserved ADM1 units.`
+        ? `Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature ${shapeID}. Native classification is limited to explicit ADM1 evidence.`
         : existing?.note ?? `Point evidence assigned to the geoBoundaries ADM1 feature ${shapeID}; this is recorded presence, not a native or introduced range claim.`,
     });
   }

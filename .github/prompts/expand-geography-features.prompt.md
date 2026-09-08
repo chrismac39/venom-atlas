@@ -29,6 +29,10 @@ Use `[x]` only after the repository and focused validation confirm the item.
   evidence supports it; leave the native state absent or uncertain when evidence is insufficient.
 - [ ] Store native-country and curated-range provenance in geography source YAML and link it to existing
   citations or evidence records.
+- [ ] Classify source geographic precision as `admin1`, `country`, `macroregion`, or `occurrence_only`.
+- [ ] Use the geography scope registry for source claims such as Australia-wide or Western Europe, and
+  preserve a distinct `source_native_scope_to_admin1` derivation after expansion.
+- [ ] Fail generation when a scope identifier or country code matches no local ADM1 features.
 - [ ] Generate native ADM1 shading from source-backed country/range evidence even when no GBIF point falls
   in a particular administrative unit.
 - [ ] Keep derivations distinct: occurrence aggregation, source-to-ADM1 extrapolation, and curated geometry.

@@ -3,8 +3,11 @@ slug: phyllobates-terribilis
 organismSlug: phyllobates-terribilis
 distribution:
   tier: occurrence_intersection
-  nativeCountryCodes:
-    - COL
+  nativeAdmin1RegionIds:
+    - COL-CO-CAU
+    - COL-CO-VAC
+  nativeEvidenceIds:
+    - ev-phyllobates-terribilis-native-range
 ranges:
   - id: geo-phyllobates-confirmed-occurrences
     layerType: confirmed_occurrence

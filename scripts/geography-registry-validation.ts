@@ -41,7 +41,7 @@ export const validateDistributionRegistry = (data: unknown): void => {
       !['native', 'introduced', 'uncertain', 'recorded_presence'].includes(candidate.distributionStatus ?? '') ||
       !Array.isArray(candidate.evidenceIds) ||
       !candidate.evidenceIds.every((evidenceId) => typeof evidenceId === 'string') ||
-      !['occurrence_point_aggregation', 'source_range_to_admin1_extrapolation', 'curated_source'].includes(candidate.derivation ?? '') ||
+      !['occurrence_point_aggregation', 'source_native_admin1', 'source_native_scope_to_admin1', 'curated_source'].includes(candidate.derivation ?? '') ||
       !['moderate', 'high'].includes(candidate.confidence ?? '') ||
       typeof candidate.sourceRecordCount !== 'number' ||
       candidate.sourceRecordCount < 0 ||

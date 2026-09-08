@@ -230,7 +230,8 @@ export interface DistributionRecord {
   derivation:
     | 'curated_source'
     | 'occurrence_point_aggregation'
-    | 'source_range_to_admin1_extrapolation'
+    | 'source_native_admin1'
+    | 'source_native_scope_to_admin1'
     | 'expert_review';
   confidence: 'high' | 'moderate' | 'low';
   sourceRecordCount?: number | undefined;

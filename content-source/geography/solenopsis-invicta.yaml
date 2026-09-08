@@ -3,12 +3,35 @@ slug: solenopsis-invicta
 organismSlug: solenopsis-invicta
 distribution:
   tier: occurrence_intersection
-  nativeCountryCodes:
-    - ARG
-    - BOL
-    - BRA
-    - PRY
-    - URY
+  nativeAdmin1RegionIds:
+    - ARG-AR-B
+    - ARG-AR-G
+    - ARG-AR-N
+    - ARG-AR-P
+    - ARG-AR-S
+    - ARG-AR-T
+    - ARG-AR-W
+    - ARG-AR-X
+    - BRA-BR-AC
+    - BRA-BR-GO
+    - BRA-BR-MG
+    - BRA-BR-MS
+    - BRA-BR-MT
+    - BRA-BR-PA
+    - BRA-BR-PR
+    - BRA-BR-RJ
+    - BRA-BR-RO
+    - BRA-BR-RS
+    - BRA-BR-SC
+    - BRA-BR-SP
+    - PRY-PY-1
+    - PRY-PY-11
+    - PRY-PY-3
+    - PRY-PY-7
+    - PRY-PY-8
+    - PRY-PY-9
+  nativeEvidenceIds:
+    - ev-solenopsis-invicta-native-range
   sourceRanges: []
 ranges:
   - id: geo-solenopsis-native-range

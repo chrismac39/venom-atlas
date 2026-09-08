@@ -1,6 +1,14 @@
 ﻿id: geo-ricinus-communis
 slug: ricinus-communis
 organismSlug: ricinus-communis
+distribution:
+  tier: curated_source
+  nativeAdmin1RegionIds:
+    - IND-IN-GJ
+    - IND-IN-KL
+    - IND-IN-TG
+  nativeEvidenceIds:
+    - ev-ricinus-communis-native-range
 ranges:
   - id: geo-ricinus-communis-confirmed-occurrences
     layerType: confirmed_occurrence

@@ -269,7 +269,17 @@ const geographyRecordSchema = z.object({
   distribution: z
     .object({
       tier: z.enum(['occurrence_intersection', 'curated_source']).optional(),
-      nativeCountryCodes: z.array(z.string()).optional(),
+      nativeAdmin1RegionIds: z.array(z.string()).optional(),
+      nativeEvidenceIds: z.array(z.string()).optional(),
+      nativeScopes: z.array(
+        z.object({
+          type: z.enum(['country', 'macroregion']),
+          id: z.string(),
+          evidenceIds: z.array(z.string()),
+          confidence: z.enum(['moderate', 'high']),
+          note: z.string().optional(),
+        }),
+      ).optional(),
       sourceRanges: z
         .array(
           z.object({

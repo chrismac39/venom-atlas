@@ -3,8 +3,13 @@ slug: latrodectus-hasselti
 organismSlug: latrodectus-hasselti
 distribution:
   tier: occurrence_intersection
-  nativeCountryCodes:
-    - AUS
+  nativeScopes:
+    - type: country
+      id: AUS
+      evidenceIds:
+        - ev-latrodectus-hasselti-native-range
+      confidence: high
+      note: The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source.
 ranges:
   - id: geo-latrodectus-hasselti-confirmed-occurrences
     layerType: confirmed_occurrence

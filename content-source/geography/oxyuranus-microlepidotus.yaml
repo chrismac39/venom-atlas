@@ -3,8 +3,12 @@ slug: oxyuranus-microlepidotus
 organismSlug: oxyuranus-microlepidotus
 distribution:
   tier: occurrence_intersection
-  nativeCountryCodes:
-    - AUS
+  nativeAdmin1RegionIds:
+    - AUS-AU-NSW
+    - AUS-AU-QLD
+    - AUS-AU-SA
+  nativeEvidenceIds:
+    - ev-oxyuranus-microlepidotus-native-range
 ranges:
   - id: geo-oxyuranus-confirmed-occurrences
     layerType: confirmed_occurrence
