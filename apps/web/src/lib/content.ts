@@ -430,8 +430,8 @@ const publicAssetValid = (publicPath: string): boolean => {
       return !publicPath.endsWith('.geojson') || (value.type === 'FeatureCollection' && Boolean(value.features?.length));
     }
     if (publicPath.endsWith('.svg')) return /<svg[\s>]/.test(text) && !/<script[\s>]/i.test(text);
-    if (/\.(sdf|mol)$/.test(publicPath)) return /M  END/.test(text);
-    if (publicPath.endsWith('.pdb')) return /^(ATOM  |HETATM)/m.test(text);
+    if (/\.(sdf|mol)$/.test(publicPath)) return /M {2}END/.test(text);
+    if (publicPath.endsWith('.pdb')) return /^(ATOM {2}|HETATM)/m.test(text);
     if (publicPath.endsWith('.mmcif')) return /_atom_site\./.test(text);
     return true;
   } catch { return false; }

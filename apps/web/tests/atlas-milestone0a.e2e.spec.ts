@@ -45,7 +45,10 @@ test('four substantive sections and locally usable sources, with non-human appli
       const sources = page.locator(`#${id} .atlas-local-sources`).filter({ hasText: `${citation} reference` });
       expect(await sources.count(), `${citation}: local source disclosure`).toBeGreaterThan(0);
       for (const source of await sources.all()) {
-        await source.locator('summary').click();
+        for (const parent of await source.locator('xpath=ancestor::details[not(@open)]').all()) {
+          await parent.locator(':scope > summary').click();
+        }
+        if (await source.getAttribute('open') === null) await source.locator(':scope > summary').click();
         await expect(source.getByRole('link', { name: 'Source', exact: true })).toHaveAttribute('href', `https://example.org/${citation}`);
         await expect(source.getByRole('link', { name: 'Source', exact: true })).toBeVisible();
       }

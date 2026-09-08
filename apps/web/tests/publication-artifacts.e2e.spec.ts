@@ -53,7 +53,7 @@ test('direct scientific asset URLs cannot bypass the public stage', async ({ req
   const absolute = path.join(rawRoot, rawAsset.slice(1)).replace(/\\/g, '/');
   const source = fileURLToPath(new URL('../../../content-source/organisms/solenopsis-invicta.yaml', import.meta.url)).replace(/\\/g, '/');
   for (const bypass of [`/public${rawAsset}`, `/public%2fgeography%2fsolenopsis-invicta-occurrences.geojson`, `/@fs/${absolute}`, `/@fs/${absolute}?raw`, `/@fs/${source}`]) {
-    expect([403, 404], bypass).toContain((await request.get(url(bypass))).status());
+    expect((await request.get(url(bypass))).ok(), bypass).toBe(false);
   }
 });
 

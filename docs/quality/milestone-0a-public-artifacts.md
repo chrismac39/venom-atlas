@@ -21,18 +21,17 @@
 
 ## Validation on 2026-09-08
 
-- Publication allowlist/staging/sitemap and Astro lifecycle unit tests: **15 passed**.
+- Publication readiness, projection, UI-data, allowlist/staging/sitemap, and Astro lifecycle unit tests: **114 passed**.
+- Milestone 0A browser suite across desktop, mobile, and narrow-mobile viewports: **27 passed**.
+- Publication HTTP suite in development, production root-path, and production project-path modes: **3 passed in each mode**.
 - Renderer browser suite, development fixture site: **10 passed**.
 - Renderer browser suite, built fixture site: **10 passed**.
-- Targeted ESLint and whitespace validation: passed.
-- Real artifact regeneration and publication HTTP tests: **blocked pending the content-owner API**. At verification time `getPublicContentRecords` was not yet exported from the content loader. `build:public-data` failed closed before running the generators. Checked-in generated downloads therefore still require regeneration after that API lands.
-- Astro config synchronization succeeds on Windows. Type checking is blocked by the same missing public graph export in the new HTTP test; no gate fallback was added to hide the integration error.
+- Web lint, Astro/TypeScript checks, whitespace validation, public artifact regeneration/validation, and the production web build: passed.
+- The content-owner API is integrated. The computed real-content roster is **0 eligible organisms and 15 drafts**; generated public downloads and routes correctly represent that empty roster without falling back to draft content.
 
 ## Integration and remaining risks
 
-- The content owner must provide the gated selectors, filtered public graph, source relevance, and public route inventory. This plumbing consumes those APIs and does not independently decide scientific readiness.
-- Run public-data generation, web build, and publication HTTP tests in dev, production, and project-base modes after the content API lands. The tests exercise raw public and Vite `/@fs` bypass URLs, draft supporting/source routes, downloadable data, registry membership, sitemap, and empty-root behavior.
-- Existing biological coverage/content audit/main UI tests that assert publication of current drafts still need reconciliation by their owners. Renderer coverage is independent of those draft publication assumptions.
+- The readiness contract, gated selectors, filtered public graph, source relevance, and public route inventory are integrated and shared by routes and artifact generation.
+- Astro preview on Windows logs an upstream `ERR_INVALID_FILE_URL_PATH` for an encoded-slash bypass request. The request remains unsuccessful and does not expose the draft asset; development serving, root-path production preview, and project-path production preview all pass the publication boundary suite.
 - Asset staging is deliberately restrictive: new asset categories or reference fields need an explicit allowlist update. Missing approved files fail the build instead of silently publishing broken links.
 - These integrations currently validate the standard application build directory. A custom Astro output directory requires matching validator path support.
-- The user-owned audit document, content loader, atlas data builder, island, hook, types, and styles were not edited by this work.

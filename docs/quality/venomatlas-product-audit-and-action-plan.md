@@ -318,17 +318,17 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 
 **Priority:** P0, first visible implementation batch. **Effort:** small–medium. **Dependency:** approved four-section scope; other hosting/research decisions need not block this layout change.
 
-- [ ] Render only Summary, Geography, Chemistry, and Medical Effects as top-level sections and section-navigation entries, in that order.
-- [ ] Consolidate existing useful content into its parent section; remove standalone categorization, chart, and mechanism panels from the primary flow.
-- [ ] Reduce duplicate sticky summaries, empty panels, and competing dedicated-page calls to action; preserve an obvious organism switcher.
-- [ ] Keep source access local to the corresponding claims/sections, not a fifth top-level section.
-- [ ] Preserve existing section bookmarks through compatibility anchors where practical, and update generated internal links to the new canonical anchors.
-- [ ] Define and implement a shared automated publication-readiness contract with required content/source/asset checks for all four sections, without a human approval field. Do not equate passing checks with scientific accuracy.
-- [ ] Evaluate existing organisms with that contract; retain incomplete/failed records as pipeline drafts and report the computed eligible roster without assuming a reference organism is ready.
-- [ ] Filter public organism selection/catalogs, dossier and supporting organism routes, search, sitemap, and generated/downloadable public data through the same eligibility gate. Keep source drafts intact and test that direct URLs do not expose them.
-- [ ] Test eligible, incomplete, editorial-only, unresolved-citation, and failed-asset fixtures; confirm a qualifying AI-generated dossier publishes without human-review metadata. Include an empty eligible roster.
-- [ ] Add browser checks for exactly four substantive headings/navigation entries and their order for every published organism, draft exclusion, and mobile anchor clearance.
-- [ ] Review the simplified desktop/mobile page before adding new specialist widgets.
+- [x] Render only Summary, Geography, Chemistry, and Medical Effects as top-level sections and section-navigation entries, in that order.
+- [x] Consolidate existing useful content into its parent section; remove standalone categorization, chart, and mechanism panels from the primary flow.
+- [x] Reduce duplicate sticky summaries, empty panels, and competing dedicated-page calls to action; preserve an obvious organism switcher.
+- [x] Keep source access local to the corresponding claims/sections, not a fifth top-level section.
+- [x] Preserve existing section bookmarks through compatibility anchors where practical, and update generated internal links to the new canonical anchors.
+- [x] Define and implement a shared automated publication-readiness contract with required content/source/asset checks for all four sections, without a human approval field. Do not equate passing checks with scientific accuracy.
+- [x] Evaluate existing organisms with that contract; retain incomplete/failed records as pipeline drafts and report the computed eligible roster without assuming a reference organism is ready.
+- [x] Filter public organism selection/catalogs, dossier and supporting organism routes, search, sitemap, and generated/downloadable public data through the same eligibility gate. Keep source drafts intact and test that direct URLs do not expose them.
+- [x] Test eligible, incomplete, editorial-only, unresolved-citation, and failed-asset fixtures; confirm a qualifying AI-generated dossier publishes without human-review metadata. Include an empty eligible roster.
+- [x] Add browser checks for exactly four substantive headings/navigation entries and their order for every published organism, draft exclusion, and mobile anchor clearance.
+- [x] Review the simplified desktop/mobile page before adding new specialist widgets.
 
 **Exit:** a visibly simpler four-section monopage with a consistently enforced automated publication gate. Qualifying organisms publish automatically; incomplete/failed drafts remain excluded. Pipeline content enrichment may be necessary before an organism qualifies.
 
