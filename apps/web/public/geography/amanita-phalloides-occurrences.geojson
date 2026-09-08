@@ -1,0 +1,354 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/5240325",
+    "taxonKey": 5240325,
+    "generatedAt": "2026-09-08T12:20:38.357Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 5938093597,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.128647,
+          -37.703888
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333119238",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938093597"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938215642,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.392437,
+          38.565344
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333066987",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938215642"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938237861,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.571383,
+          37.988991
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333077100",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938237861"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938309937,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.212762,
+          37.81495
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333385356",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938309937"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938359762,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.283613,
+          37.472283
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333126052",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938359762"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6084219867,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.79678,
+          28.656889
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": null,
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6084219867"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129969816,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.03782,
+          37.687401
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335171540",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129969816"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130236835,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05725,
+          36.955463
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333799296",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130236835"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130274804,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.435539,
+          34.335296
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334375364",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130274804"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131033953,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26863,
+          38.269787
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334780012",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131033953"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131257835,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.541301,
+          37.091397
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335173688",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131257835"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133065151,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.89035,
+          36.539683
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336437058",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133065151"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6472354719,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.813224,
+          34.513448
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "1c11ef76-08a1-4199-bb24-1aaffbf927bf",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6472354719"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6234750371,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.552031,
+          -31.760302
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/350429999",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6234750371"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6234453344,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.291746,
+          -37.793476
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/353209994",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6234453344"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6320786467,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.777505,
+          38.445472
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/360777860",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6320786467"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6320853704,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.78042,
+          38.084239
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/361838514",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6320853704"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6321126676,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.21747,
+          -34.83363
+        ]
+      },
+      "properties": {
+        "scientificName": "Amanita phalloides (Vaill. ex Fr.) Link",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/361490712",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6321126676"
+      }
+    }
+  ]
+}

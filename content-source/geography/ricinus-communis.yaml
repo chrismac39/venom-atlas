@@ -1,0 +1,14 @@
+﻿id: geo-ricinus-communis
+slug: ricinus-communis
+organismSlug: ricinus-communis
+ranges:
+  - id: geo-ricinus-communis-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/ricinus-communis-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, shown as documented presence rather than a complete plant range.
+    evidence:
+      id: ev-ricinus-communis-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-ricinus-communis

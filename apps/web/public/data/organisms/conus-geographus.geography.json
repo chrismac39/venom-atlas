@@ -1,0 +1,22 @@
+{
+  "organismSlug": "conus-geographus",
+  "geographyKind": "marine",
+  "ranges": [
+    {
+      "id": "geo-conus-geographus-confirmed-occurrences",
+      "organismId": "org-conus-geographus",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/conus-geographus-occurrences.geojson",
+      "geometryFeatureCount": 109,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented marine presence rather than a complete cone-snail range.",
+      "evidence": {
+        "id": "ev-conus-geographus-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-conus-geographus"
+        ]
+      }
+    }
+  ]
+}

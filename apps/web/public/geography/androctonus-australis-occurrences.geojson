@@ -1,0 +1,563 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/6894141",
+    "taxonKey": 6894141,
+    "generatedAt": "2026-09-08T12:20:42.630Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 6399954700,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.901613,
+          30.744435
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/368619746",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6399954700"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6431361757,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.884917,
+          33.801952
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/377614215",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6431361757"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5231789487,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.679022,
+          35.308834
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/300211878",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5231789487"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4851887255,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.70457,
+          33.008342
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/211150569",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4851887255"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4855392402,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.91839,
+          34.406577
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/212403466",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4855392402"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4901001391,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.79521,
+          35.812863
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/223514123",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4901001391"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3985780556,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.320528,
+          35.349245
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/116390486",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3985780556"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4145438505,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.034711,
+          35.027682
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/161648117",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4145438505"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4908405950,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.62863,
+          35.911683
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/227140219",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4908405950"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4524947516,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.215269,
+          35.497947
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/69808170",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4524947516"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2632950479,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.66,
+          40.92
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7381",
+        "datasetTitle": null,
+        "occurrenceID": "GACO5419-19",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2632950479"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249198923,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.817213,
+          28.687597
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7380",
+        "datasetTitle": null,
+        "occurrenceID": "GACO2545-19",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249198923"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249217047,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.03,
+          33.94
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7380",
+        "datasetTitle": null,
+        "occurrenceID": "GBA15004-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249217047"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249217418,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.79,
+          33.53
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ4831",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14987-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249217418"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249217734,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99,
+          33.53
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ4831",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14990-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249217734"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249217862,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.37,
+          32.79
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ4831",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14984-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249217862"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249218357,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.32,
+          33.65
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ4831",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14994-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249218357"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249218450,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.58,
+          34.33
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7380",
+        "datasetTitle": null,
+        "occurrenceID": "GBA15006-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249218450"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3968893665,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.52,
+          33.54
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "KJ538158",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3968893665"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3968893667,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.05,
+          31.28
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "KJ538455",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3968893667"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249217551,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.18,
+          28.82
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7381",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14619-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249217551"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249220116,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.18,
+          35.11
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7380",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14478-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249220116"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249217806,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.06,
+          35.37
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7380",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14481-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249217806"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249219004,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.22,
+          35.17
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7380",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14479-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249219004"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249216983,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.74,
+          32.44
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ4832",
+        "datasetTitle": null,
+        "occurrenceID": "GBA14474-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249216983"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1454383293,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.326117,
+          36.724717
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "https://id.senckenberg.de/object/sesam-1152376",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1454383293"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1224563830,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.733333,
+          34.85
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "SAMC:Ent:SAM-ENW-X006344:1675",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1224563830"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249219110,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.240135,
+          26.605171
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:ACQ7381",
+        "datasetTitle": null,
+        "occurrenceID": "GBA16579-14",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249219110"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2249370963,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.655875,
+          34.08636
+        ]
+      },
+      "properties": {
+        "scientificName": "Androctonus australis (Linnaeus, 1758)",
+        "datasetTitle": null,
+        "occurrenceID": "GBCH0343-06",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2249370963"
+      }
+    }
+  ]
+}

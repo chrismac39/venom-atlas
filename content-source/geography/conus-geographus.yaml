@@ -1,0 +1,15 @@
+﻿id: geo-conus-geographus
+slug: conus-geographus
+organismSlug: conus-geographus
+geographyKind: marine
+ranges:
+  - id: geo-conus-geographus-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/conus-geographus-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, shown as documented marine presence rather than a complete cone-snail range.
+    evidence:
+      id: ev-conus-geographus-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-conus-geographus

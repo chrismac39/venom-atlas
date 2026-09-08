@@ -1,0 +1,164 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/2460817",
+    "taxonKey": 2460817,
+    "generatedAt": "2026-09-08T12:20:45.873Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 6179242471,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.427825,
+          32.839241
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/343220606",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6179242471"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6185018767,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.720868,
+          32.374453
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/343859349",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6185018767"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6400633281,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.729345,
+          32.053076
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/342631020",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6400633281"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6188184280,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.461846,
+          36.192213
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/347616564",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6188184280"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6400330621,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.541093,
+          37.127408
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/371066648",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6400330621"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6273725908,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.968784,
+          32.231149
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/359874865",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6273725908"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5108430251,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.875894,
+          33.954556
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/268005203",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5108430251"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5134100063,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.159787,
+          33.341504
+        ]
+      },
+      "properties": {
+        "scientificName": "Heloderma suspectum Cope, 1869",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/270919186",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5134100063"
+      }
+    }
+  ]
+}

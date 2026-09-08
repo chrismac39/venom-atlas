@@ -179,3 +179,103 @@
     doi: null
     accessedAt: '2026-09-06'
     sourceType: database
+  - id: cit-gbif-clostridium-botulinum
+    slug: gbif-clostridium-botulinum
+    title: GBIF occurrence records for Clostridium botulinum
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/3226559
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-amanita-phalloides
+    slug: gbif-amanita-phalloides
+    title: GBIF occurrence records for Amanita phalloides
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/5240325
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-datura-stramonium
+    slug: gbif-datura-stramonium
+    title: GBIF occurrence records for Datura stramonium
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/2928751
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-ricinus-communis
+    slug: gbif-ricinus-communis
+    title: GBIF occurrence records for Ricinus communis
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/5380041
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-latrodectus-hasselti
+    slug: gbif-latrodectus-hasselti
+    title: GBIF occurrence records for Latrodectus hasselti
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/2157928
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-androctonus-australis
+    slug: gbif-androctonus-australis
+    title: GBIF occurrence records for Androctonus australis
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/6894141
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-conus-geographus
+    slug: gbif-conus-geographus
+    title: GBIF occurrence records for Conus geographus
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/5728277
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-chironex-fleckeri
+    slug: gbif-chironex-fleckeri
+    title: GBIF occurrence records for Chironex fleckeri
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/2264689
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-eunice-aphroditois
+    slug: gbif-eunice-aphroditois
+    title: GBIF occurrence records for Eunice aphroditois
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/5198482
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database
+  - id: cit-gbif-heloderma-suspectum
+    slug: gbif-heloderma-suspectum
+    title: GBIF occurrence records for Heloderma suspectum
+    authors: []
+    publisher: Global Biodiversity Information Facility
+    publicationYear: null
+    url: https://www.gbif.org/species/2460817
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: database

@@ -77,7 +77,7 @@ const styleForAllRegions: StyleFunction = (_feature, resolution) => {
 };
 
 const styleForNationalBorders = new Style({
-  fill: undefined,
+  fill: new Fill({ color: '#00000000' }),
   stroke: new Stroke({ color: '#d5dfd9cc', width: 1.6 }),
 });
 

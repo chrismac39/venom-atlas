@@ -23,6 +23,16 @@ const taxa = [
   { slug: 'oxyuranus-microlepidotus', key: 2449963 },
   { slug: 'synanceia-verrucosa', key: 5201174 },
   { slug: 'ornithorhynchus-anatinus', key: 2433376 },
+  { slug: 'clostridium-botulinum', key: 3226559 },
+  { slug: 'amanita-phalloides', key: 5240325 },
+  { slug: 'datura-stramonium', key: 2928751 },
+  { slug: 'ricinus-communis', key: 5380041 },
+  { slug: 'latrodectus-hasselti', key: 2157928 },
+  { slug: 'androctonus-australis', key: 6894141 },
+  { slug: 'conus-geographus', key: 5728277 },
+  { slug: 'chironex-fleckeri', key: 2264689 },
+  { slug: 'eunice-aphroditois', key: 5198482 },
+  { slug: 'heloderma-suspectum', key: 2460817 },
 ] as const;
 
 const reusableLicenses = new Set([

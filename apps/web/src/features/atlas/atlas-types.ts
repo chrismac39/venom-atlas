@@ -60,6 +60,7 @@ export interface AtlasOrganismData {
     geography: 'available' | 'missing';
     toxicMaterial: 'available' | 'missing';
     chemistry: 'available' | 'missing';
+    structures: 'available' | 'missing';
     physiology: 'available' | 'missing';
     media: 'available' | 'missing';
   };

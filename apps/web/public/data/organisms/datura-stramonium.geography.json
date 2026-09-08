@@ -1,0 +1,22 @@
+{
+  "organismSlug": "datura-stramonium",
+  "geographyKind": "terrestrial",
+  "ranges": [
+    {
+      "id": "geo-datura-stramonium-confirmed-occurrences",
+      "organismId": "org-datura-stramonium",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/datura-stramonium-occurrences.geojson",
+      "geometryFeatureCount": 28,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete plant range.",
+      "evidence": {
+        "id": "ev-datura-stramonium-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-datura-stramonium"
+        ]
+      }
+    }
+  ]
+}

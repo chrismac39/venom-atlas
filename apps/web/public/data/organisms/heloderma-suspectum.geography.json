@@ -1,0 +1,22 @@
+{
+  "organismSlug": "heloderma-suspectum",
+  "geographyKind": "terrestrial",
+  "ranges": [
+    {
+      "id": "geo-heloderma-suspectum-confirmed-occurrences",
+      "organismId": "org-heloderma-suspectum",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/heloderma-suspectum-occurrences.geojson",
+      "geometryFeatureCount": 8,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete lizard range.",
+      "evidence": {
+        "id": "ev-heloderma-suspectum-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-heloderma-suspectum"
+        ]
+      }
+    }
+  ]
+}

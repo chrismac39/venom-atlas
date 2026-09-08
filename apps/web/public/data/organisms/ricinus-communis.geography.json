@@ -1,0 +1,22 @@
+{
+  "organismSlug": "ricinus-communis",
+  "geographyKind": "terrestrial",
+  "ranges": [
+    {
+      "id": "geo-ricinus-communis-confirmed-occurrences",
+      "organismId": "org-ricinus-communis",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/ricinus-communis-occurrences.geojson",
+      "geometryFeatureCount": 37,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete plant range.",
+      "evidence": {
+        "id": "ev-ricinus-communis-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-ricinus-communis"
+        ]
+      }
+    }
+  ]
+}

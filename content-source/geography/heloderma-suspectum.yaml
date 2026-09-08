@@ -1,0 +1,14 @@
+﻿id: geo-heloderma-suspectum
+slug: heloderma-suspectum
+organismSlug: heloderma-suspectum
+ranges:
+  - id: geo-heloderma-suspectum-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/heloderma-suspectum-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, shown as documented presence rather than a complete lizard range.
+    evidence:
+      id: ev-heloderma-suspectum-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-heloderma-suspectum

@@ -44,7 +44,21 @@ describe('geography asset validation', () => {
       },
       allowedGeometryTypes: ['Polygon', 'MultiPolygon'],
       requireSourceMetadata: true,
-    })).toThrow(/missing license or source URL/);
+    })).toThrow(/missing .*license or source URL/);
+
+    expect(() => validateFeatureCollection({
+      assetPath: 'invalid-source.geojson',
+      data: {
+        type: 'FeatureCollection',
+        features: [{
+          type: 'Feature',
+          geometry: { type: 'Point', coordinates: [-75, 4] },
+          properties: { license: 'CC BY', sourceUrl: 'not-a-url' },
+        }],
+      },
+      allowedGeometryTypes: ['Point'],
+      requireSourceMetadata: true,
+    })).toThrow(/missing valid license or source URL/);
   });
 
   it('rejects out-of-range coordinates and world-spanning jumps', () => {

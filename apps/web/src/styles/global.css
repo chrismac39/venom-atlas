@@ -738,6 +738,10 @@ select {
   color: var(--accent-science);
 }
 
+.atlas-coverage .atlas-coverage-missing strong {
+  color: var(--muted);
+}
+
 .atlas-specimen-mark-hero {
   min-height: 26rem;
 }

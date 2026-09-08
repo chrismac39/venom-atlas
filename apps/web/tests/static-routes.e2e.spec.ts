@@ -108,7 +108,16 @@ test('chooser spans five organism classes and poison dossiers preserve material 
   await expect(page.getByRole('link', { name: 'Chemistry and structure' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Toxin Categorization' })).toBeVisible();
   await expect(page.getByText('Batrachotoxin', { exact: true }).first()).toBeVisible();
-  await expect(page.getByText('Missing modules are omitted until source-backed records are curated.')).toBeVisible();
+  await expect(page.getByText('Unavailable modules are omitted until source-backed records are curated.')).toBeVisible();
+
+  await page.goto('/atlas/datura-stramonium');
+  await expect(page.getByRole('heading', { level: 1, name: 'Datura stramonium' })).toBeVisible();
+  await expect(page.locator('.atlas-coverage li').filter({ hasText: 'Geography' })).toContainText('Not available');
+  await expect(page.locator('.atlas-coverage li').filter({ hasText: 'Physiology' })).toContainText('Not available');
+  await expect(page.locator('.atlas-coverage li').filter({ hasText: 'Licensed media' })).toContainText('Not available');
+  await expect(page.locator('.atlas-coverage li').filter({ hasText: 'Structures' })).toContainText('Not available');
+  await expect(page.locator('.openlayers-geography-map')).toBeVisible();
+  await expect(page.getByText('No species-specific geography evidence is available; neutral administrative boundaries are shown.')).toBeVisible();
 });
 
 test('organism catalog supports search and kingdom/strategy filters', async ({ page }) => {

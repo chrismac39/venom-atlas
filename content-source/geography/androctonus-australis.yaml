@@ -1,0 +1,14 @@
+﻿id: geo-androctonus-australis
+slug: androctonus-australis
+organismSlug: androctonus-australis
+ranges:
+  - id: geo-androctonus-australis-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/androctonus-australis-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records, shown as documented presence rather than a complete scorpion range.
+    evidence:
+      id: ev-androctonus-australis-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-androctonus-australis

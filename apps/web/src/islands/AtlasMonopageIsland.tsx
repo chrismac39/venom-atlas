@@ -79,6 +79,7 @@ const coverageLabels: Record<keyof AtlasOrganismData['coverage'], string> = {
   geography: 'Geography',
   toxicMaterial: 'Toxic material',
   chemistry: 'Chemistry',
+  structures: 'Structures',
   physiology: 'Physiology',
   media: 'Licensed media',
 };
@@ -268,13 +269,13 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
                     <section className="atlas-coverage" aria-labelledby="atlas-coverage-title">
                       <div>
                         <h3 id="atlas-coverage-title">Dossier coverage</h3>
-                        <p>Missing modules are omitted until source-backed records are curated.</p>
+                        <p>Unavailable modules are omitted until source-backed records are curated.</p>
                       </div>
                       <ul>
                         {Object.entries(selected.coverage).map(([key, status]) => (
                           <li key={key} className={`atlas-coverage-${status}`}>
                             <span>{coverageLabels[key as keyof AtlasOrganismData['coverage']]}</span>
-                            <strong>{status}</strong>
+                            <strong>{status === 'available' ? 'Available' : 'Not available'}</strong>
                           </li>
                         ))}
                       </ul>

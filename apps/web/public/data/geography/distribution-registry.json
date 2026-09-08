@@ -3,6 +3,2151 @@
   "release": "9469f09",
   "records": [
     {
+      "speciesId": "amanita-phalloides",
+      "regionId": "NZL-NZ-BOP",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Bay of Plenty Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-amanita-phalloides-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B61794104142346; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "USA-US-CA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "California",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-amanita-phalloides-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 12,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B43071933723331; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "ESP-ESP",
+      "countryCode": "ESP",
+      "adminLevel": 1,
+      "regionName": "Canarias",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-amanita-phalloides-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 25490228B84620027724461; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "ARG-AR-X",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "CÃ³rdoba",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-amanita-phalloides-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19177384B39000171219781; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "NZL-NZ-WKO",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Waikato Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-amanita-phalloides-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B15069482995997; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "amanita-phalloides",
+      "regionId": "URY-UY-MA",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Maldonado",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-amanita-phalloides-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 27058087B438131503863; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "EGY-EG-MT",
+      "countryCode": "EGY",
+      "adminLevel": 1,
+      "regionName": "Matrouh Governorate",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 46179711B33216026370082; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-82",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "MÃ©denine",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B11392830158982; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-05",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Batna",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B89976296243107; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-73",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "KÃ©bili",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B11721331776240; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-72",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Tozeur",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B95771050896452; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-28",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "M'Sila",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B85855835528530; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-17",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Djelfa",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B74351585751074; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-34",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Bordj Bou Arreridjâ",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B61154116750870; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "USA-US-NY",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "New York",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B43575054209436; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-09",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Souss-Massa",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 70788906B1820144472977; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-81",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "GabÃ¨s",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B69181748376292; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-83",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Tataouine",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B85172640982228; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-71",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Gafsa",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B54080015312342; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "EGY-EG-JS",
+      "countryCode": "EGY",
+      "adminLevel": 1,
+      "regionName": "South Sinai Governorate",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 46179711B69358139854301; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-14",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tiaret",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B97480278452280; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-47",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Ghardaia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B83676700490594; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-13",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Ben Arous",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B75715054307065; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-07",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Biskra",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B80473805298321; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "EGY-EG-WAD",
+      "countryCode": "EGY",
+      "adminLevel": 1,
+      "regionName": "New Valley Governorate",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 46179711B64218004276609; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "chironex-fleckeri",
+      "regionId": "AUS-AU-NT",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Northern Territory",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-chironex-fleckeri-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B70364588595557; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "chironex-fleckeri",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Queensland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-chironex-fleckeri-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B13995298844162; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "chironex-fleckeri",
+      "regionId": "AUS-AU-WA",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Western Australia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-chironex-fleckeri-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B93533858076668; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-CA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "California",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B43071933723331; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "CHN-CHN",
+      "countryCode": "CHN",
+      "adminLevel": 1,
+      "regionName": "Sichuan Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 8,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43563684B14397599951889; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "ESP-ESP",
+      "countryCode": "ESP",
+      "adminLevel": 1,
+      "regionName": "Comunidad de Madrid",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 25490228B88831207743232; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "LKA-LK-6",
+      "countryCode": "LKA",
+      "adminLevel": 1,
+      "regionName": "North Western Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 99731895B5260290378804; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "LKA-LK-2",
+      "countryCode": "LKA",
+      "adminLevel": 1,
+      "regionName": "Central Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 99731895B28050807675820; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "LKA-LK-3",
+      "countryCode": "LKA",
+      "adminLevel": 1,
+      "regionName": "Southern Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 99731895B60977758614393; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "VNM-VN-HN",
+      "countryCode": "VNM",
+      "adminLevel": 1,
+      "regionName": "HÃ  Ná»i\t",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 63759600B97268694287734; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FIN-FI-18",
+      "countryCode": "FIN",
+      "adminLevel": 1,
+      "regionName": "Uusimaa",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 49019192B30960840619879; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "ISL-IS-1",
+      "countryCode": "ISL",
+      "adminLevel": 1,
+      "regionName": "Capital Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 53860390B39552912285510; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "New South Wales",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B21656044714531; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FIN-FI-19",
+      "countryCode": "FIN",
+      "adminLevel": 1,
+      "regionName": "Finland Proper",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 49019192B17994066114322; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-MS",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Mississippi",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B69138566591314; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "UGA-UG-C",
+      "countryCode": "UGA",
+      "adminLevel": 1,
+      "regionName": "Central Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 17295835B48340970483027; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-LA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Louisiana",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B41335105066757; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "KAZ-KZ-KAR",
+      "countryCode": "KAZ",
+      "adminLevel": 1,
+      "regionName": "Karaganda Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 16772668B31479154893463; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "POL-PL-LD",
+      "countryCode": "POL",
+      "adminLevel": 1,
+      "regionName": "ÅÃ³dÅº Voivodeship",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 17162690B86810837764805; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "ITA-",
+      "countryCode": "ITA",
+      "adminLevel": 1,
+      "regionName": "Centro",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 21,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 72843720B59566147937015; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-PA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Pennsylvania",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B6628180846672; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-OH",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Ohio",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B76680759932915; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "ETH-ET-OR",
+      "countryCode": "ETH",
+      "adminLevel": 1,
+      "regionName": "Oromia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 75662566B9273833721501; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-CO",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Colorado",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B35012827062242; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-TX",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Texas",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B29106115751815; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "IRL-IE-L",
+      "countryCode": "IRL",
+      "adminLevel": 1,
+      "regionName": "Leinster",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 36931253B83705839043930; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-NJ",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "New Jersey",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B73434888205604; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-NY",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "New York",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B43575054209436; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "HUN-HU-PE",
+      "countryCode": "HUN",
+      "adminLevel": 1,
+      "regionName": "Pest",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 22733592B46801225244053; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "GBR-GB-SCT",
+      "countryCode": "GBR",
+      "adminLevel": 1,
+      "regionName": "Scotland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 14339913B23556801435424; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "USA-US-TN",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Tennessee",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B52324970173776; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FRA-FR-NAQ",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Nouvelle-Aquitaine",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B12418907782041; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FRA-FR-PDL",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Pays de la Loire",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B99642989531496; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FRA-FR-BRE",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Bretagne",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B64983593182368; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "DEU-DE-TH",
+      "countryCode": "DEU",
+      "adminLevel": 1,
+      "regionName": "ThÃ¼ringen",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 10402087B67217417145666; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FIN-FI-08",
+      "countryCode": "FIN",
+      "adminLevel": 1,
+      "regionName": "Central Finland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 49019192B78555514573464; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "AUT-AT-6",
+      "countryCode": "AUT",
+      "adminLevel": 1,
+      "regionName": "Steiermark",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 97560089B87855108402029; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "GRC-GR-TC",
+      "countryCode": "GRC",
+      "adminLevel": 1,
+      "regionName": "Thessalia-Central Greece",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 93993887B20638565859558; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FRA-FR-CVL",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Centre-Val de Loire",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B5758982491638; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FRA-FR-ARA",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Auvergne-RhÃ´ne-Alpes",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B73800214047876; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "FRA-FR-OCC",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Occitanie",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B57683459369229; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "SWE-SE-AB",
+      "countryCode": "SWE",
+      "adminLevel": 1,
+      "regionName": "Stockholms lÃ¤n",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 68755315B30510620730039; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "CAN-CA-QB",
+      "countryCode": "CAN",
+      "adminLevel": 1,
+      "regionName": "Quebec",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82249235B52639524229375; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "CAN-CA-SK",
+      "countryCode": "CAN",
+      "adminLevel": 1,
+      "regionName": "Saskatchewan",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82249235B71336988791422; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "clostridium-botulinum",
+      "regionId": "DEU-DE-MV",
+      "countryCode": "DEU",
+      "adminLevel": 1,
+      "regionName": "Mecklenburg-Vorpommern",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-clostridium-botulinum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 10402087B60782008682549; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "JPN-JP-47",
+      "countryCode": "JPN",
+      "adminLevel": 1,
+      "regionName": "Okinawa Prefecture",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 47310658B31569081891025; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "MDG-",
+      "countryCode": "MDG",
+      "adminLevel": 1,
+      "regionName": "Anosy",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 27540722B69979521515872; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "PNG-PG-WBK",
+      "countryCode": "PNG",
+      "adminLevel": 1,
+      "regionName": "West New Britain Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 602756B15436761522512; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "IDN-ID-BA",
+      "countryCode": "IDN",
+      "adminLevel": 1,
+      "regionName": "Bali",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 65028918B6690755070061; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "AUS-AU-NT",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Northern Territory",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B70364588595557; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "VUT-VU-SAM",
+      "countryCode": "VUT",
+      "adminLevel": 1,
+      "regionName": "Sanma",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 32282491B7486560380604; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "AUS-AU-WA",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Western Australia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B93533858076668; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "PHL-PH-07",
+      "countryCode": "PHL",
+      "adminLevel": 1,
+      "regionName": "Central Visayas",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 36201628B88329767373181; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "ZAF-KZ",
+      "countryCode": "ZAF",
+      "adminLevel": 1,
+      "regionName": "KwaZulu-Natal",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 76434192B26311534340602; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "SLB-SB-GU",
+      "countryCode": "SLB",
+      "adminLevel": 1,
+      "regionName": "Guadalcanal",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 17018030B21058058503942; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "EGY-EG-BA",
+      "countryCode": "EGY",
+      "adminLevel": 1,
+      "regionName": "Red Sea Governorate",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 46179711B94144647788557; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "USA-US-GU",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Guam",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B63361112364184; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "KEN-KE-14",
+      "countryCode": "KEN",
+      "adminLevel": 1,
+      "regionName": "Kilifi",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 32016919B27781338411646; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "MOZ-MZ-N",
+      "countryCode": "MOZ",
+      "adminLevel": 1,
+      "regionName": "Nampula",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 27363107B75878915981920; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "THA-TH-83",
+      "countryCode": "THA",
+      "adminLevel": 1,
+      "regionName": "Phuket Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 36821470B89498504013794; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "PHL-PH-09",
+      "countryCode": "PHL",
+      "adminLevel": 1,
+      "regionName": "Zamboanga Peninsula",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 36201628B47773222326566; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "VUT-VU-SEE",
+      "countryCode": "VUT",
+      "adminLevel": 1,
+      "regionName": "Shefa Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 32282491B17169683382430; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "PNG-PG-NIK",
+      "countryCode": "PNG",
+      "adminLevel": 1,
+      "regionName": "New Ireland Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 602756B43496843486474; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "PHL-PH-13",
+      "countryCode": "PHL",
+      "adminLevel": 1,
+      "regionName": "Caraga",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 36201628B99380759663697; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "conus-geographus",
+      "regionId": "VUT-VU-MAP",
+      "countryCode": "VUT",
+      "adminLevel": 1,
+      "regionName": "Malampa",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-conus-geographus-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 32282491B5439526076152; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "AUT-AT-1",
+      "countryCode": "AUT",
+      "adminLevel": 1,
+      "regionName": "Burgenland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 97560089B12055607938436; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "ESP-ESP",
+      "countryCode": "ESP",
+      "adminLevel": 1,
+      "regionName": "Comunidad de Madrid",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 25490228B94236519555378; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "SWE-SE-AB",
+      "countryCode": "SWE",
+      "adminLevel": 1,
+      "regionName": "Stockholms lÃ¤n",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 68755315B30510620730039; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "SWE-SE-D",
+      "countryCode": "SWE",
+      "adminLevel": 1,
+      "regionName": "SÃ¶dermanlands lÃ¤n",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 68755315B98869091115359; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "SWE-SE-O",
+      "countryCode": "SWE",
+      "adminLevel": 1,
+      "regionName": "VÃ¤stra GÃ¶talands lÃ¤n",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 68755315B39536810599908; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "DEU-DE-NW",
+      "countryCode": "DEU",
+      "adminLevel": 1,
+      "regionName": "Nordrhein-Westfalen",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 10402087B86022102756745; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "NZL-NZ-TAS",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Tasman Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B18940272977460; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "USA-US-IN",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Indiana",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B82803899326534; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "PRT-PT-08",
+      "countryCode": "PRT",
+      "adminLevel": 1,
+      "regionName": "FARO",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 24955722B93513210668499; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "CHL-CHL",
+      "countryCode": "CHL",
+      "adminLevel": 1,
+      "regionName": "RegiÃÂ³n Metropolitana de Santiago",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 47653553B78904739401519; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "ZAF-MP",
+      "countryCode": "ZAF",
+      "adminLevel": 1,
+      "regionName": "Mpumalanga",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 76434192B92524600968894; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "MDG-",
+      "countryCode": "MDG",
+      "adminLevel": 1,
+      "regionName": "Analamanga",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 27540722B10144800929043; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "FRA-FR-GES",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Grand Est",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B74392602121343; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "ECU-EC-A",
+      "countryCode": "ECU",
+      "adminLevel": 1,
+      "regionName": "Azuay",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 780006B24339224838979; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "MAR-MA-08",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "DrÃ¢a-Tafilalet",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 70788906B26242154300952; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "New South Wales",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B21656044714531; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "USA-US-MI",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Michigan",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B37442548568489; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "NZL-NZ-MWT",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Manawatu-Wanganui Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B31372788647917; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "BLR-BY-BR",
+      "countryCode": "BLR",
+      "adminLevel": 1,
+      "regionName": "Brest",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 45462678B29468378769629; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "PER-PE-LMA*",
+      "countryCode": "PER",
+      "adminLevel": 1,
+      "regionName": "Municipalidad Metropolitana de Lima",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1875124B43998217738279; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "GBR-GB-ENG",
+      "countryCode": "GBR",
+      "adminLevel": 1,
+      "regionName": "England",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 14339913B95766344400054; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "NZL-NZ-CAN",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Canterbury Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B76352407092523; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "NZL-NZ-AUK",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Auckland Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B8827335688438; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "FRA-FR-CVL",
+      "countryCode": "FRA",
+      "adminLevel": 1,
+      "regionName": "Centre-Val de Loire",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19338628B5758982491638; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "USA-US-VA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Virginia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B53580985925186; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "datura-stramonium",
+      "regionId": "ZAF-WC",
+      "countryCode": "ZAF",
+      "adminLevel": 1,
+      "regionName": "Western Cape",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-datura-stramonium-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 76434192B56312278962278; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "IDN-ID-NT",
+      "countryCode": "IDN",
+      "adminLevel": 1,
+      "regionName": "East Nusa Tenggara",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 65028918B90323071856071; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "SGP-",
+      "countryCode": "SGP",
+      "adminLevel": 1,
+      "regionName": "CENTRAL REGION",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 49756563B71725710252082; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "ZAF-WC",
+      "countryCode": "ZAF",
+      "adminLevel": 1,
+      "regionName": "Western Cape",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 76434192B56312278962278; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "CHN-CHN",
+      "countryCode": "CHN",
+      "adminLevel": 1,
+      "regionName": "Liaoning Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43563684B26929678147954; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "MEX-MX-OAX",
+      "countryCode": "MEX",
+      "adminLevel": 1,
+      "regionName": "Oaxaca",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 31927357B6525686063804; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "JPN-JP-44",
+      "countryCode": "JPN",
+      "adminLevel": 1,
+      "regionName": "Oita",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 47310658B53666900505284; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "New South Wales",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B21656044714531; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "IDN-ID-MU",
+      "countryCode": "IDN",
+      "adminLevel": 1,
+      "regionName": "North Maluku",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 65028918B51364455052819; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "PAN-PA-3",
+      "countryCode": "PAN",
+      "adminLevel": 1,
+      "regionName": "ColÃ³n Province",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82927092B18334008327541; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "NAM-NA-KA",
+      "countryCode": "NAM",
+      "adminLevel": 1,
+      "regionName": "Karas",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 33880854B69863127771221; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "MEX-MX-SON",
+      "countryCode": "MEX",
+      "adminLevel": 1,
+      "regionName": "Sonora",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 31927357B37261891092938; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "NZL-NZ-OTA",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Otago Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B75469314212010; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "AUS-AU-VIC",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Victoria",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B60194602145168; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "MDV-MV-14",
+      "countryCode": "MDV",
+      "adminLevel": 1,
+      "regionName": "Faafu",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 51498476B50236467063056; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "JPN-JP-05",
+      "countryCode": "JPN",
+      "adminLevel": 1,
+      "regionName": "Akita",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 47310658B79582216473080; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "AUS-AU-SA",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "South Australia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B14973555098025; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Queensland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B13995298844162; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "eunice-aphroditois",
+      "regionId": "CAN-CA-BC",
+      "countryCode": "CAN",
+      "adminLevel": 1,
+      "regionName": "British Columbia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-eunice-aphroditois-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82249235B24619009834807; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "heloderma-suspectum",
+      "regionId": "USA-US-AZ",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Arizona",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-heloderma-suspectum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 6,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B89395128410123; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "heloderma-suspectum",
+      "regionId": "USA-US-NV",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Nevada",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-heloderma-suspectum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B98615608994420; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "heloderma-suspectum",
+      "regionId": "USA-US-UT",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Utah",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-heloderma-suspectum-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B31593004124297; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-WA",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Western Australia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B93533858076668; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-ACT",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Australian Capital Territory",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B40257551482390; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-VIC",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Victoria",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 5,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B60194602145168; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "New South Wales",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 4,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B21656044714531; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Queensland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B13995298844162; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "latrodectus-hasselti",
+      "regionId": "AUS-AU-SA",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "South Australia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-latrodectus-hasselti-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B14973555098025; this is recorded presence, not a native or introduced range claim."
+    },
+    {
       "speciesId": "ornithorhynchus-anatinus",
       "regionId": "AUS-AU-NSW",
       "countryCode": "AUS",
@@ -151,6 +2296,366 @@
       "confidence": "moderate",
       "sourceRecordCount": 1,
       "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13589884B83777567082486; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "ESP-ESP",
+      "countryCode": "ESP",
+      "adminLevel": 1,
+      "regionName": "CataluÃ±a/Catalunya",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 25490228B84620027724461; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "ECU-EC-M",
+      "countryCode": "ECU",
+      "adminLevel": 1,
+      "regionName": "Manabi",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 780006B63949328087962; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "AUS-AU-SA",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "South Australia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B14973555098025; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "MEX-MX-TAM",
+      "countryCode": "MEX",
+      "adminLevel": 1,
+      "regionName": "Tamaulipas",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 31927357B88239390016047; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "GRC-GR-PW",
+      "countryCode": "GRC",
+      "adminLevel": 1,
+      "regionName": "Peloponisos-W. Greece & Ionian",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 93993887B43116936981453; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "MEX-MX-NLE",
+      "countryCode": "MEX",
+      "adminLevel": 1,
+      "regionName": "Nuevo Leon",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 31927357B30741484985331; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "USA-US-CA",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "California",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 8,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B43071933723331; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "IND-IN-GJ",
+      "countryCode": "IND",
+      "adminLevel": 1,
+      "regionName": "GujarÄt",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1811400B80305611676067; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "BRA-BR-RJ",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rio de Jeneiro",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 14911670B85657526756793; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "ECU-EC-P",
+      "countryCode": "ECU",
+      "adminLevel": 1,
+      "regionName": "Pichincha",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 780006B44300629339188; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "CHL-CHL",
+      "countryCode": "CHL",
+      "adminLevel": 1,
+      "regionName": "RegiÃÂ³n de ValparaÃÂ­so",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 47653553B5611469222723; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "AUS-AU-QLD",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "Queensland",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B13995298844162; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "IND-IN-TG",
+      "countryCode": "IND",
+      "adminLevel": 1,
+      "regionName": "TelangÄna",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1811400B25711494603400; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "NZL-NZ-NTL",
+      "countryCode": "NZL",
+      "adminLevel": 1,
+      "regionName": "Northland Region",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 40311993B95835387341305; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "USA-US-FL",
+      "countryCode": "USA",
+      "adminLevel": 1,
+      "regionName": "Florida",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 66186276B65591139260314; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "MEX-MX-SIN",
+      "countryCode": "MEX",
+      "adminLevel": 1,
+      "regionName": "Sinaloa",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 31927357B30231562725156; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "IND-IN-KL",
+      "countryCode": "IND",
+      "adminLevel": 1,
+      "regionName": "Kerala",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1811400B45534780755480; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "BRA-BR-BA",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Bahia",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 14911670B19428866735507; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "AUS-AU-NSW",
+      "countryCode": "AUS",
+      "adminLevel": 1,
+      "regionName": "New South Wales",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 82085004B21656044714531; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "BRA-BR-SP",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Sao Paulo",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 14911670B46470234103867; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "MUS-MU-FL",
+      "countryCode": "MUS",
+      "adminLevel": 1,
+      "regionName": "Flacq",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 65221844B3325932502431; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "ZAF-WC",
+      "countryCode": "ZAF",
+      "adminLevel": 1,
+      "regionName": "Western Cape",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 76434192B56312278962278; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "PER-PE-AYA",
+      "countryCode": "PER",
+      "adminLevel": 1,
+      "regionName": "Ayacucho",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 1875124B76579830071892; this is recorded presence, not a native or introduced range claim."
+    },
+    {
+      "speciesId": "ricinus-communis",
+      "regionId": "ARG-AR-N",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Misiones",
+      "distributionStatus": "recorded_presence",
+      "evidenceIds": [
+        "ev-ricinus-communis-gbif-occurrences"
+      ],
+      "derivation": "occurrence_point_aggregation",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 19177384B16625472822217; this is recorded presence, not a native or introduced range claim."
     },
     {
       "speciesId": "solenopsis-invicta",

@@ -4,7 +4,7 @@
     "source": "GBIF occurrence search",
     "sourceUrl": "https://www.gbif.org/species/5035230",
     "taxonKey": 5035230,
-    "generatedAt": "2026-09-07T15:41:56.617Z",
+    "generatedAt": "2026-09-08T12:20:31.714Z",
     "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
   },
   "features": [

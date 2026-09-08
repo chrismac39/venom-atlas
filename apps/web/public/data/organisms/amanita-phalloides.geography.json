@@ -1,0 +1,22 @@
+{
+  "organismSlug": "amanita-phalloides",
+  "geographyKind": "terrestrial",
+  "ranges": [
+    {
+      "id": "geo-amanita-phalloides-confirmed-occurrences",
+      "organismId": "org-amanita-phalloides",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/amanita-phalloides-occurrences.geojson",
+      "geometryFeatureCount": 18,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete fungal range.",
+      "evidence": {
+        "id": "ev-amanita-phalloides-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-amanita-phalloides"
+        ]
+      }
+    }
+  ]
+}

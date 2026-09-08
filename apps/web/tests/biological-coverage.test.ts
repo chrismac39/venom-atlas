@@ -60,15 +60,15 @@ describe('biological coverage expansion', () => {
     expect(organism?.deliveryMechanism.route).toBe('production');
   });
 
-  it('keeps optional geography absent while retaining linked toxin records', () => {
+  it('keeps occurrence geography present while retaining linked toxin records', () => {
     const slug = 'clostridium-botulinum';
     const material = getToxicMaterialByOrganismSlug(slug);
     const atlasOrganism = buildAtlasMonopageOrganisms().find((entry) => entry.slug === slug);
 
-    expect(getGeographyByOrganismSlug(slug)).toBeUndefined();
+    expect(getGeographyByOrganismSlug(slug)?.ranges[0]?.layerType).toBe('confirmed_occurrence');
     expect(material?.toxicMaterial.featuredToxinSlug).toBe('botulinum-neurotoxin');
     expect(getMechanismByOrganismExposureSlug(slug)?.steps).toHaveLength(2);
-    expect(atlasOrganism?.coverage.geography).toBe('missing');
+    expect(atlasOrganism?.coverage.geography).toBe('available');
     expect(atlasOrganism?.coverage.chemistry).toBe('available');
   });
 
@@ -124,6 +124,13 @@ describe('biological coverage expansion', () => {
     expect(atlasSlugs).toEqual(organismSlugs);
     expect(staticSlugs).toEqual(organismSlugs);
     expect(searchSlugs).toEqual(organismSlugs);
+  });
+
+  it('gives every organism at least an occurrence-tier geography layer', () => {
+    for (const organism of buildAtlasMonopageOrganisms()) {
+      expect(organism.coverage.geography).toBe('available');
+      expect(organism.geographyRanges.some((range) => range.layerType === 'confirmed_occurrence')).toBe(true);
+    }
   });
 
   it('searches catalog text and filters by kingdom and toxic strategy', () => {

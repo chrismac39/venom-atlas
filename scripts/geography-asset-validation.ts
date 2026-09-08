@@ -38,8 +38,19 @@ export const validateFeatureCollection = ({
       throw new Error(`Missing geometry coordinates in ${assetPath} feature ${index}`);
     }
     validateCoordinates(feature.geometry.coordinates, assetPath, index);
-    if (requireSourceMetadata && (!feature.properties?.license || !feature.properties?.sourceUrl)) {
-      throw new Error(`Curated geometry missing license or source URL in ${assetPath} feature ${index}`);
+    if (requireSourceMetadata) {
+      const license = feature.properties?.license;
+      const sourceUrl = feature.properties?.sourceUrl;
+      let hasValidSourceUrl = false;
+      try {
+        const parsedSourceUrl = new URL(String(sourceUrl));
+        hasValidSourceUrl = parsedSourceUrl.protocol === 'http:' || parsedSourceUrl.protocol === 'https:';
+      } catch {
+        hasValidSourceUrl = false;
+      }
+      if (typeof license !== 'string' || license.trim().length === 0 || !hasValidSourceUrl) {
+        throw new Error(`Curated geometry missing valid license or source URL in ${assetPath} feature ${index}`);
+      }
     }
   });
 };

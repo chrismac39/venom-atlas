@@ -1,0 +1,22 @@
+{
+  "organismSlug": "androctonus-australis",
+  "geographyKind": "terrestrial",
+  "ranges": [
+    {
+      "id": "geo-androctonus-australis-confirmed-occurrences",
+      "organismId": "org-androctonus-australis",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/androctonus-australis-occurrences.geojson",
+      "geometryFeatureCount": 29,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete scorpion range.",
+      "evidence": {
+        "id": "ev-androctonus-australis-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-androctonus-australis"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿id: geo-clostridium-botulinum
+slug: clostridium-botulinum
+organismSlug: clostridium-botulinum
+ranges:
+  - id: geo-clostridium-botulinum-confirmed-occurrences
+    layerType: confirmed_occurrence
+    geometryAssetPath: /geography/clostridium-botulinum-occurrences.geojson
+    summary: Reusable-license GBIF occurrence records for the bacterium, shown as documented presence rather than a complete environmental range.
+    evidence:
+      id: ev-clostridium-botulinum-gbif-occurrences
+      confidence: moderate
+      evidenceType: database
+      citationIds:
+        - cit-gbif-clostridium-botulinum

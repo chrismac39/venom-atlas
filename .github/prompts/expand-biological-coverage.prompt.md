@@ -61,6 +61,18 @@ For every new organism:
 - Include media only when licensing, attribution, and source metadata satisfy the existing media
   validation rules. Do not add placeholder URLs or unverified images.
 
+For every new organism or batch of organisms, perform a best-effort monopage completeness pass:
+
+- Review every monopage element: identity, taxonomy, overview, natural history, habitats,
+  ecological roles, delivery or exposure mechanism, geography, toxic material, composition,
+  molecular entities, structures, targets, physiology, media, citations, and related routes.
+- Populate each element when authoritative evidence and valid repository assets support it.
+- When an element cannot be supported, leave it absent and make the missing state explicit in the
+  dossier coverage model or UI; never fill the gap with a generic claim, copied range, placeholder
+  structure, unverified media, or an unrelated visualization.
+- Add or update focused validation so the new organism is present in static output and its
+  populated and intentionally missing monopage elements are exercised.
+
 ## Product and architecture requirements
 
 - Preserve the thin route-page architecture and existing host/orchestration boundaries.

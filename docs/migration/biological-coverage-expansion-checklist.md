@@ -9,7 +9,7 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] Represent multiple biological kingdoms.
 - [x] Preserve all existing routes in regression coverage.
 - [x] Ensure every organism reaches YAML validation, static generation, search, and the user-facing catalog.
-- [ ] Avoid unsupported geography, media, structure, lethality, treatment, or range claims.
+- [x] Avoid unsupported geography, media, structure, lethality, treatment, or range claims.
 
 ## Domain contract
 
@@ -47,11 +47,11 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 
 ## Geography and media
 
-- [x] Omit geography for new organisms where no suitable source-backed asset exists.
+- [x] Give every organism at least a source-backed occurrence geography layer.
 - [x] Omit unverified media and structures.
-- [ ] Add geography only as occurrence evidence, not as complete native or introduced range boundaries.
-- [ ] Validate every occurrence coordinate, license, and source URL.
-- [x] Confirm missing geography remains an honest `coverage.geography: missing` state.
+- [x] Add geography only as occurrence evidence, not as complete native or introduced range boundaries.
+- [x] Validate every occurrence coordinate, license, and source URL.
+- [x] Keep higher-tier geography gaps honest while retaining `coverage.geography: available` for occurrence maps.
 
 ## Static completeness
 
@@ -69,13 +69,14 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 - [x] Add filtering by kingdom and toxic strategy.
 - [x] Keep interactive catalog state in a hook and host component; keep routes thin.
 - [x] Preserve the lightweight chooser on `/`.
-- [ ] Render honest empty states for missing geography, chemistry, physiology, media, and structures.
+- [x] Render honest empty states for missing geography, chemistry, physiology, media, and structures.
 - [x] Preserve `/venom` only for `materialKind: venom`.
 
 ## Focused tests
 
 - [x] Test a non-animal organism reaches atlas data.
 - [x] Test an organism without geography remains in output.
+- [x] Test every organism has an occurrence-tier geography layer.
 - [x] Test `coverage.geography: missing`.
 - [x] Test fifteen organisms and multiple kingdoms.
 - [x] Test catalog search and kingdom/strategy filtering.

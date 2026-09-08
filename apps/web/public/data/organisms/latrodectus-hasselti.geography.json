@@ -1,0 +1,22 @@
+{
+  "organismSlug": "latrodectus-hasselti",
+  "geographyKind": "terrestrial",
+  "ranges": [
+    {
+      "id": "geo-latrodectus-hasselti-confirmed-occurrences",
+      "organismId": "org-latrodectus-hasselti",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/latrodectus-hasselti-occurrences.geojson",
+      "geometryFeatureCount": 18,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented presence rather than a complete spider range.",
+      "evidence": {
+        "id": "ev-latrodectus-hasselti-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-latrodectus-hasselti"
+        ]
+      }
+    }
+  ]
+}

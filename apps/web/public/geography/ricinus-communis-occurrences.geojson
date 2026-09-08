@@ -1,0 +1,715 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/5380041",
+    "taxonKey": 5380041,
+    "generatedAt": "2026-09-08T12:20:40.847Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 5937962817,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.781607,
+          28.809883
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": null,
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5937962817"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938032418,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.720932,
+          -0.966062
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333084534",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938032418"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938032672,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.533202,
+          -35.084779
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333380506",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938032672"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938080463,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.252228,
+          25.984508
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333528515",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938080463"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938094086,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.857608,
+          37.166888
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333300867",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938094086"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938117534,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.262253,
+          25.664513
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333533868",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938117534"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938181650,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.889892,
+          37.432442
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333209596",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938181650"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938228449,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.57593,
+          23.030242
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333390252",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938228449"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938257590,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.486944,
+          -22.95375
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333528907",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938257590"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938321618,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.452417,
+          -0.018794
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333350198",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938321618"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938386071,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.864447,
+          -32.85317
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333198643",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938386071"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938401132,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.33493,
+          -27.36558
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333138643",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938401132"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938410043,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.54666,
+          17.421863
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333397230",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938410043"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938595320,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.297163,
+          -35.666497
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/332929863",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938595320"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938611947,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.245686,
+          26.319973
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333069169",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938611947"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938632138,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.723133,
+          35.189161
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333404144",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938632138"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938708410,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.36042,
+          24.816491
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333109479",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938708410"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5959000018,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.909174,
+          28.585577
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": null,
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5959000018"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129833107,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.601838,
+          22.619125
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333814552",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129833107"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129833682,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.174185,
+          32.867073
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334335010",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129833682"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129880881,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.307669,
+          34.116727
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335176743",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129880881"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129958139,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.114497,
+          32.688317
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334699009",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129958139"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129982128,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.259319,
+          34.2368
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335027065",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129982128"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129984822,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.504416,
+          9.161194
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335590300",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129984822"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129988928,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.748028,
+          33.798131
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334833567",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129988928"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130096285,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.656496,
+          26.019276
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335960440",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130096285"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130170721,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.462078,
+          -12.893469
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335236027",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130170721"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130298530,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.451256,
+          33.777231
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334664255",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130298530"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130351579,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.858917,
+          33.62993
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334274784",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130351579"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130361662,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.585293,
+          -30.913027
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335880709",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130361662"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130425966,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.198924,
+          -23.507521
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335865349",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130425966"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130466516,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.750422,
+          -20.141155
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335040517",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130466516"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130514337,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.102461,
+          -34.118715
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335928869",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130514337"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130520470,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.227135,
+          -13.170892
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335474350",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130520470"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130541862,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.104328,
+          41.400454
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334350031",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130541862"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130600696,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.909408,
+          -27.431615
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333804496",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130600696"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130612505,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.231515,
+          37.881145
+        ]
+      },
+      "properties": {
+        "scientificName": "Ricinus communis L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335267331",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130612505"
+      }
+    }
+  ]
+}

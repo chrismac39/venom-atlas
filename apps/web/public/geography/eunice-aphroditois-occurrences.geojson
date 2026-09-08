@@ -1,0 +1,1627 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/5198482",
+    "taxonKey": 5198482,
+    "generatedAt": "2026-09-08T12:20:44.883Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 2563657782,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.233501,
+          1.459499
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/38135978",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2563657782"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3470341800,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.87847,
+          37.30323
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "ocorrencias_marsw_ed86f49e-8225-458a-8b98-1e25866b54f5.2721",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3470341800"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2574105758,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.270269,
+          9.071796
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/38182691",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2574105758"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1143562740,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5194,
+          -8.598817
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://www.inaturalist.org/observations/2074886",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1143562740"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2633372613,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.835,
+          1.2146
+        ]
+      },
+      "properties": {
+        "scientificName": "BOLD:AEB5584",
+        "datasetTitle": null,
+        "occurrenceID": "SIMP078-19",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2633372613"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3342776454,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.355833,
+          -34.617467
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "a1abdbc8-6a35-496b-8216-18a7532bcedc",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3342776454"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2597763787,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.889672,
+          13.689047
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/41649781",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2597763787"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4172660308,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.878278,
+          20.839056
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "a893e5021e79e8ac289c6de83f6bbab7",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4172660308"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 910492958,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.58,
+          13.74
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://www.inaturalist.org/observations/649173",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/910492958"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100843770,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.51723,
+          -35.27611
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "2471e366-2eb7-45f1-9fa1-6dfdcc7c3981",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100843770"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4069944312,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.51822,
+          4.28165
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "NG:NCB:Akwa Ibom_Atlantic Ocean_Environment:000006",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4069944312"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1415585436,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.506,
+          39.033
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "HZPLY1001-13",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1415585436"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4081190315,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.788833,
+          -45.9315
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "61074d9e-fa36-11e2-96b3-aa6f927c92a3",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4081190315"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1895789952,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.083633,
+          15.765417
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "8ca2473819cb2f029a127bd92364e82b",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1895789952"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4081090957,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.971167,
+          -41.534167
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "6053f46a-fa36-11e2-96b3-aa6f927c92a3",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4081090957"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4081121839,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.953333,
+          -41.918833
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "6053d296-fa36-11e2-96b3-aa6f927c92a3",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4081121839"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5105902698,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.061,
+          34.265
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "OKKJP:rocky_macrobiota:006696",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5105902698"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2265767212,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2313,
+          33.6023
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:BDCJ:MOT-TF:NKTAN0000208",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2265767212"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100835926,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.22556,
+          -32.708332
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "2bdef9ec-2a4c-4fee-89d6-e85a8582c18a",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100835926"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3311795026,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4577,
+          -34.2008
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:FBIP:SANBI:iSpot:694771",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3311795026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100830037,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.07472,
+          -30.949722
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "55ebc1e7-3cca-43e5-a36f-a82ecbb29cc9",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100830037"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1275073398,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.966667,
+          -33.033333
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:IZIKO:SAM-A-21510",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1275073398"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5895277518,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2925,
+          -33.983334
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "74e9a346-b9ba-4b20-83f5-706732240e05",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5895277518"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100828459,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.18,
+          -30.233334
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "d9f47225-b307-496b-aa6d-82db97bfb732",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100828459"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2573655667,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.61667,
+          -13.95
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "8C0D3355C015D12733BCFD67FE1499FA.mc.B4CC881EC012D1273292FF03FE239BAA",
+        "basisOfRecord": "MATERIAL_CITATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2573655667"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100827271,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9,
+          -34.6
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "823b8a90-3bd4-496f-b1fc-5fac73e11b3c",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100827271"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100823208,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.92833,
+          -37.103333
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "be7c50ab-e78e-4671-b714-666bdec265b8",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100823208"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1318589757,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.68,
+          0.88
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://n2t.net/ark:/65665/33d5ba7c2-5683-470e-b97a-9cd0af602acd",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1318589757"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3696574518,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.74,
+          39.87
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "SeamountsOnline_urn:lsid:marinespecies.org:taxname:130053_29219",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3696574518"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4166205771,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.222917,
+          11.251789
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "INVEMAR:MHNMC:Consec.4920:INVANE374",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4166205771"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2573655701,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.18333,
+          -35.516666
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "8C0D3355C015D12733BCFD67FE1499FA.mc.B4CC881EC015D1203113F82EFE0A9C9E",
+        "basisOfRecord": "MATERIAL_CITATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2573655701"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100820684,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.20833,
+          -34.008335
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "099dd42a-2ead-4193-943b-26a26838ec55",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100820684"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100820688,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.15,
+          -30.3
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "cb2cd845-febc-4be9-b5e5-6979423c8d5e",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100820688"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1234564080,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.433333,
+          27.9
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:TCWC:Marine Invertebrates:1-0571",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1234564080"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1272547360,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.28,
+          -38.42
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "4000907c-e36d-4bcc-9b45-fe1966c372f1",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1272547360"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1456265917,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.6583,
+          27.92
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://n2t.net/ark:/65665/39a1c781e-8ada-4087-aa3e-558064119a0e",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1456265917"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2573655593,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6,
+          -35.616665
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "8C0D3355C015D12733BCFD67FE1499FA.mc.B4CC881EC015D1203129F80AFDCD9CA2",
+        "basisOfRecord": "MATERIAL_CITATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2573655593"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1234563881,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.816667,
+          27.876667
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:TCWC:Marine Invertebrates:1-0379",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1234563881"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100846364,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.26666,
+          -30.216667
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "4a9d135e-5825-44ee-9e4e-72c406ac8bad",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100846364"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1322256876,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.87,
+          9.4
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://n2t.net/ark:/65665/3df982792-af32-4340-aa43-d2bd9aa588b6",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1322256876"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4081118663,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8344,
+          -41.2888
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "6af875ce-0c7f-4efa-9ba7-d176b3afef87",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4081118663"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1275071931,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.133308,
+          -26.6549
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:IZIKO:SAM-A-20071",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1275071931"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1320462338,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.292,
+          -43.383
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://n2t.net/ark:/65665/39034c9c6-c491-42a4-8084-8702da4f5a7f",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1320462338"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100829977,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.09,
+          -35.393333
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "4fdcfc34-e3f3-4a0e-b905-8cdfa1e6d891",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100829977"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253380682,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.91667,
+          -23.45
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "f47395a5-1d91-4962-b5e0-5a00249e41ca",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253380682"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4415854305,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.305498,
+          24.425516
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:CAS:IZ:6089",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4415854305"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4081108699,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.5433,
+          -41.6317
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "61359cf8-fa36-11e2-96b3-aa6f927c92a3",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4081108699"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5177986704,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.567778,
+          33.499167
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "0C3B5762-E6D0-4929-9FF2-A361384BBBB5",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5177986704"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1836928814,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.66602,
+          -34.250979
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:FBIP:IZIKO:8022",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1836928814"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1319509764,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.57,
+          -1.87
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://n2t.net/ark:/65665/3660e50eb-4a13-4e89-9b30-b9415165c761",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1319509764"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4902209395,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.291038,
+          -40.778622
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "9916c368-9d63-46c6-ba5e-7dcbbeb00e0a",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4902209395"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5177933709,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.055556,
+          27.951389
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "85321298-47A9-4568-856F-0D17FB0FA996",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5177933709"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5177975716,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.693056,
+          6.830556
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "01E9B4B4-8C02-4503-A5EF-1E5A0403B6FA",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5177975716"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2442737689,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.6249,
+          -45.8134
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:NIWA:TerraNovaExp:3684",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2442737689"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4939492621,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149,
+          -38
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "https://id.zmh-coll.de/collection_ZMH/460618/282831/833335",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4939492621"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4939492786,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148,
+          -38
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "https://id.zmh-coll.de/collection_ZMH/460617/282830/833334",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4939492786"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1275071626,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.999897,
+          -35.49985
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:IZIKO:SAM-A-19837",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1275071626"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2442737686,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5273,
+          -34.5217
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:NIWA:TerraNovaExp:3682",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2442737686"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1322296089,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.013,
+          13.3728
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "http://n2t.net/ark:/65665/3e156bd5a-336a-4207-bf2f-ad42c3d8d636",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1322296089"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1884036936,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.1122,
+          -45.543
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "325",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1884036936"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1884037623,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.3894,
+          -39.5909
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "979",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1884037623"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1884037783,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.4604,
+          -37.7651
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "1148",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1884037783"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4939492630,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9,
+          -19.9
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "https://id.zmh-coll.de/collection_ZMH/461453/283666/834172",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4939492630"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1272648868,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.05,
+          -38.43
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "81e3554e-ae19-4286-b5ba-b8626e3e6e67",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1272648868"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1275071618,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.157186,
+          -34.163661
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:catalog:IZIKO:SAM-A-19833",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1275071618"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2442737695,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.88,
+          -40.73
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "urn:NIWA:TerraNovaExp:3683",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2442737695"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57022359,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73,
+          3.25
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": null,
+        "basisOfRecord": "OCCURRENCE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/57022359"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 225912412,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7855,
+          43.4495
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "345a1241-2ad1-11ec-988d-509a4c4a8eab",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/225912412"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 380194906,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.13,
+          39.74
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "afb40ee6-ef38-11e6-8f5e-70e2840fc270",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/380194906"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1055755971,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.25,
+          40.833333
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice gigantea (Lamarck, 1818)",
+        "datasetTitle": null,
+        "occurrenceID": "af789310-5ddd-46c1-9d7b-68caf3110110",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1055755971"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100820686,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.3,
+          -33.75
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "cf5f136d-0225-4e36-8142-b88cef3e1cb3",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100820686"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100829244,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.7,
+          -23.3
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "2fd7a069-815e-451e-888c-84968794d58f",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100829244"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1100832725,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.36667,
+          -29.483334
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "9f0dc5e4-bf3c-4316-8603-88012166d2ec",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1100832725"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253377927,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.5,
+          -35.183334
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "c53bcf96-b4d9-47c3-93aa-0ff4569ff368",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253377927"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253378035,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.16667,
+          -20.05
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "1fee6c5c-c3aa-4e89-9897-f736d109733d",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253378035"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253380356,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.08333,
+          -20.933332
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "f0314955-2a47-4a2f-981c-83ee6f0322a3",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253380356"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253380374,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.2,
+          -16.933332
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "94c58bb8-a852-4bcc-aae4-1abb93f3ea53",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253380374"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253381863,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.63333,
+          -33.333332
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "ac49a98d-e609-4de0-b77b-5cf59dfa4ce4",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253381863"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253386002,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.58333,
+          -28.5
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "a895182b-c9ee-4631-9cdd-aa58e9ab7e74",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253386002"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253393020,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.83333,
+          -25
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "a22510e5-c32b-41f0-bb82-54492bc22b1f",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253393020"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253394008,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4,
+          -34.05
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "6aed6dd8-5f30-4bd7-8ab1-fbdb58a4a5ca",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253394008"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253394132,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.56667,
+          -15.7
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "85c94ceb-d137-4da4-9b5f-faa81eb972d0",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253394132"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253394461,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.916664,
+          -16.4
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "c3e58869-a81f-4153-94ff-1677ad40b73a",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1253394461"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1898264927,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -125,
+          49
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "122eb73f-2807-497f-8ecc-91efecaa56b5",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1898264927"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1948727239,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.037001,
+          38.865002
+        ]
+      },
+      "properties": {
+        "scientificName": "Eunice aphroditois (Pallas, 1788)",
+        "datasetTitle": null,
+        "occurrenceID": "MarBEF/MacroBEN_465804",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/1948727239"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "organismSlug": "eunice-aphroditois",
+  "geographyKind": "marine",
+  "ranges": [
+    {
+      "id": "geo-eunice-aphroditois-confirmed-occurrences",
+      "organismId": "org-eunice-aphroditois",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/eunice-aphroditois-occurrences.geojson",
+      "geometryFeatureCount": 85,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented marine presence rather than a complete polychaete range.",
+      "evidence": {
+        "id": "ev-eunice-aphroditois-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-eunice-aphroditois"
+        ]
+      }
+    }
+  ]
+}

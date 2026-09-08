@@ -1,0 +1,544 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/2928751",
+    "taxonKey": 2928751,
+    "generatedAt": "2026-09-08T12:20:39.648Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 5938385787,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.353798,
+          47.41961
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333445615",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938385787"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938438180,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.426949,
+          42.775931
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333556340",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938438180"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5939217341,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.58279,
+          58.95577
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "urn:lsid:artportalen.se:sighting:130409092",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5939217341"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5939247889,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.01202,
+          59.36682
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "urn:lsid:artportalen.se:sighting:130418777",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5939247889"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6115875921,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.87336,
+          57.80594
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "urn:lsid:artportalen.se:sighting:130828823",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6115875921"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129674869,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.640664,
+          51.898651
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": null,
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129674869"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129926261,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.035247,
+          -41.405704
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334141646",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129926261"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129972048,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.529092,
+          38.516614
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333869253",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129972048"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130415704,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.706597,
+          37.077389
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336124786",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130415704"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130634780,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.617288,
+          -33.414363
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333734468",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130634780"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6130869165,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.382675,
+          -24.890317
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335695192",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6130869165"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131119528,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.462917,
+          -18.80893
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335191430",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131119528"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131120102,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.347561,
+          47.766756
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335610335",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131120102"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131525348,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.037265,
+          -2.890805
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335593662",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131525348"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6131582867,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.968414,
+          31.449528
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334487017",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6131582867"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133199833,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.022345,
+          -34.147116
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336412890",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133199833"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133227897,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.464912,
+          41.76368
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336860188",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133227897"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133281686,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.589766,
+          -40.349122
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336551995",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133281686"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133492917,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.528562,
+          40.317755
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336872372",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133492917"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6178487055,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.310014,
+          -33.737264
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/341372837",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6178487055"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6261355567,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.102473,
+          52.111406
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "619",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6261355567"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6400569672,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.913225,
+          -12.254742
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/334549888",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6400569672"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133037185,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.48772,
+          51.007778
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336941540",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133037185"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6147331642,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.648858,
+          -43.547811
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337760460",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6147331642"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6147359943,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.671478,
+          -36.790604
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337580961",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6147359943"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6147407704,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.930572,
+          47.894619
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337830856",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6147407704"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6147427106,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.601128,
+          37.782887
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337271025",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6147427106"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6147675475,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.849175,
+          -33.943115
+        ]
+      },
+      "properties": {
+        "scientificName": "Datura stramonium L.",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337229918",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6147675475"
+      }
+    }
+  ]
+}

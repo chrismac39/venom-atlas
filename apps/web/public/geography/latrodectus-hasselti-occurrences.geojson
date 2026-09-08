@@ -1,0 +1,354 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/2157928",
+    "taxonKey": 2157928,
+    "generatedAt": "2026-09-08T12:20:41.895Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 5938149652,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.984764,
+          -32.700147
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333452475",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938149652"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938447467,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.142045,
+          -35.35268
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333035777",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938447467"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5938605853,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.382217,
+          -37.216122
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/332981127",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/5938605853"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6129952739,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.893534,
+          -31.423881
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/333822395",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6129952739"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133261935,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.897106,
+          -36.129428
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336570574",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133261935"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133319089,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.76012,
+          -36.453255
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336944193",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133319089"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133394523,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.214794,
+          -37.817923
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336681204",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133394523"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6159519724,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.256461,
+          -29.864546
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/335600268",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6159519724"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6234634322,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.617905,
+          -28.665775
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/354324624",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6234634322"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6317944917,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.021733,
+          -35.189133
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "3a3204b7-3d87-4c55-b748-008ac1567bdd",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6317944917"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6320701880,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.26372,
+          -38.07535
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/362254793",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6320701880"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6133251227,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.797911,
+          -19.254746
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/336945002",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6133251227"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6147475703,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.602256,
+          -34.930189
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337489997",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6147475703"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6159349348,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.194917,
+          -33.8956
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/337467583",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6159349348"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6159687571,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.585197,
+          -28.916617
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/338922969",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6159687571"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6159691833,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.096039,
+          -33.682392
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/338799467",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6159691833"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6163098384,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.032507,
+          -28.198513
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/339273027",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6163098384"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6163122287,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.82177,
+          -32.329472
+        ]
+      },
+      "properties": {
+        "scientificName": "Latrodectus hasselti Thorell, 1870",
+        "datasetTitle": null,
+        "occurrenceID": "https://www.inaturalist.org/observations/339883043",
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6163122287"
+      }
+    }
+  ]
+}

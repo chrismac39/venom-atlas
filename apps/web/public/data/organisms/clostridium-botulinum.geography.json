@@ -1,0 +1,22 @@
+{
+  "organismSlug": "clostridium-botulinum",
+  "geographyKind": "terrestrial",
+  "ranges": [
+    {
+      "id": "geo-clostridium-botulinum-confirmed-occurrences",
+      "organismId": "org-clostridium-botulinum",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/clostridium-botulinum-occurrences.geojson",
+      "geometryFeatureCount": 85,
+      "summary": "Reusable-license GBIF occurrence records for the bacterium, shown as documented presence rather than a complete environmental range.",
+      "evidence": {
+        "id": "ev-clostridium-botulinum-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-clostridium-botulinum"
+        ]
+      }
+    }
+  ]
+}

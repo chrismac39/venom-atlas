@@ -1,0 +1,1627 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "GBIF occurrence search",
+    "sourceUrl": "https://www.gbif.org/species/3226559",
+    "taxonKey": 3226559,
+    "generatedAt": "2026-09-08T12:20:37.326Z",
+    "note": "Reusable-license occurrence records, grid-deduplicated to one record per 0.5 degree cell. Not a range boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 6191427327,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.5,
+          38.575
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JBTMVO010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6191427327"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190372030,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.06,
+          30.65
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JBPODX010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190372030"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190058218,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.64,
+          40.26
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JBKFVZ010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190058218"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190555220,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.971561,
+          37.3456
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "PV933012",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190555220"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4439318617,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.348583,
+          7.492081
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "V4R16_434",
+        "basisOfRecord": "MACHINE_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4439318617"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4439306796,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.780971,
+          6.946866
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "V4R03_389",
+        "basisOfRecord": "MACHINE_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4439306796"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4439317829,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.119378,
+          6.141744
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "V4R27_1006",
+        "basisOfRecord": "MACHINE_OBSERVATION",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4439317829"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6189111775,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.33,
+          30.69
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "DANHQV010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6189111775"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190823409,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.85545,
+          21.14317
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "DAMXXZ010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190823409"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190762851,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.01,
+          60.22
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "DAGUHD010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190762851"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3911304783,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.509,
+          57.2137
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00572462_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3911304783"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4174668985,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.696,
+          -64.729
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "urn:edna:IN2017_V01_KC06_66-32B4EACE33065C36F97BF640663F0027",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4174668985"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4174682374,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.6403,
+          -64.5387
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "urn:edna:IN2017_V01_KC014_210-5A319000D6E821C0A3A2A3750BC17703",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4174682374"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3911442079,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.4436,
+          64.2443
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00583093_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3911442079"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3914951571,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1984,
+          -33.8472
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00224503_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3914951571"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3916502804,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.64,
+          60.559
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00198890_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3916502804"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2442331408,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.07,
+          30.25
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00361736_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2442331408"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817590868,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.783683,
+          45.598272
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYZ010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817590868"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190039819,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.3985,
+          32.3547
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JANIBT010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190039819"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190672870,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.44,
+          28.87
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JBPODV010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190672870"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2441345893,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.39,
+          31.04
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00363155_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2441345893"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349512202,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2903,
+          1.3733
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SWRK01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349512202"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351911338,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.9623,
+          30.9843
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "QVAF01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351911338"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351918256,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.26,
+          38.3
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "PYBM01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351918256"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351925513,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.9237,
+          48.0196
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SXBT01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351925513"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351951541,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1451,
+          51.9194
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SXBX01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351951541"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817590869,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.293696,
+          45.041069
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZC010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817590869"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817598890,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.163033,
+          43.089579
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYW010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817598890"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817768787,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.884687,
+          45.411821
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZB010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817768787"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817771800,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.071643,
+          45.419984
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYM010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817771800"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6188917131,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9598,
+          40.4308
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAWEOG010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6188917131"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190249687,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.9071,
+          40.4173
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JANIBZ010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190249687"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190286107,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.637554,
+          8.626703
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JANICI010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190286107"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349430690,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.7821,
+          39.5501
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "QVAG01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349430690"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349500270,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.9018,
+          31.9686
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "QVAH01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349500270"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349519388,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6921,
+          53.1424
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SGKC01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349519388"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817590867,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.020669,
+          45.133389
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYV010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817590867"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817590871,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.841585,
+          45.770137
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZK010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817590871"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817596887,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.993403,
+          46.647488
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYO010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817596887"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817596890,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.313508,
+          45.855967
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAANAF010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817596890"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817598891,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.595563,
+          45.330055
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZH010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817598891"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817602789,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.27211,
+          45.612977
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYH010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817602789"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817746855,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.517872,
+          45.800439
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZZ010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817746855"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817766887,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.337177,
+          46.002299
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAANAA010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817766887"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817772824,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3517,
+          41.862691
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYX010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817772824"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3818083798,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.511393,
+          42.410542
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYL010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3818083798"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2442241542,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.1992,
+          39.5117
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00357645_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2442241542"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2440651900,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2,
+          40.7
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00359053_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2440651900"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6189002107,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86,
+          40.85
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "DALZXW010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6189002107"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349366917,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          166.3505,
+          -22.1337
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYW01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349366917"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351863886,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.5033,
+          47.1625
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SWSA01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351863886"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351912507,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.436,
+          55.3781
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SGKF01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351912507"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817592816,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.820869,
+          46.025346
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZO010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817592816"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817596888,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.359225,
+          46.636044
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYS010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817596888"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2440548950,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.541,
+          8.078
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00364398_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2440548950"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2441353945,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.03,
+          36.34
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00360130_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2441353945"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3347320887,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.45,
+          43.56
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LGVT01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3347320887"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3347373839,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.48,
+          47.49
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LGVQ01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3347373839"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349357799,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.54,
+          47.53
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LGVR01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349357799"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349422433,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7492,
+          40.4637
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SWRU01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349422433"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349512203,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4515,
+          51.1657
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SWRS01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349512203"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351862595,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7482,
+          61.9241
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SWRZ01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351862595"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817596886,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.874303,
+          46.777145
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYK010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817596886"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2024498403,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.9314,
+          26.3313
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "MGYA00195056_Bacteria::Firmicutes:Clostridia:Clostridiales:Clostridiaceae:Clostridium:Clostridium_botulinum",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/2024498403"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349505240,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5501,
+          47.5162
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SGKU01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349505240"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817597716,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.442542,
+          45.358306
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZP010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817597716"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3817771798,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.057213,
+          45.052507
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMYE010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3817771798"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3818110403,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.641911,
+          45.316996
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAAMZD010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3818110403"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3985127417,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.57,
+          41.87
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "CP063961",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3985127417"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190369935,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2137,
+          46.2276
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JAIQUV010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190369935"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3347373840,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.46,
+          45.44
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LGVU01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3347373840"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349229202,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.31,
+          48.13
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYY01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349229202"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349277183,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.19,
+          48.3
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYX01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349277183"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6190719331,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8243,
+          39.0742
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SGNA01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6190719331"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3347332848,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.24,
+          47.4
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYQ01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3347332848"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3347396907,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.13,
+          44.43
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYR01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3347396907"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3347396908,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.29,
+          47.17
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYV01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3347396908"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349269053,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.27,
+          43.38
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LGVS01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349269053"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349277182,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.26,
+          46.39
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYT01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349277182"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349366916,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.55,
+          48.15
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "LHYS01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349366916"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6191425472,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.26,
+          27.88
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "JBPODU010000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/6191425472"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4008205334,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.64,
+          60.13
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "CP063967",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/4008205334"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349607280,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.74,
+          45.41
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "CP059678",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349607280"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3351795719,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "SWSX01000000",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3351795719"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3349690157,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.05,
+          53.84
+        ]
+      },
+      "properties": {
+        "scientificName": "Clostridium botulinum A",
+        "datasetTitle": null,
+        "occurrenceID": "CP068960",
+        "basisOfRecord": "MATERIAL_SAMPLE",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "sourceUrl": "https://www.gbif.org/occurrence/3349690157"
+      }
+    }
+  ]
+}

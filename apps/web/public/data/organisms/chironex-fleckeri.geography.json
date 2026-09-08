@@ -1,0 +1,22 @@
+{
+  "organismSlug": "chironex-fleckeri",
+  "geographyKind": "marine",
+  "ranges": [
+    {
+      "id": "geo-chironex-fleckeri-confirmed-occurrences",
+      "organismId": "org-chironex-fleckeri",
+      "layerType": "confirmed_occurrence",
+      "geometryAssetId": "/geography/chironex-fleckeri-occurrences.geojson",
+      "geometryFeatureCount": 24,
+      "summary": "Reusable-license GBIF occurrence records, shown as documented marine presence rather than a complete jellyfish range.",
+      "evidence": {
+        "id": "ev-chironex-fleckeri-gbif-occurrences",
+        "confidence": "moderate",
+        "evidenceType": "database",
+        "citationIds": [
+          "cit-gbif-chironex-fleckeri"
+        ]
+      }
+    }
+  ]
+}

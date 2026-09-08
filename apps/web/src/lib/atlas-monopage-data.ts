@@ -144,6 +144,9 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
             geographyRanges.length > 0 || entry.geographyVisualizations.length > 0 ? 'available' : 'missing',
           toxicMaterial: toxicMaterialBundle ? 'available' : 'missing',
           chemistry: mappedToxins.length > 0 ? 'available' : 'missing',
+          structures: mappedToxins.some((toxin) => toxin.structure2dUrl || toxin.structure3dUrl)
+            ? 'available'
+            : 'missing',
           physiology: physiology ? 'available' : 'missing',
           media: hasPublishedMedia ? 'available' : 'missing',
         },

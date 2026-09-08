@@ -78,7 +78,8 @@ export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
 
   const availableSectionKinds = useMemo(() => {
     const kinds = new Set<string>(['organism-profile']);
-    if (organism.geographyRanges.length > 0 || organism.geographyVisualizations.length > 0) kinds.add('geography');
+    // Keep a neutral geography surface available even before species-specific evidence is curated.
+    kinds.add('geography');
     if (organism.deliveryMechanism.sequence.length > 0 || organism.mechanismSteps.length > 0) kinds.add('mechanisms');
     if (organism.toxicMaterial) {
       kinds.add('toxin-categorization');
