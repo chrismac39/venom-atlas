@@ -121,7 +121,7 @@ These are chunk measurements, not total-page transfer budgets. Hosting compressi
 
 ### F1 — The hosting architecture is already appropriate
 
-Astro generates static pages, React provides interactive islands, content is local at build time, and no production API/database is required. Cloudflare Pages is the documented deployment target; GitHub Pages is a reasonable alternative, not a reason to rewrite the app.
+Astro generates static pages, React provides interactive islands, content is local at build time, and no production API/database is required. GitHub Pages is the selected primary deployment target; Cloudflare Pages remains a documented alternative, not a reason to rewrite the app.
 
 **Keep:** static HTML, per-organism URLs, optional heavy visualization code, offline-generated data, and the archived status of Fastify/ClickHouse infrastructure.
 
@@ -302,15 +302,15 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 
 ### Milestone 0 — Agree on scope and freeze expansion
 
-**Priority:** P0. **Effort:** small. **Dependency:** owner review.
+**Status:** completed 2026-09-08. **Priority:** P0. **Effort:** small. **Dependency:** owner review.
 
-- [x] Owner approved exactly four monopage sections in order: **Summary, Geography, Chemistry, Medical Effects** (2026-09-08). Implementation remains pending.
-- [x] Owner clarified automatic publication once ingestion and AI summarization provide sufficient citation-backed content in all four sections (2026-09-08). No human/peer/medical approval gate; pipeline enforcement remains pending.
-- [ ] Choose static host: GitHub Pages or Cloudflare Pages; keep both root-path and project-path correctness requirements.
-- [ ] Approve Fire Ant as integration reference and Batrachotoxin as chemistry reference; protein/clinical reference follows rather than blocking the first slice.
-- [ ] Freeze new-organism additions until these reference slices meet the agreed depth and reliability criteria.
-- [ ] Treat anatomy 3D, global range perfection, SQLite exploration, and broad comparative rankings as deferred work.
-- [ ] Establish one active roadmap; reconcile older checklists after decisions are approved.
+- [x] Owner approved exactly four monopage sections in order: **Summary, Geography, Chemistry, Medical Effects** (2026-09-08); Milestone 0A implements and verifies them.
+- [x] Owner clarified automatic publication once ingestion and AI summarization provide sufficient citation-backed content in all four sections (2026-09-08). No human/peer/medical approval gate; Milestone 0A implements the shared readiness gate.
+- [x] Selected **GitHub Pages** as the primary static host (2026-09-08); retain both root-path and project-path correctness requirements. Workflow and live deployment verification remain Milestone 6 release work.
+- [x] Approved Fire Ant as the integration reference and Golden Poison Frog/Batrachotoxin as the chemistry reference; a specifically identified botulinum protein/clinical reference follows rather than blocking the first slice.
+- [x] Froze new-organism additions until these reference slices meet the agreed depth and reliability criteria and the owner explicitly reopens expansion. Corrections to the existing catalog remain allowed.
+- [x] Deferred anatomy 3D, global range perfection, SQLite exploration, and broad comparative rankings from the first release.
+- [x] Established this document as the sole active roadmap; older roadmaps and migration checklists are marked historical.
 
 **Exit:** clear reference organisms, hosting decision, and boundaries on the first release.
 
@@ -551,7 +551,7 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 | Host/CI/accessibility release gates | Begin early; finish after integration | Medium | Built reference pages pass root/project-path checks. |
 | Protein renderer/anatomy/catalog expansion | Reference slice stable | Variable | Real assets/evidence/user feedback justify each addition. |
 
-**First implementation batch proposed for approval:** milestone 0A's four-section simplification and shared automated readiness gate, using existing content without assuming it already qualifies. Follow with duplicate-record cleanup, chemistry reliability, a minimal claim/source contract, and automated web ingestion/AI summarization. Publish organisms automatically as all four sections pass; there is no manual source-review or sign-off step. This keeps simplification, source traceability, and chemistry ahead of further geography expansion.
+**First implementation batch completed:** milestone 0A's four-section simplification and shared automated readiness gate use existing content without assuming it already qualifies. Continue with duplicate-record cleanup, chemistry reliability, a minimal claim/source contract, and automated web ingestion/AI summarization. Publish organisms automatically as all four sections pass; there is no manual source-review or sign-off step. This keeps simplification, source traceability, and chemistry ahead of further geography expansion.
 
 **Geography stop rule:** once the reference organism has a clear evidence-backed native/introduced map, honest occurrence sampling, a useful initial view, smaller display assets, and tested interactions, return effort to chemistry/effects. Do not make worldwide completeness a prerequisite for the product.
 
@@ -560,9 +560,9 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 No answer was needed before this audit. These choices now affect sequencing and acceptance criteria:
 
 - [x] **Monopage sections:** exactly **Summary → Geography → Chemistry → Medical Effects**, approved by the owner on 2026-09-08. No additional top-level content sections.
-- [x] **Sparse dossiers:** owner chose automatic visibility only when the pipeline sufficiently populates all four sections from web citations and AI summaries (2026-09-08). Incomplete organisms stay unpublished; no filler and no human sign-off. Readiness implementation remains unchecked above.
-- [ ] **Host:** GitHub Pages, or keep Cloudflare Pages? Recommendation: either static host; no VM. Choose based on preferred deployment workflow/custom domain, then verify current service limits.
-- [ ] **Reference organisms:** approve Fire Ant + Golden Poison Frog/Batrachotoxin first, with botulinum protein/clinical depth next, or name preferred replacements.
+- [x] **Sparse dossiers:** owner chose automatic visibility only when the pipeline sufficiently populates all four sections from web citations and AI summaries (2026-09-08). Incomplete organisms stay unpublished; no filler and no human sign-off. Milestone 0A implements and verifies the readiness gate.
+- [x] **Host:** GitHub Pages selected as the primary static host on 2026-09-08. Cloudflare Pages remains documented only as an alternative. Root and project-path deployment verification remains a Milestone 6 release gate.
+- [x] **Reference organisms:** Fire Ant + Golden Poison Frog/Batrachotoxin first, with a specifically identified botulinum protein/clinical reference next.
 - [ ] **Map dissatisfaction:** rank inaccurate/unclear ranges, sparse dots, framing, visual styling, control clutter, mobile behavior, or load time. Recommendation: correctness/precision, framing, and payload first.
 - [ ] **Country-to-ADM1 policy:** is visibly labeled coarse native context acceptable where state/province evidence is unavailable? Recommendation: yes, but never styled/labeled as independently proven state-level occupancy.
 - [ ] **Clinical boundary:** mechanism/pathophysiology only, or also guideline-linked diagnosis/management context? Recommendation: deep educational mechanisms first; clearly disclose AI summarization and avoid personalized medical guidance.
