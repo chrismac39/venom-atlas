@@ -75,7 +75,7 @@ Use this checklist to expand the catalog from five organisms to at least fifteen
 ## Focused tests
 
 - [x] Test a non-animal organism reaches atlas data.
-- [x] Test an organism without geography remains in output.
+- [x] Test an organism with occurrence geography remains in output.
 - [x] Test every organism has an occurrence-tier geography layer.
 - [x] Test `coverage.geography: missing`.
 - [x] Test fifteen organisms and multiple kingdoms.
