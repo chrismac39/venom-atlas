@@ -53,6 +53,20 @@ describe('automated four-section publication readiness', () => {
     expectFailure(content, 'summary', 'public_source_required');
   });
 
+  it.each(['failed', 'quarantined'] as const)('blocks a %s assertion without creating a human approval gate', (status) => {
+    const content = readyDossier();
+    content.toxins[0]!.molecularEntity.assertions = [{
+      id: 'claim-test-mass', claimType: 'property', label: 'Molecular weight',
+      value: { kind: 'number', amount: 42, unit: 'g/mol' },
+      scope: { subjectKind: 'isolated_compound', subjectSlug: 'test-toxin', property: 'molecular_weight' },
+      conditions: [], applicability: { evidenceContext: 'inference', summary: 'Computed fixture value.' },
+      sourceLocators: [{ citationId: 'cit-test-organism-chemistry', locator: 'Computed properties' }],
+      provenance: { method: 'pubchem_import', methodVersion: 'fixture-v1', retrievedAt: '2026-09-08T00:00:00Z', checkedAt: '2026-09-08T00:00:00Z' },
+      validation: { status, checkedAt: '2026-09-08T00:00:00Z', checks: ['fixture_check'] },
+    }];
+    expectFailure(content, 'chemistry', 'assertion_validation_required', 'claim-test-mass');
+  });
+
   it.each(['unreviewed', 'needs_review'] as const)('does not turn %s into a human approval gate', (reviewStatus) => {
     expect(changed((content) => { content.organisms[0]!.evidence.reviewStatus = reviewStatus; }).eligible).toBe(true);
   });

@@ -2,10 +2,13 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
 import { z } from 'zod';
+import { claimAssertionSchema, compoundOccurrenceSchema, molecularIdentitySchema } from '@venom-atlas/schemas';
 import { buildRouteInventory } from './content-routes';
 import { evaluatePublicationReadiness, selectPublicationContent } from './publication-readiness';
 import type {
   Citation,
+  ClaimAssertion,
+  CompoundOccurrence,
   EvidenceAssessment,
   GeographicRange,
   MechanismStep,
@@ -158,7 +161,9 @@ const toxinRecordSchema = z.object({
     formula: z.string().nullable(),
     molecularWeight: z.number().nullable(),
     structureDataSource: z.string().nullable(),
+    identity: molecularIdentitySchema.optional(),
     evidence: evidenceSchema,
+    assertions: z.array(claimAssertionSchema).optional(),
   }),
   structureAssets: z.array(
     z.object({
@@ -265,6 +270,7 @@ const physiologyRecordSchema = z.object({
       title: z.string(),
       description: z.string(),
       evidence: evidenceSchema,
+      assertions: z.array(claimAssertionSchema).optional(),
     }),
   ),
 });
@@ -338,6 +344,8 @@ const citationFileSchema = z.object({
       publicationYear: z.number().nullable().optional(),
       url: z.string().nullable().optional(),
       doi: z.string().nullable().optional(),
+      pmid: z.string().regex(/^\d+$/).nullable().optional(),
+      accession: z.string().nullable().optional(),
       accessedAt: z.string().nullable().optional(),
       visibility: z.enum(['public', 'internal']).optional(),
       sourceType: z.enum([
@@ -383,6 +391,7 @@ const mediaFileSchema = z.object({
 type OrganismRecord = z.infer<typeof organismRecordSchema>;
 type ToxicMaterialRecord = z.infer<typeof toxicMaterialRecordSchema>;
 type ToxinRecord = z.infer<typeof toxinRecordSchema>;
+type CompoundOccurrenceRecord = z.infer<typeof compoundOccurrenceSchema>;
 type MechanismRecord = z.infer<typeof mechanismRecordSchema>;
 type PhysiologyRecord = z.infer<typeof physiologyRecordSchema>;
 type GeographyRecord = z.infer<typeof geographyRecordSchema>;
@@ -408,6 +417,7 @@ const contentRecords = {
   organisms: readDirectory('organisms').map((file) => readYamlFile(file, organismRecordSchema)),
   toxicMaterials: readDirectory('toxic-materials').map((file) => readYamlFile(file, toxicMaterialRecordSchema)),
   toxins: readDirectory('toxins').map((file) => readYamlFile(file, toxinRecordSchema)),
+  compoundOccurrences: readDirectory('compound-occurrences').map((file) => readYamlFile(file, compoundOccurrenceSchema)),
   mechanisms: readDirectory('mechanisms').map((file) => readYamlFile(file, mechanismRecordSchema)),
   physiology: readDirectory('physiology').map((file) => readYamlFile(file, physiologyRecordSchema)),
   geography: readDirectory('geography').map((file) => readYamlFile(file, geographyRecordSchema)),
@@ -492,6 +502,7 @@ export interface ToxicMaterialBundle {
 export interface ToxinBundle {
   toxin: Toxin;
   molecularEntity: MolecularEntity;
+  occurrences: CompoundOccurrence[];
   structureAssets: MolecularStructureAsset[];
   targets: MolecularTarget[];
   interactionVisualization?: {
@@ -643,8 +654,15 @@ const loadToxinBundles = (): ToxinBundle[] => {
         formula: record.molecularEntity.formula,
         molecularWeight: record.molecularEntity.molecularWeight,
         structureDataSource: record.molecularEntity.structureDataSource,
+        ...(record.molecularEntity.identity ? { identity: record.molecularEntity.identity } : {}),
         evidence: mapEvidence(record.molecularEntity.evidence),
+        ...(record.molecularEntity.assertions?.length
+          ? { assertions: record.molecularEntity.assertions as ClaimAssertion[] }
+          : {}),
       },
+      occurrences: contentRecords.compoundOccurrences
+        .filter((entry: CompoundOccurrenceRecord) => entry.molecularEntityId === record.molecularEntity.id)
+        .map((entry) => ({ ...entry, evidence: mapEvidence(entry.evidence) })),
       structureAssets: record.structureAssets.map((entry) => ({
         id: entry.id,
         molecularEntityId: record.molecularEntity.id,
@@ -732,6 +750,7 @@ const loadPhysiologyBundles = (): PhysiologyBundle[] => {
           description: entry.description,
           order: entry.order,
           evidence: mapEvidence(entry.evidence),
+          ...(entry.assertions?.length ? { assertions: entry.assertions as ClaimAssertion[] } : {}),
         }))
         .sort((a, b) => a.order - b.order),
     };
@@ -781,6 +800,8 @@ const loadCitations = (): Citation[] => {
       publicationYear: entry.publicationYear ?? undefined,
       url: entry.url ?? undefined,
       doi: entry.doi ?? undefined,
+      pmid: entry.pmid ?? undefined,
+      accession: entry.accession ?? undefined,
       accessedAt: entry.accessedAt ?? undefined,
       visibility: entry.visibility ?? 'public',
       sourceType: entry.sourceType,
@@ -900,6 +921,40 @@ export const getAllCitations = (): Citation[] => cached.citations;
 
 export const getPublicCitations = (): Citation[] =>
   cached.citations.filter((entry) => entry.visibility !== 'internal' && publicRecords.citations.some((record) => record.id === entry.id));
+
+export interface CitationClaimReference {
+  assertionId: string;
+  label: string;
+  route: string;
+  subjectLabel: string;
+}
+
+export const getPublicClaimReferencesByCitationId = (citationId: string): CitationClaimReference[] => {
+  const references: CitationClaimReference[] = [];
+  for (const toxin of getAllToxins()) {
+    for (const assertion of toxin.molecularEntity.assertions ?? []) {
+      if (assertion.sourceLocators.some((locator) => locator.citationId === citationId)) {
+        references.push({
+          assertionId: assertion.id, label: assertion.label,
+          route: `/toxins/${toxin.toxin.slug}#${assertion.id}`, subjectLabel: toxin.toxin.displayName,
+        });
+      }
+    }
+  }
+  for (const physiology of getAllPhysiology()) {
+    for (const effect of physiology.effects) {
+      for (const assertion of effect.assertions ?? []) {
+        if (assertion.sourceLocators.some((locator) => locator.citationId === citationId)) {
+          const route = physiology.subject.kind === 'organism_exposure'
+            ? `/atlas/${physiology.subject.slug}#${assertion.id}`
+            : `/toxins/${physiology.subject.slug}/physiology#${assertion.id}`;
+          references.push({ assertionId: assertion.id, label: assertion.label, route, subjectLabel: effect.title });
+        }
+      }
+    }
+  }
+  return references.sort((left, right) => left.assertionId.localeCompare(right.assertionId));
+};
 
 export const getAllMediaAssets = (): MediaAsset[] => cached.mediaAssets;
 

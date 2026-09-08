@@ -150,6 +150,18 @@ export const auditContentGraph = (content: ContentRecords) => {
   }
   unique(content.toxicMaterials.map((entry) => ({ value: entry.organismSlug, path: entry.id })), 'duplicate_material_owner');
   for (const toxin of content.toxins) reference(materialIds.has(toxin.toxicMaterialId), toxin.id, 'toxic material', toxin.toxicMaterialId);
+  const molecularEntityIds = new Set(content.toxins.map((entry) => entry.molecularEntity.id));
+  for (const occurrence of content.compoundOccurrences) {
+    reference(molecularEntityIds.has(occurrence.molecularEntityId), occurrence.id, 'molecular entity', occurrence.molecularEntityId);
+    reference(organismSlugs.has(occurrence.organismSlug), occurrence.id, 'organism', occurrence.organismSlug);
+    reference(content.toxicMaterials.some((material) =>
+      material.id === occurrence.toxicMaterialId && material.organismSlug === occurrence.organismSlug),
+    occurrence.id, 'organism toxic material', occurrence.toxicMaterialId);
+  }
+  unique(content.compoundOccurrences.map((entry) => ({
+    value: `${entry.molecularEntityId}:${entry.organismSlug}:${entry.toxicMaterialId}`,
+    path: entry.id,
+  })), 'duplicate_compound_occurrence');
 
   for (const kind of ['mechanisms', 'physiology'] as const) {
     unique(content[kind].map((entry) => ({ value: `${entry.subject.kind}:${entry.subject.slug}`, path: entry.id })), 'duplicate_subject');

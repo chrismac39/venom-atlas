@@ -1,0 +1,13 @@
+﻿id: occurrence-solenopsin-a-solenopsis-invicta-venom
+molecularEntityId: mol-solenopsin-a
+organismSlug: solenopsis-invicta
+toxicMaterialId: ven-fire-ant-primary
+relationship: reported_component
+summary: Solenopsin A is represented as a reported piperidine alkaloid component of red imported fire ant venom, without implying a quantified abundance.
+evidence:
+  id: ev-solenopsin-a-fire-ant-occurrence
+  confidence: moderate
+  evidenceType: review
+  causalScope: whole_material
+  citationIds:
+    - cit-fire-ant-review-2007

@@ -24,6 +24,13 @@
     "formula": "C17H35N",
     "molecularWeight": 253.5,
     "structureDataSource": "PubChem CID 107941; (2S,6S)-2-methyl-6-undecylpiperidine",
+    "identity": {
+      "kind": "exact_stereoisomer",
+      "stereochemistry": "(2S,6S)",
+      "isomericSmiles": "CCCCCCCCCCC[C@H]1CCC[C@@H](N1)C",
+      "inchi": "InChI=1S/C17H35N/c1-3-4-5-6-7-8-9-10-11-14-17-15-12-13-16(2)18-17/h16-18H,3-15H2,1-2H3/t16-,17-/m0/s1",
+      "inchiKey": "AYJGABFBAYKWDX-IRXDYDNUSA-N"
+    },
     "evidence": {
       "id": "ev-solenopsin-molecular-identity",
       "confidence": "high",
@@ -32,8 +39,74 @@
       "citationIds": [
         "cit-pubchem-solenopsin-a"
       ]
-    }
+    },
+    "assertions": [
+      {
+        "id": "claim-solenopsin-a-molecular-weight",
+        "claimType": "property",
+        "label": "Molecular weight",
+        "value": {
+          "kind": "number",
+          "amount": 253.5,
+          "unit": "g/mol"
+        },
+        "scope": {
+          "subjectKind": "isolated_compound",
+          "subjectSlug": "solenopsin-a",
+          "property": "molecular_weight"
+        },
+        "conditions": [],
+        "applicability": {
+          "evidenceContext": "inference",
+          "model": "PubChem 2.2 computed property",
+          "summary": "Computed descriptor for PubChem CID 107941, not an experimental measurement."
+        },
+        "sourceLocators": [
+          {
+            "citationId": "cit-pubchem-solenopsin-a",
+            "locator": "Chemical and Physical Properties > Computed Properties > Molecular Weight",
+            "sourceIdentifier": "CID 107941",
+            "sourceVersionDate": "2025-04-14"
+          }
+        ],
+        "provenance": {
+          "method": "pubchem_import",
+          "methodVersion": "pubchem-pug-v1",
+          "retrievedAt": "2026-09-08T00:00:00Z",
+          "checkedAt": "2026-09-08T00:00:00Z",
+          "sourceChecksum": "sha256:9ae9690d7db6eed537e1b52e0dbfc9f7fbb753138dab366216fa4953ef8e916b"
+        },
+        "validation": {
+          "status": "passed",
+          "checkedAt": "2026-09-08T00:00:00Z",
+          "checks": [
+            "exact_cid_match",
+            "name_and_stereochemistry_match",
+            "unit_present"
+          ]
+        }
+      }
+    ]
   },
+  "occurrences": [
+    {
+      "id": "occurrence-solenopsin-a-solenopsis-invicta-venom",
+      "molecularEntityId": "mol-solenopsin-a",
+      "organismSlug": "solenopsis-invicta",
+      "toxicMaterialId": "ven-fire-ant-primary",
+      "relationship": "reported_component",
+      "summary": "Solenopsin A is represented as a reported piperidine alkaloid component of red imported fire ant venom, without implying a quantified abundance.",
+      "evidence": {
+        "id": "ev-solenopsin-a-fire-ant-occurrence",
+        "confidence": "moderate",
+        "evidenceType": "review",
+        "citationIds": [
+          "cit-fire-ant-review-2007"
+        ],
+        "causalScope": "whole_material"
+      }
+    }
+  ],
   "structureAssets": [
     {
       "id": "asset-mol3d-solenopsin-a",

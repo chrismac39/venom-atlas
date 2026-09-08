@@ -1,7 +1,7 @@
 import type { ContentRecords } from '../../src/lib/content';
 
 export const emptyContent = (): ContentRecords => ({
-  organisms: [], toxicMaterials: [], toxins: [], mechanisms: [], physiology: [], geography: [], citations: [], media: [],
+  organisms: [], toxicMaterials: [], toxins: [], compoundOccurrences: [], mechanisms: [], physiology: [], geography: [], citations: [], media: [],
 });
 
 /** Fictional, manually authored records: never load or upgrade real scientific YAML. */
@@ -37,6 +37,7 @@ export const readyDossier = (slug = 'test-organism'): ContentRecords => {
       targets: [{ id: `target-${slug}`, targetName: 'Test enzyme', targetType: 'enzyme', summary: 'This compound inhibits a fictional test enzyme.', evidence: evidence('chemistry') }],
       evidence: evidence('chemistry'),
     }],
+    compoundOccurrences: [],
     mechanisms: [{
       id: `mechanism-${slug}`, slug: `${slug}-mechanism`, subject: { kind: 'organism_exposure', slug },
       steps: [{ id: `step-${slug}`, order: 1, level: 'molecular', title: 'Test interaction',
@@ -84,7 +85,8 @@ export const dossierWithAssets = (): ContentRecords => {
 
 export const mergeContent = (...inputs: ContentRecords[]): ContentRecords => ({
   organisms: inputs.flatMap((content) => content.organisms), toxicMaterials: inputs.flatMap((content) => content.toxicMaterials),
-  toxins: inputs.flatMap((content) => content.toxins), mechanisms: inputs.flatMap((content) => content.mechanisms),
+  toxins: inputs.flatMap((content) => content.toxins), compoundOccurrences: inputs.flatMap((content) => content.compoundOccurrences),
+  mechanisms: inputs.flatMap((content) => content.mechanisms),
   physiology: inputs.flatMap((content) => content.physiology), geography: inputs.flatMap((content) => content.geography),
   citations: inputs.flatMap((content) => content.citations), media: inputs.flatMap((content) => content.media),
 });

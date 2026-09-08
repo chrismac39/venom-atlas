@@ -10,6 +10,8 @@ export const citationSchema = z.object({
   publicationYear: z.number().int().optional(),
   url: z.string().url().optional(),
   doi: z.string().optional(),
+  pmid: z.string().regex(/^\d+$/).optional(),
+  accession: z.string().trim().min(1).optional(),
   accessedAt: z.string().optional(),
   sourceType: z.enum([
     'journal_article',
@@ -39,6 +41,74 @@ export const evidenceAssessmentSchema = z.object({
   reviewStatus: z.enum(['unreviewed', 'reviewed', 'needs_review']).optional(),
   causalScope: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']).optional(),
   publicUncertaintyStatement: z.string().trim().min(1).optional(),
+});
+
+export const claimAssertionSchema = z.object({
+  id: z.string().trim().min(1),
+  claimType: z.enum(['property', 'clinical']),
+  label: z.string().trim().min(1),
+  value: z.discriminatedUnion('kind', [
+    z.object({
+      kind: z.literal('number'),
+      amount: z.number(),
+      unit: z.string().trim().min(1),
+    }),
+    z.object({
+      kind: z.literal('text'),
+      text: z.string().trim().min(1),
+    }),
+    z.object({
+      kind: z.literal('unknown'),
+      reason: z.enum(['not_reported', 'not_studied', 'insufficient_evidence', 'not_applicable']),
+      detail: z.string().trim().min(1).optional(),
+    }),
+  ]),
+  scope: z.object({
+    subjectKind: z.enum(['organism_exposure', 'whole_material', 'isolated_compound']),
+    subjectSlug: z.string().trim().min(1),
+    property: z.string().trim().min(1).optional(),
+  }),
+  conditions: z.array(z.object({ name: z.string().trim().min(1), value: z.string().trim().min(1) })).default([]),
+  applicability: z.object({
+    evidenceContext: z.enum(['human_clinical', 'animal', 'in_vitro', 'ex_vivo', 'inference']),
+    species: z.string().trim().min(1).optional(),
+    model: z.string().trim().min(1).optional(),
+    summary: z.string().trim().min(1),
+  }),
+  sourceLocators: z.array(z.object({
+    citationId: z.string().trim().min(1),
+    locator: z.string().trim().min(1),
+    sourceIdentifier: z.string().trim().min(1).optional(),
+    sourceVersionDate: z.string().date().optional(),
+  })).min(1),
+  provenance: z.object({
+    method: z.enum(['manual', 'metadata_import', 'pubchem_import', 'ai_extraction', 'ai_summary']),
+    methodVersion: z.string().trim().min(1),
+    retrievedAt: z.string().datetime({ offset: true }),
+    generatedAt: z.string().datetime({ offset: true }).optional(),
+    checkedAt: z.string().datetime({ offset: true }),
+    sourceChecksum: z.string().regex(/^sha256:[a-f0-9]{64}$/).optional(),
+    model: z.string().trim().min(1).optional(),
+    promptVersion: z.string().trim().min(1).optional(),
+  }).superRefine((value, context) => {
+    if ((value.method === 'ai_extraction' || value.method === 'ai_summary')
+      && (!value.generatedAt || !value.model || !value.promptVersion)) {
+      context.addIssue({
+        code: 'custom',
+        message: 'AI-derived assertions require generatedAt, model, and promptVersion.',
+      });
+    }
+  }),
+  validation: z.object({
+    status: z.enum(['passed', 'failed', 'quarantined']),
+    checkedAt: z.string().datetime({ offset: true }),
+    checks: z.array(z.string().trim().min(1)).min(1),
+  }),
+  alternatives: z.array(z.object({
+    value: z.string().trim().min(1),
+    citationIds: z.array(z.string().trim().min(1)).min(1),
+    note: z.string().trim().min(1),
+  })).optional(),
 });
 
 export const taxonomySchema = z.object({
@@ -117,6 +187,46 @@ export const toxinComponentSchema = z.object({
   evidence: evidenceAssessmentSchema,
 });
 
+export const molecularIdentitySchema = z.discriminatedUnion('kind', [
+  z.object({ kind: z.literal('compound_group'), groupName: z.string().trim().min(1) }),
+  z.object({
+    kind: z.literal('exact_stereoisomer'),
+    stereochemistry: z.string().trim().min(1),
+    isomericSmiles: z.string().trim().min(1),
+    inchi: z.string().startsWith('InChI='),
+    inchiKey: z.string().regex(/^[A-Z]{14}-[A-Z]{10}-[A-Z]$/),
+  }),
+  z.object({ kind: z.literal('salt'), parentMolecularEntityId: z.string().trim().min(1), saltForm: z.string().trim().min(1) }),
+  z.object({ kind: z.literal('protonation_state'), parentMolecularEntityId: z.string().trim().min(1), formalCharge: z.number().int() }),
+  z.object({ kind: z.literal('protein_isoform'), accession: z.string().trim().min(1), isoform: z.string().trim().min(1) }),
+  z.object({ kind: z.literal('protein_serotype'), accession: z.string().trim().min(1), serotype: z.string().trim().min(1) }),
+  z.object({ kind: z.literal('biological_mixture'), components: z.array(z.string().trim().min(1)).min(2) }),
+]);
+
+export const compoundOccurrenceSchema = z.object({
+  id: z.string().trim().min(1),
+  molecularEntityId: z.string().trim().min(1),
+  organismSlug: z.string().trim().min(1),
+  toxicMaterialId: z.string().trim().min(1),
+  relationship: z.enum(['confirmed_component', 'reported_component', 'trace_component', 'not_quantified']),
+  summary: z.string().trim().min(1),
+  evidence: evidenceAssessmentSchema,
+});
+
+export const aiExtractionDraftSchema = z.object({
+  label: z.string().trim().min(1),
+  text: z.string().trim().min(1),
+  conditions: z.array(z.object({ name: z.string().trim().min(1), value: z.string().trim().min(1) })).default([]),
+  applicability: z.object({
+    evidenceContext: z.enum(['human_clinical', 'animal', 'in_vitro', 'ex_vivo', 'inference']),
+    species: z.string().trim().min(1).optional(),
+    model: z.string().trim().min(1).optional(),
+    summary: z.string().trim().min(1),
+  }),
+  locator: z.string().trim().min(1),
+  alternatives: z.array(z.object({ value: z.string().trim().min(1), note: z.string().trim().min(1) })).optional(),
+});
+
 export const molecularEntitySchema = z.object({
   id: z.string(),
   toxinId: z.string(),
@@ -125,7 +235,9 @@ export const molecularEntitySchema = z.object({
   formula: z.string().nullable(),
   molecularWeight: z.number().nullable(),
   structureDataSource: z.string().nullable(),
+  identity: molecularIdentitySchema.optional(),
   evidence: evidenceAssessmentSchema,
+  assertions: z.array(claimAssertionSchema).default([]),
 });
 
 export const molecularStructureAssetSchema = z.object({
@@ -202,6 +314,7 @@ export const physiologicalEffectSchema = z.object({
   description: z.string(),
   order: z.number().int(),
   evidence: evidenceAssessmentSchema,
+  assertions: z.array(claimAssertionSchema).default([]),
 });
 
 export const geographicRangeSchema = z.object({
@@ -269,6 +382,7 @@ export const atlasSeedSchema = z.object({
   toxicMaterials: z.array(toxicMaterialSchema),
   toxins: z.array(toxinSchema),
   toxinComponents: z.array(toxinComponentSchema),
+  compoundOccurrences: z.array(compoundOccurrenceSchema).default([]),
   molecularEntities: z.array(molecularEntitySchema),
   molecularStructureAssets: z.array(molecularStructureAssetSchema),
   molecularTargets: z.array(molecularTargetSchema),

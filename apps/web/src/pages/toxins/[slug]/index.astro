@@ -2,6 +2,7 @@
 import PageLayout from '../../../layouts/PageLayout.astro';
 import EvidenceBadge from '../../../components/astro/EvidenceBadge.astro';
 import CitationList from '../../../components/astro/CitationList.astro';
+import { ClaimCitationDisplay } from '../../../components/ClaimCitationDisplay';
 import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { MoleculeViewer } from '../../../molecular/components/MoleculeViewer';
 import type { MolecularRepresentation } from '@venom-atlas/visualization-contracts';
@@ -54,6 +55,10 @@ const model = {
 };
 
 const citations = getCitationsByIds(toxinBundle.molecularEntity.evidence.citationIds);
+const assertions = (toxinBundle.molecularEntity.assertions ?? []).map((assertion) => ({
+  ...assertion,
+  citations: getCitationsByIds(assertion.sourceLocators.map((locator) => locator.citationId)),
+}));
 ---
 
 <PageLayout title={`${toxinBundle.toxin.displayName} | Venom Atlas`} description="Molecular identity and structure evidence.">
@@ -71,6 +76,7 @@ const citations = getCitationsByIds(toxinBundle.molecularEntity.evidence.citatio
       <strong>Structure-data source:</strong>{' '}
       {toxinBundle.molecularEntity.structureDataSource ?? 'Data not yet sourced.'}
     </p>
+    <ClaimCitationDisplay assertions={assertions} />
   </section>
 
   <MoleculeViewer client:visible model={model} />

@@ -27,6 +27,20 @@
     doi: null
     accessedAt: '2026-07-23'
     sourceType: other
+  - id: cit-ncbi-fire-ant-bites
+    slug: ncbi-fire-ant-bites
+    title: Fire Ant Bites
+    authors:
+      - Brian Kruse
+      - Jackie Anderson
+      - Leslie V. Simon
+    publisher: StatPearls Publishing via NCBI Bookshelf
+    publicationYear: 2023
+    url: https://www.ncbi.nlm.nih.gov/books/NBK470576/
+    doi: null
+    pmid: '29261949'
+    accessedAt: '2026-09-08'
+    sourceType: government
   - id: cit-antwiki-sinvicta
     slug: antwiki-solenopsis-invicta
     title: Solenopsis invicta

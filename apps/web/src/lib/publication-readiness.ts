@@ -1,4 +1,4 @@
-import type { EvidenceAssessment } from '@venom-atlas/domain';
+import type { ClaimAssertion, EvidenceAssessment } from '@venom-atlas/domain';
 import type { ContentRecords } from './content';
 import { auditContentGraph } from './content-graph-audit';
 
@@ -34,6 +34,10 @@ export const selectPublicationContent = (content: ContentRecords, slugs: Set<str
       ? toxicMaterials.some((entry) => entry.slug === subject.slug) : toxins.some((entry) => entry.slug === subject.slug);
   const records = {
     organisms, toxicMaterials, toxins,
+    compoundOccurrences: content.compoundOccurrences.filter((entry) =>
+      toxins.some((toxin) => toxin.molecularEntity.id === entry.molecularEntityId)
+      && slugs.has(entry.organismSlug)
+      && toxicMaterials.some((material) => material.id === entry.toxicMaterialId)),
     mechanisms: content.mechanisms.filter((entry) => subjectAllowed(entry.subject)),
     physiology: content.physiology.filter((entry) => subjectAllowed(entry.subject)),
     geography: content.geography.filter((entry) => slugs.has(entry.organismSlug)),
@@ -71,6 +75,16 @@ export const evaluatePublicationReadiness = (content: ContentRecords, assetValid
       && evidence.citationIds.length > 0 && evidence.citationIds.every(citationPublic);
     const requireSupport = (section: PublicationSection, evidence: EvidenceAssessment, location: string) => {
       if (!support(evidence)) fail(section, 'public_source_required', location);
+    };
+    const requireAssertionsReady = (section: PublicationSection, assertions: ClaimAssertion[] | undefined) => {
+      for (const assertion of assertions ?? []) {
+        if (assertion.validation.status !== 'passed') {
+          fail(section, 'assertion_validation_required', assertion.id);
+        }
+        if (!assertion.sourceLocators.every((locator) => citationPublic(locator.citationId))) {
+          fail(section, 'assertion_public_source_required', assertion.id);
+        }
+      }
     };
     const checkAsset = (section: PublicationSection, publicPath: string) => {
       if (!assetValid(publicPath)) fail(section, 'invalid_asset', publicPath);
@@ -119,6 +133,7 @@ export const evaluatePublicationReadiness = (content: ContentRecords, assetValid
     for (const toxin of slice.toxins) {
       requireSupport('chemistry', toxin.evidence, toxin.id);
       requireSupport('chemistry', toxin.molecularEntity.evidence, toxin.molecularEntity.id);
+      requireAssertionsReady('chemistry', toxin.molecularEntity.assertions);
       const molecule = toxin.molecularEntity;
       if (!molecule.displayName.trim() || !meaningful(toxin.notes)) fail('chemistry', 'identity_context_required', toxin.id);
       if (molecule.molecularClass === 'small_molecule' && (!molecule.formula || !(Number(molecule.molecularWeight) > 0) || !molecule.structureDataSource)) {
@@ -137,7 +152,10 @@ export const evaluatePublicationReadiness = (content: ContentRecords, assetValid
     }
     if (physiology) {
       if (!physiology.applicability || !meaningful(physiology.applicability.summary)) fail('medical-effects', 'applicability_required', physiology.id);
-      for (const effect of physiology.effects) requireSupport('medical-effects', effect.evidence, effect.id);
+      for (const effect of physiology.effects) {
+        requireSupport('medical-effects', effect.evidence, effect.id);
+        requireAssertionsReady('medical-effects', effect.assertions);
+      }
     }
     for (const issue of auditContentGraph(slice).issues) fail('pipeline', issue.code, issue.path);
     const sections = Object.fromEntries(publicationSections.map((section) => {

@@ -1,6 +1,7 @@
 import { lazy, Suspense, type ReactNode } from 'react';
 import type { Citation } from '@venom-atlas/domain';
 import { CitationList } from '../components/CitationList';
+import { ClaimCitationDisplay } from '../components/ClaimCitationDisplay';
 import { EvidenceBadge } from '../components/EvidenceBadge';
 import { appPath } from '../lib/paths';
 import type { AtlasMechanismStep, AtlasOrganismData, AtlasProvenance } from '../features/atlas/atlas-types';
@@ -221,10 +222,18 @@ const AtlasMonopageHost = ({
                   <div className="chemistry-summary-layout">
                     <div className="chemistry-summary-copy">
                       <p><strong>Molecular class:</strong> {toxin.molecularClass.replaceAll('_', ' ')}</p>
+                      {toxin.identity ? <p><strong>Identity:</strong> {toxin.identity.kind.replaceAll('_', ' ')}{toxin.identity.kind === 'exact_stereoisomer' ? ` · ${toxin.identity.stereochemistry} · ${toxin.identity.inchiKey}` : ''}</p> : null}
                       {toxin.formula ? <p><strong>Formula:</strong> {renderChemicalFormula(toxin.formula)}</p> : null}
                       {toxin.molecularWeight !== null ? <p><strong>Molecular weight:</strong> {toxin.molecularWeight} g/mol</p> : null}
                       {toxin.structureDataSource ? <p><strong>Structure source:</strong> {toxin.structureDataSource}</p> : null}
                       <Provenance value={toxin.identityProvenance} label="Molecular identity sources" />
+                      <ClaimCitationDisplay assertions={toxin.assertions} />
+                      {toxin.occurrences.map((occurrence) => (
+                        <div key={occurrence.id}>
+                          <p><strong>Occurrence:</strong> {occurrence.summary}</p>
+                          <Provenance value={occurrence.provenance} label="Occurrence sources" />
+                        </div>
+                      ))}
                     </div>
                     {toxin.structure2dUrl ? (
                       <figure className="chemistry-summary-2d">
@@ -300,6 +309,7 @@ const AtlasMonopageHost = ({
                       <span className="atlas-effect-scope">Organism exposure · {effect.pathwayType.replaceAll('_', ' ')}</span>
                       <h3>{effect.title}</h3><p>{effect.description}</p>
                       <Provenance value={effect} label={`Sources for ${effect.title}`} />
+                      <ClaimCitationDisplay assertions={effect.assertions} />
                     </div>
                   </li>
                 ))}

@@ -1,0 +1,14 @@
+{
+  "label": "Systemic allergic reaction after fire ant sting",
+  "text": "Fire ant stings usually cause local reactions, but sensitized people can develop systemic allergic reactions including anaphylaxis.",
+  "conditions": [
+    { "name": "susceptibility", "value": "prior sensitization may increase risk" }
+  ],
+  "applicability": {
+    "evidenceContext": "human_clinical",
+    "species": "Homo sapiens",
+    "model": "clinical review",
+    "summary": "Applies to human fire ant sting exposure; it does not establish the frequency or severity for an individual exposure."
+  },
+  "locator": "Pathophysiology; History and Physical"
+}

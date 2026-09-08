@@ -1,0 +1,19 @@
+{
+  "jobs": [
+    {
+      "subject": "solenopsis-invicta",
+      "metadataCache": "content-source/import-cache/citations/pmid-29261949.json",
+      "sourceCache": "content-source/import-cache/retrieved/pmid-29261949.json",
+      "responseCache": "content-source/import-cache/extractions/claim-fire-ant-systemic-allergy.json",
+      "extraction": {
+        "assertionId": "claim-fire-ant-systemic-allergy",
+        "claimType": "clinical",
+        "subjectKind": "organism_exposure",
+        "subjectSlug": "solenopsis-invicta",
+        "model": "cached-model-output",
+        "promptVersion": "milestone-2-clinical-assertion-v1",
+        "generatedAt": "2026-09-08T00:00:00Z"
+      }
+    }
+  ]
+}

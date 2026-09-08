@@ -1,0 +1,39 @@
+{
+  "provider": "NCBI PubMed",
+  "identifier": {
+    "kind": "pmid",
+    "value": "29261949"
+  },
+  "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=29261949&retmode=json",
+  "retrievedAt": "2026-09-08T00:00:00Z",
+  "payloadChecksum": "sha256:da184b85a37a97ce33b95cf97177c2d0bbc8bce099522f7415aae55b6c928a7d",
+  "payload": {
+    "header": {
+      "type": "esummary",
+      "version": "0.3"
+    },
+    "result": {
+      "uids": ["29261949"],
+      "29261949": {
+        "uid": "29261949",
+        "pubdate": "2026 Jan",
+        "authors": [
+          { "name": "Kruse B", "authtype": "Author", "clusterid": "" },
+          { "name": "Anderson J", "authtype": "Author", "clusterid": "" },
+          { "name": "Simon LV", "authtype": "Author", "clusterid": "" }
+        ],
+        "title": "Fire Ant Bites.",
+        "pubtype": ["Study Guide"],
+        "articleids": [
+          { "idtype": "bookaccession", "idtypen": 8, "value": "NBK470576" },
+          { "idtype": "pubmed", "idtypen": 1, "value": "29261949" }
+        ],
+        "booktitle": "StatPearls",
+        "publishername": "StatPearls Publishing",
+        "availablefromurl": "http://www.ncbi.nlm.nih.gov/books/NBK470576/",
+        "docdate": "2023 Aug 7",
+        "sortpubdate": "2023/08/07 00:00"
+      }
+    }
+  }
+}

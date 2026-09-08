@@ -74,6 +74,10 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
           notes: toxinEntry.toxin.notes,
           provenance: provenance(toxinEntry.toxin.evidence),
           identityProvenance: provenance(toxinEntry.molecularEntity.evidence),
+          assertions: (toxinEntry.molecularEntity.assertions ?? []).map((assertion) => ({
+            ...assertion,
+            citations: publicCitations(assertion.sourceLocators.map((locator) => locator.citationId)),
+          })),
           targets: toxinEntry.targets.map((target) => ({
             id: target.id,
             targetName: target.targetName,
@@ -89,6 +93,15 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
             citations: publicCitations(asset.citationId ? [asset.citationId] : []),
           }] : []),
           molecularClass: toxinEntry.molecularEntity.molecularClass,
+          ...(toxinEntry.molecularEntity.identity ? { identity: toxinEntry.molecularEntity.identity } : {}),
+          occurrences: toxinEntry.occurrences.map((occurrence) => ({
+            id: occurrence.id,
+            organismSlug: occurrence.organismSlug,
+            toxicMaterialId: occurrence.toxicMaterialId,
+            relationship: occurrence.relationship,
+            summary: occurrence.summary,
+            provenance: provenance(occurrence.evidence),
+          })),
           formula: toxinEntry.molecularEntity.formula,
           molecularWeight: toxinEntry.molecularEntity.molecularWeight,
           structureDataSource: toxinEntry.molecularEntity.structureDataSource,
@@ -249,6 +262,10 @@ export const buildAtlasMonopageOrganisms = (): AtlasOrganismData[] => {
                 anatomicalSystemId: effect.anatomicalSystemId,
                 evidence: effect.evidence,
                 citations: publicCitations(effect.evidence.citationIds),
+                assertions: (effect.assertions ?? []).map((assertion) => ({
+                  ...assertion,
+                  citations: publicCitations(assertion.sourceLocators.map((locator) => locator.citationId)),
+                })),
               })),
             }
           : null,

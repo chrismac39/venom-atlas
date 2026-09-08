@@ -367,24 +367,25 @@ Keep external URL checks separate from deterministic builds. Retry or flag inacc
 
 ### Milestone 2 — Evidence schema and practical research workflow
 
+**Status:** complete 2026-09-08; cached ingestion, automated readiness gating, claim backlinks, and scheduled source maintenance verified.
 **Priority:** P0/P1. **Effort:** large. **Dependency:** integrity work in milestone 1. Begin with one property and one clinical claim end to end, not a universal ontology rewrite.
 
-- [ ] Define a minimal reusable claim/property assertion model with scope, units, source locators, conditions, provenance, and automated validation status.
-- [ ] Separate retrieval/generation/check timestamps from source publication/version dates; never manufacture a scientific review date.
-- [ ] Add applicability for human clinical evidence, animal evidence, in-vitro/ex-vivo studies, and inference; retain species/model details.
-- [ ] Support conflicting findings and missing-data reasons without selecting an unjustifiably precise single value.
-- [ ] Consolidate authoritative source schemas outside the web UI layer; keep domain/view-model boundaries clear and test migrations.
-- [ ] Model a compound's occurrence in multiple organisms/materials as explicit associations; avoid duplicating the chemical identity to satisfy single ownership.
-- [ ] Separate compound groups, exact stereoisomers, salts/protonation states, protein isoforms/serotypes, and biological mixtures.
-- [ ] Implement source-metadata import for DOI/PMID/accessions with caching, duplicate detection, provider rate limits, and reviewable diffs.
-- [ ] Implement a bounded PubChem identity/structure import first; refuse ambiguous identity matches rather than guessing.
-- [ ] Store import method/version and source checksums or identifiers where redistribution permits; keep reproducible snapshots of permissible data.
-- [ ] Implement AI extraction/summarization over retrieved source content, retaining claim-to-source locators and model/prompt versions. Treat retrieved pages as untrusted data, not instructions to the ingestion agent.
-- [ ] Automatically publish when all four sections pass the readiness contract; quarantine/retry insufficient or failed results without requiring routine human approval.
-- [ ] Implement a repeatable pipeline: discover → retrieve/cache → extract assertions/applicability → summarize → validate → evaluate readiness → publish.
-- [ ] Create a shared claim-citation display usable in both Astro and React, with an accessible source disclosure and backlinks from sources to claims.
-- [ ] Keep URL health/retraction/update checks as explicit or scheduled maintenance, separate from ordinary offline builds.
-- [ ] Provide a build-time coverage report by organism, section, claim, and automated validation status, including why each unpublished organism is blocked.
+- [x] Define a minimal reusable claim/property assertion model with scope, units, source locators, conditions, provenance, and automated validation status.
+- [x] Separate retrieval/generation/check timestamps from source publication/version dates; never manufacture a scientific review date.
+- [x] Add applicability for human clinical evidence, animal evidence, in-vitro/ex-vivo studies, and inference; retain species/model details.
+- [x] Support conflicting findings and missing-data reasons without selecting an unjustifiably precise single value.
+- [x] Consolidate authoritative source schemas outside the web UI layer; keep domain/view-model boundaries clear and test migrations.
+- [x] Model a compound's occurrence in multiple organisms/materials as explicit associations; avoid duplicating the chemical identity to satisfy single ownership.
+- [x] Separate compound groups, exact stereoisomers, salts/protonation states, protein isoforms/serotypes, and biological mixtures.
+- [x] Implement source-metadata import for DOI/PMID/accessions with caching, duplicate detection, provider rate limits, and reviewable diffs.
+- [x] Implement a bounded PubChem identity/structure import first; refuse ambiguous identity matches rather than guessing.
+- [x] Store import method/version and source checksums or identifiers where redistribution permits; keep reproducible snapshots of permissible data.
+- [x] Implement AI extraction/summarization over retrieved source content, retaining claim-to-source locators and model/prompt versions. Treat retrieved pages as untrusted data, not instructions to the ingestion agent.
+- [x] Automatically publish when all four sections pass the readiness contract; quarantine/retry insufficient or failed results without requiring routine human approval.
+- [x] Implement a repeatable pipeline: discover → retrieve/cache → extract assertions/applicability → summarize → validate → evaluate readiness → publish.
+- [x] Create a shared claim-citation display usable in both Astro and React, with an accessible source disclosure and backlinks from sources to claims.
+- [x] Keep URL health/retraction/update checks as explicit or scheduled maintenance, separate from ordinary offline builds.
+- [x] Provide a build-time coverage report by organism, section, claim, and automated validation status, including why each unpublished organism is blocked.
 
 **Exit:** one imported chemical property and one AI-summarized clinical assertion can be traced from rendered UI to retrieved source support; conflicting/unknown values remain explicit. A complete test dossier publishes automatically, while incomplete fixtures stay hidden. Rebuilding from cached outputs requires no live AI service; ingestion credentials never reach the public site.
 

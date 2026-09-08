@@ -1,0 +1,22 @@
+{
+  "provider": "PubChem PUG REST",
+  "endpoint": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/107941/property/Title,MolecularFormula,MolecularWeight,IsomericSMILES,InChI,InChIKey/JSON",
+  "retrievedAt": "2026-09-08T00:00:00Z",
+  "sourceVersionDate": "2025-04-14",
+  "payloadChecksum": "sha256:9ae9690d7db6eed537e1b52e0dbfc9f7fbb753138dab366216fa4953ef8e916b",
+  "payload": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 107941,
+          "Title": "Solenopsin A",
+          "MolecularFormula": "C17H35N",
+          "MolecularWeight": "253.5",
+          "SMILES": "CCCCCCCCCCC[C@H]1CCC[C@@H](N1)C",
+          "InChI": "InChI=1S/C17H35N/c1-3-4-5-6-7-8-9-10-11-14-17-15-12-13-16(2)18-17/h16-18H,3-15H2,1-2H3/t16-,17-/m0/s1",
+          "InChIKey": "AYJGABFBAYKWDX-IRXDYDNUSA-N"
+        }
+      ]
+    }
+  }
+}

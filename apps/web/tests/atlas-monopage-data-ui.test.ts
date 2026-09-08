@@ -52,6 +52,7 @@ beforeEach(() => {
       ...toxin, id: 'molecule', toxinId: 'fixture-toxin',
       evidence: { ...toxin.identityProvenance.evidence, citationIds: ['identity', 'internal', 'identity'] },
     },
+    occurrences: [],
     targets: toxin.targets.map((target) => ({ ...target, toxinId: 'fixture-toxin', targetType: 'unknown', evidence: target.provenance.evidence })),
     structureAssets: [
       { id: '2d', molecularEntityId: 'molecule', localPath: '/structures/fixture.svg', format: 'svg', verified: true, citationId: '2d', structureStatus: 'computed' },
@@ -153,5 +154,24 @@ describe('atlas UI view-model boundary', () => {
     expect(organisms[0]?.featuredToxin).toBeNull();
     expect(content.getMechanismByToxinSlug).not.toHaveBeenCalled();
     expect(content.getContentRecords).not.toHaveBeenCalled();
+  });
+});
+
+describe('authored assertion traceability', () => {
+  it('loads the cached Fire Ant property and clinical assertions with public sources', async () => {
+    vi.resetModules();
+    vi.doUnmock('../src/lib/content');
+    const [{ buildAtlasMonopageOrganisms: buildRealOrganisms }] = await Promise.all([
+      import('../src/lib/atlas-monopage-data'),
+      import('../src/lib/content'),
+    ]);
+    const fireAnt = buildRealOrganisms().find((entry) => entry.slug === 'solenopsis-invicta');
+    const property = fireAnt?.toxins.flatMap((toxin) => toxin.assertions).find((entry) => entry.id === 'claim-solenopsin-a-molecular-weight');
+    const clinical = fireAnt?.physiology?.effects.flatMap((effect) => effect.assertions).find((entry) => entry.id === 'claim-fire-ant-systemic-allergy');
+
+    expect(property?.validation.status).toBe('passed');
+    expect(property?.citations[0]?.id).toBe('cit-pubchem-solenopsin-a');
+    expect(clinical?.validation.status).toBe('passed');
+    expect(clinical?.citations[0]?.id).toBe('cit-ncbi-fire-ant-bites');
   });
 });

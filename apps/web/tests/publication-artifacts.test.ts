@@ -8,7 +8,7 @@ import { publicationAssetPaths, publicationDataPaths, resolvePublicationPath, st
 import { buildSitemap } from '../src/lib/sitemap';
 
 const empty = (): ContentRecords => ({
-  organisms: [], toxicMaterials: [], toxins: [], geography: [], mechanisms: [], physiology: [], citations: [], media: [],
+  organisms: [], toxicMaterials: [], toxins: [], compoundOccurrences: [], geography: [], mechanisms: [], physiology: [], citations: [], media: [],
 });
 const temporary: string[] = [];
 afterEach(() => temporary.splice(0).forEach((directory) => rmSync(directory, { recursive: true, force: true })));

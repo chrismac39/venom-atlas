@@ -68,6 +68,8 @@ export const atlasUiFixture = (): AtlasOrganismData => ({
     molecularWeight: 30, structureDataSource: 'Fixture structure source',
     structure2dUrl: '/structures/fixture.svg',
     provenance: fixtureProvenance('toxin'), identityProvenance: fixtureProvenance('identity'),
+    assertions: [],
+    occurrences: [],
     evidence: fixtureProvenance('identity').evidence, citations: [fixtureCitation('identity')],
     targets: [{ id: 'target', targetName: 'Fixture target', summary: 'Fixture target description.', provenance: fixtureProvenance('target') }],
     mechanismSteps: [fixtureStep('compound-step', 'molecular', 1, 'isolated_compound')],
@@ -82,6 +84,7 @@ export const atlasUiFixture = (): AtlasOrganismData => ({
     effects: [{
       id: 'effect', order: 1, title: 'Fixture effect', description: 'Fixture effect description.',
       pathwayType: 'direct_venom', anatomicalSystemId: 'system', ...fixtureProvenance('effect'),
+      assertions: [],
     }],
   },
   citations: [fixtureCitation('organism')],

@@ -2,7 +2,7 @@
 import PageLayout from '../../layouts/PageLayout.astro';
 import { appPath } from '../../lib/paths';
 import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
-import { getCitationBySlug, getPublicCitations } from '../../lib/content';
+import { getCitationBySlug, getPublicCitations, getPublicClaimReferencesByCitationId } from '../../lib/content';
 
 export const getStaticPaths = async () => {
   return getPublicCitations().flatMap((citation) =>
@@ -19,6 +19,7 @@ if (!citation) {
 if (slug !== citation.slug) {
   return Astro.redirect(appPath(`/sources/${citation.slug}`), 301);
 }
+const claimReferences = getPublicClaimReferencesByCitationId(citation.id);
 ---
 
 <PageLayout title={`${citation.title} | Sources | Venom Atlas`} description="Citation detail page.">
@@ -37,6 +38,16 @@ if (slug !== citation.slug) {
       </p>
     ) : (
       <p class="muted">Source URL unavailable.</p>
+    )}
+    <h2>Cited by claims</h2>
+    {claimReferences.length ? (
+      <ul>
+        {claimReferences.map((reference) => (
+          <li><a href={appPath(reference.route)}>{reference.label}</a> ({reference.subjectLabel})</li>
+        ))}
+      </ul>
+    ) : (
+      <p class="muted">No published structured claims currently cite this source.</p>
     )}
     <p><a href={appPath('/sources')}>Back to all sources</a></p>
   </section>

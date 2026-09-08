@@ -1,10 +1,12 @@
-import type { Citation, EvidenceAssessment, MechanismStep, ToxinComponent } from '@venom-atlas/domain';
+import type { ClaimAssertion, Citation, EvidenceAssessment, MechanismStep, ToxinComponent } from '@venom-atlas/domain';
 import type { MoleculeRenderModel } from '../../molecular/types';
 
 export interface AtlasProvenance {
   evidence: EvidenceAssessment;
   citations: Citation[];
 }
+
+export type AtlasClaimAssertion = ClaimAssertion & { citations: Citation[] };
 
 export type AtlasMechanismStep = MechanismStep & {
   subject: { kind: 'organism_exposure' | 'whole_material' | 'isolated_compound'; slug: string };
@@ -108,6 +110,7 @@ export interface AtlasOrganismData {
     notes?: string;
     provenance: AtlasProvenance;
     identityProvenance: AtlasProvenance;
+    assertions: AtlasClaimAssertion[];
     targets: Array<{ id: string; targetName: string; summary: string; provenance: AtlasProvenance }>;
     mechanismSteps: AtlasMechanismStep[];
     structureSources: Array<{
@@ -118,6 +121,15 @@ export interface AtlasOrganismData {
       citations: Citation[];
     }>;
     molecularClass: MoleculeRenderModel['molecularClass'];
+    identity?: import('@venom-atlas/domain').MolecularIdentity;
+    occurrences: Array<{
+      id: string;
+      organismSlug: string;
+      toxicMaterialId: string;
+      relationship: string;
+      summary: string;
+      provenance: AtlasProvenance;
+    }>;
     formula: string | null;
     molecularWeight: number | null;
     structureDataSource: string | null;
@@ -182,6 +194,7 @@ export interface AtlasOrganismData {
       anatomicalSystemId: string;
       evidence: EvidenceAssessment;
       citations: Citation[];
+      assertions: AtlasClaimAssertion[];
     }>;
   } | null;
   citations: Citation[];

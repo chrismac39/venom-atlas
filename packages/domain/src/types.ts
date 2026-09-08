@@ -17,6 +17,8 @@ export interface Citation {
   publicationYear?: number | undefined;
   url?: string | undefined;
   doi?: string | undefined;
+  pmid?: string | undefined;
+  accession?: string | undefined;
   accessedAt?: string | undefined;
   visibility?: 'public' | 'internal' | undefined;
   sourceType:
@@ -33,6 +35,56 @@ export interface EvidenceAssessment {
   reviewStatus?: EvidenceReviewStatus | undefined;
   causalScope?: EvidenceCausalScope | undefined;
   publicUncertaintyStatement?: string | undefined;
+}
+
+export type ClaimValue =
+  | { kind: 'number'; amount: number; unit: string }
+  | { kind: 'text'; text: string }
+  | {
+      kind: 'unknown';
+      reason: 'not_reported' | 'not_studied' | 'insufficient_evidence' | 'not_applicable';
+      detail?: string | undefined;
+    };
+
+export interface ClaimAssertion {
+  id: string;
+  claimType: 'property' | 'clinical';
+  label: string;
+  value: ClaimValue;
+  scope: {
+    subjectKind: 'organism_exposure' | 'whole_material' | 'isolated_compound';
+    subjectSlug: string;
+    property?: string | undefined;
+  };
+  conditions: Array<{ name: string; value: string }>;
+  applicability: {
+    evidenceContext: 'human_clinical' | 'animal' | 'in_vitro' | 'ex_vivo' | 'inference';
+    species?: string | undefined;
+    model?: string | undefined;
+    summary: string;
+  };
+  sourceLocators: Array<{
+    citationId: string;
+    locator: string;
+    sourceIdentifier?: string | undefined;
+    sourceVersionDate?: string | undefined;
+  }>;
+  provenance: {
+    method: 'manual' | 'metadata_import' | 'pubchem_import' | 'ai_extraction' | 'ai_summary';
+    methodVersion: string;
+    retrievedAt: string;
+    generatedAt?: string | undefined;
+    checkedAt: string;
+    sourceChecksum?: string | undefined;
+    model?: string | undefined;
+    promptVersion?: string | undefined;
+  };
+  validation: {
+    status: 'passed' | 'failed' | 'quarantined';
+    checkedAt: string;
+    checks: string[];
+  };
+  alternatives?: Array<{ value: string; citationIds: string[]; note: string }> | undefined;
 }
 
 export interface Taxonomy {
@@ -120,6 +172,25 @@ export interface ToxinComponent {
 
 export type MolecularClass = 'small_molecule' | 'peptide' | 'protein' | 'complex';
 
+export type MolecularIdentity =
+  | { kind: 'compound_group'; groupName: string }
+  | { kind: 'exact_stereoisomer'; stereochemistry: string; isomericSmiles: string; inchi: string; inchiKey: string }
+  | { kind: 'salt'; parentMolecularEntityId: string; saltForm: string }
+  | { kind: 'protonation_state'; parentMolecularEntityId: string; formalCharge: number }
+  | { kind: 'protein_isoform'; accession: string; isoform: string }
+  | { kind: 'protein_serotype'; accession: string; serotype: string }
+  | { kind: 'biological_mixture'; components: string[] };
+
+export interface CompoundOccurrence {
+  id: string;
+  molecularEntityId: string;
+  organismSlug: string;
+  toxicMaterialId: string;
+  relationship: 'confirmed_component' | 'reported_component' | 'trace_component' | 'not_quantified';
+  summary: string;
+  evidence: EvidenceAssessment;
+}
+
 export interface MolecularEntity {
   id: string;
   toxinId: string;
@@ -128,7 +199,9 @@ export interface MolecularEntity {
   formula: string | null;
   molecularWeight: number | null;
   structureDataSource: string | null;
+  identity?: MolecularIdentity | undefined;
   evidence: EvidenceAssessment;
+  assertions?: ClaimAssertion[] | undefined;
 }
 
 export interface MolecularStructureAsset {
@@ -197,6 +270,7 @@ export interface PhysiologicalEffect {
   description: string;
   order: number;
   evidence: EvidenceAssessment;
+  assertions?: ClaimAssertion[] | undefined;
 }
 
 export type GeographicLayerType =
@@ -299,6 +373,7 @@ export interface AtlasSeedData {
   toxicMaterials: ToxicMaterial[];
   toxins: Toxin[];
   toxinComponents: ToxinComponent[];
+  compoundOccurrences?: CompoundOccurrence[] | undefined;
   molecularEntities: MolecularEntity[];
   molecularStructureAssets: MolecularStructureAsset[];
   molecularTargets: MolecularTarget[];

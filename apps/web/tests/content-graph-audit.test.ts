@@ -169,7 +169,23 @@ describe('authored content graph integrity', () => {
       content.toxins[0]!.toxicMaterialId = 'missing-material';
       content.mechanisms[0]!.subject.slug = 'missing-subject';
     });
-    expect(issues.filter((issue) => issue.code === 'invalid_reference')).toHaveLength(4);
+    expect(issues.filter((issue) => issue.code === 'invalid_reference')).toHaveLength(5);
+  });
+
+  it('keeps compound identity independent from organism/material occurrences', () => {
+    const content = fixture();
+    expect(content.compoundOccurrences).toEqual([
+      expect.objectContaining({
+        molecularEntityId: 'mol-solenopsin-a',
+        organismSlug: 'solenopsis-invicta',
+        toxicMaterialId: 'ven-fire-ant-primary',
+      }),
+    ]);
+    content.compoundOccurrences.push({
+      ...structuredClone(content.compoundOccurrences[0]!),
+      id: 'duplicate-occurrence-id',
+    });
+    expect(auditContentGraph(content).issues.some((issue) => issue.code === 'duplicate_compound_occurrence')).toBe(true);
   });
 
   it.each(['internal_only', 'editorial_with_public_citation', 'no_citations', 'review_label_only'])(
