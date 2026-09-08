@@ -1,6 +1,17 @@
 {
   "organismSlug": "solenopsis-invicta",
   "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "country",
+    "evidenceIds": [
+      "ev-solenopsis-invicta-native-range"
+    ],
+    "citationIds": [
+      "cit-fire-ant-review-2007"
+    ],
+    "note": "The cited review supports the five country-level native claims below; introduced populations remain documented presence unless separately sourced."
+  },
   "ranges": [
     {
       "id": "geo-solenopsis-native-range",

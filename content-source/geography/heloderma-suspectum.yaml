@@ -1,6 +1,14 @@
 ﻿id: geo-heloderma-suspectum
 slug: heloderma-suspectum
 organismSlug: heloderma-suspectum
+sourceAudit:
+  decision: native_range_supported
+  precision: admin1
+  evidenceIds:
+    - ev-heloderma-suspectum-native-range
+  citationIds:
+    - cit-wikipedia-heloderma-suspectum-distribution
+  note: The source-supported native context is southern Arizona and Sonora; the existing ADM1 claims remain explicit and independent of occurrence points.
 distribution:
   tier: occurrence_intersection
   nativeAdmin1RegionIds:

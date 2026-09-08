@@ -1,6 +1,17 @@
 {
   "organismSlug": "androctonus-australis",
   "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "country",
+    "evidenceIds": [
+      "ev-androctonus-australis-native-range"
+    ],
+    "citationIds": [
+      "cit-wikipedia-androctonus-australis-distribution"
+    ],
+    "note": "The source describes a North African native distribution; country shading is intentionally limited to the source-supported regional claim and does not classify GBIF observations as native."
+  },
   "ranges": [
     {
       "id": "geo-androctonus-australis-confirmed-occurrences",

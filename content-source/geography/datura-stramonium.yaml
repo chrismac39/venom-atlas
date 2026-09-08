@@ -1,6 +1,14 @@
 ﻿id: geo-datura-stramonium
 slug: datura-stramonium
 organismSlug: datura-stramonium
+sourceAudit:
+  decision: native_range_supported
+  precision: admin1
+  evidenceIds:
+    - ev-datura-stramonium-native-range
+  citationIds:
+    - cit-wikipedia-datura-stramonium-distribution
+  note: Mexican ADM1 records are retained as a conservative native-origin representation; widespread introduced and naturalized populations are not converted to native status.
 distribution:
   tier: curated_source
   nativeAdmin1RegionIds:

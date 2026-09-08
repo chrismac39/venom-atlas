@@ -1,6 +1,17 @@
 {
   "organismSlug": "phyllobates-terribilis",
   "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "admin1",
+    "evidenceIds": [
+      "ev-phyllobates-terribilis-native-range"
+    ],
+    "citationIds": [
+      "cit-adw-golden-poison-frog"
+    ],
+    "note": "Animal Diversity Web supports the Colombian native context; the Cauca and Valle del Cauca ADM1 claims are kept explicit."
+  },
   "ranges": [
     {
       "id": "geo-phyllobates-confirmed-occurrences",

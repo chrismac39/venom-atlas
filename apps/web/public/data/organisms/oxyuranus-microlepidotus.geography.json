@@ -1,6 +1,17 @@
 {
   "organismSlug": "oxyuranus-microlepidotus",
   "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "admin1",
+    "evidenceIds": [
+      "ev-oxyuranus-microlepidotus-native-range"
+    ],
+    "citationIds": [
+      "cit-australian-museum-inland-taipan"
+    ],
+    "note": "The Australian Museum supports the inland Australian native context; explicit state claims are retained without treating sparse observations as the range boundary."
+  },
   "ranges": [
     {
       "id": "geo-oxyuranus-confirmed-occurrences",

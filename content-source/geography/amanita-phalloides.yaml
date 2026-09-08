@@ -1,6 +1,14 @@
 ﻿id: geo-amanita-phalloides
 slug: amanita-phalloides
 organismSlug: amanita-phalloides
+sourceAudit:
+  decision: native_range_supported
+  precision: admin1
+  evidenceIds:
+    - ev-amanita-phalloides-native-range
+  citationIds:
+    - cit-wikipedia-amanita-phalloides-distribution
+  note: Europe is treated as the native context; the current ADM1 entries are a conservative source-backed subset, while overseas records remain documented presence unless separately sourced.
 distribution:
   tier: curated_source
   nativeAdmin1RegionIds:

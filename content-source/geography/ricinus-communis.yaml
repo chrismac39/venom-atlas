@@ -1,6 +1,14 @@
 ﻿id: geo-ricinus-communis
 slug: ricinus-communis
 organismSlug: ricinus-communis
+sourceAudit:
+  decision: native_range_supported
+  precision: admin1
+  evidenceIds:
+    - ev-ricinus-communis-native-range
+  citationIds:
+    - cit-wikipedia-ricinus-communis-distribution
+  note: India is retained as a conservative native-context representation; globally naturalized records are not classified as native without separate source evidence.
 distribution:
   tier: curated_source
   nativeAdmin1RegionIds:

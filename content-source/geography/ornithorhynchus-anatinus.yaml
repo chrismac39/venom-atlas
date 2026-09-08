@@ -1,6 +1,14 @@
 ﻿id: geo-ornithorhynchus-anatinus
 slug: ornithorhynchus-anatinus
 organismSlug: ornithorhynchus-anatinus
+sourceAudit:
+  decision: native_range_supported
+  precision: admin1
+  evidenceIds:
+    - ev-ornithorhynchus-anatinus-native-range
+  citationIds:
+    - cit-australian-museum-platypus
+  note: The Australian Museum supports eastern Australia and Tasmania; the current state-level records are a conservative representation of that native range.
 distribution:
   tier: occurrence_intersection
   nativeAdmin1RegionIds:

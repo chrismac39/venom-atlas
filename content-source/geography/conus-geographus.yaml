@@ -1,6 +1,14 @@
 ﻿id: geo-conus-geographus
 slug: conus-geographus
 organismSlug: conus-geographus
+sourceAudit:
+  decision: native_range_supported
+  precision: occurrence_only
+  evidenceIds:
+    - ev-conus-geographus-native-range
+  citationIds:
+    - cit-wikipedia-conus-geographus-distribution
+  note: The source supports a tropical Indo-Pacific native context, but its marine extent is too broad for defensible ADM1 expansion; occurrence and ISEA3H evidence remain separate from that qualitative range statement.
 geographyKind: marine
 ranges:
   - id: geo-conus-geographus-confirmed-occurrences

@@ -1,6 +1,14 @@
 ﻿id: geo-eunice-aphroditois
 slug: eunice-aphroditois
 organismSlug: eunice-aphroditois
+sourceAudit:
+  decision: native_range_supported
+  precision: occurrence_only
+  evidenceIds:
+    - ev-eunice-aphroditois-native-range
+  citationIds:
+    - cit-wikipedia-eunice-aphroditois-distribution
+  note: The source describes a broad Atlantic and Indo-Pacific distribution; no terrestrial ADM1 shading is inferred from a marine species-level statement.
 geographyKind: marine
 ranges:
   - id: geo-eunice-aphroditois-confirmed-occurrences

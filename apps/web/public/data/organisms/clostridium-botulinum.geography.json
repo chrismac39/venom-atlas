@@ -1,6 +1,17 @@
 {
   "organismSlug": "clostridium-botulinum",
   "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_not_meaningful",
+    "precision": "occurrence_only",
+    "evidenceIds": [
+      "ev-clostridium-botulinum-environmental-distribution"
+    ],
+    "citationIds": [
+      "cit-wikipedia-clostridium-botulinum-distribution"
+    ],
+    "note": "This ubiquitous environmental bacterium is documented from soil, sediments, and aquatic environments rather than a bounded native biogeographic range; the map therefore remains occurrence-only."
+  },
   "ranges": [
     {
       "id": "geo-clostridium-botulinum-confirmed-occurrences",

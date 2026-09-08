@@ -133,6 +133,23 @@ describe('biological coverage expansion', () => {
     }
   });
 
+  it('requires a cited native-range decision for every organism', () => {
+    for (const organism of getAllOrganisms()) {
+      const slug = organism.organism.slug;
+      expect(slug).toBeTruthy();
+      if (!slug) {
+        continue;
+      }
+      const geography = getGeographyByOrganismSlug(slug);
+      expect(geography?.sourceAudit.evidenceIds.length).toBeGreaterThan(0);
+      expect(geography?.sourceAudit.citationIds.length).toBeGreaterThan(0);
+      expect(geography?.sourceAudit.note.length).toBeGreaterThan(0);
+    }
+
+    expect(getGeographyByOrganismSlug('clostridium-botulinum')?.sourceAudit.decision)
+      .toBe('native_range_not_meaningful');
+  });
+
   it('keeps native administrative shading independent from occurrence points', () => {
     const registry = JSON.parse(
       readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),

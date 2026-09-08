@@ -266,6 +266,13 @@ const geographyRecordSchema = z.object({
   slug: z.string(),
   organismSlug: z.string(),
   geographyKind: z.enum(['terrestrial', 'marine']).default('terrestrial'),
+  sourceAudit: z.object({
+    decision: z.enum(['native_range_supported', 'native_range_not_established', 'native_range_not_meaningful']),
+    precision: z.enum(['admin1', 'country', 'macroregion', 'occurrence_only']),
+    evidenceIds: z.array(z.string()).min(1),
+    citationIds: z.array(z.string()).min(1),
+    note: z.string(),
+  }),
   distribution: z
     .object({
       tier: z.enum(['occurrence_intersection', 'curated_source']).optional(),
@@ -476,6 +483,13 @@ export interface PhysiologyBundle {
 export interface GeographyBundle {
   organismSlug: string;
   geographyKind: 'terrestrial' | 'marine';
+  sourceAudit: {
+    decision: 'native_range_supported' | 'native_range_not_established' | 'native_range_not_meaningful';
+    precision: 'admin1' | 'country' | 'macroregion' | 'occurrence_only';
+    evidenceIds: string[];
+    citationIds: string[];
+    note: string;
+  };
   ranges: GeographicRange[];
 }
 
@@ -691,6 +705,7 @@ const loadGeographyBundles = (): GeographyBundle[] => {
     return {
       organismSlug: record.organismSlug,
       geographyKind: record.geographyKind,
+      sourceAudit: record.sourceAudit,
       ranges: record.ranges.map((entry) => {
         const geometryFeatureCount = entry.geometryAssetPath
           ? (() => {

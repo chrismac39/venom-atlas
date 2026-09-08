@@ -1,6 +1,14 @@
 ﻿id: geo-oxyuranus-microlepidotus
 slug: oxyuranus-microlepidotus
 organismSlug: oxyuranus-microlepidotus
+sourceAudit:
+  decision: native_range_supported
+  precision: admin1
+  evidenceIds:
+    - ev-oxyuranus-microlepidotus-native-range
+  citationIds:
+    - cit-australian-museum-inland-taipan
+  note: The Australian Museum supports the inland Australian native context; explicit state claims are retained without treating sparse observations as the range boundary.
 distribution:
   tier: occurrence_intersection
   nativeAdmin1RegionIds:

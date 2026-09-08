@@ -1,6 +1,14 @@
 ﻿id: geo-latrodectus-hasselti
 slug: latrodectus-hasselti
 organismSlug: latrodectus-hasselti
+sourceAudit:
+  decision: native_range_supported
+  precision: country
+  evidenceIds:
+    - ev-latrodectus-hasselti-native-range
+  citationIds:
+    - cit-australian-museum-redback
+  note: The Australian Museum supports an Australia-wide native context; the country scope is expanded to ADM1 for shading without claiming each ADM1 was individually named.
 distribution:
   tier: occurrence_intersection
   nativeScopes:

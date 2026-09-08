@@ -1,6 +1,17 @@
 {
   "organismSlug": "chironex-fleckeri",
   "geographyKind": "marine",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "country",
+    "evidenceIds": [
+      "ev-chironex-fleckeri-native-range"
+    ],
+    "citationIds": [
+      "cit-wikipedia-chironex-fleckeri-distribution"
+    ],
+    "note": "The source describes northern Australia and nearby Indo-Pacific waters; only country-level terrestrial intersections are shaded, while marine observations remain evidence layers rather than a modeled range boundary."
+  },
   "ranges": [
     {
       "id": "geo-chironex-fleckeri-confirmed-occurrences",

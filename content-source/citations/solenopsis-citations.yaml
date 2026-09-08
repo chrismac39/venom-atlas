@@ -279,3 +279,103 @@
     doi: null
     accessedAt: '2026-09-08'
     sourceType: database
+  - id: cit-australian-museum-redback
+    slug: australian-museum-redback
+    title: Redback Spider
+    authors: []
+    publisher: Australian Museum
+    publicationYear: null
+    url: https://australian.museum/learn/animals/spiders/redback-spider/
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: museum
+  - id: cit-wikipedia-amanita-phalloides-distribution
+    slug: wikipedia-amanita-phalloides-distribution
+    title: Amanita phalloides
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Amanita_phalloides
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-androctonus-australis-distribution
+    slug: wikipedia-androctonus-australis-distribution
+    title: Androctonus australis
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Androctonus_australis
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-chironex-fleckeri-distribution
+    slug: wikipedia-chironex-fleckeri-distribution
+    title: Chironex fleckeri
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Chironex_fleckeri
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-clostridium-botulinum-distribution
+    slug: wikipedia-clostridium-botulinum-distribution
+    title: Clostridium botulinum
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Clostridium_botulinum
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-conus-geographus-distribution
+    slug: wikipedia-conus-geographus-distribution
+    title: Conus geographus
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Conus_geographus
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-datura-stramonium-distribution
+    slug: wikipedia-datura-stramonium-distribution
+    title: Datura stramonium
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Datura_stramonium
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-eunice-aphroditois-distribution
+    slug: wikipedia-eunice-aphroditois-distribution
+    title: Eunice aphroditois
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Eunice_aphroditois
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-heloderma-suspectum-distribution
+    slug: wikipedia-heloderma-suspectum-distribution
+    title: Gila monster
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Gila_monster
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other
+  - id: cit-wikipedia-ricinus-communis-distribution
+    slug: wikipedia-ricinus-communis-distribution
+    title: Ricinus communis
+    authors: []
+    publisher: Wikipedia
+    publicationYear: null
+    url: https://en.wikipedia.org/wiki/Ricinus
+    doi: null
+    accessedAt: '2026-09-08'
+    sourceType: other

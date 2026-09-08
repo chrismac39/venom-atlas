@@ -1,6 +1,17 @@
 {
   "organismSlug": "synanceia-verrucosa",
   "geographyKind": "marine",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "occurrence_only",
+    "evidenceIds": [
+      "ev-synanceia-verrucosa-native-range"
+    ],
+    "citationIds": [
+      "cit-australian-museum-reef-stonefish"
+    ],
+    "note": "The Australian Museum supports a broad Indo-Pacific native context; marine occurrence and ISEA3H layers are retained without inventing a terrestrial or cell-complete range boundary."
+  },
   "ranges": [
     {
       "id": "geo-synanceia-confirmed-occurrences",

@@ -3,6 +3,1611 @@
   "release": "9469f09",
   "records": [
     {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-14",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tiaret",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B97480278452280; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-30",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Ouargla",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B70824426814000; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-20",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "SaÃ¯da",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B16317854663637; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-44",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "AÃ¯n Defla",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B13998567259459; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-01",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Adrar",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B43473078766346; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-46",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "AÃ¯n TÃ©mouchent",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B30165394777555; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-08",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "BÃ©char",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B57632161166824; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-07",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Biskra",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B80473805298321; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-34",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Bordj Bou Arreridjâ",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B61154116750870; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-02",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Chlef",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B40291105422873; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-25",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Constantine",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B54486011126442; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-36",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "El Tarf",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B15861145285183; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-47",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Ghardaia",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B83676700490594; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-37",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tindouf",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B80449327613638; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-21",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Skikda",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B45005324618688; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-42",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tipaza",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B44506325294932; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-38",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tissemsilt",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B82645808466854; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-13",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tlemcen",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B64913925424016; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-22",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Sidi Bel AbbÃ¨s",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B43001903647784; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-19",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "SÃ©tif",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B67344016857851; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-48",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Relizane",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B36860814815957; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-04",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Oum El Bouaghi",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B35959348509380; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-45",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "NaÃ¢ma",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B58874984978475; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-28",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "M'Sila",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B85855835528530; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-43",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Mila",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B52445945964546; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-33",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Illizi",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B64493603110073; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-24",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Guelma",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B94550777300099; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-17",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Djelfa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B74351585751074; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-39",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "El Oued",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B6851000275455; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-05",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Batna",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B89976296243107; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-16",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Algiers",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B57836115778835; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-03",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Laghouat",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B66953226377953; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-18",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Jijel",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B41901445774444; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-29",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Mascara",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B97180369082904; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-26",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "MÃ©dÃ©a",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B34216728731802; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-27",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Mostaganem",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B83605883333857; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-12",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "TÃ©bessa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B7086800589276; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-35",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "BoumerdÃ¨s",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B98012200258451; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-09",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Blida",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B83954267936020; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-06",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Bejaia",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B58957670986273; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-11",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tamanrasset",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B23379165901565; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-40",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Khenchela",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B45118294569306; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-31",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Oran",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B89431929839902; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-10",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Bouira",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B72736403696656; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-32",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "El Bayadh",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B26097348484504; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-23",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Annaba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B62233719624556; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-41",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Souk Ahras",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B60721224304202; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "DZA-DZ-15",
+      "countryCode": "DZA",
+      "adminLevel": 1,
+      "regionName": "Tizi Ouzou",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed DZA claim expanded to the geoBoundaries ADM1 feature 43142294B98309179755088; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-NL",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Ghadamis",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B65194490964920; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-NQ",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "An Nuqat al Khams",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B63841479422356; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-KF",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Kufrah",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B89898169718474; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-MQ",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Murzuq",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B53073192190863; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-BU",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Butnan",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B28216506156245; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-WA",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Ajdabiya",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B39782956615971; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-WS",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Ash Shati'",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B20515568933500; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-GT",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Ghat",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B26344076542723; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-SR",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Surt",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B41812565387288; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-MI",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Misratah",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B58781405840719; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-MB",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Marqab",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B66581866957995; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-TB",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Tajura' wa an Nawahi al Arba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B53685260454781; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-ZA",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Az Zawiyah",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B15874653580067; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-DR",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Qubbah",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B44488917334986; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-JA",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Jabal al Akhdar",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B23470577588067; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-MJ",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Marj",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B54463644997685; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-BA",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Benghazi",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B74925506200485; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-JI",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Jifarah",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B86029592505559; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-JG",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Mizdah",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B39461050964926; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-JUU",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Al Jufrah",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B94224648391824; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-SB",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Sabha",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B80153830865201; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "LBY-LY-WD",
+      "countryCode": "LBY",
+      "adminLevel": 1,
+      "regionName": "Wadi al Hayaa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed LBY claim expanded to the geoBoundaries ADM1 feature 10800210B2800497533490; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-11",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "LaÃ¢youne-Sakia El Hamra",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B89532291078161; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-01",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Tangier-Tetouan-Al Hoceima",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B66040098455254; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-02",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Oriental",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B40056535803135; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-08",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "DrÃ¢a-Tafilalet",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B26242154300952; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-09",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Souss-Massa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B1820144472977; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-10",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Guelmim-Oued Noun",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B64069740334949; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-06",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Casablanca-Settat",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B33851053053385; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-07",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Marrakech-Safi",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B60308563647099; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-12",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Dakhla-Oued Ed-Dahab",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B40522022577718; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-04",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Rabat-SalÃ©-Kenitra",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B15955360211262; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-03",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "Fez-Meknes",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B83815134303720; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "MAR-MA-05",
+      "countryCode": "MAR",
+      "adminLevel": 1,
+      "regionName": "BÃ©ni Mellal-KhÃ©nifra",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed MAR claim expanded to the geoBoundaries ADM1 feature 70788906B63032885328780; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-11",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Tunis",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B88806172084765; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-13",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Ben Arous",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B75715054307065; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-33",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "El Kef",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B49538157477352; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-51",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Sousse",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B49970022939178; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-61",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Sfax",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B27259873852948; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-32",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Jendouba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B57742642676849; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-41",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Kairouan",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B9888826763551; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-42",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Kasserine",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B52637504718586; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-53",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Mahdia",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B953488337212; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-14",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Manouba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B47286197858453; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-43",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Sidi Bouzid",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B988461082754; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-73",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "KÃ©bili",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B11721331776240; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-31",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "BÃ©ja",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B67114336122672; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-83",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Tataouine",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B85172640982228; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-81",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "GabÃ¨s",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 3,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B69181748376292; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-23",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Bizerte",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B29646166511918; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-12",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Ariana",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B58390004509121; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-21",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Nabeul",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B21712567795690; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-52",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Monastir",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B50453639335401; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-34",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Siliana",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B74205220895681; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-22",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Zaghouan",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 0,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B3129194497982; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-71",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Gafsa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B54080015312342; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-82",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "MÃ©denine",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 1,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B11392830158982; the source did not name this ADM1 individually."
+    },
+    {
+      "speciesId": "androctonus-australis",
+      "regionId": "TUN-TN-72",
+      "countryCode": "TUN",
+      "adminLevel": 1,
+      "regionName": "Tozeur",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-androctonus-australis-native-range",
+        "ev-androctonus-australis-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "moderate",
+      "sourceRecordCount": 2,
+      "note": "Source-backed TUN claim expanded to the geoBoundaries ADM1 feature 13205935B95771050896452; the source did not name this ADM1 individually."
+    },
+    {
       "speciesId": "latrodectus-hasselti",
       "regionId": "AUS-AU-NSW",
       "countryCode": "AUS",
@@ -2151,111 +3756,6 @@
     },
     {
       "speciesId": "androctonus-australis",
-      "regionId": "TUN-TN-82",
-      "countryCode": "TUN",
-      "adminLevel": 1,
-      "regionName": "MÃ©denine",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B11392830158982; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "DZA-DZ-05",
-      "countryCode": "DZA",
-      "adminLevel": 1,
-      "regionName": "Batna",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 3,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B89976296243107; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "TUN-TN-73",
-      "countryCode": "TUN",
-      "adminLevel": 1,
-      "regionName": "KÃ©bili",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 3,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B11721331776240; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "TUN-TN-72",
-      "countryCode": "TUN",
-      "adminLevel": 1,
-      "regionName": "Tozeur",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 2,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B95771050896452; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "DZA-DZ-28",
-      "countryCode": "DZA",
-      "adminLevel": 1,
-      "regionName": "M'Sila",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B85855835528530; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "DZA-DZ-17",
-      "countryCode": "DZA",
-      "adminLevel": 1,
-      "regionName": "Djelfa",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 2,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B74351585751074; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "DZA-DZ-34",
-      "countryCode": "DZA",
-      "adminLevel": 1,
-      "regionName": "Bordj Bou Arreridjâ",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B61154116750870; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
       "regionId": "USA-US-NY",
       "countryCode": "USA",
       "adminLevel": 1,
@@ -2271,66 +3771,6 @@
     },
     {
       "speciesId": "androctonus-australis",
-      "regionId": "MAR-MA-09",
-      "countryCode": "MAR",
-      "adminLevel": 1,
-      "regionName": "Souss-Massa",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 70788906B1820144472977; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "TUN-TN-81",
-      "countryCode": "TUN",
-      "adminLevel": 1,
-      "regionName": "GabÃ¨s",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 3,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B69181748376292; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "TUN-TN-83",
-      "countryCode": "TUN",
-      "adminLevel": 1,
-      "regionName": "Tataouine",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B85172640982228; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "TUN-TN-71",
-      "countryCode": "TUN",
-      "adminLevel": 1,
-      "regionName": "Gafsa",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B54080015312342; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
       "regionId": "EGY-EG-JS",
       "countryCode": "EGY",
       "adminLevel": 1,
@@ -2343,66 +3783,6 @@
       "confidence": "moderate",
       "sourceRecordCount": 1,
       "note": "Point evidence assigned to the geoBoundaries ADM1 feature 46179711B69358139854301; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "DZA-DZ-14",
-      "countryCode": "DZA",
-      "adminLevel": 1,
-      "regionName": "Tiaret",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 2,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B97480278452280; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "DZA-DZ-47",
-      "countryCode": "DZA",
-      "adminLevel": 1,
-      "regionName": "Ghardaia",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B83676700490594; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "TUN-TN-13",
-      "countryCode": "TUN",
-      "adminLevel": 1,
-      "regionName": "Ben Arous",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 13205935B75715054307065; this is recorded presence, not a native or introduced range claim."
-    },
-    {
-      "speciesId": "androctonus-australis",
-      "regionId": "DZA-DZ-07",
-      "countryCode": "DZA",
-      "adminLevel": 1,
-      "regionName": "Biskra",
-      "distributionStatus": "recorded_presence",
-      "evidenceIds": [
-        "ev-androctonus-australis-gbif-occurrences"
-      ],
-      "derivation": "occurrence_point_aggregation",
-      "confidence": "moderate",
-      "sourceRecordCount": 1,
-      "note": "Point evidence assigned to the geoBoundaries ADM1 feature 43142294B80473805298321; this is recorded presence, not a native or introduced range claim."
     },
     {
       "speciesId": "androctonus-australis",

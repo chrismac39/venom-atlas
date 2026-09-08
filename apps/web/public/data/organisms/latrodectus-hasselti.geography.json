@@ -1,6 +1,17 @@
 {
   "organismSlug": "latrodectus-hasselti",
   "geographyKind": "terrestrial",
+  "sourceAudit": {
+    "decision": "native_range_supported",
+    "precision": "country",
+    "evidenceIds": [
+      "ev-latrodectus-hasselti-native-range"
+    ],
+    "citationIds": [
+      "cit-australian-museum-redback"
+    ],
+    "note": "The Australian Museum supports an Australia-wide native context; the country scope is expanded to ADM1 for shading without claiming each ADM1 was individually named."
+  },
   "ranges": [
     {
       "id": "geo-latrodectus-hasselti-confirmed-occurrences",
