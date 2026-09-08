@@ -1,0 +1,37 @@
+{
+  "toxin": {
+    "id": "tox-amatoxins",
+    "slug": "amatoxins",
+    "toxicMaterialId": "mat-amanita-phalloides-poison",
+    "displayName": "Amatoxins",
+    "family": "Amatoxin-associated compounds",
+    "notes": "This record keeps amatoxins at the evidence-supported compound-group level for Amanita phalloides and does not assert a complete composition, structure, dose, or outcome model.",
+    "evidence": {
+      "id": "ev-amatoxins",
+      "confidence": "moderate",
+      "evidenceType": "clinical",
+      "citationIds": [
+        "cit-cdc-amanita-phalloides"
+      ]
+    }
+  },
+  "molecularEntity": {
+    "id": "mol-amatoxins",
+    "toxinId": "tox-amatoxins",
+    "displayName": "Amatoxin-associated compounds",
+    "molecularClass": "complex",
+    "formula": null,
+    "molecularWeight": null,
+    "structureDataSource": null,
+    "evidence": {
+      "id": "ev-amatoxins-molecular-entity",
+      "confidence": "moderate",
+      "evidenceType": "clinical",
+      "citationIds": [
+        "cit-cdc-amanita-phalloides"
+      ]
+    }
+  },
+  "structureAssets": [],
+  "targets": []
+}

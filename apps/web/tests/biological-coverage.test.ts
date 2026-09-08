@@ -1,13 +1,22 @@
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import {
   getAllOrganisms,
+  getAllRoutes,
   getGeographyByOrganismSlug,
   getMechanismByOrganismExposureSlug,
   getToxicMaterialByOrganismSlug,
 } from '../src/lib/content';
 import { buildAtlasMonopageOrganisms } from '../src/lib/atlas-monopage-data';
+import { filterOrganisms } from '../src/features/catalog/hooks/useOrganismCatalogOrchestration';
+import { exposureRouteLabel, toxicStrategyLabel } from '../src/lib/organism-labels';
 
 describe('biological coverage expansion', () => {
+  const repoRoot = existsSync(path.join(process.cwd(), 'content-source'))
+    ? process.cwd()
+    : path.resolve(process.cwd(), '../..');
+
   it('loads fifteen organisms across multiple kingdoms', () => {
     const organisms = getAllOrganisms();
     const kingdoms = new Set(
@@ -64,9 +73,7 @@ describe('biological coverage expansion', () => {
 
   it('represents new organism materials without inventing chemistry records', () => {
     const newOrganismSlugs = [
-      'amanita-phalloides',
       'datura-stramonium',
-      'ricinus-communis',
       'latrodectus-hasselti',
       'androctonus-australis',
       'conus-geographus',
@@ -81,5 +88,64 @@ describe('biological coverage expansion', () => {
       expect(organism?.coverage.toxicMaterial).toBe('available');
       expect(organism?.coverage.chemistry).toBe('missing');
     }
+
+    const amanita = atlasOrganisms.find((organism) => organism.slug === 'amanita-phalloides');
+    expect(amanita?.coverage.toxicMaterial).toBe('available');
+    expect(amanita?.coverage.chemistry).toBe('available');
+
+    const ricinus = atlasOrganisms.find((organism) => organism.slug === 'ricinus-communis');
+    expect(ricinus?.coverage.toxicMaterial).toBe('available');
+    expect(ricinus?.coverage.chemistry).toBe('available');
+  });
+
+  it('keeps every organism present in atlas, static JSON, and search output', () => {
+    const organismSlugs = new Set(getAllOrganisms().map((entry) => entry.organism.slug));
+    const atlasOrganisms = buildAtlasMonopageOrganisms();
+    const atlasSlugs = new Set(atlasOrganisms.map((entry) => entry.slug));
+    const staticSlugs = new Set(
+      readdirSync(path.join(repoRoot, 'apps/web/public/data/organisms'))
+        .filter((fileName) => /^[^.]+\.json$/.test(fileName))
+        .map((fileName) => fileName.replace(/\.json$/, '')),
+    );
+    const searchRecords = JSON.parse(
+      readFileSync(path.join(repoRoot, 'apps/web/public/data/search-index.json'), 'utf8'),
+    ) as Array<{ entityType: string; route: string }>;
+    const searchSlugs = new Set(
+      searchRecords
+        .filter((record) => record.entityType === 'organism')
+        .map((record) => record.route.replace(/^\/organisms\//, '')),
+    );
+
+    expect(atlasOrganisms).toHaveLength(organismSlugs.size);
+    expect(atlasSlugs).toEqual(organismSlugs);
+    expect(staticSlugs).toEqual(organismSlugs);
+    expect(searchSlugs).toEqual(organismSlugs);
+  });
+
+  it('searches catalog text and filters by kingdom and toxic strategy', () => {
+    const organisms = buildAtlasMonopageOrganisms();
+
+    expect(filterOrganisms(organisms, { query: 'formicidae', kingdom: '', toxicStrategy: '' }).map((organism) => organism.slug))
+      .toEqual(['solenopsis-invicta']);
+    expect(filterOrganisms(organisms, { query: '', kingdom: 'Plantae', toxicStrategy: '' }).map((organism) => organism.slug))
+      .toEqual(['datura-stramonium', 'ricinus-communis']);
+    expect(filterOrganisms(organisms, { query: '', kingdom: '', toxicStrategy: 'toxin_producing' }).map((organism) => organism.slug))
+      .toEqual(['clostridium-botulinum']);
+  });
+
+  it('preserves baseline organism routes and toxin-producing terminology', () => {
+    const routes = new Set(getAllRoutes());
+    for (const slug of [
+      'solenopsis-invicta',
+      'phyllobates-terribilis',
+      'oxyuranus-microlepidotus',
+      'ornithorhynchus-anatinus',
+      'synanceia-verrucosa',
+    ]) {
+      expect(routes.has(`/organisms/${slug}`)).toBe(true);
+    }
+    expect(routes.has('/organisms/solenopsis-invicta/venom')).toBe(true);
+    expect(toxicStrategyLabel('toxin_producing')).toBe('toxin-producing');
+    expect(exposureRouteLabel('production')).toBe('toxin production');
   });
 });

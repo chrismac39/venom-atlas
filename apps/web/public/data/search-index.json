@@ -460,6 +460,20 @@
     "route": "/organisms/synanceia-verrucosa"
   },
   {
+    "id": "tox-amatoxins",
+    "entityType": "toxin",
+    "title": "Amatoxins",
+    "aliases": [
+      "Amatoxin-associated compounds"
+    ],
+    "summary": "This record keeps amatoxins at the evidence-supported compound-group level for Amanita phalloides and does not assert a complete composition, structure, dose, or outcome model.",
+    "tags": [
+      "toxin",
+      "Amatoxin-associated compounds"
+    ],
+    "route": "/toxins/amatoxins"
+  },
+  {
     "id": "tox-batrachotoxin",
     "entityType": "toxin",
     "title": "Batrachotoxin",
@@ -486,6 +500,20 @@
       "Botulinum neurotoxins"
     ],
     "route": "/toxins/botulinum-neurotoxin"
+  },
+  {
+    "id": "tox-ricin",
+    "entityType": "toxin",
+    "title": "Ricin",
+    "aliases": [
+      "Ribosome-inactivating proteins"
+    ],
+    "summary": "This isolated-toxin record describes ricin as a toxic protein associated with castor bean seeds; it does not make dose, lethality, or exposure-route claims beyond the cited source.",
+    "tags": [
+      "toxin",
+      "Ribosome-inactivating proteins"
+    ],
+    "route": "/toxins/ricin"
   },
   {
     "id": "tox-solenopsin-a",

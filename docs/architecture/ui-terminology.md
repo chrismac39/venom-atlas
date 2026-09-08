@@ -63,6 +63,15 @@ This project has a scroll-driven monopage with pinned UI, framework variants, an
 | Mapping | Converting slug to internal ID and back. | `atlasRouting` helper functions. |
 | Fallback | Default value used when data is missing/unknown. | Unknown route handling and default labels. |
 
+## Toxicity terminology
+
+| Term | Plain-language meaning | In this repo |
+|---|---|---|
+| Venomous | Delivers a toxic material through an active anatomical route such as a bite, sting, or spine. | Used for organisms with an evidence-backed delivery mechanism. |
+| Poisonous | Causes toxicity when toxic material is encountered through ingestion, contact, or another passive route. | Used for organisms such as poisonous plants and frogs. |
+| Toxin-producing | Produces a toxin biologically without being represented as venomous delivery. | Used for *Clostridium botulinum* and the `production` exposure route. |
+| Toxic material | The organism-associated material record, which may be venom, poison, secretion, or an isolated toxin. | Keeps `/venom` limited to material records whose `materialKind` is `venom`. |
+
 ## Practical phrase cheatsheet
 
 Use these phrases when requesting changes:

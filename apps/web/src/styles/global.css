@@ -348,6 +348,211 @@ select {
   grid-template-columns: minmax(11rem, 0.8fr) minmax(16rem, 1.2fr);
   overflow: hidden;
   border: 1px solid var(--rule);
+
+.catalog-shell {
+  display: grid;
+  gap: var(--space-3);
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+}
+
+.catalog-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+.catalog-kicker {
+  margin: 0 0 0.4rem;
+  color: var(--accent-science);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.catalog-header h1,
+.catalog-header p {
+  margin-top: 0;
+}
+
+.catalog-header p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.catalog-count {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.catalog-controls {
+  display: grid;
+  grid-template-columns: minmax(16rem, 2fr) repeat(2, minmax(10rem, 1fr)) auto;
+  align-items: end;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--panel-soft);
+}
+
+.catalog-controls label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-controls input,
+.catalog-controls select {
+  min-height: 2.5rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--pill-radius);
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+  text-transform: none;
+}
+
+.catalog-clear {
+  min-height: 2.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--pill-radius);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+}
+
+.catalog-clear:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.catalog-facet-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.catalog-facet-summary span {
+  padding: 0.3rem 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--rule), transparent 20%);
+  border-radius: var(--pill-radius);
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-card {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 0;
+  padding: var(--space-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.catalog-card-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.catalog-card h2,
+.catalog-card p {
+  margin: 0;
+}
+
+.catalog-card h2 {
+  font-size: 1.2rem;
+}
+
+.catalog-card h2 a {
+  color: var(--text);
+}
+
+.catalog-card-heading p {
+  margin-top: 0.25rem;
+  color: var(--warning);
+  font-size: 0.88rem;
+}
+
+.catalog-strategy {
+  flex: 0 0 auto;
+  color: var(--accent-science);
+  font-size: 0.72rem;
+  font-weight: 750;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.catalog-card-summary {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.catalog-card-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0;
+  padding-top: var(--space-2);
+  border-top: 1px solid color-mix(in srgb, var(--rule), transparent 25%);
+}
+
+.catalog-card-facts div {
+  min-width: 0;
+}
+
+.catalog-card-facts dt {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.catalog-card-facts dd {
+  margin: 0.2rem 0 0;
+  overflow-wrap: anywhere;
+  font-size: 0.86rem;
+}
+
+.catalog-empty {
+  padding: var(--space-4);
+  border: 1px dashed var(--rule);
+  text-align: center;
+}
+
+.catalog-empty h2,
+.catalog-empty p {
+  margin-top: 0;
+}
+
+.catalog-empty p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
   border-radius: var(--radius);
   background: var(--panel);
   color: var(--text);
@@ -371,6 +576,9 @@ select {
   display: grid;
   place-content: center;
   grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 0.35rem;
+  row-gap: 2.5rem;
   padding: 1.5rem;
   overflow: hidden;
   background:
@@ -384,16 +592,20 @@ select {
   line-height: 0.95;
 }
 
+.atlas-specimen-mark > span:not(:last-of-type) {
+  outline: 0.2rem solid transparent;
+  outline-offset: 0.35rem;
+}
+
 .atlas-specimen-mark > span:last-of-type {
   color: var(--warning);
   transform: translateY(0.22em);
 }
 
 .atlas-specimen-mark small {
-  position: absolute;
-  top: calc(50% + 2.6rem);
-  right: 1rem;
-  left: 1rem;
+  position: static;
+  grid-column: 1 / -1;
+  justify-self: center;
   font-size: 0.72rem;
   line-height: 1.15;
   text-transform: uppercase;

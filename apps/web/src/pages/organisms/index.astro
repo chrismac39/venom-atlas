@@ -1,24 +1,13 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
-import { appPath } from '../../lib/paths';
 import { ThemeSwitcher } from '../../islands/ThemeSwitcher';
-import { getAllOrganisms } from '../../lib/content';
+import { buildAtlasMonopageOrganisms } from '../../lib/atlas-monopage-data';
+import { OrganismCatalogIsland } from '../../islands/OrganismCatalogIsland';
 
-const organisms = getAllOrganisms().sort((a, b) =>
-  a.organism.scientificName.localeCompare(b.organism.scientificName),
-);
+const organisms = buildAtlasMonopageOrganisms();
 ---
 
 <PageLayout title="Organisms | Venom Atlas" description="Browse organisms in Venom Atlas.">
   <ThemeSwitcher slot="theme" client:idle />
-  <section class="panel">
-    <h1>Organisms</h1>
-    <ul>
-      {organisms.map((entry) => (
-        <li>
-          <a href={appPath(`/organisms/${entry.organism.slug}`)}>{entry.organism.scientificName}</a> ({entry.organism.commonName})
-        </li>
-      ))}
-    </ul>
-  </section>
+  <OrganismCatalogIsland client:load organisms={organisms} />
 </PageLayout>

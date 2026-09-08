@@ -111,6 +111,29 @@ test('chooser spans five organism classes and poison dossiers preserve material 
   await expect(page.getByText('Missing modules are omitted until source-backed records are curated.')).toBeVisible();
 });
 
+test('organism catalog supports search and kingdom/strategy filters', async ({ page }) => {
+  await page.goto('/organisms');
+
+  await expect(page.getByRole('heading', { level: 1, name: 'Organisms' })).toBeVisible();
+  await expect(page.getByText('15 of 15 organisms')).toBeVisible();
+
+  await page.getByRole('searchbox', { name: 'Search' }).fill('ricin');
+  await expect(page.getByRole('link', { name: 'Castor bean plant' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Red imported fire ant' })).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Clear filters' }).click();
+  await page.getByLabel('Kingdom').selectOption('Plantae');
+  await expect(page.getByText('2 of 15 organisms')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Castor bean plant' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Jimsonweed' })).toBeVisible();
+
+  await page.getByLabel('Kingdom').selectOption('');
+  await page.getByLabel('Strategy').selectOption('toxin_producing');
+  await expect(page.getByText('1 of 15 organisms')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Botulinum neurotoxin-producing bacterium' })).toBeVisible();
+  await expect(page.getByText('toxin-producing', { exact: true })).toBeVisible();
+});
+
 test('poison material uses its canonical route without publishing a venom alias', async ({ page }) => {
   await page.goto('/organisms/phyllobates-terribilis');
 

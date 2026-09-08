@@ -15,6 +15,8 @@ const fail = (message: string): never => {
 };
 
 const organismSlugs = new Set<string>();
+const organismIds = new Set<string>();
+const toxicMaterialIds = new Set<string>();
 const toxicMaterialSlugs = new Set<string>();
 for (const organismBundle of getAllOrganisms()) {
   const slug = organismBundle.organism.slug;
@@ -25,9 +27,23 @@ for (const organismBundle of getAllOrganisms()) {
     fail(`Duplicate organism slug: ${slug}`);
   }
   organismSlugs.add(slug);
+  if (organismIds.has(organismBundle.organism.id)) {
+    fail(`Duplicate organism ID: ${organismBundle.organism.id}`);
+  }
+  organismIds.add(organismBundle.organism.id);
 
   const toxicMaterial = getToxicMaterialByOrganismSlug(slug);
-  if (toxicMaterial?.toxicMaterial.slug) {
+  if (toxicMaterial) {
+    if (toxicMaterial.toxicMaterial.organismId !== organismBundle.organism.id) {
+      fail(`Toxic material is linked to the wrong organism: ${toxicMaterial.toxicMaterial.id}`);
+    }
+    if (toxicMaterialIds.has(toxicMaterial.toxicMaterial.id)) {
+      fail(`Duplicate toxic material ID: ${toxicMaterial.toxicMaterial.id}`);
+    }
+    toxicMaterialIds.add(toxicMaterial.toxicMaterial.id);
+    if (toxicMaterialSlugs.has(toxicMaterial.toxicMaterial.slug)) {
+      fail(`Duplicate toxic material slug: ${toxicMaterial.toxicMaterial.slug}`);
+    }
     toxicMaterialSlugs.add(toxicMaterial.toxicMaterial.slug);
   }
   if (toxicMaterial?.toxicMaterial.featuredToxinSlug && !getAllToxins().some((toxin) => {
@@ -42,6 +58,7 @@ for (const organismBundle of getAllOrganisms()) {
 }
 
 const toxinSlugs = new Set<string>();
+const toxinIds = new Set<string>();
 for (const toxinBundle of getAllToxins()) {
   const slug = toxinBundle.toxin.slug;
   if (!slug) {
@@ -52,6 +69,13 @@ for (const toxinBundle of getAllToxins()) {
     fail(`Duplicate toxin slug: ${slug}`);
   }
   toxinSlugs.add(slug);
+  if (toxinIds.has(toxinBundle.toxin.id)) {
+    fail(`Duplicate toxin ID: ${toxinBundle.toxin.id}`);
+  }
+  toxinIds.add(toxinBundle.toxin.id);
+  if (!toxicMaterialIds.has(toxinBundle.toxin.toxicMaterialId)) {
+    fail(`Toxin references unknown toxic material: ${toxinBundle.toxin.id}`);
+  }
 
 }
 
