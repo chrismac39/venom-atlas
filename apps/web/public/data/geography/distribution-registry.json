@@ -144,6 +144,1472 @@
       "note": "The Australian Museum describes redback spiders as found Australia-wide; this country-level claim is expanded to Australian ADM1 features without implying that each ADM1 was individually named by the source."
     },
     {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-B",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Buenos Aires",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 7,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-K",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Catamarca",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-H",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Chaco",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-U",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Chubut",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-C",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Ciudad AutÃ³noma de Buenos Aires",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-X",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "CÃ³rdoba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-W",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Corrientes",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 4,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-P",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Formosa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 10,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-Y",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Jujuy",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-L",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "La Pampa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-F",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "La Roja",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-M",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Mendoza",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-N",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Misiones",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-Q",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "NeuquÃ©n",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-R",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "RÃ­o Negro",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-A",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Salta",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-J",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "San Juan",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-D",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "San Luis",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-Z",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Santa Cruz",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-S",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Santa Fe",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 10,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-G",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Santiago del Estero",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-V",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "Tierra del Fuego",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "ARG-AR-T",
+      "countryCode": "ARG",
+      "adminLevel": 1,
+      "regionName": "TucumÃ¡n",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Argentina as part of the native distribution; the country claim is expanded to Argentine ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-B",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "Beni",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-H",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "Chuquisaca",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-C",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "Cochabamba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-L",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "La Paz",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-O",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "Oruro",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-N",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "Pando",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-P",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "PotosÃ­",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-S",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "Santa Cruz",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BOL-BO-T",
+      "countryCode": "BOL",
+      "adminLevel": 1,
+      "regionName": "Tarija",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Bolivia as part of the native distribution; the country claim is expanded to Bolivian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RR",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Roraima",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-AP",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Amapa",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-AM",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Amazonas",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-PA",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Para",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-MA",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Maranhao",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-CE",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Ceara",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RN",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rio Granda do Norte",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-PB",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Paraiba",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-PI",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Piaui",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-PE",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Pernambuco",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-AL",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Alagoas",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-AC",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Acre",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RO",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rondonia",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-SE",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Sergipe",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-TO",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Tocantins",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-BA",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Bahia",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-MT",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Mato Grosso",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 8,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-GO",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Goias",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-DF",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Distrito Federal",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-MG",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Minas Gerais",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 5,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-ES",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Espirito Santo",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-MS",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Mato Grosso do Sul",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 28,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RJ",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rio de Jeneiro",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 4,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-SP",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Sao Paulo",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 11,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-PR",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Parana",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 5,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-SC",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Santa Catarina",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 7,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "BRA-BR-RS",
+      "countryCode": "BRA",
+      "adminLevel": 1,
+      "regionName": "Rio Grande do Sul",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Brazil as part of the native distribution; the country claim is expanded to Brazilian ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-ASU",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "ASUNCION",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-1",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CONCEPCION",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-2",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "SAN PEDRO",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-3",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CORDILLERA",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-4",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "GUAIRA",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-5",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CAAGUAZU",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-6",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CAAZAPA",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-7",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "ITAPUA",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 2,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-8",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "MISIONES",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-9",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "PARAGUARI",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-10",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "ALTO PARANA",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-11",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CENTRAL",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range",
+        "ev-solenopsis-invicta-gbif-occurrences"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 1,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-12",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "ÃEEMBUCU",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-13",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "AMAMBAY",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-14",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "CANINDEYU",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-15",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "PRESIDENTE HAYES",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-19",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "BOQUERON",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "PRY-PY-16",
+      "countryCode": "PRY",
+      "adminLevel": 1,
+      "regionName": "ALTO PARAGUAY",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Paraguay as part of the native distribution; the country claim is expanded to Paraguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-SA",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Salto",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-AR",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Artigas",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-CA",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Canelones",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-RV",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Rivera",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-MO",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Montevideo",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-MA",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Maldonado",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-LA",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Lavalleja",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-FD",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Florida",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-SJ",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "San JosÃ©",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-TT",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Treinta y Tres",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-FS",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Flores",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-DU",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Durazno",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-SO",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Soriano",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-CO",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Colonia",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-RO",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Rocha",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-CL",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "Cerro Largo",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-TA",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "TacuarembÃ³",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-PA",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "PaysandÃº",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
+      "speciesId": "solenopsis-invicta",
+      "regionId": "URY-UY-RN",
+      "countryCode": "URY",
+      "adminLevel": 1,
+      "regionName": "RÃ­o Negro",
+      "distributionStatus": "native",
+      "evidenceIds": [
+        "ev-solenopsis-invicta-native-range"
+      ],
+      "derivation": "source_native_scope_to_admin1",
+      "confidence": "high",
+      "sourceRecordCount": 0,
+      "note": "The cited review identifies Uruguay as part of the native distribution; the country claim is expanded to Uruguayan ADM1 features without implying that each ADM1 was individually named by the source."
+    },
+    {
       "speciesId": "amanita-phalloides",
       "regionId": "AUT-AT-1",
       "countryCode": "AUT",
@@ -592,422 +2058,6 @@
       "confidence": "high",
       "sourceRecordCount": 1,
       "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 1811400B45534780755480. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-B",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Buenos Aires",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 7,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B97722443848736. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-X",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "CÃ³rdoba",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B39000171219781. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-W",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Corrientes",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 4,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B61983540054875. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-P",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Formosa",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 10,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B45303095947895. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-N",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Misiones",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B16625472822217. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-S",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Santa Fe",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 10,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B6836410786482. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-G",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "Santiago del Estero",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B61792957744675. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "ARG-AR-T",
-      "countryCode": "ARG",
-      "adminLevel": 1,
-      "regionName": "TucumÃ¡n",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 19177384B70412318542153. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-PA",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Para",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B48776179681147. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-AC",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Acre",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B96632893955983. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-RO",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Rondonia",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B1613159902410. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-MT",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Mato Grosso",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 8,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B2082355341666. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-GO",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Goias",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B6484683145874. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-MG",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Minas Gerais",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 5,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B44044837234259. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-MS",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Mato Grosso do Sul",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 28,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B40722526455680. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-RJ",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Rio de Jeneiro",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 4,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B85657526756793. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-SP",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Sao Paulo",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 11,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B46470234103867. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-PR",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Parana",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 5,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B30315977547221. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-SC",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Santa Catarina",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 7,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B90188072957077. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "BRA-BR-RS",
-      "countryCode": "BRA",
-      "adminLevel": 1,
-      "regionName": "Rio Grande do Sul",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 14911670B68448774564157. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-1",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "CONCEPCION",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B27882980507950. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-3",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "CORDILLERA",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B75072183549736. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-7",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "ITAPUA",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 2,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B60028824512427. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-8",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "MISIONES",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B67002830619694. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-9",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "PARAGUARI",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B9584917578086. Native classification is limited to explicit ADM1 evidence."
-    },
-    {
-      "speciesId": "solenopsis-invicta",
-      "regionId": "PRY-PY-11",
-      "countryCode": "PRY",
-      "adminLevel": 1,
-      "regionName": "CENTRAL",
-      "distributionStatus": "native",
-      "evidenceIds": [
-        "ev-solenopsis-invicta-native-range",
-        "ev-solenopsis-invicta-gbif-occurrences"
-      ],
-      "derivation": "source_native_admin1",
-      "confidence": "high",
-      "sourceRecordCount": 1,
-      "note": "Reusable-license GBIF point evidence assigned to the source-backed native geoBoundaries ADM1 feature 63826900B88193761383216. Native classification is limited to explicit ADM1 evidence."
     },
     {
       "speciesId": "amanita-phalloides",

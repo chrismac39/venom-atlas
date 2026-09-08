@@ -25,11 +25,17 @@ Use `[x]` only after the repository and focused validation confirm the item.
 
 ### Native and administrative geography
 
-- [ ] Try to identify a native country or source-backed range for each organism where authoritative
-  evidence supports it; leave the native state absent or uncertain when evidence is insufficient.
+- [ ] Perform a native-range source check for every organism before deciding that native geography is
+  unavailable. Use this source ladder in order: primary literature, IUCN or government agency, museum or
+  university collection, taxonomic database, then a well-cited Wikipedia distribution section as a fallback.
+  Record the source check even when it concludes that native status is uncertain.
+- [ ] Do not stop at GBIF. Occurrence records establish documented presence, not native status; use a
+  distribution or range statement from the source check to support native claims.
 - [ ] Store native-country and curated-range provenance in geography source YAML and link it to existing
-  citations or evidence records.
-- [ ] Classify source geographic precision as `admin1`, `country`, `macroregion`, or `occurrence_only`.
+  citations or evidence records. Add a citation when the source check finds a source that is not already
+  represented; Wikipedia is acceptable when its cited range statement is the best available source.
+- [ ] Classify source geographic precision as `admin1`, `country`, `macroregion`, or `occurrence_only`, and
+  record `occurrence_only` plus an uncertainty note when the source check cannot support a native claim.
 - [ ] Use the geography scope registry for source claims such as Australia-wide or Western Europe, and
   preserve a distinct `source_native_scope_to_admin1` derivation after expansion.
 - [ ] Fail generation when a scope identifier or country code matches no local ADM1 features.
@@ -64,4 +70,5 @@ Use `[x]` only after the repository and focused validation confirm the item.
 The work is complete only when every organism has an occurrence-tier map, every marine organism has an
 ISEA3H option, source-backed native shading can include unobserved ADM1 units, occurrence hover metadata
 is concise and date-aware, and all focused plus repository validation passes. Report organisms whose native
-range remains intentionally unknown or uncertain instead of filling the gap with a generic claim.
+range remains intentionally unknown or uncertain, including the sources checked and why they did not support
+a native claim. Do not leave the decision implicit or fill the gap with a generic occurrence-derived claim.

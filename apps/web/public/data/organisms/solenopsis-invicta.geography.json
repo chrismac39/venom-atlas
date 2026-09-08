@@ -6,12 +6,12 @@
       "id": "geo-solenopsis-native-range",
       "organismId": "org-solenopsis-invicta",
       "layerType": "native_range",
-      "summary": "Source-described native distribution spans Argentina, Bolivia, Brazil, Paraguay, and Uruguay. The map highlights only native-country ADM1 units with reusable-license GBIF point evidence; unobserved ADM1 units are intentionally not filled as if they were confirmed range.",
+      "summary": "Source-described native distribution spans Argentina, Bolivia, Brazil, Paraguay, and Uruguay. Country-level claims are expanded to native ADM1 shading independently of GBIF observations; occurrence points remain a separate documented-presence layer.",
       "evidence": {
         "id": "ev-solenopsis-invicta-native-range",
         "confidence": "high",
         "evidenceType": "review",
-        "notes": "The cited source establishes the country-level native context. The registry narrows that context to ADM1 units with reusable-license GBIF point evidence; GBIF points remain visible as a separate observational layer.",
+        "notes": "The cited source establishes the country-level native context. The registry expands those claims to local ADM1 features while retaining the source-to-ADM1 derivation; GBIF points remain visible as a separate observational layer.",
         "citationIds": [
           "cit-fire-ant-review-2007"
         ]

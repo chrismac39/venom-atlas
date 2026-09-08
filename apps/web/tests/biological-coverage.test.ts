@@ -158,6 +158,28 @@ describe('biological coverage expansion', () => {
     )).toBe(true);
   });
 
+  it('migrates the fire ant country-level native claim across all cited countries', () => {
+    const registry = JSON.parse(
+      readFileSync(path.join(repoRoot, 'apps/web/public/data/geography/distribution-registry.json'), 'utf8'),
+    ) as { records: Array<{ speciesId: string; countryCode: string; distributionStatus: string; derivation: string }> };
+    const fireAntCountries = new Set(
+      registry.records
+        .filter((record) =>
+          record.speciesId === 'solenopsis-invicta' &&
+          record.distributionStatus === 'native' &&
+          record.derivation === 'source_native_scope_to_admin1',
+        )
+        .map((record) => record.countryCode),
+    );
+
+    expect(fireAntCountries).toEqual(new Set(['ARG', 'BOL', 'BRA', 'PRY', 'URY']));
+    expect(registry.records.filter((record) =>
+      record.speciesId === 'solenopsis-invicta' &&
+      record.distributionStatus === 'native' &&
+      record.derivation === 'source_native_scope_to_admin1',
+    ).length).toBeGreaterThan(25);
+  });
+
   it('provides ISEA3H evidence cells for every marine organism', () => {
     for (const geography of getAllOrganisms()
       .flatMap((entry) => entry.organism.slug ? [getGeographyByOrganismSlug(entry.organism.slug)] : [])
