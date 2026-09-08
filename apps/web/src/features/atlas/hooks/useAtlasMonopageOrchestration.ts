@@ -8,8 +8,6 @@ const supportedRepresentations: MolecularRepresentation[] = [
   'stick',
   'space_filling',
   'molecular_surface',
-  'electrostatic_surface',
-  'two_dimensional_skeletal',
 ];
 
 const supportedComplexRepresentations: MolecularRepresentation[] = [
@@ -18,7 +16,6 @@ const supportedComplexRepresentations: MolecularRepresentation[] = [
   'stick',
   'space_filling',
   'molecular_surface',
-  'electrostatic_surface',
 ];
 
 const firstSentence = (text: string): string => {
@@ -143,6 +140,7 @@ export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
       molecularClass: selectedChemistryToxin.molecularClass,
       structureFormat: selectedChemistryToxin.structure3dFormat,
       structureUrl: selectedChemistryToxin.structure3dUrl,
+      structure2dUrl: selectedChemistryToxin.structure2dUrl,
       defaultRepresentation: 'ball_and_stick' as MolecularRepresentation,
       supportedRepresentations,
       annotations: [{ id: 'ann-monopage-note', label: 'Atlas view', description: 'Interactive molecular structure.' }],
@@ -150,7 +148,8 @@ export const useAtlasMonopageOrchestration = (organism: AtlasOrganismData) => {
   }, [organism.slug, selectedChemistryToxin]);
 
   const complexModel = useMemo(() => {
-    if (!selectedChemistryToxin?.interactionVisualization) return null;
+    // Fictional UI demonstrations do not belong in a scientific dossier.
+    if (!selectedChemistryToxin?.interactionVisualization || selectedChemistryToxin.interactionVisualization.evidence.level === 'illustrative') return null;
     return {
       entityId: `${organism.slug}-${selectedChemistryToxin.slug}-complex`,
       displayName: `${selectedChemistryToxin.displayName} target complex`,

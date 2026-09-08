@@ -6,15 +6,14 @@ import { ThemeSwitcher } from '../../../islands/ThemeSwitcher';
 import { MoleculeViewer } from '../../../molecular/components/MoleculeViewer';
 import type { MolecularRepresentation } from '@venom-atlas/visualization-contracts';
 import { getAllToxins, getCitationsByIds, getOrganismSlugByToxinSlug, getToxinBySlug } from '../../../lib/content';
-import { pickPreferred3dAsset } from '../../../lib/structure-assets';
+import { pickPreferred3dAsset, pickPreferred2dAsset } from '../../../lib/structure-assets';
+import { appPath } from '../../../lib/paths';
 
 const supportedRepresentations: MolecularRepresentation[] = [
   'ball_and_stick',
   'stick',
   'space_filling',
   'molecular_surface',
-  'electrostatic_surface',
-  'two_dimensional_skeletal',
 ];
 
 export const getStaticPaths = async () => {
@@ -33,6 +32,7 @@ if (!toxinBundle) {
 }
 
 const structureAsset = pickPreferred3dAsset(toxinBundle.structureAssets);
+const structure2d = pickPreferred2dAsset(toxinBundle.structureAssets);
 const structureFormat =
   structureAsset && structureAsset.format !== 'svg' ? structureAsset.format : undefined;
 const model = {
@@ -40,7 +40,8 @@ const model = {
   displayName: toxinBundle.molecularEntity.displayName,
   molecularClass: toxinBundle.molecularEntity.molecularClass,
   structureFormat,
-  structureUrl: structureAsset?.localPath,
+  structureUrl: structureAsset?.localPath ? appPath(structureAsset.localPath) : undefined,
+  structure2dUrl: structure2d?.localPath ? appPath(structure2d.localPath) : undefined,
   defaultRepresentation: 'ball_and_stick' as MolecularRepresentation,
   supportedRepresentations,
   annotations: [
@@ -76,7 +77,9 @@ const citations = getCitationsByIds(toxinBundle.molecularEntity.evidence.citatio
 
   <section class="panel">
     <h2>2D structure panel</h2>
-    <p>Asset is currently placeholder-only and not sourced as a verified molecular reference.</p>
+    {model.structure2dUrl ? (
+      <img class="molecule-viewer-fallback" src={model.structure2dUrl} alt={`2D skeletal structure for ${model.displayName}`} />
+    ) : <p>No 2D structure asset is available for this toxin.</p>}
   </section>
 
   <section class="panel">

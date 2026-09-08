@@ -2,7 +2,7 @@
 
 **Audit date:** 2026-09-08  
 **Branch examined:** Scaffolding  
-**Status:** Active product roadmap. Milestone 0 scope decisions approved and recorded on 2026-09-08 at the owner's request; GitHub Pages explicitly selected. Milestone 1A was separately authorized and implemented; its content gate still reports blockers (see 1A validation notes). Remaining milestones are planned, not authorized for implementation by this document.
+**Status:** Active product roadmap. Milestone 0 scope decisions approved and recorded on 2026-09-08 at the owner's request; GitHub Pages explicitly selected. Milestones 1A and 1B were separately authorized and implemented. The content gate still reports 1A blockers; 1B rendering regression checks pass, but the original development-only failure was not reproduced (see validation notes). Remaining milestones are planned, not authorized for implementation by this document.
 **Product principle:** **One organism, the full toxin story.**
 
 Checkbox convention: `[x]` means observed, completed, or explicitly approved as identified in the accompanying status notes; `[ ]` means proposed, awaiting a decision, or not yet verified. Scope approval does not certify scientific review or release readiness. Estimates are relative effort, not delivery promises. Scientific source review is a separate workload from implementation.
@@ -314,13 +314,15 @@ Keep external URL checks separate from deterministic builds. Report inaccessible
 
 #### 1B. Restore dependable molecular rendering
 
-- [ ] Reproduce the development-only 3Dmol import failure on a clean dependency state; inspect optimization/HMR/module interop before changing libraries.
-- [ ] Test development cold load, reload, production load, and returning to Chemistry after navigation.
-- [ ] Verify visible molecule pixels, rotation, reset, resize, keyboard focus, and wheel/page-scroll coexistence.
-- [ ] Test failed dynamic import, failed structure request, malformed structure, and unavailable WebGL with usable text/2D fallbacks.
-- [ ] Disable or accurately label unsupported advanced surface/analysis controls.
-- [ ] Keep illustrative complex demonstrations outside the normal evidence narrative; do not use their fictional contacts as mechanism data.
-- [ ] Preserve 2D stereochemical meaning; review the SVG generator's removal of enantiomer/R/S annotations against source structures.
+- [x] Investigate the development-only 3Dmol import failure: verify lockfile dependencies and attempt reproduction with fresh optimizer caches; inspect optimization/HMR/module interop before changing libraries. **The original failure did not recur; its historical root cause remains unconfirmed.** No renderer/library version change was made.
+- [x] Test development cold load, reload, production load, and returning to Chemistry after navigation.
+- [x] Verify visible molecule pixels, rotation, reset, resize, keyboard focus, and wheel/page-scroll coexistence.
+- [x] Test failed dynamic import, failed structure request, malformed structure, and unavailable WebGL with usable text/2D fallbacks.
+- [x] Disable or accurately label unsupported advanced surface/analysis controls.
+- [x] Keep illustrative complex demonstrations outside the normal evidence narrative; do not use their fictional contacts as mechanism data.
+- [x] Preserve the source structures' 2D stereochemical annotations; remove destructive SVG post-processing, regenerate both depictions, and test chemical identity preservation plus visible R/S/enantiomer label bounds. This is not independent scientific verification of those input structures.
+
+**Validation update (2026-09-08):** 1B implementation and bounded rendering checks are complete: 96 web unit tests (19 new), 2 schema tests, lint, type checks, 127 built-route comparisons, and **10 molecular browser tests in each of fresh-cache development and production** passed. A live development hot-update spot check retained one visible molecule canvas. The original intermittent import failure could not be reproduced; explicit UMD prebundling/interop is preventive hardening, not a proven historical root-cause fix. The strict content gate still rejects the same **2 unsupported claims and 26 geography references**. Milestone 1C, scientific identity review, cross-browser/hardware qualification, project-path deployment, and overall Milestone 1 release acceptance remain open. See [Milestone 1B validation and limits](milestone-1b-validation.md).
 
 #### 1C. Close immediately visible source gaps
 

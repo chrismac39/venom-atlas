@@ -1295,6 +1295,17 @@ select {
   position: relative;
 }
 
+.molecule-viewer-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.molecule-viewer-fallback {
+  max-width: 100%;
+  background: white;
+}
+
 .molecule-viewer-canvas-host:focus {
   outline: 2px solid var(--accent-science);
   outline-offset: 3px;
@@ -1348,6 +1359,7 @@ select {
 }
 
 .chemistry-2d-viewport {
+  display: flex;
   min-height: 380px;
   width: 100%;
   max-width: 100%;
@@ -1357,7 +1369,8 @@ select {
   padding: 0.35rem;
   border-radius: calc(var(--radius) - 2px);
   border: 1px solid color-mix(in srgb, var(--rule), transparent 28%);
-  background: color-mix(in srgb, var(--panel-soft), black 5%);
+  /* Source depictions use black bonds and dark stereochemical labels. */
+  background: #fff;
 }
 
 .chemistry-2d-asset {

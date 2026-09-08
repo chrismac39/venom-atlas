@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
-import OCL from 'openchemlib';
+import { generateSvgFromMolfile } from './structure-svg';
 
 interface ToxinStructureAsset {
   id?: string;
@@ -31,55 +31,6 @@ const parseToxinFile = (filePath: string): ToxinRecord => {
     throw new Error(`Invalid toxin record in ${path.basename(filePath)}`);
   }
   return parsed as ToxinRecord;
-};
-
-const generateSvgFromMolfile = (molfile: string, width: number, height: number): string => {
-  const molecule = OCL.Molecule.fromMolfile(molfile);
-  molecule.removeExplicitHydrogens();
-  const rawSvg = molecule.toSVG(width, height);
-
-  const coordinateValues = Array.from(
-    rawSvg.matchAll(/\b(?:x1|x2|cx|x|y1|y2|cy|y)="(-?\d+(?:\.\d+)?)"/g),
-    (match) => Number.parseFloat(match[1] ?? '0'),
-  ).filter((value) => Number.isFinite(value));
-
-  if (coordinateValues.length < 4) {
-    return rawSvg;
-  }
-
-  const xValues = Array.from(
-    rawSvg.matchAll(/\b(?:x1|x2|cx|x)="(-?\d+(?:\.\d+)?)"/g),
-    (match) => Number.parseFloat(match[1] ?? '0'),
-  ).filter((value) => Number.isFinite(value));
-  const yValues = Array.from(
-    rawSvg.matchAll(/\b(?:y1|y2|cy|y)="(-?\d+(?:\.\d+)?)"/g),
-    (match) => Number.parseFloat(match[1] ?? '0'),
-  ).filter((value) => Number.isFinite(value));
-
-  if (xValues.length === 0 || yValues.length === 0) {
-    return rawSvg;
-  }
-
-  const pad = 14;
-  const minX = Math.min(...xValues) - pad;
-  const maxX = Math.max(...xValues) + pad;
-  const minY = Math.min(...yValues) - pad;
-  const maxY = Math.max(...yValues) + pad;
-  const croppedWidth = Math.max(120, Math.ceil(maxX - minX));
-  const croppedHeight = Math.max(80, Math.ceil(maxY - minY));
-
-  const croppedSvg = rawSvg
-    .replace(/<text[^>]*>\s*this enantiomer\s*<\/text>\s*/gi, '')
-    // Remove OCL stereochemical R/S callouts (small red glyph labels), not atom symbols.
-    .replace(/<text[^>]*font-size="(?:8|9|10)"[^>]*fill="rgb\(160,0,0\)"[^>]*>\s*[RS]\s*<\/text>\s*/g, '')
-    .replace(/width="[^"]+"/, `width="${croppedWidth}px"`)
-    .replace(/height="[^"]+"/, `height="${croppedHeight}px"`)
-    .replace(
-      /viewBox="[^"]+"/,
-      `viewBox="${minX.toFixed(2)} ${minY.toFixed(2)} ${(maxX - minX).toFixed(2)} ${(maxY - minY).toFixed(2)}"`,
-    );
-
-  return croppedSvg;
 };
 
 const pickTwoDimensionalAsset = (assets: ToxinStructureAsset[]): ToxinStructureAsset | undefined => {

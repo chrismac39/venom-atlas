@@ -111,6 +111,7 @@ export interface MoleculeRenderModel {
   molecularClass: MolecularClass;
   structureFormat?: 'sdf' | 'mol' | 'mol2' | 'pdb' | 'mmcif' | undefined;
   structureUrl?: string | undefined;
+  structure2dUrl?: string | undefined;
   defaultRepresentation: MolecularRepresentation;
   supportedRepresentations: MolecularRepresentation[];
   atomColorScheme?: 'cpk' | 'element' | 'custom' | undefined;
@@ -118,6 +119,7 @@ export interface MoleculeRenderModel {
 }
 
 export interface MolecularRenderOptions {
+  signal?: AbortSignal;
   representation?: MolecularRepresentation;
   backgroundColor?: string;
   surface?: {
@@ -137,6 +139,9 @@ export interface MolecularRenderOptions {
 
 export interface MolecularRendererHandle {
   update(model: MoleculeRenderModel, options?: MolecularRenderOptions): Promise<void>;
+  resetView?(): void;
+  rotate?(angle: number, axis: 'x' | 'y'): void;
+  zoom?(factor: number): void;
   resize(): void;
   dispose(): void;
 }

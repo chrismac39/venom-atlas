@@ -476,6 +476,7 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
                       <section className="chemistry-summary-2d" aria-label="2D structure panel">
                         <h3>2D structure panel</h3>
                         {selectedChemistryToxin.structure2dUrl ? (
+                          <>
                           <div className="chemistry-2d-viewport">
                             <img
                               className="chemistry-2d-asset"
@@ -483,6 +484,8 @@ export const AtlasMonopageIsland = ({ organism: selected }: { organism: AtlasOrg
                               alt={`2D skeletal structure for ${selectedChemistryToxin.displayName}`}
                             />
                           </div>
+                          <a href={selectedChemistryToxin.structure2dUrl} target="_blank" rel="noopener noreferrer">Open full-size 2D formula (new tab)</a>
+                          </>
                         ) : (
                           <p>2D structure asset is not available for this toxin.</p>
                         )}

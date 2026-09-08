@@ -7,14 +7,19 @@ import type {
 } from '../types';
 
 interface ThreeDmolViewer {
-  addModel(data: string, format: string): void;
+  addModel(data: string, format: string): { selectedAtoms(selection: object): Array<{ x: number; y: number; z: number }> };
+  getView(): number[];
+  setView(view: number[]): void;
+  rotate(angle: number, axis: 'x' | 'y'): void;
+  zoom(factor: number): void;
+  removeAllSurfaces(): void;
+  removeAllLabels(): void;
   setStyle(_selection: unknown, style: Record<string, unknown>): void;
   addSurface(
     type: unknown,
     style: Record<string, unknown>,
     selection?: Record<string, unknown>,
   ): unknown;
-  addLabel?(text: string, options: Record<string, unknown>): unknown;
   zoomTo(selection?: Record<string, unknown>): void;
   render(): void;
   clear(): void;
@@ -28,10 +33,6 @@ interface ThreeDmolModule {
     SES?: unknown;
     SAS?: unknown;
   };
-  Gradient?: {
-    RWB?: new (min: number, max: number) => unknown;
-  };
-  VolumeData?: new (data: string, format: 'dx' | 'cube') => unknown;
 }
 
 const styleForRepresentation = (
@@ -63,20 +64,15 @@ const surfaceTypeForKind = (
   module: ThreeDmolModule,
   kind: 'ses' | 'sas' | 'vdw' | 'gaussian',
 ): unknown => {
-  if (kind === 'ses') {
-    return module.SurfaceType?.SES ?? module.SurfaceType?.VDW ?? 1;
-  }
-  if (kind === 'sas') {
-    return module.SurfaceType?.SAS ?? module.SurfaceType?.VDW ?? 3;
-  }
   if (kind === 'gaussian') {
-    return module.SurfaceType?.VDW ?? 1;
+    throw new Error('Gaussian surfaces are not implemented.');
   }
-  return module.SurfaceType?.VDW ?? 1;
+  const value = module.SurfaceType?.[kind === 'ses' ? 'SES' : kind === 'sas' ? 'SAS' : 'VDW'];
+  if (value === undefined) throw new Error(`The ${kind.toUpperCase()} surface is unavailable.`);
+  return value;
 };
 
 const buildSurfaceStyle = (
-  module: ThreeDmolModule,
   options: MolecularRenderOptions,
 ): Record<string, unknown> => {
   const surface = options.surface;
@@ -91,27 +87,8 @@ const buildSurfaceStyle = (
     };
   }
 
-  if (surface.colorMode === 'electrostatic') {
-    const potentialSpec = options.interactionView?.annotation?.electrostaticPotential;
-    if (!potentialSpec || !module.VolumeData || !module.Gradient?.RWB) {
-      return {
-        opacity: surface.opacity,
-        color: '#5da9ff',
-      };
-    }
-
-    return {
-      opacity: surface.opacity,
-      colorscheme: new module.Gradient.RWB(-10, 10),
-      potentialSpec,
-    };
-  }
-
-  if (surface.colorMode === 'hydrophobicity') {
-    return {
-      opacity: surface.opacity,
-      color: '#7ea06a',
-    };
+  if (surface.colorMode === 'electrostatic' || surface.colorMode === 'hydrophobicity') {
+    throw new Error('Electrostatic and hydrophobicity analyses are not implemented.');
   }
 
   return {
@@ -165,21 +142,6 @@ const applyInteractionStyles = (
         stick: { color: '#7dd3fc', radius: 0.28 },
       });
 
-      if (interactionView.showResidueLabels && viewer.addLabel) {
-        const distanceText = interaction.distanceAngstroms
-          ? ` (${interaction.distanceAngstroms.toFixed(1)} A)`
-          : '';
-        viewer.addLabel(`${interaction.type}${distanceText}`, {
-          alignment: 'center',
-          fontSize: 10,
-          backgroundOpacity: 0.35,
-          position: {
-            x: 0,
-            y: 0,
-            z: 0,
-          },
-        });
-      }
     }
   }
 
@@ -218,61 +180,106 @@ export class ThreeDmolAdapter implements MolecularRendererAdapter {
     model: MoleculeRenderModel,
     options?: MolecularRenderOptions,
   ): Promise<MolecularRendererHandle> {
-    const module = (await import('3dmol')) as unknown as ThreeDmolModule;
+    const imported = await import('3dmol');
+    options?.signal?.throwIfAborted();
+    // Vite's optimized CommonJS namespace and Rollup's production namespace differ.
+    const namespace = imported as unknown as ThreeDmolModule & { default?: ThreeDmolModule };
+    const module = typeof namespace.createViewer === 'function' ? namespace : namespace.default;
+    if (!module || typeof module.createViewer !== 'function') {
+      throw new Error('The molecular renderer module could not be initialized.');
+    }
+    const abort = new AbortController();
+    let disposed = false;
+    let loadedSource = '';
+    let initialView: number[] | undefined;
     const viewer = module.createViewer(container, {
       backgroundColor: options?.backgroundColor ?? '#171818',
     });
+    const dispose = () => {
+      if (disposed) return;
+      disposed = true;
+      abort.abort();
+      options?.signal?.removeEventListener('abort', dispose);
+      viewer.clear();
+      container.replaceChildren();
+    };
+    options?.signal?.addEventListener('abort', dispose, { once: true });
 
     const applyModel = async (
       nextModel: MoleculeRenderModel,
       nextOptions?: MolecularRenderOptions,
     ): Promise<void> => {
-      viewer.clear();
+      abort.signal.throwIfAborted();
       if (!nextModel.structureUrl) {
         throw new Error('No structure file URL is available for this molecule.');
       }
-      const response = await fetch(nextModel.structureUrl);
-      if (!response.ok) {
-        throw new Error(`Unable to load structure file: ${nextModel.structureUrl}`);
-      }
-      const fileContent = await response.text();
       const mergedOptions = {
         ...(options ?? {}),
         ...(nextOptions ?? {}),
       } as MolecularRenderOptions;
-
-      viewer.addModel(fileContent, normalizeStructureFormat(nextModel.structureFormat));
       const representation = mergedOptions.representation ?? nextModel.defaultRepresentation;
+      if (representation === 'electrostatic_surface' || representation === 'two_dimensional_skeletal' || representation === 'amino_acid_sequence') {
+        throw new Error('This representation is not supported by the 3D renderer.');
+      }
+      const source = `${nextModel.structureFormat}:${nextModel.structureUrl}`;
+      const sourceChanged = source !== loadedSource;
+      if (sourceChanged) {
+        const response = await fetch(nextModel.structureUrl, { signal: abort.signal });
+        if (!response.ok) throw new Error(`Structure request failed (HTTP ${response.status}).`);
+        const fileContent = await response.text();
+        abort.signal.throwIfAborted();
+        viewer.clear();
+        const parsed = viewer.addModel(fileContent, normalizeStructureFormat(nextModel.structureFormat));
+        const atoms = parsed.selectedAtoms({});
+        if (!atoms.length || atoms.some((atom) => ![atom.x, atom.y, atom.z].every(Number.isFinite))) {
+          throw new Error('The structure file contains no usable atomic coordinates.');
+        }
+        loadedSource = source;
+      }
+      viewer.removeAllSurfaces();
+      viewer.removeAllLabels();
       viewer.setStyle({}, styleForRepresentation(representation));
 
       if (mergedOptions.surface?.enabled) {
-        const surfaceStyle = buildSurfaceStyle(module, mergedOptions);
+        const surfaceStyle = buildSurfaceStyle(mergedOptions);
         const kind = mergedOptions.surface.kind;
-        viewer.addSurface(surfaceTypeForKind(module, kind), surfaceStyle, {});
+        await viewer.addSurface(surfaceTypeForKind(module, kind), surfaceStyle, {});
+        abort.signal.throwIfAborted();
       }
 
       applyInteractionStyles(viewer, mergedOptions);
 
-      if (!mergedOptions.interactionView?.annotation) {
+      if (sourceChanged && !mergedOptions.interactionView?.annotation) {
         viewer.zoomTo();
       }
-
+      if (sourceChanged) initialView = [...viewer.getView()];
       viewer.render();
     };
 
-    await applyModel(model, options);
+    try {
+      await applyModel(model, options);
+    } catch (error) {
+      dispose();
+      throw error;
+    }
 
     return {
       update: async (nextModel, nextOptions) => {
         await applyModel(nextModel, nextOptions);
       },
       resize: () => {
+        if (disposed) return;
         viewer.resize();
         viewer.render();
       },
-      dispose: () => {
-        viewer.clear();
+      resetView: () => {
+        if (disposed) return;
+        if (initialView) viewer.setView([...initialView]);
+        viewer.render();
       },
+      rotate: (angle, axis) => { if (!disposed) { viewer.rotate(angle, axis); viewer.render(); } },
+      zoom: (factor) => { if (!disposed) { viewer.zoom(factor); viewer.render(); } },
+      dispose,
     };
   }
 }
